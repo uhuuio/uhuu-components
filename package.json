@@ -1,0 +1,9 @@
+{
+  "version": "0.1",
+  "name": "@uhuu/components",
+  "main": "uhuu-components.umd.js",
+  "module": "uhuu-components.es.js",
+  "browser": "uhuu-components.es.js",
+  "type": "module",
+  "license": "https://uhuu.io/license" 
+}
