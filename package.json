@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "@uhuuio/uhuu-components",
   "main": "uhuu-components.umd.js",
   "module": "uhuu-components.es.js",
@@ -7,6 +7,10 @@
   "type": "module",
   "license": "https://uhuu.io/license",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com",
+     "access": "public"
+  },
+  "dependencies": {
+    "@uhuuio/uhuu-components": "^0.1.1"
   }
 }
