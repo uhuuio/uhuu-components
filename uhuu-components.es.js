@@ -22612,6 +22612,8 @@ ${u ?? ""}`;
       console.warn("Container or page content reference is missing.");
       return;
     }
+    if (a)
+      return;
     n(!0), o.current.prepareRendering(i.current);
     const S = new ci(), f = o.current.getStyleUrls(u ?? "", ((v = l == null ? void 0 : l.page) == null ? void 0 : v.printCssUrl) ?? "");
     try {
