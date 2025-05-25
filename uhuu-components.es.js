@@ -21796,13 +21796,13 @@ const ed = /* @__PURE__ */ or(pw);
 let cw = class {
   prepareRendering(e) {
     const { clientHeight: r, clientWidth: a } = e;
-    e.innerHTML = "", r && (e.style.minHeight = `${r}px`), a && window !== window.parent && (e.style.minWidth = `${a}px`), document.querySelectorAll("style[data-pagedjs-inserted-styles]").forEach((n) => n.remove()), this.resetZoom();
+    e.innerHTML = "", r && (e.style.minHeight = `${r}px`), a && window !== window.parent && (e.style.minWidth = `${a}px`), document?.querySelectorAll("style[data-pagedjs-inserted-styles]").forEach((n) => n.remove()), this.resetZoom();
   }
   finalizeRendering(e) {
     e && (e.style.minWidth = "auto", e.style.minHeight = "auto"), this.attachEventListeners(), this.applyPagedCSS(), this.restoreZoom();
   }
   attachEventListeners() {
-    document.querySelectorAll("[data-uhuu]").forEach((e) => {
+    document?.querySelectorAll("[data-uhuu]").forEach((e) => {
       const r = function() {
         const a = JSON.parse(this.getAttribute("data-uhuu"));
         $uhuu.editDialog(a);
@@ -21811,7 +21811,7 @@ let cw = class {
     });
   }
   applyPagedCSS() {
-    document.querySelectorAll(".page-break-after[data-paged-css]").forEach((e) => {
+    document?.querySelectorAll(".page-break-after[data-paged-css]").forEach((e) => {
       const r = e.closest("div.pagedjs_sheet"), a = e.getAttribute("data-paged-css");
       r && a && a.split(" ").filter(Boolean).forEach((n) => r.classList.add(n));
     });
@@ -21824,15 +21824,18 @@ let cw = class {
     return r ? [r] : [];
   }
   resetZoom() {
-    const e = document.body;
+    if (typeof document > "u") return;
+    const e = document?.body;
     e.style.transform && (this.originalStyles = {
       width: e.style.width,
       height: e.style.height,
-      transform: e.style.transform
+      transform: e.style.transform,
+      transformOrigin: e.style.transformOrigin || "center center"
     }, e.style.opacity = "0", e.style.width = "100%", e.style.height = "100%", e.style.transform = "");
   }
   restoreZoom() {
-    const e = document.body;
+    if (typeof document > "u") return;
+    const e = document?.body;
     e.style.opacity = "1", this.originalStyles?.transform && (e.style.width = this.originalStyles.width, e.style.height = this.originalStyles.height, e.style.transform = this.originalStyles.transform);
   }
 };
@@ -21942,6 +21945,7 @@ class td {
     return Object.keys(this.PAGE_SIZES);
   }
   static pageParams(e, r) {
+    if (typeof document > "u") return;
     const { format: a, orientation: n, width: i, height: s, bleed: o, showBleed: l, compatibility: p, printCssRaw: c, printCssUrl: m, preview: d } = r, u = (!a || a.toLowerCase() === "custom") && i && s && i > 10 && s > 10 && i < 4e3 && s < 4e3 ? { width: i, height: s } : this.getDimensions({ format: a ?? "A4", orientation: n });
     return u && (document.documentElement.style.setProperty("--uhuu-page-width", `${u.width}mm`), document.documentElement.style.setProperty("--uhuu-page-height", `${u.height}mm`)), document.documentElement.style.setProperty("--uhuu-page-bleed", `${Math.min(Math.max(o ?? 0, 0), 400)}mm`), { page: {
       paginationType: e,
@@ -21998,7 +22002,7 @@ ${p ?? ""}`;
 }, mw = ({ children: t }) => /* @__PURE__ */ V(id, { children: t });
 class ar {
   static handlePageBreakStyles() {
-    document.querySelectorAll(".page-break-after[data-paged-css]").forEach((e) => {
+    document?.querySelectorAll(".page-break-after[data-paged-css]").forEach((e) => {
       const r = e.closest("div.uhuu-page-sheet"), a = e.getAttribute("data-paged-css");
       r && a && a.split(" ").filter(Boolean).forEach((i) => r.classList.add(i));
     });
@@ -22008,7 +22012,7 @@ class ar {
       const r = JSON.parse(this.getAttribute("data-uhuu") || "{}");
       $uhuu.editDialog(r);
     };
-    document.querySelectorAll("[data-uhuu]").forEach((r) => {
+    document?.querySelectorAll("[data-uhuu]").forEach((r) => {
       r.removeEventListener("click", e), r.addEventListener("click", e);
     });
   }
@@ -22018,12 +22022,12 @@ class ar {
 }
 class Xs {
   static setupPageStyles(e) {
-    if (!e) return;
+    if (!e || typeof document > "u") return;
     const r = document.createElement("link");
     return r.rel = "stylesheet", r.href = e, document.head.appendChild(r), r;
   }
   static removePageStyles(e) {
-    e && e.document.head.removeChild(e);
+    e && typeof document < "u" && document?.head.removeChild(e);
   }
 }
 const hw = ({ children: t, className: e, setup: r }) => {
@@ -22159,6 +22163,8 @@ const ww = (t) => {
   );
 }, Cw = od(({ children: t }, e) => {
   const [r, a] = nr(!1), n = dt(null), i = dt(null);
+  if (typeof document > "u")
+    return null;
   ld(e, () => ({
     layout: s
   }));
@@ -22170,18 +22176,18 @@ const ww = (t) => {
       }
       a(!0);
       const { clientHeight: o, clientWidth: l } = n.current;
-      n.current.innerHTML = "", o && (n.current.style.minHeight = `${o}px`), l && window !== window.parent && (n.current.style.minWidth = `${l}px`), document.querySelectorAll("style[data-pagedjs-inserted-styles]").forEach((m) => m.remove());
+      n.current.innerHTML = "", o && (n.current.style.minHeight = `${o}px`), l && window !== window.parent && (n.current.style.minWidth = `${l}px`), document?.querySelectorAll("style[data-pagedjs-inserted-styles]").forEach((m) => m.remove());
       let p = "page.css";
       const c = new An();
       try {
         c.preview(i.current.innerHTML, [p], n.current).then(() => {
-          a(!1), n.current.style.minWidth = "auto", n.current.style.minHeight = "auto", document.querySelectorAll("[data-uhuu]").forEach((m) => {
+          a(!1), n.current.style.minWidth = "auto", n.current.style.minHeight = "auto", document?.querySelectorAll("[data-uhuu]").forEach((m) => {
             const d = function() {
               const u = JSON.parse(this.getAttribute("data-uhuu"));
               $uhuu.editDialog(u);
             };
             m.removeEventListener("click", d), m.addEventListener("click", d);
-          }), document.querySelectorAll(".page-break-after[data-paged-css]").forEach((m) => {
+          }), document?.querySelectorAll(".page-break-after[data-paged-css]").forEach((m) => {
             const d = m.closest("div.pagedjs_sheet"), u = m.getAttribute("data-paged-css");
             d && u && u.split(" ").filter(Boolean).forEach((g) => d.classList.add(g));
           });
