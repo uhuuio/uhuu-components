@@ -22041,12 +22041,12 @@ const hw = ({ children: t, className: e, setup: r }) => {
   }, [r, a?.page?.compatibility, a?.page?.printCssUrl]);
   const n = [e, a?.page?.preview].filter(Boolean).join(" ");
   return /* @__PURE__ */ V(rd, { config: a, children: /* @__PURE__ */ V("div", { className: n, children: t }) });
-}, gw = ({ children: t, className: e = "", pageNo: r, overlay: a, showBleed: n }) => {
-  const i = ir(Tt), s = n ?? i?.page?.showBleed ?? !1;
-  return /* @__PURE__ */ Ua("div", { className: `uhuu-page-sheet ${e}`, children: [
+}, gw = ({ children: t, className: e = "", style: r, pageNo: a, overlay: n, showBleed: i }) => {
+  const s = ir(Tt), o = i ?? s?.page?.showBleed ?? !1;
+  return /* @__PURE__ */ Ua("div", { className: `uhuu-page-sheet ${e}`, style: r, children: [
     t,
-    a && a({ pageNo: r }),
-    s && /* @__PURE__ */ V("div", { className: "uhuu-bleed-area" })
+    n && n({ pageNo: a }),
+    o && /* @__PURE__ */ V("div", { className: "uhuu-bleed-area" })
   ] });
 }, On = (t, e) => {
   const r = t.dialog;
