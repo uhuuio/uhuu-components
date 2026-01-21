@@ -1,5 +1,5 @@
 {
-  "version": "0.2.2",
+  "version": "0.2.3",
   "name": "uhuu-components",
   "main": "uhuu-components.umd.js",
   "module": "uhuu-components.es.js",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "pagedjs": "^0.4.3",
-    "lucide-react": "^0.263.1",
+    "lucide-react": "^0.562.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "tailwind-merge": "^1.14.0",
