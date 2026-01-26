@@ -3784,12 +3784,7 @@ export {
   qr as Editable,
   Zr as EditorShell,
   Fr as ImageBlock,
-  ka as InteractiveModeProvider,
-  Ir as PageEditor,
   Br as PagedPreview,
-  Vr as Static,
-  un as TemplateDataProvider,
-  Or as useIntegrationAdapter,
-  et as useInteractive
+  Vr as Static
 };
 //# sourceMappingURL=uhuu-components.es.js.map
