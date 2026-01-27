@@ -3,7 +3,7 @@ import { jsx as a, jsxs as f, Fragment as ce } from "react/jsx-runtime";
 import * as I from "react";
 import { createContext as nt, useState as V, useRef as me, useEffect as we, forwardRef as Wt, useContext as se, useMemo as ne, useCallback as ge, useImperativeHandle as _n } from "react";
 import { Previewer as Gt } from "pagedjs";
-import { MoreHorizontal as Ht, ChevronDown as zn, UnfoldHorizontal as Ln, UnfoldVertical as Wn, Maximize as Gn, ZoomOut as Hn, ZoomIn as Kn, Plus as he, XIcon as Fn, Lock as et, ArrowUpDown as qn, GripVertical as Bn, Check as Kt, Minus as Un, Trash2 as Vn, Printer as ft, X as Zn, ClipboardList as Jn } from "lucide-react";
+import { MoreHorizontal as Ht, ChevronDown as zn, UnfoldHorizontal as Ln, UnfoldVertical as Wn, Maximize as Gn, ZoomOut as Hn, ZoomIn as Kn, Plus as he, XIcon as Fn, Lock as et, ArrowUpDown as Bn, GripVertical as qn, Check as Kt, Minus as Un, Trash2 as Vn, Printer as ft, X as Zn, ClipboardList as Jn } from "lucide-react";
 import { cva as Ft } from "class-variance-authority";
 import { clsx as Xn } from "clsx";
 import { twMerge as Yn } from "tailwind-merge";
@@ -14,14 +14,14 @@ import { sortableKeyboardCoordinates as ia, SortableContext as sa, rectSortingSt
 import { CSS as da } from "@dnd-kit/utilities";
 import * as tt from "@radix-ui/react-switch";
 import * as Pe from "@radix-ui/react-slider";
-import * as qt from "@radix-ui/react-label";
+import * as Bt from "@radix-ui/react-label";
 import * as ae from "@radix-ui/react-alert-dialog";
 var Te = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
 function ua(e) {
   return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
 }
 var We, pt;
-function Bt() {
+function qt() {
   if (pt) return We;
   pt = 1;
   function e(t) {
@@ -65,22 +65,22 @@ function fa() {
   }
   return Fe = t, Fe;
 }
-var qe, wt;
+var Be, wt;
 function ha() {
-  if (wt) return qe;
+  if (wt) return Be;
   wt = 1;
   var e = fa(), t = /^\s+/;
   function n(r) {
     return r && r.slice(0, e(r) + 1).replace(t, "");
   }
-  return qe = n, qe;
+  return Be = n, Be;
 }
-var Be, Nt;
+var qe, Nt;
 function Vt() {
-  if (Nt) return Be;
+  if (Nt) return qe;
   Nt = 1;
   var e = Ut(), t = e.Symbol;
-  return Be = t, Be;
+  return qe = t, qe;
 }
 var Ue, Pt;
 function pa() {
@@ -142,7 +142,7 @@ var Ye, Rt;
 function wa() {
   if (Rt) return Ye;
   Rt = 1;
-  var e = ha(), t = Bt(), n = xa(), r = NaN, i = /^[-+]0x[0-9a-f]+$/i, o = /^0b[01]+$/i, s = /^0o[0-7]+$/i, c = parseInt;
+  var e = ha(), t = qt(), n = xa(), r = NaN, i = /^[-+]0x[0-9a-f]+$/i, o = /^0b[01]+$/i, s = /^0o[0-7]+$/i, c = parseInt;
   function d(l) {
     if (typeof l == "number")
       return l;
@@ -164,45 +164,45 @@ var Qe, Dt;
 function Na() {
   if (Dt) return Qe;
   Dt = 1;
-  var e = Bt(), t = ma(), n = wa(), r = "Expected a function", i = Math.max, o = Math.min;
+  var e = qt(), t = ma(), n = wa(), r = "Expected a function", i = Math.max, o = Math.min;
   function s(c, d, l) {
-    var p, u, m, g, h, v, b = 0, A = !1, S = !1, C = !0;
+    var p, u, m, g, h, v, b = 0, j = !1, S = !1, C = !0;
     if (typeof c != "function")
       throw new TypeError(r);
-    d = n(d) || 0, e(l) && (A = !!l.leading, S = "maxWait" in l, m = S ? i(n(l.maxWait) || 0, d) : m, C = "trailing" in l ? !!l.trailing : C);
-    function k(N) {
+    d = n(d) || 0, e(l) && (j = !!l.leading, S = "maxWait" in l, m = S ? i(n(l.maxWait) || 0, d) : m, C = "trailing" in l ? !!l.trailing : C);
+    function k($) {
       var G = p, P = u;
-      return p = u = void 0, b = N, g = c.apply(P, G), g;
+      return p = u = void 0, b = $, g = c.apply(P, G), g;
     }
-    function R(N) {
-      return b = N, h = setTimeout(y, d), A ? k(N) : g;
+    function R($) {
+      return b = $, h = setTimeout(y, d), j ? k($) : g;
     }
-    function E(N) {
-      var G = N - v, P = N - b, D = d - G;
-      return S ? o(D, m - P) : D;
+    function E($) {
+      var G = $ - v, P = $ - b, w = d - G;
+      return S ? o(w, m - P) : w;
     }
-    function _(N) {
-      var G = N - v, P = N - b;
+    function _($) {
+      var G = $ - v, P = $ - b;
       return v === void 0 || G >= d || G < 0 || S && P >= m;
     }
     function y() {
-      var N = t();
-      if (_(N))
-        return x(N);
-      h = setTimeout(y, E(N));
+      var $ = t();
+      if (_($))
+        return x($);
+      h = setTimeout(y, E($));
     }
-    function x(N) {
-      return h = void 0, C && p ? k(N) : (p = u = void 0, g);
+    function x($) {
+      return h = void 0, C && p ? k($) : (p = u = void 0, g);
     }
     function T() {
       h !== void 0 && clearTimeout(h), b = 0, p = v = u = h = void 0;
     }
-    function O() {
+    function D() {
       return h === void 0 ? g : x(t());
     }
-    function j() {
-      var N = t(), G = _(N);
-      if (p = arguments, u = this, v = N, G) {
+    function O() {
+      var $ = t(), G = _($);
+      if (p = arguments, u = this, v = $, G) {
         if (h === void 0)
           return R(v);
         if (S)
@@ -210,7 +210,7 @@ function Na() {
       }
       return h === void 0 && (h = setTimeout(y, d)), g;
     }
-    return j.cancel = T, j.flush = O, j;
+    return O.cancel = T, O.flush = D, O;
   }
   return Qe = s, Qe;
 }
@@ -516,7 +516,7 @@ const Yt = ({ children: e, className: t, setup: n }) => {
     let x = c;
     return c || (x = r, l || (x += n), p || (x += n), (l || p) && (x -= (l ?? 0) + (p ?? 0))), x;
   })(), C = b(), k = (x) => x !== void 0 ? v(x) : void 0, E = ((x) => Object.fromEntries(
-    Object.entries(x).filter(([T, O]) => O !== void 0)
+    Object.entries(x).filter(([T, D]) => D !== void 0)
   ))({
     backgroundColor: s,
     width: k(S),
@@ -526,8 +526,8 @@ const Yt = ({ children: e, className: t, setup: n }) => {
     top: k(u > 0 ? u + n : u),
     bottom: k(m > 0 ? m + n : m)
   }), _ = C > 0 ? S / C : S / (i - (u ?? 0) - (m ?? 0)), y = (x) => {
-    let O = x.target.naturalWidth / x.target.naturalHeight > _ ? "cover-vertical" : "cover-horizontal";
-    h(O);
+    let D = x.target.naturalWidth / x.target.naturalHeight > _ ? "cover-vertical" : "cover-horizontal";
+    h(D);
   };
   return /* @__PURE__ */ a("div", { className: "uhuu-image-container", style: E, children: /* @__PURE__ */ f(
     "div",
@@ -813,37 +813,37 @@ function Ma(e) {
     right: u = 0,
     top: m = 0,
     bottom: g = 0
-  } = e, [h, v] = V("h-full w-full object-cover object-center"), b = (N) => `${N}mm`, A = () => {
-    let N = d;
-    return d || (N = 2 * r, p || (N += 2 * n), u || (N += 2 * n), (p || u) && (N -= (p ?? 0) + (u ?? 0))), N;
+  } = e, [h, v] = V("h-full w-full object-cover object-center"), b = (w) => `${w}mm`, j = () => {
+    let w = d;
+    return d || (w = 2 * r, p || (w += 2 * n), u || (w += 2 * n), (p || u) && (w -= (p ?? 0) + (u ?? 0))), w;
   }, S = () => {
-    let N = l;
-    return l || (N = i, m || (N += n), g || (N += n), (m || g) && (N -= (m ?? 0) + (g ?? 0))), N;
-  }, C = A(), k = S(), R = (N) => N !== void 0 ? b(N) : void 0, E = (N) => Object.fromEntries(
-    Object.entries(N).filter(([G, P]) => P !== void 0)
-  ), _ = p > 0 ? p : -1 * n, y = -1 * r + _, x = E({
+    let w = l;
+    return l || (w = i, m || (w += n), g || (w += n), (m || g) && (w -= (m ?? 0) + (g ?? 0))), w;
+  }, C = j(), k = S(), R = (w) => w !== void 0 ? b(w) : void 0, E = (w) => Object.fromEntries(
+    Object.entries(w).filter(([z, A]) => A !== void 0)
+  ), _ = p > 0 ? p + n : -1 * n, y = m > 0 ? m + n : -1 * n, x = g > 0 ? g + n : -1 * n, T = -1 * r + _, D = m > 0 && g > 0, O = E({
     backgroundColor: c,
     width: R(C),
-    height: R(k),
+    ...D ? { height: R(k) } : {},
     left: R(_),
-    top: R(m > 0 ? m + n : m),
-    bottom: R(g > 0 ? g + n : g)
-  }), T = E({
+    top: R(y),
+    bottom: R(x)
+  }), $ = E({
     width: R(C),
-    height: R(k),
-    left: R(y),
-    top: R(m > 0 ? m + n : m),
-    bottom: R(g > 0 ? g + n : g)
-  }), O = k != 0 ? C / k : C / (i - (m ?? 0) - (g ?? 0)), j = (N) => {
-    let P = N.target.naturalWidth / N.target.naturalHeight > O ? "cover-vertical" : "cover-horizontal";
-    v(P);
+    ...D ? { height: R(k) } : {},
+    left: R(T),
+    top: R(y),
+    bottom: R(x)
+  }), G = k != 0 ? C / k : C / (i - (m ?? 0) - (g ?? 0)), P = (w) => {
+    let A = w.target.naturalWidth / w.target.naturalHeight > G ? "cover-vertical" : "cover-horizontal";
+    v(A);
   };
-  return /* @__PURE__ */ a("div", { className: "uhuu-image-container", style: s == "end" ? T : x, children: /* @__PURE__ */ a("div", { className: "uhuu-image-inner", ...Ne(e, t), children: e.children || /* @__PURE__ */ a(
+  return /* @__PURE__ */ a("div", { className: "uhuu-image-container", style: s == "end" ? $ : O, children: /* @__PURE__ */ a("div", { className: "uhuu-image-inner", ...Ne(e, t), children: e.children || /* @__PURE__ */ a(
     "img",
     {
       className: h,
       src: o,
-      onLoad: (N) => j(N)
+      onLoad: (w) => P(w)
     },
     `${o}-${C}-${k}`
   ) }) });
@@ -865,7 +865,7 @@ const Ot = ({
   imageProps: g,
   renderImage: h
 }) => {
-  const v = se(be), b = l ? Ne({ dialog: l }, v) : {}, A = rn(d), S = I.useMemo(() => {
+  const v = se(be), b = l ? Ne({ dialog: l }, v) : {}, j = rn(d), S = I.useMemo(() => {
     if (!p) return b;
     const k = { ...b, ...p };
     return (b.className || p.className) && (k.className = W(b.className, p.className)), Object.keys(b).forEach((R) => {
@@ -890,31 +890,31 @@ const Ot = ({
       m,
       nn(s, c)
     ] }),
-    an(d, A)
+    an(d, j)
   ] });
 }, Fr = (e) => {
   const { computedOverlaySvg: t, computedOptions: n, computedDirectDialog: r } = ne(() => {
-    const { annotation: P, dialog: D, overlaySvg: z, options: $, src: H } = e;
-    if (!P && !D)
+    const { annotation: P, dialog: w, overlaySvg: z, options: A, src: H } = e;
+    if (!P && !w)
       return {
         computedOverlaySvg: z,
-        computedOptions: $,
+        computedOptions: A,
         computedDirectDialog: void 0
       };
-    const L = P?.value || {}, B = z ?? L.annotationSvg ?? "", X = [];
+    const L = P?.value || {}, q = z ?? L.annotationSvg ?? "", X = [];
     if (P) {
-      if (D) {
+      if (w) {
         const Q = {
-          ...D
+          ...w
           // Spread everything (path, type, ratio, etc.)
         };
-        if (D.type === "satellite") {
-          const { path: _e, type: ze, ...ke } = D;
+        if (w.type === "satellite") {
+          const { path: _e, type: ze, ...ke } = w;
           Q.config = {
             ...ke,
             path: "image"
           }, Q.path = _e, Q.type = ze;
-        } else D.type === "image" && (Q.imagePath || (Q.imagePath = "url"));
+        } else w.type === "image" && (Q.imagePath || (Q.imagePath = "url"));
         X.push({
           id: "edit",
           label: "Edit image",
@@ -935,24 +935,24 @@ const Ot = ({
         dialog: le
       });
     }
-    const oe = $ ? [...X, ...$] : X;
+    const oe = A ? [...X, ...A] : X;
     let K;
-    if (D) {
+    if (w) {
       const F = {
-        ...D
+        ...w
         // Spread everything (path, type, ratio, etc.)
       };
-      if (D.type === "satellite") {
-        const { path: te, type: re, ...J } = D;
+      if (w.type === "satellite") {
+        const { path: te, type: re, ...J } = w;
         F.config = {
           ...J,
           path: "image"
         }, F.path = te, F.type = re;
-      } else D.type === "image" && (F.imagePath || (F.imagePath = "url"));
+      } else w.type === "image" && (F.imagePath || (F.imagePath = "url"));
       K = F;
     }
     return {
-      computedOverlaySvg: B,
+      computedOverlaySvg: q,
       computedOptions: oe.length > 0 ? oe : void 0,
       computedDirectDialog: K
     };
@@ -970,7 +970,7 @@ const Ot = ({
     backgroundColor: h,
     width: v,
     height: b,
-    left: A,
+    left: j,
     right: S,
     top: C,
     bottom: k,
@@ -980,15 +980,15 @@ const Ot = ({
     overlayClassName: y,
     dialogProps: x,
     placeholder: T,
-    children: O,
-    imageProps: j,
-    renderImage: N
+    children: D,
+    imageProps: O,
+    renderImage: $
   } = e, G = {
     src: d,
     backgroundColor: h,
     width: v,
     height: b,
-    left: A,
+    left: j,
     right: S,
     top: C,
     bottom: k,
@@ -1012,9 +1012,9 @@ const Ot = ({
         dialog: r,
         dialogProps: x,
         placeholder: T,
-        children: O,
-        imageProps: j,
-        renderImage: N
+        children: D,
+        imageProps: O,
+        renderImage: $
       }
     );
   if (i === "spread") {
@@ -1037,7 +1037,7 @@ const Ot = ({
         dialogProps: x,
         children: [
           P,
-          O
+          D
         ]
       }
     ) : P;
@@ -1053,10 +1053,10 @@ const Ot = ({
       dialog: r,
       dialogProps: x,
       bleedProps: G,
-      children: O
+      children: D
     }
   ) : /* @__PURE__ */ a(en, { ...G });
-}, qr = (e) => {
+}, Br = (e) => {
   const t = se(be);
   return /* @__PURE__ */ a(
     "div",
@@ -1287,11 +1287,11 @@ function dn(e, t) {
   if (e?.integrations)
     return e.integrations[t];
 }
-function qa(e, t) {
+function Ba(e, t) {
   return t && ee(t) ? t.id : e?.id ?? null;
 }
 function un(e, t, n) {
-  const r = qa(t, n);
+  const r = Ba(t, n);
   return r ? {
     instanceId: r,
     integration: dn(e, r)
@@ -1305,7 +1305,7 @@ function Et(e, t) {
   const n = `integrations.${e}`;
   return t ? `${n}.${t}` : n;
 }
-function Ba(e) {
+function qa(e) {
   if (!e)
     return { instanceId: null, fieldPath: e, isIntegrationPath: !1 };
   const t = "integrations.";
@@ -1331,7 +1331,7 @@ function Ua(e, t, n) {
   return o[s] = n, i;
 }
 function Va(e, t, n) {
-  const r = Ba(t);
+  const r = qa(t);
   if (!r.isIntegrationPath || !r.instanceId)
     return e;
   const { instanceId: i, fieldPath: o } = r, s = dn(e, i) || {}, c = Ua(
@@ -1388,8 +1388,8 @@ function mn({
   }, []), m = I.useMemo(() => Za(r), [r]), g = I.useCallback((y, x) => {
     if (!y) return null;
     const T = { ...y };
-    return x.forEach((O) => {
-      delete T[O];
+    return x.forEach((D) => {
+      delete T[D];
     }), T;
   }, []);
   I.useEffect(() => {
@@ -1406,16 +1406,16 @@ function mn({
       return;
     }
     if (Date.now() - l.current < 500 && d.current !== null) {
-      const T = g(e, m), O = g(d.current, m), j = T ? u(T) : null, N = O ? u(O) : null;
-      if (j && j === N) {
+      const T = g(e, m), D = g(d.current, m), O = T ? u(T) : null, $ = D ? u(D) : null;
+      if (O && O === $) {
         console.log("[TemplateDataProvider] Skipping round-trip"), d.current = null, s.current = e;
         return;
       }
     }
     console.log("[TemplateDataProvider] External payload update detected, merging...", e), s.current = e, o((T) => {
       if (!e) return T;
-      const O = Ja(T, e, m);
-      return console.log("[TemplateDataProvider] Merged payload:", O), O;
+      const D = Ja(T, e, m);
+      return console.log("[TemplateDataProvider] Merged payload:", D), D;
     });
   }, [e, m, u, g]);
   const h = I.useCallback(
@@ -1427,36 +1427,36 @@ function mn({
     (y) => {
       c.current = !0, o((x) => {
         const T = typeof y == "function" ? y(x) : y;
-        let O = T;
+        let D = T;
         return T && typeof T == "object" && Object.keys(T).filter(
-          (N) => N.startsWith("integrations.") || N === "integrations"
-        ).length > 0 && T.integrations && (O = T), d.current = O, l.current = Date.now(), h(O), O;
+          ($) => $.startsWith("integrations.") || $ === "integrations"
+        ).length > 0 && T.integrations && (D = T), d.current = D, l.current = Date.now(), h(D), D;
       });
     },
     [h]
   ), b = I.useCallback(
     (y, x, T) => {
-      v((O) => ({
-        ...O ?? {},
+      v((D) => ({
+        ...D ?? {},
         pages: {
-          ...O?.pages ?? {},
+          ...D?.pages ?? {},
           [y]: {
-            ...O?.pages?.[y] ?? {},
+            ...D?.pages?.[y] ?? {},
             [x]: T
           }
         }
       }));
     },
     [v]
-  ), A = I.useCallback(
+  ), j = I.useCallback(
     (y, x) => {
       v((T) => {
-        const O = T?.integrations ?? {}, j = O[y], N = typeof x == "function" ? x(j) : x;
+        const D = T?.integrations ?? {}, O = D[y], $ = typeof x == "function" ? x(O) : x;
         return {
           ...T ?? {},
           integrations: {
-            ...O,
-            [y]: N
+            ...D,
+            [y]: $
           }
         };
       });
@@ -1464,21 +1464,21 @@ function mn({
     [v]
   ), S = I.useCallback(
     (y, x, T) => {
-      A(y, (O) => ({
-        ...O ?? {},
+      j(y, (D) => ({
+        ...D ?? {},
         [x]: T
       }));
     },
-    [A]
+    [j]
   ), C = I.useCallback(
     (y) => {
       v((x) => {
         if (!x?.integrations || !x.integrations[y])
           return x;
-        const { [y]: T, ...O } = x.integrations;
+        const { [y]: T, ...D } = x.integrations;
         return {
           ...x,
-          integrations: Object.keys(O).length > 0 ? O : void 0
+          integrations: Object.keys(D).length > 0 ? D : void 0
         };
       });
     },
@@ -1491,7 +1491,7 @@ function mn({
   ), R = I.useCallback(
     (y, x) => {
       const T = x ?? r;
-      v((O) => Ha(O, y, T));
+      v((D) => Ha(D, y, T));
     },
     [v, r]
   ), E = I.useCallback(
@@ -1502,7 +1502,7 @@ function mn({
       payload: i,
       setPayload: v,
       setPageOptionValue: b,
-      setIntegrationPayload: A,
+      setIntegrationPayload: j,
       setIntegrationPayloadValue: S,
       removeIntegrationPayload: C,
       updateIntegrationByDialogPath: k,
@@ -1513,7 +1513,7 @@ function mn({
       i,
       v,
       b,
-      A,
+      j,
       S,
       C,
       k,
@@ -1575,7 +1575,7 @@ function Oe({ children: e, title: t, className: n = "", controls: r, origin: i =
   const { scaleValue: o, hideUI: s } = se(Ee), c = me(null), [d, l] = V(0), [p, u] = V(0);
   we(() => {
     if (c.current) {
-      const A = () => {
+      const j = () => {
         const C = c.current;
         if (C) {
           const k = C.style.transform;
@@ -1584,8 +1584,8 @@ function Oe({ children: e, title: t, className: n = "", controls: r, origin: i =
           C.style.transform = k, l(R), u(E);
         }
       };
-      A();
-      const S = new ResizeObserver(A);
+      j();
+      const S = new ResizeObserver(j);
       return S.observe(c.current), () => {
         S.disconnect();
       };
@@ -1648,16 +1648,16 @@ function tr({
   hideUI: c,
   preview: d = "single_page"
 }) {
-  const l = rt(), p = c ?? l, [u, m] = V(n), [g, h] = V("none"), v = me(null), b = me(null), [A, S] = V(!1), [C, k] = V(0), [R, E] = V(!0), _ = (j) => {
+  const l = rt(), p = c ?? l, [u, m] = V(n), [g, h] = V("none"), v = me(null), b = me(null), [j, S] = V(!1), [C, k] = V(0), [R, E] = V(!0), _ = (O) => {
     if (!v.current || !b.current) return u;
-    const N = v.current.getBoundingClientRect(), G = b.current.querySelector("[data-section-content]");
+    const $ = v.current.getBoundingClientRect(), G = b.current.querySelector("[data-section-content]");
     if (!G) return u;
     let P = Number.parseInt(G.getAttribute("data-natural-width") || "0");
-    const D = Number.parseInt(G.getAttribute("data-natural-height") || "0");
-    if (P === 0 || D === 0) return u;
+    const w = Number.parseInt(G.getAttribute("data-natural-height") || "0");
+    if (P === 0 || w === 0) return u;
     d === "two_pages" && (P = P * 2);
-    const z = N.width - 32, $ = screen.height - 120, H = z / P * 100, L = $ / D * 100;
-    switch (j) {
+    const z = $.width - 32, A = screen.height - 120, H = z / P * 100, L = A / w * 100;
+    switch (O) {
       case "width":
         return Math.min(Math.max(H, r), i);
       case "height":
@@ -1667,58 +1667,58 @@ function tr({
       default:
         return u;
     }
-  }, y = (j) => {
-    if (h(j), j !== "none") {
-      const N = _(j);
-      m(N);
+  }, y = (O) => {
+    if (h(O), O !== "none") {
+      const $ = _(O);
+      m($);
     }
   }, x = () => {
-    const j = Math.min(u + 25, i);
-    m(j), h("none");
+    const O = Math.min(u + 25, i);
+    m(O), h("none");
   }, T = () => {
-    const j = Math.max(u - 25, r);
-    m(j), h("none");
+    const O = Math.max(u - 25, r);
+    m(O), h("none");
   };
   we(() => {
-    const j = () => {
+    const O = () => {
       if (!v.current || !b.current) return;
       const P = v.current.getBoundingClientRect().width;
-      if (!A) {
-        const D = b.current.querySelector("[data-section-content]");
-        if (D) {
-          const z = Number.parseInt(D.getAttribute("data-natural-width") || "0");
+      if (!j) {
+        const w = b.current.querySelector("[data-section-content]");
+        if (w) {
+          const z = Number.parseInt(w.getAttribute("data-natural-width") || "0");
           if (z > 0) {
             if (z > P - 48) {
-              const $ = _("both");
-              h("both"), m($);
+              const A = _("both");
+              h("both"), m(A);
             }
             S(!0), k(P), E(!1);
             return;
           }
         }
         if (R) {
-          setTimeout(j, 50);
+          setTimeout(O, 50);
           return;
         }
       }
       E(!1);
-    }, N = () => {
+    }, $ = () => {
       if (!v.current || R) return;
       const P = v.current.getBoundingClientRect().width;
       if (Math.abs(P - C) > 10) {
         if (g !== "none") {
-          const D = _(g);
-          m(D);
+          const w = _(g);
+          m(w);
         }
         k(P);
       }
     };
-    return j(), window.addEventListener("resize", N), () => {
-      window.removeEventListener("resize", N);
+    return O(), window.addEventListener("resize", $), () => {
+      window.removeEventListener("resize", $);
     };
-  }, [g, r, i, A, C, R]);
-  const O = u / 100;
-  return p ? /* @__PURE__ */ a(Ee.Provider, { value: { zoom: 100, scaleValue: 1, hideUI: !0 }, children: /* @__PURE__ */ a("div", { className: t, children: e }) }) : /* @__PURE__ */ a(Ee.Provider, { value: { zoom: u, scaleValue: O, hideUI: !1 }, children: /* @__PURE__ */ f("div", { ref: v, className: `flex flex-col min-h-0 ${t}`, children: [
+  }, [g, r, i, j, C, R]);
+  const D = u / 100;
+  return p ? /* @__PURE__ */ a(Ee.Provider, { value: { zoom: 100, scaleValue: 1, hideUI: !0 }, children: /* @__PURE__ */ a("div", { className: t, children: e }) }) : /* @__PURE__ */ a(Ee.Provider, { value: { zoom: u, scaleValue: D, hideUI: !1 }, children: /* @__PURE__ */ f("div", { ref: v, className: `flex flex-col min-h-0 ${t}`, children: [
     /* @__PURE__ */ f("div", { "data-uhuu-editor": !0, className: "fixed right-4 bottom-4 z-50 flex items-center gap-1.5 px-2.5 py-1.5 bg-white/90 backdrop-blur-md border border-gray-200/60 rounded-lg shadow-sm", children: [
       s,
       /* @__PURE__ */ a("div", { className: "h-4 w-px bg-gray-200 mx-0.5" }),
@@ -1763,14 +1763,14 @@ function tr({
             }
           ),
           /* @__PURE__ */ a(it, { className: "my-1.5" }),
-          /* @__PURE__ */ f("div", { className: "flex items-center justify-center gap-2 px-3 py-2.5", onClick: (j) => j.stopPropagation(), children: [
+          /* @__PURE__ */ f("div", { className: "flex items-center justify-center gap-2 px-3 py-2.5", onClick: (O) => O.stopPropagation(), children: [
             /* @__PURE__ */ a(
               Y,
               {
                 variant: "ghost",
                 size: "sm",
-                onClick: (j) => {
-                  j.stopPropagation(), T();
+                onClick: (O) => {
+                  O.stopPropagation(), T();
                 },
                 disabled: u <= r,
                 className: "h-8 w-8 p-0 hover:bg-gray-100 disabled:opacity-40",
@@ -1784,14 +1784,14 @@ function tr({
                 {
                   type: "number",
                   value: Math.round(u),
-                  onChange: (j) => {
-                    const N = Number.parseInt(j.target.value);
-                    if (!isNaN(N)) {
-                      const G = Math.min(Math.max(N, r), i);
+                  onChange: (O) => {
+                    const $ = Number.parseInt(O.target.value);
+                    if (!isNaN($)) {
+                      const G = Math.min(Math.max($, r), i);
                       m(G), h("none");
                     }
                   },
-                  onFocus: (j) => j.target.select(),
+                  onFocus: (O) => O.target.select(),
                   className: "w-20 pr-6 text-center text-sm text-gray-700 bg-white border border-gray-300 rounded px-2 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all",
                   min: r,
                   max: i
@@ -1804,8 +1804,8 @@ function tr({
               {
                 variant: "ghost",
                 size: "sm",
-                onClick: (j) => {
-                  j.stopPropagation(), x();
+                onClick: (O) => {
+                  O.stopPropagation(), x();
                 },
                 disabled: u >= i,
                 className: "h-8 w-8 p-0 hover:bg-gray-100 disabled:opacity-40",
@@ -1915,13 +1915,13 @@ function ut(e) {
     thumbnailHeight: o
   } = e, s = r.width || 210, c = r.height || 297, d = s / c, l = i, p = o ?? Math.round(l / d), u = s * 3.779527559, m = c * 3.779527559;
   return (g, h, v) => {
-    const b = g.strictPosition, A = b === "start" || b === "end";
+    const b = g.strictPosition, j = b === "start" || b === "end";
     if (g.kind === "group") {
       const S = g.firstPageId, C = g.firstPageComponentKey ?? S, k = Ae(n, { id: S, componentKey: C }), R = g.firstPageComponent || (C ? t[C] : null), E = n?.integrations?.[g.id];
       return /* @__PURE__ */ f(
         "div",
         {
-          className: `relative bg-white border-2 rounded-md overflow-hidden transition-all ${v ? "border-blue-400 shadow-2xl scale-105" : A ? "border-gray-300 bg-gray-50" : "border-blue-300 hover:border-blue-400 hover:shadow-lg"}`,
+          className: `relative bg-white border-2 rounded-md overflow-hidden transition-all ${v ? "border-blue-400 shadow-2xl scale-105" : j ? "border-gray-300 bg-gray-50" : "border-blue-300 hover:border-blue-400 hover:shadow-lg"}`,
           style: { width: `${l}px`, height: `${p}px` },
           children: [
             R ? /* @__PURE__ */ a(
@@ -1962,7 +1962,7 @@ function ut(e) {
               g.pageCount,
               " pages)"
             ] }),
-            A && /* @__PURE__ */ f("div", { className: "absolute top-2 left-2 px-2 py-1 bg-gray-600/80 backdrop-blur-sm text-white text-xs font-medium rounded shadow-lg pointer-events-none flex items-center gap-1", children: [
+            j && /* @__PURE__ */ f("div", { className: "absolute top-2 left-2 px-2 py-1 bg-gray-600/80 backdrop-blur-sm text-white text-xs font-medium rounded shadow-lg pointer-events-none flex items-center gap-1", children: [
               /* @__PURE__ */ a(et, { className: "size-3" }),
               /* @__PURE__ */ a("span", { children: b === "start" ? "Start" : "End" })
             ] }),
@@ -1982,7 +1982,7 @@ function ut(e) {
       return /* @__PURE__ */ f(
         "div",
         {
-          className: `relative bg-white border-2 rounded-md overflow-hidden transition-all ${v ? "border-blue-400 shadow-2xl scale-105" : A ? "border-gray-300 bg-gray-50" : "border-gray-200 hover:border-blue-300 hover:shadow-lg"}`,
+          className: `relative bg-white border-2 rounded-md overflow-hidden transition-all ${v ? "border-blue-400 shadow-2xl scale-105" : j ? "border-gray-300 bg-gray-50" : "border-gray-200 hover:border-blue-300 hover:shadow-lg"}`,
           style: { width: `${l}px`, height: `${p}px` },
           children: [
             R ? /* @__PURE__ */ a(
@@ -2018,7 +2018,7 @@ function ut(e) {
               ] }),
               /* @__PURE__ */ a("div", { className: "text-xs text-gray-500 mt-1", children: S || "No preview" })
             ] }) }),
-            A && /* @__PURE__ */ f("div", { className: "absolute top-2 left-2 px-2 py-1 bg-gray-600/80 backdrop-blur-sm text-white text-xs font-medium rounded shadow-lg pointer-events-none flex items-center gap-1", children: [
+            j && /* @__PURE__ */ f("div", { className: "absolute top-2 left-2 px-2 py-1 bg-gray-600/80 backdrop-blur-sm text-white text-xs font-medium rounded shadow-lg pointer-events-none flex items-center gap-1", children: [
               /* @__PURE__ */ a(et, { className: "size-3" }),
               /* @__PURE__ */ a("span", { children: b === "start" ? "Start" : "End" })
             ] }),
@@ -2054,7 +2054,7 @@ function ar({
     setup: s,
     thumbnailWidth: m,
     thumbnailHeight: g
-  }) : null, [i, o, s, m, g]), v = (b, A) => {
+  }) : null, [i, o, s, m, g]), v = (b, j) => {
     if (b.kind === "group") {
       const k = b, R = k.pageComponentKeys?.[0];
       return {
@@ -2073,7 +2073,7 @@ function ar({
       pageId: S.id,
       pageComponentKey: C,
       pageLabel: S.label,
-      pageNum: A + 1
+      pageNum: j + 1
     };
   };
   return /* @__PURE__ */ a(fn, { open: e, onOpenChange: t, children: /* @__PURE__ */ f(ot, { side: "bottom", className: "h-[90vh] p-0 gap-0 w-full max-w-none rounded-t-md", "data-uhuu-editor": !0, children: [
@@ -2088,8 +2088,8 @@ function ar({
       /* @__PURE__ */ a("div", { className: "w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ a(he, { className: "w-8 h-8 text-gray-400" }) }),
       /* @__PURE__ */ a("div", { className: "text-lg font-medium text-gray-900 mb-2", children: "No items available" }),
       /* @__PURE__ */ a("p", { className: "text-gray-500 mb-4", children: "All pages and groups have been added." })
-    ] }) : /* @__PURE__ */ a("div", { className: c, children: n.map((b, A) => {
-      const S = b.kind === "group", C = b.id, k = S ? b.label || `Group ${A + 1}` : b.label || `Page ${b.id}`, R = S ? (b.pageComponentKeys ?? []).length : 1;
+    ] }) : /* @__PURE__ */ a("div", { className: c, children: n.map((b, j) => {
+      const S = b.kind === "group", C = b.id, k = S ? b.label || `Group ${j + 1}` : b.label || `Page ${b.id}`, R = S ? (b.pageComponentKeys ?? []).length : 1;
       return /* @__PURE__ */ f(
         "div",
         {
@@ -2097,7 +2097,7 @@ function ar({
           className: !!h ? "relative w-full h-[280px] cursor-pointer rounded-md overflow-hidden transition-all group" : "relative w-full h-[280px] cursor-pointer bg-white border-2 rounded-md overflow-hidden transition-all border-gray-200 hover:border-blue-400 hover:shadow-lg group",
           children: [
             /* @__PURE__ */ f("div", { className: "w-full h-full relative overflow-hidden", children: [
-              h && /* @__PURE__ */ a("div", { className: "absolute inset-0 flex items-center pointer-events-none", children: h(v(b, A), A, !1) }),
+              h && /* @__PURE__ */ a("div", { className: "absolute inset-0 flex items-center pointer-events-none", children: h(v(b, j), j, !1) }),
               !h && /* @__PURE__ */ a(ce, { children: S ? /* @__PURE__ */ f("div", { className: "p-4", children: [
                 /* @__PURE__ */ a("div", { className: "w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3", children: /* @__PURE__ */ a(he, { className: "w-8 h-8 text-blue-600" }) }),
                 /* @__PURE__ */ a("div", { className: "text-sm font-medium text-gray-700", children: k }),
@@ -2192,7 +2192,7 @@ function sr({
   we(() => {
     h(e);
   }, [e]);
-  const [v, b] = V(null), A = Qn(
+  const [v, b] = V(null), j = Qn(
     ht(ea),
     ht(ta, {
       coordinateGetter: ia
@@ -2206,18 +2206,18 @@ function sr({
       b(null);
       return;
     }
-    const x = g.find((j) => i(j) === _.id), T = g.findIndex((j) => i(j) === _.id), O = g.findIndex((j) => i(j) === y.id);
+    const x = g.find((O) => i(O) === _.id), T = g.findIndex((O) => i(O) === _.id), D = g.findIndex((O) => i(O) === y.id);
     if (x && u && u(x)) {
       b(null);
       return;
     }
-    if (m && !m(x, O, g)) {
+    if (m && !m(x, D, g)) {
       b(null);
       return;
     }
-    if (T !== -1 && O !== -1) {
-      const j = la(g, T, O);
-      h(j), t(j);
+    if (T !== -1 && D !== -1) {
+      const O = la(g, T, D);
+      h(O), t(O);
     }
     b(null);
   }, k = g.find((E) => i(E) === v), R = k ? g.findIndex((E) => i(E) === v) : -1;
@@ -2226,7 +2226,7 @@ function sr({
     g.length === 0 && d ? d() : /* @__PURE__ */ a("div", { className: "mb-6", children: /* @__PURE__ */ f(
       na,
       {
-        sensors: A,
+        sensors: j,
         collisionDetection: aa,
         onDragStart: S,
         onDragEnd: C,
@@ -2307,7 +2307,7 @@ function lr({
         ),
         /* @__PURE__ */ a("div", { className: "absolute top-2 left-2 z-20", children: /* @__PURE__ */ a(Ie, { variant: "secondary", className: `text-xs min-w-[24px] h-6 font-medium bg-white/95 backdrop-blur-sm flex items-center justify-center shadow-sm border border-gray-200 ${s ? "opacity-75" : ""}`, children: s ? /* @__PURE__ */ a(et, { className: "size-3 text-gray-500" }) : /* @__PURE__ */ f(ce, { children: [
           /* @__PURE__ */ a("span", { className: "group-hover/drag-item:hidden", children: t + 1 }),
-          /* @__PURE__ */ a(Bn, { className: "size-4 text-gray-400 hidden group-hover/drag-item:block" })
+          /* @__PURE__ */ a(qn, { className: "size-4 text-gray-400 hidden group-hover/drag-item:block" })
         ] }) }) })
       ]
     }
@@ -2334,28 +2334,28 @@ function cr({
     m(y), h(!0);
   }, b = () => {
     r(u), h(!1), t(!1);
-  }, A = () => {
+  }, j = () => {
     m(n), h(!1), t(!1);
   }, S = I.useMemo(() => (!i || typeof i != "function") && o ? ut({ pageComponents: o, payload: s, setup: c }) : null, [i, o, s, c]), C = (y, x, T) => i && typeof i == "function" ? i(y, x, T) : S ? S(y, x, T) : /* @__PURE__ */ a(lr, { page: y, index: x, isDragging: T }), k = () => /* @__PURE__ */ f("div", { className: "text-center py-20", children: [
-    /* @__PURE__ */ a("div", { className: "w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mx-auto mb-3", children: /* @__PURE__ */ a(qn, { className: "w-6 h-6 text-gray-400" }) }),
+    /* @__PURE__ */ a("div", { className: "w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mx-auto mb-3", children: /* @__PURE__ */ a(Bn, { className: "w-6 h-6 text-gray-400" }) }),
     /* @__PURE__ */ a("div", { className: "text-base font-medium text-gray-900 mb-1", children: "No pages found" }),
     /* @__PURE__ */ a("p", { className: "text-sm text-gray-500", children: "Add some pages to get started with reordering." })
   ] }), R = (y) => y.id, E = I.useCallback((y) => {
     const x = y.strictPosition;
     return x === "start" || x === "end";
   }, []), _ = I.useCallback((y, x, T) => {
-    const O = y.strictPosition;
-    if (O === "start" || O === "end")
+    const D = y.strictPosition;
+    if (D === "start" || D === "end")
       return !1;
-    let j = -1, N = T.length;
+    let O = -1, $ = T.length;
     for (let G = 0; G < T.length; G++) {
       const P = T[G].strictPosition;
-      P === "start" ? j = G : P === "end" && N === T.length && (N = G);
+      P === "start" ? O = G : P === "end" && $ === T.length && ($ = G);
     }
-    return !(x <= j || x >= N);
+    return !(x <= O || x >= $);
   }, []);
   return /* @__PURE__ */ a(fn, { open: e, onOpenChange: (y) => {
-    y || A();
+    y || j();
   }, children: /* @__PURE__ */ f(
     ot,
     {
@@ -2399,7 +2399,7 @@ function cr({
             Y,
             {
               variant: "outline",
-              onClick: A,
+              onClick: j,
               children: "Cancel"
             }
           ),
@@ -2469,7 +2469,7 @@ const vn = I.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ f(
 ));
 vn.displayName = Pe.Root.displayName;
 const ve = I.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ a(
-  qt.Root,
+  Bt.Root,
   {
     ref: n,
     className: W(
@@ -2479,7 +2479,7 @@ const ve = I.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ a(
     ...t
   }
 ));
-ve.displayName = qt.Root.displayName;
+ve.displayName = Bt.Root.displayName;
 function dr({
   pageOptions: e,
   targetItem: t,
@@ -2784,28 +2784,28 @@ function mr(e) {
     resolveNewItem: l,
     notifyError: p,
     pageFilter: u
-  } = e, [m, g] = V(t), [h, v] = V(!1), b = se(Se), A = ge((P) => {
+  } = e, [m, g] = V(t), [h, v] = V(!1), b = se(Se), j = ge((P) => {
     g(P);
-    const D = sn(P, d);
-    b?.mergePageEditorState && b.mergePageEditorState(P, d), i?.(D), r?.(P, D);
+    const w = sn(P, d);
+    b?.mergePageEditorState && b.mergePageEditorState(P, d), i?.(w), r?.(P, w);
   }, [r, i, d, b]), S = ne(() => {
     const P = /* @__PURE__ */ new Map();
-    return m.forEach((D) => {
-      const z = D.templateId ?? D.id;
-      P.set(z, (P.get(z) ?? 0) + 1), ee(D) && D.pages?.forEach(($) => {
-        const H = $.templateId ?? $.id;
+    return m.forEach((w) => {
+      const z = w.templateId ?? w.id;
+      P.set(z, (P.get(z) ?? 0) + 1), ee(w) && w.pages?.forEach((A) => {
+        const H = A.templateId ?? A.id;
         P.set(H, (P.get(H) ?? 0) + 1);
       });
     }), P;
   }, [m]), C = ne(() => n.filter((P) => {
     if (P.kind === "page") {
-      const B = P, X = B.templateId ?? B.id, oe = S.get(X) ?? 0, K = B.repeatable ?? !1, F = B.maxInstances ?? null;
+      const q = P, X = q.templateId ?? q.id, oe = S.get(X) ?? 0, K = q.repeatable ?? !1, F = q.maxInstances ?? null;
       return !(!K && oe > 0 || F !== null && oe >= F);
     }
-    const D = P, z = D.templateId ?? D.id, $ = S.get(z) ?? 0, H = D.repeatable ?? !1, L = D.maxInstances ?? null;
-    return !(!H && $ > 0 || H && L !== null && $ >= L);
+    const w = P, z = w.templateId ?? w.id, A = S.get(z) ?? 0, H = w.repeatable ?? !1, L = w.maxInstances ?? null;
+    return !(!H && A > 0 || H && L !== null && A >= L);
   }), [n, S]), k = ne(() => xe(m), [m]), R = ge(async (P) => {
-    const D = (K) => K ? typeof K == "string" ? K : K.mode ?? "optional" : "none", $ = ((K) => {
+    const w = (K) => K ? typeof K == "string" ? K : K.mode ?? "optional" : "none", A = ((K) => {
       if (K.kind === "page") {
         const J = K, fe = J.templateId ?? J.id, le = J.componentKey ?? J.id;
         return ln(fe, le, {
@@ -2825,25 +2825,25 @@ function mr(e) {
         integration: F.integration
       });
     })(P), H = typeof window < "u" && window.$uhuu?.debug;
-    let L, B = $;
+    let L, q = A;
     if (l)
-      B = await l($);
+      q = await l(A);
     else {
-      const K = D($.integration);
+      const K = w(A.integration);
       let F = !1;
       if (H && console.debug("[usePageGroups] integration check", {
-        id: $.id,
-        kind: $.kind,
-        integration: $.integration,
+        id: A.id,
+        kind: A.kind,
+        integration: A.integration,
         mode: K
       }), K !== "none" && typeof window < "u") {
         const te = window.$uhuu?.requestIntegration?.bind(window.$uhuu);
-        te ? (H && console.debug("[usePageGroups] requestIntegration start", { id: $.id, mode: K }), L = await te({ item: $, mode: K }), H && console.debug("[usePageGroups] requestIntegration done", { id: $.id, hasData: L != null }), L == null && K === "required" && (F = !0)) : K === "required" && (console.warn("[usePageGroups] Integration data required but $uhuu.requestIntegration is not available."), F = !0);
+        te ? (H && console.debug("[usePageGroups] requestIntegration start", { id: A.id, mode: K }), L = await te({ item: A, mode: K }), H && console.debug("[usePageGroups] requestIntegration done", { id: A.id, hasData: L != null }), L == null && K === "required" && (F = !0)) : K === "required" && (console.warn("[usePageGroups] Integration data required but $uhuu.requestIntegration is not available."), F = !0);
       }
       if (F) return;
     }
-    if (B === null) return;
-    const X = B ?? $;
+    if (q === null) return;
+    const X = q ?? A;
     if (L !== void 0 && b?.setIntegrationPayload) {
       const K = X.id;
       H && console.debug("[usePageGroups] storing integration data", {
@@ -2852,7 +2852,7 @@ function mr(e) {
         dataKeys: L ? Object.keys(L) : []
       }), b.setIntegrationPayload(K, L);
     }
-    A(((K, F) => {
+    j(((K, F) => {
       const te = F.strictPosition;
       if (te === "start")
         return [F, ...K];
@@ -2864,71 +2864,71 @@ function mr(e) {
         Q === "start" ? re.push(le) : Q === "end" ? fe.push(le) : J.push(le);
       }), [...re, ...J, F, ...fe];
     })(m, X));
-  }, [m, A, l, b]), E = ge((P) => {
-    const D = ($) => {
-      p ? p($) : alert($);
-    }, z = m.find(($) => $.id === P);
+  }, [m, j, l, b]), E = ge((P) => {
+    const w = (A) => {
+      p ? p(A) : alert(A);
+    }, z = m.find((A) => A.id === P);
     if (z) {
       if (xe(m) <= 1) {
-        D("Cannot remove the last page. At least one page is required.");
+        w("Cannot remove the last page. At least one page is required.");
         return;
       }
       if (b?.removeIntegrationPayload) {
         const H = z.id;
         b.payload?.integrations?.[H] !== void 0 && b.removeIntegrationPayload(H);
       }
-      A(m.filter((H) => H.id !== P));
+      j(m.filter((H) => H.id !== P));
       return;
     }
-    for (const $ of m)
-      if (ee($) && $.pages.some((H) => H.id === P)) {
+    for (const A of m)
+      if (ee(A) && A.pages.some((H) => H.id === P)) {
         if (xe(m) <= 1) {
-          D("Cannot remove the last page. At least one page is required.");
+          w("Cannot remove the last page. At least one page is required.");
           return;
         }
-        if ($.pages.length === 1) {
+        if (A.pages.length === 1) {
           if (b?.removeIntegrationPayload) {
-            const L = $.id;
+            const L = A.id;
             b.payload?.integrations?.[L] !== void 0 && b.removeIntegrationPayload(L);
           }
-          A(m.filter((L) => L.id !== $.id));
+          j(m.filter((L) => L.id !== A.id));
         } else
-          A(m.map((L) => L.id === $.id && ee(L) ? {
+          j(m.map((L) => L.id === A.id && ee(L) ? {
             ...L,
-            pages: L.pages.filter((B) => B.id !== P)
+            pages: L.pages.filter((q) => q.id !== P)
           } : L));
         return;
       }
-  }, [m, p, A, b]), _ = ge((P, D) => {
-    A(m.map((z) => z.id === P ? ee(z) ? {
+  }, [m, p, j, b]), _ = ge((P, w) => {
+    j(m.map((z) => z.id === P ? ee(z) ? {
       ...z,
-      ...D
-    } : { ...z, ...D } : z));
-  }, [m, A]), y = ge((P) => {
-    A(P);
-  }, [A]), x = ne(() => {
+      ...w
+    } : { ...z, ...w } : z));
+  }, [m, j]), y = ge((P) => {
+    j(P);
+  }, [j]), x = ne(() => {
     const P = za(m);
     return u ? Fa(P, u) : P;
   }, [m, u]), T = ge((P) => {
-    const D = [];
+    const w = [];
     return x.forEach((z) => {
       ee(z) ? (z.pages ?? []).forEach((H) => {
-        D.push(P(H, z));
-      }) : D.push(P(z, z));
-    }), D;
-  }, [x]), O = ne(
+        w.push(P(H, z));
+      }) : w.push(P(z, z));
+    }), w;
+  }, [x]), D = ne(
     () => La(x),
     [x]
-  ), j = ge((P) => {
-    const D = Wa(P, m);
-    A((($) => {
-      const H = [], L = [], B = [];
-      return $.forEach((X) => {
+  ), O = ge((P) => {
+    const w = Wa(P, m);
+    j(((A) => {
+      const H = [], L = [], q = [];
+      return A.forEach((X) => {
         const oe = X.strictPosition;
-        oe === "start" ? H.push(X) : oe === "end" ? B.push(X) : L.push(X);
-      }), [...H, ...L, ...B];
-    })(D));
-  }, [m, A]), N = ge(() => {
+        oe === "start" ? H.push(X) : oe === "end" ? q.push(X) : L.push(X);
+      }), [...H, ...L, ...q];
+    })(w));
+  }, [m, j]), $ = ge(() => {
     v(!0);
   }, []), G = ne(() => {
     if (o)
@@ -2945,10 +2945,10 @@ function mr(e) {
     reorderItems: y,
     addDialogOpen: h,
     setAddDialogOpen: v,
-    openAddDialog: N,
+    openAddDialog: $,
     renderItems: T,
-    itemsForReorder: O,
-    handleReorder: j,
+    itemsForReorder: D,
+    handleReorder: O,
     defaultRenderThumbnail: G
   };
 }
@@ -3253,15 +3253,15 @@ function zt({
   stateKey: h = ye,
   onItemsChange: v,
   onStateChange: b,
-  resolveNewItem: A,
+  resolveNewItem: j,
   pageFilter: S,
   printConfigs: C
 }) {
-  const k = i ?? { width: 210, height: 297 }, { interactive: R, setInteractive: E, enableDevTools: _ } = at(), y = rt(), [x, T] = V(null), [O, j] = V(null), [N, G] = V(void 0), P = x ?? S, D = ne(() => O ? { ...k, ...O } : k, [k, O]), z = se(Se), $ = z?.payload ?? r, [H, L] = V(!1), B = D?.preview ?? "single_page", X = ne(
-    () => B === "two_pages" ? { ...D, preview: "single_page" } : D,
-    [B, D]
-  ), oe = ne(() => st(e), [e]), K = ne(() => o?.length ? o.map((w) => "getValue" in w ? w : z?.setPageOptionValue ? Qa(
-    w,
+  const k = i ?? { width: 210, height: 297 }, { interactive: R, setInteractive: E, enableDevTools: _ } = at(), y = rt(), [x, T] = V(null), [D, O] = V(null), [$, G] = V(void 0), P = x ?? S, w = ne(() => D ? { ...k, ...D } : k, [k, D]), z = se(Se), A = z?.payload ?? r, [H, L] = V(!1), q = w?.preview ?? "single_page", X = ne(
+    () => q === "two_pages" ? { ...w, preview: "single_page" } : w,
+    [q, w]
+  ), oe = ne(() => st(e), [e]), K = ne(() => o?.length ? o.map((N) => "getValue" in N ? N : z?.setPageOptionValue ? Qa(
+    N,
     z.payload,
     z.setPageOptionValue
   ) : ((Nr() || _) && console.warn(
@@ -3284,75 +3284,75 @@ function zt({
     initialItems: oe,
     availableItems: t,
     pageComponents: n,
-    payload: $,
+    payload: A,
     setup: k,
     stateKey: h,
     onItemsChange: v,
     onStateChange: b,
-    resolveNewItem: A,
+    resolveNewItem: j,
     notifyError: s,
     pageFilter: P
   }), gt = I.useCallback(
-    (w, M, q) => {
+    (N, M, B) => {
       if (!M) return;
-      const U = w.applyPatch?.(q, M);
-      U && Q(M.id, U), w.onChange?.(M.id, q, {
+      const U = N.applyPatch?.(B, M);
+      U && Q(M.id, U), N.onChange?.(M.id, B, {
         item: M,
         updateItem: (ie) => Q(M.id, ie)
       });
     },
     [Q]
-  ), On = (w) => /* @__PURE__ */ f("div", { className: "absolute bottom-[10mm] left-[15mm] right-[15mm] text-[7pt] text-gray-600 flex items-center justify-between pointer-events-none", children: [
+  ), On = (N) => /* @__PURE__ */ f("div", { className: "absolute bottom-[10mm] left-[15mm] right-[15mm] text-[7pt] text-gray-600 flex items-center justify-between pointer-events-none", children: [
     /* @__PURE__ */ a("span", { children: "Page" }),
     /* @__PURE__ */ f("span", { children: [
-      w.pageNo,
+      N.pageNo,
       " / ",
-      w.total
+      N.total
     ] })
-  ] }), jn = (w, M, q) => d ? d({ pageNo: w, total: re, pageId: M, parent: q }) : On({ pageNo: w, total: re }), Re = (w, M) => {
+  ] }), jn = (N, M, B) => d ? d({ pageNo: N, total: re, pageId: M, parent: B }) : On({ pageNo: N, total: re }), Re = (N, M) => {
     if (l)
-      return l({ page: w, parent: M });
-    const q = w.componentKey ?? w.id, U = c ? c({ page: w, index: w.pageNum - 1 }) : null, ie = w.templateId ?? q, ue = n[q], De = z?.getPagePayload ? z.getPagePayload(w) : Ae($, { id: w.id, templateId: ie, componentKey: q }), En = gn(
-      $,
-      w,
+      return l({ page: N, parent: M });
+    const B = N.componentKey ?? N.id, U = c ? c(N) : null, ie = N.templateId ?? B, ue = n[B], De = z?.getPagePayload ? z.getPagePayload(N) : Ae(A, { id: N.id, templateId: ie, componentKey: B }), En = gn(
+      A,
+      N,
       M
     ), $n = hr({
-      payload: $,
-      page: w,
+      payload: A,
+      page: N,
       parentGroup: M,
       pagePayload: De
     });
     return /* @__PURE__ */ a(
       gr,
       {
-        pageId: w.id,
+        pageId: N.id,
         templateId: ie,
-        pageNo: w.pageNum,
+        pageNo: N.pageNum,
         component: ue,
-        payload: $,
+        payload: A,
         pagePayload: De,
         integration: En,
-        page: w,
+        page: N,
         parentGroup: M,
-        componentKey: q,
+        componentKey: B,
         setup: X,
         reference: U,
-        overlay: ({ pageNo: Mn }) => jn(Mn, w.id, M),
-        className: w.className,
+        overlay: ({ pageNo: Mn }) => jn(Mn, N.id, M),
+        className: N.className,
         dataBinding: $n
       }
     );
-  }, Le = (w, M) => {
-    const q = !!M && ee(M), U = q && M.pages[0]?.id === w.id;
-    return q && !U ? /* @__PURE__ */ a("div", { className: "pl-0 pr-3 py-1.5 flex justify-between items-center h-10", children: /* @__PURE__ */ f("div", { className: "flex items-center gap-2", children: [
-      /* @__PURE__ */ a("span", { className: "page-number", children: w.pageNum }),
-      w.label && /* @__PURE__ */ a("span", { className: "text-xs text-gray-500", children: w.label }),
+  }, Le = (N, M) => {
+    const B = !!M && ee(M), U = B && M.pages[0]?.id === N.id;
+    return B && !U ? /* @__PURE__ */ a("div", { className: "pl-0 pr-3 py-1.5 flex justify-between items-center h-10", children: /* @__PURE__ */ f("div", { className: "flex items-center gap-2", children: [
+      /* @__PURE__ */ a("span", { className: "page-number", children: N.pageNum }),
+      N.label && /* @__PURE__ */ a("span", { className: "text-xs text-gray-500", children: N.label }),
       /* @__PURE__ */ a("span", { className: "text-xs text-gray-400", children: "·" })
     ] }) }) : /* @__PURE__ */ f("div", { className: "pl-0 py-1.5 flex justify-start gap-2 items-center", children: [
       /* @__PURE__ */ f("div", { className: "flex items-center gap-2", children: [
-        /* @__PURE__ */ a("span", { className: "page-number", children: w.pageNum }),
-        w.label && /* @__PURE__ */ a("span", { className: "text-xs text-gray-500", children: w.label }),
-        q && /* @__PURE__ */ a(
+        /* @__PURE__ */ a("span", { className: "page-number", children: N.pageNum }),
+        N.label && /* @__PURE__ */ a("span", { className: "text-xs text-gray-500", children: N.label }),
+        B && /* @__PURE__ */ a(
           Ie,
           {
             variant: "outline",
@@ -3374,22 +3374,22 @@ function zt({
         xn,
         {
           pageOptions: K,
-          targetItem: q ? M : w,
+          targetItem: B ? M : N,
           onChange: gt,
           onRemove: le,
           showRemove: re > 1,
-          title: q ? "Group options" : "Page options",
-          removeLabel: q ? "Remove Group" : "Remove"
+          title: B ? "Group options" : "Page options",
+          removeLabel: B ? "Remove Group" : "Remove"
         }
       ) })
     ] });
   }, mt = ne(() => {
-    if (B !== "two_pages") return [];
-    const w = [];
+    if (q !== "two_pages") return [];
+    const N = [];
     for (const M of te) {
-      const q = ee(M) ? M.pages ?? [] : [M];
-      for (const U of q)
-        U?.id && w.push({
+      const B = ee(M) ? M.pages ?? [] : [M];
+      for (const U of B)
+        U?.id && N.push({
           ...U,
           kind: "page",
           id: U.id,
@@ -3397,14 +3397,14 @@ function zt({
           parentGroup: ee(M) ? M : void 0
         });
     }
-    return w.sort((M, q) => (M.pageNum ?? 0) - (q.pageNum ?? 0));
-  }, [B, te]), An = ne(() => {
-    if (B !== "two_pages") return [];
-    const w = mt;
-    if (!w.length) return [];
-    const M = [{ left: void 0, right: w[0], layout: "right" }];
-    for (let q = 1; q < w.length; q += 2) {
-      const U = w[q], ie = w[q + 1];
+    return N.sort((M, B) => (M.pageNum ?? 0) - (B.pageNum ?? 0));
+  }, [q, te]), An = ne(() => {
+    if (q !== "two_pages") return [];
+    const N = mt;
+    if (!N.length) return [];
+    const M = [{ left: void 0, right: N[0], layout: "right" }];
+    for (let B = 1; B < N.length; B += 2) {
+      const U = N[B], ie = N[B + 1];
       if (ie)
         M.push({ left: U, right: ie, layout: "spread" });
       else {
@@ -3417,7 +3417,7 @@ function zt({
       }
     }
     return M;
-  }, [B, mt]);
+  }, [q, mt]);
   return /* @__PURE__ */ f(ce, { children: [
     _ && !R && /* @__PURE__ */ f(
       Y,
@@ -3449,13 +3449,13 @@ function zt({
             wr,
             {
               modes: C,
-              selectedMode: N,
-              onModeChange: (w, M) => {
-                G(w), T(M.filter ?? null), j(M.pageFormat ?? null);
+              selectedMode: $,
+              onModeChange: (N, M) => {
+                G(N), T(M.filter ?? null), O(M.pageFormat ?? null);
               },
               interactive: R,
-              onInteractiveChange: (w) => {
-                E(w), w && j(null);
+              onInteractiveChange: (N) => {
+                E(N), N && O(null);
               }
             }
           ),
@@ -3491,49 +3491,49 @@ function zt({
           ] })
         ] }),
         onAddPage: ke,
-        preview: B,
-        children: B === "two_pages" ? An.map((w, M) => /* @__PURE__ */ f(er, { layout: w.layout, children: [
-          w.left && /* @__PURE__ */ a(
+        preview: q,
+        children: q === "two_pages" ? An.map((N, M) => /* @__PURE__ */ f(er, { layout: N.layout, children: [
+          N.left && /* @__PURE__ */ a(
             Oe,
             {
-              title: `Sheet ${w.left.pageNum}`,
-              controls: Le(w.left, w.left.parentGroup),
-              origin: w.left.pageNum % 2 === 0 ? "right" : "left",
-              children: Re(w.left, w.left.parentGroup)
+              title: `Sheet ${N.left.pageNum}`,
+              controls: Le(N.left, N.left.parentGroup),
+              origin: N.left.pageNum % 2 === 0 ? "right" : "left",
+              children: Re(N.left, N.left.parentGroup)
             },
-            w.left.id
+            N.left.id
           ),
-          w.right && /* @__PURE__ */ a(
+          N.right && /* @__PURE__ */ a(
             Oe,
             {
-              title: `Sheet ${w.right.pageNum}`,
-              controls: Le(w.right, w.right.parentGroup),
-              origin: w.right.pageNum % 2 === 0 ? "right" : "left",
-              children: Re(w.right, w.right.parentGroup)
+              title: `Sheet ${N.right.pageNum}`,
+              controls: Le(N.right, N.right.parentGroup),
+              origin: N.right.pageNum % 2 === 0 ? "right" : "left",
+              children: Re(N.right, N.right.parentGroup)
             },
-            w.right.id
+            N.right.id
           )
-        ] }, `pair-${M}`)) : te.map((w) => {
-          if (ee(w)) {
-            const q = w.pages ?? [];
+        ] }, `pair-${M}`)) : te.map((N) => {
+          if (ee(N)) {
+            const B = N.pages ?? [];
             return /* @__PURE__ */ a(
               ur,
               {
-                group: w,
-                pagesWithPageNum: q,
+                group: N,
+                pagesWithPageNum: B,
                 onRemove: le,
                 onLabelChange: (U, ie) => {
                   Q(U, { label: ie || void 0 });
                 },
                 totalItems: F.length,
-                renderPage: (U) => Re(U, w),
+                renderPage: (U) => Re(U, N),
                 pageOptions: K,
                 onPageOptionChange: (U, ie, ue) => gt(U, ie, ue)
               },
-              w.id
+              N.id
             );
           }
-          const M = w;
+          const M = N;
           return /* @__PURE__ */ a(
             Oe,
             {
@@ -3555,7 +3555,7 @@ function zt({
           availableItems: J,
           onSelectItem: fe,
           pageComponents: n,
-          payload: $,
+          payload: A,
           setup: k,
           gridColsClass: u,
           "data-uhuu-editor": !0
@@ -3567,11 +3567,11 @@ function zt({
           open: H,
           onOpenChange: L,
           pages: Rn,
-          onReorder: (w) => {
-            Dn(w), L(!1);
+          onReorder: (N) => {
+            Dn(N), L(!1);
           },
           pageComponents: n,
-          payload: $,
+          payload: A,
           setup: k,
           renderThumbnail: Tn,
           title: m,
@@ -3762,7 +3762,7 @@ function Or(e) {
     [s, d, l, c, t, n]
   );
 }
-const Br = Wt(({ children: e }, t) => {
+const qr = Wt(({ children: e }, t) => {
   const [n, r] = V(!1), i = me(null), o = me(null);
   if (typeof document > "u")
     return null;
@@ -3818,10 +3818,10 @@ const Br = Wt(({ children: e }, t) => {
 };
 export {
   Ur as Dynamic,
-  qr as Editable,
+  Br as Editable,
   Zr as EditorShell,
   Fr as ImageBlock,
-  Br as PagedPreview,
+  qr as PagedPreview,
   Vr as Static
 };
 //# sourceMappingURL=uhuu-components.es.js.map
