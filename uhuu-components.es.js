@@ -567,14 +567,7 @@ function ka({
   enableDevTools: n = !1
 }) {
   const i = !!(typeof window < "u" && window?.$uhuu_renderer) ? !1 : t, [o, s] = V(i);
-  return /* @__PURE__ */ a(tn.Provider, { value: { interactive: o, setInteractive: s, enableDevTools: n }, children: /* @__PURE__ */ a(
-    "div",
-    {
-      "data-uhuu-interactive": o ? "" : void 0,
-      style: { width: "100%", height: "100%", display: "contents" },
-      children: e
-    }
-  ) });
+  return /* @__PURE__ */ a(tn.Provider, { value: { interactive: o, setInteractive: s, enableDevTools: n }, children: o ? /* @__PURE__ */ a("div", { "data-uhuu-interactive": "", style: { display: "contents" }, children: e }) : e });
 }
 function W(...e) {
   return Yn(Xn(e));
