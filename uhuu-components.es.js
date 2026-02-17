@@ -166,51 +166,51 @@ function Sa() {
   Tt = 1;
   var e = Zt(), t = ya(), n = Ca(), r = "Expected a function", i = Math.max, o = Math.min;
   function s(c, d, l) {
-    var f, u, g, m, C, p, w = 0, N = !1, S = !1, k = !0;
+    var f, u, g, m, C, p, w = 0, P = !1, S = !1, k = !0;
     if (typeof c != "function")
       throw new TypeError(r);
-    d = n(d) || 0, e(l) && (N = !!l.leading, S = "maxWait" in l, g = S ? i(n(l.maxWait) || 0, d) : g, k = "trailing" in l ? !!l.trailing : k);
-    function x(j) {
+    d = n(d) || 0, e(l) && (P = !!l.leading, S = "maxWait" in l, g = S ? i(n(l.maxWait) || 0, d) : g, k = "trailing" in l ? !!l.trailing : k);
+    function v(j) {
       var H = f, z = u;
       return f = u = void 0, w = j, m = c.apply(z, H), m;
     }
-    function T(j) {
-      return w = j, C = setTimeout(y, d), N ? x(j) : m;
+    function E(j) {
+      return w = j, C = setTimeout(y, d), P ? v(j) : m;
     }
-    function A(j) {
+    function D(j) {
       var H = j - p, z = j - w, b = d - H;
       return S ? o(b, g - z) : b;
     }
-    function E(j) {
+    function T(j) {
       var H = j - p, z = j - w;
       return p === void 0 || H >= d || H < 0 || S && z >= g;
     }
     function y() {
       var j = t();
-      if (E(j))
-        return v(j);
-      C = setTimeout(y, A(j));
+      if (T(j))
+        return x(j);
+      C = setTimeout(y, D(j));
     }
-    function v(j) {
-      return C = void 0, k && f ? x(j) : (f = u = void 0, m);
+    function x(j) {
+      return C = void 0, k && f ? v(j) : (f = u = void 0, m);
     }
     function R() {
       C !== void 0 && clearTimeout(C), w = 0, f = p = u = C = void 0;
     }
-    function D() {
-      return C === void 0 ? m : v(t());
+    function A() {
+      return C === void 0 ? m : x(t());
     }
     function O() {
-      var j = t(), H = E(j);
+      var j = t(), H = T(j);
       if (f = arguments, u = this, p = j, H) {
         if (C === void 0)
-          return T(p);
+          return E(p);
         if (S)
-          return clearTimeout(C), C = setTimeout(y, d), x(p);
+          return clearTimeout(C), C = setTimeout(y, d), v(p);
       }
       return C === void 0 && (C = setTimeout(y, d)), m;
     }
-    return O.cancel = R, O.flush = D, O;
+    return O.cancel = R, O.flush = A, O;
   }
   return Qe = s, Qe;
 }
@@ -509,27 +509,27 @@ const tn = ({ children: e, className: t, setup: n }) => {
     right: f = 0,
     top: u = 0,
     bottom: g = 0
-  } = e, [m, C] = J("h-full w-full object-cover object-center"), p = (v) => `${v}mm`, w = () => {
-    let v = d;
-    return d || (v = i, u || (v += n), g || (v += n), (u || g) && (v -= (u ?? 0) + (g ?? 0))), v;
+  } = e, [m, C] = J("h-full w-full object-cover object-center"), p = (x) => `${x}mm`, w = () => {
+    let x = d;
+    return d || (x = i, u || (x += n), g || (x += n), (u || g) && (x -= (u ?? 0) + (g ?? 0))), x;
   }, S = (() => {
-    let v = c;
-    return c || (v = r, l || (v += n), f || (v += n), (l || f) && (v -= (l ?? 0) + (f ?? 0))), v;
-  })(), k = w(), x = (v) => v !== void 0 ? p(v) : void 0, A = ((v) => Object.fromEntries(
-    Object.entries(v).filter(([R, D]) => D !== void 0)
+    let x = c;
+    return c || (x = r, l || (x += n), f || (x += n), (l || f) && (x -= (l ?? 0) + (f ?? 0))), x;
+  })(), k = w(), v = (x) => x !== void 0 ? p(x) : void 0, D = ((x) => Object.fromEntries(
+    Object.entries(x).filter(([R, A]) => A !== void 0)
   ))({
     backgroundColor: s,
-    width: x(S),
-    height: x(k),
-    left: x(l > 0 ? l + n : l),
-    right: x(f > 0 ? f + n : f),
-    top: x(u > 0 ? u + n : u),
-    bottom: x(g > 0 ? g + n : g)
-  }), E = k > 0 ? S / k : S / (i - (u ?? 0) - (g ?? 0)), y = (v) => {
-    let D = v.target.naturalWidth / v.target.naturalHeight > E ? "cover-vertical" : "cover-horizontal";
-    C(D);
+    width: v(S),
+    height: v(k),
+    left: v(l > 0 ? l + n : l),
+    right: v(f > 0 ? f + n : f),
+    top: v(u > 0 ? u + n : u),
+    bottom: v(g > 0 ? g + n : g)
+  }), T = k > 0 ? S / k : S / (i - (u ?? 0) - (g ?? 0)), y = (x) => {
+    let A = x.target.naturalWidth / x.target.naturalHeight > T ? "cover-vertical" : "cover-horizontal";
+    C(A);
   };
-  return /* @__PURE__ */ a("div", { className: "uhuu-image-container", style: A, ...e.dataUhuu !== void 0 ? { "data-uhuu": e.dataUhuu } : {}, children: /* @__PURE__ */ h(
+  return /* @__PURE__ */ a("div", { className: "uhuu-image-container", style: D, ...e.dataUhuu !== void 0 ? { "data-uhuu": e.dataUhuu } : {}, children: /* @__PURE__ */ h(
     "div",
     {
       className: "uhuu-image-inner",
@@ -540,7 +540,7 @@ const tn = ({ children: e, className: t, setup: n }) => {
           {
             className: m,
             src: o,
-            onLoad: (v) => y(v)
+            onLoad: (x) => y(x)
           },
           `${o}-${S}-${k}`
         ),
@@ -832,28 +832,28 @@ function cn(e) {
     right: u = 0,
     top: g = 0,
     bottom: m = 0
-  } = e, [C, p] = J("h-full w-full object-cover object-center"), w = (b) => `${b}mm`, N = () => {
+  } = e, [C, p] = J("h-full w-full object-cover object-center"), w = (b) => `${b}mm`, P = () => {
     let b = d;
     return d || (b = 2 * r, f || (b += 2 * n), u || (b += 2 * n), (f || u) && (b -= (f ?? 0) + (u ?? 0))), b;
   }, S = () => {
     let b = l;
     return l || (b = i, g || (b += n), m || (b += n), (g || m) && (b -= (g ?? 0) + (m ?? 0))), b;
-  }, k = N(), x = S(), T = (b) => b !== void 0 ? w(b) : void 0, A = (b) => Object.fromEntries(
+  }, k = P(), v = S(), E = (b) => b !== void 0 ? w(b) : void 0, D = (b) => Object.fromEntries(
     Object.entries(b).filter(([M, _]) => _ !== void 0)
-  ), E = f > 0 ? f + n : -1 * n, y = g > 0 ? g + n : -1 * n, v = m > 0 ? m + n : -1 * n, R = -1 * r + E, D = g > 0 && m > 0, O = A({
+  ), T = f > 0 ? f + n : -1 * n, y = g > 0 ? g + n : -1 * n, x = m > 0 ? m + n : -1 * n, R = -1 * r + T, A = g > 0 && m > 0, O = D({
     backgroundColor: c,
-    width: T(k),
-    ...D ? { height: T(x) } : {},
-    left: T(E),
-    top: T(y),
-    bottom: T(v)
-  }), j = A({
-    width: T(k),
-    ...D ? { height: T(x) } : {},
-    left: T(R),
-    top: T(y),
-    bottom: T(v)
-  }), H = x != 0 ? k / x : k / (i - (g ?? 0) - (m ?? 0)), z = (b) => {
+    width: E(k),
+    ...A ? { height: E(v) } : {},
+    left: E(T),
+    top: E(y),
+    bottom: E(x)
+  }), j = D({
+    width: E(k),
+    ...A ? { height: E(v) } : {},
+    left: E(R),
+    top: E(y),
+    bottom: E(x)
+  }), H = v != 0 ? k / v : k / (i - (g ?? 0) - (m ?? 0)), z = (b) => {
     let _ = b.target.naturalWidth / b.target.naturalHeight > H ? "cover-vertical" : "cover-horizontal";
     p(_);
   };
@@ -864,7 +864,7 @@ function cn(e) {
       src: o,
       onLoad: (b) => z(b)
     },
-    `${o}-${k}-${x}`
+    `${o}-${k}-${v}`
   ) }) });
 }
 const jt = ({
@@ -884,34 +884,34 @@ const jt = ({
   imageProps: m,
   renderImage: C
 }) => {
-  const p = oe(we), w = l ? Ie({ dialog: l }, p) : {}, N = ln(d), S = I.useMemo(() => {
+  const p = oe(we), w = l ? Ie({ dialog: l }, p) : {}, P = ln(d), S = I.useMemo(() => {
     if (!f) return w;
-    const E = { ...w, ...f };
-    return (w.className || f.className) && (E.className = W(w.className, f.className)), Object.keys(w).forEach((y) => {
-      const v = w[y], R = f[y];
-      y.startsWith("on") && typeof v == "function" && typeof R == "function" && (E[y] = (D) => {
-        v(D), R(D);
+    const T = { ...w, ...f };
+    return (w.className || f.className) && (T.className = W(w.className, f.className)), Object.keys(w).forEach((y) => {
+      const x = w[y], R = f[y];
+      y.startsWith("on") && typeof x == "function" && typeof R == "function" && (T[y] = (A) => {
+        x(A), R(A);
       });
-    }), E;
+    }), T;
   }, [w, f]), k = () => {
-    const E = m?.className, y = m?.style, v = m?.src ?? e, R = m?.alt ?? t, D = {
+    const T = m?.className, y = m?.style, x = m?.src ?? e, R = m?.alt ?? t, A = {
       ...m,
-      src: v,
+      src: x,
       alt: R,
-      className: W("h-full w-full object-cover", r, E),
+      className: W("h-full w-full object-cover", r, T),
       style: { ...o, ...y }
     };
-    return C ? C(D) : v ? /* @__PURE__ */ a("img", { ...D }) : u ?? null;
-  }, x = S["data-uhuu"];
-  I.Children.toArray(g).some((E) => I.isValidElement(E) ? E.type === cn || E.type === at : !1) && delete S["data-uhuu"];
-  const A = I.Children.map(g, (E) => I.isValidElement(E) ? I.cloneElement(E, { dataUhuu: x }) : E);
+    return C ? C(A) : x ? /* @__PURE__ */ a("img", { ...A }) : u ?? null;
+  }, v = S["data-uhuu"];
+  I.Children.toArray(g).some((T) => I.isValidElement(T) ? T.type === cn || T.type === at : !1) && delete S["data-uhuu"];
+  const D = I.Children.map(g, (T) => I.isValidElement(T) ? I.cloneElement(T, { dataUhuu: v }) : T);
   return /* @__PURE__ */ h("div", { className: W("relative", n), style: i, children: [
     /* @__PURE__ */ h("div", { className: "relative h-full w-full", ...S, children: [
       k(),
-      A,
+      D,
       sn(s, c)
     ] }),
-    on(d, N)
+    on(d, P)
   ] });
 }, Zr = (e) => {
   const { computedOverlaySvg: t, computedOptions: n, computedDirectDialog: r } = ae(() => {
@@ -991,17 +991,17 @@ const jt = ({
     backgroundColor: C,
     width: p,
     height: w,
-    left: N,
+    left: P,
     right: S,
     top: k,
-    bottom: x,
-    pageWidth: T,
-    pageHeight: A,
-    bleed: E,
+    bottom: v,
+    pageWidth: E,
+    pageHeight: D,
+    bleed: T,
     overlayClassName: y,
-    dialogProps: v,
+    dialogProps: x,
     placeholder: R,
-    children: D,
+    children: A,
     imageProps: O,
     renderImage: j
   } = e, H = {
@@ -1009,13 +1009,13 @@ const jt = ({
     backgroundColor: C,
     width: p,
     height: w,
-    left: N,
+    left: P,
     right: S,
     top: k,
-    bottom: x,
-    pageWidth: T,
-    pageHeight: A,
-    bleed: E
+    bottom: v,
+    pageWidth: E,
+    pageHeight: D,
+    bleed: T
   };
   if (i === "auto")
     return /* @__PURE__ */ a(
@@ -1031,9 +1031,9 @@ const jt = ({
         overlayClassName: y,
         options: n,
         dialog: r,
-        dialogProps: v,
+        dialogProps: x,
         placeholder: R,
-        children: D,
+        children: A,
         imageProps: O,
         renderImage: j
       }
@@ -1055,10 +1055,10 @@ const jt = ({
         overlayClassName: y,
         options: n,
         dialog: r,
-        dialogProps: v,
+        dialogProps: x,
         children: [
           z,
-          D
+          A
         ]
       }
     ) : z;
@@ -1072,9 +1072,9 @@ const jt = ({
       overlayClassName: y,
       options: n,
       dialog: r,
-      dialogProps: v,
+      dialogProps: x,
       bleedProps: H,
-      children: D
+      children: A
     }
   ) : /* @__PURE__ */ a(at, { ...H });
 }, Jr = (e) => {
@@ -1410,11 +1410,11 @@ function yn({
     } catch {
       return String(y);
     }
-  }, []), g = I.useMemo(() => Qa(r), [r]), m = I.useCallback((y, v) => {
+  }, []), g = I.useMemo(() => Qa(r), [r]), m = I.useCallback((y, x) => {
     if (!y) return null;
     const R = { ...y };
-    return v.forEach((D) => {
-      delete R[D];
+    return x.forEach((A) => {
+      delete R[A];
     }), R;
   }, []);
   I.useEffect(() => {
@@ -1431,7 +1431,7 @@ function yn({
       return;
     }
     if (Date.now() - l.current < 500 && d.current !== null) {
-      const R = m(e, g), D = m(d.current, g), O = R ? u(R) : null, j = D ? u(D) : null;
+      const R = m(e, g), A = m(d.current, g), O = R ? u(R) : null, j = A ? u(A) : null;
       if (O && O === j) {
         console.log("[TemplateDataProvider] Skipping round-trip"), d.current = null, s.current = e;
         return;
@@ -1439,8 +1439,8 @@ function yn({
     }
     console.log("[TemplateDataProvider] External payload update detected, merging...", e), s.current = e, o((R) => {
       if (!e) return R;
-      const D = er(R, e, g);
-      return console.log("[TemplateDataProvider] Merged payload:", D), D;
+      const A = er(R, e, g);
+      return console.log("[TemplateDataProvider] Merged payload:", A), A;
     });
   }, [e, g, u, m]);
   const C = I.useCallback(
@@ -1450,37 +1450,37 @@ function yn({
     [t]
   ), p = I.useCallback(
     (y) => {
-      c.current = !0, o((v) => {
-        const R = typeof y == "function" ? y(v) : y;
-        let D = R;
+      c.current = !0, o((x) => {
+        const R = typeof y == "function" ? y(x) : y;
+        let A = R;
         return R && typeof R == "object" && Object.keys(R).filter(
           (j) => j.startsWith("integrations.") || j === "integrations"
-        ).length > 0 && R.integrations && (D = R), d.current = D, l.current = Date.now(), C(D), D;
+        ).length > 0 && R.integrations && (A = R), d.current = A, l.current = Date.now(), C(A), A;
       });
     },
     [C]
   ), w = I.useCallback(
-    (y, v, R) => {
-      p((D) => ({
-        ...D ?? {},
+    (y, x, R) => {
+      p((A) => ({
+        ...A ?? {},
         pages: {
-          ...D?.pages ?? {},
+          ...A?.pages ?? {},
           [y]: {
-            ...D?.pages?.[y] ?? {},
-            [v]: R
+            ...A?.pages?.[y] ?? {},
+            [x]: R
           }
         }
       }));
     },
     [p]
-  ), N = I.useCallback(
-    (y, v) => {
+  ), P = I.useCallback(
+    (y, x) => {
       p((R) => {
-        const D = R?.integrations ?? {}, O = D[y], j = typeof v == "function" ? v(O) : v;
+        const A = R?.integrations ?? {}, O = A[y], j = typeof x == "function" ? x(O) : x;
         return {
           ...R ?? {},
           integrations: {
-            ...D,
+            ...A,
             [y]: j
           }
         };
@@ -1488,65 +1488,65 @@ function yn({
     },
     [p]
   ), S = I.useCallback(
-    (y, v, R) => {
-      N(y, (D) => ({
-        ...D ?? {},
-        [v]: R
+    (y, x, R) => {
+      P(y, (A) => ({
+        ...A ?? {},
+        [x]: R
       }));
     },
-    [N]
+    [P]
   ), k = I.useCallback(
     (y) => {
-      p((v) => {
-        if (!v?.integrations || !v.integrations[y])
-          return v;
-        const { [y]: R, ...D } = v.integrations;
+      p((x) => {
+        if (!x?.integrations || !x.integrations[y])
+          return x;
+        const { [y]: R, ...A } = x.integrations;
         return {
-          ...v,
-          integrations: Object.keys(D).length > 0 ? D : void 0
+          ...x,
+          integrations: Object.keys(A).length > 0 ? A : void 0
         };
       });
     },
     [p]
-  ), x = I.useCallback(
-    (y, v) => {
-      p((R) => Ya(R, y, v));
+  ), v = I.useCallback(
+    (y, x) => {
+      p((R) => Ya(R, y, x));
     },
     [p]
-  ), T = I.useCallback(
-    (y, v) => {
-      const R = v ?? r;
-      p((D) => qa(D, y, R));
+  ), E = I.useCallback(
+    (y, x) => {
+      const R = x ?? r;
+      p((A) => qa(A, y, R));
     },
     [p, r]
-  ), A = I.useCallback(
+  ), D = I.useCallback(
     (y) => $e(i, y),
     [i]
-  ), E = I.useMemo(
+  ), T = I.useMemo(
     () => ({
       payload: i,
       setPayload: p,
       setPageOptionValue: w,
-      setIntegrationPayload: N,
+      setIntegrationPayload: P,
       setIntegrationPayloadValue: S,
       removeIntegrationPayload: k,
-      updateIntegrationByDialogPath: x,
-      mergePageEditorState: T,
-      getPagePayload: A
+      updateIntegrationByDialogPath: v,
+      mergePageEditorState: E,
+      getPagePayload: D
     }),
     [
       i,
       p,
       w,
-      N,
+      P,
       S,
       k,
-      x,
-      T,
-      A
+      v,
+      E,
+      D
     ]
   );
-  return /* @__PURE__ */ a(ke.Provider, { value: E, children: n });
+  return /* @__PURE__ */ a(ke.Provider, { value: T, children: n });
 }
 function tr(e) {
   return e.defaultValue !== void 0 ? e.defaultValue : e.type === "toggle" ? !1 : e.type === "slider" || e.type === "counter" ? 0 : "";
@@ -1600,17 +1600,17 @@ function Oe({ children: e, title: t, className: n = "", controls: r, origin: i =
   const { scaleValue: o, hideUI: s } = oe(Me), c = de(null), [d, l] = J(0), [f, u] = J(0);
   xe(() => {
     if (c.current) {
-      const N = () => {
+      const P = () => {
         const k = c.current;
         if (k) {
-          const x = k.style.transform;
+          const v = k.style.transform;
           k.style.transform = "scale(1)";
-          const T = k.scrollHeight, A = k.scrollWidth;
-          k.style.transform = x, l(T), u(A);
+          const E = k.scrollHeight, D = k.scrollWidth;
+          k.style.transform = v, l(E), u(D);
         }
       };
-      N();
-      const S = new ResizeObserver(N);
+      P();
+      const S = new ResizeObserver(P);
       return S.observe(c.current), () => {
         S.disconnect();
       };
@@ -1673,7 +1673,7 @@ function ir({
   hideUI: c,
   preview: d = "single_page"
 }) {
-  const l = st(), f = c ?? l, [u, g] = J(n), [m, C] = J("none"), p = de(null), w = de(null), [N, S] = J(!1), [k, x] = J(0), [T, A] = J(!0), E = (O) => {
+  const l = st(), f = c ?? l, [u, g] = J(n), [m, C] = J("none"), p = de(null), w = de(null), [P, S] = J(!1), [k, v] = J(0), [E, D] = J(!0), T = (O) => {
     if (!p.current || !w.current) return u;
     const j = p.current.getBoundingClientRect(), H = w.current.querySelector("[data-section-content]");
     if (!H) return u;
@@ -1694,10 +1694,10 @@ function ir({
     }
   }, y = (O) => {
     if (C(O), O !== "none") {
-      const j = E(O);
+      const j = T(O);
       g(j);
     }
-  }, v = () => {
+  }, x = () => {
     const O = Math.min(u + 25, i);
     g(O), C("none");
   }, R = () => {
@@ -1708,42 +1708,42 @@ function ir({
     const O = () => {
       if (!p.current || !w.current) return;
       const z = p.current.getBoundingClientRect().width;
-      if (!N) {
+      if (!P) {
         const b = w.current.querySelector("[data-section-content]");
         if (b) {
           const M = Number.parseInt(b.getAttribute("data-natural-width") || "0");
           if (M > 0) {
             if (M > z - 48) {
-              const _ = E("both");
+              const _ = T("both");
               C("both"), g(_);
             }
-            S(!0), x(z), A(!1);
+            S(!0), v(z), D(!1);
             return;
           }
         }
-        if (T) {
+        if (E) {
           setTimeout(O, 50);
           return;
         }
       }
-      A(!1);
+      D(!1);
     }, j = () => {
-      if (!p.current || T) return;
+      if (!p.current || E) return;
       const z = p.current.getBoundingClientRect().width;
       if (Math.abs(z - k) > 10) {
         if (m !== "none") {
-          const b = E(m);
+          const b = T(m);
           g(b);
         }
-        x(z);
+        v(z);
       }
     };
     return O(), window.addEventListener("resize", j), () => {
       window.removeEventListener("resize", j);
     };
-  }, [m, r, i, N, k, T]);
-  const D = u / 100;
-  return f ? /* @__PURE__ */ a(Me.Provider, { value: { zoom: 100, scaleValue: 1, hideUI: !0 }, children: /* @__PURE__ */ a("div", { className: t, children: e }) }) : /* @__PURE__ */ a(Me.Provider, { value: { zoom: u, scaleValue: D, hideUI: !1 }, children: /* @__PURE__ */ h("div", { ref: p, className: `flex flex-col min-h-0 ${t}`, children: [
+  }, [m, r, i, P, k, E]);
+  const A = u / 100;
+  return f ? /* @__PURE__ */ a(Me.Provider, { value: { zoom: 100, scaleValue: 1, hideUI: !0 }, children: /* @__PURE__ */ a("div", { className: t, children: e }) }) : /* @__PURE__ */ a(Me.Provider, { value: { zoom: u, scaleValue: A, hideUI: !1 }, children: /* @__PURE__ */ h("div", { ref: p, className: `flex flex-col min-h-0 ${t}`, children: [
     /* @__PURE__ */ h("div", { "data-uhuu-editor": !0, className: "fixed right-4 bottom-4 z-50 flex items-center gap-1.5 px-2.5 py-1.5 bg-white/90 backdrop-blur-md border border-gray-200/60 rounded-lg shadow-sm", children: [
       s,
       /* @__PURE__ */ a("div", { className: "h-4 w-px bg-gray-200 mx-0.5" }),
@@ -1830,7 +1830,7 @@ function ir({
                 variant: "ghost",
                 size: "sm",
                 onClick: (O) => {
-                  O.stopPropagation(), v();
+                  O.stopPropagation(), x();
                 },
                 disabled: u >= i,
                 className: "h-8 w-8 p-0 hover:bg-gray-100 disabled:opacity-40",
@@ -1943,17 +1943,17 @@ function mt(e) {
     thumbnailHeight: o
   } = e, s = r.width || 210, c = r.height || 297, d = s / c, l = i, f = o ?? Math.round(l / d), u = s * 3.779527559, g = c * 3.779527559;
   return (m, C, p) => {
-    const w = m.strictPosition, N = w === "start" || w === "end";
+    const w = m.strictPosition, P = w === "start" || w === "end";
     if (m.kind === "group") {
-      const S = m.firstPageId, k = m.firstPageComponentKey ?? S, x = $e(n, { id: S, componentKey: k }), T = m.firstPageComponent || (k ? t[k] : null), A = n?.integrations?.[m.id];
+      const S = m.firstPageId, k = m.firstPageComponentKey ?? S, v = $e(n, { id: S, componentKey: k }), E = m.firstPageComponent || (k ? t[k] : null), D = n?.integrations?.[m.id];
       return /* @__PURE__ */ h(
         "div",
         {
-          className: `relative bg-white border transition-all ${p ? "border-blue-400 shadow-2xl scale-105" : N ? "border-gray-300 bg-gray-50" : "border-gray-200 hover:border-gray-300 hover:shadow-lg"}`,
+          className: `relative bg-white border transition-all ${p ? "border-blue-400 shadow-2xl scale-105" : P ? "border-gray-300 bg-gray-50" : "border-gray-200 hover:border-gray-300 hover:shadow-lg"}`,
           style: { width: `${l}px`, height: `${f}px` },
           title: m.id,
           children: [
-            T ? /* @__PURE__ */ a(
+            E ? /* @__PURE__ */ a(
               "div",
               {
                 className: "w-full h-full flex items-center justify-center bg-gray-50 overflow-hidden relative pointer-events-none",
@@ -1966,14 +1966,14 @@ function mt(e) {
                       transformOrigin: "center"
                     },
                     children: /* @__PURE__ */ a("div", { className: "!shrink-0", style: { width: `${u}px`, height: `${g}px`, backgroundColor: "white", pointerEvents: "none" }, children: /* @__PURE__ */ a(
-                      T,
+                      E,
                       {
                         payload: n,
                         pageId: S,
                         templateId: k,
-                        pagePayload: x,
+                        pagePayload: v,
                         componentKey: k,
-                        integration: A
+                        integration: D
                       }
                     ) })
                   }
@@ -1991,7 +1991,7 @@ function mt(e) {
               m.pageCount,
               " pages)"
             ] }),
-            N && /* @__PURE__ */ h("div", { className: "absolute top-2 left-2 px-2 py-1 bg-gray-600/80 backdrop-blur-sm text-white text-xs font-medium rounded shadow-lg pointer-events-none flex items-center gap-1", children: [
+            P && /* @__PURE__ */ h("div", { className: "absolute top-2 left-2 px-2 py-1 bg-gray-600/80 backdrop-blur-sm text-white text-xs font-medium rounded shadow-lg pointer-events-none flex items-center gap-1", children: [
               /* @__PURE__ */ a(et, { className: "size-3" }),
               /* @__PURE__ */ a("span", { children: w === "start" ? "Start" : "End" })
             ] }),
@@ -2001,15 +2001,15 @@ function mt(e) {
         }
       );
     } else {
-      const S = m.pageId, k = m.pageComponentKey ?? S, x = $e(n, { id: S, componentKey: k }), T = m.pageComponent || (k ? t[k] : null), A = S ? pn(n, { id: S }) : void 0;
+      const S = m.pageId, k = m.pageComponentKey ?? S, v = $e(n, { id: S, componentKey: k }), E = m.pageComponent || (k ? t[k] : null), D = S ? pn(n, { id: S }) : void 0;
       return /* @__PURE__ */ h(
         "div",
         {
-          className: `relative bg-white border transition-all ${p ? "border-blue-400 shadow-2xl scale-105" : N ? "border-gray-300 bg-gray-50" : "border-gray-200 hover:border-gray-300 hover:shadow-lg"}`,
+          className: `relative bg-white border transition-all ${p ? "border-blue-400 shadow-2xl scale-105" : P ? "border-gray-300 bg-gray-50" : "border-gray-200 hover:border-gray-300 hover:shadow-lg"}`,
           style: { width: `${l}px`, height: `${f}px` },
           title: m.pageId,
           children: [
-            T ? /* @__PURE__ */ a(
+            E ? /* @__PURE__ */ a(
               "div",
               {
                 className: "w-full h-full flex items-center justify-center bg-gray-50 overflow-hidden relative pointer-events-none",
@@ -2022,14 +2022,14 @@ function mt(e) {
                       transformOrigin: "center"
                     },
                     children: /* @__PURE__ */ a("div", { className: "!shrink-0", style: { width: `${u}px`, height: `${g}px`, backgroundColor: "white", pointerEvents: "none" }, children: /* @__PURE__ */ a(
-                      T,
+                      E,
                       {
                         payload: n,
                         pageId: S,
                         templateId: k,
-                        pagePayload: x,
+                        pagePayload: v,
                         componentKey: k,
-                        integration: A
+                        integration: D
                       }
                     ) })
                   }
@@ -2042,7 +2042,7 @@ function mt(e) {
               ] }),
               /* @__PURE__ */ a("div", { className: "text-xs text-gray-500 mt-1", children: S || "No preview" })
             ] }) }),
-            N && /* @__PURE__ */ h("div", { className: "absolute top-2 left-2 px-2 py-1 bg-gray-600/80 backdrop-blur-sm text-white text-xs font-medium rounded shadow-lg pointer-events-none flex items-center gap-1", children: [
+            P && /* @__PURE__ */ h("div", { className: "absolute top-2 left-2 px-2 py-1 bg-gray-600/80 backdrop-blur-sm text-white text-xs font-medium rounded shadow-lg pointer-events-none flex items-center gap-1", children: [
               /* @__PURE__ */ a(et, { className: "size-3" }),
               /* @__PURE__ */ a("span", { children: w === "start" ? "Start" : "End" })
             ] }),
@@ -2066,50 +2066,50 @@ function or({
 }) {
   const [d, l] = I.useState(""), f = I.useMemo(() => {
     if (!d.trim()) return n;
-    const x = d.toLowerCase();
+    const v = d.toLowerCase();
     return n.filter(
-      (T) => (T.label || "").toLowerCase().includes(x) || T.id.toLowerCase().includes(x)
+      (E) => (E.label || "").toLowerCase().includes(v) || E.id.toLowerCase().includes(v)
     );
-  }, [n, d]), u = (x) => {
-    t(!1), r(x);
-  }, g = s.width || 210, m = s.height || 297, C = g / m, p = 200, w = Math.round(p / C), N = I.useMemo(() => i ? mt({
+  }, [n, d]), u = (v) => {
+    t(!1), r(v);
+  }, g = s.width || 210, m = s.height || 297, C = g / m, p = 200, w = Math.round(p / C), P = I.useMemo(() => i ? mt({
     pageComponents: i,
     payload: o,
     setup: s,
     thumbnailWidth: p,
     thumbnailHeight: w
-  }) : null, [i, o, s, p, w]), S = (x, T) => {
-    if (!x) return [];
-    if (Array.isArray(x)) return x;
+  }) : null, [i, o, s, p, w]), S = (v, E) => {
+    if (!v) return [];
+    if (Array.isArray(v)) return v;
     try {
-      const A = x(T);
-      if (!Array.isArray(A))
-        return console.error("[uhuu-components] pageComponentKeys function must return an array, got:", typeof A), [];
-      const E = A.filter((y) => typeof y == "string");
-      return E.length !== A.length && console.warn("[uhuu-components] pageComponentKeys returned non-string values, filtering them out"), E;
-    } catch (A) {
-      return console.error("[uhuu-components] Error evaluating pageComponentKeys function:", A), [];
+      const D = v(E);
+      if (!Array.isArray(D))
+        return console.error("[uhuu-components] pageComponentKeys function must return an array, got:", typeof D), [];
+      const T = D.filter((y) => typeof y == "string");
+      return T.length !== D.length && console.warn("[uhuu-components] pageComponentKeys returned non-string values, filtering them out"), T;
+    } catch (D) {
+      return console.error("[uhuu-components] Error evaluating pageComponentKeys function:", D), [];
     }
-  }, k = (x, T) => {
-    if (x.kind === "group") {
-      const y = x, v = { payload: o, item: void 0, parent: void 0 }, R = S(y.pageComponentKeys, v), D = R[0];
+  }, k = (v, E) => {
+    if (v.kind === "group") {
+      const y = v, x = { payload: o, item: void 0, parent: void 0 }, R = S(y.pageComponentKeys, x), A = R[0];
       return {
         kind: "group",
-        id: x.id,
-        label: x.label,
+        id: v.id,
+        label: v.label,
         pageCount: R.length,
-        firstPageId: D,
-        firstPageComponentKey: D
+        firstPageId: A,
+        firstPageComponentKey: A
       };
     }
-    const A = x, E = A.componentKey ?? A.id;
+    const D = v, T = D.componentKey ?? D.id;
     return {
       kind: "page",
-      id: A.id,
-      pageId: A.id,
-      pageComponentKey: E,
-      pageLabel: A.label,
-      pageNum: T + 1
+      id: D.id,
+      pageId: D.id,
+      pageComponentKey: T,
+      pageLabel: D.label,
+      pageNum: E + 1
     };
   };
   return /* @__PURE__ */ a(bn, { open: e, onOpenChange: t, children: /* @__PURE__ */ h(ct, { side: "bottom", className: "h-[90vh] p-0 gap-0 w-full max-w-none bg-gray-50", "data-uhuu-editor": !0, children: [
@@ -2127,7 +2127,7 @@ function or({
             type: "text",
             placeholder: "Filter…",
             value: d,
-            onChange: (x) => l(x.target.value),
+            onChange: (v) => l(v.target.value),
             tabIndex: -1,
             className: "w-24 bg-transparent border-0 focus:outline-none text-sm text-gray-600 placeholder:text-gray-400 focus:w-40 transition-all duration-150"
           }
@@ -2138,26 +2138,26 @@ function or({
       /* @__PURE__ */ a("div", { className: "w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ a(ye, { className: "w-8 h-8 text-gray-400" }) }),
       /* @__PURE__ */ a("div", { className: "text-lg font-medium text-gray-900 mb-2", children: "No items available" }),
       /* @__PURE__ */ a("p", { className: "text-gray-500 mb-4", children: d.trim() ? "No pages or groups match your search." : "All pages and groups have been added." })
-    ] }) : /* @__PURE__ */ a("div", { className: c, children: f.map((x, T) => {
-      const A = x.kind === "group", E = x.id, y = A ? x.label || `Group ${T + 1}` : x.label || `Page ${x.id}`, v = { payload: o, item: void 0, parent: void 0 }, R = A ? S(x.pageComponentKeys, v).length : 1;
+    ] }) : /* @__PURE__ */ a("div", { className: c, children: f.map((v, E) => {
+      const D = v.kind === "group", T = v.id, y = D ? v.label || `Group ${E + 1}` : v.label || `Page ${v.id}`, x = { payload: o, item: void 0, parent: void 0 }, R = D ? S(v.pageComponentKeys, x).length : 1;
       return /* @__PURE__ */ h(
         "div",
         {
-          onClick: () => u(x),
+          onClick: () => u(v),
           className: [
             "relative w-full h-[280px] cursor-pointer transition-all group",
-            !!!N && "bg-white border-2 border-gray-200"
+            !!!P && "bg-white border-2 border-gray-200"
             // compact + default, always base + addition if not default
           ].filter(Boolean).join(" "),
           children: [
-            /* @__PURE__ */ a("div", { className: "w-full h-full relative bg-gray-100 hover:bg-white", children: x.thumbnail ? /* @__PURE__ */ a(
+            /* @__PURE__ */ a("div", { className: "w-full h-full relative bg-gray-100 hover:bg-white", children: v.thumbnail ? /* @__PURE__ */ a(
               "img",
               {
-                src: x.thumbnail,
+                src: v.thumbnail,
                 className: "w-full h-full object-contain pointer-events-none object-top border border-gray-200 p-4",
                 alt: y
               }
-            ) : N ? /* @__PURE__ */ a("div", { className: "absolute inset-0 flex items-center pointer-events-none", children: N(k(x, T), T, !1) }) : /* @__PURE__ */ a(ue, { children: A ? /* @__PURE__ */ h("div", { className: "p-4", children: [
+            ) : P ? /* @__PURE__ */ a("div", { className: "absolute inset-0 flex items-center pointer-events-none", children: P(k(v, E), E, !1) }) : /* @__PURE__ */ a(ue, { children: D ? /* @__PURE__ */ h("div", { className: "p-4", children: [
               /* @__PURE__ */ a("div", { className: "w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3", children: /* @__PURE__ */ a(ye, { className: "w-8 h-8 text-blue-600" }) }),
               /* @__PURE__ */ a("div", { className: "text-sm font-medium text-gray-700", children: y }),
               /* @__PURE__ */ h("div", { className: "text-xs text-gray-500 mt-1", children: [
@@ -2168,9 +2168,9 @@ function or({
             ] }) : /* @__PURE__ */ h("div", { className: "p-4", children: [
               /* @__PURE__ */ a("div", { className: "w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-3", children: /* @__PURE__ */ a(ye, { className: "w-8 h-8 text-gray-400" }) }),
               /* @__PURE__ */ a("div", { className: "text-sm font-medium text-gray-700", children: y }),
-              /* @__PURE__ */ a("div", { className: "text-xs text-gray-500 mt-1", children: E })
+              /* @__PURE__ */ a("div", { className: "text-xs text-gray-500 mt-1", children: T })
             ] }) }) }),
-            (!N || x?.thumbnail) && /* @__PURE__ */ h(ue, { children: [
+            (!P || v?.thumbnail) && /* @__PURE__ */ h(ue, { children: [
               /* @__PURE__ */ h("div", { className: "absolute top-2 right-2 px-2 py-1 bg-blue-600/80 backdrop-blur-sm text-white text-xs font-medium rounded shadow-lg pointer-events-none", children: [
                 "Group (",
                 R,
@@ -2178,12 +2178,12 @@ function or({
                 R === 1 ? "page" : "pages",
                 ")"
               ] }),
-              /* @__PURE__ */ a("div", { className: "absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm p-3 pointer-events-none", "data-item-id": E, children: /* @__PURE__ */ a("div", { className: "flex items-center justify-between gap-2 text-white", children: /* @__PURE__ */ a("div", { className: "flex-1 min-w-0", children: /* @__PURE__ */ a("div", { className: "text-sm font-medium truncate", children: y }) }) }) })
+              /* @__PURE__ */ a("div", { className: "absolute bottom-0 left-0 right-0 bg-black/40 backdrop-blur-sm p-3 pointer-events-none", "data-item-id": T, children: /* @__PURE__ */ a("div", { className: "flex items-center justify-between gap-2 text-white", children: /* @__PURE__ */ a("div", { className: "flex-1 min-w-0", children: /* @__PURE__ */ a("div", { className: "text-sm font-medium truncate", children: y }) }) }) })
             ] }),
             /* @__PURE__ */ a("div", { className: "absolute top-3 left-3 w-8 h-8 bg-black rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10", children: /* @__PURE__ */ a(ye, { className: "w-4 h-4 text-white" }) })
           ]
         },
-        E
+        T
       );
     }) }) }) })
   ] }) });
@@ -2244,58 +2244,58 @@ function dr({
   xe(() => {
     C(e);
   }, [e]);
-  const [p, w] = J(null), N = aa(
+  const [p, w] = J(null), P = aa(
     bt(ra),
     bt(ia, {
       coordinateGetter: ca
     })
-  ), S = (A) => {
-    const E = m.find((y) => i(y) === A.active.id);
-    E && u && u(E) || w(A.active.id);
-  }, k = (A) => {
-    const { active: E, over: y } = A;
-    if (!y || E.id === y.id) {
+  ), S = (D) => {
+    const T = m.find((y) => i(y) === D.active.id);
+    T && u && u(T) || w(D.active.id);
+  }, k = (D) => {
+    const { active: T, over: y } = D;
+    if (!y || T.id === y.id) {
       w(null);
       return;
     }
-    const v = m.find((O) => i(O) === E.id), R = m.findIndex((O) => i(O) === E.id), D = m.findIndex((O) => i(O) === y.id);
-    if (v && u && u(v)) {
+    const x = m.find((O) => i(O) === T.id), R = m.findIndex((O) => i(O) === T.id), A = m.findIndex((O) => i(O) === y.id);
+    if (x && u && u(x)) {
       w(null);
       return;
     }
-    if (g && !g(v, D, m)) {
+    if (g && !g(x, A, m)) {
       w(null);
       return;
     }
-    if (R !== -1 && D !== -1) {
-      const O = ga(m, R, D);
+    if (R !== -1 && A !== -1) {
+      const O = ga(m, R, A);
       C(O), t(O);
     }
     w(null);
-  }, x = m.find((A) => i(A) === p), T = x ? m.findIndex((A) => i(A) === p) : -1;
+  }, v = m.find((D) => i(D) === p), E = v ? m.findIndex((D) => i(D) === p) : -1;
   return /* @__PURE__ */ h("div", { className: `w-full ${s}`, children: [
     c && /* @__PURE__ */ a("div", { className: "mb-6", children: c() }),
     m.length === 0 && d ? d() : /* @__PURE__ */ a("div", { className: "mb-6", children: /* @__PURE__ */ h(
       sa,
       {
-        sensors: N,
+        sensors: P,
         collisionDetection: oa,
         onDragStart: S,
         onDragEnd: k,
         children: [
-          /* @__PURE__ */ a(da, { items: m.map(i), strategy: ua, children: /* @__PURE__ */ a("div", { className: o, children: m.map((A, E) => /* @__PURE__ */ a(
+          /* @__PURE__ */ a(da, { items: m.map(i), strategy: ua, children: /* @__PURE__ */ a("div", { className: o, children: m.map((D, T) => /* @__PURE__ */ a(
             lr,
             {
-              item: A,
-              index: E,
+              item: D,
+              index: T,
               renderItem: n,
               renderDragIndicator: r,
               keyExtractor: i,
-              disabled: u ? u(A) : !1
+              disabled: u ? u(D) : !1
             },
-            i(A)
+            i(D)
           )) }) }),
-          /* @__PURE__ */ a(la, { children: x ? f ? /* @__PURE__ */ a("div", { className: "rotate-2 shadow-lg", children: f(x, T) }) : /* @__PURE__ */ a(cr, { item: x, index: T, renderItem: n }) : null })
+          /* @__PURE__ */ a(la, { children: v ? f ? /* @__PURE__ */ a("div", { className: "rotate-2 shadow-lg", children: f(v, E) }) : /* @__PURE__ */ a(cr, { item: v, index: E, renderItem: n }) : null })
         ]
       }
     ) }),
@@ -2309,7 +2309,7 @@ function dr({
       ] }),
       /* @__PURE__ */ h("div", { className: "text-xs text-gray-500 mt-1 break-all", children: [
         "Order: ",
-        m.map((A, E) => `${E + 1}:${i(A).slice(0, 3)}`).join(" → ")
+        m.map((D, T) => `${T + 1}:${i(D).slice(0, 3)}`).join(" → ")
       ] })
     ] })
   ] });
@@ -2386,28 +2386,28 @@ function mr({
     g(y), C(!0);
   }, w = () => {
     r(u), C(!1), t(!1);
-  }, N = () => {
+  }, P = () => {
     g(n), C(!1), t(!1);
-  }, S = I.useMemo(() => (!i || typeof i != "function") && o ? mt({ pageComponents: o, payload: s, setup: c }) : null, [i, o, s, c]), k = (y, v, R) => i && typeof i == "function" ? i(y, v, R) : S ? S(y, v, R) : /* @__PURE__ */ a(gr, { page: y, index: v, isDragging: R }), x = () => /* @__PURE__ */ h("div", { className: "text-center py-20", children: [
+  }, S = I.useMemo(() => (!i || typeof i != "function") && o ? mt({ pageComponents: o, payload: s, setup: c }) : null, [i, o, s, c]), k = (y, x, R) => i && typeof i == "function" ? i(y, x, R) : S ? S(y, x, R) : /* @__PURE__ */ a(gr, { page: y, index: x, isDragging: R }), v = () => /* @__PURE__ */ h("div", { className: "text-center py-20", children: [
     /* @__PURE__ */ a("div", { className: "w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mx-auto mb-3", children: /* @__PURE__ */ a(pt, { className: "w-6 h-6 text-gray-400" }) }),
     /* @__PURE__ */ a("div", { className: "text-base font-medium text-gray-900 mb-1", children: "No pages found" }),
     /* @__PURE__ */ a("p", { className: "text-sm text-gray-500", children: "Add some pages to get started with reordering." })
-  ] }), T = (y) => y.id, A = I.useCallback((y) => {
-    const v = y.strictPosition;
-    return v === "start" || v === "end";
-  }, []), E = I.useCallback((y, v, R) => {
-    const D = y.strictPosition;
-    if (D === "start" || D === "end")
+  ] }), E = (y) => y.id, D = I.useCallback((y) => {
+    const x = y.strictPosition;
+    return x === "start" || x === "end";
+  }, []), T = I.useCallback((y, x, R) => {
+    const A = y.strictPosition;
+    if (A === "start" || A === "end")
       return !1;
     let O = -1, j = R.length;
     for (let H = 0; H < R.length; H++) {
       const z = R[H].strictPosition;
       z === "start" ? O = H : z === "end" && j === R.length && (j = H);
     }
-    return !(v <= O || v >= j);
+    return !(x <= O || x >= j);
   }, []);
   return /* @__PURE__ */ a(bn, { open: e, onOpenChange: (y) => {
-    y || N();
+    y || P();
   }, children: /* @__PURE__ */ h(
     ct,
     {
@@ -2439,12 +2439,12 @@ function mr({
             items: u,
             onChange: p,
             renderItem: k,
-            keyExtractor: T,
-            renderEmptyState: x,
+            keyExtractor: E,
+            renderEmptyState: v,
             gridColsClass: f,
             className: "pb-4",
-            isItemDisabled: A,
-            canDropAt: E
+            isItemDisabled: D,
+            canDropAt: T
           }
         ) }) }),
         /* @__PURE__ */ h(xn, { className: "border-t border-gray-200 px-4 py-3 gap-3", children: [
@@ -2452,7 +2452,7 @@ function mr({
             Q,
             {
               variant: "outline",
-              onClick: N,
+              onClick: P,
               children: "Cancel"
             }
           ),
@@ -2846,11 +2846,11 @@ function yr(e) {
       w.current !== t && (w.current = t, m(t));
     }
   }, [t]);
-  const N = oe(ke), S = he((b) => {
+  const P = oe(ke), S = he((b) => {
     m(b);
     const M = dn(b, d);
-    N?.mergePageEditorState && N.mergePageEditorState(b, d), i?.(M), r?.(b, M);
-  }, [r, i, d, N]), k = ae(() => {
+    P?.mergePageEditorState && P.mergePageEditorState(b, d), i?.(M), r?.(b, M);
+  }, [r, i, d, P]), k = ae(() => {
     const b = /* @__PURE__ */ new Map();
     return g.forEach((M) => {
       const _ = M.templateId ?? M.id;
@@ -2859,14 +2859,14 @@ function yr(e) {
         b.set(K, (b.get(K) ?? 0) + 1);
       });
     }), b;
-  }, [g]), x = ae(() => n.filter((b) => {
+  }, [g]), v = ae(() => n.filter((b) => {
     if (b.kind === "page") {
       const U = b, ee = U.templateId ?? U.id, ne = k.get(ee) ?? 0, ie = U.repeatable ?? !1, L = U.maxInstances ?? null;
       return !(!ie && ne > 0 || L !== null && ne >= L);
     }
     const M = b, _ = M.templateId ?? M.id, B = k.get(_) ?? 0, K = M.repeatable ?? !1, G = M.maxInstances ?? null;
     return !(!K && B > 0 || K && G !== null && B >= G);
-  }), [n, k]), T = ae(() => be(g), [g]), A = he(async (b) => {
+  }), [n, k]), E = ae(() => be(g), [g]), D = he(async (b) => {
     const M = (L) => L ? typeof L == "string" ? L : L.mode ?? "optional" : "none", _ = (L, F) => {
       if (!L) return [];
       if (Array.isArray(L)) return L;
@@ -2923,13 +2923,13 @@ function yr(e) {
     }
     if (ee === null) return;
     const ne = ee ?? K;
-    if (U !== void 0 && N?.setIntegrationPayload) {
+    if (U !== void 0 && P?.setIntegrationPayload) {
       const L = ne.id;
       G && console.debug("[usePageGroups] storing integration data", {
         instanceId: L,
         hasData: U != null,
         dataKeys: U ? Object.keys(U) : []
-      }), N.setIntegrationPayload(L, U);
+      }), P.setIntegrationPayload(L, U);
     }
     S(((L, F) => {
       const X = F.strictPosition;
@@ -2943,7 +2943,7 @@ function yr(e) {
         pe === "start" ? le.push(me) : pe === "end" ? V.push(me) : ce.push(me);
       }), [...le, ...ce, F, ...V];
     })(g, ne));
-  }, [g, S, l, N]), E = he((b) => {
+  }, [g, S, l, P]), T = he((b) => {
     const M = (B) => {
       f ? f(B) : alert(B);
     }, _ = g.find((B) => B.id === b);
@@ -2952,9 +2952,9 @@ function yr(e) {
         M("Cannot remove the last page. At least one page is required.");
         return;
       }
-      if (N?.removeIntegrationPayload) {
+      if (P?.removeIntegrationPayload) {
         const K = _.id;
-        N.payload?.integrations?.[K] !== void 0 && N.removeIntegrationPayload(K);
+        P.payload?.integrations?.[K] !== void 0 && P.removeIntegrationPayload(K);
       }
       S(g.filter((K) => K.id !== b));
       return;
@@ -2966,9 +2966,9 @@ function yr(e) {
           return;
         }
         if (B.pages.length === 1) {
-          if (N?.removeIntegrationPayload) {
+          if (P?.removeIntegrationPayload) {
             const G = B.id;
-            N.payload?.integrations?.[G] !== void 0 && N.removeIntegrationPayload(G);
+            P.payload?.integrations?.[G] !== void 0 && P.removeIntegrationPayload(G);
           }
           S(g.filter((G) => G.id !== B.id));
         } else
@@ -2978,17 +2978,17 @@ function yr(e) {
           } : G));
         return;
       }
-  }, [g, f, S, N]), y = he((b, M) => {
+  }, [g, f, S, P]), y = he((b, M) => {
     S(g.map((_) => _.id === b ? te(_) ? {
       ..._,
       ...M
     } : { ..._, ...M } : _));
-  }, [g, S]), v = he((b) => {
+  }, [g, S]), x = he((b) => {
     S(b);
   }, [S]), R = ae(() => {
     const b = Ga(g);
     return u ? Va(b, u) : b;
-  }, [g, u]), D = he((b) => {
+  }, [g, u]), A = he((b) => {
     const M = [];
     return R.forEach((_) => {
       te(_) ? (_.pages ?? []).forEach((K) => {
@@ -3016,16 +3016,16 @@ function yr(e) {
   return {
     items: g,
     itemsWithPageNum: R,
-    totalPageCount: T,
-    availableItemsToAdd: x,
-    addItem: A,
-    removeItem: E,
+    totalPageCount: E,
+    availableItemsToAdd: v,
+    addItem: D,
+    removeItem: T,
     updateItemFields: y,
-    reorderItems: v,
+    reorderItems: x,
     addDialogOpen: C,
     setAddDialogOpen: p,
     openAddDialog: H,
-    renderItems: D,
+    renderItems: A,
     itemsForReorder: O,
     handleReorder: j,
     defaultRenderThumbnail: z
@@ -3160,8 +3160,8 @@ const Lt = (e, t, n = !1, r) => {
   });
   const u = t.map((p) => {
     if (typeof p == "string") {
-      const N = d.get(p);
-      return N ? zt(N, !0, s, i) : Lt(p, void 0, !0, i);
+      const P = d.get(p);
+      return P ? zt(P, !0, s, i) : Lt(p, void 0, !0, i);
     }
     return p.pageComponentKeys !== void 0 ? zt(p, !0, s, i) : Lt(p, void 0, !0, i);
   }), g = c.map((p) => ({
@@ -3359,18 +3359,18 @@ function Wt({
   stateKey: C = Ne,
   onItemsChange: p,
   onStateChange: w,
-  resolveNewItem: N,
+  resolveNewItem: P,
   pageFilter: S,
   printConfigs: k
 }) {
-  const x = i ?? { width: 210, height: 297 }, { interactive: T, setInteractive: A, enableDevTools: E } = it(), y = st(), [v, R] = J(null), [D, O] = J(null), [j, H] = J(void 0), z = v ?? S, b = ae(() => D ? { ...x, ...D } : x, [x, D]), M = oe(ke), _ = M?.payload ?? r, [B, K] = J(!1), G = b?.preview ?? "single_page", U = ae(
+  const v = i ?? { width: 210, height: 297 }, { interactive: E, setInteractive: D, enableDevTools: T } = it(), y = st(), [x, R] = J(null), [A, O] = J(null), [j, H] = J(void 0), z = x ?? S, b = ae(() => A ? { ...v, ...A } : v, [v, A]), M = oe(ke), _ = M?.payload ?? r, [B, K] = J(!1), G = b?.preview ?? "single_page", U = ae(
     () => G === "two_pages" ? { ...b, preview: "single_page" } : b,
     [G, b]
-  ), ee = ae(() => lt(e), [e]), ne = ae(() => o?.length ? o.map((P) => "getValue" in P ? P : M?.setPageOptionValue ? ar(
-    P,
+  ), ee = ae(() => lt(e), [e]), ne = ae(() => o?.length ? o.map((N) => "getValue" in N ? N : M?.setPageOptionValue ? ar(
+    N,
     M.payload,
     M.setPageOptionValue
-  ) : ((Rr() || E) && console.warn(
+  ) : ((Rr() || T) && console.warn(
     "PageEditor: payload-backed pageOptions require TemplateDataProvider or payload/onPayloadChange."
   ), null)).filter(Boolean) : [], [o, M]), {
     items: ie,
@@ -3391,73 +3391,73 @@ function Wt({
     availableItems: t,
     pageComponents: n,
     payload: _,
-    setup: x,
+    setup: v,
     stateKey: C,
     onItemsChange: p,
     onStateChange: w,
-    resolveNewItem: N,
+    resolveNewItem: P,
     notifyError: s,
     pageFilter: z
   }), ft = I.useCallback(
-    (P, $, q) => {
+    (N, $, q) => {
       if (!$) return;
-      const Z = P.applyPatch?.(q, $);
-      Z && V($.id, Z), P.onChange?.($.id, q, {
+      const Z = N.applyPatch?.(q, $);
+      Z && V($.id, Z), N.onChange?.($.id, q, {
         item: $,
         updateItem: (se) => V($.id, se)
       });
     },
     [V]
-  ), $n = (P) => /* @__PURE__ */ h("div", { className: "absolute bottom-[10mm] left-[15mm] right-[15mm] text-[7pt] text-gray-600 flex items-center justify-between pointer-events-none", children: [
+  ), $n = (N) => /* @__PURE__ */ h("div", { className: "absolute bottom-[10mm] left-[15mm] right-[15mm] text-[7pt] text-gray-600 flex items-center justify-between pointer-events-none", children: [
     /* @__PURE__ */ a("span", { children: "Page" }),
     /* @__PURE__ */ h("span", { children: [
-      P.pageNo,
+      N.pageNo,
       " / ",
-      P.total
+      N.total
     ] })
-  ] }), Mn = (P, $, q) => d ? d({ pageNo: P, total: F, pageId: $, parent: q }) : $n({ pageNo: P, total: F }), Ae = (P, $) => {
+  ] }), Mn = (N, $, q) => d ? d({ pageNo: N, total: F, pageId: $, parent: q }) : $n({ pageNo: N, total: F }), Ae = (N, $) => {
     if (l)
-      return l({ page: P, parent: $ });
-    const q = P.componentKey ?? P.id, Z = c ? c(P) : null, se = P.templateId ?? q, fe = n[q], Ee = M?.getPagePayload ? M.getPagePayload(P) : $e(_, { id: P.id, templateId: se, componentKey: q }), Kn = pn(
+      return l({ page: N, parent: $ });
+    const q = N.componentKey ?? N.id, Z = c ? c(N) : null, se = N.templateId ?? q, fe = n[q], Ee = M?.getPagePayload ? M.getPagePayload(N) : $e(_, { id: N.id, templateId: se, componentKey: q }), Kn = pn(
       _,
-      P,
+      N,
       $
     ), Ln = vr({
       payload: _,
-      page: P,
+      page: N,
       parentGroup: $,
       pagePayload: Ee
     });
     return /* @__PURE__ */ a(
       pr,
       {
-        pageId: P.id,
+        pageId: N.id,
         templateId: se,
-        pageNo: P.pageNum,
+        pageNo: N.pageNum,
         component: fe,
         payload: _,
         pagePayload: Ee,
         integration: Kn,
-        page: P,
+        page: N,
         parentGroup: $,
         componentKey: q,
         setup: U,
         reference: Z,
-        overlay: ({ pageNo: zn }) => Mn(zn, P.id, $),
-        className: P.className,
+        overlay: ({ pageNo: zn }) => Mn(zn, N.id, $),
+        className: N.className,
         dataBinding: Ln
       }
     );
-  }, Le = (P, $) => {
-    const q = !!$ && te($), Z = q && $.pages[0]?.id === P.id;
+  }, Le = (N, $) => {
+    const q = !!$ && te($), Z = q && $.pages[0]?.id === N.id;
     return q && !Z ? /* @__PURE__ */ a("div", { className: "pl-0 pr-3 py-1.5 flex justify-between items-center h-10", children: /* @__PURE__ */ h("div", { className: "flex items-center gap-2", children: [
-      /* @__PURE__ */ a("span", { className: "page-number", children: P.pageNum }),
-      P.label && /* @__PURE__ */ a("span", { className: "text-xs text-gray-500", children: P.label }),
+      /* @__PURE__ */ a("span", { className: "page-number", children: N.pageNum }),
+      N.label && /* @__PURE__ */ a("span", { className: "text-xs text-gray-500", children: N.label }),
       /* @__PURE__ */ a("span", { className: "text-xs text-gray-400", children: "·" })
     ] }) }) : /* @__PURE__ */ h("div", { className: "pl-0 py-1.5 flex justify-start gap-2 items-center", children: [
       /* @__PURE__ */ h("div", { className: "flex items-center gap-2", children: [
-        /* @__PURE__ */ a("span", { className: "page-number", children: P.pageNum }),
-        P.label && /* @__PURE__ */ a("span", { className: "text-xs text-gray-500", children: P.label }),
+        /* @__PURE__ */ a("span", { className: "page-number", children: N.pageNum }),
+        N.label && /* @__PURE__ */ a("span", { className: "text-xs text-gray-500", children: N.label }),
         q && /* @__PURE__ */ a(
           Se,
           {
@@ -3480,7 +3480,7 @@ function Wt({
         In,
         {
           pageOptions: ne,
-          targetItem: q ? $ : P,
+          targetItem: q ? $ : N,
           onChange: ft,
           onRemove: ce,
           showRemove: F > 1,
@@ -3491,11 +3491,11 @@ function Wt({
     ] });
   }, ht = ae(() => {
     if (G !== "two_pages") return [];
-    const P = [];
+    const N = [];
     for (const $ of L) {
       const q = te($) ? $.pages ?? [] : [$];
       for (const Z of q)
-        Z?.id && P.push({
+        Z?.id && N.push({
           ...Z,
           kind: "page",
           id: Z.id,
@@ -3503,14 +3503,14 @@ function Wt({
           parentGroup: te($) ? $ : void 0
         });
     }
-    return P.sort(($, q) => ($.pageNum ?? 0) - (q.pageNum ?? 0));
+    return N.sort(($, q) => ($.pageNum ?? 0) - (q.pageNum ?? 0));
   }, [G, L]), _n = ae(() => {
     if (G !== "two_pages") return [];
-    const P = ht;
-    if (!P.length) return [];
-    const $ = [{ left: void 0, right: P[0], layout: "right" }];
-    for (let q = 1; q < P.length; q += 2) {
-      const Z = P[q], se = P[q + 1];
+    const N = ht;
+    if (!N.length) return [];
+    const $ = [{ left: void 0, right: N[0], layout: "right" }];
+    for (let q = 1; q < N.length; q += 2) {
+      const Z = N[q], se = N[q + 1];
       if (se)
         $.push({ left: Z, right: se, layout: "spread" });
       else {
@@ -3525,10 +3525,10 @@ function Wt({
     return $;
   }, [G, ht]);
   return /* @__PURE__ */ h(ue, { children: [
-    E && !T && /* @__PURE__ */ h(
+    T && !E && /* @__PURE__ */ h(
       Q,
       {
-        onClick: () => A(!0),
+        onClick: () => D(!0),
         "data-uhuu-editor": !0,
         size: "sm",
         className: "screen-only fixed top-4 right-4 z-50 flex items-center gap-1.5 !text-xs rounded-full",
@@ -3551,21 +3551,21 @@ function Wt({
             " ",
             F === 1 ? "Page" : "Pages"
           ] }),
-          E && k && /* @__PURE__ */ a(
+          T && k && /* @__PURE__ */ a(
             Sr,
             {
               modes: k,
               selectedMode: j,
-              onModeChange: (P, $) => {
-                H(P), R($.filter ?? null), O($.pageFormat ?? null);
+              onModeChange: (N, $) => {
+                H(N), R($.filter ?? null), O($.pageFormat ?? null);
               },
-              interactive: T,
-              onInteractiveChange: (P) => {
-                A(P), P && O(null);
+              interactive: E,
+              onInteractiveChange: (N) => {
+                D(N), N && O(null);
               }
             }
           ),
-          T && /* @__PURE__ */ h(ue, { children: [
+          E && /* @__PURE__ */ h(ue, { children: [
             /* @__PURE__ */ h(
               Q,
               {
@@ -3598,48 +3598,48 @@ function Wt({
         ] }),
         onAddPage: De,
         preview: G,
-        children: G === "two_pages" ? _n.map((P, $) => /* @__PURE__ */ h(rr, { layout: P.layout, children: [
-          P.left && /* @__PURE__ */ a(
+        children: G === "two_pages" ? _n.map((N, $) => /* @__PURE__ */ h(rr, { layout: N.layout, children: [
+          N.left && /* @__PURE__ */ a(
             Oe,
             {
-              title: `Sheet ${P.left.pageNum}`,
-              controls: Le(P.left, P.left.parentGroup),
-              origin: P.left.pageNum % 2 === 0 ? "right" : "left",
-              children: Ae(P.left, P.left.parentGroup)
+              title: `Sheet ${N.left.pageNum}`,
+              controls: Le(N.left, N.left.parentGroup),
+              origin: N.left.pageNum % 2 === 0 ? "right" : "left",
+              children: Ae(N.left, N.left.parentGroup)
             },
-            P.left.id
+            N.left.id
           ),
-          P.right && /* @__PURE__ */ a(
+          N.right && /* @__PURE__ */ a(
             Oe,
             {
-              title: `Sheet ${P.right.pageNum}`,
-              controls: Le(P.right, P.right.parentGroup),
-              origin: P.right.pageNum % 2 === 0 ? "right" : "left",
-              children: Ae(P.right, P.right.parentGroup)
+              title: `Sheet ${N.right.pageNum}`,
+              controls: Le(N.right, N.right.parentGroup),
+              origin: N.right.pageNum % 2 === 0 ? "right" : "left",
+              children: Ae(N.right, N.right.parentGroup)
             },
-            P.right.id
+            N.right.id
           )
-        ] }, `pair-${$}`)) : L.map((P) => {
-          if (te(P)) {
-            const q = P.pages ?? [];
+        ] }, `pair-${$}`)) : L.map((N) => {
+          if (te(N)) {
+            const q = N.pages ?? [];
             return /* @__PURE__ */ a(
               hr,
               {
-                group: P,
+                group: N,
                 pagesWithPageNum: q,
                 onRemove: ce,
                 onLabelChange: (Z, se) => {
                   V(Z, { label: se || void 0 });
                 },
                 totalItems: ie.length,
-                renderPage: (Z) => Ae(Z, P),
+                renderPage: (Z) => Ae(Z, N),
                 pageOptions: ne,
                 onPageOptionChange: (Z, se, fe) => ft(Z, se, fe)
               },
-              P.id
+              N.id
             );
           }
-          const $ = P;
+          const $ = N;
           return /* @__PURE__ */ a(
             Oe,
             {
@@ -3652,7 +3652,7 @@ function Wt({
         })
       }
     ),
-    T && !y && /* @__PURE__ */ h(ue, { children: [
+    E && !y && /* @__PURE__ */ h(ue, { children: [
       /* @__PURE__ */ a(
         or,
         {
@@ -3662,7 +3662,7 @@ function Wt({
           onSelectItem: le,
           pageComponents: n,
           payload: _,
-          setup: x,
+          setup: v,
           gridColsClass: u,
           "data-uhuu-editor": !0
         }
@@ -3673,12 +3673,12 @@ function Wt({
           open: B,
           onOpenChange: K,
           pages: Tn,
-          onReorder: (P) => {
-            On(P), K(!1);
+          onReorder: (N) => {
+            On(N), K(!1);
           },
           pageComponents: n,
           payload: _,
-          setup: x,
+          setup: v,
           renderThumbnail: jn,
           title: g,
           description: m,
@@ -3716,38 +3716,38 @@ function Dr(e) {
   ), d = I.useMemo(() => {
     if (!c?.items)
       return r.initialItems;
-    const l = e.templateConfig.groups ?? {}, f = Array.isArray(l) ? l : Object.entries(l).map(([N, S]) => ({ id: N, ...S })), u = new Map(f.map((N) => [N.id, N])), g = e.templateConfig.pages ?? {}, m = c.items.map((N) => {
-      if (N.kind !== "group") return N;
-      const S = N.templateId ?? N.id, k = u.get(S);
-      if (!k || typeof k.pageComponentKeys != "function") return N;
+    const l = e.templateConfig.groups ?? {}, f = Array.isArray(l) ? l : Object.entries(l).map(([P, S]) => ({ id: P, ...S })), u = new Map(f.map((P) => [P.id, P])), g = e.templateConfig.pages ?? {}, m = c.items.map((P) => {
+      if (P.kind !== "group") return P;
+      const S = P.templateId ?? P.id, k = u.get(S), v = k?.strictPosition !== void 0 && !P.strictPosition ? { ...P, strictPosition: k.strictPosition } : P;
+      if (!k || typeof k.pageComponentKeys != "function") return v;
       try {
-        const x = k.pageComponentKeys({ payload: n, item: void 0, parent: void 0 });
-        return Array.isArray(x) ? x.length === 0 ? {
-          ...N,
+        const E = k.pageComponentKeys({ payload: n, item: void 0, parent: void 0 });
+        return Array.isArray(E) ? E.length === 0 ? {
+          ...v,
           pages: []
         } : {
-          ...N,
-          pages: x.map((T, A) => {
-            const E = g[T]?.dataKey;
+          ...v,
+          pages: E.map((D, T) => {
+            const y = g[D]?.dataKey;
             return {
-              id: `${N.id}__${E ?? T}__${A}`,
-              componentKey: T,
-              templateId: T,
-              ...E ? { dataKey: E } : {}
+              id: `${v.id}__${y ?? D}__${T}`,
+              componentKey: D,
+              templateId: D,
+              ...y ? { dataKey: y } : {}
             };
           })
-        } : (console.error(`[PageEditor] pageComponentKeys for group ${N.id} must return an array, got:`, typeof x), N);
-      } catch (x) {
-        return console.error(`[PageEditor] Error evaluating pageComponentKeys for group ${N.id}:`, x), N;
+        } : (console.error(`[PageEditor] pageComponentKeys for group ${v.id} must return an array, got:`, typeof E), v);
+      } catch (E) {
+        return console.error(`[PageEditor] Error evaluating pageComponentKeys for group ${v.id}:`, E), v;
       }
-    }), C = new Set(r.initialItems.map((N) => N.id)), p = be(m.filter((N) => C.has(N.id))), w = be(r.initialItems);
+    }), C = new Set(r.initialItems.map((P) => P.id)), p = be(m.filter((P) => C.has(P.id))), w = be(r.initialItems);
     if (p !== w) {
-      const N = m.filter((S) => {
+      const P = m.filter((S) => {
         if (S.kind !== "group") return !C.has(S.id);
         const k = S.templateId ?? S.id;
         return S.id !== k && !C.has(S.id);
       });
-      return N.length > 0 ? [...r.initialItems, ...N] : r.initialItems;
+      return P.length > 0 ? [...r.initialItems, ...P] : r.initialItems;
     }
     return m;
   }, [c?.items, r.initialItems, n, e.templateConfig.groups]);
