@@ -3101,6 +3101,7 @@ const Bt = (e, t, n = !1, r) => {
       repeatable: e.repeatable ?? !1,
       maxInstances: e.maxInstances ?? null,
       integration: e.integration,
+      strictPosition: e.strictPosition,
       pages: s.map((l, f) => {
         const u = typeof l == "string" ? l : l.key, m = typeof l == "string" ? void 0 : l.dataKey;
         return {
@@ -3116,7 +3117,8 @@ const Bt = (e, t, n = !1, r) => {
     label: e.label,
     repeatable: e.repeatable ?? !1,
     maxInstances: e.maxInstances ?? null,
-    integration: e.integration
+    integration: e.integration,
+    strictPosition: e.strictPosition
   });
 }, Sr = (e) => e ? Array.isArray(e) ? e : Object.entries(e).map(([t, n]) => ({ ...n, id: t })) : [], Rr = (e, t) => {
   if (!e) return [];
@@ -3161,7 +3163,8 @@ const Bt = (e, t, n = !1, r) => {
     // Keep original (function or array)
     repeatable: y.repeatable ?? !1,
     maxInstances: y.maxInstances ?? null,
-    integration: y.integration
+    integration: y.integration,
+    strictPosition: y.strictPosition
   })), C = [
     ...l.filter((y) => i?.[y]?.allowAsSinglePage !== !1).map((y) => {
       const w = i?.[y];
