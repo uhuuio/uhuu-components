@@ -1954,7 +1954,6 @@ function pt(e) {
                 children: /* @__PURE__ */ a(
                   "div",
                   {
-                    className: "absolute w-full h-full flex items-center justify-center pointer-events-none",
                     style: {
                       transform: `scale(${Math.min(l / u, f / m)})`,
                       transformOrigin: "center"
@@ -2144,14 +2143,14 @@ function gr({
             // compact + default, always base + addition if not default
           ].filter(Boolean).join(" "),
           children: [
-            /* @__PURE__ */ a("div", { className: "w-full h-full relative bg-gray-100 hover:bg-white", children: b.thumbnail ? /* @__PURE__ */ a(
+            /* @__PURE__ */ a("div", { className: "w-full h-full relative", children: b.thumbnail ? /* @__PURE__ */ a("div", { className: "absolute inset-0 bg-gray-100 hover:bg-white", children: /* @__PURE__ */ a(
               "img",
               {
                 src: b.thumbnail,
                 className: "w-full h-full object-contain pointer-events-none object-top border border-gray-200 p-4",
                 alt: p
               }
-            ) : I ? /* @__PURE__ */ a("div", { className: "absolute inset-0 flex items-center pointer-events-none", children: I(k(b, A), A, !1) }) : /* @__PURE__ */ a(ce, { children: D ? /* @__PURE__ */ h("div", { className: "p-4", children: [
+            ) }) : I ? /* @__PURE__ */ a("div", { className: "absolute inset-0 flex items-center pointer-events-none", children: I(k(b, A), A, !1) }) : /* @__PURE__ */ a(ce, { children: D ? /* @__PURE__ */ h("div", { className: "p-4", children: [
               /* @__PURE__ */ a("div", { className: "w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3", children: /* @__PURE__ */ a(pe, { className: "w-8 h-8 text-blue-600" }) }),
               /* @__PURE__ */ a("div", { className: "text-sm font-medium text-gray-700", children: p }),
               /* @__PURE__ */ h("div", { className: "text-xs text-gray-500 mt-1", children: [
@@ -2895,7 +2894,8 @@ function Pr(e) {
         label: U.label,
         repeatable: U.repeatable ?? !1,
         maxInstances: U.maxInstances ?? null,
-        integration: U.integration
+        integration: U.integration,
+        strictPosition: U.strictPosition
       });
     })(x);
     typeof window < "u" && window.$uhuu?.debug;
