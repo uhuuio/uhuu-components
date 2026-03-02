@@ -20703,7 +20703,8 @@ function fc(t) {
                         templateId: h,
                         pagePayload: y,
                         componentKey: h,
-                        integration: E
+                        integration: E,
+                        parentGroup: m
                       }
                     ) })
                   }
