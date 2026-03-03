@@ -19458,7 +19458,7 @@ const bO = ({
             ...le,
             path: "image"
           }, F.path = Z, F.type = se;
-        } else N.type === "image" && (F.imagePath || (F.imagePath = "url"));
+        }
         X.push({
           id: "edit",
           label: "Edit image",
@@ -19492,7 +19492,7 @@ const bO = ({
           ...oe,
           path: "image"
         }, j.path = G, j.type = U;
-      } else N.type === "image" && (j.imagePath || (j.imagePath = "url"));
+      }
       D = j;
     }
     return {
