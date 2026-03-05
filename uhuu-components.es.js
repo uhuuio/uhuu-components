@@ -12329,7 +12329,7 @@ const Cf = ({ children: t, className: e, setup: r }) => {
           "img",
           {
             className: m,
-            src: i,
+            src: i || null,
             onLoad: (A) => x(A)
           },
           `${i}-${S}-${h}`
@@ -19366,7 +19366,7 @@ function ec(t) {
       "img",
       {
         className: v,
-        src: i,
+        src: i || null,
         onLoad: (N) => H(N)
       },
       `${i}-${h}-${y}`
@@ -19954,7 +19954,9 @@ function Lg({
   }, [t, p, u, m]);
   const v = T.useCallback(
     (x) => {
-      e?.(x), typeof window < "u" && window.$uhuu?.initPayload && window.$uhuu.initPayload(x);
+      if (e?.(x), typeof window > "u") return;
+      const A = window.$uhuu;
+      A?.emitPayload && A.emitPayload(x);
     },
     [e]
   ), f = T.useCallback(
