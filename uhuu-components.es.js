@@ -12300,12 +12300,12 @@ const kf = ({ children: t, className: e, setup: r }) => {
     top: u = 0,
     bottom: p = 0
   } = t, m = (b) => `${b}mm`, v = () => {
-    let b = l;
-    return l || (b = a, u || (b += r), p || (b += r), (u || p) && (b -= (u ?? 0) + (p ?? 0))), b;
-  }, g = (() => {
     let b = s;
-    return s || (b = n, c || (b += r), d || (b += r), (c || d) && (b -= (c ?? 0) + (d ?? 0))), b;
-  })(), x = v(), S = (b) => b !== void 0 ? m(b) : void 0, y = ((b) => Object.fromEntries(
+    return s ? !c && !d && (b += r) : (b = n, c || (b += r), d || (b += r), (c || d) && (b -= (c ?? 0) + (d ?? 0))), b;
+  }, f = () => {
+    let b = l;
+    return l ? !u && !p && (b += r) : (b = a, u || (b += r), p || (b += r), (u || p) && (b -= (u ?? 0) + (p ?? 0))), b;
+  }, g = v(), x = f(), S = (b) => b !== void 0 ? m(b) : void 0, y = ((b) => Object.fromEntries(
     Object.entries(b).filter(([E, C]) => C !== void 0)
   ))({
     backgroundColor: o,
@@ -19333,13 +19333,13 @@ function tc(t) {
     bottom: m = 0
   } = t, v = (P) => `${P}mm`, f = () => {
     let P = l;
-    return l || (P = 2 * n, d || (P += 2 * r), u || (P += 2 * r), (d || u) && (P -= (d ?? 0) + (u ?? 0))), P;
+    return l ? !d && !u && (P += r) : (P = 2 * n, d || (P += 2 * r), u || (P += 2 * r), (d || u) && (P -= (d ?? 0) + (u ?? 0))), P;
   }, g = () => {
     let P = c;
-    return c || (P = a, p || (P += r), m || (P += r), (p || m) && (P -= (p ?? 0) + (m ?? 0))), P;
+    return c ? !p && !m && (P += r) : (P = a, p || (P += r), m || (P += r), (p || m) && (P -= (p ?? 0) + (m ?? 0))), P;
   }, x = f(), S = g(), h = (P) => P !== void 0 ? v(P) : void 0, y = (P) => Object.fromEntries(
     Object.entries(P).filter(([N, W]) => W !== void 0)
-  ), b = d > 0 ? d + r : -1 * r, E = p > 0 ? p + r : -1 * r, C = m > 0 ? m + r : -1 * r, w = -1 * n + b, O = p > 0 && m > 0, A = y({
+  ), b = d > 0 ? d + r : 0, E = p > 0 ? p + r : 0, C = m > 0 ? m + r : 0, w = -1 * n + b, O = p > 0 && m > 0, A = y({
     backgroundColor: s,
     width: h(x),
     ...O ? { height: h(S) } : {},
