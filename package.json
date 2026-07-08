@@ -1,9 +1,10 @@
 {
-  "version": "0.2.77",
+  "version": "0.2.78",
   "name": "uhuu-components",
   "main": "uhuu-components.umd.js",
   "module": "uhuu-components.es.js",
   "browser": "uhuu-components.es.js",
+  "types": "index.d.ts",
   "type": "module",
   "license": "https://uhuu.io/license",
   "peerDependencies": {
