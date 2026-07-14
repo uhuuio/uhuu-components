@@ -17,6 +17,82 @@ export interface StaticFlowItemMeta {
   groupKey?: string;
 }
 
+/** A separately measured group whose header may repeat on virtual continuation pages. */
+export interface StaticFlowItemGroup {
+  key: string;
+  repeatHeader?: boolean;
+}
+
+export interface StaticFlowFragmentContext<TItem = unknown> {
+  flowId: string;
+  pageIndex: number;
+  pageCount: number;
+  itemIndex: number;
+  itemKey: Key;
+  item: TItem;
+  groupKey?: string;
+  isFirst: boolean;
+  isLast: boolean;
+  isFirstInFragment: boolean;
+  isLastInFragment: boolean;
+  isFirstInGroup: boolean;
+  isFirstInGroupOnPage: boolean;
+  /** The item is on a continuation page of the Flow. */
+  isContinuation: boolean;
+  /** The group resumed from the preceding virtual page. */
+  isGroupContinuation: boolean;
+}
+
+export interface StaticFlowUnplaceableItem {
+  index: number;
+  key: string;
+  height: number;
+  headerHeight: number;
+  requiredHeight: number;
+  availableHeight: number;
+  groupKey?: string;
+  reason: "item-too-tall" | "item-with-header-too-tall";
+}
+
+export interface StaticFlowUnplaceableContext {
+  flowId: string;
+  pageIndex: number;
+  pageCount: number;
+}
+
+/** A repeatable group-header insertion point in one measured flow chunk. */
+export interface StaticFlowGroupHeaderFragment {
+  groupKey: string;
+  itemIndex: number;
+  isContinuation: boolean;
+}
+
+export interface StaticFlowChunk {
+  indexes: number[];
+  keys: string[];
+  groupHeaders?: StaticFlowGroupHeaderFragment[];
+  unplaceable?: StaticFlowUnplaceableItem;
+}
+
+export interface StaticFlowMeasurement {
+  flowId: string;
+  chunks: StaticFlowChunk[];
+  signature: string;
+  unplaceableItems?: StaticFlowUnplaceableItem[];
+}
+
+/** Input for `Static.planFlowChunks`, using heights measured by the consumer. */
+export interface StaticFlowPlanInput {
+  heights?: number[];
+  keys?: string[];
+  metas?: StaticFlowItemMeta[];
+  availableHeight?: number;
+  headerGroupKeys?: Array<string | null | undefined>;
+  headerGroupHeights?: Record<string, number>;
+  headerGroupRepeats?: Record<string, boolean>;
+  onUnplaceableItem?: (item: StaticFlowUnplaceableItem) => void;
+}
+
 export interface ImageBlockDialog {
   path: string;
   type: "image" | "satellite";
@@ -195,6 +271,7 @@ export interface StaticFlowAreaProps {
   children: ReactNode;
   className?: string;
   style?: CSSProperties;
+  onFlowMeasurement?: (measurement: StaticFlowMeasurement) => void;
 }
 
 export interface StaticFlowPageProps {
@@ -205,18 +282,39 @@ export interface StaticFlowPageProps {
   style?: CSSProperties;
   flowAreaClassName?: string;
   flowAreaStyle?: CSSProperties;
+  onFlowMeasurement?: (measurement: StaticFlowMeasurement) => void;
 }
 
 export interface StaticFlowProps<TItem = unknown> {
   id: string;
   items: TItem[];
   getKey: (item: TItem, index: number) => Key;
-  renderItem: (item: TItem, index: number) => ReactNode;
+  renderItem: (
+    item: TItem,
+    index: number,
+    fragment: StaticFlowFragmentContext<TItem>
+  ) => ReactNode;
   getItemMeta?: (item: TItem, index: number) => StaticFlowItemMeta | undefined;
   metaDefaults?: Partial<Record<string, StaticFlowItemMeta>>;
   getItemType?: (item: TItem, index: number) => string | undefined;
+  getItemGroup?: (
+    item: TItem,
+    index: number
+  ) => StaticFlowItemGroup | string | null | undefined;
+  renderGroupHeader?: (
+    group: StaticFlowItemGroup,
+    fragment: StaticFlowFragmentContext<TItem>
+  ) => ReactNode;
   className?: string;
   itemClassName?: string | ((item: TItem, index: number) => string | undefined);
+  groupHeaderClassName?: string | ((
+    group: StaticFlowItemGroup,
+    fragment: StaticFlowFragmentContext<TItem>
+  ) => string | undefined);
+  renderUnplaceableItem?: (
+    item: StaticFlowUnplaceableItem,
+    context: StaticFlowUnplaceableContext
+  ) => ReactNode;
 }
 
 export type HtmlFlowItem = {
@@ -252,6 +350,7 @@ export const Static: {
   FlowArea: ComponentType<StaticFlowAreaProps>;
   FlowPage: ComponentType<StaticFlowPageProps>;
   Flow: <TItem = unknown>(props: StaticFlowProps<TItem>) => ReactElement | null;
+  planFlowChunks: (input?: StaticFlowPlanInput) => StaticFlowChunk[];
   FlowDocument: ComponentType<StaticFlowDocumentProps>;
   markdownToFlowItems: (
     markdown?: string,
