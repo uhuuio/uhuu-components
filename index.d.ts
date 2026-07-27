@@ -191,6 +191,9 @@ export interface PrintConfig {
 
 export type PrintConfigMap = Record<string, PrintConfig>;
 
+/** Initial PageEditor zoom preference; fit modes follow layout until manually adjusted. */
+export type PageEditorDefaultZoomMode = "manual" | "fit-width" | "fit-height" | "fit-page";
+
 export interface PageEditorProps {
   templateConfig: Record<string, unknown>;
   payload?: Record<string, unknown>;
@@ -199,6 +202,7 @@ export interface PageEditorProps {
   pageOptions?: unknown[];
   pageFilter?: PageFilterConfig;
   printConfigs?: PrintConfigMap;
+  defaultZoomMode?: PageEditorDefaultZoomMode;
   onItemsChange?: (items: PageEditorItem[], state: PageEditorState) => void;
   onStateChange?: (state: PageEditorState) => void;
   renderOverlay?: (context: {

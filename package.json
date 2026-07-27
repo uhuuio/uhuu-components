@@ -1,11 +1,19 @@
 {
-  "version": "0.2.80",
+  "version": "0.2.81",
   "name": "uhuu-components",
-  "main": "uhuu-components.umd.js",
+  "main": "uhuu-components.umd.cjs",
   "module": "uhuu-components.es.js",
   "browser": "uhuu-components.es.js",
   "types": "index.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./uhuu-components.es.js",
+      "require": "./uhuu-components.umd.cjs",
+      "default": "./uhuu-components.es.js"
+    }
+  },
   "license": "https://uhuu.io/license",
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
