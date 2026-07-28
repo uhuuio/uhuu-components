@@ -50,6 +50,8 @@ export interface StaticFlowUnplaceableItem {
   headerHeight: number;
   requiredHeight: number;
   availableHeight: number;
+  /** Present when the item belongs to a FlowColumns track. */
+  columnId?: string;
   groupKey?: string;
   reason: "item-too-tall" | "item-with-header-too-tall";
 }
@@ -68,11 +70,33 @@ export interface StaticFlowGroupHeaderFragment {
 }
 
 export interface StaticFlowChunk {
+  /** Flattened visual reading order for this page; `layout` preserves parallel track identity. */
   indexes: number[];
   keys: string[];
+  /** Track-local source predecessor for the first item in this continuation fragment. */
+  previousSourceIndex?: number;
   groupHeaders?: StaticFlowGroupHeaderFragment[];
   unplaceable?: StaticFlowUnplaceableItem;
+  layout?: StaticFlowLayoutFragment[];
 }
+
+export interface StaticFlowColumn {
+  id: string;
+  indexes: number[];
+}
+
+export type StaticFlowLayoutNode =
+  | { kind: "item"; index: number }
+  | { kind: "columns"; id: string; columns: StaticFlowColumn[] };
+
+export interface StaticFlowColumnFragment {
+  id: string;
+  chunk: StaticFlowChunk;
+}
+
+export type StaticFlowLayoutFragment =
+  | { kind: "items"; chunk: StaticFlowChunk }
+  | { kind: "columns"; id: string; columns: StaticFlowColumnFragment[] };
 
 export interface StaticFlowMeasurement {
   flowId: string;
@@ -91,6 +115,13 @@ export interface StaticFlowPlanInput {
   headerGroupHeights?: Record<string, number>;
   headerGroupRepeats?: Record<string, boolean>;
   onUnplaceableItem?: (item: StaticFlowUnplaceableItem) => void;
+}
+
+/** Input for `Static.planFlowColumnChunks`, using globally indexed leaf measurements. */
+export interface StaticFlowColumnPlanInput extends StaticFlowPlanInput {
+  nodes: StaticFlowLayoutNode[];
+  columnHeaderGroupHeights?: Record<string, Record<string, Record<string, number>>>;
+  columnHeaderGroupRepeats?: Record<string, Record<string, Record<string, boolean>>>;
 }
 
 export interface ImageBlockDialog {
@@ -321,6 +352,41 @@ export interface StaticFlowProps<TItem = unknown> {
   ) => ReactNode;
 }
 
+export interface StaticFlowColumnsRenderContext {
+  /** Stable identity only: column geometry callbacks must be page-invariant. */
+  flowId: string;
+}
+
+export interface StaticFlowColumnsContainerProps {
+  className?: string;
+  /**
+   * Geometry must be identical in measurement and visible output. Vertical group/column margins,
+   * padding, borders, fixed/min/max heights, wrapping, and row-gap are unsupported; put measured
+   * vertical spacing on items instead.
+   */
+  style?: CSSProperties;
+}
+
+export interface StaticFlowColumnsProps<TItem = unknown> extends StaticFlowProps<TItem> {
+  /** One-level story layout. Recursive columns are intentionally unsupported. */
+  layout: StaticFlowLayoutNode[];
+  getColumnGroupProps?: (
+    node: Extract<StaticFlowLayoutNode, { kind: "columns" }>,
+    context: StaticFlowColumnsRenderContext
+  ) => StaticFlowColumnsContainerProps | undefined;
+  getColumnProps?: (
+    node: Extract<StaticFlowLayoutNode, { kind: "columns" }>,
+    column: StaticFlowColumn,
+    context: StaticFlowColumnsRenderContext
+  ) => StaticFlowColumnsContainerProps | undefined;
+  getColumnItemProps?: (
+    node: Extract<StaticFlowLayoutNode, { kind: "columns" }>,
+    column: StaticFlowColumn,
+    itemIndex: number,
+    context: StaticFlowColumnsRenderContext
+  ) => StaticFlowColumnsContainerProps | undefined;
+}
+
 export type HtmlFlowItem = {
   id: string;
   type: string;
@@ -354,7 +420,9 @@ export const Static: {
   FlowArea: ComponentType<StaticFlowAreaProps>;
   FlowPage: ComponentType<StaticFlowPageProps>;
   Flow: <TItem = unknown>(props: StaticFlowProps<TItem>) => ReactElement | null;
+  FlowColumns: <TItem = unknown>(props: StaticFlowColumnsProps<TItem>) => ReactElement | null;
   planFlowChunks: (input?: StaticFlowPlanInput) => StaticFlowChunk[];
+  planFlowColumnChunks: (input?: StaticFlowColumnPlanInput) => StaticFlowChunk[];
   FlowDocument: ComponentType<StaticFlowDocumentProps>;
   markdownToFlowItems: (
     markdown?: string,
