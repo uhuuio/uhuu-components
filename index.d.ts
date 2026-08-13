@@ -105,6 +105,46 @@ export interface StaticFlowMeasurement {
   unplaceableItems?: StaticFlowUnplaceableItem[];
 }
 
+/**
+ * Diagnostic counters for one pagination pass. They never influence a
+ * pagination decision; pass one in to assert cost budgets in tests or to
+ * profile a slow document.
+ */
+export interface StaticFlowPlanMetrics {
+  /** Leaf-item reads during chunking, protected-group checks, and lookahead. */
+  scannedItems: number;
+  /** Calls into the leaf chunker: one per page per track, plus retries. */
+  chunkerCalls: number;
+  /** Fresh-page retries computed, whether or not the retry was taken. */
+  freshPageAttempts: number;
+  /** Output pages produced. */
+  pages: number;
+}
+
+/**
+ * The DOM reads `Static.FlowArea` measures a laid-out Flow with. Hosts that run
+ * their own Flow canvas (an editor drawing the same document) must use these
+ * instead of re-deriving them: the planner is deterministic, so a difference in
+ * how height or transform scale is read here is the one thing that can still
+ * move a page boundary between an editor and its delivered document.
+ */
+export interface StaticFlowMeasureApi {
+  /** Product of every ancestor CSS transform, so heights normalize to layout space. */
+  getEffectiveScale: (element: HTMLElement) => number;
+  /** Border-box height plus vertical margins, in layout space. */
+  getOuterHeight: (element: HTMLElement, scale?: number) => number;
+  readItemMeta: (element: HTMLElement) => StaticFlowItemMeta;
+  readHeaderGroupKey: (element: HTMLElement) => string | undefined;
+  readHeaderGroupRepeats: (itemElements: HTMLElement[]) => Record<string, boolean>;
+  readHeaderGroupHeights: (root: HTMLElement, scale?: number) => Record<string, number>;
+  /** Every measured leaf under `root`, in document order. */
+  readFlowItemElements: (root: HTMLElement) => HTMLElement[];
+  parseKeepWithNext: (value: string | undefined) => boolean | number;
+  serializeKeepWithNext: (value: StaticFlowItemMeta['keepWithNext']) => string | undefined;
+  /** FNV-1a. For opaque change-detection tokens compared only for equality. */
+  hashString: (value: string) => string;
+}
+
 /** Input for `Static.planFlowChunks`, using heights measured by the consumer. */
 export interface StaticFlowPlanInput {
   heights?: number[];
@@ -115,6 +155,7 @@ export interface StaticFlowPlanInput {
   headerGroupHeights?: Record<string, number>;
   headerGroupRepeats?: Record<string, boolean>;
   onUnplaceableItem?: (item: StaticFlowUnplaceableItem) => void;
+  metrics?: StaticFlowPlanMetrics;
 }
 
 /** Input for `Static.planFlowColumnChunks`, using globally indexed leaf measurements. */
@@ -423,6 +464,8 @@ export const Static: {
   FlowColumns: <TItem = unknown>(props: StaticFlowColumnsProps<TItem>) => ReactElement | null;
   planFlowChunks: (input?: StaticFlowPlanInput) => StaticFlowChunk[];
   planFlowColumnChunks: (input?: StaticFlowColumnPlanInput) => StaticFlowChunk[];
+  createFlowPlanMetrics: () => StaticFlowPlanMetrics;
+  flowMeasure: StaticFlowMeasureApi;
   FlowDocument: ComponentType<StaticFlowDocumentProps>;
   markdownToFlowItems: (
     markdown?: string,
