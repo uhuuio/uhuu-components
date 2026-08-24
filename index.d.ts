@@ -263,7 +263,10 @@ export interface PrintConfig {
 
 export type PrintConfigMap = Record<string, PrintConfig>;
 
-/** Initial PageEditor zoom preference; fit modes follow layout until manually adjusted. */
+/**
+ * Initial PageEditor zoom preference; fit modes follow layout until manually adjusted.
+ * PageEditor defaults to `fit-page`.
+ */
 export type PageEditorDefaultZoomMode = "manual" | "fit-width" | "fit-height" | "fit-page";
 
 export interface PageEditorProps {
