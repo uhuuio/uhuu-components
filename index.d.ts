@@ -258,7 +258,7 @@ export interface PageFilterConfig {
 export interface PrintConfig {
   label: string;
   filter: PageFilterConfig | null;
-  pageFormat?: { bleed?: number; [key: string]: unknown };
+  pageFormat?: { bleed?: number; binding?: BindingConfig | null; [key: string]: unknown };
 }
 
 export type PrintConfigMap = Record<string, PrintConfig>;
@@ -273,7 +273,15 @@ export interface PageEditorProps {
   templateConfig: Record<string, unknown>;
   payload?: Record<string, unknown>;
   onPayloadChange?: (nextPayload: Record<string, unknown>) => void;
-  pageFormat?: { width: number; height: number; preview?: string; bleed?: number; [key: string]: unknown };
+  pageFormat?: {
+    width: number;
+    height: number;
+    preview?: string;
+    bleed?: number;
+    /** Perfect-binding spine/glue; only applied while `pageFilter.mode === 'cover'`. */
+    binding?: BindingConfig | null;
+    [key: string]: unknown;
+  };
   pageOptions?: unknown[];
   pageFilter?: PageFilterConfig;
   printConfigs?: PrintConfigMap;
@@ -338,6 +346,65 @@ export interface StaticSheetProps {
   showBleed?: boolean;
   overlay?: (args: { pageNo: number }) => ReactNode;
   "data-page-key"?: string;
+}
+
+/**
+ * Passed as `spread` to cover page components while PageEditor composes a
+ * perfect-binding cover spread (`pageFormat.binding` + `pageFilter.mode: 'cover'`).
+ * Absent for plain single-page renders. mm.
+ */
+export interface SpreadInfo {
+  sheet: CoverSheetKind;
+  side: CoverPanelSide;
+  spine: number;
+  glue: number;
+  bleed: number;
+}
+
+/** Props of `templateConfig.spine.component`, rendered on the outer cover sheet's spine strip. */
+export interface SpineComponentProps {
+  payload?: Record<string, unknown>;
+  sheet: "outer";
+  spine: number;
+  glue: number;
+  bleed: number;
+  /** Trim page height (mm); the strip is `height + 2 × bleed` tall and `spine` wide. */
+  height: number;
+  totalPages?: number;
+  pages: { left?: PageEditorItem; right?: PageEditorItem };
+}
+
+/** `templateConfig.spine` — optional artwork for the spine of a perfect-bound cover. */
+export interface PageEditorSpineConfig {
+  component?: ComponentType<SpineComponentProps>;
+}
+
+export interface StaticCoverSpreadOverlayArgs {
+  pageNo: number;
+  side: CoverPanelSide;
+  sheet: CoverSheetKind;
+}
+
+/** One physical cover sheet of a perfect-bound product. See docs/printer-cover-spine-support.md. */
+export interface StaticCoverSpreadProps {
+  /** `outer` = back cover · spine · front cover. `inner` = inside front · blank spine + glue · inside back. */
+  sheet: CoverSheetKind;
+  left: ReactNode;
+  right: ReactNode;
+  /** Spine artwork, outer sheet only. */
+  spine?: ReactNode;
+  /** Original document page numbers `[left, right]`. */
+  pageNo?: [number, number];
+  overlay?: (args: StaticCoverSpreadOverlayArgs) => ReactNode;
+  /** Overrides `binding` from the Pagination setup. */
+  binding?: BindingConfig | null;
+  showBleed?: boolean;
+  className?: string;
+  style?: CSSProperties;
+  leftClassName?: string;
+  rightClassName?: string;
+  leftPageKey?: string;
+  rightPageKey?: string;
 }
 
 export interface StaticPaginationProps {
@@ -458,6 +525,73 @@ export interface StaticFlowDocumentProps {
   parseHtml?: (html: string) => unknown[];
 }
 
+// --- Perfect-binding cover spread (src/uhuu/pagination-static/spread-core.js) ---
+// dist ships this file alone, so the module's types are mirrored here. All values mm.
+
+export type BindingType = "perfect" | "saddle";
+
+/** `pageFormat.binding` / `Pagination setup.binding`. Only applied in `cover` filter mode. */
+export interface BindingConfig {
+  type?: BindingType;
+  /** Spine width. The printer supplies this number. */
+  spine: number;
+  /** Ink-free margin on each side of the spine, inner sheet only. Default 0. */
+  glue?: number;
+}
+
+export interface ResolvedBinding {
+  type: "perfect";
+  spine: number;
+  glue: number;
+}
+
+export interface SpreadBox {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}
+
+export type CoverSheetKind = "outer" | "inner";
+export type CoverPanelSide = "left" | "right";
+
+export interface CoverSpreadPageInput {
+  width?: number;
+  height?: number;
+  bleed?: number;
+  binding?: BindingConfig | null;
+}
+
+export interface CoverSheetSize {
+  width: number;
+  height: number;
+  trimWidth: number;
+  trimHeight: number;
+  spread: boolean;
+}
+
+export interface CoverSpreadPanel<TPage = unknown> {
+  side: CoverPanelSide;
+  page: TPage;
+  trim: SpreadBox;
+  bleedBox: SpreadBox;
+}
+
+export interface CoverSpreadSheet<TPage = unknown> {
+  sheet: CoverSheetKind;
+  index: number;
+  panels: CoverSpreadPanel<TPage>[];
+  spine: SpreadBox & { blank: boolean };
+  glueZones: Array<SpreadBox & { side: CoverPanelSide }>;
+}
+
+export interface CoverSpreadPlan<TPage = unknown> {
+  binding: ResolvedBinding;
+  page: { width: number; height: number; bleed: number };
+  sheet: { width: number; height: number; trimWidth: number; trimHeight: number };
+  sheets: CoverSpreadSheet<TPage>[];
+}
+
 export const Static: {
   Pagination: ComponentType<StaticPaginationProps>;
   Sheet: ComponentType<StaticSheetProps>;
@@ -478,4 +612,11 @@ export const Static: {
     html?: string,
     options?: Record<string, unknown>
   ) => HtmlFlowItem[];
+  /** Plan perfect-binding cover sheets (outer/inner) for the filtered cover pages. */
+  planCoverSpread: <TPage = unknown>(
+    input?: CoverSpreadPageInput & { coverPages?: TPage[] }
+  ) => CoverSpreadPlan<TPage> | null;
+  /** Physical sheet size incl. bleed; the wide cover sheet when `binding.spine > 0`. */
+  resolveSheetSize: (input?: CoverSpreadPageInput) => CoverSheetSize | null;
+  CoverSpread: ComponentType<StaticCoverSpreadProps>;
 };
