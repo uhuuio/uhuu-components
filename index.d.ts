@@ -4,6 +4,7 @@ import type {
   CSSProperties,
   ImgHTMLAttributes,
   Key,
+  MouseEventHandler,
   ReactElement,
   ReactEventHandler,
   ReactNode,
@@ -222,7 +223,144 @@ export interface EditableProps {
   children?: ReactNode;
 }
 
+/**
+ * Wraps its children in a `div` bound to `dialog`. The element is rendered even when the
+ * children are empty (null, false, whitespace): it is the click target. A bound, empty
+ * Editable carries `uhuu-text-empty`, which gets a one-line box in the editor.
+ * Template CSS controls print layout. Only text/textarea/markdown dialogs get the marker.
+ * Pass `null`, not a renderer element around an empty string.
+ */
 export const Editable: ComponentType<EditableProps>;
+
+/** What `getDialogProps` returns. Spread it onto the element that renders the field. */
+export interface DialogBindingProps {
+  /** Marks the element for the editor: `""`, or the serialised dialog under legacy dynamic pagination. */
+  "data-uhuu"?: string;
+  /** `dialog.type`, so CSS can tell an empty text binding from an empty image. */
+  "data-uhuu-type"?: string;
+  /** Opens the dialog in the interactive editor. Never set in renderer mode (`window.$uhuu_renderer`). */
+  onClick?: MouseEventHandler<HTMLElement>;
+}
+
+/**
+ * The props `Editable` and `ImageBlock` attach, for a template that binds its own element:
+ * `<p {...getDialogProps({ dialog: { path, type: "textarea", value } })}>`. Renderer mode gets
+ * the markers without a click handler. No dialog returns `{}`. Never returns `className`.
+ */
+export function getDialogProps(props: { dialog?: object | null } | null | undefined): DialogBindingProps;
+
+// --- Image URLs (src/uhuu/image/image-url.js). See docs/image-url.md. ---
+
+/** An image as payloads store it: an ImageObject, the dialogs' legacy `{ url }`, a URL, or nothing. */
+export type ImageSource =
+  | string
+  | {
+      contentUrl?: string;
+      url?: string;
+      src?: string;
+      encodingFormat?: string;
+      mimeType?: string;
+      [key: string]: unknown;
+    }
+  | null
+  | undefined;
+
+export interface ImageUrlOptions {
+  /** Print-product sizing. Default: the host's `$uhuu.is.printProduct()` (false without a host). */
+  print?: boolean;
+  /** Screen size as `WxH`. Default `2000x2000`. */
+  size?: string;
+  /** Print size as `WxH`. Default `4000x4000`. */
+  printSize?: string;
+  /** Thumbnail output format, e.g. `image/jpeg`. Default: the source's own (keeps transparency). */
+  format?: string;
+}
+
+/**
+ * The thumbnailer URL to render an image at: print-aware size, encoded source URL, SVG/`data:`/
+ * relative sources passed through, already-thumbnailed URLs rebuilt rather than nested.
+ * No image returns `undefined`, which renders no `src` attribute.
+ */
+export function imageUrl(src: ImageSource, options?: ImageUrlOptions): string | undefined;
+
+// --- Brand-kit runtime (src/uhuu/brand-kit/). See docs/brand-kit-runtime.md. ---
+
+export interface BrandKitFontFile {
+  src: string;
+  weight?: number | string;
+  style?: "normal" | "italic";
+  format?: string;
+}
+
+export interface BrandKitFont {
+  id?: string;
+  family?: string;
+  /** Role-keyed fonts (`fonts.body`, `fonts.heading`): the stack after `family`. */
+  fallback?: string;
+  source?: string;
+  provider?: string;
+  cssUrl?: string;
+  weights?: number[];
+  styles?: Array<"normal" | "italic">;
+  files?: BrandKitFontFile[];
+  faces?: Array<{
+    weight?: number;
+    style?: "normal" | "italic";
+    cssUrl?: string;
+    files?: BrandKitFontFile[] | Record<string, string>;
+    [key: string]: unknown;
+  }>;
+  [key: string]: unknown;
+}
+
+/** A brandkit.json document. Only the parts the runtime reads are typed. */
+export interface BrandKitJson {
+  version?: string | number;
+  id?: string;
+  name?: string;
+  baseUrl?: string;
+  assignments?: Record<string, string>;
+  fonts?: Record<string, BrandKitFont> | BrandKitFont[];
+  tokens?: {
+    light?: {
+      semantic?: Record<string, string | undefined>;
+      aliases?: Record<string, string | Record<string, string | undefined> | undefined>;
+    };
+    primitives?: { typography?: Record<string, unknown>; [key: string]: unknown };
+    [token: string]: unknown;
+  };
+  [key: string]: unknown;
+}
+
+/** What `useBrandKit()` returns. */
+export interface BrandKitRuntime {
+  /** The raw kit: logos and collections are read from it. */
+  brandKit: BrandKitJson | null;
+  /** `--color-kit-*`, `--font-*` and `--font-kit-*`, as the provider's scope element carries them. */
+  cssVars: Record<string, string>;
+}
+
+export interface BrandKitProviderProps {
+  brandKit?: BrandKitJson | null;
+  /** Custom properties for whatever the kit leaves out; the kit wins. Pass a stable object. */
+  defaults?: Record<string, string>;
+  /** Where a fetched kit came from; its directory resolves relative font URLs when the kit has no `baseUrl`. */
+  sourceUrl?: string;
+  /** For the scope element. `style` is applied last, so `{ display: "block" }` gives it a box. */
+  className?: string;
+  style?: CSSProperties;
+  children?: ReactNode;
+}
+
+/**
+ * Scopes a kit's CSS variables around the pages and their overlay chrome, on a `display: contents`
+ * element, and loads the fonts the kit declares. Colours are hex, `rgb()`/`rgba()` or keywords:
+ * HSL is converted, anything else is skipped as if absent.
+ */
+export const BrandKitProvider: ComponentType<BrandKitProviderProps>;
+
+/** The nearest `BrandKitProvider`'s runtime, or `null` outside one. */
+export function useBrandKit(): BrandKitRuntime | null;
 
 export interface InteractiveModeContextValue {
   interactive: boolean;
