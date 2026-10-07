@@ -329,23 +329,95 @@ export interface BrandKitJson {
     primitives?: { typography?: Record<string, unknown>; [key: string]: unknown };
     [token: string]: unknown;
   };
+  colorMode?: "light" | "manual" | "shade";
+  /** Template variables Brand Kit precomputed at publish. Applied as is when `version` is 2. */
+  runtime?: BrandKitRuntimeBlock;
   [key: string]: unknown;
 }
 
+/**
+ * `brandkit.json.runtime` (brandkit.json "2.0"): shadcn role variables (`--primary`, `--color-primary`),
+ * `--color-kit-*` / `--font-*` / `--font-kit-*` values, ready to apply, and the fonts to load.
+ */
+export interface BrandKitRuntimeBlock {
+  version: 2;
+  light: Record<string, string>;
+  fontStylesheets?: string[];
+  fontFaces?: Array<{ family: string; src: string; weight?: number; style?: "normal" | "italic"; format?: string }>;
+}
+
+export interface BrandKitLogo {
+  /** Absolute URL (SVG preferred, else PNG). */
+  src: string;
+  alt?: string;
+  kind: "primary" | "mark" | "wordmark";
+  background?: "light" | "dark" | "any";
+  minWidth?: { value: number; unit: "px" | "mm" };
+  clearSpace?: { value: number; unit: "px" | "mm" | "mark" };
+}
+
+export interface BrandKitCollectionItem {
+  key: string;
+  /** Absolute URL. */
+  src: string;
+  label?: string;
+  name?: string;
+  type?: string;
+  mimeType?: string;
+  tags?: string[];
+  [key: string]: unknown;
+}
+
+export interface BrandKitCollection {
+  id: string;
+  name?: string;
+  type?: string;
+  versionId?: string;
+  items: BrandKitCollectionItem[];
+}
+
+export interface BrandKitMapStyle {
+  url: string;
+  name?: string;
+  source: "config.maps" | "config.env";
+}
+
+export type BrandKitLogoKind = "primary" | "logo" | "lockup" | "mark" | "icon" | "symbol" | "wordmark";
+export type BrandKitMediaKind = "photos" | "icons" | "graphics" | "backgrounds" | "templates";
+
 /** What `useBrandKit()` returns. */
 export interface BrandKitRuntime {
-  /** The raw kit: logos and collections are read from it. */
+  /** The kit being rendered: the fetched one, else the `brandKit` prop. */
   brandKit: BrandKitJson | null;
-  /** `--color-kit-*`, `--font-*` and `--font-kit-*`, as the provider's scope element carries them. */
+  /** `--<role>`, `--color-<role>`, `--color-kit-*`, `--font-*` and `--font-kit-*`, as the provider's scope element carries them. */
   cssVars: Record<string, string>;
+  /** Where the rendered kit came from (`src` once fetched, else the `sourceUrl` prop). */
+  sourceUrl?: string;
+  /** `idle` without `src`; `loading` until it arrives; `ready`; `error` (the `brandKit` prop renders). */
+  status: "idle" | "loading" | "ready" | "error";
+  /** A logo, resolved: `logoSystem` first, then `logos`. Default `{ kind: "primary", background: "light" }`. */
+  logo(options?: { kind?: BrandKitLogoKind; background?: "light" | "dark" }): BrandKitLogo | null;
+  /** The assigned media collection's promoted version, items resolved. */
+  collection(kind: BrandKitMediaKind | string, options?: { versionId?: string }): BrandKitCollection | null;
+  mapStyle(mode: "micro" | "macro"): BrandKitMapStyle | null;
+  /** A `config.env` value; keys compare case- and punctuation-insensitively, first present wins. */
+  env(keys: string | string[]): string | undefined;
+  /** A kit-relative asset path made absolute. */
+  resolveUrl(path: unknown): string | undefined;
 }
 
 export interface BrandKitProviderProps {
+  /** The kit to render; with `src`, the fallback until the fetched kit arrives or when the fetch fails. */
   brandKit?: BrandKitJson | null;
+  /** A brandkit.json URL to fetch, usually `brandKitSourceUrl(payload)`. */
+  src?: string | null;
   /** Custom properties for whatever the kit leaves out; the kit wins. Pass a stable object. */
   defaults?: Record<string, string>;
-  /** Where a fetched kit came from; its directory resolves relative font URLs when the kit has no `baseUrl`. */
+  /** Where a `brandKit` passed in came from; its directory resolves relative URLs when the kit has no `baseUrl`. */
   sourceUrl?: string;
+  onLoad?: (brandKit: BrandKitJson) => void;
+  /** Default: `console.error`. */
+  onError?: (error: unknown) => void;
   /** For the scope element. `style` is applied last, so `{ display: "block" }` gives it a box. */
   className?: string;
   style?: CSSProperties;
@@ -354,13 +426,44 @@ export interface BrandKitProviderProps {
 
 /**
  * Scopes a kit's CSS variables around the pages and their overlay chrome, on a `display: contents`
- * element, and loads the fonts the kit declares. Colours are hex, `rgb()`/`rgba()` or keywords:
- * HSL is converted, anything else is skipped as if absent.
+ * element (`data-uhuu-brand-kit-status` tells a print step when a fetched kit has arrived), and
+ * loads the fonts the kit declares. Colours are hex, `rgb()`/`rgba()`, `oklch()`/`oklab()` or
+ * keywords: HSL is converted, anything else is skipped as if absent.
  */
 export const BrandKitProvider: ComponentType<BrandKitProviderProps>;
 
 /** The nearest `BrandKitProvider`'s runtime, or `null` outside one. */
 export function useBrandKit(): BrandKitRuntime | null;
+
+/** Brand Kit's production location for published kits. */
+export const BRAND_KIT_PUBLIC_BASE_URL: string;
+
+/**
+ * The brandkit.json URL a payload points at: `brandKitUrl` (URL or `kit-…` id), `brandKitId`, or
+ * `brandKit.storage.publicUrl`. Ids need `brandKitTeamId` (or `teamId`) and resolve under `publicBaseUrl`.
+ */
+export function brandKitSourceUrl(
+  payload: Record<string, unknown> | null | undefined,
+  options?: { publicBaseUrl?: string; teamId?: string | number },
+): string | null;
+
+/** Fetches a brandkit.json; rejects on network errors, non-2xx and non-object bodies. */
+export function loadBrandKit(url: string, options?: { fetch?: typeof fetch; signal?: AbortSignal }): Promise<BrandKitJson>;
+
+export function brandKitLogo(
+  brandKit: BrandKitJson | null | undefined,
+  options?: { kind?: BrandKitLogoKind; background?: "light" | "dark"; sourceUrl?: string },
+): BrandKitLogo | null;
+
+export function brandKitCollection(
+  brandKit: BrandKitJson | null | undefined,
+  kind: BrandKitMediaKind | string,
+  options?: { sourceUrl?: string; versionId?: string },
+): BrandKitCollection | null;
+
+export function brandKitMapStyle(brandKit: BrandKitJson | null | undefined, mode: "micro" | "macro"): BrandKitMapStyle | null;
+
+export function brandKitEnv(brandKit: BrandKitJson | null | undefined, keys: string | string[]): string | undefined;
 
 export interface InteractiveModeContextValue {
   interactive: boolean;
