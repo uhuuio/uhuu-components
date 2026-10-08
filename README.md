@@ -1,5 +1,3 @@
-<!-- Generated from uhuu-storybook/docs/package-readme.md; edit the owning source. -->
-
 # Uhuu Components
 
 React components for printable documents with fixed pages, static flow pagination, interactive editing, image bleed/spread layouts and BrandKit styling.
@@ -62,10 +60,3 @@ import { BrandKitProvider, ImageBlock, imageUrl } from 'uhuu-components'
 
 `BrandKitProvider` and `useBrandKit` apply accepted kit runtime tokens, load declared fonts and expose logo, collection, map and environment helpers. `src` can fetch a kit while `brandKit` supplies its fallback. See [BrandKit runtime](https://github.com/uhuuio/uhuu-storybook/blob/main/docs/brand-kit-runtime.md) and [image URLs](https://github.com/uhuuio/uhuu-storybook/blob/main/docs/image-url.md).
 
-## Package entries and ownership
-
-ESM imports and CommonJS `require('uhuu-components')` expose the same public root API. The single UMD artifact is `uhuu-components.umd.cjs`; it also exposes `UhuuComponents` when loaded as a browser script. Direct URLs to older `.umd.js` files remain part of those pinned releases; future releases use `.umd.cjs`.
-
-See [distribution surface](https://github.com/uhuuio/uhuu-storybook/blob/main/docs/distribution-surface.md) for the measured exports and bundled dependency boundary. Release notes are included in `CHANGELOG.md`.
-
-Source, stories, documentation and release generation belong to [uhuu-storybook](https://github.com/uhuuio/uhuu-storybook). The [uhuu-components delivery repository](https://github.com/uhuuio/uhuu-components) contains generated releases. Build in Storybook, then explicitly hand off the reviewed artifacts. The generated README must be changed in Storybook's `docs/package-readme.md`.
