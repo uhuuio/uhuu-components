@@ -469,6 +469,35 @@ export interface InteractiveModeContextValue {
   interactive: boolean;
   setInteractive: (interactive: boolean) => void;
   enableDevTools?: boolean;
+  /** The shell's resolved interface language (`de`, `fr`, `it`, `en`, or what the template passed). */
+  locale: string;
+}
+
+/**
+ * A label as one string, or one string per language: `{ en: 'Cover', de: 'Titelseite' }`.
+ * Accepted wherever `templateConfig` and `pageOptions` take a `label` (pages, groups, options,
+ * select and colour values) and by `reorderTitle` / `reorderDescription`. Resolved in the shell's
+ * language, then English, then the first entry.
+ */
+export type LocalizedText = string | Record<string, string>;
+
+/** Editor shell words, nested as in the English catalog (docs/editor-shell-translations.md). */
+export type EditorShellTranslations = { [key: string]: string | EditorShellTranslations };
+
+export interface InteractiveModeProviderProps {
+  children: ReactNode;
+  defaultInteractive?: boolean;
+  enableDevTools?: boolean;
+  /**
+   * The shell's interface language. Default: the host's (uhuu-app's locale from the SDK
+   * handshake), then `?lang=`, `<html lang>`, the browser's languages, then `en`.
+   */
+  locale?: string;
+  /**
+   * Per-language overrides of the shell's words, or a whole catalog for a language the package
+   * does not ship: `{ de: { toolbar: { add: 'Neu' } }, rm: romanshCatalog }`. Pass a stable object.
+   */
+  translations?: Record<string, EditorShellTranslations>;
 }
 
 export interface BrandKitOption {
@@ -535,8 +564,8 @@ export interface PageEditorProps {
     pageId?: string;
     parent?: unknown;
   }) => ReactNode;
-  reorderTitle?: string;
-  reorderDescription?: string;
+  reorderTitle?: LocalizedText;
+  reorderDescription?: LocalizedText;
   stateKey?: string;
   brandKits?: BrandKitOption[];
   activeBrandKitId?: string;
@@ -570,11 +599,7 @@ export interface IntegrationAdapter {
 export const EditorShell: {
   TemplateDataProvider: ComponentType<TemplateDataProviderProps>;
   PageEditor: ComponentType<PageEditorProps>;
-  InteractiveModeProvider: ComponentType<{
-    children: ReactNode;
-    defaultInteractive?: boolean;
-    enableDevTools?: boolean;
-  }>;
+  InteractiveModeProvider: ComponentType<InteractiveModeProviderProps>;
   useInteractive: () => InteractiveModeContextValue;
   useIntegrationAdapter: (config: IntegrationAdapterConfig) => IntegrationAdapter;
 };

@@ -2,7 +2,38 @@
 
 All notable changes to the `uhuu-components` Storybook workspace are documented here.
 
+### 2026-10-08 — Toolchain declarations (ECO-04)
+
+- `package.json` declares the Node floor (>=24) and the package-manager pin (pnpm@10.30.3) the ecosystem
+  toolchain policy measures. Metadata only; the dependency resolution is unchanged.
+
+## 0.3.2 (unreleased)
+
+### Fixed
+
+- The shell now follows the user's interface language inside the uhuu document editor. The editor
+  sends it once, in the handshake that the SDK re-emits as `loaded`, before the payload. Templates
+  that render nothing until the payload arrives (go-expose) mounted `InteractiveModeProvider` after
+  that event and fell back to `<html lang>`, the document's language. The package now subscribes
+  when it is imported, so the language is kept for any provider that mounts later.
+- Per-language page and group labels now reach documents saved earlier. The page-editor state a
+  document stores keeps each item's label as saved, so restored documents showed the old English
+  string. On restore, a saved label that is one of the template label's values, or none, is replaced
+  by the current template label; a user's rename is kept. Found migrating go-expose.
+
 ## 0.3.1 (unreleased)
+
+### Added
+
+- The editor shell is translated: toolbar, page menus, add and reorder dialogs, zoom, image options
+  and notices ship in German, French, Italian and English, and follow the user's interface language
+  from the host handshake (`uhuuData.locale`, re-emitted by the SDK as `loaded`), then `?lang=`,
+  `<html lang>` and the browser. No new exports: `InteractiveModeProvider` takes `locale` and
+  `translations` (per-language overrides, or a whole catalog for another language, bundled or
+  fetched), `useInteractive()` reports the resolved `locale`, and `label` in `templateConfig` and
+  `pageOptions` (pages, groups, options, select and colour values) plus `reorderTitle` /
+  `reorderDescription` accept one string per language (`{ en: 'Cover', de: 'Titelseite' }`).
+  Plain string labels and developer tooling are unchanged. See `docs/editor-shell-translations.md`.
 
 ### Changed
 

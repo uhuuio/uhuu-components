@@ -7,7 +7,7 @@ React components for printable documents with fixed pages, static flow paginatio
 ## Install
 
 ```sh
-npm install uhuu-components@^0.3.1 react react-dom
+npm install uhuu-components@^0.3.2 react react-dom
 ```
 
 The delivery package declares React and React DOM `^18.0.0 || ^19.0.0` peers. Both must use the same React installation. Local owning verification uses React 19; the declared React 18 range is not evidence of a tested React 18 release. UI dependencies are bundled; React and React DOM remain external. No Next dependency is required by the delivery package.
@@ -44,6 +44,8 @@ import { Editable, getDialogProps } from 'uhuu-components'
 ```
 
 Dialog click handlers are omitted in renderer mode. Empty text bindings remain editable; templates control their print visibility and Markdown renderer. See the [editor shell guide](https://github.com/uhuuio/uhuu-storybook/blob/main/docs/editor-shell.md).
+
+The shell's own words ship in German, French, Italian and English and follow the host's language; `InteractiveModeProvider` takes `locale` and `translations` to pin, override or add a language, and template labels accept one string per language. See [editor shell translations](https://github.com/uhuuio/uhuu-storybook/blob/main/docs/editor-shell-translations.md).
 
 ## Images and BrandKit
 
