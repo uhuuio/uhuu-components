@@ -7,6 +7,29 @@ All notable changes to the `uhuu-components` Storybook workspace are documented 
 - `package.json` declares the Node floor (>=24) and the package-manager pin (pnpm@10.30.3) the ecosystem
   toolchain policy measures. Metadata only; the dependency resolution is unchanged.
 
+## 0.3.3 (unreleased)
+
+### Added
+
+- The editor shell's chrome follows the host's light or dark appearance: the stage behind the
+  pages, page labels and their menus, the floating page toolbar and zoom menu, the add and reorder
+  sheets, notices and the stage's scrollbars. Pages, and the page thumbnails in the sheets, stay
+  paper. Inside the uhuu document editor the shell takes `?appearance=light|dark` from the template
+  URL before the first render, then `appearance` in the handshake answer (`shaked`, re-emitted by
+  the SDK as `loaded`), then `{ action: 'appearance', data: { appearance } }` when the user
+  switches; it reads the editor's messages itself, so templates that pin an older SDK follow too.
+  Light by default; never a cookie or the OS preference; the renderer is always light. No new
+  exports: `InteractiveModeProvider` takes `appearance` to force one, and `useInteractive()`
+  reports the resolved `appearance` for template-owned chrome. Dark values mirror `@uhuuio/theme`
+  (not a dependency). See `docs/editor-shell-appearance.md`.
+
+### Changed
+
+- Chrome surfaces draw with a shell token instead of `bg-white` (`bg-(--uhuu-shell-surface)`, and
+  `text-(--uhuu-shell-on-inverse)` on dark buttons); the light look is pixel-identical.
+- Chrome roots without `data-uhuu-editor` (the "added" notice, `Section`'s default header, the
+  legacy `PageResizer` controls, the drag grid's debug box) now carry it.
+
 ## 0.3.2 (unreleased)
 
 ### Fixed

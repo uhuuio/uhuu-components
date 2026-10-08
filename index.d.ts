@@ -471,7 +471,15 @@ export interface InteractiveModeContextValue {
   enableDevTools?: boolean;
   /** The shell's resolved interface language (`de`, `fr`, `it`, `en`, or what the template passed). */
   locale: string;
+  /**
+   * The shell chrome's resolved appearance, so template-owned chrome (a floating button, a panel)
+   * can follow it. Pages are paper: never style document content with it.
+   */
+  appearance: EditorShellAppearance;
 }
+
+/** The editor shell's chrome appearance (docs/editor-shell-appearance.md). */
+export type EditorShellAppearance = "light" | "dark";
 
 /**
  * A label as one string, or one string per language: `{ en: 'Cover', de: 'Titelseite' }`.
@@ -498,6 +506,12 @@ export interface InteractiveModeProviderProps {
    * does not ship: `{ de: { toolbar: { add: 'Neu' } }, rm: romanshCatalog }`. Pass a stable object.
    */
   translations?: Record<string, EditorShellTranslations>;
+  /**
+   * Forces the shell chrome's appearance. Default: the host's (the uhuu document editor's
+   * handshake `appearance` and later `appearance` messages), then `?appearance=`, then `light`.
+   * Pages never follow it.
+   */
+  appearance?: EditorShellAppearance;
 }
 
 export interface BrandKitOption {
