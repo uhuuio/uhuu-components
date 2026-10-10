@@ -234,7 +234,7 @@ export const Editable: ComponentType<EditableProps>;
 
 /** What `getDialogProps` returns. Spread it onto the element that renders the field. */
 export interface DialogBindingProps {
-  /** Marks the element for the editor: `""`, or the serialised dialog under legacy dynamic pagination. */
+  /** Marks the element for the editor (`""`). */
   "data-uhuu"?: string;
   /** `dialog.type`, so CSS can tell an empty text binding from an empty image. */
   "data-uhuu-type"?: string;
@@ -572,12 +572,16 @@ export interface PageEditorProps {
   defaultZoomMode?: PageEditorDefaultZoomMode;
   onItemsChange?: (items: PageEditorItem[], state: PageEditorState) => void;
   onStateChange?: (state: PageEditorState) => void;
-  renderOverlay?: (context: {
+  /**
+   * What prints over every page. Default: the shell's page number ("Page N / total", untranslated).
+   * `false` or `null`: nothing, for templates that number their own pages.
+   */
+  renderOverlay?: false | null | ((context: {
     pageNo?: number;
     total?: number;
     pageId?: string;
     parent?: unknown;
-  }) => ReactNode;
+  }) => ReactNode);
   reorderTitle?: LocalizedText;
   reorderDescription?: LocalizedText;
   stateKey?: string;
