@@ -137,7 +137,18 @@ export interface StaticFlowMeasureApi {
   readItemMeta: (element: HTMLElement) => StaticFlowItemMeta;
   readHeaderGroupKey: (element: HTMLElement) => string | undefined;
   readHeaderGroupRepeats: (itemElements: HTMLElement[]) => Record<string, boolean>;
-  readHeaderGroupHeights: (root: HTMLElement, scale?: number) => Record<string, number>;
+  /** `unwrapped`: heights from `readUnwrappedHeights`, used for the headers it covers. */
+  readHeaderGroupHeights: (
+    root: HTMLElement,
+    scale?: number,
+    unwrapped?: ReadonlyMap<HTMLElement, number>
+  ) => Record<string, number>;
+  /**
+   * Heights of the items and group headers an `asChild` Flow renders as direct children of its
+   * root, from positions: margins collapse without a wrapper, so each item is the distance from
+   * the bottom of the element before it (the area's top for the first) to its own bottom.
+   */
+  readUnwrappedHeights: (area: HTMLElement, flow: HTMLElement, scale?: number) => Map<HTMLElement, number>;
   /** Every measured leaf under `root`, in document order. */
   readFlowItemElements: (root: HTMLElement) => HTMLElement[];
   parseKeepWithNext: (value: string | undefined) => boolean | number;
@@ -151,7 +162,10 @@ export interface StaticFlowPlanInput {
   heights?: number[];
   keys?: string[];
   metas?: StaticFlowItemMeta[];
+  /** The first page's region height. */
   availableHeight?: number;
+  /** The region height of every later page (`measureContinuation`). Default: `availableHeight`. */
+  continuationHeight?: number;
   headerGroupKeys?: Array<string | null | undefined>;
   headerGroupHeights?: Record<string, number>;
   headerGroupRepeats?: Record<string, boolean>;
@@ -538,6 +552,51 @@ export interface PageEditorState {
   [key: string]: unknown;
 }
 
+/**
+ * The `page` a PageEditor page component receives: its page item (id, component key, saved
+ * page-option values) and the sheet being rendered. A `hasFlow` page renders one sheet per flow
+ * chunk; its continuation sheets share the page's `id`.
+ */
+export interface PageEditorPage {
+  id: string;
+  componentKey?: string;
+  templateId?: string;
+  label?: LocalizedText;
+  hasFlow?: boolean;
+  /** The sheet's position among the page's sheets: `0` on the first, `n` on its n-th continuation. */
+  virtualPageIndex: number;
+  /**
+   * How many sheets the page renders: its longest flow's chunk count, `1` without flow. The last
+   * sheet is `virtualPageIndex === virtualPageCount - 1`. PageEditor's hidden measurement copy
+   * renders the logical page, `0` of `1` (the continuation copy of `measureContinuation`: `1` of
+   * `2`), as `totalPages` there is the logical total; see docs/static-flow-pagination.md.
+   */
+  virtualPageCount: number;
+  [key: string]: unknown;
+}
+
+/** The props PageEditor passes to a page component. */
+export interface PageComponentProps {
+  payload?: Record<string, unknown>;
+  /** The page's own payload slot (`payload.pages[...]`). */
+  pagePayload?: Record<string, unknown>;
+  /** Integration data for this page (its group's, else its own). */
+  integration?: Record<string, unknown>;
+  pageId?: string;
+  templateId?: string;
+  componentKey?: string;
+  /** 1-based position in the flow-expanded document. */
+  pageNum?: number;
+  /** Sheets in the flow-expanded document. */
+  totalPages?: number;
+  page?: PageEditorPage;
+  parentGroup?: PageEditorItem;
+  /** Dialog path helpers and defaults (docs/page-data-binding.md). */
+  dataBinding?: Record<string, unknown>;
+  /** Set while the page is a panel of a perfect-binding cover spread. */
+  spread?: SpreadInfo;
+}
+
 export interface PageFilterConfig {
   mode?: "all" | "cover" | "text" | "custom" | string;
   coverPageCount?: number;
@@ -732,6 +791,12 @@ export interface StaticFlowAreaProps {
   className?: string;
   style?: CSSProperties;
   onFlowMeasurement?: (measurement: StaticFlowMeasurement) => void;
+  /**
+   * Continuation sheets lay this area out at another height than the first (a title on the first
+   * sheet only): PageEditor also measures the page as a continuation (`page.virtualPageIndex` 1)
+   * and plans every later sheet with that height. Default: every sheet has the first one's height.
+   */
+  measureContinuation?: boolean;
 }
 
 export interface StaticFlowPageProps {
@@ -743,6 +808,8 @@ export interface StaticFlowPageProps {
   flowAreaClassName?: string;
   flowAreaStyle?: CSSProperties;
   onFlowMeasurement?: (measurement: StaticFlowMeasurement) => void;
+  /** See `StaticFlowAreaProps.measureContinuation`. */
+  measureContinuation?: boolean;
 }
 
 export interface StaticFlowProps<TItem = unknown> {
@@ -775,6 +842,16 @@ export interface StaticFlowProps<TItem = unknown> {
     item: StaticFlowUnplaceableItem,
     context: StaticFlowUnplaceableContext
   ) => ReactNode;
+  /**
+   * Render each item as the element `renderItem` returns, carrying the flow's attributes, class
+   * names and key, instead of inside a wrapper `<div>`; group headers and a custom unplaceable
+   * fallback too. Each callback must return one element: a DOM element, or a component that passes
+   * the props it receives on to its root DOM element. Anything else renders in the wrapper, with a
+   * development warning; items whose element drops the attributes are `unmarked-flow-item` errors.
+   */
+  asChild?: boolean;
+  /** The Flow's root element. Default `div`; `tbody`, `ul` or `ol` for table rows or list items. */
+  as?: keyof HTMLElementTagNameMap;
 }
 
 export interface StaticFlowColumnsRenderContext {
@@ -835,6 +912,8 @@ export interface StaticFlowDocumentProps {
   style?: CSSProperties;
   flowAreaClassName?: string;
   flowAreaStyle?: CSSProperties;
+  /** See `StaticFlowAreaProps.measureContinuation`. */
+  measureContinuation?: boolean;
   id?: string;
   idPrefix?: string;
   flowClassName?: string;
