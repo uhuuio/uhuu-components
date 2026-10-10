@@ -208,6 +208,12 @@ export interface ImageBlockProps {
   overlaySvg?: string;
   overlayClassName?: string;
   options?: unknown[];
+  /**
+   * Extra props (className, handlers, data attributes) merged into the click target that `dialog`
+   * binds. Applied in `auto` mode, where ImageBlock renders that element itself. In `bleed` and
+   * `spread` modes the image is positioned on the page and its element is the library's: there
+   * `dialogProps` is not applied; style the block through `className` / `imageClassName`.
+   */
   dialogProps?: Record<string, unknown>;
   placeholder?: ReactNode;
   children?: ReactNode;
@@ -553,8 +559,32 @@ export type PrintConfigMap = Record<string, PrintConfig>;
  */
 export type PageEditorDefaultZoomMode = "manual" | "fit-width" | "fit-height" | "fit-page";
 
+/**
+ * `templateConfig.pageManagement`: which page-management controls the editor shell offers. Like a
+ * map API's UI options, `locked` turns every control off at once and each control key overrides it
+ * either way: `{ locked: true }` for a print product whose pages the template computes,
+ * `{ locked: true, rename: true }` to allow renaming only, `{ add: false }` to hide adding alone.
+ * When add, remove, reorder and duplicate are all off, the template owns the page list and a saved
+ * page order is ignored (page-option settings saved on a page are kept). Default: every control on.
+ */
+export interface PageManagementOptions {
+  /** Master switch: every control below off unless it is set to `true`. */
+  locked?: boolean;
+  /** Add pages or groups: toolbar Add, the page menu's Add page, the add dialog. */
+  add?: boolean;
+  /** Delete a page or group: page menu, reorder dialog. */
+  remove?: boolean;
+  /** Reorder: toolbar Reorder dialog, the page menu's Move up / Move down. */
+  reorder?: boolean;
+  /** Duplicate a page or group: page menu. */
+  duplicate?: boolean;
+  /** Rename a page or group: page menu. */
+  rename?: boolean;
+}
+
 export interface PageEditorProps {
-  templateConfig: Record<string, unknown>;
+  /** Pages, groups and initial items; `pageManagement` sets the page-management controls. */
+  templateConfig: Record<string, unknown> & { pageManagement?: PageManagementOptions };
   payload?: Record<string, unknown>;
   onPayloadChange?: (nextPayload: Record<string, unknown>) => void;
   pageFormat?: {
@@ -789,6 +819,14 @@ export type HtmlFlowItem = {
   breakBefore: boolean;
 };
 
+/** A block from `Static.markdownToFlowItems`: the block's own markdown, rendered by the template. */
+export type MarkdownFlowItem = {
+  id: string;
+  type: 'heading' | 'paragraph' | 'list' | 'table' | 'code' | 'quote' | 'rule' | 'image';
+  markdown: string;
+  breakBefore: boolean;
+};
+
 export interface StaticFlowDocumentProps {
   html: string;
   header?: ReactNode;
@@ -891,7 +929,7 @@ export const Static: {
   markdownToFlowItems: (
     markdown?: string,
     options?: Record<string, unknown>
-  ) => HtmlFlowItem[];
+  ) => MarkdownFlowItem[];
   htmlToFlowItems: (
     html?: string,
     options?: Record<string, unknown>
@@ -903,4 +941,11 @@ export const Static: {
   /** Physical sheet size incl. bleed; the wide cover sheet when `binding.spine > 0`. */
   resolveSheetSize: (input?: CoverSpreadPageInput) => CoverSheetSize | null;
   CoverSpread: ComponentType<StaticCoverSpreadProps>;
+  /**
+   * Keeps `data-uhuu-pagination` at `measuring` while `pending` is true (the default), for
+   * template work the package cannot see: a map, a chart, data a page fetches. Every flow is
+   * measured again when it clears. After 10 s a console warning names `label` and the document
+   * stops waiting.
+   */
+  usePaginationHold: (pending?: boolean, label?: string) => void;
 };

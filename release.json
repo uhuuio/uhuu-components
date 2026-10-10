@@ -1,0 +1,10 @@
+{
+  "version": "0.3.8",
+  "files": {
+    "uhuu-components.es.js": "a0a09e37f47609ab9a622848cd278a39218341a304077044c2f9e3f238b99bb6",
+    "uhuu-components.es.js.map": "cc794cf01304da2cdfe0277b9944aa54514d6cc7f5d7bf72e9827fe6b0af29c1",
+    "uhuu-components.umd.cjs": "ab8bbe52252d2ffe808ee869e185fbcf12a46e341b3be66ed7f09492a31fc0b0",
+    "uhuu-components.umd.cjs.map": "bd966843b81fa2d753a9d7ab8c6be3a6f7a46ff2f8057acb33ea5e36e8827341",
+    "index.d.ts": "8e1898fcfadfb9445f3779f88e5c9f705a4d1fc0720d3a3a910834f5b50b8539"
+  }
+}

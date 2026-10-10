@@ -1,5 +1,5 @@
 {
-  "version": "0.3.6",
+  "version": "0.3.8",
   "name": "uhuu-components",
   "main": "uhuu-components.umd.cjs",
   "module": "uhuu-components.es.js",
@@ -15,14 +15,15 @@
     }
   },
   "license": "https://uhuu.io/license",
+  "scripts": {
+    "prepublishOnly": "node verify-release.cjs"
+  },
   "files": [
     "uhuu-components.es.js",
     "uhuu-components.es.js.map",
     "uhuu-components.umd.cjs",
     "uhuu-components.umd.cjs.map",
-    "index.d.ts",
-    "README.md",
-    "CHANGELOG.md"
+    "index.d.ts"
   ],
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
