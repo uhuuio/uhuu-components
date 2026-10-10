@@ -14,9 +14,52 @@ export interface StaticFlowItemMeta {
   breakBefore?: boolean;
   breakAfter?: boolean;
   keepWithNext?: boolean | number;
+  /** Never split the item; with `groupKey`, also move its avoid-break group as one. */
   avoidBreakInside?: boolean;
   groupKey?: string;
+  /** An item split between the lines of its `Static.FlowText`: fewest lines on a piece that ends a page. Default 2. */
+  orphans?: number;
+  /** An item split between the lines of its `Static.FlowText`: fewest lines on the piece that starts the next page. Default 2. */
+  widows?: number;
 }
+
+/**
+ * The lines of an item's `Static.FlowText` (`Static.flowMeasure.readFlowTextLines`), in layout px
+ * from the item's measured origin: each line box's top and bottom, and the UTF-16 text offset
+ * (across the FlowText's text nodes in order) where it starts. `end`: the text's length.
+ */
+export interface StaticFlowItemLines {
+  /** `hyphen`: the line ends with a hyphen the browser drew (`hyphens: auto`, a soft hyphen). */
+  lines: Array<{ top: number; bottom: number; start: number; hyphen?: boolean }>;
+  end: number;
+  justify: boolean;
+}
+
+/** One piece of an item split between the lines of its `Static.FlowText`. */
+export interface StaticFlowTextSplit {
+  /** 0-based piece number. */
+  part: number;
+  parts: number;
+  /** The piece's text: UTF-16 offsets `[from, to)` across the FlowText's text. */
+  from: number;
+  to: number;
+  /** Justified text: a piece that ends mid-paragraph justifies its last line too. */
+  justify?: boolean;
+  /** The planned height of the piece's lines, in layout px. */
+  textHeight?: number;
+  /**
+   * Text offsets where the piece's measured lines broke with a hyphen (`hyphens: auto`, a soft
+   * hyphen), its own end included: the piece breaks there again, and ends with a hyphen there.
+   */
+  hyphens?: number[];
+}
+
+/** Why an item's FlowText cannot split, or splits but may not match its plan. */
+export type StaticFlowTextIssue =
+  | "multiple-flow-text"
+  | "inline-flow-text"
+  | "unsupported-content"
+  | "rewrapping-text-wrap";
 
 /** A separately measured group whose header may repeat on virtual continuation pages. */
 export interface StaticFlowItemGroup {
@@ -42,6 +85,11 @@ export interface StaticFlowFragmentContext<TItem = unknown> {
   isContinuation: boolean;
   /** The group resumed from the preceding virtual page. */
   isGroupContinuation: boolean;
+  /**
+   * Present on every piece of an item split between the lines of its `Static.FlowText`; absent for
+   * an item rendered whole and in the measurement copy, which renders the whole item.
+   */
+  split?: { part: number; parts: number; from: number; to: number };
 }
 
 export interface StaticFlowUnplaceableItem {
@@ -79,6 +127,8 @@ export interface StaticFlowChunk {
   groupHeaders?: StaticFlowGroupHeaderFragment[];
   unplaceable?: StaticFlowUnplaceableItem;
   layout?: StaticFlowLayoutFragment[];
+  /** The pieces of items split between lines on this page, by item index. */
+  splits?: Record<number, StaticFlowTextSplit>;
 }
 
 export interface StaticFlowColumn {
@@ -153,6 +203,22 @@ export interface StaticFlowMeasureApi {
   readFlowItemElements: (root: HTMLElement) => HTMLElement[];
   parseKeepWithNext: (value: string | undefined) => boolean | number;
   serializeKeepWithNext: (value: StaticFlowItemMeta['keepWithNext']) => string | undefined;
+  /** `orphans` / `widows` attribute values: a positive whole number, else `undefined`. */
+  parseLineCount: (value: string | undefined) => number | undefined;
+  serializeLineCount: (value: number | undefined) => string | undefined;
+  /** The `Static.FlowText` elements of `item` itself (not those of a Flow nested in it). */
+  readItemFlowTexts: (item: HTMLElement) => HTMLElement[];
+  /**
+   * The lines of the one `Static.FlowText` in a measured item, for `planFlowChunks({ lines })`, or
+   * `undefined` when it has none or cannot split (`report` says why). `height` is the item's
+   * measured height (`getOuterHeight`, or `readUnwrappedHeights` for `asChild`).
+   */
+  readFlowTextLines: (
+    item: HTMLElement,
+    height: number,
+    scale?: number,
+    report?: (issue: StaticFlowTextIssue, element: HTMLElement) => void
+  ) => StaticFlowItemLines | undefined;
   /** FNV-1a. For opaque change-detection tokens compared only for equality. */
   hashString: (value: string) => string;
 }
@@ -171,6 +237,12 @@ export interface StaticFlowPlanInput {
   headerGroupRepeats?: Record<string, boolean>;
   onUnplaceableItem?: (item: StaticFlowUnplaceableItem) => void;
   metrics?: StaticFlowPlanMetrics;
+  /**
+   * Line metrics per item (`flowMeasure.readFlowTextLines`); `undefined` for items that do not
+   * split. An item that does not fit the room left is split at a line (chunks gain `splits`).
+   * Without `lines` the plan is item-level. `planFlowColumnChunks` does not split.
+   */
+  lines?: Array<StaticFlowItemLines | undefined>;
 }
 
 /** Input for `Static.planFlowColumnChunks`, using globally indexed leaf measurements. */
@@ -854,6 +926,19 @@ export interface StaticFlowProps<TItem = unknown> {
   as?: keyof HTMLElementTagNameMap;
 }
 
+export interface StaticFlowTextProps {
+  /**
+   * A string (may contain `\n`) or inline content: text, `span`, `strong`, `em`, `b`, `i`, `a`,
+   * `small`, `sub`, `sup`, `br` (and other inline text elements) and fragments. Anything else
+   * renders, with a development warning, but its item is not split.
+   */
+  children?: ReactNode;
+  /** Default `div`: a block, so its line boxes are its own. */
+  as?: keyof HTMLElementTagNameMap;
+  className?: string;
+  style?: CSSProperties;
+}
+
 export interface StaticFlowColumnsRenderContext {
   /** Stable identity only: column geometry callbacks must be page-invariant. */
   flowId: string;
@@ -1000,6 +1085,11 @@ export const Static: {
   FlowPage: ComponentType<StaticFlowPageProps>;
   Flow: <TItem = unknown>(props: StaticFlowProps<TItem>) => ReactElement | null;
   FlowColumns: <TItem = unknown>(props: StaticFlowColumnsProps<TItem>) => ReactElement | null;
+  /**
+   * Text a `Static.Flow` item may split between lines when it does not fit the room left on its
+   * sheet (one per item; `orphans`/`widows` in the item's meta). Renders `<as data-uhuu-flow-text>`.
+   */
+  FlowText: ComponentType<StaticFlowTextProps>;
   planFlowChunks: (input?: StaticFlowPlanInput) => StaticFlowChunk[];
   planFlowColumnChunks: (input?: StaticFlowColumnPlanInput) => StaticFlowChunk[];
   createFlowPlanMetrics: () => StaticFlowPlanMetrics;
