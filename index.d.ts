@@ -2,6 +2,7 @@
 import type {
   ComponentType,
   CSSProperties,
+  HTMLAttributes,
   ImgHTMLAttributes,
   Key,
   MouseEventHandler,
@@ -187,8 +188,11 @@ export interface StaticFlowMeasureApi {
   getEffectiveScale: (element: HTMLElement) => number;
   /** Border-box height plus vertical margins, in layout space. */
   getOuterHeight: (element: HTMLElement, scale?: number) => number;
+  /** @internal Library measurement detail; retained for compatibility. */
   readItemMeta: (element: HTMLElement) => StaticFlowItemMeta;
+  /** @internal Library measurement detail; retained for compatibility. */
   readHeaderGroupKey: (element: HTMLElement) => string | undefined;
+  /** @internal Library measurement detail; retained for compatibility. */
   readHeaderGroupRepeats: (itemElements: HTMLElement[]) => Record<string, boolean>;
   /** `unwrapped`: heights from `readUnwrappedHeights`, used for the headers it covers. */
   readHeaderGroupHeights: (
@@ -200,6 +204,7 @@ export interface StaticFlowMeasureApi {
    * Heights of the items and group headers an `asChild` Flow renders as direct children of its
    * root, from positions: margins collapse without a wrapper, so each item is the distance from
    * the bottom of the element before it (the area's top for the first) to its own bottom.
+   * @internal Library measurement detail; retained for compatibility.
    */
   readUnwrappedHeights: (area: HTMLElement, flow: HTMLElement, scale?: number) => Map<HTMLElement, number>;
   /** Every measured leaf under `root`, in document order. */
@@ -207,24 +212,36 @@ export interface StaticFlowMeasureApi {
   /**
    * The first of `items` that does not lie below the item before it in `area` (beside it, in
    * another column), or `null`: such a flow cannot be planned (`unstacked-flow-items`).
+   * @internal Library measurement detail; retained for compatibility.
    */
   readUnstackedItem: (area: HTMLElement, flow: HTMLElement, items: HTMLElement[]) => HTMLElement | null;
   /**
    * A CSS length with an absolute unit (`"20mm"`, `"12px"`) or a number of px, in CSS px;
    * `undefined` for anything else. What `breakReserve` is read with.
+   * @internal Library measurement detail; retained for compatibility.
    */
   parseAbsoluteLength: (value: number | string | undefined) => number | undefined;
+  /** @internal Library measurement detail; retained for compatibility. */
   parseKeepWithNext: (value: string | undefined) => boolean | number;
+  /** @internal Library measurement detail; retained for compatibility. */
   serializeKeepWithNext: (value: StaticFlowItemMeta['keepWithNext']) => string | undefined;
-  /** `orphans` / `widows` attribute values: a positive whole number, else `undefined`. */
+  /**
+   * `orphans` / `widows` attribute values: a positive whole number, else `undefined`.
+   * @internal Library measurement detail; retained for compatibility.
+   */
   parseLineCount: (value: string | undefined) => number | undefined;
+  /** @internal Library measurement detail; retained for compatibility. */
   serializeLineCount: (value: number | undefined) => string | undefined;
-  /** The `Static.FlowText` elements of `item` itself (not those of a Flow nested in it). */
+  /**
+   * The `Static.FlowText` elements of `item` itself (not those of a Flow nested in it).
+   * @internal Library measurement detail; retained for compatibility.
+   */
   readItemFlowTexts: (item: HTMLElement) => HTMLElement[];
   /**
    * The lines of the one `Static.FlowText` in a measured item, for `planFlowChunks({ lines })`, or
    * `undefined` when it has none or cannot split (`report` says why). `height` is the item's
    * measured height (`getOuterHeight`, or `readUnwrappedHeights` for `asChild`).
+   * @internal Library measurement detail; retained for compatibility.
    */
   readFlowTextLines: (
     item: HTMLElement,
@@ -232,7 +249,10 @@ export interface StaticFlowMeasureApi {
     scale?: number,
     report?: (issue: StaticFlowTextIssue, element: HTMLElement) => void
   ) => StaticFlowItemLines | undefined;
-  /** FNV-1a. For opaque change-detection tokens compared only for equality. */
+  /**
+   * FNV-1a. For opaque change-detection tokens compared only for equality.
+   * @internal Library measurement detail; retained for compatibility.
+   */
   hashString: (value: string) => string;
 }
 
@@ -639,8 +659,10 @@ export interface PageEditorItem {
 }
 
 export interface PageEditorState {
-  items?: PageEditorItem[];
-  [key: string]: unknown;
+  key: string;
+  items: PageItem[];
+  totalPages: number;
+  updatedAt: string;
 }
 
 /**
@@ -648,7 +670,7 @@ export interface PageEditorState {
  * page-option values) and the sheet being rendered. A `hasFlow` page renders one sheet per flow
  * chunk; its continuation sheets share the page's `id`.
  */
-export interface PageEditorPage {
+export interface PageEditorPage extends StandalonePage {
   id: string;
   componentKey?: string;
   templateId?: string;
@@ -666,6 +688,22 @@ export interface PageEditorPage {
   [key: string]: unknown;
 }
 
+/** Dialog paths and the resolved integration for one logical page. */
+export interface PageDataBinding {
+  payload: any;
+  pageId: string;
+  pagePayload?: any;
+  parentGroupId?: string;
+  integration: { instanceId: string | null; data?: any; path: (subPath?: string) => string | null };
+  paths: {
+    integration: (subPath?: string) => string | null;
+    page: (subPath?: string) => string | null;
+    group: (subPath?: string) => string | null;
+    document: (subPath?: string) => string | null;
+  };
+  defaults: { imageGalleryPath?: string | null };
+}
+
 /** The props PageEditor passes to a page component. */
 export interface PageComponentProps {
   payload?: Record<string, unknown>;
@@ -681,15 +719,15 @@ export interface PageComponentProps {
   /** Sheets in the flow-expanded document. */
   totalPages?: number;
   page?: PageEditorPage;
-  parentGroup?: PageEditorItem;
+  parentGroup?: PageGroup;
   /** Dialog path helpers and defaults (docs/page-data-binding.md). */
-  dataBinding?: Record<string, unknown>;
+  dataBinding?: PageDataBinding;
   /** Set while the page is a panel of a perfect-binding cover spread. */
   spread?: SpreadInfo;
 }
 
 export interface PageFilterConfig {
-  mode?: "all" | "cover" | "text" | "custom" | string;
+  mode?: "all" | "cover" | "text" | "custom";
   coverPageCount?: number;
   ranges?: Array<{ start: number; end: number }>;
   [key: string]: unknown;
@@ -732,35 +770,160 @@ export interface PageManagementOptions {
   rename?: boolean;
 }
 
+/** A page or group the shell supplies to page-option callbacks. */
+export type PageItem = StandalonePage | PageGroup;
+
+export interface StandalonePage {
+  kind: "page";
+  id: string;
+  componentKey?: string;
+  dataKey?: string;
+  templateId?: string;
+  label?: LocalizedText;
+  className?: string;
+  hasFlow?: boolean;
+  repeatable?: boolean;
+  maxInstances?: number | null;
+  integration?: "required" | "optional" | "none" | { mode?: "required" | "optional" | "none" };
+  pageNum?: number;
+  component?: ComponentType<any>;
+  [key: string]: any;
+}
+
+export interface PageGroup {
+  kind: "group";
+  id: string;
+  templateId?: string;
+  repeatable?: boolean;
+  maxInstances?: number | null;
+  integration?: StandalonePage["integration"];
+  label?: LocalizedText;
+  pages: Array<Omit<StandalonePage, "pageNum" | "kind"> & { id: string }>;
+  pageNum?: never;
+  [key: string]: any;
+}
+
+/** Page blueprint in `templateConfig.pages`; metadata applies whenever that layout is used. */
+export interface PageTemplateDefinition {
+  label?: LocalizedText;
+  className?: string;
+  componentKey?: string;
+  dataKey?: string;
+  component?: ComponentType<any>;
+  hasFlow?: boolean;
+  repeatable?: boolean;
+  maxInstances?: number | null;
+  thumbnail?: string;
+  integration?: StandalonePage["integration"];
+  allowAsSinglePage?: boolean;
+  strictPosition?: "start" | "end";
+}
+
+export interface PageComponentKeysContext {
+  payload: any;
+  item?: PageGroup;
+  parent?: PageItem;
+}
+
+/** Group blueprint; record keys provide `id`, array and inline definitions supply it themselves. */
+export interface GroupDefinition {
+  id: string;
+  label?: LocalizedText;
+  thumbnail?: string;
+  repeatable?: boolean;
+  maxInstances?: number | null;
+  pageComponentKeys?: string[] | ((context: PageComponentKeysContext) => string[]);
+  integration?: StandalonePage["integration"];
+  strictPosition?: "start" | "end";
+}
+
+export interface PageEditorTemplateConfig {
+  initial: Array<string | (Partial<StandalonePage> & { id: string }) | GroupDefinition>;
+  pageManagement?: PageManagementOptions;
+  groups?: GroupDefinition[] | Record<string, Omit<GroupDefinition, "id"> & { id?: string }>;
+  pageComponentKeys?: string[];
+  pages?: Record<string, PageTemplateDefinition>;
+  pageComponents?: Record<string, ComponentType<any>>;
+  spine?: PageEditorSpineConfig;
+  payload?: any;
+  /** Template-owned metadata may accompany the shell configuration. */
+  [key: string]: unknown;
+}
+
+export interface PageOptionSelectValue {
+  label: LocalizedText;
+  value: string;
+  hex?: string;
+}
+
+type PageOptionTarget = string | ((item: PageItem) => boolean);
+type BasePageOption = {
+  id: string;
+  label: LocalizedText;
+  description?: LocalizedText;
+  appliesTo?: PageOptionTarget | PageOptionTarget[];
+  onChange?: (id: string, value: string, context: { item?: PageItem; updateItem: (patch: Partial<PageItem>) => void }) => void;
+  applyPatch?: (value: string, item?: PageItem) => Partial<PageItem> | void;
+};
+
+export type SelectPageOption = BasePageOption & {
+  type: "select";
+  options: PageOptionSelectValue[];
+  getValue: (item: PageItem) => string | number | boolean;
+};
+export type TogglePageOption = BasePageOption & { type: "toggle"; getValue: (item: PageItem) => boolean };
+export type SliderPageOption = BasePageOption & {
+  type: "slider"; min: number; max: number; step: number; getValue: (item: PageItem) => number;
+};
+export type CounterPageOption = BasePageOption & {
+  type: "counter"; min: number; max: number; step: number; getValue: (item: PageItem) => number;
+};
+export type ColorSeriesPageOption = BasePageOption & {
+  type: "color-series"; options: PageOptionSelectValue[]; getValue: (item: PageItem) => string;
+};
+export type PageOption = SelectPageOption | TogglePageOption | SliderPageOption | CounterPageOption | ColorSeriesPageOption;
+
+type PayloadOptionFor<Option> = Option extends PageOption
+  ? Omit<Option, "getValue" | "onChange" | "applyPatch"> & { defaultValue?: any; field?: string }
+  : never;
+/** A page option stored automatically in `payload.pages`, without custom callbacks. */
+export type PayloadOptionDefinition = PayloadOptionFor<PageOption>;
+
 export interface PageEditorProps {
   /** Pages, groups and initial items; `pageManagement` sets the page-management controls. */
-  templateConfig: Record<string, unknown> & { pageManagement?: PageManagementOptions };
+  templateConfig: PageEditorTemplateConfig;
   payload?: Record<string, unknown>;
   onPayloadChange?: (nextPayload: Record<string, unknown>) => void;
   pageFormat?: {
     width: number;
     height: number;
-    preview?: string;
+    preview?: "single_page" | "two_pages";
     bleed?: number;
     /** Perfect-binding spine/glue; only applied while `pageFilter.mode === 'cover'`. */
     binding?: BindingConfig | null;
     [key: string]: unknown;
   };
-  pageOptions?: unknown[];
+  pageOptions?: Array<PageOption | PayloadOptionDefinition>;
   pageFilter?: PageFilterConfig;
   printConfigs?: PrintConfigMap;
   defaultZoomMode?: PageEditorDefaultZoomMode;
-  onItemsChange?: (items: PageEditorItem[], state: PageEditorState) => void;
+  onItemsChange?: (items: PageItem[], state: PageEditorState) => void;
   onStateChange?: (state: PageEditorState) => void;
   /**
    * What prints over every page. Default: the shell's page number ("Page N / total", untranslated).
    * `false` or `null`: nothing, for templates that number their own pages.
    */
+  notifyError?: (message: string) => void;
+  referenceRenderer?: (page: StandalonePage & { pageNum: number }) => ReactNode;
+  renderPage?: (args: { page: StandalonePage & { pageNum: number }; parent?: PageItem }) => ReactNode;
+  menuItems?: ReactNode;
+  gridColsClass?: string;
+  resolveNewItem?: (draft: PageItem) => Promise<PageItem | null | void> | PageItem | null | void;
   renderOverlay?: false | null | ((context: {
-    pageNo?: number;
-    total?: number;
-    pageId?: string;
-    parent?: unknown;
+    pageNo: number;
+    total: number;
+    pageId: string;
+    parent?: PageItem;
   }) => ReactNode);
   reorderTitle?: LocalizedText;
   reorderDescription?: LocalizedText;
@@ -769,12 +932,18 @@ export interface PageEditorProps {
   activeBrandKitId?: string;
   onSelectBrandKit?: (id: string) => void;
   onAddBrandKit?: (input: string) => void;
-  [key: string]: unknown;
 }
 
+/** Template-owned JSON data and the maps the editor shell updates. */
+export type TemplatePayload = Record<string, unknown> & {
+  pages?: Record<string, Record<string, unknown> | undefined>;
+  groups?: Record<string, Record<string, unknown> | undefined>;
+  integrations?: Record<string, unknown>;
+};
+
 export interface TemplateDataProviderProps {
-  payload?: Record<string, unknown>;
-  onPayloadChange?: (nextPayload: Record<string, unknown>) => void;
+  payload?: TemplatePayload;
+  onPayloadChange?: (nextPayload: TemplatePayload) => void;
   children: ReactNode;
   stateKey?: string;
 }
@@ -794,12 +963,60 @@ export interface IntegrationAdapter {
   [key: string]: unknown;
 }
 
+/**
+ * One document-level option: a top-level payload key the template reads (`payload.language`).
+ * The shape `uhuu templates theme inspect <templateId> --snippet` prints from a legacy template
+ * theme. See docs/document-options.md.
+ */
+export interface DocumentOptionDefinition {
+  /** The top-level payload key, the same one the platform's theme option wrote. */
+  key: string;
+  /** Default `select`. */
+  type?: "select" | "toggle";
+  label: LocalizedText;
+  description?: LocalizedText;
+  /** A select's choices. A stored value matches a choice as a string: `2` matches `"2"`. */
+  options?: Array<{ value: string | number | boolean; label: LocalizedText }>;
+  /** Shown while the payload has no value for the key (`payload[key] ?? defaultValue`). */
+  defaultValue?: unknown;
+  /** Local onChange previews: default `string` for a select, `boolean` for a toggle. Editor selects save strings. */
+  valueType?: "string" | "number" | "boolean";
+}
+
+export interface DocumentOptionsProps {
+  /**
+   * The payload the template renders. Required outside a TemplateDataProvider; inside one, the
+   * provider's payload is used when it is left out.
+   */
+  payload?: Record<string, unknown> | null;
+  options: DocumentOptionDefinition[];
+  /** Heading of the control. Default: "Document options" in the shell's interface language. */
+  title?: LocalizedText;
+  /**
+   * Called for local choices when no supported $uhuu.editDialog is available. The editor field
+   * saves through the next payload update and does not call onChange.
+   */
+  onChange?: (key: string, value: unknown) => void;
+  /**
+   * Inside PageEditor's floating toolbar: the entry's wrapper. Otherwise the control's own
+   * floating bar, bottom right by default (move it with `style`, e.g. `{ top: 16, bottom: "auto" }`).
+   */
+  className?: string;
+  style?: CSSProperties;
+}
+
 export const EditorShell: {
   TemplateDataProvider: ComponentType<TemplateDataProviderProps>;
   PageEditor: ComponentType<PageEditorProps>;
   InteractiveModeProvider: ComponentType<InteractiveModeProviderProps>;
   useInteractive: () => InteractiveModeContextValue;
   useIntegrationAdapter: (config: IntegrationAdapterConfig) => IntegrationAdapter;
+  /**
+   * Document-level switches for top-level payload keys, edited through the released editor's
+   * `$uhuu.editDialog` field. Joins the nearest InteractiveModeProvider's PageEditor toolbar, else floats bottom right.
+   * Hidden outside edit mode, in the PDF renderer and in print. See docs/document-options.md.
+   */
+  DocumentOptions: ComponentType<DocumentOptionsProps>;
 };
 
 export interface StaticSheetProps {
@@ -835,7 +1052,7 @@ export interface SpineComponentProps {
   /** Trim page height (mm); the strip is `height + 2 × bleed` tall and `spine` wide. */
   height: number;
   totalPages?: number;
-  pages: { left?: PageEditorItem; right?: PageEditorItem };
+  pages: { left?: StandalonePage; right?: StandalonePage };
 }
 
 /** `templateConfig.spine` — optional artwork for the spine of a perfect-bound cover. */
@@ -954,7 +1171,7 @@ export interface StaticFlowProps<TItem = unknown> {
   as?: keyof HTMLElementTagNameMap;
 }
 
-export interface StaticFlowTextProps {
+export interface StaticFlowTextProps extends HTMLAttributes<HTMLElement> {
   /**
    * A string (may contain `\n`) or inline content: text, `span`, `strong`, `em`, `b`, `i`, `a`,
    * `small`, `sub`, `sup`, `br` (and other inline text elements) and fragments. Anything else
@@ -1122,6 +1339,7 @@ export const Static: {
   FlowText: ComponentType<StaticFlowTextProps>;
   planFlowChunks: (input?: StaticFlowPlanInput) => StaticFlowChunk[];
   planFlowColumnChunks: (input?: StaticFlowColumnPlanInput) => StaticFlowChunk[];
+  /** @internal Instrumentation for library tests; does not affect pagination plans. */
   createFlowPlanMetrics: () => StaticFlowPlanMetrics;
   flowMeasure: StaticFlowMeasureApi;
   FlowDocument: ComponentType<StaticFlowDocumentProps>;

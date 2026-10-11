@@ -1,19 +1,19 @@
 (function(){(function(e,t){try{if(typeof document>`u`)return;let n=document.head||document.getElementsByTagName(`head`)[0];if(!n)return;let r=t&&t.styleId||`uhuu-components-styles`,i=document.getElementById(r);i||(i=document.createElement(`style`),i.setAttribute(`id`,r),t&&t.attributes&&Object.entries(t.attributes).forEach(([e,t])=>{try{i.setAttribute(e,t)}catch{}})),i.textContent!==e&&(i.textContent=e),i.parentNode!==n&&(n.firstChild?n.insertBefore(i,n.firstChild):n.appendChild(i))}catch(e){console.error(`vite-plugin-css-injected-by-js`,e)}})(`/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
-@layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,[data-uhuu-interactive] :before,[data-uhuu-portal] :before,[data-uhuu-interactive] :after,[data-uhuu-portal] :after,::backdrop{--uhuu-tw-translate-x:0;--uhuu-tw-translate-y:0;--uhuu-tw-translate-z:0;--uhuu-tw-scale-x:1;--uhuu-tw-scale-y:1;--uhuu-tw-scale-z:1;--uhuu-tw-space-y-reverse:0;--uhuu-tw-border-style:solid;--uhuu-tw-leading:initial;--uhuu-tw-font-weight:initial;--uhuu-tw-tracking:initial;--uhuu-tw-ordinal:initial;--uhuu-tw-slashed-zero:initial;--uhuu-tw-numeric-figure:initial;--uhuu-tw-numeric-spacing:initial;--uhuu-tw-numeric-fraction:initial;--uhuu-tw-shadow:0 0 #0000;--uhuu-tw-shadow-color:initial;--uhuu-tw-shadow-alpha:100%;--uhuu-tw-inset-shadow:0 0 #0000;--uhuu-tw-inset-shadow-color:initial;--uhuu-tw-inset-shadow-alpha:100%;--uhuu-tw-ring-color:initial;--uhuu-tw-ring-shadow:0 0 #0000;--uhuu-tw-inset-ring-color:initial;--uhuu-tw-inset-ring-shadow:0 0 #0000;--uhuu-tw-ring-inset:initial;--uhuu-tw-ring-offset-width:0px;--uhuu-tw-ring-offset-color:#fff;--uhuu-tw-ring-offset-shadow:0 0 #0000;--uhuu-tw-outline-style:solid;--uhuu-tw-blur:initial;--uhuu-tw-brightness:initial;--uhuu-tw-contrast:initial;--uhuu-tw-grayscale:initial;--uhuu-tw-hue-rotate:initial;--uhuu-tw-invert:initial;--uhuu-tw-opacity:initial;--uhuu-tw-saturate:initial;--uhuu-tw-sepia:initial;--uhuu-tw-drop-shadow:initial;--uhuu-tw-drop-shadow-color:initial;--uhuu-tw-drop-shadow-alpha:100%;--uhuu-tw-drop-shadow-size:initial;--uhuu-tw-backdrop-blur:initial;--uhuu-tw-backdrop-brightness:initial;--uhuu-tw-backdrop-contrast:initial;--uhuu-tw-backdrop-grayscale:initial;--uhuu-tw-backdrop-hue-rotate:initial;--uhuu-tw-backdrop-invert:initial;--uhuu-tw-backdrop-opacity:initial;--uhuu-tw-backdrop-saturate:initial;--uhuu-tw-backdrop-sepia:initial;--uhuu-tw-duration:initial;--uhuu-tw-ease:initial;--uhuu-tw-space-x-reverse:0}*,:before,:after,::backdrop{--uhuu-tw-outline-style:solid}}}@layer theme{:root,[data-uhuu-interactive] :host,[data-uhuu-portal] :host{--uhuu-font-sans:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--uhuu-font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--uhuu-color-red-50:oklch(97.1% .013 17.38);--uhuu-color-red-600:oklch(57.7% .245 27.325);--uhuu-color-red-700:oklch(50.5% .213 27.518);--uhuu-color-emerald-100:oklch(95% .052 163.051);--uhuu-color-emerald-600:oklch(59.6% .145 163.225);--uhuu-color-blue-50:oklch(97% .014 254.604);--uhuu-color-blue-100:oklch(93.2% .032 255.585);--uhuu-color-blue-400:oklch(70.7% .165 254.624);--uhuu-color-blue-500:oklch(62.3% .214 259.815);--uhuu-color-blue-600:oklch(54.6% .245 262.881);--uhuu-color-gray-50:oklch(98.5% .002 247.839);--uhuu-color-gray-100:oklch(96.7% .003 264.542);--uhuu-color-gray-200:oklch(92.8% .006 264.531);--uhuu-color-gray-300:oklch(87.2% .01 258.338);--uhuu-color-gray-400:oklch(70.7% .022 261.325);--uhuu-color-gray-500:oklch(55.1% .027 264.364);--uhuu-color-gray-600:oklch(44.6% .03 256.802);--uhuu-color-gray-700:oklch(37.3% .034 259.733);--uhuu-color-gray-800:oklch(27.8% .033 256.848);--uhuu-color-gray-900:oklch(21% .034 264.665);--uhuu-color-neutral-50:oklch(98.5% 0 none);--uhuu-color-black:#000;--uhuu-color-white:#fff;--uhuu-spacing:.25rem;--uhuu-container-xs:20rem;--uhuu-container-sm:24rem;--uhuu-container-md:28rem;--uhuu-text-xs:.75rem;--uhuu-text-xs--line-height:calc(1 / .75);--uhuu-text-sm:.875rem;--uhuu-text-sm--line-height:calc(1.25 / .875);--uhuu-text-base:1rem;--uhuu-text-base--line-height:calc(1.5 / 1);--uhuu-text-lg:1.125rem;--uhuu-text-lg--line-height:calc(1.75 / 1.125);--uhuu-font-weight-normal:400;--uhuu-font-weight-medium:500;--uhuu-font-weight-semibold:600;--uhuu-tracking-wide:.025em;--uhuu-tracking-widest:.1em;--uhuu-leading-tight:1.25;--uhuu-radius-sm:.25rem;--uhuu-radius-md:.375rem;--uhuu-radius-lg:.5rem;--uhuu-ease-in-out:cubic-bezier(.4, 0, .2, 1);--uhuu-blur-sm:8px;--uhuu-blur-md:12px;--uhuu-default-transition-duration:.15s;--uhuu-default-transition-timing-function:cubic-bezier(.4, 0, .2, 1)}:root:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:root:is([data-uhuu-chrome],[data-uhuu-chrome] *),:host:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:host:is([data-uhuu-chrome],[data-uhuu-chrome] *),:root,:host{--font-sans:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono)}}@layer base;@layer components{@media screen{[data-uhuu-interactive] [data-uhuu-flow-unplaceable=true],[data-uhuu-portal] [data-uhuu-flow-unplaceable=true]{outline-offset:-2px;outline:2px dashed #dc2626}[data-uhuu-interactive] :where([data-uhuu]:not(.skip-data-uhuu,.skip-data-uhuu *)),[data-uhuu-portal] :where([data-uhuu]:not(.skip-data-uhuu,.skip-data-uhuu *)){background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 14V8a6 6 0 0 1 12 0 6 6 0 0 1-6 6z' fill='%23ff44cc' fill-opacity='.2'/%3E%3C/svg%3E")}[data-uhuu-interactive] :where([data-uhuu]:not(.skip-data-uhuu,.skip-data-uhuu *):hover),[data-uhuu-portal] :where([data-uhuu]:not(.skip-data-uhuu,.skip-data-uhuu *):hover){outline-offset:-1px;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 14V8a6 6 0 0 1 12 0 6 6 0 0 1-6 6z' fill='%23ff44cc'/%3E%3C/svg%3E");outline:2px dashed #f4c}[data-uhuu-interactive] :where([data-uhuu].uhuu-text-empty),[data-uhuu-portal] :where([data-uhuu].uhuu-text-empty),[data-uhuu-interactive] :where([data-uhuu][data-uhuu-type=text]:empty),[data-uhuu-portal] :where([data-uhuu][data-uhuu-type=text]:empty),[data-uhuu-interactive] :where([data-uhuu][data-uhuu-type=textarea]:empty),[data-uhuu-portal] :where([data-uhuu][data-uhuu-type=textarea]:empty),[data-uhuu-interactive] :where([data-uhuu][data-uhuu-type=markdown]:empty),[data-uhuu-portal] :where([data-uhuu][data-uhuu-type=markdown]:empty){background-color:#ff44cc14;min-width:3em;min-height:1lh}[data-uhuu-interactive] :where(span[data-uhuu].uhuu-text-empty),[data-uhuu-portal] :where(span[data-uhuu].uhuu-text-empty),[data-uhuu-interactive] :where(span[data-uhuu][data-uhuu-type=text]:empty),[data-uhuu-portal] :where(span[data-uhuu][data-uhuu-type=text]:empty),[data-uhuu-interactive] :where(span[data-uhuu][data-uhuu-type=textarea]:empty),[data-uhuu-portal] :where(span[data-uhuu][data-uhuu-type=textarea]:empty),[data-uhuu-interactive] :where(span[data-uhuu][data-uhuu-type=markdown]:empty),[data-uhuu-portal] :where(span[data-uhuu][data-uhuu-type=markdown]:empty){vertical-align:top;display:inline-block}}}@layer utilities{.uhuu-page-overlay{pointer-events:none;color:var(--color-gray-600,oklch(44.6% .03 256.802));justify-content:space-between;align-items:center;font-size:7pt;display:flex;position:absolute;bottom:10mm;left:15mm;right:15mm}.uhuu-flow-page{flex-direction:column;width:100%;height:100%;display:flex}.uhuu-flow-page-area{flex:1;min-height:0}[data-uhuu-flow-area]:has([data-uhuu-flow-unplaceable]){overflow:clip}.uhuu-flow-document{width:100%}.uhuu-image-block{position:relative}.uhuu-image-block-fill{width:100%;height:100%}.uhuu-image-body{width:100%;height:100%;position:relative}.uhuu-image-img{-o-object-fit:cover;object-fit:cover;width:100%;height:100%}.uhuu-image-img:where(.object-cover){-o-object-fit:cover;object-fit:cover}.uhuu-image-img:where(.object-contain){-o-object-fit:contain;object-fit:contain}.uhuu-image-img:where(.object-fill){-o-object-fit:fill;object-fit:fill}.uhuu-image-img:where(.object-center){-o-object-position:center;object-position:center}.uhuu-image-img:where(.object-top){-o-object-position:top;object-position:top}.uhuu-image-img:where(.object-bottom){-o-object-position:bottom;object-position:bottom}.uhuu-image-img:where(.object-left){-o-object-position:left;object-position:left}.uhuu-image-img:where(.object-right){-o-object-position:right;object-position:right}.uhuu-image-img:where(.object-left-top){-o-object-position:left top;object-position:left top}.uhuu-image-img:where(.object-right-top){-o-object-position:right top;object-position:right top}.uhuu-image-img:where(.object-left-bottom){-o-object-position:left bottom;object-position:left bottom}.uhuu-image-img:where(.object-right-bottom){-o-object-position:right bottom;object-position:right bottom}.uhuu-image-overlay{z-index:10;pointer-events:none;position:absolute;inset:0}.uhuu-image-overlay-img{-o-object-fit:cover;object-fit:cover;width:100%;height:100%}.uhuu-image-img,.uhuu-image-overlay-img,:where(.uhuu-image-inner) .cover-image,:where(.uhuu-image-overlay)>svg{display:block}}[data-uhuu-interactive] .uhuu\\:pointer-events-auto,[data-uhuu-portal] .uhuu\\:pointer-events-auto{pointer-events:auto}[data-uhuu-interactive] .uhuu\\:pointer-events-none,[data-uhuu-portal] .uhuu\\:pointer-events-none{pointer-events:none}[data-uhuu-interactive] .uhuu\\:sr-only,[data-uhuu-portal] .uhuu\\:sr-only{clip-path:inset(50%);white-space:nowrap;border-width:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}[data-uhuu-interactive] .uhuu\\:absolute,[data-uhuu-portal] .uhuu\\:absolute{position:absolute}[data-uhuu-interactive] .uhuu\\:fixed,[data-uhuu-portal] .uhuu\\:fixed{position:fixed}[data-uhuu-interactive] .uhuu\\:relative,[data-uhuu-portal] .uhuu\\:relative{position:relative}[data-uhuu-interactive] .uhuu\\:inset-0,[data-uhuu-portal] .uhuu\\:inset-0{inset:0}[data-uhuu-interactive] .uhuu\\:inset-x-0,[data-uhuu-portal] .uhuu\\:inset-x-0{inset-inline:0}[data-uhuu-interactive] .uhuu\\:inset-y-0,[data-uhuu-portal] .uhuu\\:inset-y-0{inset-block:0}[data-uhuu-interactive] .uhuu\\:-top-3,[data-uhuu-portal] .uhuu\\:-top-3{top:calc(var(--uhuu-spacing) * -3)}[data-uhuu-interactive] .uhuu\\:top-0,[data-uhuu-portal] .uhuu\\:top-0{top:0}[data-uhuu-interactive] .uhuu\\:top-1\\/2,[data-uhuu-portal] .uhuu\\:top-1\\/2{top:50%}[data-uhuu-interactive] .uhuu\\:top-2,[data-uhuu-portal] .uhuu\\:top-2{top:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:top-3,[data-uhuu-portal] .uhuu\\:top-3{top:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:top-4,[data-uhuu-portal] .uhuu\\:top-4{top:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:top-\\[50\\%\\],[data-uhuu-portal] .uhuu\\:top-\\[50\\%\\]{top:50%}[data-uhuu-interactive] .uhuu\\:-right-3,[data-uhuu-portal] .uhuu\\:-right-3{right:calc(var(--uhuu-spacing) * -3)}[data-uhuu-interactive] .uhuu\\:right-0,[data-uhuu-portal] .uhuu\\:right-0{right:0}[data-uhuu-interactive] .uhuu\\:right-2,[data-uhuu-portal] .uhuu\\:right-2{right:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:right-4,[data-uhuu-portal] .uhuu\\:right-4{right:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:bottom-0,[data-uhuu-portal] .uhuu\\:bottom-0{bottom:0}[data-uhuu-interactive] .uhuu\\:bottom-2,[data-uhuu-portal] .uhuu\\:bottom-2{bottom:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:bottom-4,[data-uhuu-portal] .uhuu\\:bottom-4{bottom:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:left-0,[data-uhuu-portal] .uhuu\\:left-0{left:0}[data-uhuu-interactive] .uhuu\\:left-2,[data-uhuu-portal] .uhuu\\:left-2{left:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:left-3,[data-uhuu-portal] .uhuu\\:left-3{left:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:left-4,[data-uhuu-portal] .uhuu\\:left-4{left:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:left-\\[50\\%\\],[data-uhuu-portal] .uhuu\\:left-\\[50\\%\\]{left:50%}[data-uhuu-interactive] .uhuu\\:z-10,[data-uhuu-portal] .uhuu\\:z-10{z-index:10}[data-uhuu-interactive] .uhuu\\:z-20,[data-uhuu-portal] .uhuu\\:z-20{z-index:20}[data-uhuu-interactive] .uhuu\\:z-30,[data-uhuu-portal] .uhuu\\:z-30{z-index:30}[data-uhuu-interactive] .uhuu\\:z-50,[data-uhuu-portal] .uhuu\\:z-50{z-index:50}[data-uhuu-interactive] .uhuu\\:z-\\[2\\],[data-uhuu-portal] .uhuu\\:z-\\[2\\]{z-index:2}[data-uhuu-interactive] .uhuu\\:-mx-1,[data-uhuu-portal] .uhuu\\:-mx-1{margin-inline:calc(var(--uhuu-spacing) * -1)}[data-uhuu-interactive] .uhuu\\:mx-0\\.5,[data-uhuu-portal] .uhuu\\:mx-0\\.5{margin-inline:calc(var(--uhuu-spacing) * .5)}[data-uhuu-interactive] .uhuu\\:mx-4,[data-uhuu-portal] .uhuu\\:mx-4{margin-inline:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:mx-auto,[data-uhuu-portal] .uhuu\\:mx-auto{margin-inline:auto}[data-uhuu-interactive] .uhuu\\:my-1,[data-uhuu-portal] .uhuu\\:my-1{margin-block:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:my-1\\.5,[data-uhuu-portal] .uhuu\\:my-1\\.5{margin-block:calc(var(--uhuu-spacing) * 1.5)}[data-uhuu-interactive] .uhuu\\:mt-0\\.5,[data-uhuu-portal] .uhuu\\:mt-0\\.5{margin-top:calc(var(--uhuu-spacing) * .5)}[data-uhuu-interactive] .uhuu\\:mt-1,[data-uhuu-portal] .uhuu\\:mt-1{margin-top:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:mt-6,[data-uhuu-portal] .uhuu\\:mt-6{margin-top:calc(var(--uhuu-spacing) * 6)}[data-uhuu-interactive] .uhuu\\:mr-2,[data-uhuu-portal] .uhuu\\:mr-2{margin-right:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:mr-8,[data-uhuu-portal] .uhuu\\:mr-8{margin-right:calc(var(--uhuu-spacing) * 8)}[data-uhuu-interactive] .uhuu\\:mb-0\\.5,[data-uhuu-portal] .uhuu\\:mb-0\\.5{margin-bottom:calc(var(--uhuu-spacing) * .5)}[data-uhuu-interactive] .uhuu\\:mb-1,[data-uhuu-portal] .uhuu\\:mb-1{margin-bottom:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:mb-2,[data-uhuu-portal] .uhuu\\:mb-2{margin-bottom:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:mb-3,[data-uhuu-portal] .uhuu\\:mb-3{margin-bottom:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:mb-4,[data-uhuu-portal] .uhuu\\:mb-4{margin-bottom:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:mb-5,[data-uhuu-portal] .uhuu\\:mb-5{margin-bottom:calc(var(--uhuu-spacing) * 5)}[data-uhuu-interactive] .uhuu\\:mb-6,[data-uhuu-portal] .uhuu\\:mb-6{margin-bottom:calc(var(--uhuu-spacing) * 6)}[data-uhuu-interactive] .uhuu\\:ml-1,[data-uhuu-portal] .uhuu\\:ml-1{margin-left:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:ml-auto,[data-uhuu-portal] .uhuu\\:ml-auto{margin-left:auto}[data-uhuu-interactive] .uhuu\\:block,[data-uhuu-portal] .uhuu\\:block{display:block}[data-uhuu-interactive] .uhuu\\:flex,[data-uhuu-portal] .uhuu\\:flex{display:flex}[data-uhuu-interactive] .uhuu\\:hidden,[data-uhuu-portal] .uhuu\\:hidden{display:none}[data-uhuu-interactive] .uhuu\\:inline-block,[data-uhuu-portal] .uhuu\\:inline-block{display:inline-block}[data-uhuu-interactive] .uhuu\\:inline-flex,[data-uhuu-portal] .uhuu\\:inline-flex{display:inline-flex}[data-uhuu-interactive] .uhuu\\:size-3,[data-uhuu-portal] .uhuu\\:size-3{width:calc(var(--uhuu-spacing) * 3);height:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:size-3\\.5,[data-uhuu-portal] .uhuu\\:size-3\\.5{width:calc(var(--uhuu-spacing) * 3.5);height:calc(var(--uhuu-spacing) * 3.5)}[data-uhuu-interactive] .uhuu\\:size-4,[data-uhuu-portal] .uhuu\\:size-4{width:calc(var(--uhuu-spacing) * 4);height:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:h-1\\.5,[data-uhuu-portal] .uhuu\\:h-1\\.5{height:calc(var(--uhuu-spacing) * 1.5)}[data-uhuu-interactive] .uhuu\\:h-3,[data-uhuu-portal] .uhuu\\:h-3{height:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:h-3\\.5,[data-uhuu-portal] .uhuu\\:h-3\\.5{height:calc(var(--uhuu-spacing) * 3.5)}[data-uhuu-interactive] .uhuu\\:h-4,[data-uhuu-portal] .uhuu\\:h-4{height:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:h-5,[data-uhuu-portal] .uhuu\\:h-5{height:calc(var(--uhuu-spacing) * 5)}[data-uhuu-interactive] .uhuu\\:h-6,[data-uhuu-portal] .uhuu\\:h-6{height:calc(var(--uhuu-spacing) * 6)}[data-uhuu-interactive] .uhuu\\:h-7,[data-uhuu-portal] .uhuu\\:h-7{height:calc(var(--uhuu-spacing) * 7)}[data-uhuu-interactive] .uhuu\\:h-8,[data-uhuu-portal] .uhuu\\:h-8{height:calc(var(--uhuu-spacing) * 8)}[data-uhuu-interactive] .uhuu\\:h-9,[data-uhuu-portal] .uhuu\\:h-9{height:calc(var(--uhuu-spacing) * 9)}[data-uhuu-interactive] .uhuu\\:h-10,[data-uhuu-portal] .uhuu\\:h-10{height:calc(var(--uhuu-spacing) * 10)}[data-uhuu-interactive] .uhuu\\:h-11,[data-uhuu-portal] .uhuu\\:h-11{height:calc(var(--uhuu-spacing) * 11)}[data-uhuu-interactive] .uhuu\\:h-12,[data-uhuu-portal] .uhuu\\:h-12{height:calc(var(--uhuu-spacing) * 12)}[data-uhuu-interactive] .uhuu\\:h-16,[data-uhuu-portal] .uhuu\\:h-16{height:calc(var(--uhuu-spacing) * 16)}[data-uhuu-interactive] .uhuu\\:h-\\[90vh\\],[data-uhuu-portal] .uhuu\\:h-\\[90vh\\]{height:90vh}[data-uhuu-interactive] .uhuu\\:h-full,[data-uhuu-portal] .uhuu\\:h-full{height:100%}[data-uhuu-interactive] .uhuu\\:h-px,[data-uhuu-portal] .uhuu\\:h-px{height:1px}[data-uhuu-interactive] .uhuu\\:min-h-0,[data-uhuu-portal] .uhuu\\:min-h-0{min-height:0}[data-uhuu-interactive] .uhuu\\:w-3,[data-uhuu-portal] .uhuu\\:w-3{width:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:w-3\\.5,[data-uhuu-portal] .uhuu\\:w-3\\.5{width:calc(var(--uhuu-spacing) * 3.5)}[data-uhuu-interactive] .uhuu\\:w-3\\/4,[data-uhuu-portal] .uhuu\\:w-3\\/4{width:75%}[data-uhuu-interactive] .uhuu\\:w-4,[data-uhuu-portal] .uhuu\\:w-4{width:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:w-6,[data-uhuu-portal] .uhuu\\:w-6{width:calc(var(--uhuu-spacing) * 6)}[data-uhuu-interactive] .uhuu\\:w-7,[data-uhuu-portal] .uhuu\\:w-7{width:calc(var(--uhuu-spacing) * 7)}[data-uhuu-interactive] .uhuu\\:w-8,[data-uhuu-portal] .uhuu\\:w-8{width:calc(var(--uhuu-spacing) * 8)}[data-uhuu-interactive] .uhuu\\:w-9,[data-uhuu-portal] .uhuu\\:w-9{width:calc(var(--uhuu-spacing) * 9)}[data-uhuu-interactive] .uhuu\\:w-10,[data-uhuu-portal] .uhuu\\:w-10{width:calc(var(--uhuu-spacing) * 10)}[data-uhuu-interactive] .uhuu\\:w-12,[data-uhuu-portal] .uhuu\\:w-12{width:calc(var(--uhuu-spacing) * 12)}[data-uhuu-interactive] .uhuu\\:w-16,[data-uhuu-portal] .uhuu\\:w-16{width:calc(var(--uhuu-spacing) * 16)}[data-uhuu-interactive] .uhuu\\:w-20,[data-uhuu-portal] .uhuu\\:w-20{width:calc(var(--uhuu-spacing) * 20)}[data-uhuu-interactive] .uhuu\\:w-24,[data-uhuu-portal] .uhuu\\:w-24{width:calc(var(--uhuu-spacing) * 24)}[data-uhuu-interactive] .uhuu\\:w-40,[data-uhuu-portal] .uhuu\\:w-40{width:calc(var(--uhuu-spacing) * 40)}[data-uhuu-interactive] .uhuu\\:w-48,[data-uhuu-portal] .uhuu\\:w-48{width:calc(var(--uhuu-spacing) * 48)}[data-uhuu-interactive] .uhuu\\:w-52,[data-uhuu-portal] .uhuu\\:w-52{width:calc(var(--uhuu-spacing) * 52)}[data-uhuu-interactive] .uhuu\\:w-full,[data-uhuu-portal] .uhuu\\:w-full{width:100%}[data-uhuu-interactive] .uhuu\\:w-px,[data-uhuu-portal] .uhuu\\:w-px{width:1px}[data-uhuu-interactive] .uhuu\\:max-w-\\[110px\\],[data-uhuu-portal] .uhuu\\:max-w-\\[110px\\]{max-width:110px}[data-uhuu-interactive] .uhuu\\:max-w-\\[120px\\],[data-uhuu-portal] .uhuu\\:max-w-\\[120px\\]{max-width:120px}[data-uhuu-interactive] .uhuu\\:max-w-\\[140px\\],[data-uhuu-portal] .uhuu\\:max-w-\\[140px\\]{max-width:140px}[data-uhuu-interactive] .uhuu\\:max-w-md,[data-uhuu-portal] .uhuu\\:max-w-md{max-width:var(--uhuu-container-md)}[data-uhuu-interactive] .uhuu\\:max-w-none,[data-uhuu-portal] .uhuu\\:max-w-none{max-width:none}[data-uhuu-interactive] .uhuu\\:max-w-sm,[data-uhuu-portal] .uhuu\\:max-w-sm{max-width:var(--uhuu-container-sm)}[data-uhuu-interactive] .uhuu\\:max-w-xs,[data-uhuu-portal] .uhuu\\:max-w-xs{max-width:var(--uhuu-container-xs)}[data-uhuu-interactive] .uhuu\\:min-w-0,[data-uhuu-portal] .uhuu\\:min-w-0{min-width:0}[data-uhuu-interactive] .uhuu\\:min-w-44,[data-uhuu-portal] .uhuu\\:min-w-44{min-width:calc(var(--uhuu-spacing) * 44)}[data-uhuu-interactive] .uhuu\\:min-w-48,[data-uhuu-portal] .uhuu\\:min-w-48{min-width:calc(var(--uhuu-spacing) * 48)}[data-uhuu-interactive] .uhuu\\:min-w-\\[1rem\\],[data-uhuu-portal] .uhuu\\:min-w-\\[1rem\\]{min-width:1rem}[data-uhuu-interactive] .uhuu\\:min-w-\\[8rem\\],[data-uhuu-portal] .uhuu\\:min-w-\\[8rem\\]{min-width:8rem}[data-uhuu-interactive] .uhuu\\:min-w-\\[24px\\],[data-uhuu-portal] .uhuu\\:min-w-\\[24px\\]{min-width:24px}[data-uhuu-interactive] .uhuu\\:min-w-\\[180px\\],[data-uhuu-portal] .uhuu\\:min-w-\\[180px\\]{min-width:180px}[data-uhuu-interactive] .uhuu\\:min-w-\\[200px\\],[data-uhuu-portal] .uhuu\\:min-w-\\[200px\\]{min-width:200px}[data-uhuu-interactive] .uhuu\\:flex-1,[data-uhuu-portal] .uhuu\\:flex-1{flex:1}[data-uhuu-interactive] .uhuu\\:shrink-0,[data-uhuu-portal] .uhuu\\:shrink-0{flex-shrink:0}[data-uhuu-interactive] .uhuu\\:shrink-0\\!,[data-uhuu-portal] .uhuu\\:shrink-0\\!{flex-shrink:0!important}[data-uhuu-interactive] .uhuu\\:grow,[data-uhuu-portal] .uhuu\\:grow{flex-grow:1}[data-uhuu-interactive] .uhuu\\:translate-x-\\[-50\\%\\],[data-uhuu-portal] .uhuu\\:translate-x-\\[-50\\%\\]{--uhuu-tw-translate-x:-50%;translate:var(--uhuu-tw-translate-x) var(--uhuu-tw-translate-y)}[data-uhuu-interactive] .uhuu\\:-translate-y-1\\/2,[data-uhuu-portal] .uhuu\\:-translate-y-1\\/2{--uhuu-tw-translate-y:calc(calc(1 / 2 * 100%) * -1);translate:var(--uhuu-tw-translate-x) var(--uhuu-tw-translate-y)}[data-uhuu-interactive] .uhuu\\:translate-y-\\[-50\\%\\],[data-uhuu-portal] .uhuu\\:translate-y-\\[-50\\%\\]{--uhuu-tw-translate-y:-50%;translate:var(--uhuu-tw-translate-x) var(--uhuu-tw-translate-y)}[data-uhuu-interactive] .uhuu\\:scale-105,[data-uhuu-portal] .uhuu\\:scale-105{--uhuu-tw-scale-x:105%;--uhuu-tw-scale-y:105%;--uhuu-tw-scale-z:105%;scale:var(--uhuu-tw-scale-x) var(--uhuu-tw-scale-y)}[data-uhuu-interactive] .uhuu\\:scale-110,[data-uhuu-portal] .uhuu\\:scale-110{--uhuu-tw-scale-x:110%;--uhuu-tw-scale-y:110%;--uhuu-tw-scale-z:110%;scale:var(--uhuu-tw-scale-x) var(--uhuu-tw-scale-y)}[data-uhuu-interactive] .uhuu\\:rotate-2,[data-uhuu-portal] .uhuu\\:rotate-2{rotate:2deg}[data-uhuu-interactive] .uhuu\\:rotate-45,[data-uhuu-portal] .uhuu\\:rotate-45{rotate:45deg}[data-uhuu-interactive] .uhuu\\:cursor-default,[data-uhuu-portal] .uhuu\\:cursor-default{cursor:default}[data-uhuu-interactive] .uhuu\\:cursor-grab,[data-uhuu-portal] .uhuu\\:cursor-grab{cursor:grab}[data-uhuu-interactive] .uhuu\\:cursor-pointer,[data-uhuu-portal] .uhuu\\:cursor-pointer{cursor:pointer}[data-uhuu-interactive] .uhuu\\:touch-none,[data-uhuu-portal] .uhuu\\:touch-none{touch-action:none}[data-uhuu-interactive] .uhuu\\:flex-col,[data-uhuu-portal] .uhuu\\:flex-col{flex-direction:column}[data-uhuu-interactive] .uhuu\\:flex-col-reverse,[data-uhuu-portal] .uhuu\\:flex-col-reverse{flex-direction:column-reverse}[data-uhuu-interactive] .uhuu\\:flex-wrap,[data-uhuu-portal] .uhuu\\:flex-wrap{flex-wrap:wrap}[data-uhuu-interactive] .uhuu\\:items-center,[data-uhuu-portal] .uhuu\\:items-center{align-items:center}[data-uhuu-interactive] .uhuu\\:items-end,[data-uhuu-portal] .uhuu\\:items-end{align-items:flex-end}[data-uhuu-interactive] .uhuu\\:items-start,[data-uhuu-portal] .uhuu\\:items-start{align-items:flex-start}[data-uhuu-interactive] .uhuu\\:justify-between,[data-uhuu-portal] .uhuu\\:justify-between{justify-content:space-between}[data-uhuu-interactive] .uhuu\\:justify-center,[data-uhuu-portal] .uhuu\\:justify-center{justify-content:center}[data-uhuu-interactive] .uhuu\\:justify-end,[data-uhuu-portal] .uhuu\\:justify-end{justify-content:flex-end}[data-uhuu-interactive] .uhuu\\:justify-start,[data-uhuu-portal] .uhuu\\:justify-start{justify-content:flex-start}[data-uhuu-interactive] .uhuu\\:gap-0,[data-uhuu-portal] .uhuu\\:gap-0{gap:0}[data-uhuu-interactive] .uhuu\\:gap-1,[data-uhuu-portal] .uhuu\\:gap-1{gap:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:gap-1\\.5,[data-uhuu-portal] .uhuu\\:gap-1\\.5{gap:calc(var(--uhuu-spacing) * 1.5)}[data-uhuu-interactive] .uhuu\\:gap-2,[data-uhuu-portal] .uhuu\\:gap-2{gap:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:gap-3,[data-uhuu-portal] .uhuu\\:gap-3{gap:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:gap-4,[data-uhuu-portal] .uhuu\\:gap-4{gap:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] :where(.uhuu\\:space-y-1\\.5>:not(:last-child)),[data-uhuu-portal] :where(.uhuu\\:space-y-1\\.5>:not(:last-child)){--uhuu-tw-space-y-reverse:0;margin-block-start:calc(calc(var(--uhuu-spacing) * 1.5) * var(--uhuu-tw-space-y-reverse));margin-block-end:calc(calc(var(--uhuu-spacing) * 1.5) * calc(1 - var(--uhuu-tw-space-y-reverse)))}[data-uhuu-interactive] :where(.uhuu\\:space-y-2>:not(:last-child)),[data-uhuu-portal] :where(.uhuu\\:space-y-2>:not(:last-child)){--uhuu-tw-space-y-reverse:0;margin-block-start:calc(calc(var(--uhuu-spacing) * 2) * var(--uhuu-tw-space-y-reverse));margin-block-end:calc(calc(var(--uhuu-spacing) * 2) * calc(1 - var(--uhuu-tw-space-y-reverse)))}[data-uhuu-interactive] :where(.uhuu\\:space-y-3>:not(:last-child)),[data-uhuu-portal] :where(.uhuu\\:space-y-3>:not(:last-child)){--uhuu-tw-space-y-reverse:0;margin-block-start:calc(calc(var(--uhuu-spacing) * 3) * var(--uhuu-tw-space-y-reverse));margin-block-end:calc(calc(var(--uhuu-spacing) * 3) * calc(1 - var(--uhuu-tw-space-y-reverse)))}[data-uhuu-interactive] .uhuu\\:truncate,[data-uhuu-portal] .uhuu\\:truncate{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}[data-uhuu-interactive] .uhuu\\:overflow-auto,[data-uhuu-portal] .uhuu\\:overflow-auto{overflow:auto}[data-uhuu-interactive] .uhuu\\:overflow-hidden,[data-uhuu-portal] .uhuu\\:overflow-hidden{overflow:hidden}[data-uhuu-interactive] .uhuu\\:rounded,[data-uhuu-portal] .uhuu\\:rounded{border-radius:.25rem}[data-uhuu-interactive] .uhuu\\:rounded-full,[data-uhuu-portal] .uhuu\\:rounded-full{border-radius:2147483647px}[data-uhuu-interactive] .uhuu\\:rounded-lg,[data-uhuu-portal] .uhuu\\:rounded-lg{border-radius:var(--uhuu-radius-lg)}[data-uhuu-interactive] .uhuu\\:rounded-md,[data-uhuu-portal] .uhuu\\:rounded-md{border-radius:var(--uhuu-radius-md)}[data-uhuu-interactive] .uhuu\\:rounded-sm,[data-uhuu-portal] .uhuu\\:rounded-sm{border-radius:var(--uhuu-radius-sm)}[data-uhuu-interactive] .uhuu\\:border,[data-uhuu-portal] .uhuu\\:border{border-style:var(--uhuu-tw-border-style);border-width:1px}[data-uhuu-interactive] .uhuu\\:border-0,[data-uhuu-portal] .uhuu\\:border-0{border-style:var(--uhuu-tw-border-style);border-width:0}[data-uhuu-interactive] .uhuu\\:border-2,[data-uhuu-portal] .uhuu\\:border-2{border-style:var(--uhuu-tw-border-style);border-width:2px}[data-uhuu-interactive] .uhuu\\:border-t,[data-uhuu-portal] .uhuu\\:border-t{border-top-style:var(--uhuu-tw-border-style);border-top-width:1px}[data-uhuu-interactive] .uhuu\\:border-r,[data-uhuu-portal] .uhuu\\:border-r{border-right-style:var(--uhuu-tw-border-style);border-right-width:1px}[data-uhuu-interactive] .uhuu\\:border-b,[data-uhuu-portal] .uhuu\\:border-b{border-bottom-style:var(--uhuu-tw-border-style);border-bottom-width:1px}[data-uhuu-interactive] .uhuu\\:border-l,[data-uhuu-portal] .uhuu\\:border-l{border-left-style:var(--uhuu-tw-border-style);border-left-width:1px}[data-uhuu-interactive] .uhuu\\:border-\\(--uhuu-thumbnail-border\\),[data-uhuu-portal] .uhuu\\:border-\\(--uhuu-thumbnail-border\\){border-color:var(--uhuu-thumbnail-border)}[data-uhuu-interactive] .uhuu\\:border-\\(--uhuu-thumbnail-border-strong\\),[data-uhuu-portal] .uhuu\\:border-\\(--uhuu-thumbnail-border-strong\\){border-color:var(--uhuu-thumbnail-border-strong)}[data-uhuu-interactive] .uhuu\\:border-blue-400,[data-uhuu-portal] .uhuu\\:border-blue-400{border-color:var(--uhuu-color-blue-400)}[data-uhuu-interactive] .uhuu\\:border-gray-200,[data-uhuu-portal] .uhuu\\:border-gray-200,[data-uhuu-interactive] .uhuu\\:border-gray-200\\/60,[data-uhuu-portal] .uhuu\\:border-gray-200\\/60{border-color:var(--uhuu-color-gray-200)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:border-gray-200\\/60,[data-uhuu-portal] .uhuu\\:border-gray-200\\/60{border-color:color-mix(in oklab, var(--uhuu-color-gray-200) 60%, transparent)}}[data-uhuu-interactive] .uhuu\\:border-gray-200\\/80,[data-uhuu-portal] .uhuu\\:border-gray-200\\/80{border-color:var(--uhuu-color-gray-200)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:border-gray-200\\/80,[data-uhuu-portal] .uhuu\\:border-gray-200\\/80{border-color:color-mix(in oklab, var(--uhuu-color-gray-200) 80%, transparent)}}[data-uhuu-interactive] .uhuu\\:border-gray-300,[data-uhuu-portal] .uhuu\\:border-gray-300{border-color:var(--uhuu-color-gray-300)}[data-uhuu-interactive] .uhuu\\:border-gray-400,[data-uhuu-portal] .uhuu\\:border-gray-400{border-color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:border-gray-900,[data-uhuu-portal] .uhuu\\:border-gray-900{border-color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:border-transparent,[data-uhuu-portal] .uhuu\\:border-transparent{border-color:#0000}[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\),[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\),[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/50,[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/50{background-color:var(--uhuu-shell-surface)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/50,[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/50{background-color:color-mix(in oklab, var(--uhuu-shell-surface) 50%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/90,[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/90{background-color:var(--uhuu-shell-surface)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/90,[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/90{background-color:color-mix(in oklab, var(--uhuu-shell-surface) 90%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/95,[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/95{background-color:var(--uhuu-shell-surface)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/95,[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/95{background-color:color-mix(in oklab, var(--uhuu-shell-surface) 95%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-thumbnail-caption\\),[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-thumbnail-caption\\){background-color:var(--uhuu-thumbnail-caption)}[data-uhuu-interactive] .uhuu\\:bg-black,[data-uhuu-portal] .uhuu\\:bg-black,[data-uhuu-interactive] .uhuu\\:bg-black\\/30,[data-uhuu-portal] .uhuu\\:bg-black\\/30{background-color:var(--uhuu-color-black)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-black\\/30,[data-uhuu-portal] .uhuu\\:bg-black\\/30{background-color:color-mix(in oklab, var(--uhuu-color-black) 30%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-black\\/40,[data-uhuu-portal] .uhuu\\:bg-black\\/40{background-color:var(--uhuu-color-black)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-black\\/40,[data-uhuu-portal] .uhuu\\:bg-black\\/40{background-color:color-mix(in oklab, var(--uhuu-color-black) 40%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-black\\/50,[data-uhuu-portal] .uhuu\\:bg-black\\/50{background-color:var(--uhuu-color-black)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-black\\/50,[data-uhuu-portal] .uhuu\\:bg-black\\/50{background-color:color-mix(in oklab, var(--uhuu-color-black) 50%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-blue-50,[data-uhuu-portal] .uhuu\\:bg-blue-50{background-color:var(--uhuu-color-blue-50)}[data-uhuu-interactive] .uhuu\\:bg-blue-100,[data-uhuu-portal] .uhuu\\:bg-blue-100{background-color:var(--uhuu-color-blue-100)}[data-uhuu-interactive] .uhuu\\:bg-blue-500\\/10,[data-uhuu-portal] .uhuu\\:bg-blue-500\\/10{background-color:var(--uhuu-color-blue-500)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-blue-500\\/10,[data-uhuu-portal] .uhuu\\:bg-blue-500\\/10{background-color:color-mix(in oklab, var(--uhuu-color-blue-500) 10%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-blue-600\\/80,[data-uhuu-portal] .uhuu\\:bg-blue-600\\/80{background-color:var(--uhuu-color-blue-600)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-blue-600\\/80,[data-uhuu-portal] .uhuu\\:bg-blue-600\\/80{background-color:color-mix(in oklab, var(--uhuu-color-blue-600) 80%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-emerald-100,[data-uhuu-portal] .uhuu\\:bg-emerald-100{background-color:var(--uhuu-color-emerald-100)}[data-uhuu-interactive] .uhuu\\:bg-gray-50,[data-uhuu-portal] .uhuu\\:bg-gray-50{background-color:var(--uhuu-color-gray-50)}[data-uhuu-interactive] .uhuu\\:bg-gray-100,[data-uhuu-portal] .uhuu\\:bg-gray-100,[data-uhuu-interactive] .uhuu\\:bg-gray-100\\/80,[data-uhuu-portal] .uhuu\\:bg-gray-100\\/80{background-color:var(--uhuu-color-gray-100)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-gray-100\\/80,[data-uhuu-portal] .uhuu\\:bg-gray-100\\/80{background-color:color-mix(in oklab, var(--uhuu-color-gray-100) 80%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-gray-200,[data-uhuu-portal] .uhuu\\:bg-gray-200{background-color:var(--uhuu-color-gray-200)}[data-uhuu-interactive] .uhuu\\:bg-gray-600\\/80,[data-uhuu-portal] .uhuu\\:bg-gray-600\\/80{background-color:var(--uhuu-color-gray-600)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-gray-600\\/80,[data-uhuu-portal] .uhuu\\:bg-gray-600\\/80{background-color:color-mix(in oklab, var(--uhuu-color-gray-600) 80%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-gray-900,[data-uhuu-portal] .uhuu\\:bg-gray-900{background-color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:bg-transparent,[data-uhuu-portal] .uhuu\\:bg-transparent{background-color:#0000}[data-uhuu-interactive] .uhuu\\:bg-white,[data-uhuu-portal] .uhuu\\:bg-white,[data-uhuu-interactive] .uhuu\\:bg-white\\/90,[data-uhuu-portal] .uhuu\\:bg-white\\/90{background-color:var(--uhuu-color-white)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-white\\/90,[data-uhuu-portal] .uhuu\\:bg-white\\/90{background-color:color-mix(in oklab, var(--uhuu-color-white) 90%, transparent)}}[data-uhuu-interactive] .uhuu\\:object-contain,[data-uhuu-portal] .uhuu\\:object-contain{-o-object-fit:contain;object-fit:contain}[data-uhuu-interactive] .uhuu\\:object-top,[data-uhuu-portal] .uhuu\\:object-top{-o-object-position:top;object-position:top}[data-uhuu-interactive] .uhuu\\:p-0,[data-uhuu-portal] .uhuu\\:p-0{padding:0}[data-uhuu-interactive] .uhuu\\:p-1,[data-uhuu-portal] .uhuu\\:p-1{padding:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:p-1\\.5,[data-uhuu-portal] .uhuu\\:p-1\\.5{padding:calc(var(--uhuu-spacing) * 1.5)}[data-uhuu-interactive] .uhuu\\:p-2,[data-uhuu-portal] .uhuu\\:p-2{padding:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:p-3,[data-uhuu-portal] .uhuu\\:p-3{padding:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:p-4,[data-uhuu-portal] .uhuu\\:p-4{padding:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:p-6,[data-uhuu-portal] .uhuu\\:p-6{padding:calc(var(--uhuu-spacing) * 6)}[data-uhuu-interactive] .uhuu\\:px-2,[data-uhuu-portal] .uhuu\\:px-2{padding-inline:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:px-2\\.5,[data-uhuu-portal] .uhuu\\:px-2\\.5{padding-inline:calc(var(--uhuu-spacing) * 2.5)}[data-uhuu-interactive] .uhuu\\:px-3,[data-uhuu-portal] .uhuu\\:px-3{padding-inline:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:px-4,[data-uhuu-portal] .uhuu\\:px-4{padding-inline:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:px-8,[data-uhuu-portal] .uhuu\\:px-8{padding-inline:calc(var(--uhuu-spacing) * 8)}[data-uhuu-interactive] .uhuu\\:py-0\\.5,[data-uhuu-portal] .uhuu\\:py-0\\.5{padding-block:calc(var(--uhuu-spacing) * .5)}[data-uhuu-interactive] .uhuu\\:py-1,[data-uhuu-portal] .uhuu\\:py-1{padding-block:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:py-1\\.5,[data-uhuu-portal] .uhuu\\:py-1\\.5{padding-block:calc(var(--uhuu-spacing) * 1.5)}[data-uhuu-interactive] .uhuu\\:py-2,[data-uhuu-portal] .uhuu\\:py-2{padding-block:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:py-2\\.5,[data-uhuu-portal] .uhuu\\:py-2\\.5{padding-block:calc(var(--uhuu-spacing) * 2.5)}[data-uhuu-interactive] .uhuu\\:py-3,[data-uhuu-portal] .uhuu\\:py-3{padding-block:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:py-16,[data-uhuu-portal] .uhuu\\:py-16{padding-block:calc(var(--uhuu-spacing) * 16)}[data-uhuu-interactive] .uhuu\\:py-20,[data-uhuu-portal] .uhuu\\:py-20{padding-block:calc(var(--uhuu-spacing) * 20)}[data-uhuu-interactive] .uhuu\\:pt-1,[data-uhuu-portal] .uhuu\\:pt-1{padding-top:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:pt-2,[data-uhuu-portal] .uhuu\\:pt-2{padding-top:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:pr-1,[data-uhuu-portal] .uhuu\\:pr-1{padding-right:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:pr-2,[data-uhuu-portal] .uhuu\\:pr-2{padding-right:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:pr-3,[data-uhuu-portal] .uhuu\\:pr-3{padding-right:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:pr-6,[data-uhuu-portal] .uhuu\\:pr-6{padding-right:calc(var(--uhuu-spacing) * 6)}[data-uhuu-interactive] .uhuu\\:pb-4,[data-uhuu-portal] .uhuu\\:pb-4{padding-bottom:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:pl-0,[data-uhuu-portal] .uhuu\\:pl-0{padding-left:0}[data-uhuu-interactive] .uhuu\\:pl-1,[data-uhuu-portal] .uhuu\\:pl-1{padding-left:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:pl-8,[data-uhuu-portal] .uhuu\\:pl-8{padding-left:calc(var(--uhuu-spacing) * 8)}[data-uhuu-interactive] .uhuu\\:text-center,[data-uhuu-portal] .uhuu\\:text-center{text-align:center}[data-uhuu-interactive] .uhuu\\:text-left,[data-uhuu-portal] .uhuu\\:text-left{text-align:left}[data-uhuu-interactive] .uhuu\\:align-top,[data-uhuu-portal] .uhuu\\:align-top{vertical-align:top}[data-uhuu-interactive] .uhuu\\:font-mono,[data-uhuu-portal] .uhuu\\:font-mono{font-family:var(--uhuu-font-mono)}[data-uhuu-interactive] .uhuu\\:text-base,[data-uhuu-portal] .uhuu\\:text-base{font-size:var(--uhuu-text-base);line-height:var(--uhuu-tw-leading,var(--uhuu-text-base--line-height))}[data-uhuu-interactive] .uhuu\\:text-lg,[data-uhuu-portal] .uhuu\\:text-lg{font-size:var(--uhuu-text-lg);line-height:var(--uhuu-tw-leading,var(--uhuu-text-lg--line-height))}[data-uhuu-interactive] .uhuu\\:text-sm,[data-uhuu-portal] .uhuu\\:text-sm{font-size:var(--uhuu-text-sm);line-height:var(--uhuu-tw-leading,var(--uhuu-text-sm--line-height))}[data-uhuu-interactive] .uhuu\\:text-xs,[data-uhuu-portal] .uhuu\\:text-xs{font-size:var(--uhuu-text-xs);line-height:var(--uhuu-tw-leading,var(--uhuu-text-xs--line-height))}[data-uhuu-interactive] .uhuu\\:text-xs\\!,[data-uhuu-portal] .uhuu\\:text-xs\\!{font-size:var(--uhuu-text-xs)!important;line-height:var(--uhuu-tw-leading,var(--uhuu-text-xs--line-height))!important}[data-uhuu-interactive] .uhuu\\:text-\\[10px\\],[data-uhuu-portal] .uhuu\\:text-\\[10px\\]{font-size:10px}[data-uhuu-interactive] .uhuu\\:leading-none,[data-uhuu-portal] .uhuu\\:leading-none{--uhuu-tw-leading:1;line-height:1}[data-uhuu-interactive] .uhuu\\:leading-tight,[data-uhuu-portal] .uhuu\\:leading-tight{--uhuu-tw-leading:var(--uhuu-leading-tight);line-height:var(--uhuu-leading-tight)}[data-uhuu-interactive] .uhuu\\:font-medium,[data-uhuu-portal] .uhuu\\:font-medium{--uhuu-tw-font-weight:var(--uhuu-font-weight-medium);font-weight:var(--uhuu-font-weight-medium)}[data-uhuu-interactive] .uhuu\\:font-normal,[data-uhuu-portal] .uhuu\\:font-normal{--uhuu-tw-font-weight:var(--uhuu-font-weight-normal);font-weight:var(--uhuu-font-weight-normal)}[data-uhuu-interactive] .uhuu\\:font-semibold,[data-uhuu-portal] .uhuu\\:font-semibold{--uhuu-tw-font-weight:var(--uhuu-font-weight-semibold);font-weight:var(--uhuu-font-weight-semibold)}[data-uhuu-interactive] .uhuu\\:tracking-wide,[data-uhuu-portal] .uhuu\\:tracking-wide{--uhuu-tw-tracking:var(--uhuu-tracking-wide);letter-spacing:var(--uhuu-tracking-wide)}[data-uhuu-interactive] .uhuu\\:tracking-widest,[data-uhuu-portal] .uhuu\\:tracking-widest{--uhuu-tw-tracking:var(--uhuu-tracking-widest);letter-spacing:var(--uhuu-tracking-widest)}[data-uhuu-interactive] .uhuu\\:break-all,[data-uhuu-portal] .uhuu\\:break-all{word-break:break-all}[data-uhuu-interactive] .uhuu\\:whitespace-nowrap,[data-uhuu-portal] .uhuu\\:whitespace-nowrap{white-space:nowrap}[data-uhuu-interactive] .uhuu\\:text-\\(--uhuu-shell-on-inverse\\),[data-uhuu-portal] .uhuu\\:text-\\(--uhuu-shell-on-inverse\\){color:var(--uhuu-shell-on-inverse)}[data-uhuu-interactive] .uhuu\\:text-blue-600,[data-uhuu-portal] .uhuu\\:text-blue-600{color:var(--uhuu-color-blue-600)}[data-uhuu-interactive] .uhuu\\:text-emerald-600,[data-uhuu-portal] .uhuu\\:text-emerald-600{color:var(--uhuu-color-emerald-600)}[data-uhuu-interactive] .uhuu\\:text-gray-400,[data-uhuu-portal] .uhuu\\:text-gray-400{color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:text-gray-500,[data-uhuu-portal] .uhuu\\:text-gray-500{color:var(--uhuu-color-gray-500)}[data-uhuu-interactive] .uhuu\\:text-gray-600,[data-uhuu-portal] .uhuu\\:text-gray-600{color:var(--uhuu-color-gray-600)}[data-uhuu-interactive] .uhuu\\:text-gray-700,[data-uhuu-portal] .uhuu\\:text-gray-700{color:var(--uhuu-color-gray-700)}[data-uhuu-interactive] .uhuu\\:text-gray-800,[data-uhuu-portal] .uhuu\\:text-gray-800{color:var(--uhuu-color-gray-800)}[data-uhuu-interactive] .uhuu\\:text-gray-900,[data-uhuu-portal] .uhuu\\:text-gray-900{color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:text-red-600,[data-uhuu-portal] .uhuu\\:text-red-600{color:var(--uhuu-color-red-600)}[data-uhuu-interactive] .uhuu\\:text-white,[data-uhuu-portal] .uhuu\\:text-white{color:var(--uhuu-color-white)}[data-uhuu-interactive] .uhuu\\:uppercase,[data-uhuu-portal] .uhuu\\:uppercase{text-transform:uppercase}[data-uhuu-interactive] .uhuu\\:tabular-nums,[data-uhuu-portal] .uhuu\\:tabular-nums{--uhuu-tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--uhuu-tw-ordinal,) var(--uhuu-tw-slashed-zero,) var(--uhuu-tw-numeric-figure,) var(--uhuu-tw-numeric-spacing,) var(--uhuu-tw-numeric-fraction,)}[data-uhuu-interactive] .uhuu\\:opacity-0,[data-uhuu-portal] .uhuu\\:opacity-0{opacity:0}[data-uhuu-interactive] .uhuu\\:opacity-50,[data-uhuu-portal] .uhuu\\:opacity-50{opacity:.5}[data-uhuu-interactive] .uhuu\\:opacity-60,[data-uhuu-portal] .uhuu\\:opacity-60{opacity:.6}[data-uhuu-interactive] .uhuu\\:opacity-70,[data-uhuu-portal] .uhuu\\:opacity-70{opacity:.7}[data-uhuu-interactive] .uhuu\\:opacity-75,[data-uhuu-portal] .uhuu\\:opacity-75{opacity:.75}[data-uhuu-interactive] .uhuu\\:shadow,[data-uhuu-portal] .uhuu\\:shadow{--uhuu-tw-shadow:0 1px 3px 0 var(--uhuu-tw-shadow-color,#0000001a), 0 1px 2px -1px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:shadow-2xl,[data-uhuu-portal] .uhuu\\:shadow-2xl{--uhuu-tw-shadow:0 25px 50px -12px var(--uhuu-tw-shadow-color,#00000040);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:shadow-lg,[data-uhuu-portal] .uhuu\\:shadow-lg{--uhuu-tw-shadow:0 10px 15px -3px var(--uhuu-tw-shadow-color,#0000001a), 0 4px 6px -4px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:shadow-md,[data-uhuu-portal] .uhuu\\:shadow-md{--uhuu-tw-shadow:0 4px 6px -1px var(--uhuu-tw-shadow-color,#0000001a), 0 2px 4px -2px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:shadow-sm,[data-uhuu-portal] .uhuu\\:shadow-sm{--uhuu-tw-shadow:0 1px 3px 0 var(--uhuu-tw-shadow-color,#0000001a), 0 1px 2px -1px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:shadow-xl,[data-uhuu-portal] .uhuu\\:shadow-xl{--uhuu-tw-shadow:0 20px 25px -5px var(--uhuu-tw-shadow-color,#0000001a), 0 8px 10px -6px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:ring-0,[data-uhuu-portal] .uhuu\\:ring-0{--uhuu-tw-ring-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 calc(0px + var(--uhuu-tw-ring-offset-width)) var(--uhuu-tw-ring-color,currentcolor);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:ring-offset-\\(--uhuu-shell-surface\\),[data-uhuu-portal] .uhuu\\:ring-offset-\\(--uhuu-shell-surface\\){--uhuu-tw-ring-offset-color:var(--uhuu-shell-surface)}[data-uhuu-interactive] .uhuu\\:outline,[data-uhuu-portal] .uhuu\\:outline{outline-style:var(--uhuu-tw-outline-style);outline-width:1px}[data-uhuu-interactive] .uhuu\\:outline-2,[data-uhuu-portal] .uhuu\\:outline-2{outline-style:var(--uhuu-tw-outline-style);outline-width:2px}[data-uhuu-interactive] .uhuu\\:outline-offset-2,[data-uhuu-portal] .uhuu\\:outline-offset-2{outline-offset:2px}[data-uhuu-interactive] .uhuu\\:outline-blue-100,[data-uhuu-portal] .uhuu\\:outline-blue-100{outline-color:var(--uhuu-color-blue-100)}[data-uhuu-interactive] .uhuu\\:drop-shadow-\\[0_1px_2px_rgba\\(0\\,0\\,0\\,0\\.8\\)\\],[data-uhuu-portal] .uhuu\\:drop-shadow-\\[0_1px_2px_rgba\\(0\\,0\\,0\\,0\\.8\\)\\]{--uhuu-tw-drop-shadow-size:drop-shadow(0 1px 2px var(--uhuu-tw-drop-shadow-color,#000c));--uhuu-tw-drop-shadow:var(--uhuu-tw-drop-shadow-size);filter:var(--uhuu-tw-blur,) var(--uhuu-tw-brightness,) var(--uhuu-tw-contrast,) var(--uhuu-tw-grayscale,) var(--uhuu-tw-hue-rotate,) var(--uhuu-tw-invert,) var(--uhuu-tw-saturate,) var(--uhuu-tw-sepia,) var(--uhuu-tw-drop-shadow,)}[data-uhuu-interactive] .uhuu\\:backdrop-blur-\\[1px\\],[data-uhuu-portal] .uhuu\\:backdrop-blur-\\[1px\\]{--uhuu-tw-backdrop-blur:blur(1px);backdrop-filter:var(--uhuu-tw-backdrop-blur,) var(--uhuu-tw-backdrop-brightness,) var(--uhuu-tw-backdrop-contrast,) var(--uhuu-tw-backdrop-grayscale,) var(--uhuu-tw-backdrop-hue-rotate,) var(--uhuu-tw-backdrop-invert,) var(--uhuu-tw-backdrop-opacity,) var(--uhuu-tw-backdrop-saturate,) var(--uhuu-tw-backdrop-sepia,)}[data-uhuu-interactive] .uhuu\\:backdrop-blur-md,[data-uhuu-portal] .uhuu\\:backdrop-blur-md{--uhuu-tw-backdrop-blur:blur(var(--uhuu-blur-md));backdrop-filter:var(--uhuu-tw-backdrop-blur,) var(--uhuu-tw-backdrop-brightness,) var(--uhuu-tw-backdrop-contrast,) var(--uhuu-tw-backdrop-grayscale,) var(--uhuu-tw-backdrop-hue-rotate,) var(--uhuu-tw-backdrop-invert,) var(--uhuu-tw-backdrop-opacity,) var(--uhuu-tw-backdrop-saturate,) var(--uhuu-tw-backdrop-sepia,)}[data-uhuu-interactive] .uhuu\\:backdrop-blur-sm,[data-uhuu-portal] .uhuu\\:backdrop-blur-sm{--uhuu-tw-backdrop-blur:blur(var(--uhuu-blur-sm));backdrop-filter:var(--uhuu-tw-backdrop-blur,) var(--uhuu-tw-backdrop-brightness,) var(--uhuu-tw-backdrop-contrast,) var(--uhuu-tw-backdrop-grayscale,) var(--uhuu-tw-backdrop-hue-rotate,) var(--uhuu-tw-backdrop-invert,) var(--uhuu-tw-backdrop-opacity,) var(--uhuu-tw-backdrop-saturate,) var(--uhuu-tw-backdrop-sepia,)}[data-uhuu-interactive] .uhuu\\:transition,[data-uhuu-portal] .uhuu\\:transition{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--uhuu-tw-gradient-from,--uhuu-tw-gradient-via,--uhuu-tw-gradient-to,opacity,box-shadow,transform,translate,scale,rotate,filter,backdrop-filter,display,content-visibility,overlay,pointer-events;transition-timing-function:var(--uhuu-tw-ease,var(--uhuu-default-transition-timing-function));transition-duration:var(--uhuu-tw-duration,var(--uhuu-default-transition-duration))}[data-uhuu-interactive] .uhuu\\:transition-all,[data-uhuu-portal] .uhuu\\:transition-all{transition-property:all;transition-timing-function:var(--uhuu-tw-ease,var(--uhuu-default-transition-timing-function));transition-duration:var(--uhuu-tw-duration,var(--uhuu-default-transition-duration))}[data-uhuu-interactive] .uhuu\\:transition-colors,[data-uhuu-portal] .uhuu\\:transition-colors{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--uhuu-tw-gradient-from,--uhuu-tw-gradient-via,--uhuu-tw-gradient-to;transition-timing-function:var(--uhuu-tw-ease,var(--uhuu-default-transition-timing-function));transition-duration:var(--uhuu-tw-duration,var(--uhuu-default-transition-duration))}[data-uhuu-interactive] .uhuu\\:transition-opacity,[data-uhuu-portal] .uhuu\\:transition-opacity{transition-property:opacity;transition-timing-function:var(--uhuu-tw-ease,var(--uhuu-default-transition-timing-function));transition-duration:var(--uhuu-tw-duration,var(--uhuu-default-transition-duration))}[data-uhuu-interactive] .uhuu\\:transition-transform,[data-uhuu-portal] .uhuu\\:transition-transform{transition-property:transform,translate,scale,rotate;transition-timing-function:var(--uhuu-tw-ease,var(--uhuu-default-transition-timing-function));transition-duration:var(--uhuu-tw-duration,var(--uhuu-default-transition-duration))}[data-uhuu-interactive] .uhuu\\:duration-150,[data-uhuu-portal] .uhuu\\:duration-150{--uhuu-tw-duration:.15s;transition-duration:.15s}[data-uhuu-interactive] .uhuu\\:ease-in-out,[data-uhuu-portal] .uhuu\\:ease-in-out{--uhuu-tw-ease:var(--uhuu-ease-in-out);transition-timing-function:var(--uhuu-ease-in-out)}[data-uhuu-interactive] .uhuu\\:outline-none,[data-uhuu-portal] .uhuu\\:outline-none{--uhuu-tw-outline-style:none;outline-style:none}[data-uhuu-interactive] .uhuu\\:select-none,[data-uhuu-portal] .uhuu\\:select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}@media (hover:hover){[data-uhuu-interactive] .uhuu\\:group-hover\\:opacity-100:is(:where(.uhuu\\:group):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\:opacity-100:is(:where(.uhuu\\:group):hover *){opacity:1}[data-uhuu-interactive] .uhuu\\:group-hover\\/drag-item\\:block:is(:where(.uhuu\\:group\\/drag-item):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/drag-item\\:block:is(:where(.uhuu\\:group\\/drag-item):hover *){display:block}[data-uhuu-interactive] .uhuu\\:group-hover\\/drag-item\\:flex:is(:where(.uhuu\\:group\\/drag-item):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/drag-item\\:flex:is(:where(.uhuu\\:group\\/drag-item):hover *){display:flex}[data-uhuu-interactive] .uhuu\\:group-hover\\/drag-item\\:hidden:is(:where(.uhuu\\:group\\/drag-item):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/drag-item\\:hidden:is(:where(.uhuu\\:group\\/drag-item):hover *){display:none}[data-uhuu-interactive] .uhuu\\:group-hover\\/drag-item\\:border-gray-300:is(:where(.uhuu\\:group\\/drag-item):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/drag-item\\:border-gray-300:is(:where(.uhuu\\:group\\/drag-item):hover *){border-color:var(--uhuu-color-gray-300)}[data-uhuu-interactive] .uhuu\\:group-hover\\/drag-item\\:shadow-md:is(:where(.uhuu\\:group\\/drag-item):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/drag-item\\:shadow-md:is(:where(.uhuu\\:group\\/drag-item):hover *){--uhuu-tw-shadow:0 4px 6px -1px var(--uhuu-tw-shadow-color,#0000001a), 0 2px 4px -2px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:group-hover\\/remove-btn\\:block:is(:where(.uhuu\\:group\\/remove-btn):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/remove-btn\\:block:is(:where(.uhuu\\:group\\/remove-btn):hover *){display:block}[data-uhuu-interactive] .uhuu\\:group-hover\\/remove-btn\\:hidden:is(:where(.uhuu\\:group\\/remove-btn):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/remove-btn\\:hidden:is(:where(.uhuu\\:group\\/remove-btn):hover *){display:none}}[data-uhuu-interactive] .uhuu\\:peer-disabled\\:cursor-not-allowed:is(:where(.uhuu\\:peer):disabled~*),[data-uhuu-portal] .uhuu\\:peer-disabled\\:cursor-not-allowed:is(:where(.uhuu\\:peer):disabled~*){cursor:not-allowed}[data-uhuu-interactive] .uhuu\\:peer-disabled\\:opacity-70:is(:where(.uhuu\\:peer):disabled~*),[data-uhuu-portal] .uhuu\\:peer-disabled\\:opacity-70:is(:where(.uhuu\\:peer):disabled~*){opacity:.7}[data-uhuu-interactive] .uhuu\\:placeholder\\:text-gray-400::-moz-placeholder,[data-uhuu-portal] .uhuu\\:placeholder\\:text-gray-400::-moz-placeholder{color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:placeholder\\:text-gray-400::placeholder,[data-uhuu-portal] .uhuu\\:placeholder\\:text-gray-400::placeholder{color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:focus-within\\:border-gray-400:focus-within,[data-uhuu-portal] .uhuu\\:focus-within\\:border-gray-400:focus-within{border-color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:focus-within\\:ring-2:focus-within,[data-uhuu-portal] .uhuu\\:focus-within\\:ring-2:focus-within{--uhuu-tw-ring-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 calc(2px + var(--uhuu-tw-ring-offset-width)) var(--uhuu-tw-ring-color,currentcolor);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:focus-within\\:ring-gray-200:focus-within,[data-uhuu-portal] .uhuu\\:focus-within\\:ring-gray-200:focus-within{--uhuu-tw-ring-color:var(--uhuu-color-gray-200)}@media (hover:hover){[data-uhuu-interactive] .uhuu\\:hover\\:scale-105:hover,[data-uhuu-portal] .uhuu\\:hover\\:scale-105:hover{--uhuu-tw-scale-x:105%;--uhuu-tw-scale-y:105%;--uhuu-tw-scale-z:105%;scale:var(--uhuu-tw-scale-x) var(--uhuu-tw-scale-y)}[data-uhuu-interactive] .uhuu\\:hover\\:border-\\(--uhuu-thumbnail-border-strong\\):hover,[data-uhuu-portal] .uhuu\\:hover\\:border-\\(--uhuu-thumbnail-border-strong\\):hover{border-color:var(--uhuu-thumbnail-border-strong)}[data-uhuu-interactive] .uhuu\\:hover\\:border-gray-200:hover,[data-uhuu-portal] .uhuu\\:hover\\:border-gray-200:hover{border-color:var(--uhuu-color-gray-200)}[data-uhuu-interactive] .uhuu\\:hover\\:border-gray-400:hover,[data-uhuu-portal] .uhuu\\:hover\\:border-gray-400:hover{border-color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:hover\\:bg-\\(--uhuu-shell-surface\\):hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-\\(--uhuu-shell-surface\\):hover{background-color:var(--uhuu-shell-surface)}[data-uhuu-interactive] .uhuu\\:hover\\:bg-gray-50:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-gray-50:hover{background-color:var(--uhuu-color-gray-50)}[data-uhuu-interactive] .uhuu\\:hover\\:bg-gray-100:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-gray-100:hover,[data-uhuu-interactive] .uhuu\\:hover\\:bg-gray-100\\/80:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-gray-100\\/80:hover{background-color:var(--uhuu-color-gray-100)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:hover\\:bg-gray-100\\/80:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-gray-100\\/80:hover{background-color:color-mix(in oklab, var(--uhuu-color-gray-100) 80%, transparent)}}[data-uhuu-interactive] .uhuu\\:hover\\:bg-gray-200:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-gray-200:hover{background-color:var(--uhuu-color-gray-200)}[data-uhuu-interactive] .uhuu\\:hover\\:bg-gray-800:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-gray-800:hover{background-color:var(--uhuu-color-gray-800)}[data-uhuu-interactive] .uhuu\\:hover\\:bg-white:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-white:hover{background-color:var(--uhuu-color-white)}[data-uhuu-interactive] .uhuu\\:hover\\:text-gray-600:hover,[data-uhuu-portal] .uhuu\\:hover\\:text-gray-600:hover{color:var(--uhuu-color-gray-600)}[data-uhuu-interactive] .uhuu\\:hover\\:text-gray-900:hover,[data-uhuu-portal] .uhuu\\:hover\\:text-gray-900:hover{color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:hover\\:opacity-100:hover,[data-uhuu-portal] .uhuu\\:hover\\:opacity-100:hover{opacity:1}[data-uhuu-interactive] .uhuu\\:hover\\:shadow-lg:hover,[data-uhuu-portal] .uhuu\\:hover\\:shadow-lg:hover{--uhuu-tw-shadow:0 10px 15px -3px var(--uhuu-tw-shadow-color,#0000001a), 0 4px 6px -4px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}}[data-uhuu-interactive] .uhuu\\:focus\\:w-40:focus,[data-uhuu-portal] .uhuu\\:focus\\:w-40:focus{width:calc(var(--uhuu-spacing) * 40)}[data-uhuu-interactive] .uhuu\\:focus\\:border-gray-400:focus,[data-uhuu-portal] .uhuu\\:focus\\:border-gray-400:focus{border-color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:focus\\:border-transparent:focus,[data-uhuu-portal] .uhuu\\:focus\\:border-transparent:focus{border-color:#0000}[data-uhuu-interactive] .uhuu\\:focus\\:bg-gray-100:focus,[data-uhuu-portal] .uhuu\\:focus\\:bg-gray-100:focus{background-color:var(--uhuu-color-gray-100)}[data-uhuu-interactive] .uhuu\\:focus\\:bg-red-50:focus,[data-uhuu-portal] .uhuu\\:focus\\:bg-red-50:focus{background-color:var(--uhuu-color-red-50)}[data-uhuu-interactive] .uhuu\\:focus\\:text-gray-900:focus,[data-uhuu-portal] .uhuu\\:focus\\:text-gray-900:focus{color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:focus\\:text-red-700:focus,[data-uhuu-portal] .uhuu\\:focus\\:text-red-700:focus{color:var(--uhuu-color-red-700)}[data-uhuu-interactive] .uhuu\\:focus\\:ring-2:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-2:focus{--uhuu-tw-ring-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 calc(2px + var(--uhuu-tw-ring-offset-width)) var(--uhuu-tw-ring-color,currentcolor);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:focus\\:ring-blue-400\\/30:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-blue-400\\/30:focus{--uhuu-tw-ring-color:var(--uhuu-color-blue-400)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:focus\\:ring-blue-400\\/30:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-blue-400\\/30:focus{--uhuu-tw-ring-color:color-mix(in oklab, var(--uhuu-color-blue-400) 30%, transparent)}}[data-uhuu-interactive] .uhuu\\:focus\\:ring-blue-500:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-blue-500:focus{--uhuu-tw-ring-color:var(--uhuu-color-blue-500)}[data-uhuu-interactive] .uhuu\\:focus\\:ring-gray-200:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-gray-200:focus{--uhuu-tw-ring-color:var(--uhuu-color-gray-200)}[data-uhuu-interactive] .uhuu\\:focus\\:ring-gray-400:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-gray-400:focus{--uhuu-tw-ring-color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:focus\\:ring-offset-0:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-offset-0:focus{--uhuu-tw-ring-offset-width:0px;--uhuu-tw-ring-offset-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 var(--uhuu-tw-ring-offset-width) var(--uhuu-tw-ring-offset-color)}[data-uhuu-interactive] .uhuu\\:focus\\:ring-offset-2:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-offset-2:focus{--uhuu-tw-ring-offset-width:2px;--uhuu-tw-ring-offset-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 var(--uhuu-tw-ring-offset-width) var(--uhuu-tw-ring-offset-color)}[data-uhuu-interactive] .uhuu\\:focus\\:outline-none:focus,[data-uhuu-portal] .uhuu\\:focus\\:outline-none:focus{--uhuu-tw-outline-style:none;outline-style:none}[data-uhuu-interactive] .uhuu\\:focus-visible\\:ring-2:focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:ring-2:focus-visible{--uhuu-tw-ring-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 calc(2px + var(--uhuu-tw-ring-offset-width)) var(--uhuu-tw-ring-color,currentcolor);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:focus-visible\\:ring-gray-400:focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:ring-gray-400:focus-visible{--uhuu-tw-ring-color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:focus-visible\\:ring-gray-900:focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:ring-gray-900:focus-visible{--uhuu-tw-ring-color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:focus-visible\\:ring-offset-2:focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:ring-offset-2:focus-visible{--uhuu-tw-ring-offset-width:2px;--uhuu-tw-ring-offset-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 var(--uhuu-tw-ring-offset-width) var(--uhuu-tw-ring-offset-color)}[data-uhuu-interactive] .uhuu\\:focus-visible\\:ring-offset-\\(--uhuu-shell-surface\\):focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:ring-offset-\\(--uhuu-shell-surface\\):focus-visible{--uhuu-tw-ring-offset-color:var(--uhuu-shell-surface)}[data-uhuu-interactive] .uhuu\\:focus-visible\\:outline-none:focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:outline-none:focus-visible{--uhuu-tw-outline-style:none;outline-style:none}[data-uhuu-interactive] .uhuu\\:active\\:cursor-grabbing:active,[data-uhuu-portal] .uhuu\\:active\\:cursor-grabbing:active{cursor:grabbing}[data-uhuu-interactive] .uhuu\\:disabled\\:pointer-events-none:disabled,[data-uhuu-portal] .uhuu\\:disabled\\:pointer-events-none:disabled{pointer-events:none}[data-uhuu-interactive] .uhuu\\:disabled\\:cursor-not-allowed:disabled,[data-uhuu-portal] .uhuu\\:disabled\\:cursor-not-allowed:disabled{cursor:not-allowed}[data-uhuu-interactive] .uhuu\\:disabled\\:opacity-40:disabled,[data-uhuu-portal] .uhuu\\:disabled\\:opacity-40:disabled{opacity:.4}[data-uhuu-interactive] .uhuu\\:disabled\\:opacity-50:disabled,[data-uhuu-portal] .uhuu\\:disabled\\:opacity-50:disabled{opacity:.5}[data-uhuu-interactive] .uhuu\\:data-\\[disabled\\]\\:pointer-events-none[data-disabled],[data-uhuu-portal] .uhuu\\:data-\\[disabled\\]\\:pointer-events-none[data-disabled]{pointer-events:none}[data-uhuu-interactive] .uhuu\\:data-\\[disabled\\]\\:opacity-50[data-disabled],[data-uhuu-portal] .uhuu\\:data-\\[disabled\\]\\:opacity-50[data-disabled]{opacity:.5}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=checked\\]\\:translate-x-4[data-state=checked],[data-uhuu-portal] .uhuu\\:data-\\[state\\=checked\\]\\:translate-x-4[data-state=checked]{--uhuu-tw-translate-x:calc(var(--uhuu-spacing) * 4);translate:var(--uhuu-tw-translate-x) var(--uhuu-tw-translate-y)}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=checked\\]\\:bg-\\(--uhuu-shell-on-inverse\\)[data-state=checked],[data-uhuu-portal] .uhuu\\:data-\\[state\\=checked\\]\\:bg-\\(--uhuu-shell-on-inverse\\)[data-state=checked]{background-color:var(--uhuu-shell-on-inverse)}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=checked\\]\\:bg-gray-900[data-state=checked],[data-uhuu-portal] .uhuu\\:data-\\[state\\=checked\\]\\:bg-gray-900[data-state=checked]{background-color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=closed\\]\\:duration-300[data-state=closed],[data-uhuu-portal] .uhuu\\:data-\\[state\\=closed\\]\\:duration-300[data-state=closed]{--uhuu-tw-duration:.3s;transition-duration:.3s}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=open\\]\\:bg-gray-100[data-state=open],[data-uhuu-portal] .uhuu\\:data-\\[state\\=open\\]\\:bg-gray-100[data-state=open]{background-color:var(--uhuu-color-gray-100)}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=open\\]\\:duration-500[data-state=open],[data-uhuu-portal] .uhuu\\:data-\\[state\\=open\\]\\:duration-500[data-state=open]{--uhuu-tw-duration:.5s;transition-duration:.5s}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=unchecked\\]\\:translate-x-0[data-state=unchecked],[data-uhuu-portal] .uhuu\\:data-\\[state\\=unchecked\\]\\:translate-x-0[data-state=unchecked]{--uhuu-tw-translate-x:0px;translate:var(--uhuu-tw-translate-x) var(--uhuu-tw-translate-y)}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=unchecked\\]\\:bg-gray-200[data-state=unchecked],[data-uhuu-portal] .uhuu\\:data-\\[state\\=unchecked\\]\\:bg-gray-200[data-state=unchecked]{background-color:var(--uhuu-color-gray-200)}@media (width>=40rem){[data-uhuu-interactive] .uhuu\\:sm\\:max-w-sm,[data-uhuu-portal] .uhuu\\:sm\\:max-w-sm{max-width:var(--uhuu-container-sm)}[data-uhuu-interactive] .uhuu\\:sm\\:flex-row,[data-uhuu-portal] .uhuu\\:sm\\:flex-row{flex-direction:row}[data-uhuu-interactive] .uhuu\\:sm\\:justify-end,[data-uhuu-portal] .uhuu\\:sm\\:justify-end{justify-content:flex-end}[data-uhuu-interactive] :where(.uhuu\\:sm\\:space-x-2>:not(:last-child)),[data-uhuu-portal] :where(.uhuu\\:sm\\:space-x-2>:not(:last-child)){--uhuu-tw-space-x-reverse:0;margin-inline-start:calc(calc(var(--uhuu-spacing) * 2) * var(--uhuu-tw-space-x-reverse));margin-inline-end:calc(calc(var(--uhuu-spacing) * 2) * calc(1 - var(--uhuu-tw-space-x-reverse)))}[data-uhuu-interactive] .uhuu\\:sm\\:text-left,[data-uhuu-portal] .uhuu\\:sm\\:text-left{text-align:left}}@media print{.uhuu\\:print\\:transform-none{transform:none}}[data-uhuu-interactive] .uhuu\\:\\[\\&\\>button\\]\\:hidden>button,[data-uhuu-portal] .uhuu\\:\\[\\&\\>button\\]\\:hidden>button{display:none}[data-uhuu-interactive] [data-uhuu-editor],[data-uhuu-portal] [data-uhuu-editor],[data-uhuu-interactive] [data-uhuu-editor] [data-uhuu-paper],[data-uhuu-portal] [data-uhuu-editor] [data-uhuu-paper]{--uhuu-spacing:.25rem;--uhuu-font-sans:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--uhuu-default-font-family:var(--uhuu-font-sans);--uhuu-color-white:#fff;--uhuu-color-black:#000;--uhuu-color-red-50:oklch(97.1% .013 17.38);--uhuu-color-red-600:oklch(57.7% .245 27.325);--uhuu-color-red-700:oklch(50.5% .213 27.518);--uhuu-color-blue-50:oklch(97% .014 254.604);--uhuu-color-blue-100:oklch(93.2% .032 255.585);--uhuu-color-blue-200:oklch(88.2% .059 254.128);--uhuu-color-blue-300:oklch(80.9% .105 251.813);--uhuu-color-blue-400:oklch(70.7% .165 254.624);--uhuu-color-blue-500:oklch(62.3% .214 259.815);--uhuu-color-blue-600:oklch(54.6% .245 262.881);--uhuu-color-blue-700:oklch(48.8% .243 264.376);--uhuu-color-emerald-100:oklch(95% .052 163.051);--uhuu-color-emerald-600:oklch(59.6% .145 163.225);--uhuu-color-gray-50:oklch(98.5% .002 247.839);--uhuu-color-gray-100:oklch(96.7% .003 264.542);--uhuu-color-gray-200:oklch(92.8% .006 264.531);--uhuu-color-gray-300:oklch(87.2% .01 258.338);--uhuu-color-gray-400:oklch(70.7% .022 261.325);--uhuu-color-gray-500:oklch(55.1% .027 264.364);--uhuu-color-gray-600:oklch(44.6% .03 256.802);--uhuu-color-gray-700:oklch(37.3% .034 259.733);--uhuu-color-gray-800:oklch(27.8% .033 256.848);--uhuu-color-gray-900:oklch(21% .034 264.665);--uhuu-color-gray-950:oklch(13% .028 261.692);--uhuu-container-sm:24rem;--uhuu-container-md:28rem;--uhuu-text-xs:.75rem;--uhuu-text-xs--line-height:calc(1 / .75);--uhuu-text-sm:.875rem;--uhuu-text-sm--line-height:calc(1.25 / .875);--uhuu-text-base:1rem;--uhuu-text-base--line-height:calc(1.5 / 1);--uhuu-text-lg:1.125rem;--uhuu-text-lg--line-height:calc(1.75 / 1.125);--uhuu-font-weight-normal:400;--uhuu-font-weight-medium:500;--uhuu-font-weight-semibold:600;--uhuu-font-weight-bold:700;--uhuu-radius-sm:.25rem;--uhuu-radius-md:.375rem;--uhuu-radius-lg:.5rem;--uhuu-radius-xl:.75rem;--uhuu-shadow-sm:0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;--uhuu-shadow-md:0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;--uhuu-shadow-lg:0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;--uhuu-shadow-xl:0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;--uhuu-shadow-2xl:0 25px 50px -12px #00000040;--uhuu-blur-sm:8px;--uhuu-blur-md:12px;--radius:.625rem;--background:oklch(100% 0 0);--foreground:oklch(14.5% 0 0);--card:oklch(100% 0 0);--card-foreground:oklch(14.5% 0 0);--popover:oklch(100% 0 0);--popover-foreground:oklch(14.5% 0 0);--primary:oklch(20.5% 0 0);--primary-foreground:oklch(98.5% 0 0);--secondary:oklch(97% 0 0);--secondary-foreground:oklch(20.5% 0 0);--muted:oklch(97% 0 0);--muted-foreground:oklch(55.6% 0 0);--accent:oklch(97% 0 0);--accent-foreground:oklch(20.5% 0 0);--destructive:oklch(57.7% .245 27.325);--border:oklch(92.2% 0 0);--input:oklch(92.2% 0 0);--ring:oklch(70.8% 0 0);--chart-1:oklch(64.6% .222 41.116);--chart-2:oklch(60% .118 184.704);--chart-3:oklch(39.8% .07 227.392);--chart-4:oklch(82.8% .189 84.429);--chart-5:oklch(76.9% .188 70.08);--sidebar:oklch(98.5% 0 0);--sidebar-foreground:oklch(14.5% 0 0);--sidebar-primary:oklch(20.5% 0 0);--sidebar-primary-foreground:oklch(98.5% 0 0);--sidebar-accent:oklch(97% 0 0);--sidebar-accent-foreground:oklch(20.5% 0 0);--sidebar-border:oklch(92.2% 0 0);--sidebar-ring:oklch(70.8% 0 0);box-sizing:border-box}[data-uhuu-interactive] [data-uhuu-editor] *,[data-uhuu-portal] [data-uhuu-editor] *,[data-uhuu-interactive] [data-uhuu-editor] :before,[data-uhuu-portal] [data-uhuu-editor] :before,[data-uhuu-interactive] [data-uhuu-editor] :after,[data-uhuu-portal] [data-uhuu-editor] :after{box-sizing:border-box}[data-uhuu-interactive] .uhuu-page-options-trigger,[data-uhuu-portal] .uhuu-page-options-trigger{height:calc(var(--uhuu-spacing) * 7);width:calc(var(--uhuu-spacing) * 7);justify-content:center;align-items:center;gap:var(--uhuu-spacing);border-radius:var(--uhuu-radius-lg);background-color:var(--uhuu-color-gray-100);padding-inline:var(--uhuu-spacing);padding-block:calc(var(--uhuu-spacing) * .5);color:var(--uhuu-color-gray-600);display:flex}@media (hover:hover){[data-uhuu-interactive] .uhuu-page-options-trigger:hover,[data-uhuu-portal] .uhuu-page-options-trigger:hover{background-color:var(--uhuu-color-gray-100)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu-page-options-trigger:hover,[data-uhuu-portal] .uhuu-page-options-trigger:hover{background-color:color-mix(in oklab, var(--uhuu-color-gray-100) 80%, transparent)}}[data-uhuu-interactive] .uhuu-page-options-trigger:hover,[data-uhuu-portal] .uhuu-page-options-trigger:hover{color:var(--uhuu-color-gray-800)}}[data-uhuu-interactive] .uhuu-page-number,[data-uhuu-portal] .uhuu-page-number{font-size:var(--uhuu-text-sm);line-height:var(--uhuu-tw-leading,var(--uhuu-text-sm--line-height));color:var(--uhuu-color-gray-500)}[data-uhuu-interactive] .uhuu-page-order-grid-cols,[data-uhuu-portal] .uhuu-page-order-grid-cols{gap:calc(var(--uhuu-spacing) * 6);grid-template-columns:repeat(2,minmax(0,1fr));display:grid}@media (width>=48rem){[data-uhuu-interactive] .uhuu-page-order-grid-cols,[data-uhuu-portal] .uhuu-page-order-grid-cols{grid-template-columns:repeat(3,minmax(0,1fr))}}@media (width>=64rem){[data-uhuu-interactive] .uhuu-page-order-grid-cols,[data-uhuu-portal] .uhuu-page-order-grid-cols{grid-template-columns:repeat(4,minmax(0,1fr))}}@media (width>=80rem){[data-uhuu-interactive] .uhuu-page-order-grid-cols,[data-uhuu-portal] .uhuu-page-order-grid-cols{grid-template-columns:repeat(6,minmax(0,1fr))}}[data-uhuu-interactive] .uhuu-page-drag-drop-grid-cols,[data-uhuu-portal] .uhuu-page-drag-drop-grid-cols{gap:calc(var(--uhuu-spacing) * 4);grid-template-columns:repeat(2,minmax(0,1fr));display:grid}@media (width>=48rem){[data-uhuu-interactive] .uhuu-page-drag-drop-grid-cols,[data-uhuu-portal] .uhuu-page-drag-drop-grid-cols{grid-template-columns:repeat(3,minmax(0,1fr))}}@media (width>=64rem){[data-uhuu-interactive] .uhuu-page-drag-drop-grid-cols,[data-uhuu-portal] .uhuu-page-drag-drop-grid-cols{grid-template-columns:repeat(4,minmax(0,1fr))}}@media (width>=80rem){[data-uhuu-interactive] .uhuu-page-drag-drop-grid-cols,[data-uhuu-portal] .uhuu-page-drag-drop-grid-cols{grid-template-columns:repeat(6,minmax(0,1fr))}}@media (width>=96rem){[data-uhuu-interactive] .uhuu-page-drag-drop-grid-cols,[data-uhuu-portal] .uhuu-page-drag-drop-grid-cols{grid-template-columns:repeat(6,minmax(0,1fr))}}@media screen{body{background-color:var(--uhuu-color-neutral-50)}}@property --uhuu-tw-translate-x{syntax:"*";inherits:false;initial-value:0}@property --uhuu-tw-translate-y{syntax:"*";inherits:false;initial-value:0}@property --uhuu-tw-translate-z{syntax:"*";inherits:false;initial-value:0}@property --uhuu-tw-scale-x{syntax:"*";inherits:false;initial-value:1}@property --uhuu-tw-scale-y{syntax:"*";inherits:false;initial-value:1}@property --uhuu-tw-scale-z{syntax:"*";inherits:false;initial-value:1}@property --uhuu-tw-space-y-reverse{syntax:"*";inherits:false;initial-value:0}@property --uhuu-tw-border-style{syntax:"*";inherits:false;initial-value:solid}@property --uhuu-tw-leading{syntax:"*";inherits:false}@property --uhuu-tw-font-weight{syntax:"*";inherits:false}@property --uhuu-tw-tracking{syntax:"*";inherits:false}@property --uhuu-tw-ordinal{syntax:"*";inherits:false}@property --uhuu-tw-slashed-zero{syntax:"*";inherits:false}@property --uhuu-tw-numeric-figure{syntax:"*";inherits:false}@property --uhuu-tw-numeric-spacing{syntax:"*";inherits:false}@property --uhuu-tw-numeric-fraction{syntax:"*";inherits:false}@property --uhuu-tw-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --uhuu-tw-shadow-color{syntax:"*";inherits:false}@property --uhuu-tw-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --uhuu-tw-inset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --uhuu-tw-inset-shadow-color{syntax:"*";inherits:false}@property --uhuu-tw-inset-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --uhuu-tw-ring-color{syntax:"*";inherits:false}@property --uhuu-tw-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --uhuu-tw-inset-ring-color{syntax:"*";inherits:false}@property --uhuu-tw-inset-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --uhuu-tw-ring-inset{syntax:"*";inherits:false}@property --uhuu-tw-ring-offset-width{syntax:"<length>";inherits:false;initial-value:0}@property --uhuu-tw-ring-offset-color{syntax:"*";inherits:false;initial-value:#fff}@property --uhuu-tw-ring-offset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --uhuu-tw-outline-style{syntax:"*";inherits:false;initial-value:solid}@property --uhuu-tw-blur{syntax:"*";inherits:false}@property --uhuu-tw-brightness{syntax:"*";inherits:false}@property --uhuu-tw-contrast{syntax:"*";inherits:false}@property --uhuu-tw-grayscale{syntax:"*";inherits:false}@property --uhuu-tw-hue-rotate{syntax:"*";inherits:false}@property --uhuu-tw-invert{syntax:"*";inherits:false}@property --uhuu-tw-opacity{syntax:"*";inherits:false}@property --uhuu-tw-saturate{syntax:"*";inherits:false}@property --uhuu-tw-sepia{syntax:"*";inherits:false}@property --uhuu-tw-drop-shadow{syntax:"*";inherits:false}@property --uhuu-tw-drop-shadow-color{syntax:"*";inherits:false}@property --uhuu-tw-drop-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --uhuu-tw-drop-shadow-size{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-blur{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-brightness{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-contrast{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-grayscale{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-hue-rotate{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-invert{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-opacity{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-saturate{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-sepia{syntax:"*";inherits:false}@property --uhuu-tw-duration{syntax:"*";inherits:false}@property --uhuu-tw-ease{syntax:"*";inherits:false}@property --uhuu-tw-space-x-reverse{syntax:"*";inherits:false;initial-value:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:is([data-uhuu-chrome],[data-uhuu-chrome] *),:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)):after,:is([data-uhuu-chrome],[data-uhuu-chrome] *):after,:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)):before,:is([data-uhuu-chrome],[data-uhuu-chrome] *):before,:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::backdrop,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::file-selector-button,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),html:is([data-uhuu-chrome],[data-uhuu-chrome] *),:host:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:host:is([data-uhuu-chrome],[data-uhuu-chrome] *){-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;line-height:1.5;font-family:var(--default-font-family,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),hr:is([data-uhuu-chrome],[data-uhuu-chrome] *){height:0;color:inherit;border-top-width:1px}abbr:where([title]):is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),abbr:where([title]):is([data-uhuu-chrome],[data-uhuu-chrome] *){text-decoration:underline dotted}h1:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),h1:is([data-uhuu-chrome],[data-uhuu-chrome] *),h2:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),h2:is([data-uhuu-chrome],[data-uhuu-chrome] *),h3:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),h3:is([data-uhuu-chrome],[data-uhuu-chrome] *),h4:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),h4:is([data-uhuu-chrome],[data-uhuu-chrome] *),h5:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),h5:is([data-uhuu-chrome],[data-uhuu-chrome] *),h6:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),h6:is([data-uhuu-chrome],[data-uhuu-chrome] *){font-size:inherit;font-weight:inherit}a:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),a:is([data-uhuu-chrome],[data-uhuu-chrome] *){color:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),b:is([data-uhuu-chrome],[data-uhuu-chrome] *),strong:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),strong:is([data-uhuu-chrome],[data-uhuu-chrome] *){font-weight:bolder}code:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),code:is([data-uhuu-chrome],[data-uhuu-chrome] *),kbd:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),kbd:is([data-uhuu-chrome],[data-uhuu-chrome] *),samp:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),samp:is([data-uhuu-chrome],[data-uhuu-chrome] *),pre:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),pre:is([data-uhuu-chrome],[data-uhuu-chrome] *){font-family:var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),small:is([data-uhuu-chrome],[data-uhuu-chrome] *){font-size:80%}sub:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),sub:is([data-uhuu-chrome],[data-uhuu-chrome] *),sup:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),sup:is([data-uhuu-chrome],[data-uhuu-chrome] *){vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),sub:is([data-uhuu-chrome],[data-uhuu-chrome] *){bottom:-.25em}sup:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),sup:is([data-uhuu-chrome],[data-uhuu-chrome] *){top:-.5em}table:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),table:is([data-uhuu-chrome],[data-uhuu-chrome] *){text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring:where(:not(iframe)):is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:-moz-focusring:where(:not(iframe)):is([data-uhuu-chrome],[data-uhuu-chrome] *){outline:auto}progress:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),progress:is([data-uhuu-chrome],[data-uhuu-chrome] *){vertical-align:baseline}summary:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),summary:is([data-uhuu-chrome],[data-uhuu-chrome] *){display:list-item}ol:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),ol:is([data-uhuu-chrome],[data-uhuu-chrome] *),ul:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),ul:is([data-uhuu-chrome],[data-uhuu-chrome] *),menu:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),menu:is([data-uhuu-chrome],[data-uhuu-chrome] *){list-style:none}img:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),img:is([data-uhuu-chrome],[data-uhuu-chrome] *),svg:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),svg:is([data-uhuu-chrome],[data-uhuu-chrome] *),video:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),video:is([data-uhuu-chrome],[data-uhuu-chrome] *),canvas:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),canvas:is([data-uhuu-chrome],[data-uhuu-chrome] *),audio:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),audio:is([data-uhuu-chrome],[data-uhuu-chrome] *),iframe:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),iframe:is([data-uhuu-chrome],[data-uhuu-chrome] *),embed:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),embed:is([data-uhuu-chrome],[data-uhuu-chrome] *),object:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),object:is([data-uhuu-chrome],[data-uhuu-chrome] *){vertical-align:middle;display:block}img:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),img:is([data-uhuu-chrome],[data-uhuu-chrome] *),video:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),video:is([data-uhuu-chrome],[data-uhuu-chrome] *){max-width:100%;height:auto}button:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),button:is([data-uhuu-chrome],[data-uhuu-chrome] *),input:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),input:is([data-uhuu-chrome],[data-uhuu-chrome] *),select:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),select:is([data-uhuu-chrome],[data-uhuu-chrome] *),optgroup:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),optgroup:is([data-uhuu-chrome],[data-uhuu-chrome] *),textarea:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),textarea:is([data-uhuu-chrome],[data-uhuu-chrome] *){font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::file-selector-button,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:where(select:is([multiple],[size])) optgroup:is([data-uhuu-chrome],[data-uhuu-chrome] *){font-weight:bolder}:where(select:is([multiple],[size])) optgroup option:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:where(select:is([multiple],[size])) optgroup option:is([data-uhuu-chrome],[data-uhuu-chrome] *){padding-inline-start:20px}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::file-selector-button,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::file-selector-button{margin-inline-end:4px}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-moz-placeholder,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-moz-placeholder{opacity:1}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::placeholder,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-moz-placeholder,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-moz-placeholder{color:currentColor}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::placeholder,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::placeholder{color:currentColor}@supports (color:color-mix(in lab, red, red)){:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-moz-placeholder,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-moz-placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::placeholder,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}}}textarea:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),textarea:is([data-uhuu-chrome],[data-uhuu-chrome] *){resize:vertical}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-search-decoration,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-search-decoration{-webkit-appearance:none}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-date-and-time-value,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit{display:inline-flex}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-fields-wrapper,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-fields-wrapper{padding:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-year-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-year-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-month-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-month-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-day-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-day-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-hour-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-hour-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-minute-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-minute-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-second-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-second-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-millisecond-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-millisecond-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-meridiem-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-meridiem-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-calendar-picker-indicator,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:-moz-ui-invalid:is([data-uhuu-chrome],[data-uhuu-chrome] *){box-shadow:none}button:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),button:is([data-uhuu-chrome],[data-uhuu-chrome] *),input:where([type=button],[type=reset],[type=submit]):is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),input:where([type=button],[type=reset],[type=submit]):is([data-uhuu-chrome],[data-uhuu-chrome] *){-webkit-appearance:button;-moz-appearance:button;appearance:button}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::file-selector-button,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::file-selector-button{-webkit-appearance:button;-moz-appearance:button;appearance:button}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-inner-spin-button,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-inner-spin-button{height:auto}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-outer-spin-button,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])):is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),[hidden]:where(:not([hidden=until-found])):is([data-uhuu-chrome],[data-uhuu-chrome] *){display:none!important}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:is([data-uhuu-chrome],[data-uhuu-chrome] *){font-family:inherit;font-size:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit}:where([data-uhuu-editor],[data-uhuu-chrome]):not(:where([data-uhuu-editor] *,[data-uhuu-chrome] *)):is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:where([data-uhuu-editor],[data-uhuu-chrome]):not(:where([data-uhuu-editor] *,[data-uhuu-chrome] *)):is([data-uhuu-chrome],[data-uhuu-chrome] *){font-family:var(--uhuu-font-sans,ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-variant:normal;font-feature-settings:normal;font-variation-settings:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;text-indent:0;text-align:start;text-shadow:none;color:#000;font-size:1rem;font-style:normal;font-weight:400;font-stretch:100%;line-height:1.5}@layer base.uhuu-document{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;line-height:1.5;font-family:var(--default-font-family,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring:where(:not(iframe)){outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::-moz-placeholder{opacity:1}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::-moz-placeholder{color:currentColor}::placeholder{color:currentColor}@supports (color:color-mix(in lab, red, red)){::-moz-placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}::placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){-webkit-appearance:button;-moz-appearance:button;appearance:button}::file-selector-button{-webkit-appearance:button;-moz-appearance:button;appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}[data-uhuu-reset=none]:not(#\\#),[data-uhuu-reset=none] :not(#\\#),[data-uhuu-reset=none]:not(#\\#):before,[data-uhuu-reset=none] :not(#\\#):before,[data-uhuu-reset=none]:not(#\\#):after,[data-uhuu-reset=none] :not(#\\#):after{all:revert-layer}}:root{--uhuu-shell-surface:#fff;--uhuu-shell-on-inverse:#fff;--uhuu-thumbnail-caption:#0006;--uhuu-thumbnail-border:oklch(92.8% .006 264.531);--uhuu-thumbnail-border-strong:oklch(87.2% .01 258.338)}@media screen{html[data-uhuu-appearance=dark] [data-uhuu-editor]{color-scheme:dark;color:oklch(98.5% 0 0);--uhuu-shell-surface:oklch(27.4% .006 286.033);--uhuu-shell-on-inverse:oklch(21% .006 285.885);--uhuu-thumbnail-caption:oklch(21% .006 285.885/.92);--uhuu-thumbnail-border:oklch(37% .013 285.805);--uhuu-thumbnail-border-strong:oklch(44.2% .017 285.786);--uhuu-color-gray-50:oklch(30% .006 286);--uhuu-color-gray-100:oklch(33% .007 286);--uhuu-color-gray-200:oklch(100% 0 0/.1);--uhuu-color-gray-300:oklch(100% 0 0/.15);--uhuu-color-gray-400:oklch(66% .015 286);--uhuu-color-gray-500:oklch(70.5% .015 286.067);--uhuu-color-gray-600:oklch(87.1% .006 286.286);--uhuu-color-gray-700:oklch(92% .004 286.32);--uhuu-color-gray-800:oklch(96.7% .001 286.375);--uhuu-color-gray-900:oklch(98.5% 0 0);--uhuu-color-gray-950:oklch(98.5% 0 0);--uhuu-color-blue-50:oklch(62.3% .214 259.815/.15);--uhuu-color-blue-100:oklch(62.3% .214 259.815/.25);--uhuu-color-blue-200:oklch(62.3% .214 259.815/.35);--uhuu-color-red-50:oklch(70.4% .191 22.216/.15);--uhuu-color-red-600:oklch(70.4% .191 22.216);--uhuu-color-red-700:oklch(80.8% .114 19.571);--uhuu-color-emerald-100:oklch(76.5% .177 163.223/.15);--uhuu-color-emerald-600:oklch(76.5% .177 163.223);--background:oklch(14.1% .005 285.823);--foreground:oklch(98.5% 0 0);--card:oklch(27.4% .006 286.033);--card-foreground:oklch(98.5% 0 0);--popover:oklch(27.4% .006 286.033);--popover-foreground:oklch(98.5% 0 0);--primary:oklch(98.5% 0 0);--primary-foreground:oklch(21% .006 285.885);--secondary:oklch(33% .007 286);--secondary-foreground:oklch(98.5% 0 0);--muted:oklch(33% .007 286);--muted-foreground:oklch(70.5% .015 286.067);--accent:oklch(33% .007 286);--accent-foreground:oklch(98.5% 0 0);--destructive:oklch(70.4% .191 22.216);--border:oklch(100% 0 0/.1);--input:oklch(100% 0 0/.15);--ring:oklch(55.2% .016 285.938);--uhuu-shadow-sm:0 1px 3px 0 #0006, 0 1px 2px -1px #0006;--uhuu-shadow-md:0 4px 6px -1px #0006, 0 2px 4px -2px #0006;--uhuu-shadow-lg:0 10px 15px -3px #00000080, 0 4px 6px -4px #00000080}html[data-uhuu-appearance=dark] [data-uhuu-editor] [data-uhuu-paper]{color-scheme:light;color:initial;scrollbar-color:auto;--uhuu-shell-surface:#fff;--uhuu-shell-on-inverse:#fff}@layer base{html[data-uhuu-appearance=dark] [data-uhuu-editor],html[data-uhuu-appearance=dark] [data-uhuu-editor] :not([data-uhuu-paper],[data-uhuu-paper] *){border-color:oklch(100% 0 0/.1)}}html[data-uhuu-appearance=dark] body{background-color:oklch(24.5% .004 286)}html[data-uhuu-appearance=dark],html[data-uhuu-appearance=dark] .uhuu-zoom-pane{scrollbar-color:oklch(37% .013 285.805) transparent}html[data-uhuu-appearance=dark] [data-section-content]{scrollbar-color:auto}}:root{--uhuu-page-width:210mm;--uhuu-page-height:297mm;--uhuu-page-bleed:0mm;--uhuu-page-background:var(--background,#fff);--uhuu-outline-color:var(--outline-color,#d1d5db);--uhuu-sheet-width:calc(var(--uhuu-page-width) + 2 * var(--uhuu-page-bleed));--uhuu-sheet-height:calc(var(--uhuu-page-height) + 2 * var(--uhuu-page-bleed));--uhuu-spine-width:0mm;--uhuu-glue-width:0mm;--uhuu-paper-color:#fff}@page{size:var(--uhuu-sheet-width) var(--uhuu-sheet-height);margin:0}@media print{body>section[aria-live],body>next-route-announcer{display:none!important}}.uhuu-page-break-inside-avoid{page-break-inside:avoid;break-inside:avoid-page}.uhuu-page-break-after{page-break-after:always;break-inside:avoid-page;-moz-column-break-after:page;break-after:page}.uhuu-page-break-before{page-break-before:always;break-inside:avoid-page;-moz-column-break-before:page;break-before:page}html,body{-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%;-webkit-print-color-adjust:exact;print-color-adjust:exact}.uhuu-page-sheet{width:calc(var(--uhuu-page-width) + 2 * var(--uhuu-page-bleed));height:calc(var(--uhuu-page-height) + 2 * var(--uhuu-page-bleed));min-width:calc(var(--uhuu-page-width) + 2 * var(--uhuu-page-bleed));padding:var(--uhuu-page-bleed);background-color:var(--uhuu-page-background);box-sizing:border-box;break-inside:avoid-page;page-break-inside:avoid;margin-inline:auto;position:relative;overflow:hidden}.uhuu-page-sheet.uhuu-cover-spread{width:var(--uhuu-sheet-width);height:var(--uhuu-sheet-height);min-width:var(--uhuu-sheet-width);flex-direction:row;align-items:stretch;padding:0;display:flex}.uhuu-spread-panel{width:calc(var(--uhuu-page-width) + var(--uhuu-page-bleed));flex:none;height:100%;position:relative;overflow:hidden}.uhuu-cover-spread .uhuu-page-sheet--panel{box-shadow:none;outline:none;margin:0}.uhuu-spread-panel[data-side=right] .uhuu-page-sheet--panel{margin-left:calc(-1 * var(--uhuu-page-bleed))}.uhuu-spread-spine{width:var(--uhuu-spine-width);flex:none;height:100%;position:relative;overflow:hidden}.uhuu-spread-spine[data-blank=true]{background-color:var(--uhuu-paper-color)}.uhuu-glue-zone{width:var(--uhuu-glue-width);background-color:var(--uhuu-paper-color);pointer-events:none;z-index:2;position:absolute;top:0;bottom:0}.uhuu-glue-zone[data-side=left]{left:calc(var(--uhuu-page-bleed) + var(--uhuu-page-width) - var(--uhuu-glue-width))}.uhuu-glue-zone[data-side=right]{left:calc(var(--uhuu-page-bleed) + var(--uhuu-page-width) + var(--uhuu-spine-width))}@media print{.uhuu-screen-only{display:none!important}}@media screen{.uhuu-bleed-area{top:var(--uhuu-page-bleed);left:var(--uhuu-page-bleed);right:var(--uhuu-page-bleed);bottom:var(--uhuu-page-bleed);pointer-events:none;outline-style:var(--uhuu-tw-outline-style);outline-width:1px;outline-color:var(--uhuu-outline-color);--uhuu-tw-outline-style:dashed;outline-style:dashed;position:absolute}.uhuu-page-sheet{margin-bottom:calc(var(--spacing,.25rem) * 6);outline-style:var(--uhuu-tw-outline-style);outline-width:1px;outline-color:var(--uhuu-outline-color);flex-shrink:0}.uhuu-spread-guide{pointer-events:none;outline-style:var(--uhuu-tw-outline-style);outline-offset:calc(1px * -1);outline-width:1px;outline-color:var(--uhuu-outline-color);--uhuu-tw-outline-style:dashed;background-image:repeating-linear-gradient(45deg,#0000001f 0 1px,#0000 1px 5px);outline-style:dashed;position:absolute;inset:0}.uhuu-spread-guide:after{content:attr(data-label);white-space:nowrap;letter-spacing:.04em;color:#6b7280;background:#ffffffd9;border-radius:2px;padding:1px 4px;font:500 7pt/1 ui-sans-serif,system-ui,sans-serif;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)rotate(-90deg)}.uhuu-pagination.horizontal_pages{justify-content:center;gap:calc(var(--spacing,.25rem) * 6);display:flex;overflow-x:auto;width:fit-content!important;min-width:fit-content!important}.uhuu-pagination.two_pages{width:calc(var(--uhuu-page-width) * 2 + 4 * var(--uhuu-page-bleed));flex-wrap:wrap;justify-content:center;margin:0 auto;display:flex}.uhuu-pagination.two_pages .uhuu-page-sheet{flex-shrink:0}.uhuu-pagination.two_pages .uhuu-page-sheet:first-child{margin-left:calc(var(--uhuu-page-width) + 2 * var(--uhuu-page-bleed))}.uhuu-pagination.two_pages .uhuu-page-sheet:nth-child(odd):not(:first-child){margin-right:0}.uhuu-pagination.two_pages .uhuu-page-sheet:nth-child(2n):not(:first-child){margin-left:0}}.uhuu-image-container{overflow:hidden;position:absolute!important}.uhuu-image-inner{width:100%;height:100%;position:relative;overflow:hidden}.uhuu-image-inner .cover-image{width:100%;height:100%;max-width:none!important;max-height:none!important}.uhuu-image-inner .cover-image.object-cover{-o-object-fit:cover;object-fit:cover}.uhuu-image-inner .cover-image.object-contain{-o-object-fit:contain;object-fit:contain}.uhuu-image-inner .cover-image.object-fill{-o-object-fit:fill;object-fit:fill}.uhuu-image-inner .cover-image.object-center{-o-object-position:center;object-position:center}.uhuu-image-inner .cover-image.object-top{-o-object-position:top;object-position:top}.uhuu-image-inner .cover-image.object-bottom{-o-object-position:bottom;object-position:bottom}.uhuu-image-inner .cover-image.object-left{-o-object-position:left;object-position:left}.uhuu-image-inner .cover-image.object-right{-o-object-position:right;object-position:right}.uhuu-image-inner .cover-image.object-left-top{-o-object-position:left top;object-position:left top}.uhuu-image-inner .cover-image.object-right-top{-o-object-position:right top;object-position:right top}.uhuu-image-inner .cover-image.object-left-bottom{-o-object-position:left bottom;object-position:left bottom}.uhuu-image-inner .cover-image.object-right-bottom{-o-object-position:right bottom;object-position:right bottom}@media screen{[data-uhuu-interactive] .uhuu-zoom-pane,[data-uhuu-portal] .uhuu-zoom-pane{overscroll-behavior:contain;max-height:100%;overflow:auto}[data-uhuu-interactive] .uhuu-zoom-pane-content,[data-uhuu-portal] .uhuu-zoom-pane-content{overflow-anchor:none;width:max-content;margin:auto;padding:0 24px 64px}}@media print{.uhuu-zoom-pane{height:auto;max-height:none;overflow:visible}.uhuu-zoom-pane-content{width:auto;padding:0}}@media screen{[data-uhuu-interactive] .group_two_pages,[data-uhuu-portal] .group_two_pages{flex-direction:column;align-items:center;gap:24px;width:max-content;margin:0 auto;display:flex}[data-uhuu-interactive] .group_two_pages>.two-pages-pair,[data-uhuu-portal] .group_two_pages>.two-pages-pair{width:var(--uhuu-group-pair-width,-moz-max-content);width:var(--uhuu-group-pair-width,max-content);grid-template-columns:1fr 1fr;gap:0;margin:0 auto;display:grid}[data-uhuu-interactive] .group_two_pages>.two-pages-pair>[class*=group\\/section],[data-uhuu-portal] .group_two_pages>.two-pages-pair>[class*=group\\/section]{flex-direction:column;flex-shrink:0;display:flex}[data-uhuu-interactive] .group_two_pages>.two-pages-pair--spread>[class*=group\\/section]:first-child,[data-uhuu-portal] .group_two_pages>.two-pages-pair--spread>[class*=group\\/section]:first-child{justify-self:end}[data-uhuu-interactive] .group_two_pages>.two-pages-pair--spread>[class*=group\\/section]:last-child,[data-uhuu-portal] .group_two_pages>.two-pages-pair--spread>[class*=group\\/section]:last-child{justify-self:start}[data-uhuu-interactive] .group_two_pages>.two-pages-pair--right>[class*=group\\/section],[data-uhuu-portal] .group_two_pages>.two-pages-pair--right>[class*=group\\/section]{grid-column:2;justify-self:start}[data-uhuu-interactive] .group_two_pages>.two-pages-pair--left>[class*=group\\/section],[data-uhuu-portal] .group_two_pages>.two-pages-pair--left>[class*=group\\/section]{grid-column:1;justify-self:end}}
+@layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,[data-uhuu-interactive] :before,[data-uhuu-portal] :before,[data-uhuu-interactive] :after,[data-uhuu-portal] :after,::backdrop{--uhuu-tw-translate-x:0;--uhuu-tw-translate-y:0;--uhuu-tw-translate-z:0;--uhuu-tw-scale-x:1;--uhuu-tw-scale-y:1;--uhuu-tw-scale-z:1;--uhuu-tw-space-y-reverse:0;--uhuu-tw-border-style:solid;--uhuu-tw-leading:initial;--uhuu-tw-font-weight:initial;--uhuu-tw-tracking:initial;--uhuu-tw-ordinal:initial;--uhuu-tw-slashed-zero:initial;--uhuu-tw-numeric-figure:initial;--uhuu-tw-numeric-spacing:initial;--uhuu-tw-numeric-fraction:initial;--uhuu-tw-shadow:0 0 #0000;--uhuu-tw-shadow-color:initial;--uhuu-tw-shadow-alpha:100%;--uhuu-tw-inset-shadow:0 0 #0000;--uhuu-tw-inset-shadow-color:initial;--uhuu-tw-inset-shadow-alpha:100%;--uhuu-tw-ring-color:initial;--uhuu-tw-ring-shadow:0 0 #0000;--uhuu-tw-inset-ring-color:initial;--uhuu-tw-inset-ring-shadow:0 0 #0000;--uhuu-tw-ring-inset:initial;--uhuu-tw-ring-offset-width:0px;--uhuu-tw-ring-offset-color:#fff;--uhuu-tw-ring-offset-shadow:0 0 #0000;--uhuu-tw-outline-style:solid;--uhuu-tw-blur:initial;--uhuu-tw-brightness:initial;--uhuu-tw-contrast:initial;--uhuu-tw-grayscale:initial;--uhuu-tw-hue-rotate:initial;--uhuu-tw-invert:initial;--uhuu-tw-opacity:initial;--uhuu-tw-saturate:initial;--uhuu-tw-sepia:initial;--uhuu-tw-drop-shadow:initial;--uhuu-tw-drop-shadow-color:initial;--uhuu-tw-drop-shadow-alpha:100%;--uhuu-tw-drop-shadow-size:initial;--uhuu-tw-backdrop-blur:initial;--uhuu-tw-backdrop-brightness:initial;--uhuu-tw-backdrop-contrast:initial;--uhuu-tw-backdrop-grayscale:initial;--uhuu-tw-backdrop-hue-rotate:initial;--uhuu-tw-backdrop-invert:initial;--uhuu-tw-backdrop-opacity:initial;--uhuu-tw-backdrop-saturate:initial;--uhuu-tw-backdrop-sepia:initial;--uhuu-tw-duration:initial;--uhuu-tw-ease:initial;--uhuu-tw-space-x-reverse:0}*,:before,:after,::backdrop{--uhuu-tw-outline-style:solid}}}@layer theme{:root,[data-uhuu-interactive] :host,[data-uhuu-portal] :host{--uhuu-font-sans:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--uhuu-font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--uhuu-color-red-50:oklch(97.1% .013 17.38);--uhuu-color-red-600:oklch(57.7% .245 27.325);--uhuu-color-red-700:oklch(50.5% .213 27.518);--uhuu-color-emerald-100:oklch(95% .052 163.051);--uhuu-color-emerald-600:oklch(59.6% .145 163.225);--uhuu-color-blue-50:oklch(97% .014 254.604);--uhuu-color-blue-100:oklch(93.2% .032 255.585);--uhuu-color-blue-400:oklch(70.7% .165 254.624);--uhuu-color-blue-500:oklch(62.3% .214 259.815);--uhuu-color-blue-600:oklch(54.6% .245 262.881);--uhuu-color-gray-50:oklch(98.5% .002 247.839);--uhuu-color-gray-100:oklch(96.7% .003 264.542);--uhuu-color-gray-200:oklch(92.8% .006 264.531);--uhuu-color-gray-300:oklch(87.2% .01 258.338);--uhuu-color-gray-400:oklch(70.7% .022 261.325);--uhuu-color-gray-500:oklch(55.1% .027 264.364);--uhuu-color-gray-600:oklch(44.6% .03 256.802);--uhuu-color-gray-700:oklch(37.3% .034 259.733);--uhuu-color-gray-800:oklch(27.8% .033 256.848);--uhuu-color-gray-900:oklch(21% .034 264.665);--uhuu-color-neutral-50:oklch(98.5% 0 none);--uhuu-color-black:#000;--uhuu-color-white:#fff;--uhuu-spacing:.25rem;--uhuu-container-xs:20rem;--uhuu-container-sm:24rem;--uhuu-container-md:28rem;--uhuu-text-xs:.75rem;--uhuu-text-xs--line-height:calc(1 / .75);--uhuu-text-sm:.875rem;--uhuu-text-sm--line-height:calc(1.25 / .875);--uhuu-text-base:1rem;--uhuu-text-base--line-height:calc(1.5 / 1);--uhuu-text-lg:1.125rem;--uhuu-text-lg--line-height:calc(1.75 / 1.125);--uhuu-font-weight-normal:400;--uhuu-font-weight-medium:500;--uhuu-font-weight-semibold:600;--uhuu-tracking-wide:.025em;--uhuu-tracking-widest:.1em;--uhuu-leading-tight:1.25;--uhuu-radius-sm:.25rem;--uhuu-radius-md:.375rem;--uhuu-radius-lg:.5rem;--uhuu-ease-in-out:cubic-bezier(.4, 0, .2, 1);--uhuu-blur-sm:8px;--uhuu-blur-md:12px;--uhuu-default-transition-duration:.15s;--uhuu-default-transition-timing-function:cubic-bezier(.4, 0, .2, 1)}:root:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:root:is([data-uhuu-chrome],[data-uhuu-chrome] *),:host:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:host:is([data-uhuu-chrome],[data-uhuu-chrome] *),:root,:host{--font-sans:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--default-font-family:var(--font-sans);--default-mono-font-family:var(--font-mono)}}@layer base;@layer components{@media screen{[data-uhuu-interactive] [data-uhuu-flow-unplaceable=true],[data-uhuu-portal] [data-uhuu-flow-unplaceable=true]{outline-offset:-2px;outline:2px dashed #dc2626}[data-uhuu-interactive] :where([data-uhuu]:not(.skip-data-uhuu,.skip-data-uhuu *)),[data-uhuu-portal] :where([data-uhuu]:not(.skip-data-uhuu,.skip-data-uhuu *)){background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 14V8a6 6 0 0 1 12 0 6 6 0 0 1-6 6z' fill='%23ff44cc' fill-opacity='.2'/%3E%3C/svg%3E")}[data-uhuu-interactive] :where([data-uhuu]:not(.skip-data-uhuu,.skip-data-uhuu *):hover),[data-uhuu-portal] :where([data-uhuu]:not(.skip-data-uhuu,.skip-data-uhuu *):hover){outline-offset:-1px;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 14V8a6 6 0 0 1 12 0 6 6 0 0 1-6 6z' fill='%23ff44cc'/%3E%3C/svg%3E");outline:2px dashed #f4c}[data-uhuu-interactive] :where([data-uhuu].uhuu-text-empty),[data-uhuu-portal] :where([data-uhuu].uhuu-text-empty),[data-uhuu-interactive] :where([data-uhuu][data-uhuu-type=text]:empty),[data-uhuu-portal] :where([data-uhuu][data-uhuu-type=text]:empty),[data-uhuu-interactive] :where([data-uhuu][data-uhuu-type=textarea]:empty),[data-uhuu-portal] :where([data-uhuu][data-uhuu-type=textarea]:empty),[data-uhuu-interactive] :where([data-uhuu][data-uhuu-type=markdown]:empty),[data-uhuu-portal] :where([data-uhuu][data-uhuu-type=markdown]:empty){background-color:#ff44cc14;min-width:3em;min-height:1lh}[data-uhuu-interactive] :where(span[data-uhuu].uhuu-text-empty),[data-uhuu-portal] :where(span[data-uhuu].uhuu-text-empty),[data-uhuu-interactive] :where(span[data-uhuu][data-uhuu-type=text]:empty),[data-uhuu-portal] :where(span[data-uhuu][data-uhuu-type=text]:empty),[data-uhuu-interactive] :where(span[data-uhuu][data-uhuu-type=textarea]:empty),[data-uhuu-portal] :where(span[data-uhuu][data-uhuu-type=textarea]:empty),[data-uhuu-interactive] :where(span[data-uhuu][data-uhuu-type=markdown]:empty),[data-uhuu-portal] :where(span[data-uhuu][data-uhuu-type=markdown]:empty){vertical-align:top;display:inline-block}}}@layer utilities{.uhuu-page-overlay{pointer-events:none;color:var(--color-gray-600,oklch(44.6% .03 256.802));justify-content:space-between;align-items:center;font-size:7pt;display:flex;position:absolute;bottom:10mm;left:15mm;right:15mm}.uhuu-flow-page{flex-direction:column;width:100%;height:100%;display:flex}.uhuu-flow-page-area{flex:1;min-height:0}[data-uhuu-flow-area]:has([data-uhuu-flow-unplaceable]){overflow:clip}.uhuu-flow-document{width:100%}.uhuu-image-block{position:relative}.uhuu-image-block-fill{width:100%;height:100%}.uhuu-image-body{width:100%;height:100%;position:relative}.uhuu-image-img{-o-object-fit:cover;object-fit:cover;width:100%;height:100%}.uhuu-image-img:where(.object-cover){-o-object-fit:cover;object-fit:cover}.uhuu-image-img:where(.object-contain){-o-object-fit:contain;object-fit:contain}.uhuu-image-img:where(.object-fill){-o-object-fit:fill;object-fit:fill}.uhuu-image-img:where(.object-center){-o-object-position:center;object-position:center}.uhuu-image-img:where(.object-top){-o-object-position:top;object-position:top}.uhuu-image-img:where(.object-bottom){-o-object-position:bottom;object-position:bottom}.uhuu-image-img:where(.object-left){-o-object-position:left;object-position:left}.uhuu-image-img:where(.object-right){-o-object-position:right;object-position:right}.uhuu-image-img:where(.object-left-top){-o-object-position:left top;object-position:left top}.uhuu-image-img:where(.object-right-top){-o-object-position:right top;object-position:right top}.uhuu-image-img:where(.object-left-bottom){-o-object-position:left bottom;object-position:left bottom}.uhuu-image-img:where(.object-right-bottom){-o-object-position:right bottom;object-position:right bottom}.uhuu-image-overlay{z-index:10;pointer-events:none;position:absolute;inset:0}.uhuu-image-overlay-img{-o-object-fit:cover;object-fit:cover;width:100%;height:100%}.uhuu-image-img,.uhuu-image-overlay-img,:where(.uhuu-image-inner) .uhuu-image-geometry,:where(.uhuu-image-overlay)>svg{display:block}}[data-uhuu-interactive] .uhuu\\:pointer-events-auto,[data-uhuu-portal] .uhuu\\:pointer-events-auto{pointer-events:auto}[data-uhuu-interactive] .uhuu\\:pointer-events-none,[data-uhuu-portal] .uhuu\\:pointer-events-none{pointer-events:none}[data-uhuu-interactive] .uhuu\\:sr-only,[data-uhuu-portal] .uhuu\\:sr-only{clip-path:inset(50%);white-space:nowrap;border-width:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}[data-uhuu-interactive] .uhuu\\:absolute,[data-uhuu-portal] .uhuu\\:absolute{position:absolute}[data-uhuu-interactive] .uhuu\\:fixed,[data-uhuu-portal] .uhuu\\:fixed{position:fixed}[data-uhuu-interactive] .uhuu\\:relative,[data-uhuu-portal] .uhuu\\:relative{position:relative}[data-uhuu-interactive] .uhuu\\:inset-0,[data-uhuu-portal] .uhuu\\:inset-0{inset:0}[data-uhuu-interactive] .uhuu\\:inset-x-0,[data-uhuu-portal] .uhuu\\:inset-x-0{inset-inline:0}[data-uhuu-interactive] .uhuu\\:inset-y-0,[data-uhuu-portal] .uhuu\\:inset-y-0{inset-block:0}[data-uhuu-interactive] .uhuu\\:-top-3,[data-uhuu-portal] .uhuu\\:-top-3{top:calc(var(--uhuu-spacing) * -3)}[data-uhuu-interactive] .uhuu\\:top-0,[data-uhuu-portal] .uhuu\\:top-0{top:0}[data-uhuu-interactive] .uhuu\\:top-1\\/2,[data-uhuu-portal] .uhuu\\:top-1\\/2{top:50%}[data-uhuu-interactive] .uhuu\\:top-2,[data-uhuu-portal] .uhuu\\:top-2{top:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:top-3,[data-uhuu-portal] .uhuu\\:top-3{top:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:top-4,[data-uhuu-portal] .uhuu\\:top-4{top:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:top-\\[50\\%\\],[data-uhuu-portal] .uhuu\\:top-\\[50\\%\\]{top:50%}[data-uhuu-interactive] .uhuu\\:top-full,[data-uhuu-portal] .uhuu\\:top-full{top:100%}[data-uhuu-interactive] .uhuu\\:-right-3,[data-uhuu-portal] .uhuu\\:-right-3{right:calc(var(--uhuu-spacing) * -3)}[data-uhuu-interactive] .uhuu\\:right-0,[data-uhuu-portal] .uhuu\\:right-0{right:0}[data-uhuu-interactive] .uhuu\\:right-2,[data-uhuu-portal] .uhuu\\:right-2{right:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:right-4,[data-uhuu-portal] .uhuu\\:right-4{right:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:bottom-0,[data-uhuu-portal] .uhuu\\:bottom-0{bottom:0}[data-uhuu-interactive] .uhuu\\:bottom-2,[data-uhuu-portal] .uhuu\\:bottom-2{bottom:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:bottom-4,[data-uhuu-portal] .uhuu\\:bottom-4{bottom:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:bottom-full,[data-uhuu-portal] .uhuu\\:bottom-full{bottom:100%}[data-uhuu-interactive] .uhuu\\:left-0,[data-uhuu-portal] .uhuu\\:left-0{left:0}[data-uhuu-interactive] .uhuu\\:left-2,[data-uhuu-portal] .uhuu\\:left-2{left:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:left-3,[data-uhuu-portal] .uhuu\\:left-3{left:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:left-4,[data-uhuu-portal] .uhuu\\:left-4{left:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:left-\\[50\\%\\],[data-uhuu-portal] .uhuu\\:left-\\[50\\%\\]{left:50%}[data-uhuu-interactive] .uhuu\\:z-10,[data-uhuu-portal] .uhuu\\:z-10{z-index:10}[data-uhuu-interactive] .uhuu\\:z-20,[data-uhuu-portal] .uhuu\\:z-20{z-index:20}[data-uhuu-interactive] .uhuu\\:z-30,[data-uhuu-portal] .uhuu\\:z-30{z-index:30}[data-uhuu-interactive] .uhuu\\:z-50,[data-uhuu-portal] .uhuu\\:z-50{z-index:50}[data-uhuu-interactive] .uhuu\\:z-\\[2\\],[data-uhuu-portal] .uhuu\\:z-\\[2\\]{z-index:2}[data-uhuu-interactive] .uhuu\\:-mx-1,[data-uhuu-portal] .uhuu\\:-mx-1{margin-inline:calc(var(--uhuu-spacing) * -1)}[data-uhuu-interactive] .uhuu\\:mx-0\\.5,[data-uhuu-portal] .uhuu\\:mx-0\\.5{margin-inline:calc(var(--uhuu-spacing) * .5)}[data-uhuu-interactive] .uhuu\\:mx-4,[data-uhuu-portal] .uhuu\\:mx-4{margin-inline:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:mx-auto,[data-uhuu-portal] .uhuu\\:mx-auto{margin-inline:auto}[data-uhuu-interactive] .uhuu\\:my-1,[data-uhuu-portal] .uhuu\\:my-1{margin-block:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:my-1\\.5,[data-uhuu-portal] .uhuu\\:my-1\\.5{margin-block:calc(var(--uhuu-spacing) * 1.5)}[data-uhuu-interactive] .uhuu\\:mt-0\\.5,[data-uhuu-portal] .uhuu\\:mt-0\\.5{margin-top:calc(var(--uhuu-spacing) * .5)}[data-uhuu-interactive] .uhuu\\:mt-1,[data-uhuu-portal] .uhuu\\:mt-1{margin-top:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:mt-3,[data-uhuu-portal] .uhuu\\:mt-3{margin-top:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:mt-6,[data-uhuu-portal] .uhuu\\:mt-6{margin-top:calc(var(--uhuu-spacing) * 6)}[data-uhuu-interactive] .uhuu\\:mr-2,[data-uhuu-portal] .uhuu\\:mr-2{margin-right:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:mr-8,[data-uhuu-portal] .uhuu\\:mr-8{margin-right:calc(var(--uhuu-spacing) * 8)}[data-uhuu-interactive] .uhuu\\:mb-0\\.5,[data-uhuu-portal] .uhuu\\:mb-0\\.5{margin-bottom:calc(var(--uhuu-spacing) * .5)}[data-uhuu-interactive] .uhuu\\:mb-1,[data-uhuu-portal] .uhuu\\:mb-1{margin-bottom:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:mb-2,[data-uhuu-portal] .uhuu\\:mb-2{margin-bottom:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:mb-3,[data-uhuu-portal] .uhuu\\:mb-3{margin-bottom:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:mb-4,[data-uhuu-portal] .uhuu\\:mb-4{margin-bottom:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:mb-5,[data-uhuu-portal] .uhuu\\:mb-5{margin-bottom:calc(var(--uhuu-spacing) * 5)}[data-uhuu-interactive] .uhuu\\:mb-6,[data-uhuu-portal] .uhuu\\:mb-6{margin-bottom:calc(var(--uhuu-spacing) * 6)}[data-uhuu-interactive] .uhuu\\:ml-1,[data-uhuu-portal] .uhuu\\:ml-1{margin-left:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:ml-auto,[data-uhuu-portal] .uhuu\\:ml-auto{margin-left:auto}[data-uhuu-interactive] .uhuu\\:block,[data-uhuu-portal] .uhuu\\:block{display:block}[data-uhuu-interactive] .uhuu\\:contents,[data-uhuu-portal] .uhuu\\:contents{display:contents}[data-uhuu-interactive] .uhuu\\:flex,[data-uhuu-portal] .uhuu\\:flex{display:flex}[data-uhuu-interactive] .uhuu\\:hidden,[data-uhuu-portal] .uhuu\\:hidden{display:none}[data-uhuu-interactive] .uhuu\\:inline-block,[data-uhuu-portal] .uhuu\\:inline-block{display:inline-block}[data-uhuu-interactive] .uhuu\\:inline-flex,[data-uhuu-portal] .uhuu\\:inline-flex{display:inline-flex}[data-uhuu-interactive] .uhuu\\:size-3,[data-uhuu-portal] .uhuu\\:size-3{width:calc(var(--uhuu-spacing) * 3);height:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:size-3\\.5,[data-uhuu-portal] .uhuu\\:size-3\\.5{width:calc(var(--uhuu-spacing) * 3.5);height:calc(var(--uhuu-spacing) * 3.5)}[data-uhuu-interactive] .uhuu\\:size-4,[data-uhuu-portal] .uhuu\\:size-4{width:calc(var(--uhuu-spacing) * 4);height:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:h-1\\.5,[data-uhuu-portal] .uhuu\\:h-1\\.5{height:calc(var(--uhuu-spacing) * 1.5)}[data-uhuu-interactive] .uhuu\\:h-3,[data-uhuu-portal] .uhuu\\:h-3{height:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:h-3\\.5,[data-uhuu-portal] .uhuu\\:h-3\\.5{height:calc(var(--uhuu-spacing) * 3.5)}[data-uhuu-interactive] .uhuu\\:h-4,[data-uhuu-portal] .uhuu\\:h-4{height:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:h-5,[data-uhuu-portal] .uhuu\\:h-5{height:calc(var(--uhuu-spacing) * 5)}[data-uhuu-interactive] .uhuu\\:h-6,[data-uhuu-portal] .uhuu\\:h-6{height:calc(var(--uhuu-spacing) * 6)}[data-uhuu-interactive] .uhuu\\:h-7,[data-uhuu-portal] .uhuu\\:h-7{height:calc(var(--uhuu-spacing) * 7)}[data-uhuu-interactive] .uhuu\\:h-8,[data-uhuu-portal] .uhuu\\:h-8{height:calc(var(--uhuu-spacing) * 8)}[data-uhuu-interactive] .uhuu\\:h-9,[data-uhuu-portal] .uhuu\\:h-9{height:calc(var(--uhuu-spacing) * 9)}[data-uhuu-interactive] .uhuu\\:h-10,[data-uhuu-portal] .uhuu\\:h-10{height:calc(var(--uhuu-spacing) * 10)}[data-uhuu-interactive] .uhuu\\:h-11,[data-uhuu-portal] .uhuu\\:h-11{height:calc(var(--uhuu-spacing) * 11)}[data-uhuu-interactive] .uhuu\\:h-12,[data-uhuu-portal] .uhuu\\:h-12{height:calc(var(--uhuu-spacing) * 12)}[data-uhuu-interactive] .uhuu\\:h-16,[data-uhuu-portal] .uhuu\\:h-16{height:calc(var(--uhuu-spacing) * 16)}[data-uhuu-interactive] .uhuu\\:h-\\[90vh\\],[data-uhuu-portal] .uhuu\\:h-\\[90vh\\]{height:90vh}[data-uhuu-interactive] .uhuu\\:h-full,[data-uhuu-portal] .uhuu\\:h-full{height:100%}[data-uhuu-interactive] .uhuu\\:h-px,[data-uhuu-portal] .uhuu\\:h-px{height:1px}[data-uhuu-interactive] .uhuu\\:min-h-0,[data-uhuu-portal] .uhuu\\:min-h-0{min-height:0}[data-uhuu-interactive] .uhuu\\:w-3,[data-uhuu-portal] .uhuu\\:w-3{width:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:w-3\\.5,[data-uhuu-portal] .uhuu\\:w-3\\.5{width:calc(var(--uhuu-spacing) * 3.5)}[data-uhuu-interactive] .uhuu\\:w-3\\/4,[data-uhuu-portal] .uhuu\\:w-3\\/4{width:75%}[data-uhuu-interactive] .uhuu\\:w-4,[data-uhuu-portal] .uhuu\\:w-4{width:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:w-6,[data-uhuu-portal] .uhuu\\:w-6{width:calc(var(--uhuu-spacing) * 6)}[data-uhuu-interactive] .uhuu\\:w-7,[data-uhuu-portal] .uhuu\\:w-7{width:calc(var(--uhuu-spacing) * 7)}[data-uhuu-interactive] .uhuu\\:w-8,[data-uhuu-portal] .uhuu\\:w-8{width:calc(var(--uhuu-spacing) * 8)}[data-uhuu-interactive] .uhuu\\:w-9,[data-uhuu-portal] .uhuu\\:w-9{width:calc(var(--uhuu-spacing) * 9)}[data-uhuu-interactive] .uhuu\\:w-10,[data-uhuu-portal] .uhuu\\:w-10{width:calc(var(--uhuu-spacing) * 10)}[data-uhuu-interactive] .uhuu\\:w-12,[data-uhuu-portal] .uhuu\\:w-12{width:calc(var(--uhuu-spacing) * 12)}[data-uhuu-interactive] .uhuu\\:w-16,[data-uhuu-portal] .uhuu\\:w-16{width:calc(var(--uhuu-spacing) * 16)}[data-uhuu-interactive] .uhuu\\:w-20,[data-uhuu-portal] .uhuu\\:w-20{width:calc(var(--uhuu-spacing) * 20)}[data-uhuu-interactive] .uhuu\\:w-24,[data-uhuu-portal] .uhuu\\:w-24{width:calc(var(--uhuu-spacing) * 24)}[data-uhuu-interactive] .uhuu\\:w-40,[data-uhuu-portal] .uhuu\\:w-40{width:calc(var(--uhuu-spacing) * 40)}[data-uhuu-interactive] .uhuu\\:w-48,[data-uhuu-portal] .uhuu\\:w-48{width:calc(var(--uhuu-spacing) * 48)}[data-uhuu-interactive] .uhuu\\:w-52,[data-uhuu-portal] .uhuu\\:w-52{width:calc(var(--uhuu-spacing) * 52)}[data-uhuu-interactive] .uhuu\\:w-72,[data-uhuu-portal] .uhuu\\:w-72{width:calc(var(--uhuu-spacing) * 72)}[data-uhuu-interactive] .uhuu\\:w-full,[data-uhuu-portal] .uhuu\\:w-full{width:100%}[data-uhuu-interactive] .uhuu\\:w-px,[data-uhuu-portal] .uhuu\\:w-px{width:1px}[data-uhuu-interactive] .uhuu\\:max-w-\\[110px\\],[data-uhuu-portal] .uhuu\\:max-w-\\[110px\\]{max-width:110px}[data-uhuu-interactive] .uhuu\\:max-w-\\[120px\\],[data-uhuu-portal] .uhuu\\:max-w-\\[120px\\]{max-width:120px}[data-uhuu-interactive] .uhuu\\:max-w-\\[140px\\],[data-uhuu-portal] .uhuu\\:max-w-\\[140px\\]{max-width:140px}[data-uhuu-interactive] .uhuu\\:max-w-\\[calc\\(100vw-2rem\\)\\],[data-uhuu-portal] .uhuu\\:max-w-\\[calc\\(100vw-2rem\\)\\]{max-width:calc(100vw - 2rem)}[data-uhuu-interactive] .uhuu\\:max-w-md,[data-uhuu-portal] .uhuu\\:max-w-md{max-width:var(--uhuu-container-md)}[data-uhuu-interactive] .uhuu\\:max-w-none,[data-uhuu-portal] .uhuu\\:max-w-none{max-width:none}[data-uhuu-interactive] .uhuu\\:max-w-sm,[data-uhuu-portal] .uhuu\\:max-w-sm{max-width:var(--uhuu-container-sm)}[data-uhuu-interactive] .uhuu\\:max-w-xs,[data-uhuu-portal] .uhuu\\:max-w-xs{max-width:var(--uhuu-container-xs)}[data-uhuu-interactive] .uhuu\\:min-w-0,[data-uhuu-portal] .uhuu\\:min-w-0{min-width:0}[data-uhuu-interactive] .uhuu\\:min-w-44,[data-uhuu-portal] .uhuu\\:min-w-44{min-width:calc(var(--uhuu-spacing) * 44)}[data-uhuu-interactive] .uhuu\\:min-w-48,[data-uhuu-portal] .uhuu\\:min-w-48{min-width:calc(var(--uhuu-spacing) * 48)}[data-uhuu-interactive] .uhuu\\:min-w-\\[1rem\\],[data-uhuu-portal] .uhuu\\:min-w-\\[1rem\\]{min-width:1rem}[data-uhuu-interactive] .uhuu\\:min-w-\\[8rem\\],[data-uhuu-portal] .uhuu\\:min-w-\\[8rem\\]{min-width:8rem}[data-uhuu-interactive] .uhuu\\:min-w-\\[24px\\],[data-uhuu-portal] .uhuu\\:min-w-\\[24px\\]{min-width:24px}[data-uhuu-interactive] .uhuu\\:min-w-\\[180px\\],[data-uhuu-portal] .uhuu\\:min-w-\\[180px\\]{min-width:180px}[data-uhuu-interactive] .uhuu\\:min-w-\\[200px\\],[data-uhuu-portal] .uhuu\\:min-w-\\[200px\\]{min-width:200px}[data-uhuu-interactive] .uhuu\\:flex-1,[data-uhuu-portal] .uhuu\\:flex-1{flex:1}[data-uhuu-interactive] .uhuu\\:shrink-0,[data-uhuu-portal] .uhuu\\:shrink-0{flex-shrink:0}[data-uhuu-interactive] .uhuu\\:shrink-0\\!,[data-uhuu-portal] .uhuu\\:shrink-0\\!{flex-shrink:0!important}[data-uhuu-interactive] .uhuu\\:grow,[data-uhuu-portal] .uhuu\\:grow{flex-grow:1}[data-uhuu-interactive] .uhuu\\:translate-x-\\[-50\\%\\],[data-uhuu-portal] .uhuu\\:translate-x-\\[-50\\%\\]{--uhuu-tw-translate-x:-50%;translate:var(--uhuu-tw-translate-x) var(--uhuu-tw-translate-y)}[data-uhuu-interactive] .uhuu\\:-translate-y-1\\/2,[data-uhuu-portal] .uhuu\\:-translate-y-1\\/2{--uhuu-tw-translate-y:calc(calc(1 / 2 * 100%) * -1);translate:var(--uhuu-tw-translate-x) var(--uhuu-tw-translate-y)}[data-uhuu-interactive] .uhuu\\:translate-y-\\[-50\\%\\],[data-uhuu-portal] .uhuu\\:translate-y-\\[-50\\%\\]{--uhuu-tw-translate-y:-50%;translate:var(--uhuu-tw-translate-x) var(--uhuu-tw-translate-y)}[data-uhuu-interactive] .uhuu\\:scale-105,[data-uhuu-portal] .uhuu\\:scale-105{--uhuu-tw-scale-x:105%;--uhuu-tw-scale-y:105%;--uhuu-tw-scale-z:105%;scale:var(--uhuu-tw-scale-x) var(--uhuu-tw-scale-y)}[data-uhuu-interactive] .uhuu\\:scale-110,[data-uhuu-portal] .uhuu\\:scale-110{--uhuu-tw-scale-x:110%;--uhuu-tw-scale-y:110%;--uhuu-tw-scale-z:110%;scale:var(--uhuu-tw-scale-x) var(--uhuu-tw-scale-y)}[data-uhuu-interactive] .uhuu\\:rotate-2,[data-uhuu-portal] .uhuu\\:rotate-2{rotate:2deg}[data-uhuu-interactive] .uhuu\\:rotate-45,[data-uhuu-portal] .uhuu\\:rotate-45{rotate:45deg}[data-uhuu-interactive] .uhuu\\:cursor-default,[data-uhuu-portal] .uhuu\\:cursor-default{cursor:default}[data-uhuu-interactive] .uhuu\\:cursor-grab,[data-uhuu-portal] .uhuu\\:cursor-grab{cursor:grab}[data-uhuu-interactive] .uhuu\\:cursor-pointer,[data-uhuu-portal] .uhuu\\:cursor-pointer{cursor:pointer}[data-uhuu-interactive] .uhuu\\:touch-none,[data-uhuu-portal] .uhuu\\:touch-none{touch-action:none}[data-uhuu-interactive] .uhuu\\:flex-col,[data-uhuu-portal] .uhuu\\:flex-col{flex-direction:column}[data-uhuu-interactive] .uhuu\\:flex-col-reverse,[data-uhuu-portal] .uhuu\\:flex-col-reverse{flex-direction:column-reverse}[data-uhuu-interactive] .uhuu\\:flex-wrap,[data-uhuu-portal] .uhuu\\:flex-wrap{flex-wrap:wrap}[data-uhuu-interactive] .uhuu\\:items-center,[data-uhuu-portal] .uhuu\\:items-center{align-items:center}[data-uhuu-interactive] .uhuu\\:items-end,[data-uhuu-portal] .uhuu\\:items-end{align-items:flex-end}[data-uhuu-interactive] .uhuu\\:items-start,[data-uhuu-portal] .uhuu\\:items-start{align-items:flex-start}[data-uhuu-interactive] .uhuu\\:justify-between,[data-uhuu-portal] .uhuu\\:justify-between{justify-content:space-between}[data-uhuu-interactive] .uhuu\\:justify-center,[data-uhuu-portal] .uhuu\\:justify-center{justify-content:center}[data-uhuu-interactive] .uhuu\\:justify-end,[data-uhuu-portal] .uhuu\\:justify-end{justify-content:flex-end}[data-uhuu-interactive] .uhuu\\:justify-start,[data-uhuu-portal] .uhuu\\:justify-start{justify-content:flex-start}[data-uhuu-interactive] .uhuu\\:gap-0,[data-uhuu-portal] .uhuu\\:gap-0{gap:0}[data-uhuu-interactive] .uhuu\\:gap-1,[data-uhuu-portal] .uhuu\\:gap-1{gap:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:gap-1\\.5,[data-uhuu-portal] .uhuu\\:gap-1\\.5{gap:calc(var(--uhuu-spacing) * 1.5)}[data-uhuu-interactive] .uhuu\\:gap-2,[data-uhuu-portal] .uhuu\\:gap-2{gap:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:gap-3,[data-uhuu-portal] .uhuu\\:gap-3{gap:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:gap-4,[data-uhuu-portal] .uhuu\\:gap-4{gap:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] :where(.uhuu\\:space-y-1>:not(:last-child)),[data-uhuu-portal] :where(.uhuu\\:space-y-1>:not(:last-child)){--uhuu-tw-space-y-reverse:0;margin-block-start:calc(var(--uhuu-spacing) * var(--uhuu-tw-space-y-reverse));margin-block-end:calc(var(--uhuu-spacing) * calc(1 - var(--uhuu-tw-space-y-reverse)))}[data-uhuu-interactive] :where(.uhuu\\:space-y-1\\.5>:not(:last-child)),[data-uhuu-portal] :where(.uhuu\\:space-y-1\\.5>:not(:last-child)){--uhuu-tw-space-y-reverse:0;margin-block-start:calc(calc(var(--uhuu-spacing) * 1.5) * var(--uhuu-tw-space-y-reverse));margin-block-end:calc(calc(var(--uhuu-spacing) * 1.5) * calc(1 - var(--uhuu-tw-space-y-reverse)))}[data-uhuu-interactive] :where(.uhuu\\:space-y-2>:not(:last-child)),[data-uhuu-portal] :where(.uhuu\\:space-y-2>:not(:last-child)){--uhuu-tw-space-y-reverse:0;margin-block-start:calc(calc(var(--uhuu-spacing) * 2) * var(--uhuu-tw-space-y-reverse));margin-block-end:calc(calc(var(--uhuu-spacing) * 2) * calc(1 - var(--uhuu-tw-space-y-reverse)))}[data-uhuu-interactive] :where(.uhuu\\:space-y-3>:not(:last-child)),[data-uhuu-portal] :where(.uhuu\\:space-y-3>:not(:last-child)){--uhuu-tw-space-y-reverse:0;margin-block-start:calc(calc(var(--uhuu-spacing) * 3) * var(--uhuu-tw-space-y-reverse));margin-block-end:calc(calc(var(--uhuu-spacing) * 3) * calc(1 - var(--uhuu-tw-space-y-reverse)))}[data-uhuu-interactive] .uhuu\\:truncate,[data-uhuu-portal] .uhuu\\:truncate{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}[data-uhuu-interactive] .uhuu\\:overflow-auto,[data-uhuu-portal] .uhuu\\:overflow-auto{overflow:auto}[data-uhuu-interactive] .uhuu\\:overflow-hidden,[data-uhuu-portal] .uhuu\\:overflow-hidden{overflow:hidden}[data-uhuu-interactive] .uhuu\\:overflow-y-auto,[data-uhuu-portal] .uhuu\\:overflow-y-auto{overflow-y:auto}[data-uhuu-interactive] .uhuu\\:rounded,[data-uhuu-portal] .uhuu\\:rounded{border-radius:.25rem}[data-uhuu-interactive] .uhuu\\:rounded-full,[data-uhuu-portal] .uhuu\\:rounded-full{border-radius:2147483647px}[data-uhuu-interactive] .uhuu\\:rounded-lg,[data-uhuu-portal] .uhuu\\:rounded-lg{border-radius:var(--uhuu-radius-lg)}[data-uhuu-interactive] .uhuu\\:rounded-md,[data-uhuu-portal] .uhuu\\:rounded-md{border-radius:var(--uhuu-radius-md)}[data-uhuu-interactive] .uhuu\\:rounded-sm,[data-uhuu-portal] .uhuu\\:rounded-sm{border-radius:var(--uhuu-radius-sm)}[data-uhuu-interactive] .uhuu\\:border,[data-uhuu-portal] .uhuu\\:border{border-style:var(--uhuu-tw-border-style);border-width:1px}[data-uhuu-interactive] .uhuu\\:border-0,[data-uhuu-portal] .uhuu\\:border-0{border-style:var(--uhuu-tw-border-style);border-width:0}[data-uhuu-interactive] .uhuu\\:border-2,[data-uhuu-portal] .uhuu\\:border-2{border-style:var(--uhuu-tw-border-style);border-width:2px}[data-uhuu-interactive] .uhuu\\:border-t,[data-uhuu-portal] .uhuu\\:border-t{border-top-style:var(--uhuu-tw-border-style);border-top-width:1px}[data-uhuu-interactive] .uhuu\\:border-r,[data-uhuu-portal] .uhuu\\:border-r{border-right-style:var(--uhuu-tw-border-style);border-right-width:1px}[data-uhuu-interactive] .uhuu\\:border-b,[data-uhuu-portal] .uhuu\\:border-b{border-bottom-style:var(--uhuu-tw-border-style);border-bottom-width:1px}[data-uhuu-interactive] .uhuu\\:border-l,[data-uhuu-portal] .uhuu\\:border-l{border-left-style:var(--uhuu-tw-border-style);border-left-width:1px}[data-uhuu-interactive] .uhuu\\:border-\\(--uhuu-thumbnail-border\\),[data-uhuu-portal] .uhuu\\:border-\\(--uhuu-thumbnail-border\\){border-color:var(--uhuu-thumbnail-border)}[data-uhuu-interactive] .uhuu\\:border-\\(--uhuu-thumbnail-border-strong\\),[data-uhuu-portal] .uhuu\\:border-\\(--uhuu-thumbnail-border-strong\\){border-color:var(--uhuu-thumbnail-border-strong)}[data-uhuu-interactive] .uhuu\\:border-blue-400,[data-uhuu-portal] .uhuu\\:border-blue-400{border-color:var(--uhuu-color-blue-400)}[data-uhuu-interactive] .uhuu\\:border-gray-200,[data-uhuu-portal] .uhuu\\:border-gray-200,[data-uhuu-interactive] .uhuu\\:border-gray-200\\/60,[data-uhuu-portal] .uhuu\\:border-gray-200\\/60{border-color:var(--uhuu-color-gray-200)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:border-gray-200\\/60,[data-uhuu-portal] .uhuu\\:border-gray-200\\/60{border-color:color-mix(in oklab, var(--uhuu-color-gray-200) 60%, transparent)}}[data-uhuu-interactive] .uhuu\\:border-gray-200\\/80,[data-uhuu-portal] .uhuu\\:border-gray-200\\/80{border-color:var(--uhuu-color-gray-200)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:border-gray-200\\/80,[data-uhuu-portal] .uhuu\\:border-gray-200\\/80{border-color:color-mix(in oklab, var(--uhuu-color-gray-200) 80%, transparent)}}[data-uhuu-interactive] .uhuu\\:border-gray-300,[data-uhuu-portal] .uhuu\\:border-gray-300{border-color:var(--uhuu-color-gray-300)}[data-uhuu-interactive] .uhuu\\:border-gray-400,[data-uhuu-portal] .uhuu\\:border-gray-400{border-color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:border-gray-900,[data-uhuu-portal] .uhuu\\:border-gray-900{border-color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:border-transparent,[data-uhuu-portal] .uhuu\\:border-transparent{border-color:#0000}[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\),[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\),[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/50,[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/50{background-color:var(--uhuu-shell-surface)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/50,[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/50{background-color:color-mix(in oklab, var(--uhuu-shell-surface) 50%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/90,[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/90{background-color:var(--uhuu-shell-surface)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/90,[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/90{background-color:color-mix(in oklab, var(--uhuu-shell-surface) 90%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/95,[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/95{background-color:var(--uhuu-shell-surface)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/95,[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-shell-surface\\)\\/95{background-color:color-mix(in oklab, var(--uhuu-shell-surface) 95%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-\\(--uhuu-thumbnail-caption\\),[data-uhuu-portal] .uhuu\\:bg-\\(--uhuu-thumbnail-caption\\){background-color:var(--uhuu-thumbnail-caption)}[data-uhuu-interactive] .uhuu\\:bg-black,[data-uhuu-portal] .uhuu\\:bg-black,[data-uhuu-interactive] .uhuu\\:bg-black\\/30,[data-uhuu-portal] .uhuu\\:bg-black\\/30{background-color:var(--uhuu-color-black)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-black\\/30,[data-uhuu-portal] .uhuu\\:bg-black\\/30{background-color:color-mix(in oklab, var(--uhuu-color-black) 30%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-black\\/40,[data-uhuu-portal] .uhuu\\:bg-black\\/40{background-color:var(--uhuu-color-black)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-black\\/40,[data-uhuu-portal] .uhuu\\:bg-black\\/40{background-color:color-mix(in oklab, var(--uhuu-color-black) 40%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-black\\/50,[data-uhuu-portal] .uhuu\\:bg-black\\/50{background-color:var(--uhuu-color-black)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-black\\/50,[data-uhuu-portal] .uhuu\\:bg-black\\/50{background-color:color-mix(in oklab, var(--uhuu-color-black) 50%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-blue-50,[data-uhuu-portal] .uhuu\\:bg-blue-50{background-color:var(--uhuu-color-blue-50)}[data-uhuu-interactive] .uhuu\\:bg-blue-100,[data-uhuu-portal] .uhuu\\:bg-blue-100{background-color:var(--uhuu-color-blue-100)}[data-uhuu-interactive] .uhuu\\:bg-blue-500\\/10,[data-uhuu-portal] .uhuu\\:bg-blue-500\\/10{background-color:var(--uhuu-color-blue-500)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-blue-500\\/10,[data-uhuu-portal] .uhuu\\:bg-blue-500\\/10{background-color:color-mix(in oklab, var(--uhuu-color-blue-500) 10%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-blue-600\\/80,[data-uhuu-portal] .uhuu\\:bg-blue-600\\/80{background-color:var(--uhuu-color-blue-600)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-blue-600\\/80,[data-uhuu-portal] .uhuu\\:bg-blue-600\\/80{background-color:color-mix(in oklab, var(--uhuu-color-blue-600) 80%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-emerald-100,[data-uhuu-portal] .uhuu\\:bg-emerald-100{background-color:var(--uhuu-color-emerald-100)}[data-uhuu-interactive] .uhuu\\:bg-gray-50,[data-uhuu-portal] .uhuu\\:bg-gray-50{background-color:var(--uhuu-color-gray-50)}[data-uhuu-interactive] .uhuu\\:bg-gray-100,[data-uhuu-portal] .uhuu\\:bg-gray-100,[data-uhuu-interactive] .uhuu\\:bg-gray-100\\/80,[data-uhuu-portal] .uhuu\\:bg-gray-100\\/80{background-color:var(--uhuu-color-gray-100)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-gray-100\\/80,[data-uhuu-portal] .uhuu\\:bg-gray-100\\/80{background-color:color-mix(in oklab, var(--uhuu-color-gray-100) 80%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-gray-200,[data-uhuu-portal] .uhuu\\:bg-gray-200{background-color:var(--uhuu-color-gray-200)}[data-uhuu-interactive] .uhuu\\:bg-gray-600\\/80,[data-uhuu-portal] .uhuu\\:bg-gray-600\\/80{background-color:var(--uhuu-color-gray-600)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-gray-600\\/80,[data-uhuu-portal] .uhuu\\:bg-gray-600\\/80{background-color:color-mix(in oklab, var(--uhuu-color-gray-600) 80%, transparent)}}[data-uhuu-interactive] .uhuu\\:bg-gray-900,[data-uhuu-portal] .uhuu\\:bg-gray-900{background-color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:bg-transparent,[data-uhuu-portal] .uhuu\\:bg-transparent{background-color:#0000}[data-uhuu-interactive] .uhuu\\:bg-white,[data-uhuu-portal] .uhuu\\:bg-white,[data-uhuu-interactive] .uhuu\\:bg-white\\/90,[data-uhuu-portal] .uhuu\\:bg-white\\/90{background-color:var(--uhuu-color-white)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:bg-white\\/90,[data-uhuu-portal] .uhuu\\:bg-white\\/90{background-color:color-mix(in oklab, var(--uhuu-color-white) 90%, transparent)}}[data-uhuu-interactive] .uhuu\\:object-contain,[data-uhuu-portal] .uhuu\\:object-contain{-o-object-fit:contain;object-fit:contain}[data-uhuu-interactive] .uhuu\\:object-top,[data-uhuu-portal] .uhuu\\:object-top{-o-object-position:top;object-position:top}[data-uhuu-interactive] .uhuu\\:p-0,[data-uhuu-portal] .uhuu\\:p-0{padding:0}[data-uhuu-interactive] .uhuu\\:p-1,[data-uhuu-portal] .uhuu\\:p-1{padding:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:p-1\\.5,[data-uhuu-portal] .uhuu\\:p-1\\.5{padding:calc(var(--uhuu-spacing) * 1.5)}[data-uhuu-interactive] .uhuu\\:p-2,[data-uhuu-portal] .uhuu\\:p-2{padding:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:p-3,[data-uhuu-portal] .uhuu\\:p-3{padding:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:p-4,[data-uhuu-portal] .uhuu\\:p-4{padding:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:p-6,[data-uhuu-portal] .uhuu\\:p-6{padding:calc(var(--uhuu-spacing) * 6)}[data-uhuu-interactive] .uhuu\\:px-2,[data-uhuu-portal] .uhuu\\:px-2{padding-inline:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:px-2\\.5,[data-uhuu-portal] .uhuu\\:px-2\\.5{padding-inline:calc(var(--uhuu-spacing) * 2.5)}[data-uhuu-interactive] .uhuu\\:px-3,[data-uhuu-portal] .uhuu\\:px-3{padding-inline:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:px-4,[data-uhuu-portal] .uhuu\\:px-4{padding-inline:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:px-8,[data-uhuu-portal] .uhuu\\:px-8{padding-inline:calc(var(--uhuu-spacing) * 8)}[data-uhuu-interactive] .uhuu\\:py-0\\.5,[data-uhuu-portal] .uhuu\\:py-0\\.5{padding-block:calc(var(--uhuu-spacing) * .5)}[data-uhuu-interactive] .uhuu\\:py-1,[data-uhuu-portal] .uhuu\\:py-1{padding-block:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:py-1\\.5,[data-uhuu-portal] .uhuu\\:py-1\\.5{padding-block:calc(var(--uhuu-spacing) * 1.5)}[data-uhuu-interactive] .uhuu\\:py-2,[data-uhuu-portal] .uhuu\\:py-2{padding-block:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:py-2\\.5,[data-uhuu-portal] .uhuu\\:py-2\\.5{padding-block:calc(var(--uhuu-spacing) * 2.5)}[data-uhuu-interactive] .uhuu\\:py-3,[data-uhuu-portal] .uhuu\\:py-3{padding-block:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:py-16,[data-uhuu-portal] .uhuu\\:py-16{padding-block:calc(var(--uhuu-spacing) * 16)}[data-uhuu-interactive] .uhuu\\:py-20,[data-uhuu-portal] .uhuu\\:py-20{padding-block:calc(var(--uhuu-spacing) * 20)}[data-uhuu-interactive] .uhuu\\:pt-1,[data-uhuu-portal] .uhuu\\:pt-1{padding-top:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:pt-2,[data-uhuu-portal] .uhuu\\:pt-2{padding-top:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:pr-1,[data-uhuu-portal] .uhuu\\:pr-1{padding-right:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:pr-2,[data-uhuu-portal] .uhuu\\:pr-2{padding-right:calc(var(--uhuu-spacing) * 2)}[data-uhuu-interactive] .uhuu\\:pr-3,[data-uhuu-portal] .uhuu\\:pr-3{padding-right:calc(var(--uhuu-spacing) * 3)}[data-uhuu-interactive] .uhuu\\:pr-6,[data-uhuu-portal] .uhuu\\:pr-6{padding-right:calc(var(--uhuu-spacing) * 6)}[data-uhuu-interactive] .uhuu\\:pb-4,[data-uhuu-portal] .uhuu\\:pb-4{padding-bottom:calc(var(--uhuu-spacing) * 4)}[data-uhuu-interactive] .uhuu\\:pl-0,[data-uhuu-portal] .uhuu\\:pl-0{padding-left:0}[data-uhuu-interactive] .uhuu\\:pl-1,[data-uhuu-portal] .uhuu\\:pl-1{padding-left:var(--uhuu-spacing)}[data-uhuu-interactive] .uhuu\\:pl-8,[data-uhuu-portal] .uhuu\\:pl-8{padding-left:calc(var(--uhuu-spacing) * 8)}[data-uhuu-interactive] .uhuu\\:text-center,[data-uhuu-portal] .uhuu\\:text-center{text-align:center}[data-uhuu-interactive] .uhuu\\:text-left,[data-uhuu-portal] .uhuu\\:text-left{text-align:left}[data-uhuu-interactive] .uhuu\\:align-top,[data-uhuu-portal] .uhuu\\:align-top{vertical-align:top}[data-uhuu-interactive] .uhuu\\:font-mono,[data-uhuu-portal] .uhuu\\:font-mono{font-family:var(--uhuu-font-mono)}[data-uhuu-interactive] .uhuu\\:text-base,[data-uhuu-portal] .uhuu\\:text-base{font-size:var(--uhuu-text-base);line-height:var(--uhuu-tw-leading,var(--uhuu-text-base--line-height))}[data-uhuu-interactive] .uhuu\\:text-lg,[data-uhuu-portal] .uhuu\\:text-lg{font-size:var(--uhuu-text-lg);line-height:var(--uhuu-tw-leading,var(--uhuu-text-lg--line-height))}[data-uhuu-interactive] .uhuu\\:text-sm,[data-uhuu-portal] .uhuu\\:text-sm{font-size:var(--uhuu-text-sm);line-height:var(--uhuu-tw-leading,var(--uhuu-text-sm--line-height))}[data-uhuu-interactive] .uhuu\\:text-xs,[data-uhuu-portal] .uhuu\\:text-xs{font-size:var(--uhuu-text-xs);line-height:var(--uhuu-tw-leading,var(--uhuu-text-xs--line-height))}[data-uhuu-interactive] .uhuu\\:text-xs\\!,[data-uhuu-portal] .uhuu\\:text-xs\\!{font-size:var(--uhuu-text-xs)!important;line-height:var(--uhuu-tw-leading,var(--uhuu-text-xs--line-height))!important}[data-uhuu-interactive] .uhuu\\:text-\\[10px\\],[data-uhuu-portal] .uhuu\\:text-\\[10px\\]{font-size:10px}[data-uhuu-interactive] .uhuu\\:leading-none,[data-uhuu-portal] .uhuu\\:leading-none{--uhuu-tw-leading:1;line-height:1}[data-uhuu-interactive] .uhuu\\:leading-tight,[data-uhuu-portal] .uhuu\\:leading-tight{--uhuu-tw-leading:var(--uhuu-leading-tight);line-height:var(--uhuu-leading-tight)}[data-uhuu-interactive] .uhuu\\:font-medium,[data-uhuu-portal] .uhuu\\:font-medium{--uhuu-tw-font-weight:var(--uhuu-font-weight-medium);font-weight:var(--uhuu-font-weight-medium)}[data-uhuu-interactive] .uhuu\\:font-normal,[data-uhuu-portal] .uhuu\\:font-normal{--uhuu-tw-font-weight:var(--uhuu-font-weight-normal);font-weight:var(--uhuu-font-weight-normal)}[data-uhuu-interactive] .uhuu\\:font-semibold,[data-uhuu-portal] .uhuu\\:font-semibold{--uhuu-tw-font-weight:var(--uhuu-font-weight-semibold);font-weight:var(--uhuu-font-weight-semibold)}[data-uhuu-interactive] .uhuu\\:tracking-wide,[data-uhuu-portal] .uhuu\\:tracking-wide{--uhuu-tw-tracking:var(--uhuu-tracking-wide);letter-spacing:var(--uhuu-tracking-wide)}[data-uhuu-interactive] .uhuu\\:tracking-widest,[data-uhuu-portal] .uhuu\\:tracking-widest{--uhuu-tw-tracking:var(--uhuu-tracking-widest);letter-spacing:var(--uhuu-tracking-widest)}[data-uhuu-interactive] .uhuu\\:break-all,[data-uhuu-portal] .uhuu\\:break-all{word-break:break-all}[data-uhuu-interactive] .uhuu\\:whitespace-nowrap,[data-uhuu-portal] .uhuu\\:whitespace-nowrap{white-space:nowrap}[data-uhuu-interactive] .uhuu\\:text-\\(--uhuu-shell-on-inverse\\),[data-uhuu-portal] .uhuu\\:text-\\(--uhuu-shell-on-inverse\\){color:var(--uhuu-shell-on-inverse)}[data-uhuu-interactive] .uhuu\\:text-blue-600,[data-uhuu-portal] .uhuu\\:text-blue-600{color:var(--uhuu-color-blue-600)}[data-uhuu-interactive] .uhuu\\:text-emerald-600,[data-uhuu-portal] .uhuu\\:text-emerald-600{color:var(--uhuu-color-emerald-600)}[data-uhuu-interactive] .uhuu\\:text-gray-400,[data-uhuu-portal] .uhuu\\:text-gray-400{color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:text-gray-500,[data-uhuu-portal] .uhuu\\:text-gray-500{color:var(--uhuu-color-gray-500)}[data-uhuu-interactive] .uhuu\\:text-gray-600,[data-uhuu-portal] .uhuu\\:text-gray-600{color:var(--uhuu-color-gray-600)}[data-uhuu-interactive] .uhuu\\:text-gray-700,[data-uhuu-portal] .uhuu\\:text-gray-700{color:var(--uhuu-color-gray-700)}[data-uhuu-interactive] .uhuu\\:text-gray-800,[data-uhuu-portal] .uhuu\\:text-gray-800{color:var(--uhuu-color-gray-800)}[data-uhuu-interactive] .uhuu\\:text-gray-900,[data-uhuu-portal] .uhuu\\:text-gray-900{color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:text-red-600,[data-uhuu-portal] .uhuu\\:text-red-600{color:var(--uhuu-color-red-600)}[data-uhuu-interactive] .uhuu\\:text-white,[data-uhuu-portal] .uhuu\\:text-white{color:var(--uhuu-color-white)}[data-uhuu-interactive] .uhuu\\:uppercase,[data-uhuu-portal] .uhuu\\:uppercase{text-transform:uppercase}[data-uhuu-interactive] .uhuu\\:tabular-nums,[data-uhuu-portal] .uhuu\\:tabular-nums{--uhuu-tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--uhuu-tw-ordinal,) var(--uhuu-tw-slashed-zero,) var(--uhuu-tw-numeric-figure,) var(--uhuu-tw-numeric-spacing,) var(--uhuu-tw-numeric-fraction,)}[data-uhuu-interactive] .uhuu\\:opacity-0,[data-uhuu-portal] .uhuu\\:opacity-0{opacity:0}[data-uhuu-interactive] .uhuu\\:opacity-50,[data-uhuu-portal] .uhuu\\:opacity-50{opacity:.5}[data-uhuu-interactive] .uhuu\\:opacity-60,[data-uhuu-portal] .uhuu\\:opacity-60{opacity:.6}[data-uhuu-interactive] .uhuu\\:opacity-70,[data-uhuu-portal] .uhuu\\:opacity-70{opacity:.7}[data-uhuu-interactive] .uhuu\\:opacity-75,[data-uhuu-portal] .uhuu\\:opacity-75{opacity:.75}[data-uhuu-interactive] .uhuu\\:shadow,[data-uhuu-portal] .uhuu\\:shadow{--uhuu-tw-shadow:0 1px 3px 0 var(--uhuu-tw-shadow-color,#0000001a), 0 1px 2px -1px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:shadow-2xl,[data-uhuu-portal] .uhuu\\:shadow-2xl{--uhuu-tw-shadow:0 25px 50px -12px var(--uhuu-tw-shadow-color,#00000040);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:shadow-lg,[data-uhuu-portal] .uhuu\\:shadow-lg{--uhuu-tw-shadow:0 10px 15px -3px var(--uhuu-tw-shadow-color,#0000001a), 0 4px 6px -4px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:shadow-md,[data-uhuu-portal] .uhuu\\:shadow-md{--uhuu-tw-shadow:0 4px 6px -1px var(--uhuu-tw-shadow-color,#0000001a), 0 2px 4px -2px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:shadow-sm,[data-uhuu-portal] .uhuu\\:shadow-sm{--uhuu-tw-shadow:0 1px 3px 0 var(--uhuu-tw-shadow-color,#0000001a), 0 1px 2px -1px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:shadow-xl,[data-uhuu-portal] .uhuu\\:shadow-xl{--uhuu-tw-shadow:0 20px 25px -5px var(--uhuu-tw-shadow-color,#0000001a), 0 8px 10px -6px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:ring-0,[data-uhuu-portal] .uhuu\\:ring-0{--uhuu-tw-ring-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 calc(0px + var(--uhuu-tw-ring-offset-width)) var(--uhuu-tw-ring-color,currentcolor);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:ring-offset-\\(--uhuu-shell-surface\\),[data-uhuu-portal] .uhuu\\:ring-offset-\\(--uhuu-shell-surface\\){--uhuu-tw-ring-offset-color:var(--uhuu-shell-surface)}[data-uhuu-interactive] .uhuu\\:outline,[data-uhuu-portal] .uhuu\\:outline{outline-style:var(--uhuu-tw-outline-style);outline-width:1px}[data-uhuu-interactive] .uhuu\\:outline-2,[data-uhuu-portal] .uhuu\\:outline-2{outline-style:var(--uhuu-tw-outline-style);outline-width:2px}[data-uhuu-interactive] .uhuu\\:outline-offset-2,[data-uhuu-portal] .uhuu\\:outline-offset-2{outline-offset:2px}[data-uhuu-interactive] .uhuu\\:outline-blue-100,[data-uhuu-portal] .uhuu\\:outline-blue-100{outline-color:var(--uhuu-color-blue-100)}[data-uhuu-interactive] .uhuu\\:drop-shadow-\\[0_1px_2px_rgba\\(0\\,0\\,0\\,0\\.8\\)\\],[data-uhuu-portal] .uhuu\\:drop-shadow-\\[0_1px_2px_rgba\\(0\\,0\\,0\\,0\\.8\\)\\]{--uhuu-tw-drop-shadow-size:drop-shadow(0 1px 2px var(--uhuu-tw-drop-shadow-color,#000c));--uhuu-tw-drop-shadow:var(--uhuu-tw-drop-shadow-size);filter:var(--uhuu-tw-blur,) var(--uhuu-tw-brightness,) var(--uhuu-tw-contrast,) var(--uhuu-tw-grayscale,) var(--uhuu-tw-hue-rotate,) var(--uhuu-tw-invert,) var(--uhuu-tw-saturate,) var(--uhuu-tw-sepia,) var(--uhuu-tw-drop-shadow,)}[data-uhuu-interactive] .uhuu\\:backdrop-blur-\\[1px\\],[data-uhuu-portal] .uhuu\\:backdrop-blur-\\[1px\\]{--uhuu-tw-backdrop-blur:blur(1px);backdrop-filter:var(--uhuu-tw-backdrop-blur,) var(--uhuu-tw-backdrop-brightness,) var(--uhuu-tw-backdrop-contrast,) var(--uhuu-tw-backdrop-grayscale,) var(--uhuu-tw-backdrop-hue-rotate,) var(--uhuu-tw-backdrop-invert,) var(--uhuu-tw-backdrop-opacity,) var(--uhuu-tw-backdrop-saturate,) var(--uhuu-tw-backdrop-sepia,)}[data-uhuu-interactive] .uhuu\\:backdrop-blur-md,[data-uhuu-portal] .uhuu\\:backdrop-blur-md{--uhuu-tw-backdrop-blur:blur(var(--uhuu-blur-md));backdrop-filter:var(--uhuu-tw-backdrop-blur,) var(--uhuu-tw-backdrop-brightness,) var(--uhuu-tw-backdrop-contrast,) var(--uhuu-tw-backdrop-grayscale,) var(--uhuu-tw-backdrop-hue-rotate,) var(--uhuu-tw-backdrop-invert,) var(--uhuu-tw-backdrop-opacity,) var(--uhuu-tw-backdrop-saturate,) var(--uhuu-tw-backdrop-sepia,)}[data-uhuu-interactive] .uhuu\\:backdrop-blur-sm,[data-uhuu-portal] .uhuu\\:backdrop-blur-sm{--uhuu-tw-backdrop-blur:blur(var(--uhuu-blur-sm));backdrop-filter:var(--uhuu-tw-backdrop-blur,) var(--uhuu-tw-backdrop-brightness,) var(--uhuu-tw-backdrop-contrast,) var(--uhuu-tw-backdrop-grayscale,) var(--uhuu-tw-backdrop-hue-rotate,) var(--uhuu-tw-backdrop-invert,) var(--uhuu-tw-backdrop-opacity,) var(--uhuu-tw-backdrop-saturate,) var(--uhuu-tw-backdrop-sepia,)}[data-uhuu-interactive] .uhuu\\:transition,[data-uhuu-portal] .uhuu\\:transition{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--uhuu-tw-gradient-from,--uhuu-tw-gradient-via,--uhuu-tw-gradient-to,opacity,box-shadow,transform,translate,scale,rotate,filter,backdrop-filter,display,content-visibility,overlay,pointer-events;transition-timing-function:var(--uhuu-tw-ease,var(--uhuu-default-transition-timing-function));transition-duration:var(--uhuu-tw-duration,var(--uhuu-default-transition-duration))}[data-uhuu-interactive] .uhuu\\:transition-all,[data-uhuu-portal] .uhuu\\:transition-all{transition-property:all;transition-timing-function:var(--uhuu-tw-ease,var(--uhuu-default-transition-timing-function));transition-duration:var(--uhuu-tw-duration,var(--uhuu-default-transition-duration))}[data-uhuu-interactive] .uhuu\\:transition-colors,[data-uhuu-portal] .uhuu\\:transition-colors{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--uhuu-tw-gradient-from,--uhuu-tw-gradient-via,--uhuu-tw-gradient-to;transition-timing-function:var(--uhuu-tw-ease,var(--uhuu-default-transition-timing-function));transition-duration:var(--uhuu-tw-duration,var(--uhuu-default-transition-duration))}[data-uhuu-interactive] .uhuu\\:transition-opacity,[data-uhuu-portal] .uhuu\\:transition-opacity{transition-property:opacity;transition-timing-function:var(--uhuu-tw-ease,var(--uhuu-default-transition-timing-function));transition-duration:var(--uhuu-tw-duration,var(--uhuu-default-transition-duration))}[data-uhuu-interactive] .uhuu\\:transition-transform,[data-uhuu-portal] .uhuu\\:transition-transform{transition-property:transform,translate,scale,rotate;transition-timing-function:var(--uhuu-tw-ease,var(--uhuu-default-transition-timing-function));transition-duration:var(--uhuu-tw-duration,var(--uhuu-default-transition-duration))}[data-uhuu-interactive] .uhuu\\:duration-150,[data-uhuu-portal] .uhuu\\:duration-150{--uhuu-tw-duration:.15s;transition-duration:.15s}[data-uhuu-interactive] .uhuu\\:ease-in-out,[data-uhuu-portal] .uhuu\\:ease-in-out{--uhuu-tw-ease:var(--uhuu-ease-in-out);transition-timing-function:var(--uhuu-ease-in-out)}[data-uhuu-interactive] .uhuu\\:outline-none,[data-uhuu-portal] .uhuu\\:outline-none{--uhuu-tw-outline-style:none;outline-style:none}[data-uhuu-interactive] .uhuu\\:select-none,[data-uhuu-portal] .uhuu\\:select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}@media (hover:hover){[data-uhuu-interactive] .uhuu\\:group-hover\\:opacity-100:is(:where(.uhuu\\:group):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\:opacity-100:is(:where(.uhuu\\:group):hover *){opacity:1}[data-uhuu-interactive] .uhuu\\:group-hover\\/drag-item\\:block:is(:where(.uhuu\\:group\\/drag-item):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/drag-item\\:block:is(:where(.uhuu\\:group\\/drag-item):hover *){display:block}[data-uhuu-interactive] .uhuu\\:group-hover\\/drag-item\\:flex:is(:where(.uhuu\\:group\\/drag-item):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/drag-item\\:flex:is(:where(.uhuu\\:group\\/drag-item):hover *){display:flex}[data-uhuu-interactive] .uhuu\\:group-hover\\/drag-item\\:hidden:is(:where(.uhuu\\:group\\/drag-item):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/drag-item\\:hidden:is(:where(.uhuu\\:group\\/drag-item):hover *){display:none}[data-uhuu-interactive] .uhuu\\:group-hover\\/drag-item\\:border-gray-300:is(:where(.uhuu\\:group\\/drag-item):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/drag-item\\:border-gray-300:is(:where(.uhuu\\:group\\/drag-item):hover *){border-color:var(--uhuu-color-gray-300)}[data-uhuu-interactive] .uhuu\\:group-hover\\/drag-item\\:shadow-md:is(:where(.uhuu\\:group\\/drag-item):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/drag-item\\:shadow-md:is(:where(.uhuu\\:group\\/drag-item):hover *){--uhuu-tw-shadow:0 4px 6px -1px var(--uhuu-tw-shadow-color,#0000001a), 0 2px 4px -2px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:group-hover\\/remove-btn\\:block:is(:where(.uhuu\\:group\\/remove-btn):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/remove-btn\\:block:is(:where(.uhuu\\:group\\/remove-btn):hover *){display:block}[data-uhuu-interactive] .uhuu\\:group-hover\\/remove-btn\\:hidden:is(:where(.uhuu\\:group\\/remove-btn):hover *),[data-uhuu-portal] .uhuu\\:group-hover\\/remove-btn\\:hidden:is(:where(.uhuu\\:group\\/remove-btn):hover *){display:none}}[data-uhuu-interactive] .uhuu\\:peer-disabled\\:cursor-not-allowed:is(:where(.uhuu\\:peer):disabled~*),[data-uhuu-portal] .uhuu\\:peer-disabled\\:cursor-not-allowed:is(:where(.uhuu\\:peer):disabled~*){cursor:not-allowed}[data-uhuu-interactive] .uhuu\\:peer-disabled\\:opacity-70:is(:where(.uhuu\\:peer):disabled~*),[data-uhuu-portal] .uhuu\\:peer-disabled\\:opacity-70:is(:where(.uhuu\\:peer):disabled~*){opacity:.7}[data-uhuu-interactive] .uhuu\\:placeholder\\:text-gray-400::-moz-placeholder,[data-uhuu-portal] .uhuu\\:placeholder\\:text-gray-400::-moz-placeholder{color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:placeholder\\:text-gray-400::placeholder,[data-uhuu-portal] .uhuu\\:placeholder\\:text-gray-400::placeholder{color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:focus-within\\:border-gray-400:focus-within,[data-uhuu-portal] .uhuu\\:focus-within\\:border-gray-400:focus-within{border-color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:focus-within\\:ring-2:focus-within,[data-uhuu-portal] .uhuu\\:focus-within\\:ring-2:focus-within{--uhuu-tw-ring-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 calc(2px + var(--uhuu-tw-ring-offset-width)) var(--uhuu-tw-ring-color,currentcolor);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:focus-within\\:ring-gray-200:focus-within,[data-uhuu-portal] .uhuu\\:focus-within\\:ring-gray-200:focus-within{--uhuu-tw-ring-color:var(--uhuu-color-gray-200)}@media (hover:hover){[data-uhuu-interactive] .uhuu\\:hover\\:scale-105:hover,[data-uhuu-portal] .uhuu\\:hover\\:scale-105:hover{--uhuu-tw-scale-x:105%;--uhuu-tw-scale-y:105%;--uhuu-tw-scale-z:105%;scale:var(--uhuu-tw-scale-x) var(--uhuu-tw-scale-y)}[data-uhuu-interactive] .uhuu\\:hover\\:border-\\(--uhuu-thumbnail-border-strong\\):hover,[data-uhuu-portal] .uhuu\\:hover\\:border-\\(--uhuu-thumbnail-border-strong\\):hover{border-color:var(--uhuu-thumbnail-border-strong)}[data-uhuu-interactive] .uhuu\\:hover\\:border-gray-200:hover,[data-uhuu-portal] .uhuu\\:hover\\:border-gray-200:hover{border-color:var(--uhuu-color-gray-200)}[data-uhuu-interactive] .uhuu\\:hover\\:border-gray-400:hover,[data-uhuu-portal] .uhuu\\:hover\\:border-gray-400:hover{border-color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:hover\\:bg-\\(--uhuu-shell-surface\\):hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-\\(--uhuu-shell-surface\\):hover{background-color:var(--uhuu-shell-surface)}[data-uhuu-interactive] .uhuu\\:hover\\:bg-gray-50:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-gray-50:hover{background-color:var(--uhuu-color-gray-50)}[data-uhuu-interactive] .uhuu\\:hover\\:bg-gray-100:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-gray-100:hover,[data-uhuu-interactive] .uhuu\\:hover\\:bg-gray-100\\/80:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-gray-100\\/80:hover{background-color:var(--uhuu-color-gray-100)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:hover\\:bg-gray-100\\/80:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-gray-100\\/80:hover{background-color:color-mix(in oklab, var(--uhuu-color-gray-100) 80%, transparent)}}[data-uhuu-interactive] .uhuu\\:hover\\:bg-gray-200:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-gray-200:hover{background-color:var(--uhuu-color-gray-200)}[data-uhuu-interactive] .uhuu\\:hover\\:bg-gray-800:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-gray-800:hover{background-color:var(--uhuu-color-gray-800)}[data-uhuu-interactive] .uhuu\\:hover\\:bg-white:hover,[data-uhuu-portal] .uhuu\\:hover\\:bg-white:hover{background-color:var(--uhuu-color-white)}[data-uhuu-interactive] .uhuu\\:hover\\:text-gray-600:hover,[data-uhuu-portal] .uhuu\\:hover\\:text-gray-600:hover{color:var(--uhuu-color-gray-600)}[data-uhuu-interactive] .uhuu\\:hover\\:text-gray-900:hover,[data-uhuu-portal] .uhuu\\:hover\\:text-gray-900:hover{color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:hover\\:opacity-100:hover,[data-uhuu-portal] .uhuu\\:hover\\:opacity-100:hover{opacity:1}[data-uhuu-interactive] .uhuu\\:hover\\:shadow-lg:hover,[data-uhuu-portal] .uhuu\\:hover\\:shadow-lg:hover{--uhuu-tw-shadow:0 10px 15px -3px var(--uhuu-tw-shadow-color,#0000001a), 0 4px 6px -4px var(--uhuu-tw-shadow-color,#0000001a);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}}[data-uhuu-interactive] .uhuu\\:focus\\:w-40:focus,[data-uhuu-portal] .uhuu\\:focus\\:w-40:focus{width:calc(var(--uhuu-spacing) * 40)}[data-uhuu-interactive] .uhuu\\:focus\\:border-gray-400:focus,[data-uhuu-portal] .uhuu\\:focus\\:border-gray-400:focus{border-color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:focus\\:border-transparent:focus,[data-uhuu-portal] .uhuu\\:focus\\:border-transparent:focus{border-color:#0000}[data-uhuu-interactive] .uhuu\\:focus\\:bg-gray-100:focus,[data-uhuu-portal] .uhuu\\:focus\\:bg-gray-100:focus{background-color:var(--uhuu-color-gray-100)}[data-uhuu-interactive] .uhuu\\:focus\\:bg-red-50:focus,[data-uhuu-portal] .uhuu\\:focus\\:bg-red-50:focus{background-color:var(--uhuu-color-red-50)}[data-uhuu-interactive] .uhuu\\:focus\\:text-gray-900:focus,[data-uhuu-portal] .uhuu\\:focus\\:text-gray-900:focus{color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:focus\\:text-red-700:focus,[data-uhuu-portal] .uhuu\\:focus\\:text-red-700:focus{color:var(--uhuu-color-red-700)}[data-uhuu-interactive] .uhuu\\:focus\\:ring-2:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-2:focus{--uhuu-tw-ring-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 calc(2px + var(--uhuu-tw-ring-offset-width)) var(--uhuu-tw-ring-color,currentcolor);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:focus\\:ring-blue-400\\/30:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-blue-400\\/30:focus{--uhuu-tw-ring-color:var(--uhuu-color-blue-400)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu\\:focus\\:ring-blue-400\\/30:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-blue-400\\/30:focus{--uhuu-tw-ring-color:color-mix(in oklab, var(--uhuu-color-blue-400) 30%, transparent)}}[data-uhuu-interactive] .uhuu\\:focus\\:ring-blue-500:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-blue-500:focus{--uhuu-tw-ring-color:var(--uhuu-color-blue-500)}[data-uhuu-interactive] .uhuu\\:focus\\:ring-gray-200:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-gray-200:focus{--uhuu-tw-ring-color:var(--uhuu-color-gray-200)}[data-uhuu-interactive] .uhuu\\:focus\\:ring-gray-400:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-gray-400:focus{--uhuu-tw-ring-color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:focus\\:ring-offset-0:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-offset-0:focus{--uhuu-tw-ring-offset-width:0px;--uhuu-tw-ring-offset-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 var(--uhuu-tw-ring-offset-width) var(--uhuu-tw-ring-offset-color)}[data-uhuu-interactive] .uhuu\\:focus\\:ring-offset-2:focus,[data-uhuu-portal] .uhuu\\:focus\\:ring-offset-2:focus{--uhuu-tw-ring-offset-width:2px;--uhuu-tw-ring-offset-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 var(--uhuu-tw-ring-offset-width) var(--uhuu-tw-ring-offset-color)}[data-uhuu-interactive] .uhuu\\:focus\\:outline-none:focus,[data-uhuu-portal] .uhuu\\:focus\\:outline-none:focus{--uhuu-tw-outline-style:none;outline-style:none}[data-uhuu-interactive] .uhuu\\:focus-visible\\:ring-2:focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:ring-2:focus-visible{--uhuu-tw-ring-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 calc(2px + var(--uhuu-tw-ring-offset-width)) var(--uhuu-tw-ring-color,currentcolor);box-shadow:var(--uhuu-tw-inset-shadow), var(--uhuu-tw-inset-ring-shadow), var(--uhuu-tw-ring-offset-shadow), var(--uhuu-tw-ring-shadow), var(--uhuu-tw-shadow)}[data-uhuu-interactive] .uhuu\\:focus-visible\\:ring-gray-200:focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:ring-gray-200:focus-visible{--uhuu-tw-ring-color:var(--uhuu-color-gray-200)}[data-uhuu-interactive] .uhuu\\:focus-visible\\:ring-gray-400:focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:ring-gray-400:focus-visible{--uhuu-tw-ring-color:var(--uhuu-color-gray-400)}[data-uhuu-interactive] .uhuu\\:focus-visible\\:ring-gray-900:focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:ring-gray-900:focus-visible{--uhuu-tw-ring-color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:focus-visible\\:ring-offset-2:focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:ring-offset-2:focus-visible{--uhuu-tw-ring-offset-width:2px;--uhuu-tw-ring-offset-shadow:var(--uhuu-tw-ring-inset,) 0 0 0 var(--uhuu-tw-ring-offset-width) var(--uhuu-tw-ring-offset-color)}[data-uhuu-interactive] .uhuu\\:focus-visible\\:ring-offset-\\(--uhuu-shell-surface\\):focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:ring-offset-\\(--uhuu-shell-surface\\):focus-visible{--uhuu-tw-ring-offset-color:var(--uhuu-shell-surface)}[data-uhuu-interactive] .uhuu\\:focus-visible\\:outline-none:focus-visible,[data-uhuu-portal] .uhuu\\:focus-visible\\:outline-none:focus-visible{--uhuu-tw-outline-style:none;outline-style:none}[data-uhuu-interactive] .uhuu\\:active\\:cursor-grabbing:active,[data-uhuu-portal] .uhuu\\:active\\:cursor-grabbing:active{cursor:grabbing}[data-uhuu-interactive] .uhuu\\:disabled\\:pointer-events-none:disabled,[data-uhuu-portal] .uhuu\\:disabled\\:pointer-events-none:disabled{pointer-events:none}[data-uhuu-interactive] .uhuu\\:disabled\\:cursor-not-allowed:disabled,[data-uhuu-portal] .uhuu\\:disabled\\:cursor-not-allowed:disabled{cursor:not-allowed}[data-uhuu-interactive] .uhuu\\:disabled\\:opacity-40:disabled,[data-uhuu-portal] .uhuu\\:disabled\\:opacity-40:disabled{opacity:.4}[data-uhuu-interactive] .uhuu\\:disabled\\:opacity-50:disabled,[data-uhuu-portal] .uhuu\\:disabled\\:opacity-50:disabled{opacity:.5}[data-uhuu-interactive] .uhuu\\:data-\\[disabled\\]\\:pointer-events-none[data-disabled],[data-uhuu-portal] .uhuu\\:data-\\[disabled\\]\\:pointer-events-none[data-disabled]{pointer-events:none}[data-uhuu-interactive] .uhuu\\:data-\\[disabled\\]\\:opacity-50[data-disabled],[data-uhuu-portal] .uhuu\\:data-\\[disabled\\]\\:opacity-50[data-disabled]{opacity:.5}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=checked\\]\\:translate-x-4[data-state=checked],[data-uhuu-portal] .uhuu\\:data-\\[state\\=checked\\]\\:translate-x-4[data-state=checked]{--uhuu-tw-translate-x:calc(var(--uhuu-spacing) * 4);translate:var(--uhuu-tw-translate-x) var(--uhuu-tw-translate-y)}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=checked\\]\\:bg-\\(--uhuu-shell-on-inverse\\)[data-state=checked],[data-uhuu-portal] .uhuu\\:data-\\[state\\=checked\\]\\:bg-\\(--uhuu-shell-on-inverse\\)[data-state=checked]{background-color:var(--uhuu-shell-on-inverse)}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=checked\\]\\:bg-gray-900[data-state=checked],[data-uhuu-portal] .uhuu\\:data-\\[state\\=checked\\]\\:bg-gray-900[data-state=checked]{background-color:var(--uhuu-color-gray-900)}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=closed\\]\\:duration-300[data-state=closed],[data-uhuu-portal] .uhuu\\:data-\\[state\\=closed\\]\\:duration-300[data-state=closed]{--uhuu-tw-duration:.3s;transition-duration:.3s}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=open\\]\\:bg-gray-100[data-state=open],[data-uhuu-portal] .uhuu\\:data-\\[state\\=open\\]\\:bg-gray-100[data-state=open]{background-color:var(--uhuu-color-gray-100)}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=open\\]\\:duration-500[data-state=open],[data-uhuu-portal] .uhuu\\:data-\\[state\\=open\\]\\:duration-500[data-state=open]{--uhuu-tw-duration:.5s;transition-duration:.5s}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=unchecked\\]\\:translate-x-0[data-state=unchecked],[data-uhuu-portal] .uhuu\\:data-\\[state\\=unchecked\\]\\:translate-x-0[data-state=unchecked]{--uhuu-tw-translate-x:0px;translate:var(--uhuu-tw-translate-x) var(--uhuu-tw-translate-y)}[data-uhuu-interactive] .uhuu\\:data-\\[state\\=unchecked\\]\\:bg-gray-200[data-state=unchecked],[data-uhuu-portal] .uhuu\\:data-\\[state\\=unchecked\\]\\:bg-gray-200[data-state=unchecked]{background-color:var(--uhuu-color-gray-200)}@media (width>=40rem){[data-uhuu-interactive] .uhuu\\:sm\\:max-w-sm,[data-uhuu-portal] .uhuu\\:sm\\:max-w-sm{max-width:var(--uhuu-container-sm)}[data-uhuu-interactive] .uhuu\\:sm\\:flex-row,[data-uhuu-portal] .uhuu\\:sm\\:flex-row{flex-direction:row}[data-uhuu-interactive] .uhuu\\:sm\\:justify-end,[data-uhuu-portal] .uhuu\\:sm\\:justify-end{justify-content:flex-end}[data-uhuu-interactive] :where(.uhuu\\:sm\\:space-x-2>:not(:last-child)),[data-uhuu-portal] :where(.uhuu\\:sm\\:space-x-2>:not(:last-child)){--uhuu-tw-space-x-reverse:0;margin-inline-start:calc(calc(var(--uhuu-spacing) * 2) * var(--uhuu-tw-space-x-reverse));margin-inline-end:calc(calc(var(--uhuu-spacing) * 2) * calc(1 - var(--uhuu-tw-space-x-reverse)))}[data-uhuu-interactive] .uhuu\\:sm\\:text-left,[data-uhuu-portal] .uhuu\\:sm\\:text-left{text-align:left}}@media print{.uhuu\\:print\\:transform-none{transform:none}}[data-uhuu-interactive] .uhuu\\:\\[\\&\\>button\\]\\:hidden>button,[data-uhuu-portal] .uhuu\\:\\[\\&\\>button\\]\\:hidden>button{display:none}[data-uhuu-interactive] [data-uhuu-editor],[data-uhuu-portal] [data-uhuu-editor],[data-uhuu-interactive] [data-uhuu-editor] [data-uhuu-paper],[data-uhuu-portal] [data-uhuu-editor] [data-uhuu-paper]{--uhuu-spacing:.25rem;--uhuu-font-sans:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--uhuu-default-font-family:var(--uhuu-font-sans);--uhuu-color-white:#fff;--uhuu-color-black:#000;--uhuu-color-red-50:oklch(97.1% .013 17.38);--uhuu-color-red-600:oklch(57.7% .245 27.325);--uhuu-color-red-700:oklch(50.5% .213 27.518);--uhuu-color-blue-50:oklch(97% .014 254.604);--uhuu-color-blue-100:oklch(93.2% .032 255.585);--uhuu-color-blue-200:oklch(88.2% .059 254.128);--uhuu-color-blue-300:oklch(80.9% .105 251.813);--uhuu-color-blue-400:oklch(70.7% .165 254.624);--uhuu-color-blue-500:oklch(62.3% .214 259.815);--uhuu-color-blue-600:oklch(54.6% .245 262.881);--uhuu-color-blue-700:oklch(48.8% .243 264.376);--uhuu-color-emerald-100:oklch(95% .052 163.051);--uhuu-color-emerald-600:oklch(59.6% .145 163.225);--uhuu-color-gray-50:oklch(98.5% .002 247.839);--uhuu-color-gray-100:oklch(96.7% .003 264.542);--uhuu-color-gray-200:oklch(92.8% .006 264.531);--uhuu-color-gray-300:oklch(87.2% .01 258.338);--uhuu-color-gray-400:oklch(70.7% .022 261.325);--uhuu-color-gray-500:oklch(55.1% .027 264.364);--uhuu-color-gray-600:oklch(44.6% .03 256.802);--uhuu-color-gray-700:oklch(37.3% .034 259.733);--uhuu-color-gray-800:oklch(27.8% .033 256.848);--uhuu-color-gray-900:oklch(21% .034 264.665);--uhuu-color-gray-950:oklch(13% .028 261.692);--uhuu-container-sm:24rem;--uhuu-container-md:28rem;--uhuu-text-xs:.75rem;--uhuu-text-xs--line-height:calc(1 / .75);--uhuu-text-sm:.875rem;--uhuu-text-sm--line-height:calc(1.25 / .875);--uhuu-text-base:1rem;--uhuu-text-base--line-height:calc(1.5 / 1);--uhuu-text-lg:1.125rem;--uhuu-text-lg--line-height:calc(1.75 / 1.125);--uhuu-font-weight-normal:400;--uhuu-font-weight-medium:500;--uhuu-font-weight-semibold:600;--uhuu-font-weight-bold:700;--uhuu-radius-sm:.25rem;--uhuu-radius-md:.375rem;--uhuu-radius-lg:.5rem;--uhuu-radius-xl:.75rem;--uhuu-shadow-sm:0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;--uhuu-shadow-md:0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;--uhuu-shadow-lg:0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;--uhuu-shadow-xl:0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;--uhuu-shadow-2xl:0 25px 50px -12px #00000040;--uhuu-blur-sm:8px;--uhuu-blur-md:12px;box-sizing:border-box}[data-uhuu-interactive] [data-uhuu-editor] *,[data-uhuu-portal] [data-uhuu-editor] *,[data-uhuu-interactive] [data-uhuu-editor] :before,[data-uhuu-portal] [data-uhuu-editor] :before,[data-uhuu-interactive] [data-uhuu-editor] :after,[data-uhuu-portal] [data-uhuu-editor] :after{box-sizing:border-box}[data-uhuu-interactive] .uhuu-page-options-trigger,[data-uhuu-portal] .uhuu-page-options-trigger{height:calc(var(--uhuu-spacing) * 7);width:calc(var(--uhuu-spacing) * 7);justify-content:center;align-items:center;gap:var(--uhuu-spacing);border-radius:var(--uhuu-radius-lg);background-color:var(--uhuu-color-gray-100);padding-inline:var(--uhuu-spacing);padding-block:calc(var(--uhuu-spacing) * .5);color:var(--uhuu-color-gray-600);display:flex}@media (hover:hover){[data-uhuu-interactive] .uhuu-page-options-trigger:hover,[data-uhuu-portal] .uhuu-page-options-trigger:hover{background-color:var(--uhuu-color-gray-100)}@supports (color:color-mix(in lab, red, red)){[data-uhuu-interactive] .uhuu-page-options-trigger:hover,[data-uhuu-portal] .uhuu-page-options-trigger:hover{background-color:color-mix(in oklab, var(--uhuu-color-gray-100) 80%, transparent)}}[data-uhuu-interactive] .uhuu-page-options-trigger:hover,[data-uhuu-portal] .uhuu-page-options-trigger:hover{color:var(--uhuu-color-gray-800)}}[data-uhuu-interactive] .uhuu-page-number,[data-uhuu-portal] .uhuu-page-number{font-size:var(--uhuu-text-sm);line-height:var(--uhuu-tw-leading,var(--uhuu-text-sm--line-height));color:var(--uhuu-color-gray-500)}[data-uhuu-interactive] .uhuu-page-order-grid-cols,[data-uhuu-portal] .uhuu-page-order-grid-cols{gap:calc(var(--uhuu-spacing) * 6);grid-template-columns:repeat(2,minmax(0,1fr));display:grid}@media (width>=48rem){[data-uhuu-interactive] .uhuu-page-order-grid-cols,[data-uhuu-portal] .uhuu-page-order-grid-cols{grid-template-columns:repeat(3,minmax(0,1fr))}}@media (width>=64rem){[data-uhuu-interactive] .uhuu-page-order-grid-cols,[data-uhuu-portal] .uhuu-page-order-grid-cols{grid-template-columns:repeat(4,minmax(0,1fr))}}@media (width>=80rem){[data-uhuu-interactive] .uhuu-page-order-grid-cols,[data-uhuu-portal] .uhuu-page-order-grid-cols{grid-template-columns:repeat(6,minmax(0,1fr))}}[data-uhuu-interactive] .uhuu-page-drag-drop-grid-cols,[data-uhuu-portal] .uhuu-page-drag-drop-grid-cols{gap:calc(var(--uhuu-spacing) * 4);grid-template-columns:repeat(2,minmax(0,1fr));display:grid}@media (width>=48rem){[data-uhuu-interactive] .uhuu-page-drag-drop-grid-cols,[data-uhuu-portal] .uhuu-page-drag-drop-grid-cols{grid-template-columns:repeat(3,minmax(0,1fr))}}@media (width>=64rem){[data-uhuu-interactive] .uhuu-page-drag-drop-grid-cols,[data-uhuu-portal] .uhuu-page-drag-drop-grid-cols{grid-template-columns:repeat(4,minmax(0,1fr))}}@media (width>=80rem){[data-uhuu-interactive] .uhuu-page-drag-drop-grid-cols,[data-uhuu-portal] .uhuu-page-drag-drop-grid-cols{grid-template-columns:repeat(6,minmax(0,1fr))}}@media (width>=96rem){[data-uhuu-interactive] .uhuu-page-drag-drop-grid-cols,[data-uhuu-portal] .uhuu-page-drag-drop-grid-cols{grid-template-columns:repeat(6,minmax(0,1fr))}}@media screen{body{background-color:var(--uhuu-color-neutral-50)}}@property --uhuu-tw-translate-x{syntax:"*";inherits:false;initial-value:0}@property --uhuu-tw-translate-y{syntax:"*";inherits:false;initial-value:0}@property --uhuu-tw-translate-z{syntax:"*";inherits:false;initial-value:0}@property --uhuu-tw-scale-x{syntax:"*";inherits:false;initial-value:1}@property --uhuu-tw-scale-y{syntax:"*";inherits:false;initial-value:1}@property --uhuu-tw-scale-z{syntax:"*";inherits:false;initial-value:1}@property --uhuu-tw-space-y-reverse{syntax:"*";inherits:false;initial-value:0}@property --uhuu-tw-border-style{syntax:"*";inherits:false;initial-value:solid}@property --uhuu-tw-leading{syntax:"*";inherits:false}@property --uhuu-tw-font-weight{syntax:"*";inherits:false}@property --uhuu-tw-tracking{syntax:"*";inherits:false}@property --uhuu-tw-ordinal{syntax:"*";inherits:false}@property --uhuu-tw-slashed-zero{syntax:"*";inherits:false}@property --uhuu-tw-numeric-figure{syntax:"*";inherits:false}@property --uhuu-tw-numeric-spacing{syntax:"*";inherits:false}@property --uhuu-tw-numeric-fraction{syntax:"*";inherits:false}@property --uhuu-tw-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --uhuu-tw-shadow-color{syntax:"*";inherits:false}@property --uhuu-tw-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --uhuu-tw-inset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --uhuu-tw-inset-shadow-color{syntax:"*";inherits:false}@property --uhuu-tw-inset-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --uhuu-tw-ring-color{syntax:"*";inherits:false}@property --uhuu-tw-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --uhuu-tw-inset-ring-color{syntax:"*";inherits:false}@property --uhuu-tw-inset-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --uhuu-tw-ring-inset{syntax:"*";inherits:false}@property --uhuu-tw-ring-offset-width{syntax:"<length>";inherits:false;initial-value:0}@property --uhuu-tw-ring-offset-color{syntax:"*";inherits:false;initial-value:#fff}@property --uhuu-tw-ring-offset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --uhuu-tw-outline-style{syntax:"*";inherits:false;initial-value:solid}@property --uhuu-tw-blur{syntax:"*";inherits:false}@property --uhuu-tw-brightness{syntax:"*";inherits:false}@property --uhuu-tw-contrast{syntax:"*";inherits:false}@property --uhuu-tw-grayscale{syntax:"*";inherits:false}@property --uhuu-tw-hue-rotate{syntax:"*";inherits:false}@property --uhuu-tw-invert{syntax:"*";inherits:false}@property --uhuu-tw-opacity{syntax:"*";inherits:false}@property --uhuu-tw-saturate{syntax:"*";inherits:false}@property --uhuu-tw-sepia{syntax:"*";inherits:false}@property --uhuu-tw-drop-shadow{syntax:"*";inherits:false}@property --uhuu-tw-drop-shadow-color{syntax:"*";inherits:false}@property --uhuu-tw-drop-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --uhuu-tw-drop-shadow-size{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-blur{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-brightness{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-contrast{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-grayscale{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-hue-rotate{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-invert{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-opacity{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-saturate{syntax:"*";inherits:false}@property --uhuu-tw-backdrop-sepia{syntax:"*";inherits:false}@property --uhuu-tw-duration{syntax:"*";inherits:false}@property --uhuu-tw-ease{syntax:"*";inherits:false}@property --uhuu-tw-space-x-reverse{syntax:"*";inherits:false;initial-value:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:is([data-uhuu-chrome],[data-uhuu-chrome] *),:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)):after,:is([data-uhuu-chrome],[data-uhuu-chrome] *):after,:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)):before,:is([data-uhuu-chrome],[data-uhuu-chrome] *):before,:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::backdrop,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::file-selector-button,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),html:is([data-uhuu-chrome],[data-uhuu-chrome] *),:host:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:host:is([data-uhuu-chrome],[data-uhuu-chrome] *){-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;line-height:1.5;font-family:var(--default-font-family,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),hr:is([data-uhuu-chrome],[data-uhuu-chrome] *){height:0;color:inherit;border-top-width:1px}abbr:where([title]):is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),abbr:where([title]):is([data-uhuu-chrome],[data-uhuu-chrome] *){text-decoration:underline dotted}h1:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),h1:is([data-uhuu-chrome],[data-uhuu-chrome] *),h2:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),h2:is([data-uhuu-chrome],[data-uhuu-chrome] *),h3:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),h3:is([data-uhuu-chrome],[data-uhuu-chrome] *),h4:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),h4:is([data-uhuu-chrome],[data-uhuu-chrome] *),h5:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),h5:is([data-uhuu-chrome],[data-uhuu-chrome] *),h6:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),h6:is([data-uhuu-chrome],[data-uhuu-chrome] *){font-size:inherit;font-weight:inherit}a:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),a:is([data-uhuu-chrome],[data-uhuu-chrome] *){color:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),b:is([data-uhuu-chrome],[data-uhuu-chrome] *),strong:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),strong:is([data-uhuu-chrome],[data-uhuu-chrome] *){font-weight:bolder}code:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),code:is([data-uhuu-chrome],[data-uhuu-chrome] *),kbd:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),kbd:is([data-uhuu-chrome],[data-uhuu-chrome] *),samp:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),samp:is([data-uhuu-chrome],[data-uhuu-chrome] *),pre:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),pre:is([data-uhuu-chrome],[data-uhuu-chrome] *){font-family:var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),small:is([data-uhuu-chrome],[data-uhuu-chrome] *){font-size:80%}sub:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),sub:is([data-uhuu-chrome],[data-uhuu-chrome] *),sup:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),sup:is([data-uhuu-chrome],[data-uhuu-chrome] *){vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),sub:is([data-uhuu-chrome],[data-uhuu-chrome] *){bottom:-.25em}sup:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),sup:is([data-uhuu-chrome],[data-uhuu-chrome] *){top:-.5em}table:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),table:is([data-uhuu-chrome],[data-uhuu-chrome] *){text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring:where(:not(iframe)):is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:-moz-focusring:where(:not(iframe)):is([data-uhuu-chrome],[data-uhuu-chrome] *){outline:auto}progress:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),progress:is([data-uhuu-chrome],[data-uhuu-chrome] *){vertical-align:baseline}summary:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),summary:is([data-uhuu-chrome],[data-uhuu-chrome] *){display:list-item}ol:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),ol:is([data-uhuu-chrome],[data-uhuu-chrome] *),ul:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),ul:is([data-uhuu-chrome],[data-uhuu-chrome] *),menu:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),menu:is([data-uhuu-chrome],[data-uhuu-chrome] *){list-style:none}img:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),img:is([data-uhuu-chrome],[data-uhuu-chrome] *),svg:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),svg:is([data-uhuu-chrome],[data-uhuu-chrome] *),video:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),video:is([data-uhuu-chrome],[data-uhuu-chrome] *),canvas:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),canvas:is([data-uhuu-chrome],[data-uhuu-chrome] *),audio:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),audio:is([data-uhuu-chrome],[data-uhuu-chrome] *),iframe:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),iframe:is([data-uhuu-chrome],[data-uhuu-chrome] *),embed:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),embed:is([data-uhuu-chrome],[data-uhuu-chrome] *),object:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),object:is([data-uhuu-chrome],[data-uhuu-chrome] *){vertical-align:middle;display:block}img:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),img:is([data-uhuu-chrome],[data-uhuu-chrome] *),video:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),video:is([data-uhuu-chrome],[data-uhuu-chrome] *){max-width:100%;height:auto}button:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),button:is([data-uhuu-chrome],[data-uhuu-chrome] *),input:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),input:is([data-uhuu-chrome],[data-uhuu-chrome] *),select:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),select:is([data-uhuu-chrome],[data-uhuu-chrome] *),optgroup:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),optgroup:is([data-uhuu-chrome],[data-uhuu-chrome] *),textarea:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),textarea:is([data-uhuu-chrome],[data-uhuu-chrome] *){font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::file-selector-button,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:where(select:is([multiple],[size])) optgroup:is([data-uhuu-chrome],[data-uhuu-chrome] *){font-weight:bolder}:where(select:is([multiple],[size])) optgroup option:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:where(select:is([multiple],[size])) optgroup option:is([data-uhuu-chrome],[data-uhuu-chrome] *){padding-inline-start:20px}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::file-selector-button,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::file-selector-button{margin-inline-end:4px}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-moz-placeholder,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-moz-placeholder{opacity:1}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::placeholder,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-moz-placeholder,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-moz-placeholder{color:currentColor}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::placeholder,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::placeholder{color:currentColor}@supports (color:color-mix(in lab, red, red)){:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-moz-placeholder,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-moz-placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::placeholder,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}}}textarea:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),textarea:is([data-uhuu-chrome],[data-uhuu-chrome] *){resize:vertical}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-search-decoration,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-search-decoration{-webkit-appearance:none}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-date-and-time-value,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit{display:inline-flex}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-fields-wrapper,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-fields-wrapper{padding:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-year-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-year-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-month-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-month-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-day-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-day-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-hour-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-hour-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-minute-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-minute-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-second-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-second-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-millisecond-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-millisecond-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-datetime-edit-meridiem-field,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-datetime-edit-meridiem-field{padding-block:0}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-calendar-picker-indicator,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:-moz-ui-invalid:is([data-uhuu-chrome],[data-uhuu-chrome] *){box-shadow:none}button:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),button:is([data-uhuu-chrome],[data-uhuu-chrome] *),input:where([type=button],[type=reset],[type=submit]):is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),input:where([type=button],[type=reset],[type=submit]):is([data-uhuu-chrome],[data-uhuu-chrome] *){-webkit-appearance:button;-moz-appearance:button;appearance:button}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::file-selector-button,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::file-selector-button{-webkit-appearance:button;-moz-appearance:button;appearance:button}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-inner-spin-button,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-inner-spin-button{height:auto}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *))::-webkit-outer-spin-button,:is([data-uhuu-chrome],[data-uhuu-chrome] *)::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])):is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),[hidden]:where(:not([hidden=until-found])):is([data-uhuu-chrome],[data-uhuu-chrome] *){display:none!important}:is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:is([data-uhuu-chrome],[data-uhuu-chrome] *){font-family:inherit;font-size:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit}:where([data-uhuu-editor],[data-uhuu-chrome]):not(:where([data-uhuu-editor] *,[data-uhuu-chrome] *)):is([data-uhuu-editor],[data-uhuu-editor] *,[data-uhuu-portal] *):not(:where([data-uhuu-paper],[data-uhuu-paper] *)),:where([data-uhuu-editor],[data-uhuu-chrome]):not(:where([data-uhuu-editor] *,[data-uhuu-chrome] *)):is([data-uhuu-chrome],[data-uhuu-chrome] *){font-family:var(--uhuu-font-sans,ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-variant:normal;font-feature-settings:normal;font-variation-settings:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;text-indent:0;text-align:start;text-shadow:none;color:#000;font-size:1rem;font-style:normal;font-weight:400;font-stretch:100%;line-height:1.5}@layer base.uhuu-document{*,:after,:before,::backdrop{box-sizing:border-box;border:0 solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border:0 solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;line-height:1.5;font-family:var(--default-font-family,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--default-font-feature-settings,normal);font-variation-settings:var(--default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--default-mono-font-feature-settings,normal);font-variation-settings:var(--default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring:where(:not(iframe)){outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::-moz-placeholder{opacity:1}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::-moz-placeholder{color:currentColor}::placeholder{color:currentColor}@supports (color:color-mix(in lab, red, red)){::-moz-placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}::placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){-webkit-appearance:button;-moz-appearance:button;appearance:button}::file-selector-button{-webkit-appearance:button;-moz-appearance:button;appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}[data-uhuu-reset=none]:not(#\\#),[data-uhuu-reset=none] :not(#\\#),[data-uhuu-reset=none]:not(#\\#):before,[data-uhuu-reset=none] :not(#\\#):before,[data-uhuu-reset=none]:not(#\\#):after,[data-uhuu-reset=none] :not(#\\#):after{all:revert-layer}}:root{--uhuu-shell-surface:#fff;--uhuu-shell-on-inverse:#fff;--uhuu-thumbnail-caption:#0006;--uhuu-thumbnail-border:oklch(92.8% .006 264.531);--uhuu-thumbnail-border-strong:oklch(87.2% .01 258.338)}@media screen{html[data-uhuu-appearance=dark] [data-uhuu-editor]{color-scheme:dark;color:oklch(98.5% 0 0);--uhuu-shell-surface:oklch(27.4% .006 286.033);--uhuu-shell-on-inverse:oklch(21% .006 285.885);--uhuu-thumbnail-caption:oklch(21% .006 285.885/.92);--uhuu-thumbnail-border:oklch(37% .013 285.805);--uhuu-thumbnail-border-strong:oklch(44.2% .017 285.786);--uhuu-color-gray-50:oklch(30% .006 286);--uhuu-color-gray-100:oklch(33% .007 286);--uhuu-color-gray-200:oklch(100% 0 0/.1);--uhuu-color-gray-300:oklch(100% 0 0/.15);--uhuu-color-gray-400:oklch(66% .015 286);--uhuu-color-gray-500:oklch(70.5% .015 286.067);--uhuu-color-gray-600:oklch(87.1% .006 286.286);--uhuu-color-gray-700:oklch(92% .004 286.32);--uhuu-color-gray-800:oklch(96.7% .001 286.375);--uhuu-color-gray-900:oklch(98.5% 0 0);--uhuu-color-gray-950:oklch(98.5% 0 0);--uhuu-color-blue-50:oklch(62.3% .214 259.815/.15);--uhuu-color-blue-100:oklch(62.3% .214 259.815/.25);--uhuu-color-blue-200:oklch(62.3% .214 259.815/.35);--uhuu-color-red-50:oklch(70.4% .191 22.216/.15);--uhuu-color-red-600:oklch(70.4% .191 22.216);--uhuu-color-red-700:oklch(80.8% .114 19.571);--uhuu-color-emerald-100:oklch(76.5% .177 163.223/.15);--uhuu-color-emerald-600:oklch(76.5% .177 163.223);--uhuu-shadow-sm:0 1px 3px 0 #0006, 0 1px 2px -1px #0006;--uhuu-shadow-md:0 4px 6px -1px #0006, 0 2px 4px -2px #0006;--uhuu-shadow-lg:0 10px 15px -3px #00000080, 0 4px 6px -4px #00000080}html[data-uhuu-appearance=dark] [data-uhuu-editor] [data-uhuu-paper]{color-scheme:light;color:initial;scrollbar-color:auto;--uhuu-shell-surface:#fff;--uhuu-shell-on-inverse:#fff}@layer base{html[data-uhuu-appearance=dark] [data-uhuu-editor],html[data-uhuu-appearance=dark] [data-uhuu-editor] :not([data-uhuu-paper],[data-uhuu-paper] *){border-color:oklch(100% 0 0/.1)}}html[data-uhuu-appearance=dark] body{background-color:oklch(24.5% .004 286)}html[data-uhuu-appearance=dark],html[data-uhuu-appearance=dark] .uhuu-zoom-pane{scrollbar-color:oklch(37% .013 285.805) transparent}html[data-uhuu-appearance=dark] [data-section-content]{scrollbar-color:auto}}:root{--uhuu-page-width:210mm;--uhuu-page-height:297mm;--uhuu-page-bleed:0mm;--uhuu-page-background:var(--background,#fff);--uhuu-outline-color:var(--outline-color,#d1d5db);--uhuu-sheet-width:calc(var(--uhuu-page-width) + 2 * var(--uhuu-page-bleed));--uhuu-sheet-height:calc(var(--uhuu-page-height) + 2 * var(--uhuu-page-bleed));--uhuu-spine-width:0mm;--uhuu-glue-width:0mm;--uhuu-paper-color:#fff}@page{size:var(--uhuu-sheet-width) var(--uhuu-sheet-height);margin:0}@media print{body>section[aria-live],body>next-route-announcer{display:none!important}}.uhuu-page-break-inside-avoid{page-break-inside:avoid;break-inside:avoid-page}.uhuu-page-break-after{page-break-after:always;break-inside:avoid-page;-moz-column-break-after:page;break-after:page}.uhuu-page-break-before{page-break-before:always;break-inside:avoid-page;-moz-column-break-before:page;break-before:page}html,body{-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;text-size-adjust:100%;-webkit-print-color-adjust:exact;print-color-adjust:exact}.uhuu-page-sheet{width:calc(var(--uhuu-page-width) + 2 * var(--uhuu-page-bleed));height:calc(var(--uhuu-page-height) + 2 * var(--uhuu-page-bleed));min-width:calc(var(--uhuu-page-width) + 2 * var(--uhuu-page-bleed));padding:var(--uhuu-page-bleed);background-color:var(--uhuu-page-background);box-sizing:border-box;break-inside:avoid-page;page-break-inside:avoid;margin-inline:auto;position:relative;overflow:hidden}.uhuu-page-sheet.uhuu-cover-spread{width:var(--uhuu-sheet-width);height:var(--uhuu-sheet-height);min-width:var(--uhuu-sheet-width);flex-direction:row;align-items:stretch;padding:0;display:flex}.uhuu-spread-panel{width:calc(var(--uhuu-page-width) + var(--uhuu-page-bleed));flex:none;height:100%;position:relative;overflow:hidden}.uhuu-cover-spread .uhuu-page-sheet--panel{box-shadow:none;outline:none;margin:0}.uhuu-spread-panel[data-side=right] .uhuu-page-sheet--panel{margin-left:calc(-1 * var(--uhuu-page-bleed))}.uhuu-spread-spine{width:var(--uhuu-spine-width);flex:none;height:100%;position:relative;overflow:hidden}.uhuu-spread-spine[data-blank=true]{background-color:var(--uhuu-paper-color)}.uhuu-glue-zone{width:var(--uhuu-glue-width);background-color:var(--uhuu-paper-color);pointer-events:none;z-index:2;position:absolute;top:0;bottom:0}.uhuu-glue-zone[data-side=left]{left:calc(var(--uhuu-page-bleed) + var(--uhuu-page-width) - var(--uhuu-glue-width))}.uhuu-glue-zone[data-side=right]{left:calc(var(--uhuu-page-bleed) + var(--uhuu-page-width) + var(--uhuu-spine-width))}@media print{.uhuu-screen-only{display:none!important}}@media screen{.uhuu-bleed-area{top:var(--uhuu-page-bleed);left:var(--uhuu-page-bleed);right:var(--uhuu-page-bleed);bottom:var(--uhuu-page-bleed);pointer-events:none;outline-style:var(--uhuu-tw-outline-style);outline-width:1px;outline-color:var(--uhuu-outline-color);--uhuu-tw-outline-style:dashed;outline-style:dashed;position:absolute}.uhuu-page-sheet{margin-bottom:calc(var(--spacing,.25rem) * 6);outline-style:var(--uhuu-tw-outline-style);outline-width:1px;outline-color:var(--uhuu-outline-color);flex-shrink:0}.uhuu-spread-guide{pointer-events:none;outline-style:var(--uhuu-tw-outline-style);outline-offset:calc(1px * -1);outline-width:1px;outline-color:var(--uhuu-outline-color);--uhuu-tw-outline-style:dashed;background-image:repeating-linear-gradient(45deg,#0000001f 0 1px,#0000 1px 5px);outline-style:dashed;position:absolute;inset:0}.uhuu-spread-guide:after{content:attr(data-label);white-space:nowrap;letter-spacing:.04em;color:#6b7280;background:#ffffffd9;border-radius:2px;padding:1px 4px;font:500 7pt/1 ui-sans-serif,system-ui,sans-serif;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)rotate(-90deg)}.uhuu-pagination.horizontal_pages{justify-content:center;gap:calc(var(--spacing,.25rem) * 6);display:flex;overflow-x:auto;width:fit-content!important;min-width:fit-content!important}.uhuu-pagination.two_pages{width:calc(var(--uhuu-page-width) * 2 + 4 * var(--uhuu-page-bleed));flex-wrap:wrap;justify-content:center;margin:0 auto;display:flex}.uhuu-pagination.two_pages .uhuu-page-sheet{flex-shrink:0}.uhuu-pagination.two_pages .uhuu-page-sheet:first-child{margin-left:calc(var(--uhuu-page-width) + 2 * var(--uhuu-page-bleed))}.uhuu-pagination.two_pages .uhuu-page-sheet:nth-child(odd):not(:first-child){margin-right:0}.uhuu-pagination.two_pages .uhuu-page-sheet:nth-child(2n):not(:first-child){margin-left:0}}.uhuu-image-container{position:absolute;overflow:hidden}.uhuu-image-inner{width:100%;height:100%;position:relative;overflow:hidden}.uhuu-image-inner .uhuu-image-geometry{width:100%;max-width:none;height:100%;max-height:none}.uhuu-image-inner .uhuu-image-geometry.object-cover{-o-object-fit:cover;object-fit:cover}.uhuu-image-inner .uhuu-image-geometry.object-contain{-o-object-fit:contain;object-fit:contain}.uhuu-image-inner .uhuu-image-geometry.object-fill{-o-object-fit:fill;object-fit:fill}.uhuu-image-inner .uhuu-image-geometry.object-center{-o-object-position:center;object-position:center}.uhuu-image-inner .uhuu-image-geometry.object-top{-o-object-position:top;object-position:top}.uhuu-image-inner .uhuu-image-geometry.object-bottom{-o-object-position:bottom;object-position:bottom}.uhuu-image-inner .uhuu-image-geometry.object-left{-o-object-position:left;object-position:left}.uhuu-image-inner .uhuu-image-geometry.object-right{-o-object-position:right;object-position:right}.uhuu-image-inner .uhuu-image-geometry.object-left-top{-o-object-position:left top;object-position:left top}.uhuu-image-inner .uhuu-image-geometry.object-right-top{-o-object-position:right top;object-position:right top}.uhuu-image-inner .uhuu-image-geometry.object-left-bottom{-o-object-position:left bottom;object-position:left bottom}.uhuu-image-inner .uhuu-image-geometry.object-right-bottom{-o-object-position:right bottom;object-position:right bottom}@media screen{[data-uhuu-interactive] .uhuu-zoom-pane,[data-uhuu-portal] .uhuu-zoom-pane{overscroll-behavior:contain;max-height:100%;overflow:auto}[data-uhuu-interactive] .uhuu-zoom-pane-content,[data-uhuu-portal] .uhuu-zoom-pane-content{overflow-anchor:none;width:max-content;margin:auto;padding:0 24px 64px}}@media print{.uhuu-zoom-pane{height:auto;max-height:none;overflow:visible}.uhuu-zoom-pane-content{width:auto;padding:0}}@media screen{[data-uhuu-interactive] .group_two_pages,[data-uhuu-portal] .group_two_pages{flex-direction:column;align-items:center;gap:24px;width:max-content;margin:0 auto;display:flex}[data-uhuu-interactive] .group_two_pages>.two-pages-pair,[data-uhuu-portal] .group_two_pages>.two-pages-pair{width:var(--uhuu-group-pair-width,-moz-max-content);width:var(--uhuu-group-pair-width,max-content);grid-template-columns:1fr 1fr;gap:0;margin:0 auto;display:grid}[data-uhuu-interactive] .group_two_pages>.two-pages-pair>[class*=group\\/section],[data-uhuu-portal] .group_two_pages>.two-pages-pair>[class*=group\\/section]{flex-direction:column;flex-shrink:0;display:flex}[data-uhuu-interactive] .group_two_pages>.two-pages-pair--spread>[class*=group\\/section]:first-child,[data-uhuu-portal] .group_two_pages>.two-pages-pair--spread>[class*=group\\/section]:first-child{justify-self:end}[data-uhuu-interactive] .group_two_pages>.two-pages-pair--spread>[class*=group\\/section]:last-child,[data-uhuu-portal] .group_two_pages>.two-pages-pair--spread>[class*=group\\/section]:last-child{justify-self:start}[data-uhuu-interactive] .group_two_pages>.two-pages-pair--right>[class*=group\\/section],[data-uhuu-portal] .group_two_pages>.two-pages-pair--right>[class*=group\\/section]{grid-column:2;justify-self:start}[data-uhuu-interactive] .group_two_pages>.two-pages-pair--left>[class*=group\\/section],[data-uhuu-portal] .group_two_pages>.two-pages-pair--left>[class*=group\\/section]{grid-column:1;justify-self:end}}
 /*$vite$:1*/`,{styleId:`uhuu-components-styles`})})();import * as e from "react";
-import t, { cloneElement as n, createContext as r, createElement as i, forwardRef as a, memo as o, useCallback as s, useContext as c, useEffect as l, useLayoutEffect as u, useMemo as d, useReducer as f, useRef as p, useState as m, useSyncExternalStore as h } from "react";
-import { Fragment as g, jsx as _, jsxs as v } from "react/jsx-runtime";
-import * as y from "react-dom";
-import { createPortal as b, flushSync as x, unstable_batchedUpdates as S } from "react-dom";
+import t, { cloneElement as n, createContext as r, createElement as i, forwardRef as a, memo as o, useCallback as s, useContext as c, useEffect as l, useId as u, useLayoutEffect as d, useMemo as f, useReducer as p, useRef as m, useState as h, useSyncExternalStore as g } from "react";
+import { Fragment as _, jsx as v, jsxs as y } from "react/jsx-runtime";
+import * as b from "react-dom";
+import { createPortal as x, flushSync as S, unstable_batchedUpdates as C } from "react-dom";
 //#region \0rolldown/runtime.js
-var C = Object.defineProperty, w = (e, t) => {
+var w = Object.defineProperty, T = (e, t) => {
 	let n = {};
-	for (var r in e) C(n, r, {
+	for (var r in e) w(n, r, {
 		get: e[r],
 		enumerable: !0
 	});
-	return t || C(n, Symbol.toStringTag, { value: "Module" }), n;
-}, T = class {
+	return t || w(n, Symbol.toStringTag, { value: "Module" }), n;
+}, E = class {
 	static setupPageStyles(e) {
 		if (!e || typeof document > "u") return;
 		let t = document.createElement("link");
@@ -22,48 +22,48 @@ var C = Object.defineProperty, w = (e, t) => {
 	static removePageStyles(e) {
 		e && typeof document < "u" && document?.head.removeChild(e);
 	}
-}, E = 400;
-function D(e) {
+}, D = 400;
+function O(e) {
 	let t = typeof e == "string" && e.trim() !== "" ? Number(e) : e;
 	return typeof t == "number" && Number.isFinite(t) ? t : null;
 }
-function O(e) {
+function k(e) {
 	return Math.round(e * 1e4) / 1e4;
 }
-function k(e) {
+function A(e) {
 	if (!e || typeof e != "object" || e.type === "saddle") return null;
-	let t = D(e.spine);
+	let t = O(e.spine);
 	if (t === null || t <= 0) return null;
-	let n = D(e.glue);
+	let n = O(e.glue);
 	return {
 		type: "perfect",
-		spine: O(t),
-		glue: n === null || n < 0 ? 0 : O(n)
-	};
-}
-function A(e = {}) {
-	let t = D(e.width), n = D(e.height);
-	if (t === null || n === null || t <= 0 || n <= 0) return null;
-	let r = D(e.bleed);
-	return {
-		width: O(t),
-		height: O(n),
-		bleed: r === null ? 0 : O(Math.min(Math.max(r, 0), E))
+		spine: k(t),
+		glue: n === null || n < 0 ? 0 : k(n)
 	};
 }
 function j(e = {}) {
-	let t = A(e);
-	if (!t) return null;
-	let n = k(e.binding), r = n ? t.width * 2 + n.spine : t.width, i = t.height;
+	let t = O(e.width), n = O(e.height);
+	if (t === null || n === null || t <= 0 || n <= 0) return null;
+	let r = O(e.bleed);
 	return {
-		trimWidth: O(r),
-		trimHeight: O(i),
-		width: O(r + t.bleed * 2),
-		height: O(i + t.bleed * 2),
+		width: k(t),
+		height: k(n),
+		bleed: r === null ? 0 : k(Math.min(Math.max(r, 0), D))
+	};
+}
+function M(e = {}) {
+	let t = j(e);
+	if (!t) return null;
+	let n = A(e.binding), r = n ? t.width * 2 + n.spine : t.width, i = t.height;
+	return {
+		trimWidth: k(r),
+		trimHeight: k(i),
+		width: k(r + t.bleed * 2),
+		height: k(i + t.bleed * 2),
 		spread: !!n
 	};
 }
-function M(e) {
+function N(e) {
 	return Array.isArray(e) ? e.length === 2 ? [{
 		sheet: "outer",
 		left: e[1],
@@ -78,10 +78,10 @@ function M(e) {
 		right: e[2]
 	}] : null : null;
 }
-function N(e = {}) {
-	let t = A(e), n = k(e.binding), r = M(e.coverPages);
+function P(e = {}) {
+	let t = j(e), n = A(e.binding), r = N(e.coverPages);
 	if (!t || !n || !r) return null;
-	let { width: i, height: a, bleed: o } = t, { spine: s, glue: c } = n, l = O(a + o * 2), u = O(i * 2 + s), d = O(u + o * 2), f = O(o + i), p = O(o + i + s), m = (e) => ({
+	let { width: i, height: a, bleed: o } = t, { spine: s, glue: c } = n, l = k(a + o * 2), u = k(i * 2 + s), d = k(u + o * 2), f = k(o + i), p = k(o + i + s), m = (e) => ({
 		side: "left",
 		page: e,
 		trim: {
@@ -93,7 +93,7 @@ function N(e = {}) {
 		bleedBox: {
 			x: 0,
 			y: 0,
-			width: O(o + i),
+			width: k(o + i),
 			height: l
 		}
 	}), h = (e) => ({
@@ -108,13 +108,13 @@ function N(e = {}) {
 		bleedBox: {
 			x: p,
 			y: 0,
-			width: O(i + o),
+			width: k(i + o),
 			height: l
 		}
 	}), g = r.map((e, t) => {
 		let n = e.sheet === "inner", r = n && c > 0 ? [{
 			side: "left",
-			x: O(f - c),
+			x: k(f - c),
 			y: 0,
 			width: c,
 			height: l
@@ -151,10 +151,10 @@ function N(e = {}) {
 		sheets: g
 	};
 }
-function P(e = {}) {
-	let t = j(e);
+function F(e = {}) {
+	let t = M(e);
 	if (!t) return null;
-	let n = k(e.binding);
+	let n = A(e.binding);
 	return {
 		"--uhuu-sheet-width": `${t.width}mm`,
 		"--uhuu-sheet-height": `${t.height}mm`,
@@ -162,15 +162,15 @@ function P(e = {}) {
 		"--uhuu-glue-width": `${n ? n.glue : 0}mm`
 	};
 }
-function F(e = {}) {
-	let t = k(e.binding);
+function I(e = {}) {
+	let t = A(e.binding);
 	if (!t) return [];
-	let n = [], r = A(e), i = D(e.coverPageCount);
-	return r || n.push("binding.spine is set but the page format has no valid width/height; cover spread skipped."), i !== null && i !== 1 && i !== 2 && n.push(`binding.spine is set but pageFilter.coverPageCount is ${i}; a cover spread needs 1 (outer sheet only) or 2 (outer + inner). Rendering plain cover pages.`), Array.isArray(e.coverPages) && !M(e.coverPages) && n.push(`binding.spine is set but the cover filter produced ${e.coverPages.length} page(s); a cover spread needs 2 or 4. Rendering plain cover pages.`), r && t.glue > 0 && t.glue >= r.width / 2 && n.push(`binding.glue (${t.glue}mm) is at least half the page width (${r.width}mm); the glue mask would hide most of the inside covers.`), r && r.bleed > 0 && t.spine < r.bleed && n.push(`binding.spine (${t.spine}mm) is narrower than the bleed (${r.bleed}mm); panels are cut at the spine, so artwork will not run across it unless the spine component paints it.`), e.preview === "two_pages" && n.push("preview \"two_pages\" is ignored while a cover spread is active; each sheet is already a spread."), D(e.flowCoverPages) > 0 && n.push("a cover page has hasFlow: true; only its first chunk is placed on the cover sheet."), n;
+	let n = [], r = j(e), i = O(e.coverPageCount);
+	return r || n.push("binding.spine is set but the page format has no valid width/height; cover spread skipped."), i !== null && i !== 1 && i !== 2 && n.push(`binding.spine is set but pageFilter.coverPageCount is ${i}; a cover spread needs 1 (outer sheet only) or 2 (outer + inner). Rendering plain cover pages.`), Array.isArray(e.coverPages) && !N(e.coverPages) && n.push(`binding.spine is set but the cover filter produced ${e.coverPages.length} page(s); a cover spread needs 2 or 4. Rendering plain cover pages.`), r && t.glue > 0 && t.glue >= r.width / 2 && n.push(`binding.glue (${t.glue}mm) is at least half the page width (${r.width}mm); the glue mask would hide most of the inside covers.`), r && r.bleed > 0 && t.spine < r.bleed && n.push(`binding.spine (${t.spine}mm) is narrower than the bleed (${r.bleed}mm); panels are cut at the spine, so artwork will not run across it unless the spine component paints it.`), e.preview === "two_pages" && n.push("preview \"two_pages\" is ignored while a cover spread is active; each sheet is already a spread."), O(e.flowCoverPages) > 0 && n.push("a cover page has hasFlow: true; only its first chunk is placed on the cover sheet."), n;
 }
 //#endregion
 //#region src/uhuu/utility/PageSizeUtils.js
-var I = class {
+var L = class {
 	static PAGE_SIZES = {
 		A0: {
 			width: 841,
@@ -342,7 +342,7 @@ var I = class {
 			"--uhuu-page-width": `${t.width}mm`,
 			"--uhuu-page-height": `${t.height}mm`,
 			"--uhuu-page-bleed": `${n}mm`
-		}, i = P({
+		}, i = F({
 			...t,
 			bleed: n,
 			binding: e.binding
@@ -353,8 +353,7 @@ var I = class {
 		} : r;
 	}
 	static pageParams(e, t = {}) {
-		let { format: n, orientation: r, bleed: i, showBleed: a, printCssRaw: o, printCssUrl: s, preview: c, binding: l } = t, u = this.resolveDimensions(t), d = this.resolveCssVars(t);
-		if (typeof document < "u") for (let [e, t] of Object.entries(d)) document.documentElement.style.setProperty(e, t);
+		let { format: n, orientation: r, bleed: i, showBleed: a, printCssRaw: o, printCssUrl: s, preview: c, binding: l } = t, u = this.resolveDimensions(t);
 		return { page: {
 			paginationType: e,
 			format: n,
@@ -366,36 +365,36 @@ var I = class {
 			showBleed: a,
 			printCssRaw: o,
 			printCssUrl: s,
-			binding: k(l),
-			sheet: j({
+			binding: A(l),
+			sheet: M({
 				...u,
 				bleed: this.clampBleed(i),
 				binding: l
 			})
 		} };
 	}
-}, L = r(null), R = ({ config: e, children: t }) => /* @__PURE__ */ _(L.Provider, {
+}, R = r(null), ee = ({ config: e, children: t }) => /* @__PURE__ */ v(R.Provider, {
 	value: e,
 	children: t
-}), ee = "data-uhuu-pagination";
-function te(e, t) {
+}), te = "data-uhuu-pagination";
+function z(e, t) {
 	let n = Object.keys(t ?? {}).sort().map((e) => {
 		let n = t[e]?.signatures ?? {};
 		return `${e}=${Object.keys(n).sort().map((e) => `${e}:${n[e]}`).join(",")}`;
 	});
 	return `${e.join("|")}#${n.join(";")}`;
 }
-function z({ doc: e, settleMs: t = 50 } = {}) {
+function B({ doc: e, settleMs: t = 50 } = {}) {
 	let n = /* @__PURE__ */ new Map(), r = /* @__PURE__ */ new Set(), i = () => {
 		let t = (e ?? (typeof document > "u" ? void 0 : document))?.documentElement;
 		if (!t) return;
 		let i = [...n.values()].map((e) => e.state);
 		if (!i.length) {
-			t.removeAttribute(ee);
+			t.removeAttribute(te);
 			return;
 		}
 		let a = r.size || i.includes("measuring") ? "measuring" : i.includes("error") ? "error" : "settled";
-		t.getAttribute("data-uhuu-pagination") !== a && t.setAttribute(ee, a);
+		t.getAttribute("data-uhuu-pagination") !== a && t.setAttribute(te, a);
 	};
 	return {
 		hold({ label: e = "A pagination hold", waitMs: t } = {}) {
@@ -429,7 +428,7 @@ function z({ doc: e, settleMs: t = 50 } = {}) {
 			};
 			return {
 				commit(e, t) {
-					let n = [...e], r = te(n, t);
+					let n = [...e], r = z(n, t);
 					s && a?.signature === r || (a = {
 						pageKeys: new Set(n),
 						layouts: t,
@@ -476,34 +475,37 @@ function z({ doc: e, settleMs: t = 50 } = {}) {
 		}
 	};
 }
-var B = z(), ne = t.createContext(!1), re = typeof window > "u" ? l : u;
-function ie(e) {
-	let [t] = m(() => e ? B.createScope() : null);
-	re(() => (t?.commit([], {}), () => t?.suspend()), [t]), l(() => () => t?.unmount(), [t]);
+var ne = B(), re = t.createContext(!1), ie = typeof window > "u" ? l : d;
+function ae(e) {
+	let [t] = h(() => e ? ne.createScope() : null);
+	ie(() => (t?.commit([], {}), () => t?.suspend()), [t]), l(() => () => t?.unmount(), [t]);
 }
-var ae = ({ children: e, className: n, setup: r }) => {
-	let i = I.pageParams("static", r);
-	ie(!t.useContext(ne)), l(() => {
-		let e = T.setupPageStyles(i?.page?.printCssUrl);
+var oe = ({ children: e, className: n, setup: r }) => {
+	let i = L.pageParams("static", r), a = JSON.stringify(L.resolveCssVars(r));
+	ae(!t.useContext(re)), ie(() => {
+		let e = document.documentElement.style;
+		for (let [t, n] of Object.entries(JSON.parse(a))) e.getPropertyValue(t) !== n && e.setProperty(t, n);
+	}, [a]), l(() => {
+		let e = E.setupPageStyles(i?.page?.printCssUrl);
 		return () => {
-			e && T.removePageStyles(e);
+			e && E.removePageStyles(e);
 		};
-	}, [r, i?.page?.printCssUrl]);
-	let a = [
+	}, [i?.page?.printCssUrl]);
+	let o = [
 		"uhuu-pagination",
 		n,
 		i?.page?.preview
 	].filter(Boolean).join(" ");
-	return /* @__PURE__ */ _(R, {
+	return /* @__PURE__ */ v(ee, {
 		config: i,
-		children: /* @__PURE__ */ _("div", {
-			className: a,
+		children: /* @__PURE__ */ v("div", {
+			className: o,
 			children: e
 		})
 	});
 }, V = a(({ children: e, className: t = "", style: n, pageNo: r, overlay: i, showBleed: a, "data-page-key": o }, s) => {
-	let l = c(L), u = a ?? l?.page?.showBleed ?? !1;
-	return /* @__PURE__ */ v("div", {
+	let l = c(R), u = a ?? l?.page?.showBleed ?? !1;
+	return /* @__PURE__ */ y("div", {
 		className: `uhuu-page-sheet ${t}`,
 		style: n,
 		ref: s,
@@ -511,21 +513,32 @@ var ae = ({ children: e, className: n, setup: r }) => {
 		children: [
 			e,
 			i && i({ pageNo: r }),
-			u && /* @__PURE__ */ _("div", { className: "uhuu-bleed-area" })
+			u && /* @__PURE__ */ v("div", { className: "uhuu-bleed-area" })
 		]
 	});
 });
 V.displayName = "Sheet";
 //#endregion
+//#region src/uhuu/pagination-static/flow-context.ts
+var H = "data-uhuu-flow-continuation-copy", se = r(null);
+//#endregion
 //#region src/uhuu/utility/is-dev.ts
-function H() {
+function ce() {
 	if (typeof window < "u") {
 		let e = window.location.hostname;
 		return e === "localhost" || e === "127.0.0.1" || e.endsWith(".local") || window.location.port !== "";
 	}
 	return !1;
 }
-function oe(e, { fallbackMs: t = 100, win: n } = {}) {
+//#endregion
+//#region src/uhuu/utility/diagnostics.ts
+var le = r(!1);
+function ue() {
+	let e = c(le), t = typeof window > "u" ? void 0 : window.__uhuuPreviewHost;
+	return e || !!t?.enableEditorShellDevTools || ce();
+}
+var de = 1e3;
+function fe(e, { fallbackMs: t = 100, win: n } = {}) {
 	let r = n ?? (typeof window > "u" ? void 0 : window), i = !1, a = null, o = null, s = () => {
 		a !== null && r?.cancelAnimationFrame?.(a), o !== null && clearTimeout(o), a = null, o = null;
 	}, c = () => {
@@ -537,8 +550,8 @@ function oe(e, { fallbackMs: t = 100, win: n } = {}) {
 }
 //#endregion
 //#region src/uhuu/pagination-static/flow-assets.js
-var se = 1e4;
-function ce(e, { begin: t, onReady: n, doc: r = e.ownerDocument, waitMs: i = se }) {
+var pe = 1e4;
+function me(e, { begin: t, onReady: n, doc: r = e.ownerDocument, waitMs: i = pe }) {
 	let a = /* @__PURE__ */ new Map(), o = r?.fonts, s = !1, c = null, l = (e) => {
 		let n = t(), r = setTimeout(() => {
 			n(), console.warn(`[uhuu-components] ${e} is still loading after ${Math.round(i / 1e3)} s; pagination stops waiting for it and measures again if it arrives.`);
@@ -577,604 +590,95 @@ function ce(e, { begin: t, onReady: n, doc: r = e.ownerDocument, waitMs: i = se 
 	};
 }
 //#endregion
-//#region src/uhuu/pagination-static/flow-core.js
-function le(e) {
-	return typeof e == "number" && Number.isFinite(e) && e > 0 ? e : 0;
-}
-function ue(e) {
-	return typeof e == "string" && e ? e : null;
-}
-function de(e) {
-	return typeof e == "number" && Number.isFinite(e) ? Math.max(0, Math.floor(e)) : +!!e;
-}
-var fe = 2;
-function pe(e) {
-	return typeof e == "number" && Number.isFinite(e) && e >= 1 ? Math.floor(e) : fe;
-}
-var me = .01, he = .01;
-function ge(e, t) {
-	let n = e?.lines;
-	if (!Array.isArray(n) || n.length < 2) return null;
-	let r = e.end;
-	if (typeof r != "number" || !Number.isFinite(r)) return null;
-	let i = -Infinity, a = -1;
-	for (let e of n) {
-		let { top: t, bottom: n, start: o } = e ?? {};
-		if (![
-			t,
-			n,
-			o
-		].every((e) => typeof e == "number" && Number.isFinite(e)) || n < t - me || t < i - me || o <= a || o > r) return null;
-		i = n, a = o;
-	}
-	return n[n.length - 1].bottom - n[0].top > t + 1 ? null : e;
-}
-function _e(e, t, n, r) {
-	let { lines: i } = e;
-	return Math.max(0, i[0].top + (i[r].bottom - i[n].top) + (t - i[i.length - 1].bottom));
-}
-function ve({ itemIndex: e = -1, fragmentIndexes: t = [], groupKeys: n = [], pageIndex: r = 0, pageCount: i = 1, itemCount: a = 0, previousSourceIndex: o, fragmentIndex: s } = {}) {
-	let c = Number.isInteger(s) ? s : t.indexOf(e), l = ue(n[e]), u = c > 0 ? t[c - 1] : null, d = u === null ? null : ue(n[u]), f = c > 0 ? t[c - 1] : o ?? (e > 0 ? e - 1 : null), p = f === null ? null : ue(n[f]), m = !!(l && p !== l), h = !!(l && d !== l);
-	return {
-		pageIndex: r,
-		pageCount: i,
-		itemIndex: e,
-		fragmentIndex: c,
-		groupKey: l ?? void 0,
-		isFirst: e === 0,
-		isLast: a > 0 && e === a - 1,
-		isFirstInFragment: c === 0,
-		isLastInFragment: c >= 0 && c === t.length - 1,
-		isFirstInGroup: m,
-		isFirstInGroupOnPage: h,
-		isContinuation: r > 0,
-		isGroupContinuation: !(!h || m || p !== l)
-	};
-}
-function ye() {
-	return {
-		scannedItems: 0,
-		chunkerCalls: 0,
-		freshPageAttempts: 0,
-		pages: 0
-	};
-}
-function be({ heights: e = [], keys: t = [], metas: n = [], availableHeight: r = 0, continuationHeight: i, headerGroupKeys: a = [], headerGroupHeights: o = {}, headerGroupRepeats: s = {}, previousHeaderGroupKey: c, onUnplaceableItem: l, lines: u, breakReserve: d, window: f, maxChunks: p = 0, metrics: m } = {}) {
-	let h = f?.indexes, g = f?.offset ?? 0, _ = h ? Math.max(0, h.length - g) : e.length, v = h ? (e) => h[g + e] : (e) => e, y = le(r) || Infinity, b = le(i) || y, x = [{
-		indexes: [],
-		keys: []
-	}], S = 0, C = () => x.length > 1 ? b : y, w = le(d), T = /* @__PURE__ */ new Map(), E = () => {
-		let e = C();
-		return w && w < e && T.get(D()) ? e - w : e;
-	}, D = () => x[x.length - 1], O = () => {
-		let e = D().indexes;
-		return e.length ? e[e.length - 1] : null;
-	}, k = () => D().indexes.length > 0 || !!D().unplaceable, A = (e) => ue(a[v(e)]), j = (e) => le(o[e] ?? 0), M = (e) => s[e] !== !1, N = (e, t) => {
-		let n = A(e);
-		return n ? t == null ? (e > 0 ? A(e - 1) : ue(c)) !== n || M(n) : A(t) !== n : !1;
-	}, P = (t, n) => {
-		let r = A(t);
-		return le(e[v(t)]) + (r && N(t, n) ? j(r) : 0);
-	}, F = (e) => {
-		let t = n[v(e)] ?? {};
-		return t.avoidBreakInside && t.groupKey ? t.groupKey : null;
-	}, I = (e, t) => {
-		let n = A(e);
-		return n && N(e, t) ? j(n) : 0;
-	}, L = (e) => {
-		let t = A(e);
-		return t && M(t) ? j(t) : 0;
-	}, R = /* @__PURE__ */ new Map(), ee = (e) => !!u && v(e) in u, te = (t) => {
-		if (!ee(t)) return null;
-		if (R.has(t)) return R.get(t);
-		let r = n[v(t)] ?? {}, i = le(e[v(t)]), a = r.avoidBreakInside ? null : ge(u[v(t)], i);
-		if (a) {
-			let e = A(t), n = e ? j(e) : 0, r = Math.min(y, b);
-			for (let e = 0; e < a.lines.length; e += 1) if (_e(a, i, e, e) + n > r + he) {
-				a = null;
-				break;
-			}
-		}
-		let o = a ? {
-			entry: a,
-			height: i,
-			count: a.lines.length,
-			orphans: pe(r.orphans ?? a.orphans),
-			widows: pe(r.widows ?? a.widows)
-		} : null;
-		return R.set(t, o), o;
-	}, z = /* @__PURE__ */ new Map(), B = null, ne = null, re = () => {
-		B = Array(_ + 1).fill(0), ne = Array(_ + 1).fill(!1);
-		for (let e = _ - 1; e >= 0; --e) {
-			B[e] = B[e + 1] + P(e, e > 0 ? e - 1 : null);
-			let t = n[v(e)] ?? {}, r = e + 1 < _ ? n[v(e + 1)] ?? {} : {};
-			ne[e] = ne[e + 1] || !!r.breakBefore || !!(t.breakAfter && e < _ - 1);
-		}
-	}, ie = (e, t, n) => ne[e] ? !1 : (t > 0 ? _e(n.entry, n.height, t, n.count - 1) + L(e) : P(e, null)) + B[e + 1] <= C() + he || e === _ - 1 && t === 0 && !(ee(e) && te(e)), ae = (e, t = 0, n = null) => {
-		if (!w || k()) return;
-		let r = D();
-		T.has(r) || (B || re(), T.set(r, !ie(e, t, n)));
-	}, V = (e, t, n) => {
-		let r = 0, i = n;
-		for (let n = e; n < _ && F(n) === t; n += 1) m && (m.scannedItems += 1), r += P(n, i), i = n;
-		return r;
-	}, H = (e, t, { currentHeight: n, ownHeight: r, stopEarly: i } = {}) => {
-		let a = 0, o = e;
-		for (let s = 1; s <= t; s += 1) {
-			let t = e + s;
-			if (t >= _) break;
-			m && (m.scannedItems += 1);
-			let c = P(t, o), l = ee(t) && n + (r + a + c) > E() + he ? te(t) : null;
-			if (l && l.count >= l.orphans + l.widows) {
-				a += c - l.height + _e(l.entry, l.height, 0, l.orphans - 1);
-				break;
-			}
-			if (a += c, i && n + (r + a) > E()) break;
-			o = t;
-		}
-		return a;
-	}, oe = () => {
-		k() && (x.push({
-			indexes: [],
-			keys: []
-		}), S = 0);
-	}, se = (e, n, r) => {
-		let i = t[v(e)] ?? String(v(e)), a = A(e) ?? void 0, o = a && N(e, null) ? j(a) : 0, s = {
-			index: e,
-			key: i,
-			height: n,
-			headerHeight: o,
-			requiredHeight: r,
-			availableHeight: E(),
-			groupKey: a,
-			reason: o > 0 ? "item-with-header-too-tall" : "item-too-tall"
-		};
-		D().unplaceable = s, l?.(s), x.push({
-			indexes: [],
-			keys: []
-		}), S = 0;
-	}, ce = (e, t) => {
-		let n = k(), r = P(e, O());
-		if (r > E() - S) return !1;
-		if (!n) return !0;
-		let i = H(e, de(t.keepWithNext), {
-			currentHeight: S,
-			ownHeight: r,
-			stopEarly: Number.isFinite(E())
-		});
-		return S + r + i <= E();
-	}, fe = (e, t, n, r) => {
-		let { entry: i, height: a, count: o, orphans: s, widows: c } = r, l = (e, t) => _e(i, a, e, t), u = (e, t, n) => {
-			let r = e, i = t, a = e - 1;
-			for (; r <= i;) {
-				let t = r + i >> 1;
-				l(e, t) <= n + he ? (a = t, r = t + 1) : i = t - 1;
-			}
-			return a;
-		}, d = (n, r, i) => {
-			let a = D();
-			if (a.indexes.push(e), a.keys.push(t), S += i, n === 0 && r === o - 1) return;
-			let s = z.get(a);
-			s || (s = /* @__PURE__ */ new Map(), z.set(a, s)), s.set(e, [n, r]);
-		}, f = 0;
-		for (;;) {
-			m && (m.scannedItems += 1), ae(e, f, r);
-			let t = k(), i = f === 0 ? I(e, O()) : L(e), p = E() - S, h = (f === 0 ? a : l(f, o - 1)) + i;
-			if (h <= p + he) {
-				if (t) {
-					let t = H(e, de(n.keepWithNext), {
-						currentHeight: S,
-						ownHeight: h,
-						stopEarly: Number.isFinite(E())
-					});
-					if (S + h + t > E() + he) {
-						let e = o - 1 - c;
-						e - f + 1 >= s ? (d(f, e, l(f, e) + i), oe(), f = e + 1) : oe();
-						continue;
-					}
-				}
-				d(f, o - 1, h);
-				return;
-			}
-			let g = u(f, o - 2, p - i), _ = Math.min(g, o - 1 - c);
-			if (_ >= f && _ - f + 1 >= s) d(f, _, l(f, _) + i);
-			else if (t) {
-				oe();
-				continue;
-			} else {
-				let e = Math.max(f, g);
-				if (d(f, e, l(f, e) + i), e >= o - 1) return;
-				f = e + 1, oe();
-				continue;
-			}
-			f = _ + 1, oe();
-		}
-	};
-	for (let r = 0; r < _ && !(p && x.length > p); r += 1) {
-		m && (m.scannedItems += 1);
-		let i = n[v(r)] ?? {}, a = le(e[v(r)]), o = t[v(r)] ?? String(v(r));
-		i.breakBefore && oe();
-		let s = F(r), c = r > 0 ? F(r - 1) : null;
-		s && s !== c && k() && S + V(r, s, O()) > E() && oe(), ae(r);
-		let l = ee(r) && !ce(r, i) ? te(r) : null;
-		if (l) {
-			fe(r, o, i, l), i.breakAfter && r < _ - 1 && oe();
-			continue;
-		}
-		let u = O(), d = P(r, u);
-		if (k() && d > E() - S && (oe(), u = null, ae(r), d = P(r, u)), d > E()) {
-			se(r, a, d);
-			continue;
-		}
-		let f = k(), p = f ? H(r, de(i.keepWithNext), {
-			currentHeight: S,
-			ownHeight: d,
-			stopEarly: Number.isFinite(E())
-		}) : 0, h = d + p;
-		f && S + h > E() && (oe(), u = null, ae(r), d = P(r, u), d > E()) ? se(r, a, d) : (D().indexes.push(r), D().keys.push(o), S += d, i.breakAfter && r < _ - 1 && oe());
-	}
-	let me = x.filter((e) => e.indexes.length > 0 || !!e.unplaceable);
-	if (!me.length) return m && !p && (m.pages = 1), [{
-		indexes: [],
-		keys: []
-	}];
-	let ve = p ? me.slice(0, p) : me;
-	m && !p && (m.pages = ve.length);
-	let ye = Se(ve, z, (e) => te(e).entry);
-	return ve.map((e) => {
-		if (!e.indexes.length) return e;
-		let t = z.get(e), n = [];
-		for (let r = 0; r < e.indexes.length; r += 1) {
-			let i = e.indexes[r], a = A(i);
-			if (!a) continue;
-			if (r === 0 && t?.get(i)?.[0] > 0) {
-				M(a) && n.push({
-					groupKey: a,
-					itemIndex: i,
-					isContinuation: !0
-				});
-				continue;
-			}
-			let o = r > 0 ? e.indexes[r - 1] : null;
-			if (!N(i, o)) continue;
-			let s = i > 0 ? A(i - 1) : null;
-			n.push({
-				groupKey: a,
-				itemIndex: i,
-				isContinuation: s === a
-			});
-		}
-		let r = ye.get(e);
-		return !n.length && !r ? e : {
-			...e,
-			...n.length ? { groupHeaders: n } : {},
-			...r ? { splits: r } : {}
-		};
-	});
-}
-function xe(e, t, n, r) {
-	let i = [];
-	for (let a = t; a <= n; a += 1) e[a].hyphen && a !== e.length - 1 && (a === n && r || i.push(e[a + 1].start));
-	return i.length ? { hyphens: i } : {};
-}
-function Se(e, t, n) {
-	let r = /* @__PURE__ */ new Map();
-	if (!t.size) return r;
-	let i = /* @__PURE__ */ new Map();
-	for (let n of e) for (let [e, r] of t.get(n) ?? []) {
-		let t = i.get(e);
-		t || (t = [], i.set(e, t)), t.push({
-			chunk: n,
-			range: r
-		});
-	}
-	for (let [e, t] of i) {
-		let i = n(e), { lines: a } = i;
-		t.forEach(({ chunk: n, range: [o, s] }, c) => {
-			let l = r.get(n);
-			l || (l = {}, r.set(n, l)), l[e] = {
-				part: c,
-				parts: t.length,
-				from: c === 0 ? 0 : a[o].start,
-				to: c === t.length - 1 ? i.end : a[s + 1].start,
-				...i.justify ? { justify: !0 } : {},
-				textHeight: a[s].bottom - a[o].top,
-				...xe(a, o, s, c === t.length - 1)
-			};
-		});
-	}
-	return r;
-}
-function Ce(e, t, n) {
-	return (e.indexes ?? []).reduce((e, n) => e + le(t[n]), 0) + (e.groupHeaders ?? []).reduce((e, t) => e + le(n[t.groupKey]), 0);
-}
-function we(e, t, n) {
-	return !t || !n ? e : {
-		...e,
-		headerGroupHeights: e.columnHeaderGroupHeights?.[t]?.[n] ?? e.headerGroupHeights,
-		headerGroupRepeats: e.columnHeaderGroupRepeats?.[t]?.[n] ?? e.headerGroupRepeats
-	};
-}
-function Te(e, t, n, r, i, a) {
-	let o = (e) => t[n + e], s = {
-		indexes: (e.indexes ?? []).map(o).filter(Number.isInteger),
-		keys: [...e.keys ?? []],
-		...a === void 0 ? {} : { previousSourceIndex: a }
-	};
-	return e.groupHeaders?.length && (s.groupHeaders = e.groupHeaders.map((e) => ({
-		...e,
-		itemIndex: o(e.itemIndex),
-		isContinuation: e.isContinuation || e.itemIndex === 0 && a !== void 0 && i?.[a] === e.groupKey
-	}))), e.unplaceable && (s.unplaceable = {
-		...e.unplaceable,
-		index: o(e.unplaceable.index),
-		...r ? { columnId: r } : {}
-	}), s;
-}
-function Ee(e, t, n, r, i, a, o) {
-	if (n >= t.length) return {
-		chunk: {
-			indexes: [],
-			keys: []
-		},
-		consumed: 0,
-		height: 0
-	};
-	let s = we(e, i, a);
-	e.metrics && (e.metrics.chunkerCalls += 1);
-	let c = Te(be({
-		heights: e.heights,
-		keys: e.keys,
-		metas: e.metas,
-		headerGroupKeys: e.headerGroupKeys,
-		headerGroupHeights: s.headerGroupHeights,
-		headerGroupRepeats: s.headerGroupRepeats,
-		previousHeaderGroupKey: o === void 0 ? void 0 : e.headerGroupKeys?.[o],
-		availableHeight: r,
-		window: {
-			indexes: t,
-			offset: n
-		},
-		maxChunks: 1,
-		metrics: e.metrics
-	})[0] ?? {
-		indexes: [],
-		keys: []
-	}, t, n, a, s.headerGroupKeys, o);
-	return {
-		chunk: c,
-		consumed: c.unplaceable ? 1 : c.indexes.length,
-		height: Ce(c, e.heights ?? [], s.headerGroupHeights ?? {})
-	};
-}
-function De({ nodes: e = [], itemCount: t = 0 } = {}) {
-	let n = /* @__PURE__ */ new Set(), r = /* @__PURE__ */ new Set(), i = (e) => {
-		throw TypeError(`[uhuu-components] Invalid Static.FlowColumns layout: ${e}`);
-	}, a = (e, n) => {
-		(!Number.isInteger(e) || e < 0 || e >= t) && i(`${n} references out-of-range item index ${String(e)}.`), r.has(e) && i(`item index ${e} occurs more than once.`), r.add(e);
-	};
-	e.forEach((e, t) => {
-		if ((!e || e.kind !== "item" && e.kind !== "columns") && i(`node ${t} has an unsupported kind.`), e.kind === "item") {
-			a(e.index, `node ${t}`);
-			return;
-		}
-		(typeof e.id != "string" || !e.id) && i(`column group ${t} needs a stable id.`), n.has(e.id) && i(`column group id "${e.id}" occurs more than once.`), n.add(e.id);
-		let r = /* @__PURE__ */ new Set();
-		(e.columns ?? []).forEach((t, n) => {
-			(!t || typeof t.id != "string" || !t.id) && i(`column ${n} in group "${e.id}" needs a stable id.`), r.has(t.id) && i(`column id "${t.id}" occurs more than once in group "${e.id}".`), r.add(t.id), (t.indexes ?? []).forEach((n) => {
-				a(n, `column "${t.id}" in group "${e.id}"`);
-			});
-		});
-	});
-	for (let e = 0; e < t; e += 1) r.has(e) || i(`item index ${e} is omitted.`);
-	return !0;
-}
-function Oe(e, t, n, r, i) {
-	let a = le(r.chunk.unplaceable?.requiredHeight);
-	if (a > 0 && a <= i) return "move";
-	let o = t[n];
-	if (o === void 0) return "no";
-	let s = e.metas?.[o] ?? {};
-	return de(s.keepWithNext) > 0 || s.avoidBreakInside && s.groupKey ? "compare" : "no";
-}
-function ke(e) {
-	return !!(e.layout?.length || e.unplaceable);
-}
-function Ae({ nodes: e = [], heights: t = [], keys: n = [], metas: r = [], availableHeight: i = 0, continuationHeight: a, headerGroupKeys: o = [], headerGroupHeights: s = {}, headerGroupRepeats: c = {}, columnHeaderGroupHeights: l = {}, columnHeaderGroupRepeats: u = {}, onUnplaceableItem: d, metrics: f } = {}) {
-	De({
-		nodes: e,
-		itemCount: t.length
-	});
-	let p = le(i) || Infinity, m = le(a) || p, h = {
-		heights: t,
-		keys: n,
-		metas: r,
-		headerGroupKeys: o,
-		headerGroupHeights: s,
-		headerGroupRepeats: c,
-		columnHeaderGroupHeights: l,
-		columnHeaderGroupRepeats: u,
-		metrics: f
-	}, g = [{
-		indexes: [],
-		keys: [],
-		layout: []
-	}], _ = 0, v = () => g[g.length - 1], y = () => g.length > 1 ? m : p, b = m, x = () => {
-		ke(v()) && (g.push({
-			indexes: [],
-			keys: [],
-			layout: []
-		}), _ = 0);
-	}, S = (e) => {
-		v().indexes.push(...e.indexes ?? []), v().keys.push(...e.keys ?? []), !v().unplaceable && e.unplaceable && (v().unplaceable = e.unplaceable), e.unplaceable && d?.(e.unplaceable);
-	};
-	for (let n = 0; n < e.length; n += 1) {
-		let i = e[n];
-		if (!i || i.kind !== "item" && i.kind !== "columns") continue;
-		if (i.kind === "item") {
-			let i = [], a = n;
-			for (; a < e.length && e[a]?.kind === "item";) {
-				let n = Number(e[a].index);
-				Number.isInteger(n) && n >= 0 && n < t.length && i.push(n), a += 1;
-			}
-			n = a - 1;
-			let o = 0;
-			for (; o < i.length;) {
-				y() - _ <= 0 && ke(v()) && x(), r[i[o]]?.breakBefore && ke(v()) && x();
-				let e = o > 0 ? i[o - 1] : void 0, t = Ee(h, i, o, y() - _, void 0, void 0, e);
-				if (ke(v())) {
-					let n = Oe(h, i, o, t, b);
-					if (n !== "no") {
-						f && (f.freshPageAttempts += 1);
-						let r = Ee(h, i, o, b, void 0, void 0, e);
-						(n === "move" || r.consumed > t.consumed) && (x(), t = r);
-					}
-				}
-				v().layout.push({
-					kind: "items",
-					chunk: t.chunk
-				}), S(t.chunk), _ += t.height, o += t.consumed, t.consumed === 0 && (o += 1);
-				let n = t.chunk.indexes?.at(-1) ?? t.chunk.unplaceable?.index;
-				(o < i.length || t.chunk.unplaceable || n !== void 0 && r[n]?.breakAfter) && x();
-			}
-			continue;
-		}
-		let a = (i.columns ?? []).map((e) => ({
-			id: String(e?.id ?? ""),
-			indexes: (e?.indexes ?? []).filter((e) => Number.isInteger(e) && e >= 0 && e < t.length),
-			cursor: 0
-		})).filter((e) => e.id && e.indexes.length);
-		if (a.length) for (; a.some((e) => e.cursor < e.indexes.length);) {
-			y() - _ <= 0 && ke(v()) && x(), a.some((e) => {
-				let t = e.indexes[e.cursor];
-				return t !== void 0 && r[t]?.breakBefore;
-			}) && ke(v()) && x();
-			let e = y() - _, t = a.map((t) => Ee(h, t.indexes, t.cursor, e, i.id, t.id, t.cursor > 0 ? t.indexes[t.cursor - 1] : void 0)), n, o = () => n ??= a.map((e) => (f && (f.freshPageAttempts += 1), Ee(h, e.indexes, e.cursor, b, i.id, e.id, e.cursor > 0 ? e.indexes[e.cursor - 1] : void 0)));
-			if (ke(v()) && a.some((e, n) => {
-				let r = Oe(h, e.indexes, e.cursor, t[n], b);
-				return r === "no" ? !1 : r === "move" || o()[n].consumed > t[n].consumed;
-			}) && (x(), t = o()), !t.some((e) => e.consumed > 0)) {
-				let e = a.find((e) => e.cursor < e.indexes.length);
-				throw TypeError(`[uhuu-components] Static.FlowColumns made no pagination progress${e ? ` in column "${e.id}"` : ""}.`);
-			}
-			let s = a.map((e, n) => ({
-				id: e.id,
-				chunk: t[n].chunk
-			}));
-			v().layout.push({
-				kind: "columns",
-				id: String(i.id ?? "columns"),
-				columns: s
-			});
-			for (let { chunk: e } of s) S(e);
-			let c = Math.max(0, ...t.map((e) => e.height));
-			_ += c, a.forEach((e, n) => {
-				e.cursor += t[n].consumed;
-			});
-			let l = a.some((e) => e.cursor < e.indexes.length), u = t.some((e) => {
-				let t = e.chunk.indexes?.at(-1) ?? e.chunk.unplaceable?.index;
-				return t !== void 0 && r[t]?.breakAfter;
-			}), d = t.some((e) => !!e.chunk.unplaceable);
-			(l || u || d) && x();
-		}
-	}
-	let C = g.filter(ke);
-	return C.length ? (f && (f.pages = C.length), C) : (f && (f.pages = 1), [{
-		indexes: [],
-		keys: [],
-		layout: []
-	}]);
-}
-//#endregion
 //#region src/uhuu/pagination-static/flow-measure.ts
-var je = /* @__PURE__ */ w({
-	getEffectiveScale: () => Ne,
-	getOuterHeight: () => Pe,
-	hashString: () => Qe,
-	parseAbsoluteLength: () => qe,
-	parseKeepWithNext: () => Re,
-	parseLineCount: () => Ie,
-	readFlowItemElements: () => We,
-	readFlowTextLines: () => Ze,
-	readHeaderGroupHeights: () => He,
-	readHeaderGroupKey: () => Be,
-	readHeaderGroupRepeats: () => Ve,
-	readItemFlowTexts: () => Je,
-	readItemMeta: () => Fe,
-	readUnstackedItem: () => Ge,
-	readUnwrappedHeights: () => Ue,
-	serializeKeepWithNext: () => ze,
-	serializeLineCount: () => Le
-}), Me = "data-uhuu-flow-text";
-function Ne(e) {
+var he = /* @__PURE__ */ T({
+	getEffectiveScale: () => _e,
+	getOuterHeight: () => ve,
+	hashString: () => Ie,
+	parseAbsoluteLength: () => je,
+	parseKeepWithNext: () => Se,
+	parseLineCount: () => be,
+	readFlowItemElements: () => Oe,
+	readFlowTextLines: () => Fe,
+	readHeaderGroupHeights: () => Ee,
+	readHeaderGroupKey: () => we,
+	readHeaderGroupRepeats: () => Te,
+	readItemFlowTexts: () => Me,
+	readItemMeta: () => ye,
+	readUnstackedItem: () => ke,
+	readUnwrappedHeights: () => De,
+	serializeKeepWithNext: () => Ce,
+	serializeLineCount: () => xe
+}), ge = "data-uhuu-flow-text";
+function _e(e) {
 	let t = e.getBoundingClientRect().width, n = e.offsetWidth;
 	if (!(t > 0) || !(n > 0)) return 1;
 	let r = t / n;
 	return Math.abs(r - 1) < .002 ? 1 : r;
 }
-function Pe(e, t = 1) {
+function ve(e, t = 1) {
 	let n = e.getBoundingClientRect(), r = window.getComputedStyle(e), i = Number.parseFloat(r.marginTop || "0") || 0, a = Number.parseFloat(r.marginBottom || "0") || 0;
 	return n.height / t + i + a;
 }
-function Fe(e) {
+function ye(e) {
 	let t = {
 		breakBefore: e.dataset.uhuuFlowBreakBefore === "true",
 		breakAfter: e.dataset.uhuuFlowBreakAfter === "true",
-		keepWithNext: Re(e.dataset.uhuuFlowKeepWithNext),
+		keepWithNext: Se(e.dataset.uhuuFlowKeepWithNext),
 		avoidBreakInside: e.dataset.uhuuFlowAvoidBreakInside === "true",
 		groupKey: e.dataset.uhuuFlowGroupKey
-	}, n = Ie(e.dataset.uhuuFlowOrphans), r = Ie(e.dataset.uhuuFlowWidows);
+	}, n = be(e.dataset.uhuuFlowOrphans), r = be(e.dataset.uhuuFlowWidows);
 	return n !== void 0 && (t.orphans = n), r !== void 0 && (t.widows = r), t;
 }
-function Ie(e) {
+function be(e) {
 	if (!e) return;
 	let t = Number.parseInt(e, 10);
 	return Number.isFinite(t) && t >= 1 ? t : void 0;
 }
-function Le(e) {
+function xe(e) {
 	return typeof e == "number" && Number.isFinite(e) && e >= 1 ? String(Math.floor(e)) : void 0;
 }
-function Re(e) {
+function Se(e) {
 	if (!e) return !1;
 	if (e === "true") return !0;
 	let t = Number.parseInt(e, 10);
 	return Number.isFinite(t) && t > 0 ? t : !1;
 }
-function ze(e) {
+function Ce(e) {
 	return typeof e == "number" && Number.isFinite(e) && e > 0 ? String(Math.floor(e)) : e ? "true" : void 0;
 }
-function Be(e) {
+function we(e) {
 	return e.dataset.uhuuFlowHeaderGroupKey || void 0;
 }
-function Ve(e) {
+function Te(e) {
 	let t = {};
 	for (let n of e) {
-		let e = Be(n);
+		let e = we(n);
 		e && (n.dataset.uhuuFlowHeaderRepeat === "false" ? t[e] = !1 : e in t || (t[e] = !0));
 	}
 	return t;
 }
-function He(e, t = 1, n) {
+function Ee(e, t = 1, n) {
 	let r = {};
 	for (let i of Array.from(e.querySelectorAll("[data-uhuu-flow-group-header=\"true\"]"))) {
 		let e = i.dataset.uhuuFlowHeaderGroupKey;
-		e && (r[e] = Math.max(r[e] ?? 0, n?.get(i) ?? Pe(i, t)));
+		e && (r[e] = Math.max(r[e] ?? 0, n?.get(i) ?? ve(i, t)));
 	}
 	return r;
 }
-function Ue(e, t, n = 1) {
+function De(e, t, n = 1) {
 	let r = /* @__PURE__ */ new Map(), i = e.getBoundingClientRect().top;
 	for (let e of Array.from(t.children)) {
 		if (!(e instanceof HTMLElement) || !e.getClientRects().length) continue;
 		let t = e.getBoundingClientRect().bottom, a = Math.max(0, t - i) / n;
-		i = Math.max(i, t), e.dataset.uhuuFlowItem === "true" ? r.set(e, a) : e.dataset.uhuuFlowGroupHeader === "true" && r.set(e, Math.max(a, Pe(e, n)));
+		i = Math.max(i, t), e.dataset.uhuuFlowItem === "true" ? r.set(e, a) : e.dataset.uhuuFlowGroupHeader === "true" && r.set(e, Math.max(a, ve(e, n)));
 	}
 	return r;
 }
-function We(e) {
+function Oe(e) {
 	return Array.from(e.querySelectorAll("[data-uhuu-flow-item=\"true\"]"));
 }
-function Ge(e, t, n) {
+function ke(e, t, n) {
 	let r = e.getBoundingClientRect(), i = null;
 	for (let e of n) {
 		if (e.closest("[data-uhuu-flow=\"true\"]") !== t) continue;
@@ -1186,7 +690,7 @@ function Ge(e, t, n) {
 	}
 	return null;
 }
-var Ke = {
+var Ae = {
 	px: 1,
 	mm: 96 / 25.4,
 	cm: 96 / 2.54,
@@ -1194,26 +698,26 @@ var Ke = {
 	pt: 96 / 72,
 	pc: 16
 };
-function qe(e) {
+function je(e) {
 	if (typeof e == "number") return Number.isFinite(e) && e >= 0 ? e : void 0;
 	if (typeof e != "string") return;
 	let t = /^\s*(\d+(?:\.\d+)?|\.\d+)\s*(px|mm|cm|in|pt|pc)\s*$/i.exec(e);
-	return t ? Number.parseFloat(t[1]) * Ke[t[2].toLowerCase()] : /^\s*0\s*$/.test(e) ? 0 : void 0;
+	return t ? Number.parseFloat(t[1]) * Ae[t[2].toLowerCase()] : /^\s*0\s*$/.test(e) ? 0 : void 0;
 }
-function Je(e) {
+function Me(e) {
 	let t = e.closest("[data-uhuu-flow=\"true\"]");
-	return Array.from(e.querySelectorAll(`[${Me}]`)).filter((e) => e.closest("[data-uhuu-flow=\"true\"]") === t);
+	return Array.from(e.querySelectorAll(`[${ge}]`)).filter((e) => e.closest("[data-uhuu-flow=\"true\"]") === t);
 }
-var Ye = /[\p{L}\p{M}]/u;
-function Xe(e) {
+var Ne = /[\p{L}\p{M}]/u;
+function Pe(e) {
 	let t = (t) => Number.parseFloat(e.getPropertyValue(t) || "0") || 0;
 	return {
 		top: t("border-top-width") + t("padding-top"),
 		bottom: t("border-bottom-width") + t("padding-bottom")
 	};
 }
-function Ze(e, t, n = 1, r) {
-	let i = Je(e);
+function Fe(e, t, n = 1, r) {
+	let i = Me(e);
 	if (!i.length) return;
 	if (i.length > 1) {
 		r?.("multiple-flow-text", e);
@@ -1232,7 +736,7 @@ function Ze(e, t, n = 1, r) {
 	}
 	let s = `${o.getPropertyValue("text-wrap-style")} ${o.getPropertyValue("text-wrap")}`;
 	/\b(balance|pretty)\b/.test(s) && r?.("rewrapping-text-wrap", a);
-	let c = Ie(o.getPropertyValue("orphans")), l = Ie(o.getPropertyValue("widows")), u = [], d = [], f = 0, p = document.createTreeWalker(a, NodeFilter.SHOW_TEXT);
+	let c = be(o.getPropertyValue("orphans")), l = be(o.getPropertyValue("widows")), u = [], d = [], f = 0, p = document.createTreeWalker(a, NodeFilter.SHOW_TEXT);
 	for (let e = p.nextNode(); e; e = p.nextNode()) {
 		let t = e;
 		u.push(t), d.push(f), f += t.data.length;
@@ -1322,7 +826,7 @@ function Ze(e, t, n = 1, r) {
 		if (n < 0) return !1;
 		let r = x(n);
 		if (r === "­") return !0;
-		if (!Ye.test(r) || !Ye.test(x(n + 1))) return !1;
+		if (!Ne.test(r) || !Ne.test(x(n + 1))) return !1;
 		let i = b(n), a = u[i], o = n - d[i];
 		m.setStart(a, o), m.setEnd(a, o + 1);
 		let s = 0;
@@ -1331,7 +835,7 @@ function Ze(e, t, n = 1, r) {
 			e.height > 0 && n >= h[t].top && n <= h[t].bottom && (s += 1);
 		}
 		return s >= 2;
-	}), C = a.getBoundingClientRect(), w = Xe(o), T = e.getBoundingClientRect(), E = Number.parseFloat(window.getComputedStyle(e).marginBottom || "0") || 0, D = T.bottom + (E - t) * n, O = (e) => (e - D) / n, k = C.top + w.top * n, A = C.bottom - w.bottom * n, j = [];
+	}), C = a.getBoundingClientRect(), w = Pe(o), T = e.getBoundingClientRect(), E = Number.parseFloat(window.getComputedStyle(e).marginBottom || "0") || 0, D = T.bottom + (E - t) * n, O = (e) => (e - D) / n, k = C.top + w.top * n, A = C.bottom - w.bottom * n, j = [];
 	return h.forEach((e, t) => {
 		let n = t === 0 ? k : (h[t - 1].bottom + e.top) / 2, r = t === h.length - 1 ? A : (e.bottom + h[t + 1].top) / 2, i = t === 0 ? 0 : y[t], a = j[j.length - 1];
 		a && !(i > a.start) ? (a.bottom = O(r), S[t] ? a.hyphen = !0 : delete a.hyphen) : j.push({
@@ -1348,192 +852,546 @@ function Ze(e, t, n = 1, r) {
 		...l === void 0 ? {} : { widows: l }
 	};
 }
-function Qe(e) {
+function Ie(e) {
 	let t = 2166136261;
 	for (let n = 0; n < e.length; n += 1) t ^= e.charCodeAt(n), t = Math.imul(t, 16777619);
 	return (t >>> 0).toString(36);
 }
 //#endregion
-//#region src/uhuu/pagination-static/flow-text-slice.js
-var $e = /* @__PURE__ */ new Set(/* @__PURE__ */ "a.abbr.b.bdi.bdo.br.cite.code.data.del.dfn.em.i.ins.kbd.mark.s.samp.small.span.strong.sub.sup.time.u.var.wbr".split(".")), et = /* @__PURE__ */ new Set(["br"]);
-function tt(e) {
-	return typeof e == "string" ? e : typeof e == "function" ? e.displayName || e.name || "Component" : e && typeof e == "object" && e.displayName || "Component";
+//#region src/uhuu/pagination-static/flow-core.js
+function Le(e) {
+	return typeof e == "number" && Number.isFinite(e) && e > 0 ? e : 0;
 }
-function nt(t) {
-	let n = "", r = null, i = [], a = (t) => {
-		if (!(r || t == null || typeof t == "boolean")) {
-			if (typeof t == "string" || typeof t == "number" || typeof t == "bigint") n += String(t);
-			else if (Array.isArray(t)) t.forEach(a);
-			else if (e.isValidElement(t)) {
-				let o = t.props ?? {};
-				if (t.type === e.Fragment) {
-					a(o.children);
-					return;
-				}
-				if (typeof t.type == "string") {
-					if (!$e.has(t.type) || o.dangerouslySetInnerHTML) {
-						r = {
-							reason: "block-content",
-							name: t.type
-						};
-						return;
+function Re(e) {
+	return typeof e == "string" && e ? e : null;
+}
+function ze(e) {
+	return typeof e == "number" && Number.isFinite(e) ? Math.max(0, Math.floor(e)) : +!!e;
+}
+var Be = 2;
+function Ve(e) {
+	return typeof e == "number" && Number.isFinite(e) && e >= 1 ? Math.floor(e) : Be;
+}
+var He = .01, Ue = .01;
+function We(e, t) {
+	let n = e?.lines;
+	if (!Array.isArray(n) || n.length < 2) return null;
+	let r = e.end;
+	if (typeof r != "number" || !Number.isFinite(r)) return null;
+	let i = -Infinity, a = -1;
+	for (let e of n) {
+		let { top: t, bottom: n, start: o } = e ?? {};
+		if (![
+			t,
+			n,
+			o
+		].every((e) => typeof e == "number" && Number.isFinite(e)) || n < t - He || t < i - He || o <= a || o > r) return null;
+		i = n, a = o;
+	}
+	return n[n.length - 1].bottom - n[0].top > t + 1 ? null : e;
+}
+function Ge(e, t, n, r) {
+	let { lines: i } = e;
+	return Math.max(0, i[0].top + (i[r].bottom - i[n].top) + (t - i[i.length - 1].bottom));
+}
+function Ke({ itemIndex: e = -1, fragmentIndexes: t = [], groupKeys: n = [], pageIndex: r = 0, pageCount: i = 1, itemCount: a = 0, previousSourceIndex: o, fragmentIndex: s } = {}) {
+	let c = Number.isInteger(s) ? s : t.indexOf(e), l = Re(n[e]), u = c > 0 ? t[c - 1] : null, d = u === null ? null : Re(n[u]), f = c > 0 ? t[c - 1] : o ?? (e > 0 ? e - 1 : null), p = f === null ? null : Re(n[f]), m = !!(l && p !== l), h = !!(l && d !== l);
+	return {
+		pageIndex: r,
+		pageCount: i,
+		itemIndex: e,
+		fragmentIndex: c,
+		groupKey: l ?? void 0,
+		isFirst: e === 0,
+		isLast: a > 0 && e === a - 1,
+		isFirstInFragment: c === 0,
+		isLastInFragment: c >= 0 && c === t.length - 1,
+		isFirstInGroup: m,
+		isFirstInGroupOnPage: h,
+		isContinuation: r > 0,
+		isGroupContinuation: !(!h || m || p !== l)
+	};
+}
+function qe() {
+	return {
+		scannedItems: 0,
+		chunkerCalls: 0,
+		freshPageAttempts: 0,
+		pages: 0
+	};
+}
+function Je({ heights: e = [], keys: t = [], metas: n = [], availableHeight: r = 0, continuationHeight: i, headerGroupKeys: a = [], headerGroupHeights: o = {}, headerGroupRepeats: s = {}, previousHeaderGroupKey: c, onUnplaceableItem: l, lines: u, breakReserve: d, window: f, maxChunks: p = 0, metrics: m } = {}) {
+	let h = f?.indexes, g = f?.offset ?? 0, _ = h ? Math.max(0, h.length - g) : e.length, v = h ? (e) => h[g + e] : (e) => e, y = Le(r) || Infinity, b = Le(i) || y, x = [{
+		indexes: [],
+		keys: []
+	}], S = 0, C = () => x.length > 1 ? b : y, w = Le(d), T = /* @__PURE__ */ new Map(), E = () => {
+		let e = C();
+		return w && w < e && T.get(D()) ? e - w : e;
+	}, D = () => x[x.length - 1], O = () => {
+		let e = D().indexes;
+		return e.length ? e[e.length - 1] : null;
+	}, k = () => D().indexes.length > 0 || !!D().unplaceable, A = (e) => Re(a[v(e)]), j = (e) => Le(o[e] ?? 0), M = (e) => s[e] !== !1, N = (e, t) => {
+		let n = A(e);
+		return n ? t == null ? (e > 0 ? A(e - 1) : Re(c)) !== n || M(n) : A(t) !== n : !1;
+	}, P = (t, n) => {
+		let r = A(t);
+		return Le(e[v(t)]) + (r && N(t, n) ? j(r) : 0);
+	}, F = (e) => {
+		let t = n[v(e)] ?? {};
+		return t.avoidBreakInside && t.groupKey ? t.groupKey : null;
+	}, I = (e, t) => {
+		let n = A(e);
+		return n && N(e, t) ? j(n) : 0;
+	}, L = (e) => {
+		let t = A(e);
+		return t && M(t) ? j(t) : 0;
+	}, R = /* @__PURE__ */ new Map(), ee = (e) => !!u && v(e) in u, te = (t) => {
+		if (!ee(t)) return null;
+		if (R.has(t)) return R.get(t);
+		let r = n[v(t)] ?? {}, i = Le(e[v(t)]), a = r.avoidBreakInside ? null : We(u[v(t)], i);
+		if (a) {
+			let e = A(t), n = e ? j(e) : 0, r = Math.min(y, b);
+			for (let e = 0; e < a.lines.length; e += 1) if (Ge(a, i, e, e) + n > r + Ue) {
+				a = null;
+				break;
+			}
+		}
+		let o = a ? {
+			entry: a,
+			height: i,
+			count: a.lines.length,
+			orphans: Ve(r.orphans ?? a.orphans),
+			widows: Ve(r.widows ?? a.widows)
+		} : null;
+		return R.set(t, o), o;
+	}, z = /* @__PURE__ */ new Map(), B = null, ne = null, re = () => {
+		B = Array(_ + 1).fill(0), ne = Array(_ + 1).fill(!1);
+		for (let e = _ - 1; e >= 0; --e) {
+			B[e] = B[e + 1] + P(e, e > 0 ? e - 1 : null);
+			let t = n[v(e)] ?? {}, r = e + 1 < _ ? n[v(e + 1)] ?? {} : {};
+			ne[e] = ne[e + 1] || !!r.breakBefore || !!(t.breakAfter && e < _ - 1);
+		}
+	}, ie = (e, t, n) => ne[e] ? !1 : (t > 0 ? Ge(n.entry, n.height, t, n.count - 1) + L(e) : P(e, null)) + B[e + 1] <= C() + Ue || e === _ - 1 && t === 0 && !(ee(e) && te(e)), ae = (e, t = 0, n = null) => {
+		if (!w || k()) return;
+		let r = D();
+		T.has(r) || (B || re(), T.set(r, !ie(e, t, n)));
+	}, oe = (e, t, n) => {
+		let r = 0, i = n;
+		for (let n = e; n < _ && F(n) === t; n += 1) m && (m.scannedItems += 1), r += P(n, i), i = n;
+		return r;
+	}, V = (e, t, { currentHeight: n, ownHeight: r, stopEarly: i } = {}) => {
+		let a = 0, o = e;
+		for (let s = 1; s <= t; s += 1) {
+			let t = e + s;
+			if (t >= _) break;
+			m && (m.scannedItems += 1);
+			let c = P(t, o), l = ee(t) && n + (r + a + c) > E() + Ue ? te(t) : null;
+			if (l && l.count >= l.orphans + l.widows) {
+				a += c - l.height + Ge(l.entry, l.height, 0, l.orphans - 1);
+				break;
+			}
+			if (a += c, i && n + (r + a) > E()) break;
+			o = t;
+		}
+		return a;
+	}, H = () => {
+		k() && (x.push({
+			indexes: [],
+			keys: []
+		}), S = 0);
+	}, se = (e, n, r) => {
+		let i = t[v(e)] ?? String(v(e)), a = A(e) ?? void 0, o = a && N(e, null) ? j(a) : 0, s = {
+			index: e,
+			key: i,
+			height: n,
+			headerHeight: o,
+			requiredHeight: r,
+			availableHeight: E(),
+			groupKey: a,
+			reason: o > 0 ? "item-with-header-too-tall" : "item-too-tall"
+		};
+		D().unplaceable = s, l?.(s), x.push({
+			indexes: [],
+			keys: []
+		}), S = 0;
+	}, ce = (e, t) => {
+		let n = k(), r = P(e, O());
+		if (r > E() - S) return !1;
+		if (!n) return !0;
+		let i = V(e, ze(t.keepWithNext), {
+			currentHeight: S,
+			ownHeight: r,
+			stopEarly: Number.isFinite(E())
+		});
+		return S + r + i <= E();
+	}, le = (e, t, n, r) => {
+		let { entry: i, height: a, count: o, orphans: s, widows: c } = r, l = (e, t) => Ge(i, a, e, t), u = (e, t, n) => {
+			let r = e, i = t, a = e - 1;
+			for (; r <= i;) {
+				let t = r + i >> 1;
+				l(e, t) <= n + Ue ? (a = t, r = t + 1) : i = t - 1;
+			}
+			return a;
+		}, d = (n, r, i) => {
+			let a = D();
+			if (a.indexes.push(e), a.keys.push(t), S += i, n === 0 && r === o - 1) return;
+			let s = z.get(a);
+			s || (s = /* @__PURE__ */ new Map(), z.set(a, s)), s.set(e, [n, r]);
+		}, f = 0;
+		for (;;) {
+			m && (m.scannedItems += 1), ae(e, f, r);
+			let t = k(), i = f === 0 ? I(e, O()) : L(e), p = E() - S, h = (f === 0 ? a : l(f, o - 1)) + i;
+			if (h <= p + Ue) {
+				if (t) {
+					let t = V(e, ze(n.keepWithNext), {
+						currentHeight: S,
+						ownHeight: h,
+						stopEarly: Number.isFinite(E())
+					});
+					if (S + h + t > E() + Ue) {
+						let e = o - 1 - c;
+						e - f + 1 >= s ? (d(f, e, l(f, e) + i), H(), f = e + 1) : H();
+						continue;
 					}
-					et.has(t.type) && i.push(n.length), a(o.children);
-					return;
 				}
-				r = {
-					reason: "component-content",
-					name: tt(t.type)
-				};
-			} else r = {
-				reason: "component-content",
-				name: typeof t
-			};
+				d(f, o - 1, h);
+				return;
+			}
+			let g = u(f, o - 2, p - i), _ = Math.min(g, o - 1 - c);
+			if (_ >= f && _ - f + 1 >= s) d(f, _, l(f, _) + i);
+			else if (t) {
+				H();
+				continue;
+			} else {
+				let e = Math.max(f, g);
+				if (d(f, e, l(f, e) + i), e >= o - 1) return;
+				f = e + 1, H();
+				continue;
+			}
+			f = _ + 1, H();
 		}
 	};
-	return a(t), {
-		text: n,
-		breaks: i,
-		problem: r
-	};
-}
-var rt = (e) => e === " " || e === "\n" || e === "	" || e === "\r" || e === "\f", it = "­";
-function at(t, { text: n, breaks: r = [] }, { from: i, to: a, part: o, parts: s, hyphens: c = [] }) {
-	let l = o === 0, u = o === s - 1, d = l ? 0 : Math.max(0, i), f = u ? n.length : Math.min(n.length, a), p = (e) => n[e - 1] === "\n" || r.includes(e);
-	if (!l) {
-		let e = d;
-		for (; e < f && rt(n[e]);) e += 1;
-		let t = n.slice(d, e).lastIndexOf("\n");
-		t >= 0 ? d += t + 1 : p(d) || (d = e);
+	for (let r = 0; r < _ && !(p && x.length > p); r += 1) {
+		m && (m.scannedItems += 1);
+		let i = n[v(r)] ?? {}, a = Le(e[v(r)]), o = t[v(r)] ?? String(v(r));
+		i.breakBefore && H();
+		let s = F(r), c = r > 0 ? F(r - 1) : null;
+		s && s !== c && k() && S + oe(r, s, O()) > E() && H(), ae(r);
+		let l = ee(r) && !ce(r, i) ? te(r) : null;
+		if (l) {
+			le(r, o, i, l), i.breakAfter && r < _ - 1 && H();
+			continue;
+		}
+		let u = O(), d = P(r, u);
+		if (k() && d > E() - S && (H(), u = null, ae(r), d = P(r, u)), d > E()) {
+			se(r, a, d);
+			continue;
+		}
+		let f = k(), p = f ? V(r, ze(i.keepWithNext), {
+			currentHeight: S,
+			ownHeight: d,
+			stopEarly: Number.isFinite(E())
+		}) : 0, h = d + p;
+		f && S + h > E() && (H(), u = null, ae(r), d = P(r, u), d > E()) ? se(r, a, d) : (D().indexes.push(r), D().keys.push(o), S += d, i.breakAfter && r < _ - 1 && H());
 	}
-	let m = !1, h = !1;
-	if (!u) {
-		if (c.includes(f) && !r.includes(f)) n[f - 1] === it && --f, m = !0;
-		else {
-			let e = f;
-			for (; e > d && rt(n[e - 1]);) --e;
-			(r.includes(f) || n.slice(e, f).includes("\n")) && (h = !0), f = e;
+	let ue = x.filter((e) => e.indexes.length > 0 || !!e.unplaceable);
+	if (!ue.length) return m && !p && (m.pages = 1), [{
+		indexes: [],
+		keys: []
+	}];
+	let de = p ? ue.slice(0, p) : ue;
+	m && !p && (m.pages = de.length);
+	let fe = Xe(de, z, (e) => te(e).entry);
+	return de.map((e) => {
+		if (!e.indexes.length) return e;
+		let t = z.get(e), n = [];
+		for (let r = 0; r < e.indexes.length; r += 1) {
+			let i = e.indexes[r], a = A(i);
+			if (!a) continue;
+			if (r === 0 && t?.get(i)?.[0] > 0) {
+				M(a) && n.push({
+					groupKey: a,
+					itemIndex: i,
+					isContinuation: !0
+				});
+				continue;
+			}
+			let o = r > 0 ? e.indexes[r - 1] : null;
+			if (!N(i, o)) continue;
+			let s = i > 0 ? A(i - 1) : null;
+			n.push({
+				groupKey: a,
+				itemIndex: i,
+				isContinuation: s === a
+			});
 		}
-	}
-	let g = c.filter((e) => e > d && e < f && n[e - 1] !== it), _ = 0, v = !1, y = (t) => {
-		if (t == null || typeof t == "boolean") return null;
-		if (typeof t == "string" || typeof t == "number" || typeof t == "bigint") {
-			let e = String(t), n = _, r = _ + e.length;
-			_ = r;
-			let i = Math.max(n, d), a = Math.min(r, f);
-			if (!(i < a)) return null;
-			let o = "", s = i;
-			for (let t of g) t <= i || t > a || (o += e.slice(s - n, t - n) + it, s = t);
-			return o += e.slice(s - n, a - n), m && !v && f <= r && (o += "-", v = !0), o;
-		}
-		if (Array.isArray(t)) return t.map(y);
-		if (!e.isValidElement(t)) return null;
-		let n = _;
-		if (typeof t.type == "string" && et.has(t.type)) {
-			let e = (n > d || l) && (n < f || u);
-			return !e && n >= f && !u && (h = !0), e ? t : null;
-		}
-		let r = t.props ?? {}, i = y(r.children), a = _;
-		if (a === n) {
-			if (!(d <= n && n < f || u && n === f)) return null;
-		} else if (a <= d || n >= f) return null;
-		return r.children === void 0 ? t : e.cloneElement(t, void 0, ...Array.isArray(i) ? i : [i]);
-	}, b = y(t);
-	return {
-		children: Array.isArray(b) ? b : [b],
-		justifyLast: !u && !h,
-		manualHyphens: c.some((e) => e > i && e <= a)
-	};
-}
-//#endregion
-//#region src/uhuu/pagination-static/flow-text.tsx
-var ot = e.createContext(null), st = typeof window > "u" ? e.useEffect : e.useLayoutEffect, ct = /* @__PURE__ */ new Set(), lt = /* @__PURE__ */ new Set();
-function ut(e) {
-	let t = e.getBoundingClientRect();
-	if (!(t.height > 0)) return;
-	let n = window.getComputedStyle(e), r = (e) => Number.parseFloat(n.getPropertyValue(e) || "0") || 0;
-	return {
-		height: t.height / Ne(e) - r("padding-top") - r("padding-bottom") - r("border-top-width") - r("border-bottom-width"),
-		lineHeight: r("line-height") || r("font-size") * 1.2 || 16
-	};
-}
-function dt({ children: t, as: n = "div", className: r, style: i }) {
-	let a = e.useContext(ot), o = e.useRef(null), s = e.useMemo(() => nt(t), [t]), { text: c, problem: l } = s, u = a && !l ? at(t, s, a) : null, d = u ? a?.textHeight : void 0;
-	e.useEffect(() => {
-		if (!l || !H()) return;
-		let e = `${l.reason}:${l.name}`;
-		ct.has(e) || (ct.add(e), console.warn(`[uhuu-components] Static.FlowText holds ${l.reason === "block-content" ? `a <${l.name}>` : `<${l.name}>`}: only text and inline text elements (span, strong, em, b, i, a, small, sub, sup, br) can split between lines, so its item is not split. Put block content in the item outside the FlowText, and an Editable around the FlowText rather than inside it.`));
-	}, [l]), st(() => {
-		let e = o.current;
-		if (d === void 0 || !e || !H()) return;
-		let t = ut(e);
-		if (!t || t.height <= d + Math.max(2, t.lineHeight / 2)) return;
-		let n = t.height, r = c.slice(0, 40);
-		lt.has(r) || (lt.add(r), console.warn(`[uhuu-components] Static.FlowText "${c.slice(0, 40)}…": a piece lays out ${Math.round(n - d)}px taller than the lines it was planned with, so it re-wrapped. A continuation must give the FlowText the width it measured with (keep a label cell, empty), and ::first-line styles or text-wrap: balance | pretty re-flow a slice.`));
+		let r = fe.get(e);
+		return !n.length && !r ? e : {
+			...e,
+			...n.length ? { groupHeaders: n } : {},
+			...r ? { splits: r } : {}
+		};
 	});
-	let f = n, p = {
-		ref: o,
-		className: r,
-		style: u && a ? {
-			...i,
-			...a.part > 0 ? { textIndent: 0 } : {},
-			...a.justify && u.justifyLast ? { textAlignLast: "justify" } : {},
-			...u.manualHyphens ? {
-				hyphens: "manual",
-				WebkitHyphens: "manual"
-			} : {}
-		} : i,
-		"data-uhuu-flow-text": "true",
-		"data-uhuu-flow-text-unsplittable": l?.reason
+}
+function Ye(e, t, n, r) {
+	let i = [];
+	for (let a = t; a <= n; a += 1) e[a].hyphen && a !== e.length - 1 && (a === n && r || i.push(e[a + 1].start));
+	return i.length ? { hyphens: i } : {};
+}
+function Xe(e, t, n) {
+	let r = /* @__PURE__ */ new Map();
+	if (!t.size) return r;
+	let i = /* @__PURE__ */ new Map();
+	for (let n of e) for (let [e, r] of t.get(n) ?? []) {
+		let t = i.get(e);
+		t || (t = [], i.set(e, t)), t.push({
+			chunk: n,
+			range: r
+		});
+	}
+	for (let [e, t] of i) {
+		let i = n(e), { lines: a } = i;
+		t.forEach(({ chunk: n, range: [o, s] }, c) => {
+			let l = r.get(n);
+			l || (l = {}, r.set(n, l)), l[e] = {
+				part: c,
+				parts: t.length,
+				from: c === 0 ? 0 : a[o].start,
+				to: c === t.length - 1 ? i.end : a[s + 1].start,
+				...i.justify ? { justify: !0 } : {},
+				textHeight: a[s].bottom - a[o].top,
+				...Ye(a, o, s, c === t.length - 1)
+			};
+		});
+	}
+	return r;
+}
+function Ze(e, t, n) {
+	return (e.indexes ?? []).reduce((e, n) => e + Le(t[n]), 0) + (e.groupHeaders ?? []).reduce((e, t) => e + Le(n[t.groupKey]), 0);
+}
+function Qe(e, t, n) {
+	return !t || !n ? e : {
+		...e,
+		headerGroupHeights: e.columnHeaderGroupHeights?.[t]?.[n] ?? e.headerGroupHeights,
+		headerGroupRepeats: e.columnHeaderGroupRepeats?.[t]?.[n] ?? e.headerGroupRepeats
 	};
-	return u ? e.createElement(f, p, ...u.children) : e.createElement(f, p, t);
+}
+function $e(e, t, n, r, i, a) {
+	let o = (e) => t[n + e], s = {
+		indexes: (e.indexes ?? []).map(o).filter(Number.isInteger),
+		keys: [...e.keys ?? []],
+		...a === void 0 ? {} : { previousSourceIndex: a }
+	};
+	return e.groupHeaders?.length && (s.groupHeaders = e.groupHeaders.map((e) => ({
+		...e,
+		itemIndex: o(e.itemIndex),
+		isContinuation: e.isContinuation || e.itemIndex === 0 && a !== void 0 && i?.[a] === e.groupKey
+	}))), e.unplaceable && (s.unplaceable = {
+		...e.unplaceable,
+		index: o(e.unplaceable.index),
+		...r ? { columnId: r } : {}
+	}), s;
+}
+function et(e, t, n, r, i, a, o) {
+	if (n >= t.length) return {
+		chunk: {
+			indexes: [],
+			keys: []
+		},
+		consumed: 0,
+		height: 0
+	};
+	let s = Qe(e, i, a);
+	e.metrics && (e.metrics.chunkerCalls += 1);
+	let c = $e(Je({
+		heights: e.heights,
+		keys: e.keys,
+		metas: e.metas,
+		headerGroupKeys: e.headerGroupKeys,
+		headerGroupHeights: s.headerGroupHeights,
+		headerGroupRepeats: s.headerGroupRepeats,
+		previousHeaderGroupKey: o === void 0 ? void 0 : e.headerGroupKeys?.[o],
+		availableHeight: r,
+		window: {
+			indexes: t,
+			offset: n
+		},
+		maxChunks: 1,
+		metrics: e.metrics
+	})[0] ?? {
+		indexes: [],
+		keys: []
+	}, t, n, a, s.headerGroupKeys, o);
+	return {
+		chunk: c,
+		consumed: c.unplaceable ? 1 : c.indexes.length,
+		height: Ze(c, e.heights ?? [], s.headerGroupHeights ?? {})
+	};
+}
+function tt({ nodes: e = [], itemCount: t = 0 } = {}) {
+	let n = /* @__PURE__ */ new Set(), r = /* @__PURE__ */ new Set(), i = (e) => {
+		throw TypeError(`[uhuu-components] Invalid Static.FlowColumns layout: ${e}`);
+	}, a = (e, n) => {
+		(!Number.isInteger(e) || e < 0 || e >= t) && i(`${n} references out-of-range item index ${String(e)}.`), r.has(e) && i(`item index ${e} occurs more than once.`), r.add(e);
+	};
+	e.forEach((e, t) => {
+		if ((!e || e.kind !== "item" && e.kind !== "columns") && i(`node ${t} has an unsupported kind.`), e.kind === "item") {
+			a(e.index, `node ${t}`);
+			return;
+		}
+		(typeof e.id != "string" || !e.id) && i(`column group ${t} needs a stable id.`), n.has(e.id) && i(`column group id "${e.id}" occurs more than once.`), n.add(e.id);
+		let r = /* @__PURE__ */ new Set();
+		(e.columns ?? []).forEach((t, n) => {
+			(!t || typeof t.id != "string" || !t.id) && i(`column ${n} in group "${e.id}" needs a stable id.`), r.has(t.id) && i(`column id "${t.id}" occurs more than once in group "${e.id}".`), r.add(t.id), (t.indexes ?? []).forEach((n) => {
+				a(n, `column "${t.id}" in group "${e.id}"`);
+			});
+		});
+	});
+	for (let e = 0; e < t; e += 1) r.has(e) || i(`item index ${e} is omitted.`);
+	return !0;
+}
+function nt(e, t, n, r, i) {
+	let a = Le(r.chunk.unplaceable?.requiredHeight);
+	if (a > 0 && a <= i) return "move";
+	let o = t[n];
+	if (o === void 0) return "no";
+	let s = e.metas?.[o] ?? {};
+	return ze(s.keepWithNext) > 0 || s.avoidBreakInside && s.groupKey ? "compare" : "no";
+}
+function rt(e) {
+	return !!(e.layout?.length || e.unplaceable);
+}
+function it({ nodes: e = [], heights: t = [], keys: n = [], metas: r = [], availableHeight: i = 0, continuationHeight: a, headerGroupKeys: o = [], headerGroupHeights: s = {}, headerGroupRepeats: c = {}, columnHeaderGroupHeights: l = {}, columnHeaderGroupRepeats: u = {}, onUnplaceableItem: d, metrics: f } = {}) {
+	tt({
+		nodes: e,
+		itemCount: t.length
+	});
+	let p = Le(i) || Infinity, m = Le(a) || p, h = {
+		heights: t,
+		keys: n,
+		metas: r,
+		headerGroupKeys: o,
+		headerGroupHeights: s,
+		headerGroupRepeats: c,
+		columnHeaderGroupHeights: l,
+		columnHeaderGroupRepeats: u,
+		metrics: f
+	}, g = [{
+		indexes: [],
+		keys: [],
+		layout: []
+	}], _ = 0, v = () => g[g.length - 1], y = () => g.length > 1 ? m : p, b = m, x = () => {
+		rt(v()) && (g.push({
+			indexes: [],
+			keys: [],
+			layout: []
+		}), _ = 0);
+	}, S = (e) => {
+		v().indexes.push(...e.indexes ?? []), v().keys.push(...e.keys ?? []), !v().unplaceable && e.unplaceable && (v().unplaceable = e.unplaceable), e.unplaceable && d?.(e.unplaceable);
+	};
+	for (let n = 0; n < e.length; n += 1) {
+		let i = e[n];
+		if (!i || i.kind !== "item" && i.kind !== "columns") continue;
+		if (i.kind === "item") {
+			let i = [], a = n;
+			for (; a < e.length && e[a]?.kind === "item";) {
+				let n = Number(e[a].index);
+				Number.isInteger(n) && n >= 0 && n < t.length && i.push(n), a += 1;
+			}
+			n = a - 1;
+			let o = 0;
+			for (; o < i.length;) {
+				y() - _ <= 0 && rt(v()) && x(), r[i[o]]?.breakBefore && rt(v()) && x();
+				let e = o > 0 ? i[o - 1] : void 0, t = et(h, i, o, y() - _, void 0, void 0, e);
+				if (rt(v())) {
+					let n = nt(h, i, o, t, b);
+					if (n !== "no") {
+						f && (f.freshPageAttempts += 1);
+						let r = et(h, i, o, b, void 0, void 0, e);
+						(n === "move" || r.consumed > t.consumed) && (x(), t = r);
+					}
+				}
+				v().layout.push({
+					kind: "items",
+					chunk: t.chunk
+				}), S(t.chunk), _ += t.height, o += t.consumed, t.consumed === 0 && (o += 1);
+				let n = t.chunk.indexes?.at(-1) ?? t.chunk.unplaceable?.index;
+				(o < i.length || t.chunk.unplaceable || n !== void 0 && r[n]?.breakAfter) && x();
+			}
+			continue;
+		}
+		let a = (i.columns ?? []).map((e) => ({
+			id: String(e?.id ?? ""),
+			indexes: (e?.indexes ?? []).filter((e) => Number.isInteger(e) && e >= 0 && e < t.length),
+			cursor: 0
+		})).filter((e) => e.id && e.indexes.length);
+		if (a.length) for (; a.some((e) => e.cursor < e.indexes.length);) {
+			y() - _ <= 0 && rt(v()) && x(), a.some((e) => {
+				let t = e.indexes[e.cursor];
+				return t !== void 0 && r[t]?.breakBefore;
+			}) && rt(v()) && x();
+			let e = y() - _, t = a.map((t) => et(h, t.indexes, t.cursor, e, i.id, t.id, t.cursor > 0 ? t.indexes[t.cursor - 1] : void 0)), n, o = () => n ??= a.map((e) => (f && (f.freshPageAttempts += 1), et(h, e.indexes, e.cursor, b, i.id, e.id, e.cursor > 0 ? e.indexes[e.cursor - 1] : void 0)));
+			if (rt(v()) && a.some((e, n) => {
+				let r = nt(h, e.indexes, e.cursor, t[n], b);
+				return r === "no" ? !1 : r === "move" || o()[n].consumed > t[n].consumed;
+			}) && (x(), t = o()), !t.some((e) => e.consumed > 0)) {
+				let e = a.find((e) => e.cursor < e.indexes.length);
+				throw TypeError(`[uhuu-components] Static.FlowColumns made no pagination progress${e ? ` in column "${e.id}"` : ""}.`);
+			}
+			let s = a.map((e, n) => ({
+				id: e.id,
+				chunk: t[n].chunk
+			}));
+			v().layout.push({
+				kind: "columns",
+				id: String(i.id ?? "columns"),
+				columns: s
+			});
+			for (let { chunk: e } of s) S(e);
+			let c = Math.max(0, ...t.map((e) => e.height));
+			_ += c, a.forEach((e, n) => {
+				e.cursor += t[n].consumed;
+			});
+			let l = a.some((e) => e.cursor < e.indexes.length), u = t.some((e) => {
+				let t = e.chunk.indexes?.at(-1) ?? e.chunk.unplaceable?.index;
+				return t !== void 0 && r[t]?.breakAfter;
+			}), d = t.some((e) => !!e.chunk.unplaceable);
+			(l || u || d) && x();
+		}
+	}
+	let C = g.filter(rt);
+	return C.length ? (f && (f.pages = C.length), C) : (f && (f.pages = 1), [{
+		indexes: [],
+		keys: [],
+		layout: []
+	}]);
 }
 //#endregion
-//#region src/uhuu/pagination-static/flow-static.tsx
-var ft = be, pt = Ae, mt = "data-uhuu-flow-continuation-copy", ht = e.createContext(null), gt = typeof window > "u" ? e.useEffect : e.useLayoutEffect;
-function _t(e) {
-	let t = e.availableHeight - e.headerHeight;
-	if (!(e.height > 0) || !Number.isFinite(t)) return;
-	let n = Math.min(1, Math.max(t, 1) / e.height);
-	return n < 1 ? {
-		transform: `scale(${n})`,
-		transformOrigin: "top left"
-	} : void 0;
-}
-var vt = /* @__PURE__ */ new Set();
-function yt(e) {
-	if (!e || typeof e != "object" || !("type" in e)) return;
-	let t = e.type;
-	return typeof t == "string" || typeof t == "number" ? String(t) : void 0;
-}
-function bt(e, t) {
-	let n = { ...e ?? {} };
-	for (let [e, r] of Object.entries(t ?? {})) r !== void 0 && (n[e] = r);
-	return n;
-}
-function xt(e) {
+//#region src/uhuu/pagination-static/flow-plan.ts
+var at = Je, ot = it;
+function st(e) {
 	return Number.parseFloat(e || "0") || 0;
 }
-function St(e, t) {
+function ct(e, t) {
 	let n = (e) => {
 		let t = window.getComputedStyle(e);
-		return xt(t.paddingTop) + xt(t.paddingBottom) + xt(t.borderTopWidth) + xt(t.borderBottomWidth);
+		return st(t.paddingTop) + st(t.paddingBottom) + st(t.borderTopWidth) + st(t.borderBottomWidth);
 	};
 	for (let r of Array.from(e.querySelectorAll(":scope > [data-uhuu-flow-layout-node=\"columns\"]"))) {
-		let e = window.getComputedStyle(r), i = xt(e.marginTop) + xt(e.marginBottom);
+		let e = window.getComputedStyle(r), i = st(e.marginTop) + st(e.marginBottom);
 		if (n(r) > .01 || i > .01) throw TypeError("[uhuu-components] Static.FlowColumns group vertical margin, padding, and borders are unsupported; put measured vertical spacing on items with getColumnItemProps.");
 		let a = [];
 		for (let e of Array.from(r.querySelectorAll(":scope > [data-uhuu-flow-column]"))) {
-			let r = window.getComputedStyle(e), i = xt(r.marginTop) + xt(r.marginBottom);
-			if (n(e) > .01 || i > .01 || xt(r.rowGap) > .01 || xt(r.minHeight) > .01 || r.maxHeight !== "none") throw TypeError("[uhuu-components] Static.FlowColumns column vertical margin, padding, borders, min/max height, and row-gap are unsupported; put measured vertical spacing on items with getColumnItemProps.");
-			let o = Array.from(e.querySelectorAll("[data-uhuu-flow-item=\"true\"], [data-uhuu-flow-group-header=\"true\"]")).reduce((e, n) => e + Pe(n, t), 0);
+			let r = window.getComputedStyle(e), i = st(r.marginTop) + st(r.marginBottom);
+			if (n(e) > .01 || i > .01 || st(r.rowGap) > .01 || st(r.minHeight) > .01 || r.maxHeight !== "none") throw TypeError("[uhuu-components] Static.FlowColumns column vertical margin, padding, borders, min/max height, and row-gap are unsupported; put measured vertical spacing on items with getColumnItemProps.");
+			let o = Array.from(e.querySelectorAll("[data-uhuu-flow-item=\"true\"], [data-uhuu-flow-group-header=\"true\"]")).reduce((e, n) => e + ve(n, t), 0);
 			a.push(o);
 		}
 		let o = Math.max(0, ...a);
-		if (Pe(r, t) > o + 1) throw TypeError("[uhuu-components] Static.FlowColumns group/column fixed height or wrapping adds unmeasured vertical extent.");
+		if (ve(r, t) > o + 1) throw TypeError("[uhuu-components] Static.FlowColumns group/column fixed height or wrapping adds unmeasured vertical extent.");
 	}
 }
-function Ct(e, t, n) {
+function lt(e, t, n) {
 	let r = e.getBoundingClientRect();
 	return n !== void 0 && r.height > 0 && r.bottom > n + .5 ? {
 		height: Math.max(0, n - r.top) / t,
@@ -1543,35 +1401,35 @@ function Ct(e, t, n) {
 		overflow: 0
 	};
 }
-function wt(e) {
+function ut(e) {
 	return e.closest(".uhuu-page-sheet")?.getBoundingClientRect().bottom;
 }
-function Tt(e, t, n) {
+function dt(e, t, n) {
 	let r = e.dataset.uhuuFlowItemCount;
 	if (r === void 0) return;
 	let i = Number.parseInt(r, 10);
 	Number.isInteger(i) && i !== t.length && n.onUnmarkedItems?.(t.length, i);
 }
-var Et = (e) => e === void 0 ? void 0 : Math.round(e * 100) / 100, Dt = "[data-uhuu-flow-text]", Ot = (e) => e ? {
+var ft = (e) => e === void 0 ? void 0 : Math.round(e * 100) / 100, pt = "[data-uhuu-flow-text]", mt = (e) => e ? {
 	lines: e.lines.map(({ top: e, bottom: t, start: n, hyphen: r }) => r ? [
-		Et(e),
-		Et(t),
+		ft(e),
+		ft(t),
 		n,
 		1
 	] : [
-		Et(e),
-		Et(t),
+		ft(e),
+		ft(t),
 		n
 	]),
 	end: e.end,
 	justify: e.justify
 } : null;
-function kt(e, t, n = {}) {
+function ht(e, t, n = {}) {
 	let r = t.dataset.uhuuFlowId;
 	if (!r) return null;
-	if (t.dataset.uhuuFlowLayout === "columns") return At(e, t, n);
-	let i = We(t);
-	if (Tt(t, i, n), !i.length) return {
+	if (t.dataset.uhuuFlowLayout === "columns") return gt(e, t, n);
+	let i = Oe(t);
+	if (dt(t, i, n), !i.length) return {
 		flowId: r,
 		chunks: [{
 			indexes: [],
@@ -1580,19 +1438,19 @@ function kt(e, t, n = {}) {
 		signature: `${r}:empty`,
 		unplaceableItems: []
 	};
-	let a = Ge(e, t, i);
+	let a = ke(e, t, i);
 	a && n.onUnstackedItem?.(a);
-	let o = Ne(e), { height: s, overflow: c } = Ct(e, o, n.clipBottom);
+	let o = _e(e), { height: s, overflow: c } = lt(e, o, n.clipBottom);
 	c > 0 && n.onAreaOverflow?.(c);
-	let l = Number.isFinite(s) && s > 0, u = n.breakReserve && n.breakReserve > 0 ? n.breakReserve : void 0, d = t.dataset.uhuuFlowAsChild === "true" ? Ue(e, t, o) : void 0, f = i.map((e) => d?.get(e) ?? Pe(e, o)), p = i.map(Fe), m = i.map((e, t) => e.dataset.uhuuFlowKey || String(t)), h = i.map(Be), g = Ve(i), _ = He(t, o, d), v = l ? n.continuationHeight : void 0, y = [], b = l ? s : f.reduce((e, t) => e + t, 0) + Object.values(_).reduce((e, t) => e + t, 0), x = !!t.querySelector(Dt), S = /* @__PURE__ */ new Map(), C = x ? Array(i.length) : void 0;
+	let l = Number.isFinite(s) && s > 0, u = n.breakReserve && n.breakReserve > 0 ? n.breakReserve : void 0, d = t.dataset.uhuuFlowAsChild === "true" ? De(e, t, o) : void 0, f = i.map((e) => d?.get(e) ?? ve(e, o)), p = i.map(ye), m = i.map((e, t) => e.dataset.uhuuFlowKey || String(t)), h = i.map(we), g = Te(i), _ = Ee(t, o, d), v = l ? n.continuationHeight : void 0, y = [], b = l ? s : f.reduce((e, t) => e + t, 0) + Object.values(_).reduce((e, t) => e + t, 0), x = !!t.querySelector(pt), S = /* @__PURE__ */ new Map(), C = x ? Array(i.length) : void 0;
 	return C && i.forEach((e, t) => {
-		e.querySelector(Dt) && Object.defineProperty(C, t, {
+		e.querySelector(pt) && Object.defineProperty(C, t, {
 			enumerable: !0,
-			get: () => (S.has(t) || S.set(t, Ze(e, f[t], o, n.onIssue)), S.get(t))
+			get: () => (S.has(t) || S.set(t, Fe(e, f[t], o, n.onIssue)), S.get(t))
 		});
 	}), l || n.onZeroHeight?.(), {
 		flowId: r,
-		chunks: ft({
+		chunks: at({
 			heights: f,
 			keys: m,
 			metas: p,
@@ -1607,12 +1465,12 @@ function kt(e, t, n = {}) {
 			...x ? { lines: C } : {},
 			...u ? { breakReserve: u } : {}
 		}),
-		signature: Qe(JSON.stringify({
+		signature: Ie(JSON.stringify({
 			version: x ? 4 : 2,
 			flowId: r,
 			availableHeight: Math.round(b * 100) / 100,
-			continuationHeight: Et(v),
-			...u ? { breakReserve: Et(u) } : {},
+			continuationHeight: ft(v),
+			...u ? { breakReserve: ft(u) } : {},
 			heights: f.map((e) => Math.round(e * 100) / 100),
 			keys: m,
 			metas: p,
@@ -1620,16 +1478,16 @@ function kt(e, t, n = {}) {
 			headerGroupHeights: _,
 			headerGroupRepeats: g,
 			unplaceableItems: y,
-			...x ? { lines: [...S].sort(([e], [t]) => e - t).map(([e, t]) => [e, Ot(t)]) } : {}
+			...x ? { lines: [...S].sort(([e], [t]) => e - t).map(([e, t]) => [e, mt(t)]) } : {}
 		})),
 		unplaceableItems: y
 	};
 }
-function At(e, t, n = {}) {
+function gt(e, t, n = {}) {
 	let r = t.dataset.uhuuFlowId;
 	if (!r) return null;
-	let i = We(t);
-	if (Tt(t, i, n), !i.length) return {
+	let i = Oe(t);
+	if (dt(t, i, n), !i.length) return {
 		flowId: r,
 		chunks: [{
 			indexes: [],
@@ -1639,14 +1497,14 @@ function At(e, t, n = {}) {
 		signature: `${r}:columns:empty`,
 		unplaceableItems: []
 	};
-	let a = Ne(e);
-	St(t, a), t.querySelector(Dt) && n.onIssue?.("flow-text-in-columns"), n.breakReserve && n.onIssue?.("break-reserve-in-columns");
-	let { height: o, overflow: s } = Ct(e, a, n.clipBottom);
+	let a = _e(e);
+	ct(t, a), t.querySelector(pt) && n.onIssue?.("flow-text-in-columns"), n.breakReserve && n.onIssue?.("break-reserve-in-columns");
+	let { height: o, overflow: s } = lt(e, a, n.clipBottom);
 	s > 0 && n.onAreaOverflow?.(s);
-	let c = Number.isFinite(o) && o > 0, l = Math.max(-1, ...i.map((e) => Number.parseInt(e.dataset.uhuuFlowIndex ?? "-1", 10))), u = Array.from({ length: l + 1 }, () => 0), d = Array.from({ length: l + 1 }, (e, t) => String(t)), f = Array.from({ length: l + 1 }, () => ({})), p = Array.from({ length: l + 1 }, () => void 0), m = t.dataset.uhuuFlowAsChild === "true" ? Ue(e, t, a) : void 0;
+	let c = Number.isFinite(o) && o > 0, l = Math.max(-1, ...i.map((e) => Number.parseInt(e.dataset.uhuuFlowIndex ?? "-1", 10))), u = Array.from({ length: l + 1 }, () => 0), d = Array.from({ length: l + 1 }, (e, t) => String(t)), f = Array.from({ length: l + 1 }, () => ({})), p = Array.from({ length: l + 1 }, () => void 0), m = t.dataset.uhuuFlowAsChild === "true" ? De(e, t, a) : void 0;
 	for (let e of i) {
 		let t = Number.parseInt(e.dataset.uhuuFlowIndex ?? "-1", 10);
-		!Number.isInteger(t) || t < 0 || (u[t] = m?.get(e) ?? Pe(e, a), d[t] = e.dataset.uhuuFlowKey || String(t), f[t] = Fe(e), p[t] = Be(e));
+		!Number.isInteger(t) || t < 0 || (u[t] = m?.get(e) ?? ve(e, a), d[t] = e.dataset.uhuuFlowKey || String(t), f[t] = ye(e), p[t] = we(e));
 	}
 	let h = Array.from(t.children).flatMap((e) => {
 		if (!(e instanceof HTMLElement)) return [];
@@ -1670,7 +1528,7 @@ function At(e, t, n = {}) {
 			id: e.dataset.uhuuFlowLayoutId || "columns",
 			columns: t
 		}] : [];
-	}), g = Ve(i), _ = He(t, a, m), v = c ? n.continuationHeight : void 0, y = {}, b = {};
+	}), g = Te(i), _ = Ee(t, a, m), v = c ? n.continuationHeight : void 0, y = {}, b = {};
 	for (let e of Array.from(t.querySelectorAll(":scope > [data-uhuu-flow-layout-node=\"columns\"]"))) {
 		let t = e.dataset.uhuuFlowLayoutId;
 		if (t) {
@@ -1679,14 +1537,14 @@ function At(e, t, n = {}) {
 				let e = n.dataset.uhuuFlowColumn;
 				if (!e) continue;
 				let r = Array.from(n.querySelectorAll("[data-uhuu-flow-item=\"true\"]"));
-				y[t][e] = He(n, a), b[t][e] = Ve(r);
+				y[t][e] = Ee(n, a), b[t][e] = Te(r);
 			}
 		}
 	}
 	let x = [], S = c ? o : u.reduce((e, t) => e + t, 0) + Object.values(_).reduce((e, t) => e + t, 0);
 	return c || n.onZeroHeight?.(), {
 		flowId: r,
-		chunks: pt({
+		chunks: ot({
 			nodes: h,
 			heights: u,
 			keys: d,
@@ -1702,11 +1560,11 @@ function At(e, t, n = {}) {
 				x.push(e), n.onUnplaceableItem?.(e);
 			}
 		}),
-		signature: Qe(JSON.stringify({
+		signature: Ie(JSON.stringify({
 			version: 3,
 			flowId: r,
 			availableHeight: Math.round(S * 100) / 100,
-			continuationHeight: Et(v),
+			continuationHeight: ft(v),
 			nodes: h,
 			heights: u.map((e) => Math.round(e * 100) / 100),
 			keys: d,
@@ -1721,115 +1579,126 @@ function At(e, t, n = {}) {
 		unplaceableItems: x
 	};
 }
-var jt = {
+//#endregion
+//#region src/uhuu/pagination-static/flow-area.tsx
+var _t = typeof window > "u" ? e.useEffect : e.useLayoutEffect, vt = {
 	"multiple-flow-text": "an item holds more than one Static.FlowText, so it is not split. Give each item one FlowText.",
 	"inline-flow-text": "a Static.FlowText is not a block element (as=\"span\"?), so its lines are not its own and its item is not split. Keep the default `as=\"div\"` or another block element.",
 	"rewrapping-text-wrap": "a Static.FlowText has text-wrap: balance or pretty, which re-flows each piece of a split item, so a piece may not match its planned lines. Use text-wrap: wrap on split text.",
 	"flow-text-in-columns": "Static.FlowColumns does not split Static.FlowText items; they render whole.",
 	"break-reserve-in-columns": "Static.FlowColumns does not keep breakReserve; its pages use their full region."
 };
-function Mt(e, t) {
-	for (let n of Array.from(e.querySelectorAll(`[${mt}] [data-uhuu-flow="true"]`))) if (n.dataset.uhuuFlowId === t) return n.closest("[data-uhuu-flow-area]");
+function yt(e, t) {
+	for (let n of Array.from(e.querySelectorAll(`[${H}] [data-uhuu-flow="true"]`))) if (n.dataset.uhuuFlowId === t) return n.closest("[data-uhuu-flow-area]");
 	return null;
 }
-function Nt({ children: t, className: n = "", style: r, onFlowMeasurement: i, measureContinuation: a = !1, breakReserve: o }) {
-	let s = e.useContext(ht), c = e.useRef(null), l = e.useId(), u = e.useRef(null), d = e.useRef(s), f = e.useRef(""), p = e.useRef(!1), m = e.useRef(!1), h = e.useRef(/* @__PURE__ */ new Set()), g = e.useRef(""), v = e.useRef(""), y = e.useRef(""), b = e.useRef(/* @__PURE__ */ new Set()), x = e.useRef(!1), S = e.useRef(""), C = e.useRef("");
-	return e.useEffect(() => () => {
+function bt({ children: t, className: n = "", style: r, onFlowMeasurement: i, measureContinuation: a = !1, breakReserve: o }) {
+	let s = e.useContext(se), c = e.useRef(null), l = e.useId(), u = e.useRef(null), d = e.useRef(s), f = e.useRef(i), p = ue(), m = e.useRef(p), h = e.useRef(!1), g = je(o), _ = e.useRef(""), y = e.useRef(!1), b = e.useRef(!1), x = e.useRef(/* @__PURE__ */ new Set()), S = e.useRef(""), C = e.useRef(""), w = e.useRef(""), T = e.useRef(/* @__PURE__ */ new Set()), E = e.useRef(!1), D = e.useRef(""), O = e.useRef("");
+	return _t(() => {
+		f.current = i, m.current = p;
+	}, [i, p]), _t(() => {
+		o !== void 0 && g === void 0 && p && !E.current && (E.current = !0, console.warn(`[uhuu-components] Static.FlowArea breakReserve ${JSON.stringify(o)} is not a CSS length with an absolute unit ("20mm", "12px") or a number of px, so no room is kept at a page break.`));
+	}, [
+		o,
+		g,
+		p
+	]), e.useEffect(() => () => {
 		d.current?.unregisterMeasurement?.(u.current ?? "", l);
-	}, [l]), gt(() => {
+	}, [l]), _t(() => {
 		if (a) return s?.requestContinuation?.();
-	}, [s, a]), gt(() => {
+	}, [s, a]), _t(() => {
 		if (d.current = s, s?.mode !== "measure" || !s.registerMeasurement || !c.current) return;
-		let e = c.current, t = e.closest("[data-uhuu-flow-measurement]") ?? e, n = a && !!s.requestContinuation, r = qe(o);
-		o !== void 0 && r === void 0 && H() && !x.current && (x.current = !0, console.warn(`[uhuu-components] Static.FlowArea breakReserve ${JSON.stringify(o)} is not a CSS length with an absolute unit ("20mm", "12px") or a number of px, so no room is kept at a page break.`));
-		let _ = null, w, T = null, E = null;
-		f.current = "";
-		let D = (t = !0) => {
-			t && !w && (w = O?.begin()), _ === null && (_ = oe(() => {
-				_ = null;
+		let e = c.current, t = e.closest("[data-uhuu-flow-measurement]") ?? e, n = a && !!s.requestContinuation, r = null, i, o = null, p = null, v = null;
+		_.current = "";
+		let E = (t = !0) => {
+			t && !i && (i = k?.begin()), r === null && (r = fe(() => {
+				r = null;
 				try {
-					N();
+					P();
 				} catch (t) {
-					f.current = "", O?.fail(t), e.setAttribute("data-uhuu-flow-error", String(t)), console.error("[uhuu-components] Flow measurement failed:", t);
+					_.current = "", k?.fail(t), e.setAttribute("data-uhuu-flow-error", String(t)), console.error("[uhuu-components] Flow measurement failed:", t);
 				} finally {
-					w?.(), w = void 0;
+					i?.(), i = void 0;
 				}
 			}));
-		}, O = s.readiness?.registerArea(s.pageKey ?? "", { remeasure: () => D() }), k = /* @__PURE__ */ new Set(), A = () => {
-			if (T) {
-				for (let t of Array.from(k)) e.contains(t) || (T.unobserve(t), k.delete(t));
+		}, k = s.readiness?.registerArea(s.pageKey ?? "", { remeasure: () => E() }), A = /* @__PURE__ */ new Set(), j = () => {
+			if (o) {
+				for (let t of Array.from(A)) e.contains(t) || (o.unobserve(t), A.delete(t));
 				e.querySelectorAll("[data-uhuu-flow-item=\"true\"], [data-uhuu-flow-group-header=\"true\"]").forEach((e) => {
-					k.has(e) || (k.add(e), T?.observe(e));
+					A.has(e) || (A.add(e), o?.observe(e));
 				});
 			}
-		}, j = (t) => {
+		}, M = (t) => {
 			t ? e.setAttribute("data-uhuu-flow-error", t) : e.removeAttribute("data-uhuu-flow-error");
-		}, M = (e) => {
-			let n = Mt(t, e);
-			if (n !== E && (E && T?.unobserve(E), n && T?.observe(n), E = n), !n) return { failure: "missing-continuation-flow" };
-			let { height: r } = Ct(n, Ne(n), wt(n));
+		}, N = (e) => {
+			let n = yt(t, e);
+			if (n !== p && (p && o?.unobserve(p), n && o?.observe(n), p = n), !n) return { failure: "missing-continuation-flow" };
+			let { height: r } = lt(n, _e(n), ut(n));
 			return Number.isFinite(r) && r > 0 ? { height: r } : { failure: "unmeasurable-flow-area" };
 		};
-		function N() {
-			A();
-			let a = e.querySelectorAll("[data-uhuu-flow=\"true\"]");
-			a.length > 1 && !p.current && H() && (p.current = !0, console.warn("[uhuu-components] Static.FlowArea supports one Static.Flow child. Additional Static.Flow elements in the same area are ignored. Use one FlowArea per flow region."));
-			let o = a[0], c = o?.dataset.uhuuFlowId;
-			if (u.current && u.current !== c && (s?.unregisterMeasurement?.(u.current, l), u.current = null, f.current = ""), !o) {
-				j("missing-flow"), O?.clear();
+		function P() {
+			j();
+			let r = e.querySelectorAll("[data-uhuu-flow=\"true\"]");
+			r.length > 1 && !y.current && (y.current = !0, console.warn("[uhuu-components] Static.FlowArea supports one Static.Flow child. Additional Static.Flow elements in the same area are ignored. Use one FlowArea per flow region."));
+			let i = r[0], a = i?.dataset.uhuuFlowId;
+			if (u.current && u.current !== a && (s?.unregisterMeasurement?.(u.current, l), u.current = null, _.current = ""), !i) {
+				!h.current && v === null && (v = setTimeout(() => {
+					v = null, !(h.current || !e.isConnected || e.querySelector("[data-uhuu-flow=\"true\"]")) && (h.current = !0, console.warn(`[uhuu-components] Static.FlowArea on page "${s?.pageKey ?? ""}" renders no Static.Flow, so data-uhuu-pagination stays "measuring". Render one Flow in the area (an empty Flow is one page).`));
+				}, de)), M("missing-flow"), k?.clear();
 				return;
 			}
-			let d = c ? Array.from(t.querySelectorAll("[data-uhuu-flow=\"true\"]")).filter((e) => e.dataset.uhuuFlowId === c && !e.closest("[data-uhuu-flow-continuation-copy]")).length : 0, _ = c ? d > 1 ? "duplicate-flow-id" : null : "missing-flow-id";
-			if (_ && H() && g.current !== `${_}:${c}` && (g.current = `${_}:${c}`, console.warn(`[uhuu-components] Static.Flow ${c ? `id "${c}" is used by more than one Flow` : "has no id"} on page "${s?.pageKey ?? ""}". Give each Flow on a page a stable, unique id.`)), !c) {
-				f.current = "", j("missing-flow-id"), O?.fail("missing-flow-id");
+			v !== null && (clearTimeout(v), v = null);
+			let o = a ? Array.from(t.querySelectorAll("[data-uhuu-flow=\"true\"]")).filter((e) => e.dataset.uhuuFlowId === a && !e.closest("[data-uhuu-flow-continuation-copy]")).length : 0, c = a ? o > 1 ? "duplicate-flow-id" : null : "missing-flow-id";
+			if (c && S.current !== `${c}:${a}` && (S.current = `${c}:${a}`, console.warn(`[uhuu-components] Static.Flow ${a ? `id "${a}" is used by more than one Flow` : "has no id"} on page "${s?.pageKey ?? ""}". Give each Flow on a page a stable, unique id.`)), !a) {
+				_.current = "", M("missing-flow-id"), k?.fail("missing-flow-id");
 				return;
 			}
-			let x = _ ?? (a.length > 1 ? "multiple-flows-in-area" : null), w = n ? M(c) : void 0, T = kt(e, o, {
-				continuationHeight: w?.height,
-				breakReserve: r,
-				clipBottom: wt(e),
+			let d = c ?? (r.length > 1 ? "multiple-flows-in-area" : null), p = n ? N(a) : void 0, E = ht(e, i, {
+				continuationHeight: p?.height,
+				breakReserve: g,
+				clipBottom: ut(e),
 				onAreaOverflow: (e) => {
-					S.current !== c && (S.current = c, console.warn(`[uhuu-components] Static.FlowArea on page "${s?.pageKey ?? ""}" (Static.Flow "${c}") extends ${Math.round(e)}px below its sheet, where nothing prints: only the part on the sheet is planned. Give the area a height within the page; a page whose height grows with its content (grid-template-rows: none, an unbounded flex item) cannot bound a flow.`));
+					D.current !== a && (D.current = a, console.warn(`[uhuu-components] Static.FlowArea on page "${s?.pageKey ?? ""}" (Static.Flow "${a}") extends ${Math.round(e)}px below its sheet, where nothing prints: only the part on the sheet is planned. Give the area a height within the page; a page whose height grows with its content (grid-template-rows: none, an unbounded flex item) cannot bound a flow.`));
 				},
 				onUnstackedItem: (e) => {
-					x ??= "unstacked-flow-items", H() && C.current !== c && (C.current = c, console.warn(`[uhuu-components] Static.Flow "${c}" on page "${s?.pageKey ?? ""}": item "${e.dataset.uhuuFlowKey ?? ""}" is not laid out below the item before it, so the flow cannot be paginated. Items stack down their FlowArea: no multi-column container (column-width, columns), flex row, grid or float around them.`));
+					d ??= "unstacked-flow-items", O.current !== a && (O.current = a, console.warn(`[uhuu-components] Static.Flow "${a}" on page "${s?.pageKey ?? ""}": item "${e.dataset.uhuuFlowKey ?? ""}" is not laid out below the item before it, so the flow cannot be paginated. Items stack down their FlowArea: no multi-column container (column-width, columns), flex row, grid or float around them.`));
 				},
 				onUnmarkedItems: (e, t) => {
-					x ??= "unmarked-flow-item", H() && y.current !== c && (y.current = c, console.warn(`[uhuu-components] Static.Flow "${c}" asChild: ${t - e} of ${t} items carry no flow attributes, so the flow cannot be paginated. renderItem must return a DOM element, or a component that passes the props it receives on to its root DOM element.`));
+					d ??= "unmarked-flow-item", w.current !== a && (w.current = a, console.warn(`[uhuu-components] Static.Flow "${a}" asChild: ${t - e} of ${t} items carry no flow attributes, so the flow cannot be paginated. renderItem must return a DOM element, or a component that passes the props it receives on to its root DOM element.`));
 				},
 				onZeroHeight: () => {
-					o.getClientRects().length && (x = "unmeasurable-flow-area", !m.current && H() && (m.current = !0, console.warn("[uhuu-components] Static.FlowArea has flow items but no measurable height. Give the area an explicit height or use a constrained flex layout such as flex-1 min-h-0.")));
+					i.getClientRects().length && (d = "unmeasurable-flow-area", !b.current && (b.current = !0, console.warn("[uhuu-components] Static.FlowArea has flow items but no measurable height. Give the area an explicit height or use a constrained flex layout such as flex-1 min-h-0.")));
 				},
 				onIssue: (e) => {
-					if (e === "unsupported-content" || !H()) return;
-					let t = `${c}:${e}`;
-					b.current.has(t) || (b.current.add(t), console.warn(`[uhuu-components] Static.Flow "${c}": ${jt[e]}`));
+					if (e === "unsupported-content" || !m.current) return;
+					let t = `${a}:${e}`;
+					T.current.has(t) || (T.current.add(t), console.warn(`[uhuu-components] Static.Flow "${a}": ${vt[e]}`));
 				},
 				onUnplaceableItem: (e) => {
-					h.current.has(e.key) || (h.current.add(e.key), console.warn(`[uhuu-components] Static.Flow item "${e.key}" cannot fit in its FlowArea (${Math.round(e.requiredHeight)}px required > ${Math.round(e.availableHeight)}px available). It prints on a page of its own, scaled to fit. Put its long text in a Static.FlowText, split the item, or reduce its height.`));
+					x.current.has(e.key) || (x.current.add(e.key), console.warn(`[uhuu-components] Static.Flow item "${e.key}" cannot fit in its FlowArea (${Math.round(e.requiredHeight)}px required > ${Math.round(e.availableHeight)}px available). It prints on a page of its own, scaled to fit. Put its long text in a Static.FlowText, split the item, or reduce its height.`));
 				}
 			});
-			if (!T) return;
-			let E = T.chunks.length > 1 ? w?.failure : void 0;
-			if (E && H() && v.current !== `${E}:${c}` && (v.current = `${E}:${c}`, console.warn(`[uhuu-components] Static.FlowArea measureContinuation: page "${s?.pageKey ?? ""}" ` + (E === "missing-continuation-flow" ? `renders no Static.Flow "${c}" on a continuation sheet, so its continuation pages would lose its items. Render the FlowArea and its Flow on every sheet.` : `lays the FlowArea of "${c}" out at zero height on a continuation sheet. Give it a measurable height there too.`))), E === "missing-continuation-flow") j(E), O?.clear();
-			else if (x ??= E ?? null, O?.measured(T, x), j(x), T.signature !== f.current) {
-				s?.registerMeasurement?.(T, l), f.current = T.signature, u.current = T.flowId;
+			if (!E) return;
+			let A = E.chunks.length > 1 ? p?.failure : void 0;
+			if (A && C.current !== `${A}:${a}` && (C.current = `${A}:${a}`, console.warn(`[uhuu-components] Static.FlowArea measureContinuation: page "${s?.pageKey ?? ""}" ` + (A === "missing-continuation-flow" ? `renders no Static.Flow "${a}" on a continuation sheet, so its continuation pages would lose its items. Render the FlowArea and its Flow on every sheet.` : `lays the FlowArea of "${a}" out at zero height on a continuation sheet. Give it a measurable height there too.`))), A === "missing-continuation-flow") M(A), k?.clear();
+			else if (d ??= A ?? null, k?.measured(E, d), M(d), E.signature !== _.current) {
+				s?.registerMeasurement?.(E, l), _.current = E.signature, u.current = E.flowId;
 				try {
-					i?.(T);
+					f.current?.(E);
 				} catch (e) {
 					console.error("[uhuu-components] FlowArea onFlowMeasurement threw:", e);
 				}
 			}
 		}
-		let P = ce(t, {
-			begin: () => O?.begin() ?? (() => {}),
-			onReady: () => D()
+		let F = me(t, {
+			begin: () => k?.begin() ?? (() => {}),
+			onReady: () => E()
 		});
-		typeof ResizeObserver < "u" && (T = new ResizeObserver(() => D()), T.observe(e)), A(), D();
-		let F = new MutationObserver((t) => {
-			P.sync(), D(t.some((t) => e.contains(t.target)));
+		typeof ResizeObserver < "u" && (o = new ResizeObserver(() => E()), o.observe(e)), j(), E();
+		let I = new MutationObserver((t) => {
+			F.sync(), E(t.some((t) => e.contains(t.target)));
 		});
-		return F.observe(t, {
+		return I.observe(t, {
 			attributes: !0,
 			attributeFilter: [
 				"class",
@@ -1858,15 +1727,14 @@ function Nt({ children: t, className: n = "", style: r, onFlowMeasurement: i, me
 			childList: !0,
 			subtree: !0
 		}), () => {
-			_ !== null && (_(), _ = null, w?.()), T?.disconnect(), F.disconnect(), P.disconnect(), O?.dispose();
+			r !== null && (r(), r = null, i?.()), v !== null && clearTimeout(v), o?.disconnect(), I.disconnect(), F.disconnect(), k?.dispose();
 		};
 	}, [
 		s,
-		i,
 		l,
 		a,
-		o
-	]), /* @__PURE__ */ _("div", {
+		g
+	]), /* @__PURE__ */ v("div", {
 		ref: c,
 		className: n,
 		style: r,
@@ -1874,14 +1742,14 @@ function Nt({ children: t, className: n = "", style: r, onFlowMeasurement: i, me
 		children: t
 	});
 }
-function Pt({ children: e, header: t, footer: n, className: r = "", style: i, flowAreaClassName: a = "", flowAreaStyle: o, onFlowMeasurement: s, measureContinuation: c, breakReserve: l }) {
-	return /* @__PURE__ */ v("div", {
+function xt({ children: e, header: t, footer: n, className: r = "", style: i, flowAreaClassName: a = "", flowAreaStyle: o, onFlowMeasurement: s, measureContinuation: c, breakReserve: l }) {
+	return /* @__PURE__ */ y("div", {
 		className: `uhuu-flow-page ${r}`,
 		style: i,
 		"data-uhuu-flow-page": "true",
 		children: [
 			t,
-			/* @__PURE__ */ _(Nt, {
+			/* @__PURE__ */ v(bt, {
 				className: `uhuu-flow-page-area ${a}`,
 				style: o,
 				onFlowMeasurement: s,
@@ -1893,7 +1761,165 @@ function Pt({ children: e, header: t, footer: n, className: r = "", style: i, fl
 		]
 	});
 }
+//#endregion
+//#region src/uhuu/pagination-static/flow-text-slice.js
+var St = /* @__PURE__ */ new Set(/* @__PURE__ */ "a.abbr.b.bdi.bdo.br.cite.code.data.del.dfn.em.i.ins.kbd.mark.s.samp.small.span.strong.sub.sup.time.u.var.wbr".split(".")), Ct = /* @__PURE__ */ new Set(["br"]);
+function wt(e) {
+	return typeof e == "string" ? e : typeof e == "function" ? e.displayName || e.name || "Component" : e && typeof e == "object" && e.displayName || "Component";
+}
+function Tt(t) {
+	let n = "", r = null, i = [], a = (t) => {
+		if (!(r || t == null || typeof t == "boolean")) {
+			if (typeof t == "string" || typeof t == "number" || typeof t == "bigint") n += String(t);
+			else if (Array.isArray(t)) t.forEach(a);
+			else if (e.isValidElement(t)) {
+				let o = t.props ?? {};
+				if (t.type === e.Fragment) {
+					a(o.children);
+					return;
+				}
+				if (typeof t.type == "string") {
+					if (!St.has(t.type) || o.dangerouslySetInnerHTML) {
+						r = {
+							reason: "block-content",
+							name: t.type
+						};
+						return;
+					}
+					Ct.has(t.type) && i.push(n.length), a(o.children);
+					return;
+				}
+				r = {
+					reason: "component-content",
+					name: wt(t.type)
+				};
+			} else r = {
+				reason: "component-content",
+				name: typeof t
+			};
+		}
+	};
+	return a(t), {
+		text: n,
+		breaks: i,
+		problem: r
+	};
+}
+var Et = (e) => e === " " || e === "\n" || e === "	" || e === "\r" || e === "\f", Dt = "­";
+function Ot(t, { text: n, breaks: r = [] }, { from: i, to: a, part: o, parts: s, hyphens: c = [] }) {
+	let l = o === 0, u = o === s - 1, d = l ? 0 : Math.max(0, i), f = u ? n.length : Math.min(n.length, a), p = (e) => n[e - 1] === "\n" || r.includes(e);
+	if (!l) {
+		let e = d;
+		for (; e < f && Et(n[e]);) e += 1;
+		let t = n.slice(d, e).lastIndexOf("\n");
+		t >= 0 ? d += t + 1 : p(d) || (d = e);
+	}
+	let m = !1, h = !1;
+	if (!u) {
+		if (c.includes(f) && !r.includes(f)) n[f - 1] === Dt && --f, m = !0;
+		else {
+			let e = f;
+			for (; e > d && Et(n[e - 1]);) --e;
+			(r.includes(f) || n.slice(e, f).includes("\n")) && (h = !0), f = e;
+		}
+	}
+	let g = c.filter((e) => e > d && e < f && n[e - 1] !== Dt), _ = 0, v = !1, y = (t) => {
+		if (t == null || typeof t == "boolean") return null;
+		if (typeof t == "string" || typeof t == "number" || typeof t == "bigint") {
+			let e = String(t), n = _, r = _ + e.length;
+			_ = r;
+			let i = Math.max(n, d), a = Math.min(r, f);
+			if (!(i < a)) return null;
+			let o = "", s = i;
+			for (let t of g) t <= i || t > a || (o += e.slice(s - n, t - n) + Dt, s = t);
+			return o += e.slice(s - n, a - n), m && !v && f <= r && (o += "-", v = !0), o;
+		}
+		if (Array.isArray(t)) return t.map(y);
+		if (!e.isValidElement(t)) return null;
+		let n = _;
+		if (typeof t.type == "string" && Ct.has(t.type)) {
+			let e = (n > d || l) && (n < f || u);
+			return !e && n >= f && !u && (h = !0), e ? t : null;
+		}
+		let r = t.props ?? {}, i = y(r.children), a = _;
+		if (a === n) {
+			if (!(d <= n && n < f || u && n === f)) return null;
+		} else if (a <= d || n >= f) return null;
+		return r.children === void 0 ? t : e.cloneElement(t, void 0, ...Array.isArray(i) ? i : [i]);
+	}, b = y(t);
+	return {
+		children: Array.isArray(b) ? b : [b],
+		justifyLast: !u && !h,
+		manualHyphens: c.some((e) => e > i && e <= a)
+	};
+}
+//#endregion
+//#region src/uhuu/pagination-static/flow-text.tsx
+var kt = e.createContext(null), At = typeof window > "u" ? e.useEffect : e.useLayoutEffect, jt = /* @__PURE__ */ new Set(), Mt = /* @__PURE__ */ new Set();
+function Nt(e) {
+	let t = e.getBoundingClientRect();
+	if (!(t.height > 0)) return;
+	let n = window.getComputedStyle(e), r = (e) => Number.parseFloat(n.getPropertyValue(e) || "0") || 0;
+	return {
+		height: t.height / _e(e) - r("padding-top") - r("padding-bottom") - r("border-top-width") - r("border-bottom-width"),
+		lineHeight: r("line-height") || r("font-size") * 1.2 || 16
+	};
+}
+function Pt({ children: t, as: n = "div", className: r, style: i, ...a }) {
+	let o = e.useContext(kt), s = ue(), c = e.useRef(null), l = e.useMemo(() => Tt(t), [t]), { text: u, problem: d } = l, f = o && !d ? Ot(t, l, o) : null, p = f ? o?.textHeight : void 0;
+	e.useEffect(() => {
+		if (!d || !s) return;
+		let e = `${d.reason}:${d.name}`;
+		jt.has(e) || (jt.add(e), console.warn(`[uhuu-components] Static.FlowText holds ${d.reason === "block-content" ? `a <${d.name}>` : `<${d.name}>`}: only text and inline text elements (span, strong, em, b, i, a, small, sub, sup, br) can split between lines, so its item is not split. Put block content in the item outside the FlowText, and an Editable around the FlowText rather than inside it.`));
+	}, [d, s]), At(() => {
+		let e = c.current;
+		if (p === void 0 || !e || !s) return;
+		let t = Nt(e);
+		if (!t || t.height <= p + Math.max(2, t.lineHeight / 2)) return;
+		let n = t.height, r = u.slice(0, 40);
+		Mt.has(r) || (Mt.add(r), console.warn(`[uhuu-components] Static.FlowText "${u.slice(0, 40)}…": a piece lays out ${Math.round(n - p)}px taller than the lines it was planned with, so it re-wrapped. A continuation must give the FlowText the width it measured with (keep a label cell, empty), and ::first-line styles or text-wrap: balance | pretty re-flow a slice.`));
+	});
+	let m = n, h = f && o ? {
+		...i,
+		...o.part > 0 ? { textIndent: 0 } : {},
+		...o.justify && f.justifyLast ? { textAlignLast: "justify" } : {},
+		...f.manualHyphens ? {
+			hyphens: "manual",
+			WebkitHyphens: "manual"
+		} : {}
+	} : i, g = {
+		...a,
+		ref: c,
+		className: r,
+		style: h,
+		"data-uhuu-flow-text": "true",
+		"data-uhuu-flow-text-unsplittable": d?.reason
+	};
+	return f ? e.createElement(m, g, ...f.children) : e.createElement(m, g, t);
+}
+//#endregion
+//#region src/uhuu/pagination-static/flow-render.tsx
 function Ft(e) {
+	let t = e.availableHeight - e.headerHeight;
+	if (!(e.height > 0) || !Number.isFinite(t)) return;
+	let n = Math.min(1, Math.max(t, 1) / e.height);
+	return n < 1 ? {
+		transform: `scale(${n})`,
+		transformOrigin: "top left"
+	} : void 0;
+}
+var It = /* @__PURE__ */ new Set();
+function Lt(e) {
+	if (!e || typeof e != "object" || !("type" in e)) return;
+	let t = e.type;
+	return typeof t == "string" || typeof t == "number" ? String(t) : void 0;
+}
+function Rt(e, t) {
+	let n = { ...e ?? {} };
+	for (let [e, r] of Object.entries(t ?? {})) r !== void 0 && (n[e] = r);
+	return n;
+}
+function zt(e) {
 	if (typeof e == "string") return e ? {
 		key: e,
 		repeatHeader: !0
@@ -1903,13 +1929,13 @@ function Ft(e) {
 		repeatHeader: e.repeatHeader !== !1
 	};
 }
-function It(e) {
+function Bt(e) {
 	let t = /* @__PURE__ */ new Map();
 	return e.forEach((e, n) => {
 		t.has(e) || t.set(e, n);
 	}), t;
 }
-function Lt(e) {
+function Vt(e) {
 	if (!e) return;
 	let t = /* @__PURE__ */ new Map();
 	for (let n of e) {
@@ -1918,11 +1944,11 @@ function Lt(e) {
 	}
 	return t;
 }
-var Rt = /* @__PURE__ */ new Set();
-function zt(t) {
+var Ht = /* @__PURE__ */ new Set();
+function Ut(t) {
 	return t == null || typeof t == "boolean" ? "nothing" : Array.isArray(t) ? "several nodes" : e.isValidElement(t) ? "a fragment" : "text";
 }
-function Bt(t, n, r) {
+function Wt(t, n, r) {
 	if (e.isValidElement(t) && t.type !== e.Fragment) {
 		let i = t.props, a = [n.className, typeof i.className == "string" ? i.className : void 0].filter(Boolean).join(" ") || void 0, o = r.baseStyle || i.style || r.forcedStyle ? {
 			...r.baseStyle,
@@ -1936,13 +1962,13 @@ function Bt(t, n, r) {
 		});
 	}
 	let i = `${r.flowId}:${r.source}`;
-	return H() && !Rt.has(i) && (Rt.add(i), console.warn(`[uhuu-components] Static.Flow "${r.flowId}" asChild: ${r.source} returned ${zt(t)}. asChild needs exactly one element to carry the flow's attributes, so it renders in a wrapper <div> instead.`)), null;
+	return Ht.has(i) || (Ht.add(i), console.warn(`[uhuu-components] Static.Flow "${r.flowId}" asChild: ${r.source} returned ${Ut(t)}. asChild needs exactly one element to carry the flow's attributes, so it renders in a wrapper <div> instead.`)), null;
 }
-function Vt(e, t, n, r) {
-	return r.asChild && Bt(e, {
+function Gt(e, t, n, r) {
+	return r.asChild && Wt(e, {
 		className: t,
 		...n
-	}, r) || /* @__PURE__ */ _("div", {
+	}, r) || /* @__PURE__ */ v("div", {
 		className: t,
 		style: {
 			display: "flow-root",
@@ -1953,41 +1979,43 @@ function Vt(e, t, n, r) {
 		children: e
 	});
 }
-function Ht(e, t) {
+function Kt(e, t) {
 	return {
 		"data-uhuu-flow-break-before": e.breakBefore ? "true" : void 0,
 		"data-uhuu-flow-break-after": e.breakAfter ? "true" : void 0,
-		"data-uhuu-flow-keep-with-next": ze(e.keepWithNext),
+		"data-uhuu-flow-keep-with-next": Ce(e.keepWithNext),
 		"data-uhuu-flow-avoid-break-inside": e.avoidBreakInside ? "true" : void 0,
 		"data-uhuu-flow-group-key": e.groupKey,
 		"data-uhuu-flow-header-group-key": t?.key,
 		"data-uhuu-flow-header-repeat": t ? t.repeatHeader === !1 ? "false" : "true" : void 0
 	};
 }
-function Ut(e, t, n, r, i) {
-	let a = n?.(e, t) ?? yt(e);
-	return bt(a ? r?.[a] : void 0, i?.(e, t));
+function qt(e, t, n, r, i) {
+	let a = n?.(e, t) ?? Lt(e);
+	return Rt(a ? r?.[a] : void 0, i?.(e, t));
 }
-function Wt(e, t, n) {
+function Jt(e, t, n) {
 	return typeof e == "function" ? e(t, n) : e;
 }
-function Gt(t, n, r, i, a) {
+function Yt(t, n, r, i, a) {
+	let o = ue();
 	e.useEffect(() => {
-		if (!H() || !i || !Object.keys(i).length || !r.length) return;
+		if (!o || !i || !Object.keys(i).length || !r.length) return;
 		let e = `${n}:${t === "FlowColumns" ? "columns:" : ""}${Object.keys(i).join("|")}`;
-		vt.has(e) || r.some((e, t) => !!(a?.(e, t) ?? yt(e))) || (vt.add(e), console.warn(`[uhuu-components] Static.${t} "${n}" received metaDefaults, but no item type could be resolved. Add a type field to each item or pass getItemType so defaults can be applied.`));
+		It.has(e) || r.some((e, t) => !!(a?.(e, t) ?? Lt(e))) || (It.add(e), console.warn(`[uhuu-components] Static.${t} "${n}" received metaDefaults, but no item type could be resolved. Add a type field to each item or pass getItemType so defaults can be applied.`));
 	}, [
 		t,
 		n,
 		r,
 		i,
-		a
+		a,
+		o
 	]);
 }
-function Kt(e, t) {
+function Xt(e, t) {
 	let { flowId: n, asChild: r, renderItem: i, renderGroupHeader: a, groupHeaderClassName: o } = e, { item: s, itemIndex: c, fragment: l, group: u, plannedGroupHeaders: d } = t, f = !!(u && d?.get(c)?.has(u.key));
 	return {
-		header: u && a && (f || !d && l.isFirstInGroupOnPage && (l.isFirstInGroup || u.repeatHeader !== !1)) && u && a ? Vt(a(u, l), typeof o == "function" ? o(u, l) : o, {
+		header: u && a && (f || !d && l.isFirstInGroupOnPage && (l.isFirstInGroup || u.repeatHeader !== !1)) && u && a ? Gt(a(u, l), typeof o == "function" ? o(u, l) : o, {
 			"data-uhuu-flow-group-header": "true",
 			"data-uhuu-flow-header-group-key": u.key
 		}, {
@@ -1995,7 +2023,7 @@ function Kt(e, t) {
 			source: "renderGroupHeader",
 			asChild: r
 		}) : null,
-		element: Vt(i(s, c, l), t.className, t.attributes, {
+		element: Gt(i(s, c, l), t.className, t.attributes, {
 			flowId: n,
 			source: "renderItem",
 			asChild: r,
@@ -2004,10 +2032,10 @@ function Kt(e, t) {
 		})
 	};
 }
-function qt(e) {
+function Zt(e) {
 	return e.part === 0 ? "first" : e.part === e.parts - 1 ? "last" : "middle";
 }
-function Jt(e, t) {
+function Qt(e, t) {
 	return {
 		split: {
 			part: e.part,
@@ -2018,19 +2046,21 @@ function Jt(e, t) {
 		...e.part > 0 && t.isFirstInGroupOnPage ? { isGroupContinuation: !0 } : {}
 	};
 }
-function Yt(e) {
-	return e == null || e === !1 ? e : /* @__PURE__ */ _(ot.Provider, {
+function $t(e) {
+	return e == null || e === !1 ? e : /* @__PURE__ */ v(kt.Provider, {
 		value: null,
 		children: e
 	});
 }
-function Xt({ id: t, items: n, getKey: r, renderItem: i, getItemMeta: a, metaDefaults: o, getItemType: s, getItemGroup: c, renderGroupHeader: l, className: u = "", itemClassName: d, groupHeaderClassName: f, renderUnplaceableItem: p, asChild: m = !1, as: h = "div" }) {
-	let g = e.useContext(ht), y = e.useContext(ot), b = h, x = g?.chunksByFlowId?.[t], S = g?.mode === "visible" && x ? x[g.pageIndex] : void 0, C = g?.mode === "visible" ? g.pageIndex : 0, w = g?.mode === "visible" && x ? x.length : 1, T = S?.unplaceable, E = T ? p?.(T, {
+//#endregion
+//#region src/uhuu/pagination-static/flow.tsx
+function en({ id: t, items: n, getKey: r, renderItem: i, getItemMeta: a, metaDefaults: o, getItemType: s, getItemGroup: c, renderGroupHeader: l, className: u = "", itemClassName: d, groupHeaderClassName: f, renderUnplaceableItem: p, asChild: m = !1, as: h = "div" }) {
+	let g = e.useContext(se), _ = e.useContext(kt), b = h, x = g?.chunksByFlowId?.[t], S = g?.mode === "visible" && x ? x[g.pageIndex] : void 0, C = g?.mode === "visible" ? g.pageIndex : 0, w = g?.mode === "visible" && x ? x.length : 1, T = S?.unplaceable, E = T ? p?.(T, {
 		flowId: t,
 		pageIndex: C,
 		pageCount: w
-	}) : void 0, D = !!(T && E == null), O = g?.copy === "continuation" ? [] : g?.mode === "visible" && x ? S?.indexes ?? [] : g?.mode === "visible" && g.pageIndex > 0 ? [] : n.map((e, t) => t), k = (D ? [.../* @__PURE__ */ new Set([...O, T.index])].sort((e, t) => e - t) : O).filter((e) => Number.isInteger(e) && e >= 0 && e < n.length), A = n.map((e, t) => Ft(c?.(e, t))), j = A.map((e) => e?.key), M = It(k), N = l ? Lt(S?.groupHeaders) : void 0;
-	Gt("Flow", t, n, o, s);
+	}) : void 0, D = !!(T && E == null), O = g?.copy === "continuation" ? [] : g?.mode === "visible" && x ? S?.indexes ?? [] : g?.mode === "visible" && g.pageIndex > 0 ? [] : n.map((e, t) => t), k = (D ? [.../* @__PURE__ */ new Set([...O, T.index])].sort((e, t) => e - t) : O).filter((e) => Number.isInteger(e) && e >= 0 && e < n.length), A = n.map((e, t) => zt(c?.(e, t))), j = A.map((e) => e?.key), M = Bt(k), N = l ? Vt(S?.groupHeaders) : void 0;
+	Yt("Flow", t, n, o, s);
 	let P = {
 		flowId: t,
 		asChild: m,
@@ -2038,19 +2068,19 @@ function Xt({ id: t, items: n, getKey: r, renderItem: i, getItemMeta: a, metaDef
 		renderGroupHeader: l,
 		groupHeaderClassName: f
 	};
-	return /* @__PURE__ */ v(b, {
+	return /* @__PURE__ */ y(b, {
 		className: u,
 		"data-uhuu-flow": "true",
 		"data-uhuu-flow-id": t,
 		"data-uhuu-flow-as-child": m ? "true" : void 0,
 		"data-uhuu-flow-item-count": m && g?.mode !== "visible" ? k.length : void 0,
-		children: [T && E != null && (m && Bt(E, {
+		children: [T && E != null && (m && Wt(E, {
 			"data-uhuu-flow-unplaceable": "true",
 			"data-uhuu-flow-unplaceable-key": T.key
 		}, {
 			flowId: t,
 			source: "renderUnplaceableItem"
-		}) || /* @__PURE__ */ _("div", {
+		}) || /* @__PURE__ */ v("div", {
 			style: { display: "contents" },
 			"data-uhuu-flow-unplaceable": "true",
 			"data-uhuu-flow-unplaceable-key": T.key,
@@ -2058,7 +2088,7 @@ function Xt({ id: t, items: n, getKey: r, renderItem: i, getItemMeta: a, metaDef
 		})), k.map((i) => {
 			let c = n[i];
 			if (c === void 0) return null;
-			let l = r(c, i), u = A[i], f = ve({
+			let l = r(c, i), u = A[i], f = Ke({
 				itemIndex: i,
 				fragmentIndexes: k,
 				fragmentIndex: M.get(i) ?? -1,
@@ -2071,41 +2101,43 @@ function Xt({ id: t, items: n, getKey: r, renderItem: i, getItemMeta: a, metaDef
 				flowId: t,
 				itemKey: l,
 				item: c,
-				...p ? Jt(p, f) : {}
-			}, h = Ut(c, i, s, o, a), g = D && i === T?.index, { header: b, element: x } = Kt(P, {
+				...p ? Qt(p, f) : {}
+			}, h = qt(c, i, s, o, a), g = D && i === T?.index, { header: b, element: x } = Xt(P, {
 				item: c,
 				itemIndex: i,
 				fragment: m,
 				group: u,
 				plannedGroupHeaders: N,
-				className: Wt(d, c, i),
+				className: Jt(d, c, i),
 				attributes: {
 					"data-uhuu-flow-item": "true",
 					"data-uhuu-flow-key": String(l),
 					"data-uhuu-flow-index": i,
-					...Ht(h, u),
+					...Kt(h, u),
 					"data-uhuu-flow-unplaceable": g ? "true" : void 0,
 					"data-uhuu-flow-unplaceable-key": g ? T.key : void 0,
-					"data-uhuu-flow-orphans": Le(h.orphans),
-					"data-uhuu-flow-widows": Le(h.widows),
-					"data-uhuu-flow-split": p ? qt(p) : void 0
+					"data-uhuu-flow-orphans": xe(h.orphans),
+					"data-uhuu-flow-widows": xe(h.widows),
+					"data-uhuu-flow-split": p ? Zt(p) : void 0
 				},
-				forcedStyle: g ? _t(T) : void 0
+				forcedStyle: g ? Ft(T) : void 0
 			});
-			return /* @__PURE__ */ v(e.Fragment, { children: [y ? Yt(b) : b, /* @__PURE__ */ _(ot.Provider, {
+			return /* @__PURE__ */ y(e.Fragment, { children: [_ ? $t(b) : b, /* @__PURE__ */ v(kt.Provider, {
 				value: p ?? null,
 				children: x
 			})] }, l);
 		})]
 	});
 }
-function Zt({ id: t, items: n, layout: r, getKey: i, renderItem: a, getItemMeta: o, metaDefaults: s, getItemType: c, getItemGroup: l, renderGroupHeader: u, className: d = "", itemClassName: f, groupHeaderClassName: p, renderUnplaceableItem: m, getColumnGroupProps: h, getColumnProps: g, getColumnItemProps: y, asChild: b = !1, as: x = "div" }) {
-	De({
+//#endregion
+//#region src/uhuu/pagination-static/flow-columns.tsx
+function tn({ id: t, items: n, layout: r, getKey: i, renderItem: a, getItemMeta: o, metaDefaults: s, getItemType: c, getItemGroup: l, renderGroupHeader: u, className: d = "", itemClassName: f, groupHeaderClassName: p, renderUnplaceableItem: m, getColumnGroupProps: h, getColumnProps: g, getColumnItemProps: _, asChild: b = !1, as: x = "div" }) {
+	tt({
 		nodes: r,
 		itemCount: n.length
 	});
-	let S = e.useContext(ht), C = e.useContext(ot), w = x, T = S?.copy === "continuation", E = S?.chunksByFlowId?.[t], D = S?.mode === "visible" && E ? E[S.pageIndex] : void 0, O = S?.mode !== "visible", k = S?.mode === "visible" ? S.pageIndex : 0, A = S?.mode === "visible" && E ? E.length : 1, j = n.map((e, t) => Ft(l?.(e, t))), M = j.map((e) => e?.key), N = { flowId: t };
-	Gt("FlowColumns", t, n, s, c);
+	let S = e.useContext(se), C = e.useContext(kt), w = x, T = S?.copy === "continuation", E = S?.chunksByFlowId?.[t], D = S?.mode === "visible" && E ? E[S.pageIndex] : void 0, O = S?.mode !== "visible", k = S?.mode === "visible" ? S.pageIndex : 0, A = S?.mode === "visible" && E ? E.length : 1, j = n.map((e, t) => zt(l?.(e, t))), M = j.map((e) => e?.key), N = { flowId: t };
+	Yt("FlowColumns", t, n, s, c);
 	let P = {
 		flowId: t,
 		asChild: b,
@@ -2119,14 +2151,14 @@ function Zt({ id: t, items: n, layout: r, getKey: i, renderItem: a, getItemMeta:
 			pageIndex: k,
 			pageCount: A
 		});
-		return r == null ? n() : b && Bt(r, {
+		return r == null ? n() : b && Wt(r, {
 			"data-uhuu-flow-unplaceable": "true",
 			"data-uhuu-flow-unplaceable-key": e.key,
 			"data-uhuu-flow-column-id": e.columnId
 		}, {
 			flowId: t,
 			source: "renderUnplaceableItem"
-		}) || /* @__PURE__ */ _("div", {
+		}) || /* @__PURE__ */ v("div", {
 			style: { display: "contents" },
 			"data-uhuu-flow-unplaceable": "true",
 			"data-uhuu-flow-unplaceable-key": e.key,
@@ -2134,12 +2166,12 @@ function Zt({ id: t, items: n, layout: r, getKey: i, renderItem: a, getItemMeta:
 			children: r
 		});
 	}, I = (r, a, l, d = !1, p) => {
-		let m = r.filter((e) => Number.isInteger(e) && e >= 0 && e < n.length), h = It(m), g = p ? It(p) : void 0, _ = u ? Lt(a?.groupHeaders) : void 0;
+		let m = r.filter((e) => Number.isInteger(e) && e >= 0 && e < n.length), h = Bt(m), g = p ? Bt(p) : void 0, _ = u ? Vt(a?.groupHeaders) : void 0;
 		return m.map((r) => {
 			let u = n[r];
 			if (u === void 0) return null;
-			let y = i(u, r), b = j[r], x = h.get(r) ?? -1, S = g?.get(r) ?? -1, w = {
-				...ve({
+			let v = i(u, r), b = j[r], x = h.get(r) ?? -1, S = g?.get(r) ?? -1, w = {
+				...Ke({
 					itemIndex: r,
 					fragmentIndexes: m,
 					fragmentIndex: x,
@@ -2150,32 +2182,32 @@ function Zt({ id: t, items: n, layout: r, getKey: i, renderItem: a, getItemMeta:
 					previousSourceIndex: a?.previousSourceIndex ?? (S > 0 ? p?.[S - 1] : void 0)
 				}),
 				flowId: t,
-				itemKey: y,
+				itemKey: v,
 				item: u
-			}, T = Ut(u, r, c, s, o), E = l?.(r), D = a?.unplaceable?.index === r ? a.unplaceable : void 0, { header: O, element: N } = Kt(P, {
+			}, T = qt(u, r, c, s, o), E = l?.(r), D = a?.unplaceable?.index === r ? a.unplaceable : void 0, { header: O, element: N } = Xt(P, {
 				item: u,
 				itemIndex: r,
 				fragment: w,
 				group: b,
 				plannedGroupHeaders: _,
-				className: [Wt(f, u, r), E?.className].filter(Boolean).join(" "),
+				className: [Jt(f, u, r), E?.className].filter(Boolean).join(" "),
 				attributes: {
 					"data-uhuu-flow-item": "true",
 					"data-uhuu-flow-layout-node": d ? "item" : void 0,
-					"data-uhuu-flow-key": String(y),
+					"data-uhuu-flow-key": String(v),
 					"data-uhuu-flow-index": r,
 					"data-uhuu-flow-unplaceable": D ? "true" : void 0,
 					"data-uhuu-flow-unplaceable-key": D?.key,
 					"data-uhuu-flow-column-id": D?.columnId,
-					...Ht(T, b)
+					...Kt(T, b)
 				},
 				baseStyle: E?.style,
-				forcedStyle: D ? _t(D) : void 0
+				forcedStyle: D ? Ft(D) : void 0
 			});
-			return /* @__PURE__ */ v(e.Fragment, { children: [C ? Yt(O) : O, C ? Yt(N) : N] }, y);
+			return /* @__PURE__ */ y(e.Fragment, { children: [C ? $t(O) : O, C ? $t(N) : N] }, v);
 		});
 	}, L = new Map(r.filter((e) => e.kind === "columns").map((e) => [e.id, e])), R = T ? [] : O ? r : D?.layout ?? [];
-	return /* @__PURE__ */ _(w, {
+	return /* @__PURE__ */ v(w, {
 		className: d,
 		"data-uhuu-flow": "true",
 		"data-uhuu-flow-id": t,
@@ -2183,12 +2215,12 @@ function Zt({ id: t, items: n, layout: r, getKey: i, renderItem: a, getItemMeta:
 		"data-uhuu-flow-as-child": b ? "true" : void 0,
 		"data-uhuu-flow-item-count": b && O ? T ? 0 : n.length : void 0,
 		children: R.map((t, n) => {
-			if (t.kind === "item") return /* @__PURE__ */ _(e.Fragment, { children: I([t.index], void 0, void 0, !0) }, `item:${t.index}:${n}`);
-			if (t.kind === "items") return /* @__PURE__ */ v(e.Fragment, { children: [F(t.chunk.unplaceable, () => I([t.chunk.unplaceable.index], t.chunk, void 0, !0)), I(t.chunk.indexes, t.chunk, void 0, !0)] }, `items:${n}`);
+			if (t.kind === "item") return /* @__PURE__ */ v(e.Fragment, { children: I([t.index], void 0, void 0, !0) }, `item:${t.index}:${n}`);
+			if (t.kind === "items") return /* @__PURE__ */ y(e.Fragment, { children: [F(t.chunk.unplaceable, () => I([t.chunk.unplaceable.index], t.chunk, void 0, !0)), I(t.chunk.indexes, t.chunk, void 0, !0)] }, `items:${n}`);
 			let r = O ? t : L.get(t.id);
 			if (!r) return null;
 			let i = new Map(r.columns.map((e) => [e.id, e])), a = O ? r.columns.map((e) => ({ id: e.id })) : t.columns, o = h?.(r, N);
-			return /* @__PURE__ */ _("div", {
+			return /* @__PURE__ */ v("div", {
 				className: o?.className,
 				style: {
 					display: "flex",
@@ -2202,7 +2234,7 @@ function Zt({ id: t, items: n, layout: r, getKey: i, renderItem: a, getItemMeta:
 					let t = i.get(e.id);
 					if (!t) return null;
 					let n = g?.(r, t, N), a = e.chunk?.indexes ?? t.indexes;
-					return /* @__PURE__ */ v("div", {
+					return /* @__PURE__ */ y("div", {
 						className: n?.className,
 						style: {
 							minWidth: 0,
@@ -2212,7 +2244,7 @@ function Zt({ id: t, items: n, layout: r, getKey: i, renderItem: a, getItemMeta:
 							...n?.style
 						},
 						"data-uhuu-flow-column": t.id,
-						children: [F(e.chunk?.unplaceable, () => I([e.chunk.unplaceable.index], e.chunk, (e) => y?.(r, t, e, N), !1, t.indexes)), I(a, e.chunk, (e) => y?.(r, t, e, N), !1, t.indexes)]
+						children: [F(e.chunk?.unplaceable, () => I([e.chunk.unplaceable.index], e.chunk, (e) => _?.(r, t, e, N), !1, t.indexes)), I(a, e.chunk, (e) => _?.(r, t, e, N), !1, t.indexes)]
 					}, t.id);
 				})
 			}, `columns:${r.id}:${n}`);
@@ -2221,7 +2253,7 @@ function Zt({ id: t, items: n, layout: r, getKey: i, renderItem: a, getItemMeta:
 }
 //#endregion
 //#region src/uhuu/editable/dialog-props.js
-function Qt(e) {
+function nn(e) {
 	let t = e?.dialog;
 	if (!t) return {};
 	let n = {
@@ -2237,50 +2269,101 @@ function Qt(e) {
 }
 //#endregion
 //#region src/uhuu/editable/empty-content.ts
-var $t = "uhuu-text-empty", en = /* @__PURE__ */ new Set([
+var rn = "uhuu-text-empty", an = /* @__PURE__ */ new Set([
 	"text",
 	"textarea",
 	"markdown"
-]), tn = (e) => typeof e == "object" && !!e && "type" in e && typeof e.type == "string" && en.has(e.type), nn = (e) => e == null || typeof e == "boolean" ? !0 : typeof e == "string" ? e.trim() === "" : Array.isArray(e) ? e.every(nn) : !1, rn = (e) => {
-	let t = tn(e.dialog) && nn(e.children) ? [e.className, $t].filter(Boolean).join(" ") : e.className;
-	return /* @__PURE__ */ _("div", {
+]), on = (e) => typeof e == "object" && !!e && "type" in e && typeof e.type == "string" && an.has(e.type), sn = (e) => e == null || typeof e == "boolean" ? !0 : typeof e == "string" ? e.trim() === "" : Array.isArray(e) ? e.every(sn) : !1, cn = (e) => {
+	let t = on(e.dialog) && sn(e.children) ? [e.className, rn].filter(Boolean).join(" ") : e.className;
+	return /* @__PURE__ */ v("div", {
 		className: t,
-		...Qt(e),
+		...nn(e),
 		children: e.children
 	});
 };
 //#endregion
 //#region src/uhuu/pagination-static/flow-id.js
-function an(e) {
+function ln(e) {
 	return String(e ?? "").replace(/[#*_`|>[\]()]/g, "").trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 36);
 }
-function on(e, t, n, r = "") {
-	return `${r}${e}-${n}-${an(t) || "block"}`;
+function un(e, t, n, r = "") {
+	return `${r}${e}-${n}-${ln(t) || "block"}`;
 }
 //#endregion
 //#region src/uhuu/pagination-static/html-flow.js
-var sn = /\s*(page-break-before|break-before)\s*/i, cn = 1, ln = 3, un = 8;
-function dn(e) {
+var dn = /\s*(page-break-before|break-before)\s*/i, fn = 1, pn = 3, mn = 8;
+function hn(e) {
 	return String(e ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
-function fn(e) {
-	return String(e ?? "").replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, "").replace(/<\/?(script|style)\b[^>]*>/gi, "").replace(/\son\w+\s*=\s*"[^"]*"/gi, "").replace(/\son\w+\s*=\s*'[^']*'/gi, "").replace(/\son\w+\s*=\s*[^\s>]+/gi, "").replace(/\s(href|src|xlink:href)\s*=\s*"javascript:[^"]*"/gi, "").replace(/\s(href|src|xlink:href)\s*=\s*'javascript:[^']*'/gi, "");
+var gn = "script,style,iframe,object,embed,base,meta,link,template,svg,math", _n = /* @__PURE__ */ new Set([
+	"href",
+	"src",
+	"xlink:href",
+	"action",
+	"data",
+	"poster",
+	"background",
+	"cite"
+]), vn = /* @__PURE__ */ new Set([
+	"http",
+	"https",
+	"mailto",
+	"tel"
+]), yn = /* @__PURE__ */ new Set([
+	"src",
+	"poster",
+	"srcset"
+]), bn = /^data:image\/(?:png|jpe?g|gif|webp|avif|bmp)[;,]/i;
+function xn(e, t) {
+	let n = [...String(e ?? "").trim()].filter((e) => e.charCodeAt(0) > 32 && e.charCodeAt(0) !== 127).join(""), r = /^([^:/?#]*):/.exec(n);
+	if (!r) return !0;
+	let i = r[1].toLowerCase();
+	return vn.has(i) ? !0 : yn.has(t) ? i === "blob" || bn.test(n) : !1;
 }
-function pn(e, t) {
+function Sn(e) {
+	let t = [], n = String(e ?? "").trim();
+	for (; n;) {
+		let e = /^\S+/.exec(n)[0];
+		n = n.slice(e.length);
+		let r = "";
+		if (e.endsWith(",")) e = e.replace(/,+$/, "");
+		else {
+			let e = /^[^,]*/.exec(n)[0];
+			r = e.trim(), n = n.slice(e.length + 1);
+		}
+		n = n.trim(), e && xn(e, "srcset") && t.push(r ? `${e} ${r}` : e);
+	}
+	return t.join(", ");
+}
+function Cn(e) {
+	if (typeof document > "u") return hn(e);
+	let t = document.createElement("template");
+	return t.innerHTML = String(e ?? ""), t.content.querySelectorAll(gn).forEach((e) => e.remove()), t.content.querySelectorAll("*").forEach((e) => {
+		for (let t of [...e.attributes]) {
+			let n = t.name.toLowerCase();
+			if (n.startsWith("on") || n === "srcdoc" || n === "formaction") e.removeAttribute(t.name);
+			else if (n === "srcset") {
+				let n = Sn(t.value);
+				n ? e.setAttribute(t.name, n) : e.removeAttribute(t.name);
+			} else _n.has(n) && !xn(t.value, n) && e.removeAttribute(t.name);
+		}
+	}), t.innerHTML;
+}
+function wn(e, t) {
 	if (typeof document > "u") return [];
 	let n = document.createElement("template");
 	n.innerHTML = String(e ?? "");
 	let r = [];
 	return n.content.childNodes.forEach((e) => {
-		if (e.nodeType === un) t.test(e.textContent ?? "") && r.push({ kind: "break" });
-		else if (e.nodeType === ln) {
+		if (e.nodeType === mn) t.test(e.textContent ?? "") && r.push({ kind: "break" });
+		else if (e.nodeType === pn) {
 			let t = (e.textContent ?? "").trim();
 			t && r.push({
 				kind: "text",
-				html: dn(t),
+				html: hn(t),
 				text: t
 			});
-		} else if (e.nodeType === cn) {
+		} else if (e.nodeType === fn) {
 			let t = e, n = t.hasAttribute("data-flow-break-before"), i = t.hasAttribute("data-flow-break-after");
 			t.removeAttribute("data-flow-break-before"), t.removeAttribute("data-flow-break-after"), r.push({
 				kind: "element",
@@ -2293,7 +2376,7 @@ function pn(e, t) {
 		}
 	}), r;
 }
-function mn(e, t) {
+function Tn(e, t) {
 	let n = t.idPrefix ?? "", r = [], i = !1;
 	for (let t of e) {
 		if (!t || t.kind === "break") {
@@ -2302,7 +2385,7 @@ function mn(e, t) {
 		}
 		let e = t.type ?? "text", a = t.html ?? "";
 		a && (r.push({
-			id: on(e, t.text ?? a, r.length, n),
+			id: un(e, t.text ?? a, r.length, n),
 			type: e,
 			html: a,
 			breakBefore: i || !!t.breakBefore
@@ -2310,13 +2393,93 @@ function mn(e, t) {
 	}
 	return r;
 }
-function hn(e = "", t = {}) {
-	let n = t.breakComment ?? sn, r = (t.parseHtml ?? ((e) => pn(e, n)))(e);
-	return mn(Array.isArray(r) ? r : [], t);
+function En(e = "", t = {}) {
+	let n = t.breakComment ?? dn, r = (t.parseHtml ?? ((e) => wn(e, n)))(e);
+	return Tn(Array.isArray(r) ? r : [], t);
+}
+//#endregion
+//#region src/uhuu/pagination-static/html-inline.tsx
+var Dn = /* @__PURE__ */ new Set([
+	"p",
+	"h1",
+	"h2",
+	"h3",
+	"h4",
+	"h5",
+	"h6"
+]), On = {
+	class: "className",
+	tabindex: "tabIndex",
+	contenteditable: "contentEditable",
+	spellcheck: "spellCheck",
+	accesskey: "accessKey",
+	datetime: "dateTime",
+	itemprop: "itemProp",
+	itemscope: "itemScope",
+	itemtype: "itemType",
+	itemid: "itemID",
+	itemref: "itemRef",
+	autocapitalize: "autoCapitalize",
+	autocorrect: "autoCorrect",
+	inputmode: "inputMode",
+	enterkeyhint: "enterKeyHint",
+	contextmenu: "contextMenu",
+	"xml:lang": "xmlLang"
+};
+function kn(e) {
+	let t = {};
+	for (let n of Array.from(e.attributes)) {
+		let r = n.name.toLowerCase();
+		if (r.startsWith("on") || r === "autofocus" || r === "contenteditable" && n.value !== "false" || r === "hidden" && n.value === "until-found") return null;
+		if (r === "style") {
+			let n = {};
+			for (let t of Array.from(e.style)) {
+				if (e.style.getPropertyPriority(t)) return null;
+				let r = t.startsWith("--") ? t : t.replace(/^-ms-/, "ms-").replace(/-([a-z])/g, (e, t) => t.toUpperCase());
+				n[r] = e.style.getPropertyValue(t);
+			}
+			t.style = n;
+		} else t[On[r] ?? r] = r === "hidden" || r === "itemscope" || n.value;
+	}
+	return t;
+}
+function An(t) {
+	let n = [];
+	for (let [r, i] of Array.from(t.childNodes).entries()) {
+		if (i.nodeType === 8) continue;
+		if (i.nodeType === 3) {
+			n.push(i.textContent ?? "");
+			continue;
+		}
+		if (i.nodeType !== 1) return null;
+		let t = i, a = t.tagName.toLowerCase();
+		if (!St.has(a)) return null;
+		let o = kn(t), s = An(t);
+		if (!o || !s) return null;
+		n.push(e.createElement(a, {
+			...o,
+			key: r
+		}, ...s));
+	}
+	return n;
+}
+function jn(t) {
+	if (typeof document > "u") return null;
+	let n = document.createElement("template");
+	n.innerHTML = t;
+	let r = Array.from(n.content.childNodes).filter((e) => e.nodeType !== 8 && !(e.nodeType === 3 && !(e.textContent ?? "").trim()));
+	if (r.length !== 1 || r[0].nodeType !== 1) return null;
+	let i = r[0], a = i.tagName.toLowerCase();
+	if (!Dn.has(a)) return null;
+	let o = kn(i), s = An(i);
+	return !o || !s ? null : e.createElement(Pt, {
+		...o,
+		as: a
+	}, ...s);
 }
 //#endregion
 //#region src/uhuu/pagination-static/flow-document.tsx
-var gn = {
+var Mn = {
 	h1: { keepWithNext: 1 },
 	h2: { keepWithNext: 1 },
 	h3: { keepWithNext: 1 },
@@ -2330,12 +2493,23 @@ var gn = {
 	blockquote: { avoidBreakInside: !0 },
 	figure: { avoidBreakInside: !0 },
 	img: { avoidBreakInside: !0 }
-}, _n = !1;
-function vn(t) {
-	return e.useMemo(() => t === !1 ? (H() && !_n && (_n = !0, console.warn("[uhuu-components] Static.FlowDocument sanitize is disabled. Only pass sanitize={false} for trusted HTML.")), (e) => e) : typeof t == "function" ? t : fn, [t]);
+}, Nn = !1;
+function Pn(t) {
+	let n = ue();
+	return e.useMemo(() => t === !1 ? (n && !Nn && (Nn = !0, console.warn("[uhuu-components] Static.FlowDocument sanitize is disabled. Only pass sanitize={false} for trusted HTML.")), (e) => e) : typeof t == "function" ? t : Cn, [t, n]);
 }
-function yn({ html: t, header: n, footer: r, className: i = "", style: a, flowAreaClassName: o = "", flowAreaStyle: s, measureContinuation: c, breakReserve: l, id: u = "flow-document", idPrefix: d, flowClassName: f = "uhuu-flow-document", itemClassName: p, metaDefaults: m, getItemMeta: h, renderItem: g, sanitize: v, editable: y, parseHtml: b }) {
-	let x = e.useMemo(() => hn(t, {
+function Fn({ html: t }) {
+	let n = e.useMemo(() => jn(t), [t]);
+	return n ? /* @__PURE__ */ v("div", {
+		className: "uhuu-flow-html-block",
+		children: n
+	}) : /* @__PURE__ */ v("div", {
+		className: "uhuu-flow-html-block",
+		dangerouslySetInnerHTML: { __html: t }
+	});
+}
+function In({ html: t, header: n, footer: r, className: i = "", style: a, flowAreaClassName: o = "", flowAreaStyle: s, measureContinuation: c, breakReserve: l, id: u = "flow-document", idPrefix: d, flowClassName: f = "uhuu-flow-document", itemClassName: p, metaDefaults: m, getItemMeta: h, renderItem: g, sanitize: _, editable: y, parseHtml: b }) {
+	let x = e.useMemo(() => En(t, {
 		idPrefix: d,
 		parseHtml: b
 	}), [
@@ -2343,15 +2517,20 @@ function yn({ html: t, header: n, footer: r, className: i = "", style: a, flowAr
 		d,
 		b
 	]), S = e.useMemo(() => ({
-		...gn,
+		...Mn,
 		...m ?? {}
-	}), [m]), C = vn(v), w = e.useCallback((e, t) => ({
+	}), [m]), C = Pn(_), w = e.useCallback((e, t) => ({
 		breakBefore: e.breakBefore,
 		...h?.(e, t) ?? {}
-	}), [h]), T = e.useCallback((e, t) => g ? g(e, t) : /* @__PURE__ */ _("div", {
-		className: "uhuu-flow-html-block",
-		dangerouslySetInnerHTML: { __html: C(e.html) }
-	}), [g, C]), E = /* @__PURE__ */ _(Xt, {
+	}), [h]), T = e.useMemo(() => g ? null : new Map(x.map((e) => [e, C(e.html)])), [
+		x,
+		g,
+		C
+	]), E = e.useCallback((e, t) => g ? g(e, t) : /* @__PURE__ */ v(Fn, { html: T?.get(e) ?? C(e.html) }), [
+		g,
+		T,
+		C
+	]), D = /* @__PURE__ */ v(en, {
 		id: u,
 		items: x,
 		getKey: (e) => e.id,
@@ -2359,9 +2538,9 @@ function yn({ html: t, header: n, footer: r, className: i = "", style: a, flowAr
 		itemClassName: p,
 		metaDefaults: S,
 		getItemMeta: w,
-		renderItem: T
+		renderItem: E
 	});
-	return /* @__PURE__ */ _(Pt, {
+	return /* @__PURE__ */ v(xt, {
 		className: i,
 		style: a,
 		flowAreaClassName: o,
@@ -2370,42 +2549,42 @@ function yn({ html: t, header: n, footer: r, className: i = "", style: a, flowAr
 		breakReserve: l,
 		header: n,
 		footer: r,
-		children: y ? /* @__PURE__ */ _(rn, {
+		children: y ? /* @__PURE__ */ v(cn, {
 			dialog: y,
-			className: !x.length && tn(y) ? $t : void 0,
-			children: E
-		}) : E
+			className: !x.length && on(y) ? rn : void 0,
+			children: D
+		}) : D
 	});
 }
 //#endregion
 //#region src/uhuu/pagination-static/markdown-flow.js
-var bn = /<!--\s*(page-break-before|break-before)\s*-->/i, xn = /^\s*\[[^\]]+\]:\s+\S+/, Sn = /^\s*!\[[^\]]*]\([^)]+\)\s*$/;
-function Cn(e) {
+var Ln = /<!--\s*(page-break-before|break-before)\s*-->/i, Rn = /^\s*\[[^\]]+\]:\s+\S+/, zn = /^\s*!\[[^\]]*]\([^)]+\)\s*$/;
+function Bn(e) {
 	return e.trim() === "";
 }
-function wn(e) {
+function Vn(e) {
 	return /^#{1,6}\s+/.test(e.trim());
 }
-function Tn(e) {
+function Hn(e) {
 	return /^(\s*)([-*+]|\d+[.)])\s+/.test(e);
 }
-function En(e) {
+function Un(e) {
 	return /^(```|~~~)/.test(e.trim());
 }
-function Dn(e) {
+function Wn(e) {
 	return /^([-*_])(?:\s*\1){2,}\s*$/.test(e.trim());
 }
-function On(e, t) {
+function Gn(e, t) {
 	let n = e[t]?.trim() ?? "", r = e[t + 1]?.trim() ?? "";
 	return n.includes("|") && /^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/.test(r);
 }
-function kn(e) {
-	return bn.test(e.trim());
+function Kn(e) {
+	return Ln.test(e.trim());
 }
-function An(e) {
-	return xn.test(e);
+function qn(e) {
+	return Rn.test(e);
 }
-function jn(e, t) {
+function Jn(e, t) {
 	if (!t || e.length <= t) return [e];
 	let n = e.split(/\s+/).filter(Boolean), r = [], i = "";
 	for (let e of n) {
@@ -2414,17 +2593,17 @@ function jn(e, t) {
 	}
 	return i && r.push(i), r.length ? r : [e];
 }
-function Mn(e, t) {
+function Yn(e, t) {
 	return t.length ? `${e}\n\n${t.join("\n")}` : e;
 }
-function Nn(e, t, n, r, i, a) {
+function Xn(e, t, n, r, i, a) {
 	let o = n.join("\n").trim();
 	if (!o) return !1;
-	let s = Number.isFinite(i.maxParagraphLength) ? Math.max(0, Math.floor(i.maxParagraphLength)) : 0, c = t === "paragraph" ? jn(o, s) : [o];
+	let s = Number.isFinite(i.maxParagraphLength) ? Math.max(0, Math.floor(i.maxParagraphLength)) : 0, c = t === "paragraph" ? Jn(o, s) : [o];
 	for (let n = 0; n < c.length; n += 1) {
-		let o = c[n], s = Mn(o, a);
+		let o = c[n], s = Yn(o, a);
 		e.push({
-			id: on(t, o, e.length, i.idPrefix ?? ""),
+			id: un(t, o, e.length, i.idPrefix ?? ""),
 			type: t,
 			markdown: s,
 			breakBefore: n === 0 && r
@@ -2432,60 +2611,60 @@ function Nn(e, t, n, r, i, a) {
 	}
 	return !0;
 }
-function Pn(e = "", t = {}) {
+function Zn(e = "", t = {}) {
 	let n = String(e ?? "").replace(/\r\n/g, "\n").split("\n"), r = [], i = [];
-	for (let e of n) An(e) ? r.push(e) : i.push(e);
+	for (let e of n) qn(e) ? r.push(e) : i.push(e);
 	let a = [], o = 0, s = !1;
 	for (; o < i.length;) {
-		if (Cn(i[o])) {
+		if (Bn(i[o])) {
 			o += 1;
 			continue;
 		}
-		if (kn(i[o])) {
+		if (Kn(i[o])) {
 			s = !0, o += 1;
 			continue;
 		}
 		let e = o, n = "paragraph";
-		if (En(i[o])) {
+		if (Un(i[o])) {
 			n = "code";
 			let e = i[o].trim().slice(0, 3);
 			for (o += 1; o < i.length && !i[o].trim().startsWith(e);) o += 1;
 			o < i.length && (o += 1);
-		} else if (wn(i[o])) n = "heading", o += 1;
-		else if (Dn(i[o])) n = "rule", o += 1;
-		else if (Sn.test(i[o])) n = "image", o += 1;
-		else if (On(i, o)) for (n = "table", o += 2; o < i.length && i[o].includes("|") && !Cn(i[o]);) o += 1;
-		else if (Tn(i[o])) for (n = "list", o += 1; o < i.length && !Cn(i[o]);) o += 1;
+		} else if (Vn(i[o])) n = "heading", o += 1;
+		else if (Wn(i[o])) n = "rule", o += 1;
+		else if (zn.test(i[o])) n = "image", o += 1;
+		else if (Gn(i, o)) for (n = "table", o += 2; o < i.length && i[o].includes("|") && !Bn(i[o]);) o += 1;
+		else if (Hn(i[o])) for (n = "list", o += 1; o < i.length && !Bn(i[o]);) o += 1;
 		else if (i[o].trim().startsWith(">")) for (n = "quote", o += 1; o < i.length && i[o].trim().startsWith(">");) o += 1;
-		else for (o += 1; o < i.length && !Cn(i[o]) && !wn(i[o]) && !En(i[o]) && !Dn(i[o]) && !Sn.test(i[o]) && !On(i, o) && !Tn(i[o]) && !i[o].trim().startsWith(">") && !kn(i[o]);) o += 1;
-		Nn(a, n, i.slice(e, o), s, t, r) && (s = !1);
+		else for (o += 1; o < i.length && !Bn(i[o]) && !Vn(i[o]) && !Un(i[o]) && !Wn(i[o]) && !zn.test(i[o]) && !Gn(i, o) && !Hn(i[o]) && !i[o].trim().startsWith(">") && !Kn(i[o]);) o += 1;
+		Xn(a, n, i.slice(e, o), s, t, r) && (s = !1);
 	}
 	return a;
 }
 //#endregion
 //#region src/uhuu/pagination-static/cover-spread.tsx
-var Fn = (e) => `${Number(e.toFixed(4))}mm`;
-function In(e, t) {
-	let n = p(!1);
+var Qn = (e) => `${Number(e.toFixed(4))}mm`;
+function $n(e, t) {
+	let n = m(!1);
 	l(() => {
-		t || n.current || !H() || (n.current = !0, console.warn(`[uhuu-components] Static.CoverSpread sheet="${e}" rendered without a perfect binding. Pass binding={{ spine, glue }} on the Pagination setup (or the binding prop) to compose a cover spread. Rendering the two panels as plain sheets instead.`));
+		t || n.current || (n.current = !0, console.warn(`[uhuu-components] Static.CoverSpread sheet="${e}" rendered without a perfect binding. Pass binding={{ spine, glue }} on the Pagination setup (or the binding prop) to compose a cover spread. Rendering the two panels as plain sheets instead.`));
 	}, [e, t]);
 }
-var Ln = a(function({ sheet: e, left: t, right: n, spine: r, pageNo: i, overlay: a, binding: o, showBleed: s, className: l = "", style: u, leftClassName: d = "", rightClassName: f = "", leftPageKey: p, rightPageKey: m }, h) {
-	let y = c(L), b = o === void 0 ? y?.page?.binding ?? null : k(o), x = s ?? y?.page?.showBleed ?? !1, [S, C] = i ?? [0, 0];
-	In(e, b);
+var er = a(function({ sheet: e, left: t, right: n, spine: r, pageNo: i, overlay: a, binding: o, showBleed: s, className: l = "", style: u, leftClassName: d = "", rightClassName: f = "", leftPageKey: p, rightPageKey: m }, h) {
+	let g = c(R), b = o === void 0 ? g?.page?.binding ?? null : A(o), x = s ?? g?.page?.showBleed ?? !1, [S, C] = i ?? [0, 0];
+	$n(e, b);
 	let w = (t) => a ? ({ pageNo: n }) => a({
 		pageNo: n,
 		side: t,
 		sheet: e
-	}) : void 0, T = /* @__PURE__ */ _(V, {
+	}) : void 0, T = /* @__PURE__ */ v(V, {
 		className: `uhuu-page-sheet--panel ${d}`.trim(),
 		pageNo: S,
 		overlay: w("left"),
 		showBleed: x,
 		"data-page-key": p,
 		children: t
-	}), E = /* @__PURE__ */ _(V, {
+	}), E = /* @__PURE__ */ v(V, {
 		className: `uhuu-page-sheet--panel ${f}`.trim(),
 		pageNo: C,
 		overlay: w("right"),
@@ -2493,9 +2672,9 @@ var Ln = a(function({ sheet: e, left: t, right: n, spine: r, pageNo: i, overlay:
 		"data-page-key": m,
 		children: n
 	});
-	if (!b) return /* @__PURE__ */ v(g, { children: [T, E] });
+	if (!b) return /* @__PURE__ */ y(_, { children: [T, E] });
 	let D = e === "inner", O = D && b.glue > 0;
-	return /* @__PURE__ */ v("div", {
+	return /* @__PURE__ */ y("div", {
 		ref: h,
 		className: `uhuu-page-sheet uhuu-cover-spread ${l}`.trim(),
 		style: u,
@@ -2503,146 +2682,149 @@ var Ln = a(function({ sheet: e, left: t, right: n, spine: r, pageNo: i, overlay:
 		"data-spine": b.spine,
 		"data-glue": b.glue,
 		children: [
-			/* @__PURE__ */ _("div", {
+			/* @__PURE__ */ v("div", {
 				className: "uhuu-spread-panel",
 				"data-side": "left",
 				children: T
 			}),
-			/* @__PURE__ */ v("div", {
+			/* @__PURE__ */ y("div", {
 				className: "uhuu-spread-spine",
 				"data-blank": D ? "true" : "false",
-				children: [!D && r, x && /* @__PURE__ */ _("div", {
+				children: [!D && r, x && /* @__PURE__ */ v("div", {
 					className: "uhuu-spread-guide",
-					"data-label": `spine ${Fn(b.spine)}${D ? " · blank" : ""}`
+					"data-label": `spine ${Qn(b.spine)}${D ? " · blank" : ""}`
 				})]
 			}),
-			/* @__PURE__ */ _("div", {
+			/* @__PURE__ */ v("div", {
 				className: "uhuu-spread-panel",
 				"data-side": "right",
 				children: E
 			}),
-			O && ["left", "right"].map((e) => /* @__PURE__ */ _("div", {
+			O && ["left", "right"].map((e) => /* @__PURE__ */ v("div", {
 				className: "uhuu-glue-zone",
 				"data-side": e,
-				children: x && /* @__PURE__ */ _("div", {
+				children: x && /* @__PURE__ */ v("div", {
 					className: "uhuu-spread-guide",
-					"data-label": `glue ${Fn(b.glue)}`
+					"data-label": `glue ${Qn(b.glue)}`
 				})
 			}, e))
 		]
 	});
-}), Rn = typeof window > "u" ? l : u;
-function zn(e = !0, t) {
-	Rn(() => {
+}), tr = typeof window > "u" ? l : d;
+function nr(e = !0, t) {
+	let n = m(t);
+	tr(() => {
+		n.current = t;
+	}, [t]), tr(() => {
 		if (!e) return;
-		let n = t ? `usePaginationHold(${JSON.stringify(t)})` : "usePaginationHold()";
-		return B.hold({
-			label: n,
-			waitMs: se
+		let t = n.current ? `usePaginationHold(${JSON.stringify(n.current)})` : "usePaginationHold()";
+		return ne.hold({
+			label: t,
+			waitMs: pe
 		});
-	}, [e, t]);
+	}, [e]);
 }
 //#endregion
 //#region node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs
-function Bn(e) {
+function rr(e) {
 	var t, n, r = "";
 	if (typeof e == "string" || typeof e == "number") r += e;
 	else if (typeof e == "object") {
 		if (Array.isArray(e)) {
 			var i = e.length;
-			for (t = 0; t < i; t++) e[t] && (n = Bn(e[t])) && (r && (r += " "), r += n);
+			for (t = 0; t < i; t++) e[t] && (n = rr(e[t])) && (r && (r += " "), r += n);
 		} else for (n in e) e[n] && (r && (r += " "), r += n);
 	}
 	return r;
 }
-function Vn() {
-	for (var e, t, n = 0, r = "", i = arguments.length; n < i; n++) (e = arguments[n]) && (t = Bn(e)) && (r && (r += " "), r += t);
+function ir() {
+	for (var e, t, n = 0, r = "", i = arguments.length; n < i; n++) (e = arguments[n]) && (t = rr(e)) && (r && (r += " "), r += t);
 	return r;
 }
 //#endregion
 //#region node_modules/.pnpm/tailwind-merge@3.7.0/node_modules/tailwind-merge/dist/bundle-mjs.mjs
-var Hn = (e, t) => {
+var ar = (e, t) => {
 	let n = Array(e.length + t.length);
 	for (let t = 0; t < e.length; t++) n[t] = e[t];
 	for (let r = 0; r < t.length; r++) n[e.length + r] = t[r];
 	return n;
-}, Un = (e, t) => ({
+}, or = (e, t) => ({
 	classGroupId: e,
 	validator: t
-}), Wn = (e = /* @__PURE__ */ new Map(), t = null, n) => ({
+}), sr = (e = /* @__PURE__ */ new Map(), t = null, n) => ({
 	nextPart: e,
 	validators: t,
 	classGroupId: n
-}), Gn = "-", Kn = [], qn = "arbitrary..", Jn = (e) => {
-	let t = Zn(e), { conflictingClassGroups: n, conflictingClassGroupModifiers: r } = e;
+}), cr = "-", lr = [], ur = "arbitrary..", dr = (e) => {
+	let t = mr(e), { conflictingClassGroups: n, conflictingClassGroupModifiers: r } = e;
 	return {
 		getClassGroupId: (e) => {
-			if (e.startsWith("[") && e.endsWith("]")) return Xn(e);
-			let n = e.split(Gn);
-			return Yn(n, +(n[0] === "" && n.length > 1), t);
+			if (e.startsWith("[") && e.endsWith("]")) return pr(e);
+			let n = e.split(cr);
+			return fr(n, +(n[0] === "" && n.length > 1), t);
 		},
 		getConflictingClassGroupIds: (e, t) => {
 			if (t) {
 				let t = r[e], i = n[e];
-				return t ? i ? Hn(i, t) : t : i || Kn;
+				return t ? i ? ar(i, t) : t : i || lr;
 			}
-			return n[e] || Kn;
+			return n[e] || lr;
 		}
 	};
-}, Yn = (e, t, n) => {
+}, fr = (e, t, n) => {
 	if (e.length - t === 0) return n.classGroupId;
 	let r = e[t], i = n.nextPart.get(r);
 	if (i) {
-		let n = Yn(e, t + 1, i);
+		let n = fr(e, t + 1, i);
 		if (n) return n;
 	}
 	let a = n.validators;
 	if (a === null) return;
-	let o = t === 0 ? e.join(Gn) : e.slice(t).join(Gn), s = a.length;
+	let o = t === 0 ? e.join(cr) : e.slice(t).join(cr), s = a.length;
 	for (let e = 0; e < s; e++) {
 		let t = a[e];
 		if (t.validator(o)) return t.classGroupId;
 	}
-}, Xn = (e) => e.slice(1, -1).indexOf(":") === -1 ? void 0 : (() => {
+}, pr = (e) => e.slice(1, -1).indexOf(":") === -1 ? void 0 : (() => {
 	let t = e.slice(1, -1), n = t.indexOf(":"), r = t.slice(0, n);
-	return r ? qn + r : void 0;
-})(), Zn = (e) => {
+	return r ? ur + r : void 0;
+})(), mr = (e) => {
 	let { theme: t, classGroups: n } = e;
-	return Qn(n, t);
-}, Qn = (e, t) => {
-	let n = Wn();
+	return hr(n, t);
+}, hr = (e, t) => {
+	let n = sr();
 	for (let r in e) {
 		let i = e[r];
-		$n(i, n, r, t);
+		gr(i, n, r, t);
 	}
 	return n;
-}, $n = (e, t, n, r) => {
+}, gr = (e, t, n, r) => {
 	let i = e.length;
 	for (let a = 0; a < i; a++) {
 		let i = e[a];
-		er(i, t, n, r);
+		_r(i, t, n, r);
 	}
-}, er = (e, t, n, r) => {
-	typeof e == "string" ? tr(e, t, n) : typeof e == "function" ? nr(e, t, n, r) : rr(e, t, n, r);
-}, tr = (e, t, n) => {
-	let r = e === "" ? t : ir(t, e);
+}, _r = (e, t, n, r) => {
+	typeof e == "string" ? vr(e, t, n) : typeof e == "function" ? yr(e, t, n, r) : br(e, t, n, r);
+}, vr = (e, t, n) => {
+	let r = e === "" ? t : xr(t, e);
 	r.classGroupId = n;
-}, nr = (e, t, n, r) => {
-	ar(e) ? $n(e(r), t, n, r) : (t.validators === null && (t.validators = []), t.validators.push(Un(n, e)));
-}, rr = (e, t, n, r) => {
+}, yr = (e, t, n, r) => {
+	Sr(e) ? gr(e(r), t, n, r) : (t.validators === null && (t.validators = []), t.validators.push(or(n, e)));
+}, br = (e, t, n, r) => {
 	let i = Object.entries(e), a = i.length;
 	for (let e = 0; e < a; e++) {
 		let [a, o] = i[e];
-		$n(o, ir(t, a), n, r);
+		gr(o, xr(t, a), n, r);
 	}
-}, ir = (e, t) => {
-	let n = e, r = t.split(Gn), i = r.length;
+}, xr = (e, t) => {
+	let n = e, r = t.split(cr), i = r.length;
 	for (let e = 0; e < i; e++) {
 		let t = r[e], i = n.nextPart.get(t);
-		i || (i = Wn(), n.nextPart.set(t, i)), n = i;
+		i || (i = sr(), n.nextPart.set(t, i)), n = i;
 	}
 	return n;
-}, ar = (e) => "isThemeGetter" in e && e.isThemeGetter === !0, or = (e) => {
+}, Sr = (e) => "isThemeGetter" in e && e.isThemeGetter === !0, Cr = (e) => {
 	if (e < 1) return {
 		get: () => void 0,
 		set: () => {}
@@ -2660,19 +2842,19 @@ var Hn = (e, t) => {
 			e in n ? n[e] = t : i(e, t);
 		}
 	};
-}, sr = "!", cr = ":", lr = [], ur = (e, t, n, r, i) => ({
+}, wr = "!", Tr = ":", Er = [], Dr = (e, t, n, r, i) => ({
 	modifiers: e,
 	hasImportantModifier: t,
 	baseClassName: n,
 	maybePostfixModifierPosition: r,
 	isExternal: i
-}), dr = (e) => {
+}), Or = (e) => {
 	let { prefix: t, experimentalParseClassName: n } = e, r = (e) => {
 		let t = [], n = 0, r = 0, i = 0, a, o = e.length;
 		for (let s = 0; s < o; s++) {
 			let o = e[s];
 			if (n === 0 && r === 0) {
-				if (o === cr) {
+				if (o === Tr) {
 					t.push(e.slice(i, s)), i = s + 1;
 					continue;
 				}
@@ -2684,13 +2866,13 @@ var Hn = (e, t) => {
 			o === "[" ? n++ : o === "]" ? n-- : o === "(" ? r++ : o === ")" && r--;
 		}
 		let s = t.length === 0 ? e : e.slice(i), c = s, l = !1;
-		s.endsWith(sr) ? (c = s.slice(0, -1), l = !0) : s.startsWith(sr) && (c = s.slice(1), l = !0);
+		s.endsWith(wr) ? (c = s.slice(0, -1), l = !0) : s.startsWith(wr) && (c = s.slice(1), l = !0);
 		let u = a && a > i ? a - i : void 0;
-		return ur(t, l, c, u);
+		return Dr(t, l, c, u);
 	};
 	if (t) {
-		let e = t + cr, n = r;
-		r = (t) => t.startsWith(e) ? n(t.slice(e.length)) : ur(lr, !1, t, void 0, !0);
+		let e = t + Tr, n = r;
+		r = (t) => t.startsWith(e) ? n(t.slice(e.length)) : Dr(Er, !1, t, void 0, !0);
 	}
 	if (n) {
 		let e = r;
@@ -2700,7 +2882,7 @@ var Hn = (e, t) => {
 		});
 	}
 	return r;
-}, fr = (e) => {
+}, kr = (e) => {
 	let t = /* @__PURE__ */ new Map();
 	return e.orderSensitiveModifiers.forEach((e, n) => {
 		t.set(e, 1e6 + n);
@@ -2712,18 +2894,18 @@ var Hn = (e, t) => {
 		}
 		return r.length > 0 && (r.sort(), n.push(...r)), n;
 	};
-}, pr = (e) => ({
-	cache: or(e.cacheSize),
-	parseClassName: dr(e),
-	sortModifiers: fr(e),
-	postfixLookupClassGroupIds: mr(e),
-	...Jn(e)
-}), mr = (e) => {
+}, Ar = (e) => ({
+	cache: Cr(e.cacheSize),
+	parseClassName: Or(e),
+	sortModifiers: kr(e),
+	postfixLookupClassGroupIds: jr(e),
+	...dr(e)
+}), jr = (e) => {
 	let t = Object.create(null), n = e.postfixLookupClassGroups;
 	if (n) for (let e = 0; e < n.length; e++) t[n[e]] = !0;
 	return t;
-}, hr = /\s+/, gr = (e, t) => {
-	let { parseClassName: n, getClassGroupId: r, getConflictingClassGroupIds: i, sortModifiers: a, postfixLookupClassGroupIds: o } = t, s = [], c = e.trim().split(hr), l = "";
+}, Mr = /\s+/, Nr = (e, t) => {
+	let { parseClassName: n, getClassGroupId: r, getConflictingClassGroupIds: i, sortModifiers: a, postfixLookupClassGroupIds: o } = t, s = [], c = e.trim().split(Mr), l = "";
 	for (let e = c.length - 1; e >= 0; --e) {
 		let t = c[e], { isExternal: u, modifiers: d, hasImportantModifier: f, baseClassName: p, maybePostfixModifierPosition: m } = n(t);
 		if (u) {
@@ -2743,7 +2925,7 @@ var Hn = (e, t) => {
 			}
 			h = !1;
 		}
-		let _ = d.length === 0 ? "" : d.length === 1 ? d[0] : a(d).join(":"), v = f ? _ + sr : _, y = v + g;
+		let _ = d.length === 0 ? "" : d.length === 1 ? d[0] : a(d).join(":"), v = f ? _ + wr : _, y = v + g;
 		if (s.indexOf(y) > -1) continue;
 		s.push(y);
 		let b = i(g, h);
@@ -2754,34 +2936,34 @@ var Hn = (e, t) => {
 		l = t + (l.length > 0 ? " " + l : l);
 	}
 	return l;
-}, _r = (...e) => {
+}, Pr = (...e) => {
 	let t = 0, n, r, i = "";
-	for (; t < e.length;) (n = e[t++]) && (r = vr(n)) && (i && (i += " "), i += r);
+	for (; t < e.length;) (n = e[t++]) && (r = Fr(n)) && (i && (i += " "), i += r);
 	return i;
-}, vr = (e) => {
+}, Fr = (e) => {
 	if (typeof e == "string") return e;
 	let t, n = "";
-	for (let r = 0; r < e.length; r++) e[r] && (t = vr(e[r])) && (n && (n += " "), n += t);
+	for (let r = 0; r < e.length; r++) e[r] && (t = Fr(e[r])) && (n && (n += " "), n += t);
 	return n;
-}, yr = (e, ...t) => {
-	let n, r, i, a, o = (o) => (n = pr(t.reduce((e, t) => t(e), e())), r = n.cache.get, i = n.cache.set, a = s, s(o)), s = (e) => {
+}, Ir = (e, ...t) => {
+	let n, r, i, a, o = (o) => (n = Ar(t.reduce((e, t) => t(e), e())), r = n.cache.get, i = n.cache.set, a = s, s(o)), s = (e) => {
 		let t = r(e);
 		if (t) return t;
-		let a = gr(e, n);
+		let a = Nr(e, n);
 		return i(e, a), a;
 	};
-	return a = o, (...e) => a(_r(...e));
-}, br = [], xr = (e) => {
-	let t = (t) => t[e] || br;
+	return a = o, (...e) => a(Pr(...e));
+}, Lr = [], Rr = (e) => {
+	let t = (t) => t[e] || Lr;
 	return t.isThemeGetter = !0, t.themeKey = e, t;
-}, Sr = /^\[(?:(\w[\w-]*):)?(.+)\]$/i, Cr = /^\((?:(\w[\w-]*):)?(.+)\)$/i, wr = /^\d+(?:\.\d+)?\/\d+(?:\.\d+)?$/, Tr = /^(\d+(\.\d+)?)?(xs|sm|md|lg|xl)$/, Er = /\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^0$/, Dr = /^(rgba?|hsla?|hwb|(ok)?(lab|lch)|color-mix|color|light-dark)\(.+\)$/, Or = /^(inset_)?-?((\d+)?\.?(\d+)[a-z]+|0)_-?((\d+)?\.?(\d+)[a-z]+|0)/, kr = /^(url|image|image-set|cross-fade|element|(repeating-)?(linear|radial|conic)-gradient)\(.+\)$/, Ar = (e) => wr.test(e), U = (e) => !!e && !Number.isNaN(Number(e)), jr = (e) => !!e && Number.isInteger(Number(e)), Mr = (e) => e.endsWith("%") && U(e.slice(0, -1)), Nr = (e) => Tr.test(e), Pr = () => !0, Fr = (e) => Er.test(e) && !Dr.test(e), Ir = () => !1, Lr = (e) => Or.test(e), Rr = (e) => kr.test(e), zr = (e) => !W(e) && !G(e), Br = (e) => e.startsWith("@container") && (e[10] === "/" && e[11] !== void 0 || e[11] === "s" && e[16] !== void 0 && e.startsWith("-size/", 10) || e[11] === "n" && e[18] !== void 0 && e.startsWith("-normal/", 10)), Vr = (e) => ni(e, oi, Ir), W = (e) => Sr.test(e), Hr = (e) => ni(e, si, Fr), Ur = (e) => ni(e, ci, U), Wr = (e) => ni(e, ui, Pr), Gr = (e) => ni(e, li, Ir), Kr = (e) => ni(e, ii, Ir), qr = (e) => ni(e, ai, Rr), Jr = (e) => ni(e, di, Lr), G = (e) => Cr.test(e), Yr = (e) => ri(e, si), Xr = (e) => ri(e, li), Zr = (e) => ri(e, ii), Qr = (e) => ri(e, oi), $r = (e) => ri(e, ai), ei = (e) => ri(e, di, !0), ti = (e) => ri(e, ui, !0), ni = (e, t, n) => {
-	let r = Sr.exec(e);
+}, zr = /^\[(?:(\w[\w-]*):)?(.+)\]$/i, Br = /^\((?:(\w[\w-]*):)?(.+)\)$/i, Vr = /^\d+(?:\.\d+)?\/\d+(?:\.\d+)?$/, Hr = /^(\d+(\.\d+)?)?(xs|sm|md|lg|xl)$/, Ur = /\d+(%|px|r?em|[sdl]?v([hwib]|min|max)|pt|pc|in|cm|mm|cap|ch|ex|r?lh|cq(w|h|i|b|min|max))|\b(calc|min|max|clamp)\(.+\)|^0$/, Wr = /^(rgba?|hsla?|hwb|(ok)?(lab|lch)|color-mix|color|light-dark)\(.+\)$/, Gr = /^(inset_)?-?((\d+)?\.?(\d+)[a-z]+|0)_-?((\d+)?\.?(\d+)[a-z]+|0)/, Kr = /^(url|image|image-set|cross-fade|element|(repeating-)?(linear|radial|conic)-gradient)\(.+\)$/, qr = (e) => Vr.test(e), U = (e) => !!e && !Number.isNaN(Number(e)), Jr = (e) => !!e && Number.isInteger(Number(e)), Yr = (e) => e.endsWith("%") && U(e.slice(0, -1)), Xr = (e) => Hr.test(e), Zr = () => !0, Qr = (e) => Ur.test(e) && !Wr.test(e), $r = () => !1, ei = (e) => Gr.test(e), ti = (e) => Kr.test(e), ni = (e) => !W(e) && !G(e), ri = (e) => e.startsWith("@container") && (e[10] === "/" && e[11] !== void 0 || e[11] === "s" && e[16] !== void 0 && e.startsWith("-size/", 10) || e[11] === "n" && e[18] !== void 0 && e.startsWith("-normal/", 10)), ii = (e) => yi(e, Ci, $r), W = (e) => zr.test(e), ai = (e) => yi(e, wi, Qr), oi = (e) => yi(e, Ti, U), si = (e) => yi(e, Di, Zr), ci = (e) => yi(e, Ei, $r), li = (e) => yi(e, xi, $r), ui = (e) => yi(e, Si, ti), di = (e) => yi(e, Oi, ei), G = (e) => Br.test(e), fi = (e) => bi(e, wi), pi = (e) => bi(e, Ei), mi = (e) => bi(e, xi), hi = (e) => bi(e, Ci), gi = (e) => bi(e, Si), _i = (e) => bi(e, Oi, !0), vi = (e) => bi(e, Di, !0), yi = (e, t, n) => {
+	let r = zr.exec(e);
 	return r ? r[1] ? t(r[1]) : n(r[2]) : !1;
-}, ri = (e, t, n = !1) => {
-	let r = Cr.exec(e);
+}, bi = (e, t, n = !1) => {
+	let r = Br.exec(e);
 	return r ? r[1] ? t(r[1]) : n : !1;
-}, ii = (e) => e === "position" || e === "percentage", ai = (e) => e === "image" || e === "url", oi = (e) => e === "length" || e === "size" || e === "bg-size", si = (e) => e === "length", ci = (e) => e === "number", li = (e) => e === "family-name", ui = (e) => e === "number" || e === "weight", di = (e) => e === "shadow", fi = () => {
-	let e = xr("color"), t = xr("font"), n = xr("text"), r = xr("font-weight"), i = xr("tracking"), a = xr("leading"), o = xr("breakpoint"), s = xr("container"), c = xr("spacing"), l = xr("radius"), u = xr("shadow"), d = xr("inset-shadow"), f = xr("text-shadow"), p = xr("drop-shadow"), m = xr("blur"), h = xr("perspective"), g = xr("aspect"), _ = xr("ease"), v = xr("animate"), y = () => [
+}, xi = (e) => e === "position" || e === "percentage", Si = (e) => e === "image" || e === "url", Ci = (e) => e === "length" || e === "size" || e === "bg-size", wi = (e) => e === "length", Ti = (e) => e === "number", Ei = (e) => e === "family-name", Di = (e) => e === "number" || e === "weight", Oi = (e) => e === "shadow", ki = () => {
+	let e = Rr("color"), t = Rr("font"), n = Rr("text"), r = Rr("font-weight"), i = Rr("tracking"), a = Rr("leading"), o = Rr("breakpoint"), s = Rr("container"), c = Rr("spacing"), l = Rr("radius"), u = Rr("shadow"), d = Rr("inset-shadow"), f = Rr("text-shadow"), p = Rr("drop-shadow"), m = Rr("blur"), h = Rr("perspective"), g = Rr("aspect"), _ = Rr("ease"), v = Rr("animate"), y = () => [
 		"auto",
 		"avoid",
 		"all",
@@ -2823,12 +3005,12 @@ var Hn = (e, t) => {
 		W,
 		c
 	], T = () => [
-		Ar,
+		qr,
 		"full",
 		"auto",
 		...w()
 	], E = () => [
-		jr,
+		Jr,
 		"none",
 		"subgrid",
 		G,
@@ -2837,15 +3019,15 @@ var Hn = (e, t) => {
 		"auto",
 		{ span: [
 			"full",
-			jr,
+			Jr,
 			G,
 			W
 		] },
-		jr,
+		Jr,
 		G,
 		W
 	], O = () => [
-		jr,
+		Jr,
 		"auto",
 		G,
 		W
@@ -2875,7 +3057,7 @@ var Hn = (e, t) => {
 		"center-safe",
 		"end-safe"
 	], M = () => ["auto", ...w()], N = () => [
-		Ar,
+		qr,
 		"auto",
 		"full",
 		"dvw",
@@ -2890,7 +3072,7 @@ var Hn = (e, t) => {
 		...w()
 	], P = () => [
 		s,
-		Ar,
+		qr,
 		"screen",
 		"full",
 		"dvw",
@@ -2901,7 +3083,7 @@ var Hn = (e, t) => {
 		"fit",
 		...w()
 	], F = () => [
-		Ar,
+		qr,
 		"screen",
 		"full",
 		"lh",
@@ -2918,8 +3100,8 @@ var Hn = (e, t) => {
 		W
 	], L = () => [
 		...b(),
-		Zr,
-		Kr,
+		mi,
+		li,
 		{ position: [G, W] }
 	], R = () => ["no-repeat", { repeat: [
 		"",
@@ -2931,13 +3113,13 @@ var Hn = (e, t) => {
 		"auto",
 		"cover",
 		"contain",
-		Qr,
-		Vr,
+		hi,
+		ii,
 		{ size: [G, W] }
 	], te = () => [
-		Mr,
 		Yr,
-		Hr
+		fi,
+		ai
 	], z = () => [
 		"",
 		"none",
@@ -2948,8 +3130,8 @@ var Hn = (e, t) => {
 	], B = () => [
 		"",
 		U,
-		Yr,
-		Hr
+		fi,
+		ai
 	], ne = () => [
 		"solid",
 		"dashed",
@@ -2974,13 +3156,18 @@ var Hn = (e, t) => {
 		"luminosity"
 	], ie = () => [
 		U,
-		Mr,
-		Zr,
-		Kr
+		Yr,
+		mi,
+		li
 	], ae = () => [
 		"",
 		"none",
 		m,
+		G,
+		W
+	], oe = () => [
+		"none",
+		U,
 		G,
 		W
 	], V = () => [
@@ -2989,16 +3176,11 @@ var Hn = (e, t) => {
 		G,
 		W
 	], H = () => [
-		"none",
-		U,
-		G,
-		W
-	], oe = () => [
 		U,
 		G,
 		W
 	], se = () => [
-		Ar,
+		qr,
 		"full",
 		...w()
 	];
@@ -3012,17 +3194,17 @@ var Hn = (e, t) => {
 				"bounce"
 			],
 			aspect: ["video"],
-			blur: [Nr],
-			breakpoint: [Nr],
-			color: [Pr],
-			container: [Nr],
-			"drop-shadow": [Nr],
+			blur: [Xr],
+			breakpoint: [Xr],
+			color: [Zr],
+			container: [Xr],
+			"drop-shadow": [Xr],
 			ease: [
 				"in",
 				"out",
 				"in-out"
 			],
-			font: [zr],
+			font: [ni],
 			"font-weight": [
 				"thin",
 				"extralight",
@@ -3034,7 +3216,7 @@ var Hn = (e, t) => {
 				"extrabold",
 				"black"
 			],
-			"inset-shadow": [Nr],
+			"inset-shadow": [Xr],
 			leading: [
 				"none",
 				"tight",
@@ -3051,11 +3233,11 @@ var Hn = (e, t) => {
 				"distant",
 				"none"
 			],
-			radius: [Nr],
-			shadow: [Nr],
+			radius: [Xr],
+			shadow: [Xr],
 			spacing: ["px", U],
-			text: [Nr],
-			"text-shadow": [Nr],
+			text: [Xr],
+			"text-shadow": [Xr],
 			tracking: [
 				"tighter",
 				"tight",
@@ -3069,7 +3251,7 @@ var Hn = (e, t) => {
 			aspect: [{ aspect: [
 				"auto",
 				"square",
-				Ar,
+				qr,
 				W,
 				G,
 				g
@@ -3082,7 +3264,7 @@ var Hn = (e, t) => {
 				G,
 				W
 			] }],
-			"container-named": [Br],
+			"container-named": [ri],
 			columns: [{ columns: [
 				U,
 				"auto",
@@ -3184,13 +3366,13 @@ var Hn = (e, t) => {
 				"collapse"
 			],
 			z: [{ z: [
-				jr,
+				Jr,
 				"auto",
 				G,
 				W
 			] }],
 			basis: [{ basis: [
-				Ar,
+				qr,
 				"full",
 				"auto",
 				s,
@@ -3209,7 +3391,7 @@ var Hn = (e, t) => {
 			] }],
 			flex: [{ flex: [
 				U,
-				Ar,
+				qr,
 				"auto",
 				"initial",
 				"none",
@@ -3228,7 +3410,7 @@ var Hn = (e, t) => {
 				W
 			] }],
 			order: [{ order: [
-				jr,
+				Jr,
 				"first",
 				"last",
 				"none",
@@ -3340,15 +3522,15 @@ var Hn = (e, t) => {
 			"font-size": [{ text: [
 				"base",
 				n,
-				Yr,
-				Hr
+				fi,
+				ai
 			] }],
 			"font-smoothing": ["antialiased", "subpixel-antialiased"],
 			"font-style": ["italic", "not-italic"],
 			"font-weight": [{ font: [
 				r,
-				ti,
-				Wr
+				vi,
+				si
 			] }],
 			"font-stretch": [{ "font-stretch": [
 				"ultra-condensed",
@@ -3360,12 +3542,12 @@ var Hn = (e, t) => {
 				"expanded",
 				"extra-expanded",
 				"ultra-expanded",
-				Mr,
+				Yr,
 				W
 			] }],
 			"font-family": [{ font: [
-				Xr,
-				Gr,
+				pi,
+				ci,
 				t
 			] }],
 			"font-features": [{ "font-features": [W] }],
@@ -3384,7 +3566,7 @@ var Hn = (e, t) => {
 				U,
 				"none",
 				G,
-				Ur
+				oi
 			] }],
 			leading: [{ leading: [
 				"none",
@@ -3426,7 +3608,7 @@ var Hn = (e, t) => {
 				"from-font",
 				"auto",
 				G,
-				Hr
+				ai
 			] }],
 			"text-decoration-color": [{ decoration: I() }],
 			"underline-offset": [{ "underline-offset": [
@@ -3454,7 +3636,7 @@ var Hn = (e, t) => {
 			] }],
 			indent: [{ indent: w() }],
 			"tab-size": [{ tab: [
-				jr,
+				Jr,
 				G,
 				W
 			] }],
@@ -3532,7 +3714,7 @@ var Hn = (e, t) => {
 							"l",
 							"tl"
 						] },
-						jr,
+						Jr,
 						G,
 						W
 					],
@@ -3543,13 +3725,13 @@ var Hn = (e, t) => {
 					],
 					conic: [
 						"",
-						jr,
+						Jr,
 						G,
 						W
 					]
 				},
-				$r,
-				qr
+				gi,
+				ui
 			] }],
 			"bg-color": [{ bg: I() }],
 			"gradient-from-pos": [{ from: te() }],
@@ -3623,8 +3805,8 @@ var Hn = (e, t) => {
 			"outline-w": [{ outline: [
 				"",
 				U,
-				Yr,
-				Hr
+				fi,
+				ai
 			] }],
 			"outline-color": [{ outline: I() }],
 			shadow: [{ shadow: [
@@ -3632,29 +3814,29 @@ var Hn = (e, t) => {
 				"inner",
 				"none",
 				u,
-				ei,
-				Jr
+				_i,
+				di
 			] }],
 			"shadow-color": [{ shadow: I() }],
 			"inset-shadow": [{ "inset-shadow": [
 				"none",
 				d,
-				ei,
-				Jr
+				_i,
+				di
 			] }],
 			"inset-shadow-color": [{ "inset-shadow": I() }],
 			"ring-w": [{ ring: B() }],
 			"ring-w-inset": ["ring-inset"],
 			"ring-color": [{ ring: I() }],
-			"ring-offset-w": [{ "ring-offset": [U, Hr] }],
+			"ring-offset-w": [{ "ring-offset": [U, ai] }],
 			"ring-offset-color": [{ "ring-offset": I() }],
 			"inset-ring-w": [{ "inset-ring": B() }],
 			"inset-ring-color": [{ "inset-ring": I() }],
 			"text-shadow": [{ "text-shadow": [
 				"none",
 				f,
-				ei,
-				Jr
+				_i,
+				di
 			] }],
 			"text-shadow-color": [{ "text-shadow": I() }],
 			opacity: [{ opacity: [
@@ -3770,8 +3952,8 @@ var Hn = (e, t) => {
 				"",
 				"none",
 				p,
-				ei,
-				Jr
+				_i,
+				di
 			] }],
 			"drop-shadow-color": [{ "drop-shadow": I() }],
 			grayscale: [{ grayscale: [
@@ -3901,18 +4083,18 @@ var Hn = (e, t) => {
 				W
 			] }],
 			"perspective-origin": [{ "perspective-origin": x() }],
-			rotate: [{ rotate: V() }],
-			"rotate-x": [{ "rotate-x": V() }],
-			"rotate-y": [{ "rotate-y": V() }],
-			"rotate-z": [{ "rotate-z": V() }],
-			scale: [{ scale: H() }],
-			"scale-x": [{ "scale-x": H() }],
-			"scale-y": [{ "scale-y": H() }],
-			"scale-z": [{ "scale-z": H() }],
+			rotate: [{ rotate: oe() }],
+			"rotate-x": [{ "rotate-x": oe() }],
+			"rotate-y": [{ "rotate-y": oe() }],
+			"rotate-z": [{ "rotate-z": oe() }],
+			scale: [{ scale: V() }],
+			"scale-x": [{ "scale-x": V() }],
+			"scale-y": [{ "scale-y": V() }],
+			"scale-z": [{ "scale-z": V() }],
 			"scale-3d": ["scale-3d"],
-			skew: [{ skew: oe() }],
-			"skew-x": [{ "skew-x": oe() }],
-			"skew-y": [{ "skew-y": oe() }],
+			skew: [{ skew: H() }],
+			"skew-x": [{ "skew-x": H() }],
+			"skew-y": [{ "skew-y": H() }],
 			transform: [{ transform: [
 				G,
 				W,
@@ -3929,7 +4111,7 @@ var Hn = (e, t) => {
 			"translate-z": [{ "translate-z": se() }],
 			"translate-none": ["translate-none"],
 			zoom: [{ zoom: [
-				jr,
+				Jr,
 				G,
 				W
 			] }],
@@ -4074,9 +4256,9 @@ var Hn = (e, t) => {
 			fill: [{ fill: ["none", ...I()] }],
 			"stroke-w": [{ stroke: [
 				U,
-				Yr,
-				Hr,
-				Ur
+				fi,
+				ai,
+				oi
 			] }],
 			stroke: [{ stroke: ["none", ...I()] }],
 			"forced-color-adjust": [{ "forced-color-adjust": ["auto", "none"] }]
@@ -4334,45 +4516,45 @@ var Hn = (e, t) => {
 			"selection"
 		]
 	};
-}, pi = (e, { cacheSize: t, prefix: n, experimentalParseClassName: r, extend: i = {}, override: a = {} }) => (mi(e, "cacheSize", t), mi(e, "prefix", n), mi(e, "experimentalParseClassName", r), hi(e.theme, a.theme), hi(e.classGroups, a.classGroups), hi(e.conflictingClassGroups, a.conflictingClassGroups), hi(e.conflictingClassGroupModifiers, a.conflictingClassGroupModifiers), mi(e, "postfixLookupClassGroups", a.postfixLookupClassGroups), mi(e, "orderSensitiveModifiers", a.orderSensitiveModifiers), gi(e.theme, i.theme), gi(e.classGroups, i.classGroups), gi(e.conflictingClassGroups, i.conflictingClassGroups), gi(e.conflictingClassGroupModifiers, i.conflictingClassGroupModifiers), _i(e, i, "postfixLookupClassGroups"), _i(e, i, "orderSensitiveModifiers"), e), mi = (e, t, n) => {
+}, Ai = (e, { cacheSize: t, prefix: n, experimentalParseClassName: r, extend: i = {}, override: a = {} }) => (ji(e, "cacheSize", t), ji(e, "prefix", n), ji(e, "experimentalParseClassName", r), Mi(e.theme, a.theme), Mi(e.classGroups, a.classGroups), Mi(e.conflictingClassGroups, a.conflictingClassGroups), Mi(e.conflictingClassGroupModifiers, a.conflictingClassGroupModifiers), ji(e, "postfixLookupClassGroups", a.postfixLookupClassGroups), ji(e, "orderSensitiveModifiers", a.orderSensitiveModifiers), Ni(e.theme, i.theme), Ni(e.classGroups, i.classGroups), Ni(e.conflictingClassGroups, i.conflictingClassGroups), Ni(e.conflictingClassGroupModifiers, i.conflictingClassGroupModifiers), Pi(e, i, "postfixLookupClassGroups"), Pi(e, i, "orderSensitiveModifiers"), e), ji = (e, t, n) => {
 	n !== void 0 && (e[t] = n);
-}, hi = (e, t) => {
-	if (t) for (let n in t) mi(e, n, t[n]);
-}, gi = (e, t) => {
-	if (t) for (let n in t) _i(e, t, n);
-}, _i = (e, t, n) => {
+}, Mi = (e, t) => {
+	if (t) for (let n in t) ji(e, n, t[n]);
+}, Ni = (e, t) => {
+	if (t) for (let n in t) Pi(e, t, n);
+}, Pi = (e, t, n) => {
 	let r = t[n];
 	r !== void 0 && (e[n] = e[n] ? e[n].concat(r) : r);
-}, vi = (e, ...t) => typeof e == "function" ? yr(fi, e, ...t) : yr(() => pi(fi(), e), ...t), yi = /*#__PURE__*/ yr(fi), bi = vi({ prefix: "uhuu" });
+}, Fi = (e, ...t) => typeof e == "function" ? Ir(ki, e, ...t) : Ir(() => Ai(ki(), e), ...t), Ii = /*#__PURE__*/ Ir(ki), Li = Fi({ prefix: "uhuu" });
 function K(...e) {
-	return bi(Vn(e));
+	return Li(ir(e));
 }
-function xi(...e) {
-	return yi(Vn(e));
+function Ri(...e) {
+	return Ii(ir(e));
 }
 //#endregion
 //#region src/uhuu/image/use-image-load-failure.ts
-var Si = ({ onError: e }) => (t) => {
+var zi = ({ onError: e }) => (t) => {
 	e?.(t);
-}, Ci = (e, t) => e && e > 0 ? e + t : 0, wi = ({ width: e, left: t = 0, right: n = 0 }, r, i, a) => {
+}, Bi = (e, t) => e && e > 0 ? e + t : 0, Vi = ({ width: e, left: t = 0, right: n = 0 }, r, i, a) => {
 	if (e) return !t && !n ? e + i : e;
 	let o = a * r;
 	return t || (o += a * i), n || (o += a * i), (t || n) && (o -= t + n), o;
-}, Ti = (e, t) => {
-	let n = e.bleed ?? 0, r = e.pageWidth ?? 210, i = t === "spread" ? 2 : 1, a = r + 2 * n, o = wi(e, r, n, i), s = Ci(e.left, n), c = a - ((t === "spread" && e.side === "end" ? -r + s : s) + o);
+}, Hi = (e, t) => {
+	let n = e.bleed ?? 0, r = e.pageWidth ?? 210, i = t === "spread" ? 2 : 1, a = r + 2 * n, o = Vi(e, r, n, i), s = Bi(e.left, n), c = a - ((t === "spread" && e.side === "end" ? -r + s : s) + o);
 	return {
-		top: `${Math.max(0, Ci(e.top, n))}mm`,
+		top: `${Math.max(0, Bi(e.top, n))}mm`,
 		right: `${Math.max(0, c)}mm`
 	};
-}, Ei = (e) => {
-	let t = c(L), n = Si({ onError: e.onError }), r = e.bleed ?? t?.page?.bleed ?? 0, i = e.pageWidth ?? t?.page?.width ?? 210, a = e.pageHeight ?? t?.page?.height ?? 297, { src: o, imageClassName: s, backgroundColor: l, width: u, height: d, left: f = 0, right: p = 0, top: m = 0, bottom: h = 0 } = e, g = (e) => `${e}mm`, y = () => wi({
+}, Ui = (e) => {
+	let t = c(R), n = zi({ onError: e.onError }), r = e.bleed ?? t?.page?.bleed ?? 0, i = e.pageWidth ?? t?.page?.width ?? 210, a = e.pageHeight ?? t?.page?.height ?? 297, { src: o, imageClassName: s, backgroundColor: l, width: u, height: d, left: f = 0, right: p = 0, top: m = 0, bottom: h = 0 } = e, g = (e) => `${e}mm`, _ = () => Vi({
 		width: u,
 		left: f,
 		right: p
 	}, i, r, 1), b = () => {
 		let e = d ?? 0;
 		return d ? !m && !h && (e += r) : (e = a, m || (e += r), h || (e += r), (m || h) && (e -= (m ?? 0) + (h ?? 0))), e;
-	}, x = y(), S = b(), C = (e) => e === void 0 ? void 0 : g(e), w = ((e) => Object.fromEntries(Object.entries(e).filter(([e, t]) => t !== void 0)))({
+	}, x = _(), S = b(), C = (e) => e === void 0 ? void 0 : g(e), w = ((e) => Object.fromEntries(Object.entries(e).filter(([e, t]) => t !== void 0)))({
 		backgroundColor: l,
 		width: C(x),
 		height: C(S),
@@ -4381,26 +4563,27 @@ var Si = ({ onError: e }) => (t) => {
 		top: C(m > 0 ? m + r : m),
 		bottom: C(h > 0 ? h + r : h)
 	});
-	return /* @__PURE__ */ _("div", {
+	return /* @__PURE__ */ v("div", {
 		className: "uhuu-image-container",
 		style: w,
 		...e.dataUhuu === void 0 ? {} : { "data-uhuu": e.dataUhuu },
-		children: /* @__PURE__ */ v("div", {
+		children: /* @__PURE__ */ y("div", {
 			className: "uhuu-image-inner",
-			...Qt(e),
-			children: [/* @__PURE__ */ _("img", {
-				className: xi("cover-image object-cover object-center", s),
+			...nn(e),
+			children: [/* @__PURE__ */ v("img", {
+				alt: e.alt ?? "",
+				className: Ri("uhuu-image-geometry cover-image object-cover object-center", s),
 				src: o || void 0,
 				onError: n
 			}), e.children]
 		})
 	});
-}, Di = (e) => e.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase(), Oi = (e) => e.replace(/^([A-Z])|[\s-_]+(\w)/g, (e, t, n) => n ? n.toUpperCase() : t.toLowerCase()), ki = (e) => {
-	let t = Oi(e);
+}, Wi = (e) => e.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase(), Gi = (e) => e.replace(/^([A-Z])|[\s-_]+(\w)/g, (e, t, n) => n ? n.toUpperCase() : t.toLowerCase()), Ki = (e) => {
+	let t = Gi(e);
 	return t.charAt(0).toUpperCase() + t.slice(1);
-}, Ai = (...e) => e.filter((e, t, n) => !!e && e.trim() !== "" && n.indexOf(e) === t).join(" ").trim(), ji = (e) => {
+}, qi = (...e) => e.filter((e, t, n) => !!e && e.trim() !== "" && n.indexOf(e) === t).join(" ").trim(), Ji = (e) => {
 	for (let t in e) if (t.startsWith("aria-") || t === "role" || t === "title") return !0;
-}, Mi = {
+}, Yi = {
 	xmlns: "http://www.w3.org/2000/svg",
 	width: 24,
 	height: 24,
@@ -4410,31 +4593,31 @@ var Si = ({ onError: e }) => (t) => {
 	strokeWidth: 2,
 	strokeLinecap: "round",
 	strokeLinejoin: "round"
-}, Ni = a(({ color: e = "currentColor", size: t = 24, strokeWidth: n = 2, absoluteStrokeWidth: r, className: a = "", children: o, iconNode: s, ...c }, l) => i("svg", {
+}, Xi = a(({ color: e = "currentColor", size: t = 24, strokeWidth: n = 2, absoluteStrokeWidth: r, className: a = "", children: o, iconNode: s, ...c }, l) => i("svg", {
 	ref: l,
-	...Mi,
+	...Yi,
 	width: t,
 	height: t,
 	stroke: e,
 	strokeWidth: r ? Number(n) * 24 / Number(t) : n,
-	className: Ai("lucide", a),
-	...!o && !ji(c) && { "aria-hidden": "true" },
+	className: qi("lucide", a),
+	...!o && !Ji(c) && { "aria-hidden": "true" },
 	...c
-}, [...s.map(([e, t]) => i(e, t)), ...Array.isArray(o) ? o : [o]])), Pi = (e, t) => {
-	let n = a(({ className: n, ...r }, a) => i(Ni, {
+}, [...s.map(([e, t]) => i(e, t)), ...Array.isArray(o) ? o : [o]])), Zi = (e, t) => {
+	let n = a(({ className: n, ...r }, a) => i(Xi, {
 		ref: a,
 		iconNode: t,
-		className: Ai(`lucide-${Di(ki(e))}`, `lucide-${e}`, n),
+		className: qi(`lucide-${Wi(Ki(e))}`, `lucide-${e}`, n),
 		...r
 	}));
-	return n.displayName = ki(e), n;
-}, Fi = Pi("arrow-down", [["path", {
+	return n.displayName = Ki(e), n;
+}, Qi = Zi("arrow-down", [["path", {
 	d: "M12 5v14",
 	key: "s699le"
 }], ["path", {
 	d: "m19 12-7 7-7-7",
 	key: "1idqje"
-}]]), Ii = Pi("arrow-up-down", [
+}]]), $i = Zi("arrow-up-down", [
 	["path", {
 		d: "m21 16-4 4-4-4",
 		key: "f6ql7i"
@@ -4451,13 +4634,13 @@ var Si = ({ onError: e }) => (t) => {
 		d: "M7 4v16",
 		key: "1glfcx"
 	}]
-]), Li = Pi("arrow-up", [["path", {
+]), ea = Zi("arrow-up", [["path", {
 	d: "m5 12 7-7 7 7",
 	key: "hav0vg"
 }], ["path", {
 	d: "M12 19V5",
 	key: "x0mq9r"
-}]]), Ri = Pi("book-dashed", [
+}]]), ta = Zi("book-dashed", [
 	["path", {
 		d: "M12 17h1.5",
 		key: "1gkc67"
@@ -4502,16 +4685,16 @@ var Si = ({ onError: e }) => (t) => {
 		d: "M8 22H6.5a1 1 0 0 1 0-5H8",
 		key: "1cu73q"
 	}]
-]), zi = Pi("check", [["path", {
+]), na = Zi("check", [["path", {
 	d: "M20 6 9 17l-5-5",
 	key: "1gmf2c"
-}]]), Bi = Pi("chevron-down", [["path", {
+}]]), ra = Zi("chevron-down", [["path", {
 	d: "m6 9 6 6 6-6",
 	key: "qrunsl"
-}]]), Vi = Pi("chevron-right", [["path", {
+}]]), ia = Zi("chevron-right", [["path", {
 	d: "m9 18 6-6-6-6",
 	key: "mthhwq"
-}]]), Hi = Pi("clipboard-list", [
+}]]), aa = Zi("clipboard-list", [
 	["rect", {
 		width: "8",
 		height: "4",
@@ -4541,7 +4724,7 @@ var Si = ({ onError: e }) => (t) => {
 		d: "M8 16h.01",
 		key: "18s6g9"
 	}]
-]), Ui = Pi("copy", [["rect", {
+]), oa = Zi("copy", [["rect", {
 	width: "14",
 	height: "14",
 	x: "8",
@@ -4552,7 +4735,7 @@ var Si = ({ onError: e }) => (t) => {
 }], ["path", {
 	d: "M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2",
 	key: "zix9uf"
-}]]), Wi = Pi("ellipsis", [
+}]]), sa = Zi("ellipsis", [
 	["circle", {
 		cx: "12",
 		cy: "12",
@@ -4571,7 +4754,7 @@ var Si = ({ onError: e }) => (t) => {
 		r: "1",
 		key: "1pcz8c"
 	}]
-]), Gi = Pi("grip-vertical", [
+]), ca = Zi("grip-vertical", [
 	["circle", {
 		cx: "9",
 		cy: "12",
@@ -4608,7 +4791,7 @@ var Si = ({ onError: e }) => (t) => {
 		r: "1",
 		key: "f4zoj3"
 	}]
-]), Ki = Pi("lock", [["rect", {
+]), la = Zi("lock", [["rect", {
 	width: "18",
 	height: "11",
 	x: "3",
@@ -4619,7 +4802,7 @@ var Si = ({ onError: e }) => (t) => {
 }], ["path", {
 	d: "M7 11V7a5 5 0 0 1 10 0v4",
 	key: "fwvmzm"
-}]]), qi = Pi("maximize", [
+}]]), ua = Zi("maximize", [
 	["path", {
 		d: "M8 3H5a2 2 0 0 0-2 2v3",
 		key: "1dcmit"
@@ -4636,22 +4819,22 @@ var Si = ({ onError: e }) => (t) => {
 		d: "M16 21h3a2 2 0 0 0 2-2v-3",
 		key: "18trek"
 	}]
-]), Ji = Pi("minus", [["path", {
+]), da = Zi("minus", [["path", {
 	d: "M5 12h14",
 	key: "1ays0h"
-}]]), Yi = Pi("pencil", [["path", {
+}]]), fa = Zi("pencil", [["path", {
 	d: "M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z",
 	key: "1a8usu"
 }], ["path", {
 	d: "m15 5 4 4",
 	key: "1mk7zo"
-}]]), Xi = Pi("plus", [["path", {
+}]]), pa = Zi("plus", [["path", {
 	d: "M5 12h14",
 	key: "1ays0h"
 }], ["path", {
 	d: "M12 5v14",
 	key: "s699le"
-}]]), Zi = Pi("search", [["path", {
+}]]), ma = Zi("search", [["path", {
 	d: "m21 21-4.34-4.34",
 	key: "14j7rj"
 }], ["circle", {
@@ -4659,7 +4842,44 @@ var Si = ({ onError: e }) => (t) => {
 	cy: "11",
 	r: "8",
 	key: "4ej97u"
-}]]), Qi = Pi("trash-2", [
+}]]), ha = Zi("sliders-horizontal", [
+	["path", {
+		d: "M10 5H3",
+		key: "1qgfaw"
+	}],
+	["path", {
+		d: "M12 19H3",
+		key: "yhmn1j"
+	}],
+	["path", {
+		d: "M14 3v4",
+		key: "1sua03"
+	}],
+	["path", {
+		d: "M16 17v4",
+		key: "1q0r14"
+	}],
+	["path", {
+		d: "M21 12h-9",
+		key: "1o4lsq"
+	}],
+	["path", {
+		d: "M21 19h-5",
+		key: "1rlt1p"
+	}],
+	["path", {
+		d: "M21 5h-7",
+		key: "1oszz2"
+	}],
+	["path", {
+		d: "M8 10v4",
+		key: "tgpxqk"
+	}],
+	["path", {
+		d: "M8 12H3",
+		key: "a7s4jb"
+	}]
+]), ga = Zi("trash-2", [
 	["path", {
 		d: "M10 11v6",
 		key: "nco0om"
@@ -4680,7 +4900,7 @@ var Si = ({ onError: e }) => (t) => {
 		d: "M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2",
 		key: "e791ji"
 	}]
-]), $i = Pi("unfold-horizontal", [
+]), _a = Zi("unfold-horizontal", [
 	["path", {
 		d: "M16 12h6",
 		key: "15xry1"
@@ -4713,7 +4933,7 @@ var Si = ({ onError: e }) => (t) => {
 		d: "m5 9-3 3 3 3",
 		key: "j64kie"
 	}]
-]), ea = Pi("unfold-vertical", [
+]), va = Zi("unfold-vertical", [
 	["path", {
 		d: "M12 22v-6",
 		key: "6o8u61"
@@ -4746,13 +4966,13 @@ var Si = ({ onError: e }) => (t) => {
 		d: "m15 5-3-3-3 3",
 		key: "itvq4r"
 	}]
-]), ta = Pi("x", [["path", {
+]), ya = Zi("x", [["path", {
 	d: "M18 6 6 18",
 	key: "1bl5f8"
 }], ["path", {
 	d: "m6 6 12 12",
 	key: "d8bk6v"
-}]]), na = Pi("zoom-in", [
+}]]), ba = Zi("zoom-in", [
 	["circle", {
 		cx: "11",
 		cy: "11",
@@ -4780,7 +5000,7 @@ var Si = ({ onError: e }) => (t) => {
 		y2: "11",
 		key: "durymu"
 	}]
-]), ra = Pi("zoom-out", [
+]), xa = Zi("zoom-out", [
 	["circle", {
 		cx: "11",
 		cy: "11",
@@ -4801,11 +5021,14 @@ var Si = ({ onError: e }) => (t) => {
 		y2: "11",
 		key: "durymu"
 	}]
-]), ia = e.createContext({ portalContainer: null });
-function aa() {
-	return e.useContext(ia);
+]), Sa = e.createContext({
+	portalContainer: null,
+	inProvider: !1
+});
+function Ca() {
+	return e.useContext(Sa);
 }
-function oa({ children: t }) {
+function wa({ children: t }) {
 	let [n, r] = e.useState(null);
 	return e.useEffect(() => {
 		if (typeof document > "u") return;
@@ -4813,12 +5036,54 @@ function oa({ children: t }) {
 		return e.setAttribute("data-uhuu-portal", ""), e.style.cssText = "position: fixed; top: 0; left: 0; z-index: 9999;", document.body.appendChild(e), r(e), () => {
 			document.body.removeChild(e);
 		};
-	}, []), /* @__PURE__ */ _(ia.Provider, {
-		value: { portalContainer: n },
+	}, []), /* @__PURE__ */ v(Sa.Provider, {
+		value: {
+			portalContainer: n,
+			inProvider: !0
+		},
 		children: t
 	});
 }
-var sa = {
+//#endregion
+//#region src/uhuu/editor-shell/toolbar-slot.ts
+function Ta() {
+	let e = [], t = /* @__PURE__ */ new Set();
+	return {
+		getSnapshot: () => e.at(-1) ?? null,
+		subscribe(e) {
+			return t.add(e), () => {
+				t.delete(e);
+			};
+		},
+		replace(n, r) {
+			if (n) {
+				let t = e.lastIndexOf(n);
+				t !== -1 && e.splice(t, 1);
+			}
+			r && e.push(r), t.forEach((e) => e());
+		}
+	};
+}
+var Ea = Ta(), Da = r(Ea), Oa = () => null;
+function ka({ children: e }) {
+	let [t] = h(Ta);
+	return i(Da.Provider, { value: t }, e);
+}
+function Aa() {
+	return Ea.getSnapshot();
+}
+function ja() {
+	let e = c(Da);
+	return g(e.subscribe, e.getSnapshot, Oa);
+}
+function Ma() {
+	let e = c(Da), t = m(null);
+	return s((n) => {
+		let r = t.current;
+		r !== n && (t.current = n, e.replace(r, n));
+	}, [e]);
+}
+var Na = {
 	toolbar: {
 		pages_one: "{{count}} Page",
 		pages_other: "{{count}} Pages",
@@ -4894,8 +5159,15 @@ var sa = {
 		edit: "Edit image",
 		annotate: "Annotate"
 	},
-	dialog: { close: "Close" }
-}, ca = {
+	dialog: { close: "Close" },
+	documentOptions: {
+		title: "Document options",
+		notSet: "Not set",
+		change: "Change {{name}}",
+		on: "On",
+		off: "Off"
+	}
+}, Pa = {
 	toolbar: {
 		pages_one: "{{count}} Seite",
 		pages_other: "{{count}} Seiten",
@@ -4971,8 +5243,15 @@ var sa = {
 		edit: "Bild bearbeiten",
 		annotate: "Annotieren"
 	},
-	dialog: { close: "Schliessen" }
-}, la = {
+	dialog: { close: "Schliessen" },
+	documentOptions: {
+		title: "Dokumentoptionen",
+		notSet: "Nicht festgelegt",
+		change: "{{name}} ändern",
+		on: "Ein",
+		off: "Aus"
+	}
+}, Fa = {
 	toolbar: {
 		pages_one: "{{count}} page",
 		pages_many: "{{count}} pages",
@@ -5051,8 +5330,15 @@ var sa = {
 		edit: "Modifier l’image",
 		annotate: "Annoter"
 	},
-	dialog: { close: "Fermer" }
-}, ua = {
+	dialog: { close: "Fermer" },
+	documentOptions: {
+		title: "Options du document",
+		notSet: "Non défini",
+		change: "Modifier {{name}}",
+		on: "Activé",
+		off: "Désactivé"
+	}
+}, Ia = {
 	toolbar: {
 		pages_one: "{{count}} pagina",
 		pages_many: "{{count}} pagine",
@@ -5131,134 +5417,141 @@ var sa = {
 		edit: "Modifica immagine",
 		annotate: "Annota"
 	},
-	dialog: { close: "Chiudi" }
-}, da = ["lang", "locale"];
-function fa(e) {
+	dialog: { close: "Chiudi" },
+	documentOptions: {
+		title: "Opzioni del documento",
+		notSet: "Non impostato",
+		change: "Modifica {{name}}",
+		on: "Attivo",
+		off: "Disattivo"
+	}
+}, La = ["lang", "locale"];
+function Ra(e) {
 	if (typeof e != "string") return null;
 	let t = e.trim().toLowerCase().split(/[-_]/)[0];
 	return /^[a-z]{2,3}$/.test(t) ? t : null;
 }
-function pa(e, t) {
+function za(e, t) {
 	for (let n of e ?? []) {
-		let e = fa(n);
+		let e = Ra(n);
 		if (e && (!t || t.includes(e))) return e;
 	}
 	return null;
 }
-function ma(e, t) {
+function Ba(e, t) {
 	let n = new URLSearchParams(e?.search ?? "");
-	return pa([
+	return za([
 		e?.locale,
 		e?.host,
-		...da.map((e) => n.get(e)),
+		...La.map((e) => n.get(e)),
 		e?.documentLang
-	]) ?? pa(e?.navigatorLanguages ?? [], t) ?? "en";
+	]) ?? za(e?.navigatorLanguages ?? [], t) ?? "en";
 }
-function ha(e, t) {
+function Va(e, t) {
 	if (typeof e?.listen != "function") return () => {};
 	let n = e.listen("loaded", (e) => {
-		let n = fa(e?.locale);
+		let n = Ra(e?.locale);
 		n && t(n);
 	});
 	return typeof n == "function" ? n : () => {};
 }
-function ga(e) {
+function Ha(e) {
 	return !!e && typeof e == "object" && !Array.isArray(e);
 }
-function _a(e, t) {
-	if (!ga(t)) return e;
-	let n = { ...ga(e) ? e : {} };
-	for (let [e, r] of Object.entries(t)) r != null && (n[e] = ga(r) && ga(n[e]) ? _a(n[e], r) : r);
+function Ua(e, t) {
+	if (!Ha(t)) return e;
+	let n = { ...Ha(e) ? e : {} };
+	for (let [e, r] of Object.entries(t)) r != null && (n[e] = Ha(r) && Ha(n[e]) ? Ua(n[e], r) : r);
 	return n;
 }
-function va(e, t) {
+function Wa(e, t) {
 	let n = { ...e ?? {} };
 	for (let [e, r] of Object.entries(t ?? {})) {
-		let t = fa(e);
-		t && ga(r) && (n[t] = _a(n[t], r));
+		let t = Ra(e);
+		t && Ha(r) && (n[t] = Ua(n[t], r));
 	}
 	return n;
 }
-function ya(e, t, n = "en") {
+function Ga(e, t, n = "en") {
 	if (e == null) return;
 	if (typeof e == "string") return e;
-	if (!ga(e)) return String(e);
+	if (!Ha(e)) return String(e);
 	let r = [
 		t,
-		fa(t),
+		Ra(t),
 		n
 	].filter(Boolean);
 	for (let t of r) if (typeof e[t] == "string") return e[t];
 	let i = Object.values(e).find((e) => typeof e == "string");
 	return typeof i == "string" ? i : void 0;
 }
-function ba(e, t) {
+function Ka(e, t) {
 	return e == null || typeof e != "string" ? !0 : t == null ? !1 : typeof t == "string" ? e === t : Object.values(t).includes(e);
 }
-var xa = /* @__PURE__ */ new Map();
-function Sa(e, t) {
-	if (!xa.has(e)) {
+var qa = /* @__PURE__ */ new Map();
+function Ja(e, t) {
+	if (!qa.has(e)) {
 		let t = null;
 		try {
 			t = new Intl.PluralRules(e);
 		} catch {
 			t = null;
 		}
-		xa.set(e, t);
+		qa.set(e, t);
 	}
-	let n = xa.get(e);
+	let n = qa.get(e);
 	return n ? n.select(t) : t === 1 ? "one" : "other";
 }
-function Ca(e, t) {
+function Ya(e, t) {
 	let n = e;
 	for (let e of t.split(".")) {
-		if (!ga(n)) return;
+		if (!Ha(n)) return;
 		n = n[e];
 	}
 	return typeof n == "string" ? n : void 0;
 }
-function wa(e, t) {
+function Xa(e, t) {
 	return t ? e.replace(/\{\{\s*([\w.]+)\s*\}\}/g, (e, n) => {
 		let r = t[n];
 		return r == null ? e : String(r);
 	}) : e;
 }
-function Ta({ locale: e, catalogs: t, fallbackLocale: n = "en" }) {
-	let r = fa(e) ?? n, i = [.../* @__PURE__ */ new Set([r, n])].map((e) => t?.[e]).filter(ga);
+function Za({ locale: e, catalogs: t, fallbackLocale: n = "en" }) {
+	let r = Ra(e) ?? n, i = [.../* @__PURE__ */ new Set([r, n])].map((e) => t?.[e]).filter(Ha);
 	return function(e, t) {
 		let n = typeof t?.count == "number" ? t.count : null, a = n === null ? [e] : [
-			`${e}_${Sa(r, n)}`,
+			`${e}_${Ja(r, n)}`,
 			`${e}_other`,
 			e
 		];
 		for (let e of i) for (let n of a) {
-			let r = Ca(e, n);
-			if (r !== void 0) return wa(r, t);
+			let r = Ya(e, n);
+			if (r !== void 0) return Xa(r, t);
 		}
 		return e;
 	};
 }
 //#endregion
 //#region src/uhuu/i18n/locale-context.tsx
-var Ea = [
+var Qa = [
 	"de",
 	"fr",
 	"it",
 	"en"
-], Da = {
-	en: sa,
-	de: ca,
-	fr: la,
-	it: ua
-}, Oa = r(null);
-function ka(e) {
-	return [...Ea, ...Object.keys(e ?? {}).map((e) => fa(e) ?? e)];
+], $a = {
+	en: Na,
+	de: Pa,
+	fr: Fa,
+	it: Ia
+}, eo = r(null);
+function to(e) {
+	return [...Qa, ...Object.keys(e ?? {}).map((e) => Ra(e) ?? e)];
 }
-function Aa(e, t) {
-	let n = ka(e);
-	if (typeof window > "u") return ma({ locale: t }, n);
+function no(e, t) {
+	let n = to(e);
+	if (typeof window > "u") return Ba({ locale: t }, n);
 	let r = window.uhuuData?.locale;
-	return ma({
+	return Ba({
 		locale: t,
 		host: r,
 		search: window.location?.search,
@@ -5266,77 +5559,77 @@ function Aa(e, t) {
 		navigatorLanguages: window.navigator?.languages ?? [window.navigator?.language]
 	}, n);
 }
-function ja(e, t) {
+function ro(e, t) {
 	return {
 		locale: e,
-		t: Ta({
+		t: Za({
 			locale: e,
-			catalogs: va(Da, t),
+			catalogs: Wa($a, t),
 			fallbackLocale: "en"
 		}),
-		localize: (t) => ya(t, e, "en")
+		localize: (t) => Ga(t, e, "en")
 	};
 }
-var Ma = null, Na = !1, Pa = /* @__PURE__ */ new Set();
-function Fa() {
-	if (Na || typeof window > "u") return;
+var io = null, ao = !1, oo = /* @__PURE__ */ new Set();
+function so() {
+	if (ao || typeof window > "u") return;
 	let e = window.$uhuu;
-	typeof e?.listen == "function" && (Na = !0, ha(e, (e) => {
-		e !== Ma && (Ma = e, Pa.forEach((e) => e()));
+	typeof e?.listen == "function" && (ao = !0, Va(e, (e) => {
+		e !== io && (io = e, oo.forEach((e) => e()));
 	}));
 }
-Fa();
-function Ia(e) {
-	return Fa(), Pa.add(e), () => {
-		Pa.delete(e);
+so();
+function co(e) {
+	return so(), oo.add(e), () => {
+		oo.delete(e);
 	};
 }
-var La = () => Ma;
-function Ra() {
-	return h(Ia, La, La);
+var lo = () => io;
+function uo() {
+	return g(co, lo, lo);
 }
-var za = null;
-function Ba() {
-	return (!za || za.key !== Ma) && (za = {
-		key: Ma,
-		runtime: ja(Ma ?? Aa())
-	}), za.runtime;
+var fo = null;
+function po() {
+	return (!fo || fo.key !== io) && (fo = {
+		key: io,
+		runtime: ro(io ?? no())
+	}), fo.runtime;
 }
-function Va({ locale: e, translations: t }) {
-	let n = Ra(), r = d(() => fa(e) ?? n ?? Aa(t), [
+function mo({ locale: e, translations: t }) {
+	let n = uo(), r = f(() => Ra(e) ?? n ?? no(t), [
 		e,
 		n,
 		t
 	]);
-	return d(() => ja(r, t), [r, t]);
+	return f(() => ro(r, t), [r, t]);
 }
-function Ha({ value: e, children: t }) {
-	return /* @__PURE__ */ _(Oa.Provider, {
+function ho({ value: e, children: t }) {
+	return /* @__PURE__ */ v(eo.Provider, {
 		value: e,
 		children: t
 	});
 }
-function Ua() {
-	let e = c(Oa);
-	return Ra(), e ?? Ba();
+function go() {
+	let e = c(eo);
+	return uo(), e ?? po();
 }
 //#endregion
 //#region src/uhuu/appearance/appearance-core.js
-var Wa = "light", Ga = ["light", "dark"], Ka = "appearance", qa = "data-uhuu-appearance", Ja = "appearance";
-function Ya(e) {
+var _o = "light", vo = ["light", "dark"], yo = "appearance", bo = "data-uhuu-appearance", xo = "appearance";
+function So(e) {
 	if (typeof e != "string") return null;
 	let t = e.trim().toLowerCase();
-	return Ga.includes(t) ? t : null;
+	return vo.includes(t) ? t : null;
 }
-function Xa(e) {
+function Co(e) {
 	if (typeof e != "string" || !e) return null;
 	try {
-		return Ya(new URLSearchParams(e).get(Ka));
+		return So(new URLSearchParams(e).get(yo));
 	} catch {
 		return null;
 	}
 }
-function Za(e) {
+function wo(e) {
 	let t = e;
 	if (typeof e == "string") {
 		let n = e.trim();
@@ -5347,89 +5640,89 @@ function Za(e) {
 			return null;
 		}
 	}
-	return !t || typeof t != "object" ? null : t.action === "shaked" || t.action === "appearance" ? Ya(t.data?.appearance) : null;
+	return !t || typeof t != "object" ? null : t.action === "shaked" || t.action === "appearance" ? So(t.data?.appearance) : null;
 }
-function Qa(e) {
-	return e?.renderer ? Wa : Ya(e?.explicit) ?? Ya(e?.host) ?? Xa(e?.search) ?? "light";
+function To(e) {
+	return e?.renderer ? _o : So(e?.explicit) ?? So(e?.host) ?? Co(e?.search) ?? "light";
 }
-function $a(e, t) {
+function Eo(e, t) {
 	if (typeof e?.listen != "function") return () => {};
-	let n = ["loaded", Ja].map((n) => e.listen(n, (e) => {
-		let n = Ya(e?.appearance);
+	let n = ["loaded", xo].map((n) => e.listen(n, (e) => {
+		let n = So(e?.appearance);
 		n && t(n);
 	}));
 	return () => n.forEach((e) => typeof e == "function" && e());
 }
 //#endregion
 //#region src/uhuu/appearance/appearance-runtime.ts
-var eo = null, to = [], no = !1, ro = !1, io = /* @__PURE__ */ new Set();
-function ao() {
+var Do = null, Oo = [], ko = !1, Ao = !1, jo = /* @__PURE__ */ new Set();
+function Mo() {
 	return typeof window > "u" ? null : window;
 }
-function oo() {
-	let e = ao();
+function No() {
+	let e = Mo();
 	return {
-		host: eo,
+		host: Do,
 		search: e?.location?.search,
 		renderer: !!e?.$uhuu_renderer
 	};
 }
-function so() {
-	return Qa(oo());
+function Po() {
+	return To(No());
 }
-function co() {
-	return Qa({
-		...oo(),
-		explicit: to.at(-1)
+function Fo() {
+	return To({
+		...No(),
+		explicit: Oo.at(-1)
 	});
 }
-function lo() {
-	let e = ao()?.document?.documentElement;
+function Io() {
+	let e = Mo()?.document?.documentElement;
 	if (typeof e?.setAttribute != "function") return;
-	let t = co();
-	e.getAttribute?.("data-uhuu-appearance") !== t && e.setAttribute(qa, t);
+	let t = Fo();
+	e.getAttribute?.("data-uhuu-appearance") !== t && e.setAttribute(bo, t);
 }
-function uo() {
-	lo(), io.forEach((e) => e());
+function Lo() {
+	Io(), jo.forEach((e) => e());
 }
-function fo(e) {
-	e !== eo && (eo = e, uo());
+function Ro(e) {
+	e !== Do && (Do = e, Lo());
 }
-function po() {
-	let e = ao();
-	e && (!no && typeof e.$uhuu?.listen == "function" && (no = !0, $a(e.$uhuu, fo)), !ro && typeof e.addEventListener == "function" && (ro = !0, e.addEventListener("message", (t) => {
+function zo() {
+	let e = Mo();
+	e && (!ko && typeof e.$uhuu?.listen == "function" && (ko = !0, Eo(e.$uhuu, Ro)), !Ao && typeof e.addEventListener == "function" && (Ao = !0, e.addEventListener("message", (t) => {
 		let n = e.parent;
 		if (!n || n === e || t.source !== n) return;
-		let r = Za(t.data);
-		r && fo(r);
+		let r = wo(t.data);
+		r && Ro(r);
 	})));
 }
-po(), lo();
-function mo(e) {
-	return po(), lo(), io.add(e), () => {
-		io.delete(e);
+zo(), Io();
+function Bo(e) {
+	return zo(), Io(), jo.add(e), () => {
+		jo.delete(e);
 	};
 }
-var ho = typeof window > "u" ? l : u;
-function go(e) {
-	let t = h(mo, so, so), n = Ya(e);
-	return ho(() => {
-		if (n) return to.push(n), uo(), () => {
-			let e = to.lastIndexOf(n);
-			e !== -1 && to.splice(e, 1), uo();
+var Vo = typeof window > "u" ? l : d;
+function Ho(e) {
+	let t = g(Bo, Po, Po), n = So(e);
+	return Vo(() => {
+		if (n) return Oo.push(n), Lo(), () => {
+			let e = Oo.lastIndexOf(n);
+			e !== -1 && Oo.splice(e, 1), Lo();
 		};
-	}, [n]), n && !oo().renderer ? n : t;
+	}, [n]), n && !No().renderer ? n : t;
 }
 //#endregion
 //#region src/uhuu/editor-shell/interactive-mode-context.tsx
-var _o = r({
+var Uo = r({
 	interactive: !0,
 	setInteractive: () => {},
 	enableDevTools: !1
 });
-function vo() {
-	let e = c(_o), { locale: t } = Ua(), n = go(), r = e.appearance ?? n;
-	return d(() => ({
+function Wo() {
+	let e = c(Uo), { locale: t } = go(), n = Ho(), r = e.appearance ?? n;
+	return f(() => ({
 		...e,
 		locale: t,
 		appearance: r
@@ -5439,56 +5732,59 @@ function vo() {
 		r
 	]);
 }
-function yo() {
-	let { interactive: e } = vo();
+function Go() {
+	let { interactive: e } = Wo();
 	return !e;
 }
-function bo() {
+function Ko() {
 	return typeof window < "u" && !!window?.$uhuu_renderer;
 }
-function xo() {
+function qo() {
 	return typeof window > "u" ? !1 : !!window?.__uhuuPreviewHost?.enableEditorShellDevTools;
 }
-function So({ children: e, defaultInteractive: t = !0, enableDevTools: n = !1, locale: r, translations: i, appearance: a }) {
-	let o = bo(), s = n || xo(), [c, l] = m(!o && t), u = Va({
+function Jo({ children: e, defaultInteractive: t = !0, enableDevTools: n = !1, locale: r, translations: i, appearance: a }) {
+	let o = Ko(), s = n || qo(), [c, l] = h(!o && t), u = mo({
 		locale: r,
 		translations: i
-	}), f = go(a), p = d(() => ({
+	}), d = Ho(a), p = f(() => ({
 		interactive: c,
 		setInteractive: l,
 		enableDevTools: s,
-		appearance: f
+		appearance: d
 	}), [
 		c,
 		s,
-		f
+		d
 	]);
-	return /* @__PURE__ */ _(_o.Provider, {
+	return /* @__PURE__ */ v(Uo.Provider, {
 		value: p,
-		children: /* @__PURE__ */ _(Ha, {
-			value: u,
-			children: /* @__PURE__ */ _(oa, { children: /* @__PURE__ */ _("div", {
-				"data-uhuu-interactive": c ? "" : void 0,
-				style: { display: "contents" },
-				children: e
-			}) })
+		children: /* @__PURE__ */ v(le.Provider, {
+			value: s,
+			children: /* @__PURE__ */ v(ho, {
+				value: u,
+				children: /* @__PURE__ */ v(ka, { children: /* @__PURE__ */ v(wa, { children: /* @__PURE__ */ v("div", {
+					"data-uhuu-interactive": c ? "" : void 0,
+					style: { display: "contents" },
+					children: e
+				}) }) })
+			})
 		})
 	});
 }
 //#endregion
 //#region node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs
-var Co = (e) => typeof e == "boolean" ? `${e}` : e === 0 ? "0" : e, wo = Vn, To = (e, t) => (n) => {
-	if (t?.variants == null) return wo(e, n?.class, n?.className);
+var Yo = (e) => typeof e == "boolean" ? `${e}` : e === 0 ? "0" : e, Xo = ir, Zo = (e, t) => (n) => {
+	if (t?.variants == null) return Xo(e, n?.class, n?.className);
 	let { variants: r, defaultVariants: i } = t, a = Object.keys(r).map((e) => {
 		let t = n?.[e], a = i?.[e];
 		if (t === null) return null;
-		let o = Co(t) || Co(a);
+		let o = Yo(t) || Yo(a);
 		return r[e][o];
 	}), o = n && Object.entries(n).reduce((e, t) => {
 		let [n, r] = t;
 		return r === void 0 || (e[n] = r), e;
 	}, {});
-	return wo(e, a, t?.compoundVariants?.reduce((e, t) => {
+	return Xo(e, a, t?.compoundVariants?.reduce((e, t) => {
 		let { class: n, className: r, ...a } = t;
 		return Object.entries(a).every((e) => {
 			let [t, n] = e;
@@ -5505,7 +5801,7 @@ var Co = (e) => typeof e == "boolean" ? `${e}` : e === 0 ? "0" : e, wo = Vn, To 
 			r
 		] : e;
 	}, []), n?.class, n?.className);
-}, Eo = To("uhuu:inline-flex uhuu:items-center uhuu:justify-center uhuu:gap-2 uhuu:whitespace-nowrap uhuu:rounded-md uhuu:text-sm uhuu:font-medium uhuu:transition-colors uhuu:focus-visible:outline-none uhuu:focus-visible:ring-2 uhuu:focus-visible:ring-offset-2 uhuu:disabled:pointer-events-none uhuu:disabled:opacity-50", {
+}, Qo = Zo("uhuu:inline-flex uhuu:items-center uhuu:justify-center uhuu:gap-2 uhuu:whitespace-nowrap uhuu:rounded-md uhuu:text-sm uhuu:font-medium uhuu:transition-colors uhuu:focus-visible:outline-none uhuu:focus-visible:ring-2 uhuu:focus-visible:ring-offset-2 uhuu:disabled:pointer-events-none uhuu:disabled:opacity-50", {
 	variants: {
 		variant: {
 			default: "uhuu:bg-gray-900 uhuu:text-(--uhuu-shell-on-inverse) uhuu:hover:bg-gray-800",
@@ -5524,8 +5820,8 @@ var Co = (e) => typeof e == "boolean" ? `${e}` : e === 0 ? "0" : e, wo = Vn, To 
 		variant: "default",
 		size: "default"
 	}
-}), Do = e.forwardRef(({ className: e, variant: t, size: n, ...r }, i) => /* @__PURE__ */ _("button", {
-	className: K(Eo({
+}), $o = e.forwardRef(({ className: e, variant: t, size: n, ...r }, i) => /* @__PURE__ */ v("button", {
+	className: K(Qo({
 		variant: t,
 		size: n,
 		className: e
@@ -5533,90 +5829,90 @@ var Co = (e) => typeof e == "boolean" ? `${e}` : e === 0 ? "0" : e, wo = Vn, To 
 	ref: i,
 	...r
 }));
-Do.displayName = "Button";
+$o.displayName = "Button";
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+primitive@1.1.7/node_modules/@radix-ui/primitive/dist/index.mjs
-var Oo = Object.defineProperty, ko = (e, t) => Oo(e, "name", {
+var es = Object.defineProperty, ts = (e, t) => es(e, "name", {
 	value: t,
 	configurable: !0
-}), Ao = !!(typeof window < "u" && window.document && window.document.createElement);
+}), ns = !!(typeof window < "u" && window.document && window.document.createElement);
 function q(e, t, { checkForDefaultPrevented: n = !0 } = {}) {
-	return /* @__PURE__ */ ko(function(r) {
+	return /* @__PURE__ */ ts(function(r) {
 		if (e?.(r), n === !1 || !r || !r.defaultPrevented) return t?.(r);
 	}, "handleEvent");
 }
-ko(q, "composeEventHandlers");
-function jo(e) {
-	if (!Ao) throw Error("Cannot access window outside of the DOM");
+ts(q, "composeEventHandlers");
+function rs(e) {
+	if (!ns) throw Error("Cannot access window outside of the DOM");
 	return e?.ownerDocument?.defaultView ?? window;
 }
-ko(jo, "getOwnerWindow");
-function Mo(e) {
-	if (!Ao) throw Error("Cannot access document outside of the DOM");
+ts(rs, "getOwnerWindow");
+function is(e) {
+	if (!ns) throw Error("Cannot access document outside of the DOM");
 	return e?.ownerDocument ?? document;
 }
-ko(Mo, "getOwnerDocument");
-function No(e, t = !1) {
-	let { activeElement: n } = Mo(e);
+ts(is, "getOwnerDocument");
+function as(e, t = !1) {
+	let { activeElement: n } = is(e);
 	if (!n?.nodeName) return null;
-	if (Po(n) && n.contentDocument) return No(n.contentDocument.body, t);
+	if (os(n) && n.contentDocument) return as(n.contentDocument.body, t);
 	if (t) {
 		let e = n.getAttribute("aria-activedescendant");
 		if (e) {
-			let t = Mo(n).getElementById(e);
+			let t = is(n).getElementById(e);
 			if (t) return t;
 		}
 	}
 	return n;
 }
-ko(No, "getActiveElement");
-function Po(e) {
+ts(as, "getActiveElement");
+function os(e) {
 	return e.tagName === "IFRAME";
 }
-ko(Po, "isFrame");
+ts(os, "isFrame");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-compose-refs@1.1.5_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-compose-refs/dist/index.mjs
-var Fo = Object.defineProperty, Io = (e, t) => Fo(e, "name", {
+var ss = Object.defineProperty, cs = (e, t) => ss(e, "name", {
 	value: t,
 	configurable: !0
 });
-function Lo(e, t) {
+function ls(e, t) {
 	if (typeof e == "function") return e(t);
 	e != null && (e.current = t);
 }
-Io(Lo, "setRef");
-function Ro(...e) {
+cs(ls, "setRef");
+function us(...e) {
 	return (t) => {
 		let n = !1, r = e.map((e) => {
-			let r = Lo(e, t);
+			let r = ls(e, t);
 			return !n && typeof r == "function" && (n = !0), r;
 		});
 		if (n) return () => {
 			for (let t = 0; t < r.length; t++) {
 				let n = r[t];
-				typeof n == "function" ? n() : Lo(e[t], null);
+				typeof n == "function" ? n() : ls(e[t], null);
 			}
 		};
 	};
 }
-Io(Ro, "composeRefs");
+cs(us, "composeRefs");
 function J(...t) {
-	return e.useCallback(Ro(...t), t);
+	return e.useCallback(us(...t), t);
 }
-Io(J, "useComposedRefs");
+cs(J, "useComposedRefs");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-context@1.2.2_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-context/dist/index.mjs
-var zo = Object.defineProperty, Bo = (e, t) => zo(e, "name", {
+var ds = Object.defineProperty, fs = (e, t) => ds(e, "name", {
 	value: t,
 	configurable: !0
 });
 // @__NO_SIDE_EFFECTS__
-function Vo(t, n) {
+function ps(t, n) {
 	let r = e.createContext(n);
 	r.displayName = t + "Context";
-	let i = /* @__PURE__ */ Bo((t) => {
+	let i = /* @__PURE__ */ fs((t) => {
 		let { children: n, ...i } = t, a = e.useMemo(() => i, Object.values(i));
-		return /* @__PURE__ */ _(r.Provider, {
+		return /* @__PURE__ */ v(r.Provider, {
 			value: a,
 			children: n
 		});
@@ -5628,20 +5924,20 @@ function Vo(t, n) {
 		if (n !== void 0) return n;
 		if (!o) throw Error(`\`${i}\` must be used within \`${t}\``);
 	}
-	return Bo(a, "useContext"), [i, a];
+	return fs(a, "useContext"), [i, a];
 }
-Bo(Vo, "createContext");
+fs(ps, "createContext");
 // @__NO_SIDE_EFFECTS__
-function Ho(t, n = []) {
+function ms(t, n = []) {
 	let r = [];
 	function i(n, i) {
 		let a = e.createContext(i);
 		a.displayName = n + "Context";
 		let o = r.length;
 		r = [...r, i];
-		let s = /* @__PURE__ */ Bo((n) => {
+		let s = /* @__PURE__ */ fs((n) => {
 			let { scope: r, children: i, ...s } = n, c = r?.[t]?.[o] || a, l = e.useMemo(() => s, Object.values(s));
-			return /* @__PURE__ */ _(c.Provider, {
+			return /* @__PURE__ */ v(c.Provider, {
 				value: l,
 				children: i
 			});
@@ -5653,12 +5949,12 @@ function Ho(t, n = []) {
 			if (i !== void 0) return i;
 			if (!l) throw Error(`\`${r}\` must be used within \`${n}\``);
 		}
-		return Bo(c, "useContext"), [s, c];
+		return fs(c, "useContext"), [s, c];
 	}
-	Bo(i, "createContext");
-	let a = /* @__PURE__ */ Bo(() => {
+	fs(i, "createContext");
+	let a = /* @__PURE__ */ fs(() => {
 		let n = r.map((t) => e.createContext(t));
-		return /* @__PURE__ */ Bo(function(r) {
+		return /* @__PURE__ */ fs(function(r) {
 			let i = r?.[t] || n;
 			return e.useMemo(() => ({ [`__scope${t}`]: {
 				...r,
@@ -5666,18 +5962,18 @@ function Ho(t, n = []) {
 			} }), [r, i]);
 		}, "useScope");
 	}, "createScope");
-	return a.scopeName = t, [i, Uo(a, ...n)];
+	return a.scopeName = t, [i, hs(a, ...n)];
 }
-Bo(Ho, "createContextScope");
-function Uo(...t) {
+fs(ms, "createContextScope");
+function hs(...t) {
 	let n = t[0];
 	if (t.length === 1) return n;
-	let r = /* @__PURE__ */ Bo(() => {
+	let r = /* @__PURE__ */ fs(() => {
 		let r = t.map((e) => ({
 			useScope: e(),
 			scopeName: e.scopeName
 		}));
-		return /* @__PURE__ */ Bo(function(t) {
+		return /* @__PURE__ */ fs(function(t) {
 			let i = r.reduce((e, { useScope: n, scopeName: r }) => {
 				let i = n(t)[`__scope${r}`];
 				return {
@@ -5690,39 +5986,39 @@ function Uo(...t) {
 	}, "createScope");
 	return r.scopeName = n.scopeName, r;
 }
-Bo(Uo, "composeContextScopes");
+fs(hs, "composeContextScopes");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-use-layout-effect@1.1.4_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs
-var Wo = globalThis?.document ? e.useLayoutEffect : () => {}, Go = Object.defineProperty, Ko = (e, t) => Go(e, "name", {
+var gs = globalThis?.document ? e.useLayoutEffect : () => {}, _s = Object.defineProperty, vs = (e, t) => _s(e, "name", {
 	value: t,
 	configurable: !0
-}), qo = e.useEffectEvent, Jo = e.useInsertionEffect;
-function Yo(t) {
-	if (typeof qo == "function") return qo(t);
+}), ys = e.useEffectEvent, bs = e.useInsertionEffect;
+function xs(t) {
+	if (typeof ys == "function") return ys(t);
 	let n = e.useRef(() => {
 		throw Error("Cannot call an event handler while rendering.");
 	});
-	return typeof Jo == "function" ? Jo(() => {
+	return typeof bs == "function" ? bs(() => {
 		n.current = t;
-	}) : Wo(() => {
+	}) : gs(() => {
 		n.current = t;
 	}), e.useMemo(() => ((...e) => n.current?.(...e)), []);
 }
-Ko(Yo, "useEffectEvent");
+vs(xs, "useEffectEvent");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-use-controllable-state@1.2.6_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs
-var Xo = Object.defineProperty, Zo = (e, t) => Xo(e, "name", {
+var Ss = Object.defineProperty, Cs = (e, t) => Ss(e, "name", {
 	value: t,
 	configurable: !0
-}), Qo = e.useInsertionEffect || Wo;
-function $o({ prop: t, defaultProp: n, onChange: r = /* @__PURE__ */ Zo(() => {}, "onChange"), caller: i }) {
-	let [a, o, s] = es({
+}), ws = e.useInsertionEffect || gs;
+function Ts({ prop: t, defaultProp: n, onChange: r = /* @__PURE__ */ Cs(() => {}, "onChange"), caller: i }) {
+	let [a, o, s] = Es({
 		defaultProp: n,
 		onChange: r
 	}), c = t !== void 0;
 	return [c ? t : a, e.useCallback((e) => {
 		if (c) {
-			let n = ts(e) ? e(t) : e;
+			let n = Ds(e) ? e(t) : e;
 			n !== t && s.current?.(n);
 		} else o(e);
 	}, [
@@ -5732,10 +6028,10 @@ function $o({ prop: t, defaultProp: n, onChange: r = /* @__PURE__ */ Zo(() => {}
 		s
 	])];
 }
-Zo($o, "useControllableState");
-function es({ defaultProp: t, onChange: n }) {
+Cs(Ts, "useControllableState");
+function Es({ defaultProp: t, onChange: n }) {
 	let [r, i] = e.useState(t), a = e.useRef(r), o = e.useRef(n);
-	return Qo(() => {
+	return ws(() => {
 		o.current = n;
 	}, [n]), e.useEffect(() => {
 		a.current !== r && (o.current?.(r), a.current = r);
@@ -5745,20 +6041,20 @@ function es({ defaultProp: t, onChange: n }) {
 		o
 	];
 }
-Zo(es, "useUncontrolledState");
-function ts(e) {
+Cs(Es, "useUncontrolledState");
+function Ds(e) {
 	return typeof e == "function";
 }
-Zo(ts, "isFunction");
-var ns = Symbol("RADIX:SYNC_STATE");
-function rs(t, n, r, i) {
-	let { prop: a, defaultProp: o, onChange: s, caller: c } = n, l = a !== void 0, u = Yo(s), d = [{
+Cs(Ds, "isFunction");
+var Os = Symbol("RADIX:SYNC_STATE");
+function ks(t, n, r, i) {
+	let { prop: a, defaultProp: o, onChange: s, caller: c } = n, l = a !== void 0, u = xs(s), d = [{
 		...r,
 		state: o
 	}];
 	i && d.push(i);
 	let [f, p] = e.useReducer((e, n) => {
-		if (n.type === ns) return {
+		if (n.type === Os) return {
 			...e,
 			state: n.state
 		};
@@ -5778,7 +6074,7 @@ function rs(t, n, r, i) {
 	}, [f, a]);
 	return e.useEffect(() => {
 		l && !Object.is(a, f.state) && p({
-			type: ns,
+			type: Os,
 			state: a
 		});
 	}, [
@@ -5787,50 +6083,50 @@ function rs(t, n, r, i) {
 		l
 	]), [g, p];
 }
-Zo(rs, "useControllableStateReducer");
+Cs(ks, "useControllableStateReducer");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-slot@1.4.0_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-slot/dist/index.mjs
-var is = Object.defineProperty, as = (e, t) => is(e, "name", {
+var As = Object.defineProperty, js = (e, t) => As(e, "name", {
 	value: t,
 	configurable: !0
 });
 // @__NO_SIDE_EFFECTS__
-function os(t) {
+function Ms(t) {
 	let n = e.forwardRef((n, r) => {
 		let { children: i, ...a } = n, o = null, s = !1, c = [];
-		ms(i) && typeof ys == "function" && (i = ys(i._payload)), e.Children.forEach(i, (e) => {
-			if (fs(e)) {
+		Bs(i) && typeof Gs == "function" && (i = Gs(i._payload)), e.Children.forEach(i, (e) => {
+			if (Rs(e)) {
 				s = !0;
 				let t = e, n = "child" in t.props ? t.props.child : t.props.children;
-				ms(n) && typeof ys == "function" && (n = ys(n._payload)), o = ls(t, n), c.push(o?.props?.children);
+				Bs(n) && typeof Gs == "function" && (n = Gs(n._payload)), o = Fs(t, n), c.push(o?.props?.children);
 			} else c.push(e);
 		}), o ? o = e.cloneElement(o, void 0, c) : !s && e.Children.count(i) === 1 && e.isValidElement(i) && (o = i);
-		let l = o ? ds(o) : void 0, u = J(r, l);
+		let l = o ? Ls(o) : void 0, u = J(r, l);
 		if (!o) {
-			if (i || i === 0) throw Error(s ? vs(t) : _s(t));
+			if (i || i === 0) throw Error(s ? Ws(t) : Us(t));
 			return i;
 		}
-		let d = us(a, o.props ?? {});
+		let d = Is(a, o.props ?? {});
 		return o.type !== e.Fragment && (d.ref = r ? u : l), e.cloneElement(o, d);
 	});
 	return n.displayName = `${t}.Slot`, n;
 }
-as(os, "createSlot");
-var ss = Symbol.for("radix.slottable");
+js(Ms, "createSlot");
+var Ns = Symbol.for("radix.slottable");
 // @__NO_SIDE_EFFECTS__
-function cs(e) {
-	let t = /* @__PURE__ */ as((e) => "child" in e ? e.children(e.child) : e.children, "Slottable");
-	return t.displayName = `${e}.Slottable`, t.__radixId = ss, t;
+function Ps(e) {
+	let t = /* @__PURE__ */ js((e) => "child" in e ? e.children(e.child) : e.children, "Slottable");
+	return t.displayName = `${e}.Slottable`, t.__radixId = Ns, t;
 }
-as(cs, "createSlottable");
-var ls = /* @__PURE__ */ as((t, n) => {
+js(Ps, "createSlottable");
+var Fs = /* @__PURE__ */ js((t, n) => {
 	if ("child" in t.props) {
 		let n = t.props.child;
 		return e.isValidElement(n) ? e.cloneElement(n, void 0, t.props.children(n.props.children)) : null;
 	}
 	return e.isValidElement(n) ? n : null;
 }, "getSlottableElementFromSlottable");
-function us(e, t) {
+function Is(e, t) {
 	let n = { ...t };
 	for (let r in t) {
 		let i = e[r], a = t[r];
@@ -5840,42 +6136,42 @@ function us(e, t) {
 		} : i && (n[r] = i) : r === "style" ? n[r] = {
 			...i,
 			...a
-		} : r === "className" ? n[r] = [i, a].filter(Boolean).join(" ") : r === "aria-describedby" && (n[r] = gs(a, i));
+		} : r === "className" ? n[r] = [i, a].filter(Boolean).join(" ") : r === "aria-describedby" && (n[r] = Hs(a, i));
 	}
 	return {
 		...e,
 		...n
 	};
 }
-as(us, "mergeProps");
-function ds(e) {
+js(Is, "mergeProps");
+function Ls(e) {
 	let t = Object.getOwnPropertyDescriptor(e.props, "ref")?.get, n = t && "isReactWarning" in t && t.isReactWarning;
 	return n ? e.ref : (t = Object.getOwnPropertyDescriptor(e, "ref")?.get, n = t && "isReactWarning" in t && t.isReactWarning, n ? e.props.ref : e.props.ref || e.ref);
 }
-as(ds, "getElementRef");
-function fs(t) {
-	return e.isValidElement(t) && typeof t.type == "function" && "__radixId" in t.type && t.type.__radixId === ss;
+js(Ls, "getElementRef");
+function Rs(t) {
+	return e.isValidElement(t) && typeof t.type == "function" && "__radixId" in t.type && t.type.__radixId === Ns;
 }
-as(fs, "isSlottable");
-var ps = Symbol.for("react.lazy");
-function ms(e) {
-	return typeof e == "object" && !!e && "$$typeof" in e && e.$$typeof === ps && "_payload" in e && hs(e._payload);
+js(Rs, "isSlottable");
+var zs = Symbol.for("react.lazy");
+function Bs(e) {
+	return typeof e == "object" && !!e && "$$typeof" in e && e.$$typeof === zs && "_payload" in e && Vs(e._payload);
 }
-as(ms, "isLazyComponent");
-function hs(e) {
+js(Bs, "isLazyComponent");
+function Vs(e) {
 	return typeof e == "object" && !!e && "then" in e;
 }
-as(hs, "isPromiseLike");
-function gs(...e) {
+js(Vs, "isPromiseLike");
+function Hs(...e) {
 	let t = /* @__PURE__ */ new Set();
 	for (let n of e) if (typeof n == "string") for (let e of String(n).trim().split(/\s+/)) e && t.add(e);
 	return t.size > 0 ? Array.from(t).join(" ") : void 0;
 }
-as(gs, "concatAriaDescribedby");
-var _s = /* @__PURE__ */ as((e) => `${e} failed to slot onto its children. Expected a single React element child or \`Slottable\`.`, "createSlotError"), vs = /* @__PURE__ */ as((e) => `${e} failed to slot onto its \`Slottable\`. Expected \`Slottable\` to receive a single React element child.`, "createSlottableError"), ys = e.use, bs = Object.defineProperty, xs = (e, t) => bs(e, "name", {
+js(Hs, "concatAriaDescribedby");
+var Us = /* @__PURE__ */ js((e) => `${e} failed to slot onto its children. Expected a single React element child or \`Slottable\`.`, "createSlotError"), Ws = /* @__PURE__ */ js((e) => `${e} failed to slot onto its \`Slottable\`. Expected \`Slottable\` to receive a single React element child.`, "createSlottableError"), Gs = e.use, Ks = Object.defineProperty, qs = (e, t) => Ks(e, "name", {
 	value: t,
 	configurable: !0
-}), Ss = [
+}), Js = [
 	"a",
 	"button",
 	"div",
@@ -5894,9 +6190,9 @@ var _s = /* @__PURE__ */ as((e) => `${e} failed to slot onto its children. Expec
 	"svg",
 	"ul"
 ].reduce((t, n) => {
-	let r = /* @__PURE__ */ os(`Primitive.${n}`), i = e.forwardRef((e, t) => {
+	let r = /* @__PURE__ */ Ms(`Primitive.${n}`), i = e.forwardRef((e, t) => {
 		let { asChild: i, ...a } = e, o = i ? r : n;
-		return typeof window < "u" && (window[Symbol.for("radix-ui")] = !0), /* @__PURE__ */ _(o, {
+		return typeof window < "u" && (window[Symbol.for("radix-ui")] = !0), /* @__PURE__ */ v(o, {
 			...a,
 			ref: t
 		});
@@ -5906,24 +6202,24 @@ var _s = /* @__PURE__ */ as((e) => `${e} failed to slot onto its children. Expec
 		[n]: i
 	};
 }, {});
-function Cs(e, t) {
-	e && y.flushSync(() => e.dispatchEvent(t));
+function Ys(e, t) {
+	e && b.flushSync(() => e.dispatchEvent(t));
 }
-xs(Cs, "dispatchDiscreteCustomEvent");
+qs(Ys, "dispatchDiscreteCustomEvent");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-collection@1.1.16_@types+react-dom@19.3.0_@types+react@19.3.0__@types+r_b1d6247ab86485bab1740806d97e8d38/node_modules/@radix-ui/react-collection/dist/index.mjs
-var ws = Object.defineProperty, Ts = (e, t) => ws(e, "name", {
+var Xs = Object.defineProperty, Zs = (e, t) => Xs(e, "name", {
 	value: t,
 	configurable: !0
 });
 // @__NO_SIDE_EFFECTS__
-function Es(t) {
-	let n = t + "CollectionProvider", [r, i] = /* @__PURE__ */ Ho(n), [a, o] = r(n, {
+function Qs(t) {
+	let n = t + "CollectionProvider", [r, i] = /* @__PURE__ */ ms(n), [a, o] = r(n, {
 		collectionRef: { current: null },
 		itemMap: /* @__PURE__ */ new Map()
-	}), s = /* @__PURE__ */ Ts((t) => {
+	}), s = /* @__PURE__ */ Zs((t) => {
 		let { scope: n, children: r } = t, i = e.useRef(null), o = e.useRef(/* @__PURE__ */ new Map()).current;
-		return /* @__PURE__ */ _(a, {
+		return /* @__PURE__ */ v(a, {
 			scope: n,
 			itemMap: o,
 			collectionRef: i,
@@ -5931,20 +6227,20 @@ function Es(t) {
 		});
 	}, "CollectionProvider");
 	s.displayName = n;
-	let c = t + "CollectionSlot", l = /* @__PURE__ */ os(c), u = e.forwardRef((e, t) => {
+	let c = t + "CollectionSlot", l = /* @__PURE__ */ Ms(c), u = e.forwardRef((e, t) => {
 		let { scope: n, children: r } = e, i = J(t, o(c, n).collectionRef);
-		return /* @__PURE__ */ _(l, {
+		return /* @__PURE__ */ v(l, {
 			ref: i,
 			children: r
 		});
 	});
 	u.displayName = c;
-	let d = t + "CollectionItemSlot", f = "data-radix-collection-item", p = /* @__PURE__ */ os(d), m = e.forwardRef((t, n) => {
+	let d = t + "CollectionItemSlot", f = "data-radix-collection-item", p = /* @__PURE__ */ Ms(d), m = e.forwardRef((t, n) => {
 		let { scope: r, children: i, ...a } = t, s = e.useRef(null), c = J(n, s), l = o(d, r);
 		return e.useEffect(() => (l.itemMap.set(s, {
 			ref: s,
 			...a
-		}), () => void l.itemMap.delete(s))), /* @__PURE__ */ _(p, {
+		}), () => void l.itemMap.delete(s))), /* @__PURE__ */ v(p, {
 			[f]: "",
 			ref: c,
 			children: i
@@ -5960,7 +6256,7 @@ function Es(t) {
 			return Array.from(r.itemMap.values()).sort((e, n) => t.indexOf(e.ref.current) - t.indexOf(n.ref.current));
 		}, [r.collectionRef, r.itemMap]);
 	}
-	return Ts(h, "useCollection"), [
+	return Zs(h, "useCollection"), [
 		{
 			Provider: s,
 			Slot: u,
@@ -5970,20 +6266,20 @@ function Es(t) {
 		i
 	];
 }
-Ts(Es, "createCollection");
-var Ds = /* @__PURE__ */ new WeakMap(), Os = class e extends Map {
+Zs(Qs, "createCollection");
+var $s = /* @__PURE__ */ new WeakMap(), ec = class e extends Map {
 	static {
-		Ts(this, "OrderedDict");
+		Zs(this, "OrderedDict");
 	}
 	#e;
 	constructor(e) {
-		super(e), this.#e = [...super.keys()], Ds.set(this, !0);
+		super(e), this.#e = [...super.keys()], $s.set(this, !0);
 	}
 	set(e, t) {
-		return Ds.get(this) && (this.has(e) ? this.#e[this.#e.indexOf(e)] = e : this.#e.push(e)), super.set(e, t), this;
+		return $s.get(this) && (this.has(e) ? this.#e[this.#e.indexOf(e)] = e : this.#e.push(e)), super.set(e, t), this;
 	}
 	insert(e, t, n) {
-		let r = this.has(t), i = this.#e.length, a = js(e), o = a >= 0 ? a : i + a, s = o < 0 || o >= i ? -1 : o;
+		let r = this.has(t), i = this.#e.length, a = rc(e), o = a >= 0 ? a : i + a, s = o < 0 || o >= i ? -1 : o;
 		if (s === this.size || r && s === this.size - 1 || s === -1) return this.set(t, n), this;
 		let c = this.size + +!r;
 		a < 0 && o++;
@@ -6036,18 +6332,18 @@ var Ds = /* @__PURE__ */ new WeakMap(), Os = class e extends Map {
 		return t !== void 0 && this.delete(t);
 	}
 	at(e) {
-		let t = ks(this.#e, e);
+		let t = tc(this.#e, e);
 		if (t !== void 0) return this.get(t);
 	}
 	entryAt(e) {
-		let t = ks(this.#e, e);
+		let t = tc(this.#e, e);
 		if (t !== void 0) return [t, this.get(t)];
 	}
 	indexOf(e) {
 		return this.#e.indexOf(e);
 	}
 	keyAt(e) {
-		return ks(this.#e, e);
+		return tc(this.#e, e);
 	}
 	from(e, t) {
 		let n = this.indexOf(e);
@@ -6176,54 +6472,54 @@ var Ds = /* @__PURE__ */ new WeakMap(), Os = class e extends Map {
 		return !1;
 	}
 };
-function ks(e, t) {
+function tc(e, t) {
 	if ("at" in Array.prototype) return Array.prototype.at.call(e, t);
-	let n = As(e, t);
+	let n = nc(e, t);
 	return n === -1 ? void 0 : e[n];
 }
-Ts(ks, "at");
-function As(e, t) {
-	let n = e.length, r = js(t), i = r >= 0 ? r : n + r;
+Zs(tc, "at");
+function nc(e, t) {
+	let n = e.length, r = rc(t), i = r >= 0 ? r : n + r;
 	return i < 0 || i >= n ? -1 : i;
 }
-Ts(As, "toSafeIndex");
-function js(e) {
+Zs(nc, "toSafeIndex");
+function rc(e) {
 	return e !== e || e === 0 ? 0 : Math.trunc(e);
 }
-Ts(js, "toSafeInteger");
+Zs(rc, "toSafeInteger");
 // @__NO_SIDE_EFFECTS__
-function Ms(t) {
-	let n = t + "CollectionProvider", [r, i] = /* @__PURE__ */ Ho(n), [a, o] = r(n, {
+function ic(t) {
+	let n = t + "CollectionProvider", [r, i] = /* @__PURE__ */ ms(n), [a, o] = r(n, {
 		collectionElement: null,
 		collectionRef: { current: null },
 		collectionRefObject: { current: null },
-		itemMap: new Os(),
-		setItemMap: /* @__PURE__ */ Ts(() => void 0, "setItemMap")
-	}), s = /* @__PURE__ */ Ts(({ state: e, ...t }) => e ? /* @__PURE__ */ _(l, {
+		itemMap: new ec(),
+		setItemMap: /* @__PURE__ */ Zs(() => void 0, "setItemMap")
+	}), s = /* @__PURE__ */ Zs(({ state: e, ...t }) => e ? /* @__PURE__ */ v(l, {
 		...t,
 		state: e
-	}) : /* @__PURE__ */ _(c, { ...t }), "CollectionProvider");
+	}) : /* @__PURE__ */ v(c, { ...t }), "CollectionProvider");
 	s.displayName = n;
-	let c = /* @__PURE__ */ Ts((e) => {
+	let c = /* @__PURE__ */ Zs((e) => {
 		let t = g();
-		return /* @__PURE__ */ _(l, {
+		return /* @__PURE__ */ v(l, {
 			...e,
 			state: t
 		});
 	}, "CollectionInit");
 	c.displayName = n + "Init";
-	let l = /* @__PURE__ */ Ts((t) => {
+	let l = /* @__PURE__ */ Zs((t) => {
 		let { scope: n, children: r, state: i } = t, o = e.useRef(null), [s, c] = e.useState(null), l = J(o, c), [u, d] = i;
 		return e.useEffect(() => {
 			if (!s) return;
-			let e = Is(() => {});
+			let e = cc(() => {});
 			return e.observe(s, {
 				childList: !0,
 				subtree: !0
 			}), () => {
 				e.disconnect();
 			};
-		}, [s]), /* @__PURE__ */ _(a, {
+		}, [s]), /* @__PURE__ */ v(a, {
 			scope: n,
 			itemMap: u,
 			setItemMap: d,
@@ -6234,34 +6530,34 @@ function Ms(t) {
 		});
 	}, "CollectionProviderImpl");
 	l.displayName = n + "Impl";
-	let u = t + "CollectionSlot", d = /* @__PURE__ */ os(u), f = e.forwardRef((e, t) => {
+	let u = t + "CollectionSlot", d = /* @__PURE__ */ Ms(u), f = e.forwardRef((e, t) => {
 		let { scope: n, children: r } = e, i = J(t, o(u, n).collectionRef);
-		return /* @__PURE__ */ _(d, {
+		return /* @__PURE__ */ v(d, {
 			ref: i,
 			children: r
 		});
 	});
 	f.displayName = u;
-	let p = t + "CollectionItemSlot", m = /* @__PURE__ */ os(p), h = e.forwardRef((t, n) => {
+	let p = t + "CollectionItemSlot", m = /* @__PURE__ */ Ms(p), h = e.forwardRef((t, n) => {
 		let { scope: r, children: i, ...a } = t, s = e.useRef(null), [c, l] = e.useState(null), u = J(n, s, l), { setItemMap: d } = o(p, r), f = e.useRef(a);
-		Ns(f.current, a) || (f.current = a);
+		ac(f.current, a) || (f.current = a);
 		let h = f.current;
 		return e.useEffect(() => {
 			let e = h;
 			return d((t) => c ? t.has(c) ? t.set(c, {
 				...e,
 				element: c
-			}).toSorted(Fs) : (t.set(c, {
+			}).toSorted(sc) : (t.set(c, {
 				...e,
 				element: c
-			}), t.toSorted(Fs)) : t), () => {
-				d((e) => !c || !e.has(c) ? e : (e.delete(c), new Os(e)));
+			}), t.toSorted(sc)) : t), () => {
+				d((e) => !c || !e.has(c) ? e : (e.delete(c), new ec(e)));
 			};
 		}, [
 			c,
 			h,
 			d
-		]), /* @__PURE__ */ _(m, {
+		]), /* @__PURE__ */ v(m, {
 			"data-radix-collection-item": "",
 			ref: u,
 			children: i
@@ -6269,25 +6565,25 @@ function Ms(t) {
 	});
 	h.displayName = p;
 	function g() {
-		return e.useState(new Os());
+		return e.useState(new ec());
 	}
-	Ts(g, "useInitCollection");
-	function v(e) {
+	Zs(g, "useInitCollection");
+	function _(e) {
 		let { itemMap: n } = o(t + "CollectionConsumer", e);
 		return n;
 	}
-	return Ts(v, "useCollection"), [{
+	return Zs(_, "useCollection"), [{
 		Provider: s,
 		Slot: f,
 		ItemSlot: h
 	}, {
 		createCollectionScope: i,
-		useCollection: v,
+		useCollection: _,
 		useInitCollection: g
 	}];
 }
-Ts(Ms, "createCollection");
-function Ns(e, t) {
+Zs(ic, "createCollection");
+function ac(e, t) {
 	if (e === t) return !0;
 	if (typeof e != "object" || typeof t != "object" || e == null || t == null) return !1;
 	let n = Object.keys(e), r = Object.keys(t);
@@ -6295,16 +6591,16 @@ function Ns(e, t) {
 	for (let r of n) if (!Object.prototype.hasOwnProperty.call(t, r) || e[r] !== t[r]) return !1;
 	return !0;
 }
-Ts(Ns, "shallowEqual");
-function Ps(e, t) {
+Zs(ac, "shallowEqual");
+function oc(e, t) {
 	return !!(t.compareDocumentPosition(e) & Node.DOCUMENT_POSITION_PRECEDING);
 }
-Ts(Ps, "isElementPreceding");
-function Fs(e, t) {
-	return !e[1].element || !t[1].element ? 0 : Ps(e[1].element, t[1].element) ? -1 : 1;
+Zs(oc, "isElementPreceding");
+function sc(e, t) {
+	return !e[1].element || !t[1].element ? 0 : oc(e[1].element, t[1].element) ? -1 : 1;
 }
-Ts(Fs, "sortByDocumentPosition");
-function Is(e) {
+Zs(sc, "sortByDocumentPosition");
+function cc(e) {
 	return new MutationObserver((t) => {
 		for (let n of t) if (n.type === "childList") {
 			e();
@@ -6312,46 +6608,46 @@ function Is(e) {
 		}
 	});
 }
-Ts(Is, "getChildListObserver");
+Zs(cc, "getChildListObserver");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-direction@1.1.5_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-direction/dist/index.mjs
-var Ls = Object.defineProperty, Rs = (e, t) => Ls(e, "name", {
+var lc = Object.defineProperty, uc = (e, t) => lc(e, "name", {
 	value: t,
 	configurable: !0
-}), zs = {
+}), dc = {
 	LTR: "ltr",
 	RTL: "rtl"
-}, Bs = e.createContext(void 0);
-function Vs(t) {
-	let n = e.useContext(Bs);
-	return t || n || zs.LTR;
+}, fc = e.createContext(void 0);
+function pc(t) {
+	let n = e.useContext(fc);
+	return t || n || dc.LTR;
 }
-Rs(Vs, "useDirection");
+uc(pc, "useDirection");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-use-callback-ref@1.1.4_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs
-var Hs = Object.defineProperty, Us = (e, t) => Hs(e, "name", {
+var mc = Object.defineProperty, hc = (e, t) => mc(e, "name", {
 	value: t,
 	configurable: !0
 });
-function Ws(t) {
+function gc(t) {
 	let n = e.useRef(t);
 	return e.useEffect(() => {
 		n.current = t;
 	}), e.useMemo(() => ((...e) => n.current?.(...e)), []);
 }
-Us(Ws, "useCallbackRef");
+hc(gc, "useCallbackRef");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-dismissable-layer@1.1.20_@types+react-dom@19.3.0_@types+react@19.3.0__@_4e89f70e986c5a91a92277a59b4de3bd/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs
-var Gs = Object.defineProperty, Ks = (e, t) => Gs(e, "name", {
+var _c = Object.defineProperty, vc = (e, t) => _c(e, "name", {
 	value: t,
 	configurable: !0
-}), qs = "dismissableLayer.update", Js = "dismissableLayer.pointerDownOutside", Ys = "dismissableLayer.focusOutside", Xs, Zs = e.createContext({
+}), yc = "dismissableLayer.update", bc = "dismissableLayer.pointerDownOutside", xc = "dismissableLayer.focusOutside", Sc, Cc = e.createContext({
 	layers: /* @__PURE__ */ new Set(),
 	layersWithOutsidePointerEventsDisabled: /* @__PURE__ */ new Set(),
 	branches: /* @__PURE__ */ new Set(),
 	dismissableSurfaces: /* @__PURE__ */ new Set()
-}), Qs = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Ks(function(t, n) {
-	let { disableOutsidePointerEvents: r = !1, deferPointerDownOutside: i = !1, onEscapeKeyDown: a, onPointerDownOutside: o, onFocusOutside: s, onInteractOutside: c, onDismiss: l, ...u } = t, d = e.useContext(Zs), [f, p] = e.useState(null), m = f?.ownerDocument ?? globalThis?.document, [, h] = e.useState({}), g = J(n, p), v = Array.from(d.layers), [y] = [...d.layersWithOutsidePointerEventsDisabled].slice(-1), b = y ? v.indexOf(y) : -1, x = f ? v.indexOf(f) : -1, S = d.layersWithOutsidePointerEventsDisabled.size > 0, C = x >= b, w = e.useRef(!1), T = tc((e) => {
+}), wc = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ vc(function(t, n) {
+	let { disableOutsidePointerEvents: r = !1, deferPointerDownOutside: i = !1, onEscapeKeyDown: a, onPointerDownOutside: o, onFocusOutside: s, onInteractOutside: c, onDismiss: l, ...u } = t, d = e.useContext(Cc), [f, p] = e.useState(null), m = f?.ownerDocument ?? globalThis?.document, [, h] = e.useState({}), g = J(n, p), _ = Array.from(d.layers), [y] = [...d.layersWithOutsidePointerEventsDisabled].slice(-1), b = y ? _.indexOf(y) : -1, x = f ? _.indexOf(f) : -1, S = d.layersWithOutsidePointerEventsDisabled.size > 0, C = x >= b, w = e.useRef(!1), T = Dc((e) => {
 		o?.(e), c?.(e), e.defaultPrevented || l?.();
 	}, {
 		ownerDocument: m,
@@ -6363,11 +6659,11 @@ var Gs = Object.defineProperty, Ks = (e, t) => Gs(e, "name", {
 			let t = [...d.branches].some((t) => t.contains(e));
 			return C && !t;
 		}, [d.branches, C])
-	}), E = nc((e) => {
+	}), E = Oc((e) => {
 		if (i && w.current) return;
 		let t = e.target;
 		[...d.branches].some((e) => e.contains(t)) || (s?.(e), c?.(e), e.defaultPrevented || l?.());
-	}, m), D = f ? x === v.length - 1 : !1, O = Ws((e) => {
+	}, m), D = f ? x === _.length - 1 : !1, O = gc((e) => {
 		e.key === "Escape" && (a?.(e), !e.defaultPrevented && l && (e.preventDefault(), l()));
 	});
 	return e.useEffect(() => {
@@ -6377,8 +6673,8 @@ var Gs = Object.defineProperty, Ks = (e, t) => Gs(e, "name", {
 		D,
 		O
 	]), e.useEffect(() => {
-		if (f) return r && (d.layersWithOutsidePointerEventsDisabled.size === 0 && (Xs = m.body.style.pointerEvents, m.body.style.pointerEvents = "none"), d.layersWithOutsidePointerEventsDisabled.add(f)), d.layers.add(f), rc(), () => {
-			r && (d.layersWithOutsidePointerEventsDisabled.delete(f), d.layersWithOutsidePointerEventsDisabled.size === 0 && (m.body.style.pointerEvents = Xs));
+		if (f) return r && (d.layersWithOutsidePointerEventsDisabled.size === 0 && (Sc = m.body.style.pointerEvents, m.body.style.pointerEvents = "none"), d.layersWithOutsidePointerEventsDisabled.add(f)), d.layers.add(f), kc(), () => {
+			r && (d.layersWithOutsidePointerEventsDisabled.delete(f), d.layersWithOutsidePointerEventsDisabled.size === 0 && (m.body.style.pointerEvents = Sc));
 		};
 	}, [
 		f,
@@ -6386,11 +6682,11 @@ var Gs = Object.defineProperty, Ks = (e, t) => Gs(e, "name", {
 		r,
 		d
 	]), e.useEffect(() => () => {
-		f && (d.layers.delete(f), d.layersWithOutsidePointerEventsDisabled.delete(f), rc());
+		f && (d.layers.delete(f), d.layersWithOutsidePointerEventsDisabled.delete(f), kc());
 	}, [f, d]), e.useEffect(() => {
-		let e = /* @__PURE__ */ Ks(() => h({}), "handleUpdate");
-		return document.addEventListener(qs, e), () => document.removeEventListener(qs, e);
-	}, []), /* @__PURE__ */ _(Ss.div, {
+		let e = /* @__PURE__ */ vc(() => h({}), "handleUpdate");
+		return document.addEventListener(yc, e), () => document.removeEventListener(yc, e);
+	}, []), /* @__PURE__ */ v(Js.div, {
 		...u,
 		ref: g,
 		style: {
@@ -6402,27 +6698,27 @@ var Gs = Object.defineProperty, Ks = (e, t) => Gs(e, "name", {
 		onPointerDownCapture: q(t.onPointerDownCapture, T.onPointerDownCapture)
 	});
 }, "DismissableLayer"));
-function $s() {
-	let t = e.useContext(Zs), [n, r] = e.useState(null);
+function Tc() {
+	let t = e.useContext(Cc), [n, r] = e.useState(null);
 	return e.useEffect(() => {
 		if (n) return t.dismissableSurfaces.add(n), () => {
 			t.dismissableSurfaces.delete(n);
 		};
 	}, [n, t.dismissableSurfaces]), r;
 }
-Ks($s, "useDismissableLayerSurface");
-var ec = /* @__PURE__ */ Ks(() => !0, "IS_TRUE");
-function tc(t, n) {
-	let { ownerDocument: r = globalThis?.document, deferPointerDownOutside: i = !1, isDeferredPointerDownOutsideRef: a, dismissableSurfaces: o, shouldHandlePointerDownOutside: s = ec } = n, c = Ws(t), l = e.useRef(!1), u = e.useRef(!1), d = e.useRef(/* @__PURE__ */ new Map()), f = e.useRef(() => {});
+vc(Tc, "useDismissableLayerSurface");
+var Ec = /* @__PURE__ */ vc(() => !0, "IS_TRUE");
+function Dc(t, n) {
+	let { ownerDocument: r = globalThis?.document, deferPointerDownOutside: i = !1, isDeferredPointerDownOutsideRef: a, dismissableSurfaces: o, shouldHandlePointerDownOutside: s = Ec } = n, c = gc(t), l = e.useRef(!1), u = e.useRef(!1), d = e.useRef(/* @__PURE__ */ new Map()), f = e.useRef(() => {});
 	return e.useEffect(() => {
 		function e() {
 			u.current = !1, a.current = !1, d.current.clear();
 		}
-		Ks(e, "resetOutsideInteraction");
+		vc(e, "resetOutsideInteraction");
 		function t() {
 			return Array.from(d.current.values()).some(Boolean);
 		}
-		Ks(t, "isOutsideInteractionIntercepted");
+		vc(t, "isOutsideInteractionIntercepted");
 		function n(e) {
 			if (!u.current) return;
 			let t = e.target;
@@ -6430,19 +6726,19 @@ function tc(t, n) {
 				u.current && f.current();
 			}, 0);
 		}
-		Ks(n, "handleInteractionCapture");
+		vc(n, "handleInteractionCapture");
 		function p(e) {
 			u.current && d.current.set(e.type, !1);
 		}
-		Ks(p, "handleInteractionBubble");
-		let m = /* @__PURE__ */ Ks((n) => {
+		vc(p, "handleInteractionBubble");
+		let m = /* @__PURE__ */ vc((n) => {
 			if (n.target && !l.current) {
 				let o = function() {
 					r.removeEventListener("click", f.current);
 					let n = t();
-					e(), n || ic(Js, c, p, { discrete: !0 });
+					e(), n || Ac(bc, c, p, { discrete: !0 });
 				};
-				if (Ks(o, "handleAndDispatchPointerDownOutsideEvent"), !s(n.target)) {
+				if (vc(o, "handleAndDispatchPointerDownOutsideEvent"), !s(n.target)) {
 					r.removeEventListener("click", f.current), e(), l.current = !1;
 					return;
 				}
@@ -6473,78 +6769,78 @@ function tc(t, n) {
 		a,
 		o,
 		s
-	]), { onPointerDownCapture: /* @__PURE__ */ Ks(() => l.current = !0, "onPointerDownCapture") };
+	]), { onPointerDownCapture: /* @__PURE__ */ vc(() => l.current = !0, "onPointerDownCapture") };
 }
-Ks(tc, "usePointerDownOutside");
-function nc(t, n = globalThis?.document) {
-	let r = Ws(t), i = e.useRef(!1);
+vc(Dc, "usePointerDownOutside");
+function Oc(t, n = globalThis?.document) {
+	let r = gc(t), i = e.useRef(!1);
 	return e.useEffect(() => {
-		let e = /* @__PURE__ */ Ks((e) => {
-			e.target && !i.current && ic(Ys, r, { originalEvent: e }, { discrete: !1 });
+		let e = /* @__PURE__ */ vc((e) => {
+			e.target && !i.current && Ac(xc, r, { originalEvent: e }, { discrete: !1 });
 		}, "handleFocus");
 		return n.addEventListener("focusin", e), () => n.removeEventListener("focusin", e);
 	}, [n, r]), {
-		onFocusCapture: /* @__PURE__ */ Ks(() => i.current = !0, "onFocusCapture"),
-		onBlurCapture: /* @__PURE__ */ Ks(() => i.current = !1, "onBlurCapture")
+		onFocusCapture: /* @__PURE__ */ vc(() => i.current = !0, "onFocusCapture"),
+		onBlurCapture: /* @__PURE__ */ vc(() => i.current = !1, "onBlurCapture")
 	};
 }
-Ks(nc, "useFocusOutside");
-function rc() {
-	let e = new CustomEvent(qs);
+vc(Oc, "useFocusOutside");
+function kc() {
+	let e = new CustomEvent(yc);
 	document.dispatchEvent(e);
 }
-Ks(rc, "dispatchUpdate");
-function ic(e, t, n, { discrete: r }) {
+vc(kc, "dispatchUpdate");
+function Ac(e, t, n, { discrete: r }) {
 	let i = n.originalEvent.target, a = new CustomEvent(e, {
 		bubbles: !1,
 		cancelable: !0,
 		detail: n
 	});
-	t && i.addEventListener(e, t, { once: !0 }), r ? Cs(i, a) : i.dispatchEvent(a);
+	t && i.addEventListener(e, t, { once: !0 }), r ? Ys(i, a) : i.dispatchEvent(a);
 }
-Ks(ic, "handleAndDispatchCustomEvent");
+vc(Ac, "handleAndDispatchCustomEvent");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-focus-guards@1.1.6_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-focus-guards/dist/index.mjs
-var ac = Object.defineProperty, oc = (e, t) => ac(e, "name", {
+var jc = Object.defineProperty, Mc = (e, t) => jc(e, "name", {
 	value: t,
 	configurable: !0
-}), sc = 0, cc = null;
-function lc(e) {
-	return uc(), e.children;
+}), Nc = 0, Pc = null;
+function Fc(e) {
+	return Ic(), e.children;
 }
-oc(lc, "FocusGuards");
-function uc() {
+Mc(Fc, "FocusGuards");
+function Ic() {
 	e.useEffect(() => {
-		cc ||= {
-			start: dc(),
-			end: dc()
+		Pc ||= {
+			start: Lc(),
+			end: Lc()
 		};
-		let { start: e, end: t } = cc;
-		return document.body.firstElementChild !== e && document.body.insertAdjacentElement("afterbegin", e), document.body.lastElementChild !== t && document.body.insertAdjacentElement("beforeend", t), sc++, () => {
-			sc === 1 && (cc?.start.remove(), cc?.end.remove(), cc = null), sc = Math.max(0, sc - 1);
+		let { start: e, end: t } = Pc;
+		return document.body.firstElementChild !== e && document.body.insertAdjacentElement("afterbegin", e), document.body.lastElementChild !== t && document.body.insertAdjacentElement("beforeend", t), Nc++, () => {
+			Nc === 1 && (Pc?.start.remove(), Pc?.end.remove(), Pc = null), Nc = Math.max(0, Nc - 1);
 		};
 	}, []);
 }
-oc(uc, "useFocusGuards");
-function dc() {
+Mc(Ic, "useFocusGuards");
+function Lc() {
 	let e = document.createElement("span");
 	return e.setAttribute("data-radix-focus-guard", ""), e.tabIndex = 0, e.style.outline = "none", e.style.opacity = "0", e.style.position = "fixed", e.style.pointerEvents = "none", e;
 }
-oc(dc, "createFocusGuard");
+Mc(Lc, "createFocusGuard");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-focus-scope@1.2.0_@types+react-dom@19.3.0_@types+react@19.3.0__@types+r_17bb03d71df6075c07bd134f364dcf6d/node_modules/@radix-ui/react-focus-scope/dist/index.mjs
-var fc = Object.defineProperty, pc = (e, t) => fc(e, "name", {
+var Rc = Object.defineProperty, zc = (e, t) => Rc(e, "name", {
 	value: t,
 	configurable: !0
-}), mc = "focusScope.autoFocusOnMount", hc = "focusScope.autoFocusOnUnmount", gc = {
+}), Bc = "focusScope.autoFocusOnMount", Vc = "focusScope.autoFocusOnUnmount", Hc = {
 	bubbles: !1,
 	cancelable: !0
-}, _c = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ pc(function(t, n) {
-	let { loop: r = !1, trapped: i = !1, branches: a, onMountAutoFocus: o, onUnmountAutoFocus: s, ...c } = t, [l, u] = e.useState(null), d = Ws(o), f = Ws(s), p = e.useRef(null), m = J(n, u), h = e.useRef(a);
+}, Uc = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ zc(function(t, n) {
+	let { loop: r = !1, trapped: i = !1, branches: a, onMountAutoFocus: o, onUnmountAutoFocus: s, ...c } = t, [l, u] = e.useState(null), d = gc(o), f = gc(s), p = e.useRef(null), m = J(n, u), h = e.useRef(a);
 	e.useEffect(() => {
 		h.current = a;
 	});
-	let g = e.useCallback((e) => e ? l?.contains(e) ? !0 : !!h.current?.some((t) => t.contains(e)) : !1, [l]), v = e.useRef({
+	let g = e.useCallback((e) => e ? l?.contains(e) ? !0 : !!h.current?.some((t) => t.contains(e)) : !1, [l]), _ = e.useRef({
 		paused: !1,
 		pause() {
 			this.paused = !0;
@@ -6556,17 +6852,17 @@ var fc = Object.defineProperty, pc = (e, t) => fc(e, "name", {
 	e.useEffect(() => {
 		if (i) {
 			let e = function(e) {
-				if (v.paused || !l) return;
+				if (_.paused || !l) return;
 				let t = e.target;
-				g(t) ? p.current = t : Oc(p.current, { select: !0 });
+				g(t) ? p.current = t : el(p.current, { select: !0 });
 			}, t = function(e) {
-				if (v.paused || !l) return;
+				if (_.paused || !l) return;
 				let t = e.relatedTarget;
-				t !== null && (g(t) || Oc(p.current, { select: !0 }));
+				t !== null && (g(t) || el(p.current, { select: !0 }));
 			}, n = function(e) {
-				if (document.activeElement === document.body) for (let t of e) t.removedNodes.length > 0 && Oc(l);
+				if (document.activeElement === document.body) for (let t of e) t.removedNodes.length > 0 && el(l);
 			};
-			pc(e, "handleFocusIn"), pc(t, "handleFocusOut"), pc(n, "handleMutations"), document.addEventListener("focusin", e), document.addEventListener("focusout", t);
+			zc(e, "handleFocusIn"), zc(t, "handleFocusOut"), zc(n, "handleMutations"), document.addEventListener("focusin", e), document.addEventListener("focusout", t);
 			let r = new MutationObserver(n);
 			return l && r.observe(l, {
 				childList: !0,
@@ -6578,20 +6874,20 @@ var fc = Object.defineProperty, pc = (e, t) => fc(e, "name", {
 	}, [
 		i,
 		l,
-		v.paused,
+		_.paused,
 		g
 	]), e.useEffect(() => {
 		if (l) {
-			kc.add(v);
+			tl.add(_);
 			let e = document.activeElement;
 			if (!l.contains(e)) {
-				let t = new CustomEvent(mc, gc);
-				l.addEventListener(mc, d), l.dispatchEvent(t), t.defaultPrevented || (Sc(Mc(wc(l)), { select: !0 }), document.activeElement === e && Oc(l));
+				let t = new CustomEvent(Bc, Hc);
+				l.addEventListener(Bc, d), l.dispatchEvent(t), t.defaultPrevented || (Jc(il(Xc(l)), { select: !0 }), document.activeElement === e && el(l));
 			}
 			return () => {
-				l.removeEventListener(mc, d), setTimeout(() => {
-					let t = new CustomEvent(hc, gc);
-					l.addEventListener(hc, f), l.dispatchEvent(t), t.defaultPrevented || Oc(e ?? document.body, { select: !0 }), l.removeEventListener(hc, f), kc.remove(v);
+				l.removeEventListener(Bc, d), setTimeout(() => {
+					let t = new CustomEvent(Vc, Hc);
+					l.addEventListener(Vc, f), l.dispatchEvent(t), t.defaultPrevented || el(e ?? document.body, { select: !0 }), l.removeEventListener(Vc, f), tl.remove(_);
 				}, 0);
 			};
 		}
@@ -6599,77 +6895,77 @@ var fc = Object.defineProperty, pc = (e, t) => fc(e, "name", {
 		l,
 		d,
 		f,
-		v
+		_
 	]);
 	let y = e.useCallback((e) => {
-		if (!r && !i || v.paused) return;
+		if (!r && !i || _.paused) return;
 		let t = e.key === "Tab" && !e.altKey && !e.ctrlKey && !e.metaKey, n = document.activeElement;
 		if (t && n) {
-			let t = e.currentTarget, [i, a] = Cc(t);
-			i && a ? !e.shiftKey && n === a ? (e.preventDefault(), r && Oc(i, { select: !0 })) : e.shiftKey && n === i && (e.preventDefault(), r && Oc(a, { select: !0 })) : n === t && e.preventDefault();
+			let t = e.currentTarget, [i, a] = Yc(t);
+			i && a ? !e.shiftKey && n === a ? (e.preventDefault(), r && el(i, { select: !0 })) : e.shiftKey && n === i && (e.preventDefault(), r && el(a, { select: !0 })) : n === t && e.preventDefault();
 		}
 	}, [
 		r,
 		i,
-		v.paused
+		_.paused
 	]);
-	return /* @__PURE__ */ _(Ss.div, {
+	return /* @__PURE__ */ v(Js.div, {
 		tabIndex: -1,
 		...c,
 		ref: m,
 		onKeyDown: y
 	});
-}, "FocusScope")), vc = e.createContext(null);
-function yc({ registry: e, children: t }) {
-	return e ? /* @__PURE__ */ _(vc.Provider, {
+}, "FocusScope")), Wc = e.createContext(null);
+function Gc({ registry: e, children: t }) {
+	return e ? /* @__PURE__ */ v(Wc.Provider, {
 		value: e,
 		children: t
 	}) : t;
 }
-pc(yc, "FocusScopeBranchProvider");
-function bc() {
+zc(Gc, "FocusScopeBranchProvider");
+function Kc() {
 	let [t, n] = e.useState([]);
 	return {
 		nodes: t,
 		registry: e.useMemo(() => ({
-			add: /* @__PURE__ */ pc((e) => n((t) => t.includes(e) ? t : [...t, e]), "add"),
-			remove: /* @__PURE__ */ pc((e) => n((t) => t.filter((t) => t !== e)), "remove")
+			add: /* @__PURE__ */ zc((e) => n((t) => t.includes(e) ? t : [...t, e]), "add"),
+			remove: /* @__PURE__ */ zc((e) => n((t) => t.filter((t) => t !== e)), "remove")
 		}), [])
 	};
 }
-pc(bc, "useFocusScopeBranchRegistry");
-function xc(t) {
-	let n = e.useContext(vc);
+zc(Kc, "useFocusScopeBranchRegistry");
+function qc(t) {
+	let n = e.useContext(Wc);
 	e.useEffect(() => {
 		if (t && n) return n.add(t), () => n.remove(t);
 	}, [t, n]);
 }
-pc(xc, "useFocusScopeBranch");
-function Sc(e, { select: t = !1 } = {}) {
+zc(qc, "useFocusScopeBranch");
+function Jc(e, { select: t = !1 } = {}) {
 	let n = document.activeElement;
-	for (let r of e) if (Oc(r, { select: t }), document.activeElement !== n) return;
+	for (let r of e) if (el(r, { select: t }), document.activeElement !== n) return;
 }
-pc(Sc, "focusFirst");
-function Cc(e) {
-	let t = wc(e);
-	return [Tc(t, e), Tc(t.reverse(), e)];
+zc(Jc, "focusFirst");
+function Yc(e) {
+	let t = Xc(e);
+	return [Zc(t, e), Zc(t.reverse(), e)];
 }
-pc(Cc, "getTabbableEdges");
-function wc(e) {
-	let t = [], n = document.createTreeWalker(e, NodeFilter.SHOW_ELEMENT, { acceptNode: /* @__PURE__ */ pc((e) => {
+zc(Yc, "getTabbableEdges");
+function Xc(e) {
+	let t = [], n = document.createTreeWalker(e, NodeFilter.SHOW_ELEMENT, { acceptNode: /* @__PURE__ */ zc((e) => {
 		let t = e.tagName === "INPUT" && e.type === "hidden";
 		return e.disabled || e.hidden || t ? NodeFilter.FILTER_SKIP : e.tabIndex >= 0 ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
 	}, "acceptNode") });
 	for (; n.nextNode();) t.push(n.currentNode);
 	return t;
 }
-pc(wc, "getTabbableCandidates");
-function Tc(e, t) {
+zc(Xc, "getTabbableCandidates");
+function Zc(e, t) {
 	let n = typeof t.checkVisibility == "function" && t.checkVisibility({ checkVisibilityCSS: !0 });
-	for (let r of e) if (!(n ? !r.checkVisibility({ checkVisibilityCSS: !0 }) : Ec(r, { upTo: t }))) return r;
+	for (let r of e) if (!(n ? !r.checkVisibility({ checkVisibilityCSS: !0 }) : Qc(r, { upTo: t }))) return r;
 }
-pc(Tc, "findVisible");
-function Ec(e, { upTo: t }) {
+zc(Zc, "findVisible");
+function Qc(e, { upTo: t }) {
 	if (getComputedStyle(e).visibility === "hidden") return !0;
 	for (; e;) {
 		if (t !== void 0 && e === t) return !1;
@@ -6678,130 +6974,130 @@ function Ec(e, { upTo: t }) {
 	}
 	return !1;
 }
-pc(Ec, "isHidden");
-function Dc(e) {
+zc(Qc, "isHidden");
+function $c(e) {
 	return e instanceof HTMLInputElement && "select" in e;
 }
-pc(Dc, "isSelectableInput");
-function Oc(e, { select: t = !1 } = {}) {
+zc($c, "isSelectableInput");
+function el(e, { select: t = !1 } = {}) {
 	if (e && e.focus) {
 		let n = document.activeElement;
-		e.focus({ preventScroll: !0 }), e !== n && Dc(e) && t && e.select();
+		e.focus({ preventScroll: !0 }), e !== n && $c(e) && t && e.select();
 	}
 }
-pc(Oc, "focus");
-var kc = Ac();
-function Ac() {
+zc(el, "focus");
+var tl = nl();
+function nl() {
 	let e = [];
 	return {
 		add(t) {
 			let n = e[0];
-			t !== n && n?.pause(), e = jc(e, t), e.unshift(t);
+			t !== n && n?.pause(), e = rl(e, t), e.unshift(t);
 		},
 		remove(t) {
-			e = jc(e, t), e[0]?.resume();
+			e = rl(e, t), e[0]?.resume();
 		}
 	};
 }
-pc(Ac, "createFocusScopesStack");
-function jc(e, t) {
+zc(nl, "createFocusScopesStack");
+function rl(e, t) {
 	let n = [...e], r = n.indexOf(t);
 	return r !== -1 && n.splice(r, 1), n;
 }
-pc(jc, "arrayRemove");
-function Mc(e) {
+zc(rl, "arrayRemove");
+function il(e) {
 	return e.filter((e) => e.tagName !== "A");
 }
-pc(Mc, "removeLinks");
+zc(il, "removeLinks");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-id@1.1.4_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-id/dist/index.mjs
-var Nc = Object.defineProperty, Pc = (e, t) => Nc(e, "name", {
+var al = Object.defineProperty, ol = (e, t) => al(e, "name", {
 	value: t,
 	configurable: !0
-}), Fc = e.useId || (() => void 0), Ic = 0;
-function Lc(t) {
-	let [n, r] = e.useState(Fc());
-	return Wo(() => {
-		t || r((e) => e ?? String(Ic++));
+}), sl = e.useId || (() => void 0), cl = 0;
+function ll(t) {
+	let [n, r] = e.useState(sl());
+	return gs(() => {
+		t || r((e) => e ?? String(cl++));
 	}, [t]), t || (n ? `radix-${n}` : "");
 }
-Pc(Lc, "useId");
+ol(ll, "useId");
 //#endregion
 //#region node_modules/.pnpm/@floating-ui+utils@0.2.12/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs
-var Rc = [
+var ul = [
 	"top",
 	"right",
 	"bottom",
 	"left"
-], zc = Math.min, Bc = Math.max, Vc = Math.round, Hc = Math.floor, Uc = (e) => ({
+], dl = Math.min, fl = Math.max, pl = Math.round, ml = Math.floor, hl = (e) => ({
 	x: e,
 	y: e
-}), Wc = {
+}), gl = {
 	left: "right",
 	right: "left",
 	bottom: "top",
 	top: "bottom"
 };
-function Gc(e, t, n) {
-	return Bc(e, zc(t, n));
+function _l(e, t, n) {
+	return fl(e, dl(t, n));
 }
-function Kc(e, t) {
+function vl(e, t) {
 	return typeof e == "function" ? e(t) : e;
 }
-function qc(e) {
+function yl(e) {
 	return e.split("-")[0];
 }
-function Jc(e) {
+function bl(e) {
 	return e.split("-")[1];
 }
-function Yc(e) {
+function xl(e) {
 	return e === "x" ? "y" : "x";
 }
-function Xc(e) {
+function Sl(e) {
 	return e === "y" ? "height" : "width";
 }
-function Zc(e) {
+function Cl(e) {
 	let t = e[0];
 	return t === "t" || t === "b" ? "y" : "x";
 }
-function Qc(e) {
-	return Yc(Zc(e));
+function wl(e) {
+	return xl(Cl(e));
 }
-function $c(e, t, n) {
+function Tl(e, t, n) {
 	n === void 0 && (n = !1);
-	let r = Jc(e), i = Qc(e), a = Xc(i), o = i === "x" ? r === (n ? "end" : "start") ? "right" : "left" : r === "start" ? "bottom" : "top";
-	return t.reference[a] > t.floating[a] && (o = cl(o)), [o, cl(o)];
+	let r = bl(e), i = wl(e), a = Sl(i), o = i === "x" ? r === (n ? "end" : "start") ? "right" : "left" : r === "start" ? "bottom" : "top";
+	return t.reference[a] > t.floating[a] && (o = Pl(o)), [o, Pl(o)];
 }
-function el(e) {
-	let t = cl(e);
+function El(e) {
+	let t = Pl(e);
 	return [
-		tl(e),
+		Dl(e),
 		t,
-		tl(t)
+		Dl(t)
 	];
 }
-function tl(e) {
+function Dl(e) {
 	return e.includes("start") ? e.replace("start", "end") : e.replace("end", "start");
 }
-var nl = ["left", "right"], rl = ["right", "left"], il = ["top", "bottom"], al = ["bottom", "top"];
-function ol(e, t, n) {
+var Ol = ["left", "right"], kl = ["right", "left"], Al = ["top", "bottom"], jl = ["bottom", "top"];
+function Ml(e, t, n) {
 	switch (e) {
 		case "top":
-		case "bottom": return n ? t ? rl : nl : t ? nl : rl;
+		case "bottom": return n ? t ? kl : Ol : t ? Ol : kl;
 		case "left":
-		case "right": return t ? il : al;
+		case "right": return t ? Al : jl;
 		default: return [];
 	}
 }
-function sl(e, t, n, r) {
-	let i = Jc(e), a = ol(qc(e), n === "start", r);
-	return i && (a = a.map((e) => e + "-" + i), t && (a = a.concat(a.map(tl)))), a;
+function Nl(e, t, n, r) {
+	let i = bl(e), a = Ml(yl(e), n === "start", r);
+	return i && (a = a.map((e) => e + "-" + i), t && (a = a.concat(a.map(Dl)))), a;
 }
-function cl(e) {
-	let t = qc(e);
-	return Wc[t] + e.slice(t.length);
+function Pl(e) {
+	let t = yl(e);
+	return gl[t] + e.slice(t.length);
 }
-function ll(e) {
+function Fl(e) {
 	return {
 		top: e.top ?? 0,
 		right: e.right ?? 0,
@@ -6809,15 +7105,15 @@ function ll(e) {
 		left: e.left ?? 0
 	};
 }
-function ul(e) {
+function Il(e) {
 	return typeof e == "number" ? {
 		top: e,
 		right: e,
 		bottom: e,
 		left: e
-	} : ll(e);
+	} : Fl(e);
 }
-function dl(e) {
+function Ll(e) {
 	let { x: t, y: n, width: r, height: i } = e;
 	return {
 		width: r,
@@ -6832,8 +7128,8 @@ function dl(e) {
 }
 //#endregion
 //#region node_modules/.pnpm/@floating-ui+core@1.8.0/node_modules/@floating-ui/core/dist/floating-ui.core.mjs
-function fl(e, t, n) {
-	let { reference: r, floating: i } = e, a = Zc(t), o = Qc(t), s = Xc(o), c = qc(t), l = a === "y", u = r.x + r.width / 2 - i.width / 2, d = r.y + r.height / 2 - i.height / 2, f = r[s] / 2 - i[s] / 2, p;
+function Rl(e, t, n) {
+	let { reference: r, floating: i } = e, a = Cl(t), o = wl(t), s = Sl(o), c = yl(t), l = a === "y", u = r.x + r.width / 2 - i.width / 2, d = r.y + r.height / 2 - i.height / 2, f = r[s] / 2 - i[s] / 2, p;
 	switch (c) {
 		case "top":
 			p = {
@@ -6864,12 +7160,12 @@ function fl(e, t, n) {
 			y: r.y
 		};
 	}
-	let m = Jc(t);
+	let m = bl(t);
 	return m && (p[o] += f * (m === "end" ? 1 : -1) * (n && l ? -1 : 1)), p;
 }
-async function pl(e, t) {
+async function zl(e, t) {
 	t === void 0 && (t = {});
-	let { x: n, y: r, platform: i, rects: a, elements: o, strategy: s } = e, { boundary: c = "clippingAncestors", rootBoundary: l = "viewport", elementContext: u = "floating", altBoundary: d = !1, padding: f = 0 } = Kc(t, e), p = ul(f), m = o[d ? u === "floating" ? "reference" : "floating" : u], h = dl(await i.getClippingRect({
+	let { x: n, y: r, platform: i, rects: a, elements: o, strategy: s } = e, { boundary: c = "clippingAncestors", rootBoundary: l = "viewport", elementContext: u = "floating", altBoundary: d = !1, padding: f = 0 } = vl(t, e), p = Il(f), m = o[d ? u === "floating" ? "reference" : "floating" : u], h = Ll(await i.getClippingRect({
 		element: await (i.isElement == null ? void 0 : i.isElement(m)) ?? !0 ? m : m.contextElement || await (i.getDocumentElement == null ? void 0 : i.getDocumentElement(o.floating)),
 		boundary: c,
 		rootBoundary: l,
@@ -6882,7 +7178,7 @@ async function pl(e, t) {
 	} : a.reference, _ = await (i.getOffsetParent == null ? void 0 : i.getOffsetParent(o.floating)), v = await (i.isElement == null ? void 0 : i.isElement(_)) && await (i.getScale == null ? void 0 : i.getScale(_)) || {
 		x: 1,
 		y: 1
-	}, y = dl(i.convertOffsetParentRelativeRectToViewportRelativeRect ? await i.convertOffsetParentRelativeRectToViewportRelativeRect({
+	}, y = Ll(i.convertOffsetParentRelativeRectToViewportRelativeRect ? await i.convertOffsetParentRelativeRectToViewportRelativeRect({
 		elements: o,
 		rect: g,
 		offsetParent: _,
@@ -6895,15 +7191,15 @@ async function pl(e, t) {
 		right: (y.right - h.right + p.right) / v.x
 	};
 }
-var ml = 50, hl = async (e, t, n) => {
+var Bl = 50, Vl = async (e, t, n) => {
 	let { placement: r = "bottom", strategy: i = "absolute", middleware: a = [], platform: o } = n, s = o.detectOverflow ? o : {
 		...o,
-		detectOverflow: pl
+		detectOverflow: zl
 	}, c = await (o.isRTL == null ? void 0 : o.isRTL(t)), l = await o.getElementRects({
 		reference: e,
 		floating: t,
 		strategy: i
-	}), { x: u, y: d } = fl(l, r, c), f = r, p = 0, m = {};
+	}), { x: u, y: d } = Rl(l, r, c), f = r, p = 0, m = {};
 	for (let n = 0; n < a.length; n++) {
 		let h = a[n];
 		if (!h) continue;
@@ -6924,11 +7220,11 @@ var ml = 50, hl = async (e, t, n) => {
 		u = v ?? u, d = y ?? d, m[g] = {
 			...m[g],
 			...b
-		}, x && p < ml && (p++, typeof x == "object" && (x.placement && (f = x.placement), x.rects && (l = x.rects === !0 ? await o.getElementRects({
+		}, x && p < Bl && (p++, typeof x == "object" && (x.placement && (f = x.placement), x.rects && (l = x.rects === !0 ? await o.getElementRects({
 			reference: e,
 			floating: t,
 			strategy: i
-		}) : x.rects), {x: u, y: d} = fl(l, f, c)), n = -1);
+		}) : x.rects), {x: u, y: d} = Rl(l, f, c)), n = -1);
 	}
 	return {
 		x: u,
@@ -6937,18 +7233,18 @@ var ml = 50, hl = async (e, t, n) => {
 		strategy: i,
 		middlewareData: m
 	};
-}, gl = (e) => ({
+}, Hl = (e) => ({
 	name: "arrow",
 	options: e,
 	async fn(t) {
-		let { x: n, y: r, placement: i, rects: a, platform: o, elements: s, middlewareData: c } = t, { element: l, padding: u = 0 } = Kc(e, t) || {};
+		let { x: n, y: r, placement: i, rects: a, platform: o, elements: s, middlewareData: c } = t, { element: l, padding: u = 0 } = vl(e, t) || {};
 		if (l == null) return {};
-		let d = ul(u), f = {
+		let d = Il(u), f = {
 			x: n,
 			y: r
-		}, p = Qc(i), m = Xc(p), h = await o.getDimensions(l), g = p === "y", _ = g ? "top" : "left", v = g ? "bottom" : "right", y = g ? "clientHeight" : "clientWidth", b = a.reference[m] + a.reference[p] - f[p] - a.floating[m], x = f[p] - a.reference[p], S = await (o.getOffsetParent == null ? void 0 : o.getOffsetParent(l)), C = S ? S[y] : 0;
+		}, p = wl(i), m = Sl(p), h = await o.getDimensions(l), g = p === "y", _ = g ? "top" : "left", v = g ? "bottom" : "right", y = g ? "clientHeight" : "clientWidth", b = a.reference[m] + a.reference[p] - f[p] - a.floating[m], x = f[p] - a.reference[p], S = await (o.getOffsetParent == null ? void 0 : o.getOffsetParent(l)), C = S ? S[y] : 0;
 		(!C || !await (o.isElement == null ? void 0 : o.isElement(S))) && (C = s.floating[y] || a.floating[m]);
-		let w = b / 2 - x / 2, T = C / 2 - h[m] / 2 - 1, E = zc(d[_], T), D = zc(d[v], T), O = C - h[m] - D, k = C / 2 - h[m] / 2 + w, A = Gc(E, k, O), j = !c.arrow && Jc(i) != null && k !== A && a.reference[m] / 2 - (k < E ? E : D) - h[m] / 2 < 0, M = j ? k < E ? k - E : k - O : 0;
+		let w = b / 2 - x / 2, T = C / 2 - h[m] / 2 - 1, E = dl(d[_], T), D = dl(d[v], T), O = C - h[m] - D, k = C / 2 - h[m] / 2 + w, A = _l(E, k, O), j = !c.arrow && bl(i) != null && k !== A && a.reference[m] / 2 - (k < E ? E : D) - h[m] / 2 < 0, M = j ? k < E ? k - E : k - O : 0;
 		return {
 			[p]: f[p] + M,
 			data: {
@@ -6959,19 +7255,19 @@ var ml = 50, hl = async (e, t, n) => {
 			reset: j
 		};
 	}
-}), _l = function(e) {
+}), Ul = function(e) {
 	return e === void 0 && (e = {}), {
 		name: "flip",
 		options: e,
 		async fn(t) {
 			var n;
-			let { placement: r, middlewareData: i, rects: a, initialPlacement: o, platform: s, elements: c } = t, { mainAxis: l = !0, crossAxis: u = !0, fallbackPlacements: d, fallbackStrategy: f = "bestFit", fallbackAxisSideDirection: p = "none", flipAlignment: m = !0, ...h } = Kc(e, t);
+			let { placement: r, middlewareData: i, rects: a, initialPlacement: o, platform: s, elements: c } = t, { mainAxis: l = !0, crossAxis: u = !0, fallbackPlacements: d, fallbackStrategy: f = "bestFit", fallbackAxisSideDirection: p = "none", flipAlignment: m = !0, ...h } = vl(e, t);
 			if ((n = i.arrow) != null && n.alignmentOffset) return {};
-			let g = qc(r), _ = Zc(o), v = qc(o) === o, y = await (s.isRTL == null ? void 0 : s.isRTL(c.floating)), b = d || (v || !m ? [cl(o)] : el(o)), x = p !== "none";
-			!d && x && b.push(...sl(o, m, p, y));
+			let g = yl(r), _ = Cl(o), v = yl(o) === o, y = await (s.isRTL == null ? void 0 : s.isRTL(c.floating)), b = d || (v || !m ? [Pl(o)] : El(o)), x = p !== "none";
+			!d && x && b.push(...Nl(o, m, p, y));
 			let S = [o, ...b], C = await s.detectOverflow(t, h), w = [], T = i.flip?.overflows || [];
 			if (l && w.push(C[g]), u) {
-				let e = $c(r, a, y);
+				let e = Tl(r, a, y);
 				w.push(C[e[0]], C[e[1]]);
 			}
 			if (T = [...T, {
@@ -6979,7 +7275,7 @@ var ml = 50, hl = async (e, t, n) => {
 				overflows: w
 			}], !w.every((e) => e <= 0)) {
 				let e = (i.flip?.index || 0) + 1, t = S[e];
-				if (t && (u !== "alignment" || _ === Zc(t) || T.every((e) => Zc(e.placement) !== _ || e.overflows[0] > 0))) return {
+				if (t && (u !== "alignment" || _ === Cl(t) || T.every((e) => Cl(e.placement) !== _ || e.overflows[0] > 0))) return {
 					data: {
 						index: e,
 						overflows: T
@@ -6991,7 +7287,7 @@ var ml = 50, hl = async (e, t, n) => {
 					case "bestFit": {
 						let e = T.filter((e) => {
 							if (x) {
-								let t = Zc(e.placement);
+								let t = Cl(e.placement);
 								return t === _ || t === "y";
 							}
 							return !0;
@@ -7007,7 +7303,7 @@ var ml = 50, hl = async (e, t, n) => {
 		}
 	};
 };
-function vl(e, t) {
+function Wl(e, t) {
 	return {
 		top: e.top - t.height,
 		right: e.right - t.width,
@@ -7015,43 +7311,43 @@ function vl(e, t) {
 		left: e.left - t.width
 	};
 }
-function yl(e) {
-	return Rc.some((t) => e[t] >= 0);
+function Gl(e) {
+	return ul.some((t) => e[t] >= 0);
 }
-var bl = function(e) {
+var Kl = function(e) {
 	return e === void 0 && (e = {}), {
 		name: "hide",
 		options: e,
 		async fn(t) {
-			let { rects: n, platform: r } = t, { strategy: i = "referenceHidden", ...a } = Kc(e, t);
+			let { rects: n, platform: r } = t, { strategy: i = "referenceHidden", ...a } = vl(e, t);
 			switch (i) {
 				case "referenceHidden": {
-					let e = vl(await r.detectOverflow(t, {
+					let e = Wl(await r.detectOverflow(t, {
 						...a,
 						elementContext: "reference"
 					}), n.reference);
 					return { data: {
 						referenceHiddenOffsets: e,
-						referenceHidden: yl(e)
+						referenceHidden: Gl(e)
 					} };
 				}
 				case "escaped": {
-					let e = vl(await r.detectOverflow(t, {
+					let e = Wl(await r.detectOverflow(t, {
 						...a,
 						altBoundary: !0
 					}), n.floating);
 					return { data: {
 						escapedOffsets: e,
-						escaped: yl(e)
+						escaped: Gl(e)
 					} };
 				}
 				default: return {};
 			}
 		}
 	};
-}, xl = /*#__PURE__*/ new Set(["left", "top"]);
-async function Sl(e, t) {
-	let { placement: n, platform: r, elements: i } = e, a = await (r.isRTL == null ? void 0 : r.isRTL(i.floating)), o = qc(n), s = Jc(n), c = Zc(n) === "y", l = xl.has(o) ? -1 : 1, u = a && c ? -1 : 1, d = Kc(t, e), { mainAxis: f, crossAxis: p, alignmentAxis: m } = typeof d == "number" ? {
+}, ql = /*#__PURE__*/ new Set(["left", "top"]);
+async function Jl(e, t) {
+	let { placement: n, platform: r, elements: i } = e, a = await (r.isRTL == null ? void 0 : r.isRTL(i.floating)), o = yl(n), s = bl(n), c = Cl(n) === "y", l = ql.has(o) ? -1 : 1, u = a && c ? -1 : 1, d = vl(t, e), { mainAxis: f, crossAxis: p, alignmentAxis: m } = typeof d == "number" ? {
 		mainAxis: d,
 		crossAxis: 0,
 		alignmentAxis: null
@@ -7068,13 +7364,13 @@ async function Sl(e, t) {
 		y: p * u
 	};
 }
-var Cl = function(e) {
+var Yl = function(e) {
 	return e === void 0 && (e = 0), {
 		name: "offset",
 		options: e,
 		async fn(t) {
 			var n;
-			let { x: r, y: i, placement: a, middlewareData: o } = t, s = await Sl(t, e);
+			let { x: r, y: i, placement: a, middlewareData: o } = t, s = await Jl(t, e);
 			return a === o.offset?.placement && (n = o.arrow) != null && n.alignmentOffset ? {} : {
 				x: r + s.x,
 				y: i + s.y,
@@ -7085,7 +7381,7 @@ var Cl = function(e) {
 			};
 		}
 	};
-}, wl = function(e) {
+}, Xl = function(e) {
 	return e === void 0 && (e = {}), {
 		name: "shift",
 		options: e,
@@ -7096,10 +7392,10 @@ var Cl = function(e) {
 					x: t,
 					y: n
 				};
-			} }, ...l } = Kc(e, t), u = {
+			} }, ...l } = vl(e, t), u = {
 				x: n,
 				y: r
-			}, d = await a.detectOverflow(t, l), f = Zc(i), p = Yc(f), m = u[p], h = u[f], g = (e, t) => Gc(t + d[e === "y" ? "top" : "left"], t, t - d[e === "y" ? "bottom" : "right"]);
+			}, d = await a.detectOverflow(t, l), f = Cl(i), p = xl(f), m = u[p], h = u[f], g = (e, t) => _l(t + d[e === "y" ? "top" : "left"], t, t - d[e === "y" ? "bottom" : "right"]);
 			o && (m = g(p, m)), s && (h = g(f, h));
 			let _ = c.fn({
 				...t,
@@ -7119,14 +7415,14 @@ var Cl = function(e) {
 			};
 		}
 	};
-}, Tl = function(e) {
+}, Zl = function(e) {
 	return e === void 0 && (e = {}), {
 		options: e,
 		fn(t) {
-			let { x: n, y: r, placement: i, rects: a, middlewareData: o } = t, { offset: s = 0, mainAxis: c = !0, crossAxis: l = !0 } = Kc(e, t), u = {
+			let { x: n, y: r, placement: i, rects: a, middlewareData: o } = t, { offset: s = 0, mainAxis: c = !0, crossAxis: l = !0 } = vl(e, t), u = {
 				x: n,
 				y: r
-			}, d = Zc(i), f = Yc(d), p = u[f], m = u[d], h = Kc(s, t), g = typeof h == "number" ? {
+			}, d = Cl(i), f = xl(d), p = u[f], m = u[d], h = vl(s, t), g = typeof h == "number" ? {
 				mainAxis: h,
 				crossAxis: 0
 			} : {
@@ -7138,7 +7434,7 @@ var Cl = function(e) {
 				p < t ? p = t : p > n && (p = n);
 			}
 			if (l) {
-				let e = f === "y" ? "width" : "height", t = xl.has(qc(i)), n = a.reference[d] - a.floating[e] + (t && o.offset?.[d] || 0) + (t ? 0 : g.crossAxis), r = a.reference[d] + a.reference[e] + (t ? 0 : o.offset?.[d] || 0) - (t ? g.crossAxis : 0);
+				let e = f === "y" ? "width" : "height", t = ql.has(yl(i)), n = a.reference[d] - a.floating[e] + (t && o.offset?.[d] || 0) + (t ? 0 : g.crossAxis), r = a.reference[d] + a.reference[e] + (t ? 0 : o.offset?.[d] || 0) - (t ? g.crossAxis : 0);
 				m < n ? m = n : m > r && (m = r);
 			}
 			return {
@@ -7147,15 +7443,15 @@ var Cl = function(e) {
 			};
 		}
 	};
-}, El = function(e) {
+}, Ql = function(e) {
 	return e === void 0 && (e = {}), {
 		name: "size",
 		options: e,
 		async fn(t) {
-			let { placement: n, rects: r, platform: i, elements: a } = t, { apply: o = () => {}, ...s } = Kc(e, t), c = await i.detectOverflow(t, s), l = qc(n), u = Jc(n), d = Zc(n) === "y", { width: f, height: p } = r.floating, m, h;
+			let { placement: n, rects: r, platform: i, elements: a } = t, { apply: o = () => {}, ...s } = vl(e, t), c = await i.detectOverflow(t, s), l = yl(n), u = bl(n), d = Cl(n) === "y", { width: f, height: p } = r.floating, m, h;
 			l === "top" || l === "bottom" ? (m = l, h = u === (await (i.isRTL == null ? void 0 : i.isRTL(a.floating)) ? "start" : "end") ? "left" : "right") : (h = l, m = u === "end" ? "top" : "bottom");
-			let g = p - c.top - c.bottom, _ = f - c.left - c.right, v = zc(p - c[m], g), y = zc(f - c[h], _), b = t.middlewareData.shift, x = !b, S = v, C = y;
-			b != null && b.enabled.x && (C = _), b != null && b.enabled.y && (S = g), x && !u && (d ? C = f - 2 * Bc(c.left, c.right) : S = p - 2 * Bc(c.top, c.bottom)), await o({
+			let g = p - c.top - c.bottom, _ = f - c.left - c.right, v = dl(p - c[m], g), y = dl(f - c[h], _), b = t.middlewareData.shift, x = !b, S = v, C = y;
+			b != null && b.enabled.x && (C = _), b != null && b.enabled.y && (S = g), x && !u && (d ? C = f - 2 * fl(c.left, c.right) : S = p - 2 * fl(c.top, c.bottom)), await o({
 				...t,
 				availableWidth: C,
 				availableHeight: S
@@ -7167,39 +7463,39 @@ var Cl = function(e) {
 };
 //#endregion
 //#region node_modules/.pnpm/@floating-ui+utils@0.2.12/node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs
-function Dl() {
+function $l() {
 	return typeof window < "u";
 }
-function Ol(e) {
-	return jl(e) ? (e.nodeName || "").toLowerCase() : "#document";
+function eu(e) {
+	return ru(e) ? (e.nodeName || "").toLowerCase() : "#document";
 }
-function kl(e) {
+function tu(e) {
 	var t;
 	return (e == null || (t = e.ownerDocument) == null ? void 0 : t.defaultView) || window;
 }
-function Al(e) {
-	return ((jl(e) ? e.ownerDocument : e.document) || window.document)?.documentElement;
+function nu(e) {
+	return ((ru(e) ? e.ownerDocument : e.document) || window.document)?.documentElement;
 }
-function jl(e) {
-	return Dl() ? e instanceof Node || e instanceof kl(e).Node : !1;
+function ru(e) {
+	return $l() ? e instanceof Node || e instanceof tu(e).Node : !1;
 }
-function Ml(e) {
-	return Dl() ? e instanceof Element || e instanceof kl(e).Element : !1;
+function iu(e) {
+	return $l() ? e instanceof Element || e instanceof tu(e).Element : !1;
 }
-function Nl(e) {
-	return Dl() ? e instanceof HTMLElement || e instanceof kl(e).HTMLElement : !1;
+function au(e) {
+	return $l() ? e instanceof HTMLElement || e instanceof tu(e).HTMLElement : !1;
 }
-function Pl(e) {
-	return !Dl() || typeof ShadowRoot > "u" ? !1 : e instanceof ShadowRoot || e instanceof kl(e).ShadowRoot;
+function ou(e) {
+	return !$l() || typeof ShadowRoot > "u" ? !1 : e instanceof ShadowRoot || e instanceof tu(e).ShadowRoot;
 }
-function Fl(e) {
-	let { overflow: t, overflowX: n, overflowY: r, display: i } = Kl(e);
+function su(e) {
+	let { overflow: t, overflowX: n, overflowY: r, display: i } = vu(e);
 	return /auto|scroll|overlay|hidden|clip/.test(t + r + n) && i !== "inline" && i !== "contents";
 }
-function Il(e) {
-	return /^(table|td|th)$/.test(Ol(e));
+function cu(e) {
+	return /^(table|td|th)$/.test(eu(e));
 }
-function Ll(e) {
+function lu(e) {
 	try {
 		if (e.matches(":popover-open")) return !0;
 	} catch {}
@@ -7209,31 +7505,31 @@ function Ll(e) {
 		return !1;
 	}
 }
-var Rl = /transform|translate|scale|rotate|perspective|filter/, zl = /paint|layout|strict|content/, Bl = (e) => !!e && e !== "none", Vl;
-function Hl(e) {
-	let t = Ml(e) ? Kl(e) : e;
-	return Bl(t.transform) || Bl(t.translate) || Bl(t.scale) || Bl(t.rotate) || Bl(t.perspective) || !Wl() && (Bl(t.backdropFilter) || Bl(t.filter)) || Rl.test(t.willChange || "") || zl.test(t.contain || "");
+var uu = /transform|translate|scale|rotate|perspective|filter/, du = /paint|layout|strict|content/, fu = (e) => !!e && e !== "none", pu;
+function mu(e) {
+	let t = iu(e) ? vu(e) : e;
+	return fu(t.transform) || fu(t.translate) || fu(t.scale) || fu(t.rotate) || fu(t.perspective) || !gu() && (fu(t.backdropFilter) || fu(t.filter)) || uu.test(t.willChange || "") || du.test(t.contain || "");
 }
-function Ul(e) {
-	let t = Jl(e);
-	for (; Nl(t) && !Gl(t);) {
-		if (Hl(t)) return t;
-		if (Ll(t)) return null;
-		t = Jl(t);
+function hu(e) {
+	let t = bu(e);
+	for (; au(t) && !_u(t);) {
+		if (mu(t)) return t;
+		if (lu(t)) return null;
+		t = bu(t);
 	}
 	return null;
 }
-function Wl() {
-	return Vl ??= typeof CSS < "u" && CSS.supports && CSS.supports("-webkit-backdrop-filter", "none"), Vl;
+function gu() {
+	return pu ??= typeof CSS < "u" && CSS.supports && CSS.supports("-webkit-backdrop-filter", "none"), pu;
 }
-function Gl(e) {
-	return /^(html|body|#document)$/.test(Ol(e));
+function _u(e) {
+	return /^(html|body|#document)$/.test(eu(e));
 }
-function Kl(e) {
-	return kl(e).getComputedStyle(e);
+function vu(e) {
+	return tu(e).getComputedStyle(e);
 }
-function ql(e) {
-	return Ml(e) ? {
+function yu(e) {
+	return iu(e) ? {
 		scrollLeft: e.scrollLeft,
 		scrollTop: e.scrollTop
 	} : {
@@ -7241,102 +7537,102 @@ function ql(e) {
 		scrollTop: e.scrollY
 	};
 }
-function Jl(e) {
-	if (Ol(e) === "html") return e;
-	let t = e.assignedSlot || e.parentNode || Pl(e) && e.host || Al(e);
-	return Pl(t) ? t.host : t;
+function bu(e) {
+	if (eu(e) === "html") return e;
+	let t = e.assignedSlot || e.parentNode || ou(e) && e.host || nu(e);
+	return ou(t) ? t.host : t;
 }
-function Yl(e) {
-	let t = Jl(e);
-	return Gl(t) ? (e.ownerDocument || e).body : Nl(t) && Fl(t) ? t : Yl(t);
+function xu(e) {
+	let t = bu(e);
+	return _u(t) ? (e.ownerDocument || e).body : au(t) && su(t) ? t : xu(t);
 }
-function Xl(e, t, n) {
+function Su(e, t, n) {
 	t === void 0 && (t = []), n === void 0 && (n = !0);
-	let r = Yl(e), i = r === e.ownerDocument?.body, a = kl(r);
+	let r = xu(e), i = r === e.ownerDocument?.body, a = tu(r);
 	if (i) {
-		let e = Zl(a);
-		return t.concat(a, a.visualViewport || [], Fl(r) ? r : [], e && n ? Xl(e) : []);
+		let e = Cu(a);
+		return t.concat(a, a.visualViewport || [], su(r) ? r : [], e && n ? Su(e) : []);
 	}
-	return t.concat(r, Xl(r, [], n));
+	return t.concat(r, Su(r, [], n));
 }
-function Zl(e) {
+function Cu(e) {
 	return e.parent && Object.getPrototypeOf(e.parent) ? e.frameElement : null;
 }
 //#endregion
 //#region node_modules/.pnpm/@floating-ui+dom@1.8.0/node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs
-function Ql(e) {
-	let t = Kl(e), n = parseFloat(t.width) || 0, r = parseFloat(t.height) || 0, i = Nl(e), a = i ? e.offsetWidth : n, o = i ? e.offsetHeight : r, s = Vc(n) !== a || Vc(r) !== o;
+function wu(e) {
+	let t = vu(e), n = parseFloat(t.width) || 0, r = parseFloat(t.height) || 0, i = au(e), a = i ? e.offsetWidth : n, o = i ? e.offsetHeight : r, s = pl(n) !== a || pl(r) !== o;
 	return s && (n = a, r = o), {
 		width: n,
 		height: r,
 		$: s
 	};
 }
-function $l(e) {
-	return Ml(e) ? e : e.contextElement;
+function Tu(e) {
+	return iu(e) ? e : e.contextElement;
 }
-function eu(e) {
-	let t = $l(e);
-	if (!Nl(t)) return Uc(1);
-	let n = t.getBoundingClientRect(), { width: r, height: i, $: a } = Ql(t), o = (a ? Vc(n.width) : n.width) / r, s = (a ? Vc(n.height) : n.height) / i;
+function Eu(e) {
+	let t = Tu(e);
+	if (!au(t)) return hl(1);
+	let n = t.getBoundingClientRect(), { width: r, height: i, $: a } = wu(t), o = (a ? pl(n.width) : n.width) / r, s = (a ? pl(n.height) : n.height) / i;
 	return (!o || !Number.isFinite(o)) && (o = 1), (!s || !Number.isFinite(s)) && (s = 1), {
 		x: o,
 		y: s
 	};
 }
-var tu = /*#__PURE__*/ Uc(0);
-function nu(e) {
-	let t = kl(e);
-	return !Wl() || !t.visualViewport ? tu : {
+var Du = /*#__PURE__*/ hl(0);
+function Ou(e) {
+	let t = tu(e);
+	return !gu() || !t.visualViewport ? Du : {
 		x: t.visualViewport.offsetLeft,
 		y: t.visualViewport.offsetTop
 	};
 }
-function ru(e, t, n) {
-	return t === void 0 && (t = !1), !!n && t && n === kl(e);
+function ku(e, t, n) {
+	return t === void 0 && (t = !1), !!n && t && n === tu(e);
 }
-function iu(e, t, n, r) {
+function Au(e, t, n, r) {
 	t === void 0 && (t = !1), n === void 0 && (n = !1);
-	let i = e.getBoundingClientRect(), a = $l(e), o = Uc(1);
-	t && (r ? Ml(r) && (o = eu(r)) : o = eu(e));
-	let s = ru(a, n, r) ? nu(a) : Uc(0), c = (i.left + s.x) / o.x, l = (i.top + s.y) / o.y, u = i.width / o.x, d = i.height / o.y;
+	let i = e.getBoundingClientRect(), a = Tu(e), o = hl(1);
+	t && (r ? iu(r) && (o = Eu(r)) : o = Eu(e));
+	let s = ku(a, n, r) ? Ou(a) : hl(0), c = (i.left + s.x) / o.x, l = (i.top + s.y) / o.y, u = i.width / o.x, d = i.height / o.y;
 	if (a && r) {
-		let e = kl(a), t = Ml(r) ? kl(r) : r, n = e, i = Zl(n);
+		let e = tu(a), t = iu(r) ? tu(r) : r, n = e, i = Cu(n);
 		for (; i && t !== n;) {
-			let e = eu(i), t = i.getBoundingClientRect(), r = Kl(i), a = t.left + (i.clientLeft + parseFloat(r.paddingLeft)) * e.x, o = t.top + (i.clientTop + parseFloat(r.paddingTop)) * e.y;
-			c *= e.x, l *= e.y, u *= e.x, d *= e.y, c += a, l += o, n = kl(i), i = Zl(n);
+			let e = Eu(i), t = i.getBoundingClientRect(), r = vu(i), a = t.left + (i.clientLeft + parseFloat(r.paddingLeft)) * e.x, o = t.top + (i.clientTop + parseFloat(r.paddingTop)) * e.y;
+			c *= e.x, l *= e.y, u *= e.x, d *= e.y, c += a, l += o, n = tu(i), i = Cu(n);
 		}
 	}
-	return dl({
+	return Ll({
 		width: u,
 		height: d,
 		x: c,
 		y: l
 	});
 }
-function au(e, t) {
-	let n = ql(e).scrollLeft;
-	return t ? t.left + n : iu(Al(e)).left + n;
+function ju(e, t) {
+	let n = yu(e).scrollLeft;
+	return t ? t.left + n : Au(nu(e)).left + n;
 }
-function ou(e, t) {
+function Mu(e, t) {
 	let n = e.getBoundingClientRect();
 	return {
-		x: n.left + t.scrollLeft - au(e, n),
+		x: n.left + t.scrollLeft - ju(e, n),
 		y: n.top + t.scrollTop
 	};
 }
-function su(e) {
-	let { elements: t, rect: n, offsetParent: r, strategy: i } = e, a = i === "fixed", o = Al(r), s = t ? Ll(t.floating) : !1;
+function Nu(e) {
+	let { elements: t, rect: n, offsetParent: r, strategy: i } = e, a = i === "fixed", o = nu(r), s = t ? lu(t.floating) : !1;
 	if (r === o || s && a) return n;
 	let c = {
 		scrollLeft: 0,
 		scrollTop: 0
-	}, l = Uc(1), u = Uc(0), d = Nl(r);
-	if ((d || !a) && ((Ol(r) !== "body" || Fl(o)) && (c = ql(r)), d)) {
-		let e = iu(r);
-		l = eu(r), u.x = e.x + r.clientLeft, u.y = e.y + r.clientTop;
+	}, l = hl(1), u = hl(0), d = au(r);
+	if ((d || !a) && ((eu(r) !== "body" || su(o)) && (c = yu(r)), d)) {
+		let e = Au(r);
+		l = Eu(r), u.x = e.x + r.clientLeft, u.y = e.y + r.clientTop;
 	}
-	let f = o && !d && !a ? ou(o, c) : Uc(0);
+	let f = o && !d && !a ? Mu(o, c) : hl(0);
 	return {
 		width: n.width * l.x,
 		height: n.height * l.y,
@@ -7344,29 +7640,29 @@ function su(e) {
 		y: n.y * l.y - c.scrollTop * l.y + u.y + f.y
 	};
 }
-function cu(e) {
+function Pu(e) {
 	return e.getClientRects ? Array.from(e.getClientRects()) : [];
 }
-function lu(e) {
-	let t = ql(e), n = e.ownerDocument.body, r = Bc(e.scrollWidth, e.clientWidth, n.scrollWidth, n.clientWidth), i = Bc(e.scrollHeight, e.clientHeight, n.scrollHeight, n.clientHeight), a = -t.scrollLeft + au(e), o = -t.scrollTop;
-	return Kl(n).direction === "rtl" && (a += Bc(e.clientWidth, n.clientWidth) - r), {
+function Fu(e) {
+	let t = yu(e), n = e.ownerDocument.body, r = fl(e.scrollWidth, e.clientWidth, n.scrollWidth, n.clientWidth), i = fl(e.scrollHeight, e.clientHeight, n.scrollHeight, n.clientHeight), a = -t.scrollLeft + ju(e), o = -t.scrollTop;
+	return vu(n).direction === "rtl" && (a += fl(e.clientWidth, n.clientWidth) - r), {
 		width: r,
 		height: i,
 		x: a,
 		y: o
 	};
 }
-var uu = 25;
-function du(e, t, n) {
+var Iu = 25;
+function Lu(e, t, n) {
 	n === void 0 && (n = "viewport");
-	let r = n === "layoutViewport", i = kl(e), a = Al(e), o = i.visualViewport, s = a.clientWidth, c = a.clientHeight, l = 0, u = 0;
+	let r = n === "layoutViewport", i = tu(e), a = nu(e), o = i.visualViewport, s = a.clientWidth, c = a.clientHeight, l = 0, u = 0;
 	if (o) {
-		let e = !Wl() || t === "fixed";
+		let e = !gu() || t === "fixed";
 		r ? e || (l = -o.offsetLeft, u = -o.offsetTop) : (s = o.width, c = o.height, e && (l = o.offsetLeft, u = o.offsetTop));
 	}
-	if (au(a) <= 0) {
+	if (ju(a) <= 0) {
 		let e = a.ownerDocument, t = e.body, n = getComputedStyle(t), r = e.compatMode === "CSS1Compat" && parseFloat(n.marginLeft) + parseFloat(n.marginRight) || 0, i = Math.abs(a.clientWidth - t.clientWidth - r), o = getComputedStyle(a).scrollbarGutter === "stable both-edges" ? i / 2 : i;
-		o <= uu && (s -= o);
+		o <= Iu && (s -= o);
 	}
 	return {
 		width: s,
@@ -7375,8 +7671,8 @@ function du(e, t, n) {
 		y: u
 	};
 }
-function fu(e, t) {
-	let n = iu(e, !0, t === "fixed"), r = n.top + e.clientTop, i = n.left + e.clientLeft, a = eu(e);
+function Ru(e, t) {
+	let n = Au(e, !0, t === "fixed"), r = n.top + e.clientTop, i = n.left + e.clientLeft, a = Eu(e);
 	return {
 		width: e.clientWidth * a.x,
 		height: e.clientHeight * a.y,
@@ -7384,13 +7680,13 @@ function fu(e, t) {
 		y: r * a.y
 	};
 }
-function pu(e, t, n) {
+function zu(e, t, n) {
 	let r;
-	if (t === "viewport" || t === "layoutViewport") r = du(e, n, t);
-	else if (t === "document") r = lu(Al(e));
-	else if (Ml(t)) r = fu(t, n);
+	if (t === "viewport" || t === "layoutViewport") r = Lu(e, n, t);
+	else if (t === "document") r = Fu(nu(e));
+	else if (iu(t)) r = Ru(t, n);
 	else {
-		let n = nu(e);
+		let n = Ou(e);
 		r = {
 			x: t.x - n.x,
 			y: t.y - n.y,
@@ -7398,23 +7694,23 @@ function pu(e, t, n) {
 			height: t.height
 		};
 	}
-	return dl(r);
+	return Ll(r);
 }
-function mu(e, t) {
+function Bu(e, t) {
 	let n = t.get(e);
 	if (n) return n;
-	let r = Xl(e, [], !1).filter((e) => Ml(e) && Ol(e) !== "body"), i = null, a = Kl(e).position === "fixed", o = a ? Jl(e) : e;
-	for (; Ml(o) && !Gl(o);) {
-		let e = Kl(o), t = Hl(o), n = i ? i.position : a ? "fixed" : "";
-		!t && (n === "fixed" || n === "absolute" && e.position === "static") ? r = r.filter((e) => e !== o) : i = e, o = Jl(o);
+	let r = Su(e, [], !1).filter((e) => iu(e) && eu(e) !== "body"), i = null, a = vu(e).position === "fixed", o = a ? bu(e) : e;
+	for (; iu(o) && !_u(o);) {
+		let e = vu(o), t = mu(o), n = i ? i.position : a ? "fixed" : "";
+		!t && (n === "fixed" || n === "absolute" && e.position === "static") ? r = r.filter((e) => e !== o) : i = e, o = bu(o);
 	}
 	return t.set(e, r), r;
 }
-function hu(e) {
-	let { element: t, boundary: n, rootBoundary: r, strategy: i } = e, a = [...n === "clippingAncestors" ? Ll(t) ? [] : mu(t, this._c) : [].concat(n), r], o = pu(t, a[0], i), s = o.top, c = o.right, l = o.bottom, u = o.left;
+function Vu(e) {
+	let { element: t, boundary: n, rootBoundary: r, strategy: i } = e, a = [...n === "clippingAncestors" ? lu(t) ? [] : Bu(t, this._c) : [].concat(n), r], o = zu(t, a[0], i), s = o.top, c = o.right, l = o.bottom, u = o.left;
 	for (let e = 1; e < a.length; e++) {
-		let n = pu(t, a[e], i);
-		s = Bc(n.top, s), c = zc(n.right, c), l = zc(n.bottom, l), u = Bc(n.left, u);
+		let n = zu(t, a[e], i);
+		s = fl(n.top, s), c = dl(n.right, c), l = dl(n.bottom, l), u = fl(n.left, u);
 	}
 	return {
 		width: c - u,
@@ -7423,24 +7719,24 @@ function hu(e) {
 		y: s
 	};
 }
-function gu(e) {
-	let { width: t, height: n } = Ql(e);
+function Hu(e) {
+	let { width: t, height: n } = wu(e);
 	return {
 		width: t,
 		height: n
 	};
 }
-function _u(e, t, n) {
-	let r = Nl(t), i = Al(t), a = n === "fixed", o = iu(e, !0, a, t), s = {
+function Uu(e, t, n) {
+	let r = au(t), i = nu(t), a = n === "fixed", o = Au(e, !0, a, t), s = {
 		scrollLeft: 0,
 		scrollTop: 0
-	}, c = Uc(0);
-	if ((r || !a) && ((Ol(t) !== "body" || Fl(i)) && (s = ql(t)), r)) {
-		let e = iu(t, !0, a, t);
+	}, c = hl(0);
+	if ((r || !a) && ((eu(t) !== "body" || su(i)) && (s = yu(t)), r)) {
+		let e = Au(t, !0, a, t);
 		c.x = e.x + t.clientLeft, c.y = e.y + t.clientTop;
 	}
-	!r && i && (c.x = au(i));
-	let l = i && !r && !a ? ou(i, s) : Uc(0);
+	!r && i && (c.x = ju(i));
+	let l = i && !r && !a ? Mu(i, s) : hl(0);
 	return {
 		x: o.left + s.scrollLeft - c.x - l.x,
 		y: o.top + s.scrollTop - c.y - l.y,
@@ -7448,34 +7744,34 @@ function _u(e, t, n) {
 		height: o.height
 	};
 }
-function vu(e) {
-	return Kl(e).position === "static";
+function Wu(e) {
+	return vu(e).position === "static";
 }
-function yu(e, t) {
-	if (!Nl(e) || Kl(e).position === "fixed") return null;
+function Gu(e, t) {
+	if (!au(e) || vu(e).position === "fixed") return null;
 	if (t) return t(e);
 	let n = e.offsetParent;
-	return Al(e) === n && (n = n.ownerDocument.body), n;
+	return nu(e) === n && (n = n.ownerDocument.body), n;
 }
-function bu(e, t) {
-	let n = kl(e);
-	if (Ll(e)) return n;
-	if (!Nl(e)) {
-		let t = Jl(e);
-		for (; t && !Gl(t);) {
-			if (Ml(t) && !vu(t)) return t;
-			t = Jl(t);
+function Ku(e, t) {
+	let n = tu(e);
+	if (lu(e)) return n;
+	if (!au(e)) {
+		let t = bu(e);
+		for (; t && !_u(t);) {
+			if (iu(t) && !Wu(t)) return t;
+			t = bu(t);
 		}
 		return n;
 	}
-	let r = yu(e, t);
-	for (; r && Il(r) && vu(r);) r = yu(r, t);
-	return r && Gl(r) && vu(r) && !Hl(r) ? n : r || Ul(e) || n;
+	let r = Gu(e, t);
+	for (; r && cu(r) && Wu(r);) r = Gu(r, t);
+	return r && _u(r) && Wu(r) && !mu(r) ? n : r || hu(e) || n;
 }
-var xu = async function(e) {
-	let t = this.getOffsetParent || bu, n = this.getDimensions, r = await n(e.floating);
+var qu = async function(e) {
+	let t = this.getOffsetParent || Ku, n = this.getDimensions, r = await n(e.floating);
 	return {
-		reference: _u(e.reference, await t(e.floating), e.strategy),
+		reference: Uu(e.reference, await t(e.floating), e.strategy),
 		floating: {
 			x: 0,
 			y: 0,
@@ -7484,26 +7780,26 @@ var xu = async function(e) {
 		}
 	};
 };
-function Su(e) {
-	return Kl(e).direction === "rtl";
+function Ju(e) {
+	return vu(e).direction === "rtl";
 }
-var Cu = {
-	convertOffsetParentRelativeRectToViewportRelativeRect: su,
-	getDocumentElement: Al,
-	getClippingRect: hu,
-	getOffsetParent: bu,
-	getElementRects: xu,
-	getClientRects: cu,
-	getDimensions: gu,
-	getScale: eu,
-	isElement: Ml,
-	isRTL: Su
+var Yu = {
+	convertOffsetParentRelativeRectToViewportRelativeRect: Nu,
+	getDocumentElement: nu,
+	getClippingRect: Vu,
+	getOffsetParent: Ku,
+	getElementRects: qu,
+	getClientRects: Pu,
+	getDimensions: Hu,
+	getScale: Eu,
+	isElement: iu,
+	isRTL: Ju
 };
-function wu(e, t) {
+function Xu(e, t) {
 	return e.x === t.x && e.y === t.y && e.width === t.width && e.height === t.height;
 }
-function Tu(e, t, n) {
-	let r = null, i, a = Al(e);
+function Zu(e, t, n) {
+	let r = null, i, a = nu(e);
 	function o() {
 		var e;
 		clearTimeout(i), (e = r) == null || e.disconnect(), r = null;
@@ -7512,13 +7808,13 @@ function Tu(e, t, n) {
 		n === void 0 && (n = !1), c === void 0 && (c = 1), o();
 		let l = e.getBoundingClientRect(), { left: u, top: d, width: f, height: p } = l;
 		if (n || t(), !f || !p) return;
-		let m = Hc(d), h = Hc(a.clientWidth - (u + f)), g = Hc(a.clientHeight - (d + p)), _ = Hc(u), v = {
+		let m = ml(d), h = ml(a.clientWidth - (u + f)), g = ml(a.clientHeight - (d + p)), _ = ml(u), v = {
 			rootMargin: -m + "px " + -h + "px " + -g + "px " + -_ + "px",
-			threshold: Bc(0, zc(1, c)) || 1
+			threshold: fl(0, dl(1, c)) || 1
 		}, y = !0;
 		function b(t) {
 			let n = t[0].intersectionRatio;
-			if (!wu(l, e.getBoundingClientRect())) return s();
+			if (!Xu(l, e.getBoundingClientRect())) return s();
 			if (n !== c) {
 				if (!y) return s();
 				n ? s(!1, n) : i = setTimeout(() => {
@@ -7537,18 +7833,18 @@ function Tu(e, t, n) {
 		}
 		r.observe(e);
 	}
-	let c = kl(e), l = () => s(n);
+	let c = tu(e), l = () => s(n);
 	return c.addEventListener("resize", l), s(!0), () => {
 		c.removeEventListener("resize", l), o();
 	};
 }
-function Eu(e, t, n, r) {
+function Qu(e, t, n, r) {
 	r === void 0 && (r = {});
-	let { ancestorScroll: i = !0, ancestorResize: a = !0, elementResize: o = typeof ResizeObserver == "function", layoutShift: s = typeof IntersectionObserver == "function", animationFrame: c = !1 } = r, l = $l(e), u = i || a ? [...l ? Xl(l) : [], ...t ? Xl(t) : []] : [];
+	let { ancestorScroll: i = !0, ancestorResize: a = !0, elementResize: o = typeof ResizeObserver == "function", layoutShift: s = typeof IntersectionObserver == "function", animationFrame: c = !1 } = r, l = Tu(e), u = i || a ? [...l ? Su(l) : [], ...t ? Su(t) : []] : [];
 	u.forEach((e) => {
 		i && e.addEventListener("scroll", n), a && e.addEventListener("resize", n);
 	});
-	let d = l && s ? Tu(l, n, a) : null, f = -1, p = null;
+	let d = l && s ? Zu(l, n, a) : null, f = -1, p = null;
 	o && (p = new ResizeObserver((e) => {
 		let [r] = e;
 		r && r.target === l && p && t && (p.unobserve(t), cancelAnimationFrame(f), f = requestAnimationFrame(() => {
@@ -7556,11 +7852,11 @@ function Eu(e, t, n, r) {
 			(e = p) == null || e.observe(t);
 		})), n();
 	}), l && !c && p.observe(l), t && p.observe(t));
-	let m, h = c ? iu(e) : null;
+	let m, h = c ? Au(e) : null;
 	c && g();
 	function g() {
-		let t = iu(e);
-		h && !wu(h, t) && n(), h = t, m = requestAnimationFrame(g);
+		let t = Au(e);
+		h && !Xu(h, t) && n(), h = t, m = requestAnimationFrame(g);
 	}
 	return n(), () => {
 		var e;
@@ -7569,18 +7865,18 @@ function Eu(e, t, n, r) {
 		}), d?.(), (e = p) == null || e.disconnect(), p = null, c && cancelAnimationFrame(m);
 	};
 }
-var Du = Cl, Ou = wl, ku = _l, Au = El, ju = bl, Mu = gl, Nu = Tl, Pu = (e, t, n) => {
+var $u = Yl, ed = Xl, td = Ul, nd = Ql, rd = Kl, id = Hl, ad = Zl, od = (e, t, n) => {
 	let r = /* @__PURE__ */ new Map(), i = n ?? {}, a = {
-		...Cu,
+		...Yu,
 		...i.platform,
 		_c: r
 	};
-	return hl(e, t, {
+	return Vl(e, t, {
 		...i,
 		platform: a
 	});
-}, Fu = typeof document < "u" ? u : function() {};
-function Iu(e, t) {
+}, sd = typeof document < "u" ? d : function() {};
+function cd(e, t) {
 	if (e === t) return !0;
 	if (typeof e != typeof t) return !1;
 	if (typeof e == "function" && e.toString() === t.toString()) return !0;
@@ -7588,33 +7884,33 @@ function Iu(e, t) {
 	if (e && t && typeof e == "object") {
 		if (Array.isArray(e)) {
 			if (n = e.length, n !== t.length) return !1;
-			for (r = n; r-- !== 0;) if (!Iu(e[r], t[r])) return !1;
+			for (r = n; r-- !== 0;) if (!cd(e[r], t[r])) return !1;
 			return !0;
 		}
 		if (i = Object.keys(e), n = i.length, n !== Object.keys(t).length) return !1;
 		for (r = n; r-- !== 0;) if (!{}.hasOwnProperty.call(t, i[r])) return !1;
 		for (r = n; r-- !== 0;) {
 			let n = i[r];
-			if (!(n === "_owner" && e.$$typeof) && !Iu(e[n], t[n])) return !1;
+			if (!(n === "_owner" && e.$$typeof) && !cd(e[n], t[n])) return !1;
 		}
 		return !0;
 	}
 	return e !== e && t !== t;
 }
-function Lu(e) {
+function ld(e) {
 	return typeof window > "u" ? 1 : (e.ownerDocument.defaultView || window).devicePixelRatio || 1;
 }
-function Ru(e, t) {
-	let n = Lu(e);
+function ud(e, t) {
+	let n = ld(e);
 	return Math.round(t * n) / n;
 }
-function zu(t) {
+function dd(t) {
 	let n = e.useRef(t);
-	return Fu(() => {
+	return sd(() => {
 		n.current = t;
 	}), n;
 }
-function Bu(t) {
+function fd(t) {
 	t === void 0 && (t = {});
 	let { placement: n = "bottom", strategy: r = "absolute", middleware: i = [], platform: a, elements: { reference: o, floating: s } = {}, transform: c = !0, whileElementsMounted: l, open: u } = t, [d, f] = e.useState({
 		x: 0,
@@ -7624,24 +7920,24 @@ function Bu(t) {
 		middlewareData: {},
 		isPositioned: !1
 	}), [p, m] = e.useState(i);
-	Iu(p, i) || m(i);
-	let [h, g] = e.useState(null), [_, v] = e.useState(null), b = e.useCallback((e) => {
+	cd(p, i) || m(i);
+	let [h, g] = e.useState(null), [_, v] = e.useState(null), y = e.useCallback((e) => {
 		e !== w.current && (w.current = e, g(e));
 	}, []), x = e.useCallback((e) => {
 		e !== T.current && (T.current = e, v(e));
-	}, []), S = o || h, C = s || _, w = e.useRef(null), T = e.useRef(null), E = e.useRef(d), D = l != null, O = zu(l), k = zu(a), A = zu(u), j = e.useCallback(() => {
+	}, []), S = o || h, C = s || _, w = e.useRef(null), T = e.useRef(null), E = e.useRef(d), D = l != null, O = dd(l), k = dd(a), A = dd(u), j = e.useCallback(() => {
 		if (!w.current || !T.current) return;
 		let e = {
 			placement: n,
 			strategy: r,
 			middleware: p
 		};
-		k.current && (e.platform = k.current), Pu(w.current, T.current, e).then((e) => {
+		k.current && (e.platform = k.current), od(w.current, T.current, e).then((e) => {
 			let t = {
 				...e,
 				isPositioned: A.current !== !1
 			};
-			M.current && !Iu(E.current, t) && (E.current = t, y.flushSync(() => {
+			M.current && !cd(E.current, t) && (E.current = t, b.flushSync(() => {
 				f(t);
 			}));
 		});
@@ -7652,16 +7948,16 @@ function Bu(t) {
 		k,
 		A
 	]);
-	Fu(() => {
+	sd(() => {
 		u === !1 && E.current.isPositioned && (E.current.isPositioned = !1, f((e) => ({
 			...e,
 			isPositioned: !1
 		})));
 	}, [u]);
 	let M = e.useRef(!1);
-	Fu(() => (M.current = !0, () => {
+	sd(() => (M.current = !0, () => {
 		M.current = !1;
-	}), []), Fu(() => {
+	}), []), sd(() => {
 		if (S && (w.current = S), C && (T.current = C), S && C) {
 			if (O.current) return O.current(S, C, j);
 			j();
@@ -7676,9 +7972,9 @@ function Bu(t) {
 	let N = e.useMemo(() => ({
 		reference: w,
 		floating: T,
-		setReference: b,
+		setReference: y,
 		setFloating: x
-	}), [b, x]), P = e.useMemo(() => ({
+	}), [y, x]), P = e.useMemo(() => ({
 		reference: S,
 		floating: C
 	}), [S, C]), F = e.useMemo(() => {
@@ -7688,11 +7984,11 @@ function Bu(t) {
 			top: 0
 		};
 		if (!P.floating) return e;
-		let t = Ru(P.floating, d.x), n = Ru(P.floating, d.y);
+		let t = ud(P.floating, d.x), n = ud(P.floating, d.y);
 		return c ? {
 			...e,
 			transform: "translate(" + t + "px, " + n + "px)",
-			...Lu(P.floating) >= 1.5 && { willChange: "transform" }
+			...ld(P.floating) >= 1.5 && { willChange: "transform" }
 		} : {
 			position: r,
 			left: t,
@@ -7719,7 +8015,7 @@ function Bu(t) {
 		F
 	]);
 }
-var Vu = (e) => {
+var pd = (e) => {
 	function t(e) {
 		return {}.hasOwnProperty.call(e, "current");
 	}
@@ -7728,67 +8024,67 @@ var Vu = (e) => {
 		options: e,
 		fn(n) {
 			let { element: r, padding: i } = typeof e == "function" ? e(n) : e;
-			return r && t(r) ? r.current == null ? {} : Mu({
+			return r && t(r) ? r.current == null ? {} : id({
 				element: r.current,
 				padding: i
-			}).fn(n) : r ? Mu({
+			}).fn(n) : r ? id({
 				element: r,
 				padding: i
 			}).fn(n) : {};
 		}
 	};
-}, Hu = (e, t) => {
-	let n = Du(e);
+}, md = (e, t) => {
+	let n = $u(e);
 	return {
 		name: n.name,
 		fn: n.fn,
 		options: [e, t]
 	};
-}, Uu = (e, t) => {
-	let n = Ou(e);
+}, hd = (e, t) => {
+	let n = ed(e);
 	return {
 		name: n.name,
 		fn: n.fn,
 		options: [e, t]
 	};
-}, Wu = (e, t) => ({
-	fn: Nu(e).fn,
+}, gd = (e, t) => ({
+	fn: ad(e).fn,
 	options: [e, t]
-}), Gu = (e, t) => {
-	let n = ku(e);
+}), _d = (e, t) => {
+	let n = td(e);
 	return {
 		name: n.name,
 		fn: n.fn,
 		options: [e, t]
 	};
-}, Ku = (e, t) => {
-	let n = Au(e);
+}, vd = (e, t) => {
+	let n = nd(e);
 	return {
 		name: n.name,
 		fn: n.fn,
 		options: [e, t]
 	};
-}, qu = (e, t) => {
-	let n = ju(e);
+}, yd = (e, t) => {
+	let n = rd(e);
 	return {
 		name: n.name,
 		fn: n.fn,
 		options: [e, t]
 	};
-}, Ju = (e, t) => {
-	let n = Vu(e);
+}, bd = (e, t) => {
+	let n = pd(e);
 	return {
 		name: n.name,
 		fn: n.fn,
 		options: [e, t]
 	};
-}, Yu = Object.defineProperty, Xu = (e, t) => Yu(e, "name", {
+}, xd = Object.defineProperty, Sd = (e, t) => xd(e, "name", {
 	value: t,
 	configurable: !0
 });
-function Zu(t) {
+function Cd(t) {
 	let [n, r] = e.useState(void 0);
-	return Wo(() => {
+	return gs(() => {
 		if (t) {
 			r({
 				width: t.offsetWidth,
@@ -7816,21 +8112,21 @@ function Zu(t) {
 		r(void 0);
 	}, [t]), n;
 }
-Xu(Zu, "useSize");
+Sd(Cd, "useSize");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-popper@1.3.8_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_04b331dcddb9198baac431c3d7633ae9/node_modules/@radix-ui/react-popper/dist/index.mjs
-var Qu = Object.defineProperty, $u = (e, t) => Qu(e, "name", {
+var wd = Object.defineProperty, Td = (e, t) => wd(e, "name", {
 	value: t,
 	configurable: !0
-}), ed = {
+}), Ed = {
 	Partial: "partial",
 	Always: "always"
-}, td = {
+}, Dd = {
 	Optimized: "optimized",
 	Always: "always"
-}, nd = "Popper", [rd, id] = /* @__PURE__ */ Ho(nd), [ad, od] = rd(nd), sd = /* @__PURE__ */ $u((t) => {
+}, Od = "Popper", [kd, Ad] = /* @__PURE__ */ ms(Od), [jd, Md] = kd(Od), Nd = /* @__PURE__ */ Td((t) => {
 	let { __scopePopper: n, children: r } = t, [i, a] = e.useState(null), [o, s] = e.useState(void 0);
-	return /* @__PURE__ */ _(ad, {
+	return /* @__PURE__ */ v(jd, {
 		scope: n,
 		anchor: i,
 		onAnchorChange: a,
@@ -7838,8 +8134,8 @@ var Qu = Object.defineProperty, $u = (e, t) => Qu(e, "name", {
 		setPlacementState: s,
 		children: r
 	});
-}, "Popper"), cd = "PopperAnchor", ld = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $u(function(t, n) {
-	let { __scopePopper: r, virtualRef: i, ...a } = t, o = od(cd, r), s = e.useRef(null), c = o.onAnchorChange, l = J(n, e.useCallback((e) => {
+}, "Popper"), Pd = "PopperAnchor", Fd = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Td(function(t, n) {
+	let { __scopePopper: r, virtualRef: i, ...a } = t, o = Md(Pd, r), s = e.useRef(null), c = o.onAnchorChange, l = J(n, e.useCallback((e) => {
 		s.current = e, e && c(e);
 	}, [c])), u = e.useRef(null);
 	e.useEffect(() => {
@@ -7847,15 +8143,15 @@ var Qu = Object.defineProperty, $u = (e, t) => Qu(e, "name", {
 		let e = u.current;
 		u.current = i.current, e !== u.current && c(u.current);
 	});
-	let d = o.placementState && gd(o.placementState), f = d?.[0], p = d?.[1];
-	return i ? null : /* @__PURE__ */ _(Ss.div, {
+	let d = o.placementState && Hd(o.placementState), f = d?.[0], p = d?.[1];
+	return i ? null : /* @__PURE__ */ v(Js.div, {
 		"data-radix-popper-side": f,
 		"data-radix-popper-align": p,
 		...a,
 		ref: l
 	});
-}, "PopperAnchor")), ud = "PopperContent", [dd, fd] = rd(ud), pd = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $u(function(t, n) {
-	let { __scopePopper: r, side: i = "bottom", sideOffset: a = 0, align: o = "center", alignOffset: s = 0, arrowPadding: c = 0, avoidCollisions: l = !0, collisionBoundary: u = [], collisionPadding: d = 0, sticky: f = ed.Partial, hideWhenDetached: p = !1, updatePositionStrategy: m = td.Optimized, onPlaced: h, ...g } = t, v = od(ud, r), [y, b] = e.useState(null), x = J(n, b), [S, C] = e.useState(null), w = Zu(S), T = w?.width ?? 0, E = w?.height ?? 0, D = i + (o === "center" ? "" : "-" + o), O = typeof d == "number" ? d : {
+}, "PopperAnchor")), Id = "PopperContent", [Ld, Rd] = kd(Id), zd = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Td(function(t, n) {
+	let { __scopePopper: r, side: i = "bottom", sideOffset: a = 0, align: o = "center", alignOffset: s = 0, arrowPadding: c = 0, avoidCollisions: l = !0, collisionBoundary: u = [], collisionPadding: d = 0, sticky: f = Ed.Partial, hideWhenDetached: p = !1, updatePositionStrategy: m = Dd.Optimized, onPlaced: h, ...g } = t, _ = Md(Id, r), [y, b] = e.useState(null), x = J(n, b), [S, C] = e.useState(null), w = Cd(S), T = w?.width ?? 0, E = w?.height ?? 0, D = i + (o === "center" ? "" : "-" + o), O = typeof d == "number" ? d : {
 		top: 0,
 		right: 0,
 		bottom: 0,
@@ -7863,58 +8159,58 @@ var Qu = Object.defineProperty, $u = (e, t) => Qu(e, "name", {
 		...d
 	}, k = Array.isArray(u) ? u : [u], A = k.length > 0, j = {
 		padding: O,
-		boundary: k.filter(md),
+		boundary: k.filter(Bd),
 		altBoundary: A
-	}, { refs: M, floatingStyles: N, placement: P, isPositioned: F, middlewareData: I } = Bu({
+	}, { refs: M, floatingStyles: N, placement: P, isPositioned: F, middlewareData: I } = fd({
 		strategy: "fixed",
 		placement: D,
-		whileElementsMounted: /* @__PURE__ */ $u((...e) => Eu(...e, { animationFrame: m === td.Always }), "whileElementsMounted"),
-		elements: { reference: v.anchor },
+		whileElementsMounted: /* @__PURE__ */ Td((...e) => Qu(...e, { animationFrame: m === Dd.Always }), "whileElementsMounted"),
+		elements: { reference: _.anchor },
 		middleware: [
-			Hu({
+			md({
 				mainAxis: a + E,
 				alignmentAxis: s
 			}),
-			l && Uu({
+			l && hd({
 				mainAxis: !0,
 				crossAxis: !1,
-				limiter: f === ed.Partial ? Wu() : void 0,
+				limiter: f === Ed.Partial ? gd() : void 0,
 				...j
 			}),
-			l && Gu({ ...j }),
-			Ku({
+			l && _d({ ...j }),
+			vd({
 				...j,
-				apply: /* @__PURE__ */ $u(({ elements: e, rects: t, availableWidth: n, availableHeight: r }) => {
+				apply: /* @__PURE__ */ Td(({ elements: e, rects: t, availableWidth: n, availableHeight: r }) => {
 					let { width: i, height: a } = t.reference, o = e.floating.style;
 					o.setProperty("--radix-popper-available-width", `${n}px`), o.setProperty("--radix-popper-available-height", `${r}px`), o.setProperty("--radix-popper-anchor-width", `${i}px`), o.setProperty("--radix-popper-anchor-height", `${a}px`);
 				}, "apply")
 			}),
-			S && Ju({
+			S && bd({
 				element: S,
 				padding: c
 			}),
-			hd({
+			Vd({
 				arrowWidth: T,
 				arrowHeight: E
 			}),
-			p && qu({
+			p && yd({
 				strategy: "referenceHidden",
 				...j,
 				boundary: A ? j.boundary : void 0
 			})
 		]
-	}), L = v.setPlacementState;
-	Wo(() => (L(P), () => {
+	}), L = _.setPlacementState;
+	gs(() => (L(P), () => {
 		L(void 0);
 	}), [P, L]);
-	let [R, ee] = gd(P), te = Ws(h);
-	Wo(() => {
+	let [R, ee] = Hd(P), te = gc(h);
+	gs(() => {
 		F && te?.();
 	}, [F, te]);
 	let z = I.arrow?.x, B = I.arrow?.y, ne = I.arrow?.centerOffset !== 0, [re, ie] = e.useState();
-	return Wo(() => {
+	return gs(() => {
 		y && ie(window.getComputedStyle(y).zIndex);
-	}, [y]), /* @__PURE__ */ _("div", {
+	}, [y]), /* @__PURE__ */ v("div", {
 		ref: M.setFloating,
 		"data-radix-popper-content-wrapper": "",
 		style: {
@@ -7929,7 +8225,7 @@ var Qu = Object.defineProperty, $u = (e, t) => Qu(e, "name", {
 			}
 		},
 		dir: t.dir,
-		children: /* @__PURE__ */ _(dd, {
+		children: /* @__PURE__ */ v(Ld, {
 			scope: r,
 			placedSide: R,
 			placedAlign: ee,
@@ -7937,7 +8233,7 @@ var Qu = Object.defineProperty, $u = (e, t) => Qu(e, "name", {
 			arrowX: z,
 			arrowY: B,
 			shouldHideArrow: ne,
-			children: /* @__PURE__ */ _(Ss.div, {
+			children: /* @__PURE__ */ v(Js.div, {
 				"data-side": R,
 				"data-align": ee,
 				...g,
@@ -7950,15 +8246,15 @@ var Qu = Object.defineProperty, $u = (e, t) => Qu(e, "name", {
 		})
 	});
 }, "PopperContent"));
-function md(e) {
+function Bd(e) {
 	return e !== null;
 }
-$u(md, "isNotNull");
-var hd = /* @__PURE__ */ $u((e) => ({
+Td(Bd, "isNotNull");
+var Vd = /* @__PURE__ */ Td((e) => ({
 	name: "transformOrigin",
 	options: e,
 	fn(t) {
-		let { placement: n, rects: r, middlewareData: i } = t, a = i.arrow?.centerOffset !== 0, o = a ? 0 : e.arrowWidth, s = a ? 0 : e.arrowHeight, [c, l] = gd(n), u = {
+		let { placement: n, rects: r, middlewareData: i } = t, a = i.arrow?.centerOffset !== 0, o = a ? 0 : e.arrowWidth, s = a ? 0 : e.arrowHeight, [c, l] = Hd(n), u = {
 			start: "0%",
 			center: "50%",
 			end: "100%"
@@ -7969,38 +8265,38 @@ var hd = /* @__PURE__ */ $u((e) => ({
 		} };
 	}
 }), "transformOrigin");
-function gd(e) {
+function Hd(e) {
 	let [t, n = "center"] = e.split("-");
 	return [t, n];
 }
-$u(gd, "getSideAndAlignFromPlacement");
+Td(Hd, "getSideAndAlignFromPlacement");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-portal@1.1.18_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react_8071c404ead3ecd57efdf7c5517d13a4/node_modules/@radix-ui/react-portal/dist/index.mjs
-var _d = Object.defineProperty, vd = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ ((e, t) => _d(e, "name", {
+var Ud = Object.defineProperty, Wd = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ ((e, t) => Ud(e, "name", {
 	value: t,
 	configurable: !0
 }))(function(t, n) {
 	let { container: r, ...i } = t, [a, o] = e.useState(!1);
-	Wo(() => o(!0), []);
+	gs(() => o(!0), []);
 	let s = r || a && globalThis?.document?.body;
-	return s ? y.createPortal(/* @__PURE__ */ _(Ss.div, {
+	return s ? b.createPortal(/* @__PURE__ */ v(Js.div, {
 		...i,
 		ref: n
 	}), s) : null;
-}, "Portal")), yd = Object.defineProperty, bd = (e, t) => yd(e, "name", {
+}, "Portal")), Gd = Object.defineProperty, Kd = (e, t) => Gd(e, "name", {
 	value: t,
 	configurable: !0
 });
-function xd(t, n) {
+function qd(t, n) {
 	return e.useReducer((e, t) => n[e][t] ?? e, t);
 }
-bd(xd, "useStateMachine");
-var Sd = /* @__PURE__ */ bd((t) => {
-	let { present: n, children: r } = t, i = Cd(n), a = typeof r == "function" ? r({ present: i.isPresent }) : e.Children.only(r), o = Td(i.ref, Dd(a));
+Kd(qd, "useStateMachine");
+var Jd = /* @__PURE__ */ Kd((t) => {
+	let { present: n, children: r } = t, i = Yd(n), a = typeof r == "function" ? r({ present: i.isPresent }) : e.Children.only(r), o = Zd(i.ref, $d(a));
 	return typeof r == "function" || i.isPresent ? e.cloneElement(a, { ref: o }) : null;
 }, "Presence");
-function Cd(t) {
-	let [n, r] = e.useState(), i = e.useRef(null), a = e.useRef(t), o = e.useRef("none"), s = e.useRef(void 0), [c, l] = xd(t ? "mounted" : "unmounted", {
+function Yd(t) {
+	let [n, r] = e.useState(), i = e.useRef(null), a = e.useRef(t), o = e.useRef("none"), s = e.useRef(void 0), [c, l] = qd(t ? "mounted" : "unmounted", {
 		mounted: {
 			UNMOUNT: "unmounted",
 			ANIMATION_OUT: "unmountSuspended"
@@ -8012,25 +8308,25 @@ function Cd(t) {
 		unmounted: { MOUNT: "mounted" }
 	});
 	return e.useEffect(() => {
-		c === "mounted" ? (o.current = s.current ?? Ed(i.current), s.current = void 0) : o.current = "none";
-	}, [c]), Wo(() => {
+		c === "mounted" ? (o.current = s.current ?? Qd(i.current), s.current = void 0) : o.current = "none";
+	}, [c]), gs(() => {
 		let e = i.current, n = a.current;
 		if (n !== t) {
-			let r = o.current, i = Ed(e);
+			let r = o.current, i = Qd(e);
 			t ? (s.current = i, l("MOUNT")) : i === "none" || e?.display === "none" ? l("UNMOUNT") : l(n && r !== i ? "ANIMATION_OUT" : "UNMOUNT"), a.current = t;
 		}
-	}, [t, l]), Wo(() => {
+	}, [t, l]), gs(() => {
 		if (n) {
-			let e, t = n.ownerDocument.defaultView ?? window, r = /* @__PURE__ */ bd((r) => {
-				let o = Ed(i.current).includes(CSS.escape(r.animationName));
+			let e, t = n.ownerDocument.defaultView ?? window, r = /* @__PURE__ */ Kd((r) => {
+				let o = Qd(i.current).includes(CSS.escape(r.animationName));
 				if (r.target === n && o && (l("ANIMATION_END"), !a.current)) {
 					let r = n.style.animationFillMode;
 					n.style.animationFillMode = "forwards", e = t.setTimeout(() => {
 						n.style.animationFillMode === "forwards" && (n.style.animationFillMode = r);
 					});
 				}
-			}, "handleAnimationEnd"), s = /* @__PURE__ */ bd((e) => {
-				e.target === n && (o.current = Ed(i.current));
+			}, "handleAnimationEnd"), s = /* @__PURE__ */ Kd((e) => {
+				e.target === n && (o.current = Qd(i.current));
 			}, "handleAnimationStart");
 			return n.addEventListener("animationstart", s), n.addEventListener("animationcancel", r), n.addEventListener("animationend", r), () => {
 				t.clearTimeout(e), n.removeEventListener("animationstart", s), n.removeEventListener("animationcancel", r), n.removeEventListener("animationend", r);
@@ -8042,109 +8338,109 @@ function Cd(t) {
 		ref: e.useCallback((e) => {
 			if (e) {
 				let t = getComputedStyle(e);
-				i.current = t, s.current = Ed(t);
+				i.current = t, s.current = Qd(t);
 			} else i.current = null;
 			r(e);
 		}, [])
 	};
 }
-bd(Cd, "usePresence");
-function wd(e, t) {
+Kd(Yd, "usePresence");
+function Xd(e, t) {
 	if (typeof e == "function") return e(t);
 	e != null && (e.current = t);
 }
-bd(wd, "setRef");
-function Td(...t) {
+Kd(Xd, "setRef");
+function Zd(...t) {
 	let n = e.useRef(t);
 	return n.current = t, e.useCallback((e) => {
 		let t = n.current, r = !1, i = t.map((t) => {
-			let n = wd(t, e);
+			let n = Xd(t, e);
 			return !r && typeof n == "function" && (r = !0), n;
 		});
 		if (r) return () => {
 			for (let e = 0; e < i.length; e++) {
 				let n = i[e];
-				typeof n == "function" ? n() : wd(t[e], null);
+				typeof n == "function" ? n() : Xd(t[e], null);
 			}
 		};
 	}, []);
 }
-bd(Td, "useStableComposedRefs");
-function Ed(e) {
+Kd(Zd, "useStableComposedRefs");
+function Qd(e) {
 	return e?.animationName || "none";
 }
-bd(Ed, "getAnimationName");
-function Dd(e) {
+Kd(Qd, "getAnimationName");
+function $d(e) {
 	let t = Object.getOwnPropertyDescriptor(e.props, "ref")?.get, n = t && "isReactWarning" in t && t.isReactWarning;
 	return n ? e.ref : (t = Object.getOwnPropertyDescriptor(e, "ref")?.get, n = t && "isReactWarning" in t && t.isReactWarning, n ? e.props.ref : e.props.ref || e.ref);
 }
-bd(Dd, "getElementRef");
+Kd($d, "getElementRef");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-use-is-hydrated@0.1.3_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-use-is-hydrated/dist/index.mjs
-var Od = Object.defineProperty, kd = (e, t) => Od(e, "name", {
+var ef = Object.defineProperty, tf = (e, t) => ef(e, "name", {
 	value: t,
 	configurable: !0
-}), Ad = !1;
-function jd() {
-	let [t, n] = e.useState(Ad);
+}), nf = !1;
+function rf() {
+	let [t, n] = e.useState(nf);
 	return e.useEffect(() => {
-		Ad || (Ad = !0, n(!0));
+		nf || (nf = !0, n(!0));
 	}, []), t;
 }
-kd(jd, "useIsHydrated");
-var Md = e.useSyncExternalStore;
-function Nd() {
+tf(rf, "useIsHydrated");
+var af = e.useSyncExternalStore;
+function of() {
 	return () => {};
 }
-kd(Nd, "subscribe");
-function Pd() {
-	return Md(Nd, () => !0, () => !1);
+tf(of, "subscribe");
+function sf() {
+	return af(of, () => !0, () => !1);
 }
-kd(Pd, "useIsHydratedModern");
-var Fd = typeof Md == "function" ? Pd : jd, Id = Object.defineProperty, Ld = (e, t) => Id(e, "name", {
+tf(sf, "useIsHydratedModern");
+var cf = typeof af == "function" ? sf : rf, lf = Object.defineProperty, uf = (e, t) => lf(e, "name", {
 	value: t,
 	configurable: !0
-}), Rd = "rovingFocusGroup.onEntryFocus", zd = {
+}), df = "rovingFocusGroup.onEntryFocus", ff = {
 	bubbles: !1,
 	cancelable: !0
-}, Bd = "RovingFocusGroup", [Vd, Hd, Ud] = /* @__PURE__ */ Es(Bd), [Wd, Gd] = /* @__PURE__ */ Ho(Bd, [Ud]), Kd = {
+}, pf = "RovingFocusGroup", [mf, hf, gf] = /* @__PURE__ */ Qs(pf), [_f, vf] = /* @__PURE__ */ ms(pf, [gf]), yf = {
 	Vertical: "vertical",
 	Horizontal: "horizontal"
-}, qd = {
+}, bf = {
 	LTR: "ltr",
 	RTL: "rtl"
-}, [Jd, Yd] = Wd(Bd), Xd = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Ld(function(e, t) {
-	return /* @__PURE__ */ _(Vd.Provider, {
+}, [xf, Sf] = _f(pf), Cf = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ uf(function(e, t) {
+	return /* @__PURE__ */ v(mf.Provider, {
 		scope: e.__scopeRovingFocusGroup,
-		children: /* @__PURE__ */ _(Vd.Slot, {
+		children: /* @__PURE__ */ v(mf.Slot, {
 			scope: e.__scopeRovingFocusGroup,
-			children: /* @__PURE__ */ _(Zd, {
+			children: /* @__PURE__ */ v(wf, {
 				...e,
 				ref: t
 			})
 		})
 	});
-}, "RovingFocusGroup")), Zd = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Ld(function(t, n) {
-	let { __scopeRovingFocusGroup: r, orientation: i, loop: a = !1, dir: o, currentTabStopId: s, defaultCurrentTabStopId: c, onCurrentTabStopIdChange: l, onEntryFocus: u, preventScrollOnEntryFocus: d = !1, ...f } = t, p = e.useRef(null), m = J(n, p), h = Vs(o), [g, v] = $o({
+}, "RovingFocusGroup")), wf = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ uf(function(t, n) {
+	let { __scopeRovingFocusGroup: r, orientation: i, loop: a = !1, dir: o, currentTabStopId: s, defaultCurrentTabStopId: c, onCurrentTabStopIdChange: l, onEntryFocus: u, preventScrollOnEntryFocus: d = !1, ...f } = t, p = e.useRef(null), m = J(n, p), h = pc(o), [g, _] = Ts({
 		prop: s,
 		defaultProp: c ?? null,
 		onChange: l,
-		caller: Bd
-	}), [y, b] = e.useState(!1), x = Ws(u), S = Hd(r), C = e.useRef(!1), [w, T] = e.useState(0);
+		caller: pf
+	}), [y, b] = e.useState(!1), x = gc(u), S = hf(r), C = e.useRef(!1), [w, T] = e.useState(0);
 	return e.useEffect(() => {
 		let e = p.current;
-		if (e) return e.addEventListener(Rd, x), () => e.removeEventListener(Rd, x);
-	}, [x]), /* @__PURE__ */ _(Jd, {
+		if (e) return e.addEventListener(df, x), () => e.removeEventListener(df, x);
+	}, [x]), /* @__PURE__ */ v(xf, {
 		scope: r,
 		orientation: i,
 		dir: h,
 		loop: a,
 		currentTabStopId: g,
-		onItemFocus: e.useCallback((e) => v(e), [v]),
+		onItemFocus: e.useCallback((e) => _(e), [_]),
 		onItemShiftTab: e.useCallback(() => b(!0), []),
 		onFocusableItemAdd: e.useCallback(() => T((e) => e + 1), []),
 		onFocusableItemRemove: e.useCallback(() => T((e) => e - 1), []),
-		children: /* @__PURE__ */ _(Ss.div, {
+		children: /* @__PURE__ */ v(Js.div, {
 			tabIndex: y || w === 0 ? -1 : 0,
 			"data-orientation": i,
 			...f,
@@ -8159,10 +8455,10 @@ var Fd = typeof Md == "function" ? Pd : jd, Id = Object.defineProperty, Ld = (e,
 			onFocus: q(t.onFocus, (e) => {
 				let t = !C.current;
 				if (e.target === e.currentTarget && t && !y) {
-					let t = new CustomEvent(Rd, zd);
+					let t = new CustomEvent(df, ff);
 					if (e.currentTarget.dispatchEvent(t), !t.defaultPrevented) {
 						let e = S().filter((e) => e.focusable);
-						rf([
+						Af([
 							e.find((e) => e.active),
 							e.find((e) => e.id === g),
 							...e
@@ -8174,28 +8470,28 @@ var Fd = typeof Md == "function" ? Pd : jd, Id = Object.defineProperty, Ld = (e,
 			onBlur: q(t.onBlur, () => b(!1))
 		})
 	});
-}, "RovingFocusGroupImpl")), Qd = "RovingFocusGroupItem", $d = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Ld(function(t, n) {
-	let { __scopeRovingFocusGroup: r, focusable: i = !0, active: a = !1, tabStopId: o, children: s, ...c } = t, l = Lc(), u = o || l, d = Yd(Qd, r), f = d.currentTabStopId === u, p = Hd(r), { onFocusableItemAdd: m, onFocusableItemRemove: h, currentTabStopId: g } = d, v = Fd();
-	return Wo(() => {
-		if (v && i) return m(), () => h();
+}, "RovingFocusGroupImpl")), Tf = "RovingFocusGroupItem", Ef = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ uf(function(t, n) {
+	let { __scopeRovingFocusGroup: r, focusable: i = !0, active: a = !1, tabStopId: o, children: s, ...c } = t, l = ll(), u = o || l, d = Sf(Tf, r), f = d.currentTabStopId === u, p = hf(r), { onFocusableItemAdd: m, onFocusableItemRemove: h, currentTabStopId: g } = d, _ = cf();
+	return gs(() => {
+		if (_ && i) return m(), () => h();
 	}, [
-		v,
+		_,
 		i,
 		m,
 		h
 	]), e.useEffect(() => {
-		if (!v && i) return m(), () => h();
+		if (!_ && i) return m(), () => h();
 	}, [
-		v,
+		_,
 		i,
 		m,
 		h
-	]), /* @__PURE__ */ _(Vd.ItemSlot, {
+	]), /* @__PURE__ */ v(mf.ItemSlot, {
 		scope: r,
 		id: u,
 		focusable: i,
 		active: a,
-		children: /* @__PURE__ */ _(Ss.span, {
+		children: /* @__PURE__ */ v(Js.span, {
 			tabIndex: f ? 0 : -1,
 			"data-orientation": d.orientation,
 			...c,
@@ -8210,7 +8506,7 @@ var Fd = typeof Md == "function" ? Pd : jd, Id = Object.defineProperty, Ld = (e,
 					return;
 				}
 				if (e.target !== e.currentTarget) return;
-				let t = nf(e, d.orientation, d.dir);
+				let t = kf(e, d.orientation, d.dir);
 				if (t !== void 0) {
 					if (e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) return;
 					e.preventDefault();
@@ -8219,9 +8515,9 @@ var Fd = typeof Md == "function" ? Pd : jd, Id = Object.defineProperty, Ld = (e,
 					else if (t === "prev" || t === "next") {
 						t === "prev" && n.reverse();
 						let r = n.indexOf(e.currentTarget);
-						n = d.loop ? af(n, r + 1) : n.slice(r + 1);
+						n = d.loop ? jf(n, r + 1) : n.slice(r + 1);
 					}
-					setTimeout(() => rf(n));
+					setTimeout(() => Af(n));
 				}
 			}),
 			children: typeof s == "function" ? s({
@@ -8230,7 +8526,7 @@ var Fd = typeof Md == "function" ? Pd : jd, Id = Object.defineProperty, Ld = (e,
 			}) : s
 		})
 	});
-}, "RovingFocusGroupItem")), ef = {
+}, "RovingFocusGroupItem")), Df = {
 	ArrowLeft: "prev",
 	ArrowUp: "prev",
 	ArrowRight: "next",
@@ -8240,42 +8536,42 @@ var Fd = typeof Md == "function" ? Pd : jd, Id = Object.defineProperty, Ld = (e,
 	PageDown: "last",
 	End: "last"
 };
-function tf(e, t) {
-	return t === qd.RTL ? e === "ArrowLeft" ? "ArrowRight" : e === "ArrowRight" ? "ArrowLeft" : e : e;
+function Of(e, t) {
+	return t === bf.RTL ? e === "ArrowLeft" ? "ArrowRight" : e === "ArrowRight" ? "ArrowLeft" : e : e;
 }
-Ld(tf, "getDirectionAwareKey");
-function nf(e, t, n) {
-	let r = tf(e.key, n);
-	if (!(t === Kd.Vertical && ["ArrowLeft", "ArrowRight"].includes(r)) && !(t === Kd.Horizontal && ["ArrowUp", "ArrowDown"].includes(r))) return ef[r];
+uf(Of, "getDirectionAwareKey");
+function kf(e, t, n) {
+	let r = Of(e.key, n);
+	if (!(t === yf.Vertical && ["ArrowLeft", "ArrowRight"].includes(r)) && !(t === yf.Horizontal && ["ArrowUp", "ArrowDown"].includes(r))) return Df[r];
 }
-Ld(nf, "getFocusIntent");
-function rf(e, t = !1) {
+uf(kf, "getFocusIntent");
+function Af(e, t = !1) {
 	let n = document.activeElement;
 	for (let r of e) if (r === n || (r.focus({ preventScroll: t }), document.activeElement !== n)) return;
 }
-Ld(rf, "focusFirst");
-function af(e, t) {
+uf(Af, "focusFirst");
+function jf(e, t) {
 	return e.map((n, r) => e[(t + r) % e.length]);
 }
-Ld(af, "wrapArray");
+uf(jf, "wrapArray");
 //#endregion
 //#region node_modules/.pnpm/aria-hidden@1.2.6/node_modules/aria-hidden/dist/es2015/index.js
-var of = function(e) {
+var Mf = function(e) {
 	return typeof document > "u" ? null : (Array.isArray(e) ? e[0] : e).ownerDocument.body;
-}, sf = /* @__PURE__ */ new WeakMap(), cf = /* @__PURE__ */ new WeakMap(), lf = {}, uf = 0, df = function(e) {
-	return e && (e.host || df(e.parentNode));
-}, ff = function(e, t) {
+}, Nf = /* @__PURE__ */ new WeakMap(), Pf = /* @__PURE__ */ new WeakMap(), Ff = {}, If = 0, Lf = function(e) {
+	return e && (e.host || Lf(e.parentNode));
+}, Rf = function(e, t) {
 	return t.map(function(t) {
 		if (e.contains(t)) return t;
-		var n = df(t);
+		var n = Lf(t);
 		return n && e.contains(n) ? n : (console.error("aria-hidden", t, "in not contained inside", e, ". Doing nothing"), null);
 	}).filter(function(e) {
 		return !!e;
 	});
-}, pf = function(e, t, n, r) {
-	var i = ff(t, Array.isArray(e) ? e : [e]);
-	lf[n] || (lf[n] = /* @__PURE__ */ new WeakMap());
-	var a = lf[n], o = [], s = /* @__PURE__ */ new Set(), c = new Set(i), l = function(e) {
+}, zf = function(e, t, n, r) {
+	var i = Rf(t, Array.isArray(e) ? e : [e]);
+	Ff[n] || (Ff[n] = /* @__PURE__ */ new WeakMap());
+	var a = Ff[n], o = [], s = /* @__PURE__ */ new Set(), c = new Set(i), l = function(e) {
 		e && !s.has(e) && (s.add(e), l(e.parentNode));
 	};
 	i.forEach(l);
@@ -8283,53 +8579,53 @@ var of = function(e) {
 		e && !c.has(e) && Array.prototype.forEach.call(e.children, function(e) {
 			if (s.has(e)) u(e);
 			else try {
-				var t = e.getAttribute(r), i = t !== null && t !== "false", c = (sf.get(e) || 0) + 1, l = (a.get(e) || 0) + 1;
-				sf.set(e, c), a.set(e, l), o.push(e), c === 1 && i && cf.set(e, !0), l === 1 && e.setAttribute(n, "true"), i || e.setAttribute(r, "true");
+				var t = e.getAttribute(r), i = t !== null && t !== "false", c = (Nf.get(e) || 0) + 1, l = (a.get(e) || 0) + 1;
+				Nf.set(e, c), a.set(e, l), o.push(e), c === 1 && i && Pf.set(e, !0), l === 1 && e.setAttribute(n, "true"), i || e.setAttribute(r, "true");
 			} catch (t) {
 				console.error("aria-hidden: cannot operate on ", e, t);
 			}
 		});
 	};
-	return u(t), s.clear(), uf++, function() {
+	return u(t), s.clear(), If++, function() {
 		o.forEach(function(e) {
-			var t = sf.get(e) - 1, i = a.get(e) - 1;
-			sf.set(e, t), a.set(e, i), t || (cf.has(e) || e.removeAttribute(r), cf.delete(e)), i || e.removeAttribute(n);
-		}), uf--, uf || (sf = /* @__PURE__ */ new WeakMap(), sf = /* @__PURE__ */ new WeakMap(), cf = /* @__PURE__ */ new WeakMap(), lf = {});
+			var t = Nf.get(e) - 1, i = a.get(e) - 1;
+			Nf.set(e, t), a.set(e, i), t || (Pf.has(e) || e.removeAttribute(r), Pf.delete(e)), i || e.removeAttribute(n);
+		}), If--, If || (Nf = /* @__PURE__ */ new WeakMap(), Nf = /* @__PURE__ */ new WeakMap(), Pf = /* @__PURE__ */ new WeakMap(), Ff = {});
 	};
-}, mf = function(e, t, n) {
+}, Bf = function(e, t, n) {
 	n === void 0 && (n = "data-aria-hidden");
-	var r = Array.from(Array.isArray(e) ? e : [e]), i = t || of(e);
-	return i ? (r.push.apply(r, Array.from(i.querySelectorAll("[aria-live], script"))), pf(r, i, n, "aria-hidden")) : function() {
+	var r = Array.from(Array.isArray(e) ? e : [e]), i = t || Mf(e);
+	return i ? (r.push.apply(r, Array.from(i.querySelectorAll("[aria-live], script"))), zf(r, i, n, "aria-hidden")) : function() {
 		return null;
 	};
-}, hf = function() {
-	return hf = Object.assign || function(e) {
+}, Vf = function() {
+	return Vf = Object.assign || function(e) {
 		for (var t, n = 1, r = arguments.length; n < r; n++) for (var i in t = arguments[n], t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
 		return e;
-	}, hf.apply(this, arguments);
+	}, Vf.apply(this, arguments);
 };
-function gf(e, t) {
+function Hf(e, t) {
 	var n = {};
 	for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
 	if (e != null && typeof Object.getOwnPropertySymbols == "function") for (var i = 0, r = Object.getOwnPropertySymbols(e); i < r.length; i++) t.indexOf(r[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[i]) && (n[r[i]] = e[r[i]]);
 	return n;
 }
-function _f(e, t, n) {
+function Uf(e, t, n) {
 	if (n || arguments.length === 2) for (var r = 0, i = t.length, a; r < i; r++) (a || !(r in t)) && (a ||= Array.prototype.slice.call(t, 0, r), a[r] = t[r]);
 	return e.concat(a || Array.prototype.slice.call(t));
 }
 //#endregion
 //#region node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.3.0_react@19.3.0/node_modules/react-remove-scroll-bar/dist/es2015/constants.js
-var vf = "right-scroll-bar-position", yf = "width-before-scroll-bar", bf = "with-scroll-bars-hidden", xf = "--removed-body-scroll-bar-size";
+var Wf = "right-scroll-bar-position", Gf = "width-before-scroll-bar", Kf = "with-scroll-bars-hidden", qf = "--removed-body-scroll-bar-size";
 //#endregion
 //#region node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.3.0_react@19.3.0/node_modules/use-callback-ref/dist/es2015/assignRef.js
-function Sf(e, t) {
+function Jf(e, t) {
 	return typeof e == "function" ? e(t) : e && (e.current = t), e;
 }
 //#endregion
 //#region node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.3.0_react@19.3.0/node_modules/use-callback-ref/dist/es2015/useRef.js
-function Cf(e, t) {
-	var n = m(function() {
+function Yf(e, t) {
+	var n = h(function() {
 		return {
 			value: e,
 			callback: t,
@@ -8348,33 +8644,33 @@ function Cf(e, t) {
 }
 //#endregion
 //#region node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.3.0_react@19.3.0/node_modules/use-callback-ref/dist/es2015/useMergeRef.js
-var wf = typeof window < "u" ? e.useLayoutEffect : e.useEffect, Tf = /* @__PURE__ */ new WeakMap();
-function Ef(e, t) {
-	var n = Cf(t || null, function(t) {
+var Xf = typeof window < "u" ? e.useLayoutEffect : e.useEffect, Zf = /* @__PURE__ */ new WeakMap();
+function Qf(e, t) {
+	var n = Yf(t || null, function(t) {
 		return e.forEach(function(e) {
-			return Sf(e, t);
+			return Jf(e, t);
 		});
 	});
-	return wf(function() {
-		var t = Tf.get(n);
+	return Xf(function() {
+		var t = Zf.get(n);
 		if (t) {
 			var r = new Set(t), i = new Set(e), a = n.current;
 			r.forEach(function(e) {
-				i.has(e) || Sf(e, null);
+				i.has(e) || Jf(e, null);
 			}), i.forEach(function(e) {
-				r.has(e) || Sf(e, a);
+				r.has(e) || Jf(e, a);
 			});
 		}
-		Tf.set(n, e);
+		Zf.set(n, e);
 	}, [e]), n;
 }
 //#endregion
 //#region node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.3.0_react@19.3.0/node_modules/use-sidecar/dist/es2015/medium.js
-function Df(e) {
+function $f(e) {
 	return e;
 }
-function Of(e, t) {
-	t === void 0 && (t = Df);
+function ep(e, t) {
+	t === void 0 && (t = $f);
 	var n = [], r = !1;
 	return {
 		read: function() {
@@ -8427,35 +8723,35 @@ function Of(e, t) {
 		}
 	};
 }
-function kf(e) {
+function tp(e) {
 	e === void 0 && (e = {});
-	var t = Of(null);
-	return t.options = hf({
+	var t = ep(null);
+	return t.options = Vf({
 		async: !0,
 		ssr: !1
 	}, e), t;
 }
 //#endregion
 //#region node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.3.0_react@19.3.0/node_modules/use-sidecar/dist/es2015/exports.js
-var Af = function(t) {
-	var n = t.sideCar, r = gf(t, ["sideCar"]);
+var np = function(t) {
+	var n = t.sideCar, r = Hf(t, ["sideCar"]);
 	if (!n) throw Error("Sidecar: please provide `sideCar` property to import the right car");
 	var i = n.read();
 	if (!i) throw Error("Sidecar medium not found");
-	return e.createElement(i, hf({}, r));
+	return e.createElement(i, Vf({}, r));
 };
-Af.isSideCarExport = !0;
-function jf(e, t) {
-	return e.useMedium(t), Af;
+np.isSideCarExport = !0;
+function rp(e, t) {
+	return e.useMedium(t), np;
 }
 //#endregion
 //#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.3.0_react@19.3.0/node_modules/react-remove-scroll/dist/es2015/medium.js
-var Mf = kf(), Nf = function() {}, Pf = e.forwardRef(function(t, n) {
+var ip = tp(), ap = function() {}, op = e.forwardRef(function(t, n) {
 	var r = e.useRef(null), i = e.useState({
-		onScrollCapture: Nf,
-		onWheelCapture: Nf,
-		onTouchMoveCapture: Nf
-	}), a = i[0], o = i[1], s = t.forwardProps, c = t.children, l = t.className, u = t.removeScrollBar, d = t.enabled, f = t.shards, p = t.sideCar, m = t.noRelative, h = t.noIsolation, g = t.inert, _ = t.allowPinchZoom, v = t.as, y = v === void 0 ? "div" : v, b = t.gapMode, x = gf(t, [
+		onScrollCapture: ap,
+		onWheelCapture: ap,
+		onTouchMoveCapture: ap
+	}), a = i[0], o = i[1], s = t.forwardProps, c = t.children, l = t.className, u = t.removeScrollBar, d = t.enabled, f = t.shards, p = t.sideCar, m = t.noRelative, h = t.noIsolation, g = t.inert, _ = t.allowPinchZoom, v = t.as, y = v === void 0 ? "div" : v, b = t.gapMode, x = Hf(t, [
 		"forwardProps",
 		"children",
 		"className",
@@ -8469,9 +8765,9 @@ var Mf = kf(), Nf = function() {}, Pf = e.forwardRef(function(t, n) {
 		"allowPinchZoom",
 		"as",
 		"gapMode"
-	]), S = p, C = Ef([r, n]), w = hf(hf({}, x), a);
+	]), S = p, C = Qf([r, n]), w = Vf(Vf({}, x), a);
 	return e.createElement(e.Fragment, null, d && e.createElement(S, {
-		sideCar: Mf,
+		sideCar: ip,
 		removeScrollBar: u,
 		shards: f,
 		noRelative: m,
@@ -8481,51 +8777,51 @@ var Mf = kf(), Nf = function() {}, Pf = e.forwardRef(function(t, n) {
 		allowPinchZoom: !!_,
 		lockRef: r,
 		gapMode: b
-	}), s ? e.cloneElement(e.Children.only(c), hf(hf({}, w), { ref: C })) : e.createElement(y, hf({}, w, {
+	}), s ? e.cloneElement(e.Children.only(c), Vf(Vf({}, w), { ref: C })) : e.createElement(y, Vf({}, w, {
 		className: l,
 		ref: C
 	}), c));
 });
-Pf.defaultProps = {
+op.defaultProps = {
 	enabled: !0,
 	removeScrollBar: !0,
 	inert: !1
-}, Pf.classNames = {
-	fullWidth: yf,
-	zeroRight: vf
+}, op.classNames = {
+	fullWidth: Gf,
+	zeroRight: Wf
 };
 //#endregion
 //#region node_modules/.pnpm/get-nonce@1.0.1/node_modules/get-nonce/dist/es2015/index.js
-var Ff = function() {
+var sp = function() {
 	if (typeof __webpack_nonce__ < "u") return __webpack_nonce__;
 };
 //#endregion
 //#region node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.3.0_react@19.3.0/node_modules/react-style-singleton/dist/es2015/singleton.js
-function If() {
+function cp() {
 	if (!document) return null;
 	var e = document.createElement("style");
 	e.type = "text/css";
-	var t = Ff();
+	var t = sp();
 	return t && e.setAttribute("nonce", t), e;
 }
-function Lf(e, t) {
+function lp(e, t) {
 	e.styleSheet ? e.styleSheet.cssText = t : e.appendChild(document.createTextNode(t));
 }
-function Rf(e) {
+function up(e) {
 	(document.head || document.getElementsByTagName("head")[0]).appendChild(e);
 }
-var zf = function() {
+var dp = function() {
 	var e = 0, t = null;
 	return {
 		add: function(n) {
-			e == 0 && (t = If()) && (Lf(t, n), Rf(t)), e++;
+			e == 0 && (t = cp()) && (lp(t, n), up(t)), e++;
 		},
 		remove: function() {
 			e--, !e && t && (t.parentNode && t.parentNode.removeChild(t), t = null);
 		}
 	};
-}, Bf = function() {
-	var t = zf();
+}, fp = function() {
+	var t = dp();
 	return function(n, r) {
 		e.useEffect(function() {
 			return t.add(n), function() {
@@ -8533,43 +8829,43 @@ var zf = function() {
 			};
 		}, [n && r]);
 	};
-}, Vf = function() {
-	var e = Bf();
+}, pp = function() {
+	var e = fp();
 	return function(t) {
 		var n = t.styles, r = t.dynamic;
 		return e(n, r), null;
 	};
-}, Hf = {
+}, mp = {
 	left: 0,
 	top: 0,
 	right: 0,
 	gap: 0
-}, Uf = function(e) {
+}, hp = function(e) {
 	return parseInt(e || "", 10) || 0;
-}, Wf = function(e) {
+}, gp = function(e) {
 	var t = window.getComputedStyle(document.body), n = t[e === "padding" ? "paddingLeft" : "marginLeft"], r = t[e === "padding" ? "paddingTop" : "marginTop"], i = t[e === "padding" ? "paddingRight" : "marginRight"];
 	return [
-		Uf(n),
-		Uf(r),
-		Uf(i)
+		hp(n),
+		hp(r),
+		hp(i)
 	];
-}, Gf = function(e) {
-	if (e === void 0 && (e = "margin"), typeof window > "u") return Hf;
-	var t = Wf(e), n = document.documentElement.clientWidth, r = window.innerWidth;
+}, _p = function(e) {
+	if (e === void 0 && (e = "margin"), typeof window > "u") return mp;
+	var t = gp(e), n = document.documentElement.clientWidth, r = window.innerWidth;
 	return {
 		left: t[0],
 		top: t[1],
 		right: t[2],
 		gap: Math.max(0, r - n + t[2] - t[0])
 	};
-}, Kf = Vf(), qf = "data-scroll-locked", Jf = function(e, t, n, r) {
+}, vp = pp(), yp = "data-scroll-locked", bp = function(e, t, n, r) {
 	var i = e.left, a = e.top, o = e.right, s = e.gap;
 	return n === void 0 && (n = "margin"), `
-  .${bf} {
+  .${Kf} {
    overflow: hidden ${r};
    padding-right: ${s}px ${r};
   }
-  body[${qf}] {
+  body[${yp}] {
     overflow: hidden ${r};
     overscroll-behavior: contain;
     ${[
@@ -8586,122 +8882,122 @@ var zf = function() {
 	].filter(Boolean).join("")}
   }
   
-  .${vf} {
+  .${Wf} {
     right: ${s}px ${r};
   }
   
-  .${yf} {
+  .${Gf} {
     margin-right: ${s}px ${r};
   }
   
-  .${vf} .${vf} {
+  .${Wf} .${Wf} {
     right: 0 ${r};
   }
   
-  .${yf} .${yf} {
+  .${Gf} .${Gf} {
     margin-right: 0 ${r};
   }
   
-  body[${qf}] {
-    ${xf}: ${s}px;
+  body[${yp}] {
+    ${qf}: ${s}px;
   }
 `;
-}, Yf = function() {
+}, xp = function() {
 	var e = parseInt(document.body.getAttribute("data-scroll-locked") || "0", 10);
 	return isFinite(e) ? e : 0;
-}, Xf = function() {
+}, Sp = function() {
 	e.useEffect(function() {
-		return document.body.setAttribute(qf, (Yf() + 1).toString()), function() {
-			var e = Yf() - 1;
-			e <= 0 ? document.body.removeAttribute(qf) : document.body.setAttribute(qf, e.toString());
+		return document.body.setAttribute(yp, (xp() + 1).toString()), function() {
+			var e = xp() - 1;
+			e <= 0 ? document.body.removeAttribute(yp) : document.body.setAttribute(yp, e.toString());
 		};
 	}, []);
-}, Zf = function(t) {
+}, Cp = function(t) {
 	var n = t.noRelative, r = t.noImportant, i = t.gapMode, a = i === void 0 ? "margin" : i;
-	Xf();
+	Sp();
 	var o = e.useMemo(function() {
-		return Gf(a);
+		return _p(a);
 	}, [a]);
-	return e.createElement(Kf, { styles: Jf(o, !n, a, r ? "" : "!important") });
-}, Qf = !1;
+	return e.createElement(vp, { styles: bp(o, !n, a, r ? "" : "!important") });
+}, wp = !1;
 if (typeof window < "u") try {
-	var $f = Object.defineProperty({}, "passive", { get: function() {
-		return Qf = !0, !0;
+	var Tp = Object.defineProperty({}, "passive", { get: function() {
+		return wp = !0, !0;
 	} });
-	window.addEventListener("test", $f, $f), window.removeEventListener("test", $f, $f);
+	window.addEventListener("test", Tp, Tp), window.removeEventListener("test", Tp, Tp);
 } catch {
-	Qf = !1;
+	wp = !1;
 }
-var ep = Qf ? { passive: !1 } : !1, tp = function(e) {
+var Ep = wp ? { passive: !1 } : !1, Dp = function(e) {
 	return e.tagName === "TEXTAREA";
-}, np = function(e, t) {
+}, Op = function(e, t) {
 	if (!(e instanceof Element)) return !1;
 	var n = window.getComputedStyle(e);
-	return n[t] !== "hidden" && !(n.overflowY === n.overflowX && !tp(e) && n[t] === "visible");
-}, rp = function(e) {
-	return np(e, "overflowY");
-}, ip = function(e) {
-	return np(e, "overflowX");
-}, ap = function(e, t) {
+	return n[t] !== "hidden" && !(n.overflowY === n.overflowX && !Dp(e) && n[t] === "visible");
+}, kp = function(e) {
+	return Op(e, "overflowY");
+}, Ap = function(e) {
+	return Op(e, "overflowX");
+}, jp = function(e, t) {
 	var n = t.ownerDocument, r = t;
 	do {
-		if (typeof ShadowRoot < "u" && r instanceof ShadowRoot && (r = r.host), cp(e, r)) {
-			var i = lp(e, r);
+		if (typeof ShadowRoot < "u" && r instanceof ShadowRoot && (r = r.host), Pp(e, r)) {
+			var i = Fp(e, r);
 			if (i[1] > i[2]) return !0;
 		}
 		r = r.parentNode;
 	} while (r && r !== n.body);
 	return !1;
-}, op = function(e) {
+}, Mp = function(e) {
 	return [
 		e.scrollTop,
 		e.scrollHeight,
 		e.clientHeight
 	];
-}, sp = function(e) {
+}, Np = function(e) {
 	return [
 		e.scrollLeft,
 		e.scrollWidth,
 		e.clientWidth
 	];
-}, cp = function(e, t) {
-	return e === "v" ? rp(t) : ip(t);
-}, lp = function(e, t) {
-	return e === "v" ? op(t) : sp(t);
-}, up = function(e, t) {
+}, Pp = function(e, t) {
+	return e === "v" ? kp(t) : Ap(t);
+}, Fp = function(e, t) {
+	return e === "v" ? Mp(t) : Np(t);
+}, Ip = function(e, t) {
 	return e === "h" && t === "rtl" ? -1 : 1;
-}, dp = function(e, t, n, r, i) {
-	var a = up(e, window.getComputedStyle(t).direction), o = a * r, s = n.target, c = t.contains(s), l = !1, u = o > 0, d = 0, f = 0;
+}, Lp = function(e, t, n, r, i) {
+	var a = Ip(e, window.getComputedStyle(t).direction), o = a * r, s = n.target, c = t.contains(s), l = !1, u = o > 0, d = 0, f = 0;
 	do {
 		if (!s) break;
-		var p = lp(e, s), m = p[0], h = p[1] - p[2] - a * m;
-		(m || h) && cp(e, s) && (d += h, f += m);
+		var p = Fp(e, s), m = p[0], h = p[1] - p[2] - a * m;
+		(m || h) && Pp(e, s) && (d += h, f += m);
 		var g = s.parentNode;
 		s = g && g.nodeType === Node.DOCUMENT_FRAGMENT_NODE ? g.host : g;
 	} while (!c && s !== document.body || c && (t.contains(s) || t === s));
 	return (u && (i && Math.abs(d) < 1 || !i && o > d) || !u && (i && Math.abs(f) < 1 || !i && -o > f)) && (l = !0), l;
-}, fp = function(e) {
+}, Rp = function(e) {
 	return "changedTouches" in e ? [e.changedTouches[0].clientX, e.changedTouches[0].clientY] : [0, 0];
-}, pp = function(e) {
+}, zp = function(e) {
 	return [e.deltaX, e.deltaY];
-}, mp = function(e) {
+}, Bp = function(e) {
 	return e && "current" in e ? e.current : e;
-}, hp = function(e, t) {
+}, Vp = function(e, t) {
 	return e[0] === t[0] && e[1] === t[1];
-}, gp = function(e) {
+}, Hp = function(e) {
 	return `
   .block-interactivity-${e} {pointer-events: none;}
   .allow-interactivity-${e} {pointer-events: all;}
 `;
-}, _p = 0, vp = [];
-function yp(t) {
-	var n = e.useRef([]), r = e.useRef([0, 0]), i = e.useRef(), a = e.useState(_p++)[0], o = e.useState(Vf)[0], s = e.useRef(t);
+}, Up = 0, Wp = [];
+function Gp(t) {
+	var n = e.useRef([]), r = e.useRef([0, 0]), i = e.useRef(), a = e.useState(Up++)[0], o = e.useState(pp)[0], s = e.useRef(t);
 	e.useEffect(function() {
 		s.current = t;
 	}, [t]), e.useEffect(function() {
 		if (t.inert) {
 			document.body.classList.add(`block-interactivity-${a}`);
-			var e = _f([t.lockRef.current], (t.shards || []).map(mp), !0).filter(Boolean);
+			var e = Uf([t.lockRef.current], (t.shards || []).map(Bp), !0).filter(Boolean);
 			return e.forEach(function(e) {
 				return e.classList.add(`allow-interactivity-${a}`);
 			}), function() {
@@ -8717,25 +9013,25 @@ function yp(t) {
 	]);
 	var c = e.useCallback(function(e, t) {
 		if ("touches" in e && e.touches.length === 2 || e.type === "wheel" && e.ctrlKey) return !s.current.allowPinchZoom;
-		var n = fp(e), a = r.current, o = "deltaX" in e ? e.deltaX : a[0] - n[0], c = "deltaY" in e ? e.deltaY : a[1] - n[1], l, u = e.target, d = Math.abs(o) > Math.abs(c) ? "h" : "v";
+		var n = Rp(e), a = r.current, o = "deltaX" in e ? e.deltaX : a[0] - n[0], c = "deltaY" in e ? e.deltaY : a[1] - n[1], l, u = e.target, d = Math.abs(o) > Math.abs(c) ? "h" : "v";
 		if ("touches" in e && d === "h" && u.type === "range") return !1;
 		var f = window.getSelection(), p = f && f.anchorNode;
 		if (p && (p === u || p.contains(u))) return !1;
-		var m = ap(d, u);
+		var m = jp(d, u);
 		if (!m) return !0;
-		if (m ? l = d : (l = d === "v" ? "h" : "v", m = ap(d, u)), !m) return !1;
+		if (m ? l = d : (l = d === "v" ? "h" : "v", m = jp(d, u)), !m) return !1;
 		if (!i.current && "changedTouches" in e && (o || c) && (i.current = l), !l) return !0;
 		var h = i.current || l;
-		return dp(h, t, e, h === "h" ? o : c, !0);
+		return Lp(h, t, e, h === "h" ? o : c, !0);
 	}, []), l = e.useCallback(function(e) {
 		var t = e;
-		if (vp.length && vp[vp.length - 1] === o) {
-			var r = "deltaY" in t ? pp(t) : fp(t), i = n.current.filter(function(e) {
-				return e.name === t.type && (e.target === t.target || t.target === e.shadowParent) && hp(e.delta, r);
+		if (Wp.length && Wp[Wp.length - 1] === o) {
+			var r = "deltaY" in t ? zp(t) : Rp(t), i = n.current.filter(function(e) {
+				return e.name === t.type && (e.target === t.target || t.target === e.shadowParent) && Vp(e.delta, r);
 			})[0];
 			if (i && i.should) t.cancelable && t.preventDefault();
 			else if (!i) {
-				var a = (s.current.shards || []).map(mp).filter(Boolean).filter(function(e) {
+				var a = (s.current.shards || []).map(Bp).filter(Boolean).filter(function(e) {
 					return e.contains(t.target);
 				});
 				(a.length > 0 ? c(t, a[0]) : !s.current.noIsolation) && t.cancelable && t.preventDefault();
@@ -8747,7 +9043,7 @@ function yp(t) {
 			delta: t,
 			target: r,
 			should: i,
-			shadowParent: bp(r)
+			shadowParent: Kp(r)
 		};
 		n.current.push(a), setTimeout(function() {
 			n.current = n.current.filter(function(e) {
@@ -8755,70 +9051,70 @@ function yp(t) {
 			});
 		}, 1);
 	}, []), d = e.useCallback(function(e) {
-		r.current = fp(e), i.current = void 0;
+		r.current = Rp(e), i.current = void 0;
 	}, []), f = e.useCallback(function(e) {
-		u(e.type, pp(e), e.target, c(e, t.lockRef.current));
+		u(e.type, zp(e), e.target, c(e, t.lockRef.current));
 	}, []), p = e.useCallback(function(e) {
-		u(e.type, fp(e), e.target, c(e, t.lockRef.current));
+		u(e.type, Rp(e), e.target, c(e, t.lockRef.current));
 	}, []);
 	e.useEffect(function() {
-		return vp.push(o), t.setCallbacks({
+		return Wp.push(o), t.setCallbacks({
 			onScrollCapture: f,
 			onWheelCapture: f,
 			onTouchMoveCapture: p
-		}), document.addEventListener("wheel", l, ep), document.addEventListener("touchmove", l, ep), document.addEventListener("touchstart", d, ep), function() {
-			vp = vp.filter(function(e) {
+		}), document.addEventListener("wheel", l, Ep), document.addEventListener("touchmove", l, Ep), document.addEventListener("touchstart", d, Ep), function() {
+			Wp = Wp.filter(function(e) {
 				return e !== o;
-			}), document.removeEventListener("wheel", l, ep), document.removeEventListener("touchmove", l, ep), document.removeEventListener("touchstart", d, ep);
+			}), document.removeEventListener("wheel", l, Ep), document.removeEventListener("touchmove", l, Ep), document.removeEventListener("touchstart", d, Ep);
 		};
 	}, []);
 	var m = t.removeScrollBar, h = t.inert;
-	return e.createElement(e.Fragment, null, h ? e.createElement(o, { styles: gp(a) }) : null, m ? e.createElement(Zf, {
+	return e.createElement(e.Fragment, null, h ? e.createElement(o, { styles: Hp(a) }) : null, m ? e.createElement(Cp, {
 		noRelative: t.noRelative,
 		gapMode: t.gapMode
 	}) : null);
 }
-function bp(e) {
+function Kp(e) {
 	for (var t = null; e !== null;) e instanceof ShadowRoot && (t = e.host, e = e.host), e = e.parentNode;
 	return t;
 }
 //#endregion
 //#region node_modules/.pnpm/react-remove-scroll@2.7.2_@types+react@19.3.0_react@19.3.0/node_modules/react-remove-scroll/dist/es2015/sidecar.js
-var xp = jf(Mf, yp), Sp = e.forwardRef(function(t, n) {
-	return e.createElement(Pf, hf({}, t, {
+var qp = rp(ip, Gp), Jp = e.forwardRef(function(t, n) {
+	return e.createElement(op, Vf({}, t, {
 		ref: n,
-		sideCar: xp
+		sideCar: qp
 	}));
 });
-Sp.classNames = Pf.classNames;
+Jp.classNames = op.classNames;
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-menu@2.1.25_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@1_3ae13a8b8abaffcff00d77dee41e2df0/node_modules/@radix-ui/react-menu/dist/index.mjs
-var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
+var Yp = Object.defineProperty, Y = (e, t) => Yp(e, "name", {
 	value: t,
 	configurable: !0
-}), wp = {
+}), Xp = {
 	LTR: "ltr",
 	RTL: "rtl"
-}, Tp = ["Enter", " "], Ep = [
+}, Zp = ["Enter", " "], Qp = [
 	"ArrowDown",
 	"PageUp",
 	"Home"
-], Dp = [
+], $p = [
 	"ArrowUp",
 	"PageDown",
 	"End"
-], Op = [...Ep, ...Dp], kp = {
-	ltr: [...Tp, "ArrowRight"],
-	rtl: [...Tp, "ArrowLeft"]
-}, Ap = {
+], em = [...Qp, ...$p], tm = {
+	ltr: [...Zp, "ArrowRight"],
+	rtl: [...Zp, "ArrowLeft"]
+}, nm = {
 	ltr: ["ArrowLeft"],
 	rtl: ["ArrowRight"]
-}, jp = "Menu", [Mp, Np, Pp] = /* @__PURE__ */ Es(jp), [Fp, Ip] = /* @__PURE__ */ Ho(jp, [
-	Pp,
-	id,
-	Gd
-]), Lp = id(), Rp = Gd(), [zp, Bp] = Fp(jp), [Vp, Hp] = Fp(jp), Up = /* @__PURE__ */ Y((t) => {
-	let { __scopeMenu: n, open: r = !1, children: i, dir: a, onOpenChange: o, modal: s = !0 } = t, c = Lp(n), [l, u] = e.useState(null), d = e.useRef(!1), f = Ws(o), p = Vs(a);
+}, rm = "Menu", [im, am, om] = /* @__PURE__ */ Qs(rm), [sm, cm] = /* @__PURE__ */ ms(rm, [
+	om,
+	Ad,
+	vf
+]), lm = Ad(), um = vf(), [dm, fm] = sm(rm), [pm, mm] = sm(rm), hm = /* @__PURE__ */ Y((t) => {
+	let { __scopeMenu: n, open: r = !1, children: i, dir: a, onOpenChange: o, modal: s = !0 } = t, c = lm(n), [l, u] = e.useState(null), d = e.useRef(!1), f = gc(o), p = pc(a);
 	return e.useEffect(() => {
 		let e = /* @__PURE__ */ Y(() => {
 			d.current = !0, document.addEventListener("pointerdown", t, {
@@ -8836,15 +9132,15 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 		if (!r) return;
 		let e = /* @__PURE__ */ Y(() => f(!1), "handleBlur");
 		return window.addEventListener("blur", e), () => window.removeEventListener("blur", e);
-	}, [r, f]), /* @__PURE__ */ _(sd, {
+	}, [r, f]), /* @__PURE__ */ v(Nd, {
 		...c,
-		children: /* @__PURE__ */ _(zp, {
+		children: /* @__PURE__ */ v(dm, {
 			scope: n,
 			open: r,
 			onOpenChange: f,
 			content: l,
 			onContentChange: u,
-			children: /* @__PURE__ */ _(Vp, {
+			children: /* @__PURE__ */ v(pm, {
 				scope: n,
 				onClose: e.useCallback(() => f(!1), [f]),
 				isUsingKeyboardRef: d,
@@ -8854,51 +9150,51 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 			})
 		})
 	});
-}, "Menu"), Wp = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
-	let { __scopeMenu: n, ...r } = e, i = Lp(n);
-	return /* @__PURE__ */ _(ld, {
+}, "Menu"), gm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
+	let { __scopeMenu: n, ...r } = e, i = lm(n);
+	return /* @__PURE__ */ v(Fd, {
 		...i,
 		...r,
 		ref: t
 	});
-}, "MenuAnchor")), Gp = "MenuPortal", [Kp, qp] = Fp(Gp, { forceMount: void 0 }), Jp = /* @__PURE__ */ Y((e) => {
-	let { __scopeMenu: t, forceMount: n, children: r, container: i } = e, a = Bp(Gp, t);
-	return /* @__PURE__ */ _(Kp, {
+}, "MenuAnchor")), _m = "MenuPortal", [vm, ym] = sm(_m, { forceMount: void 0 }), bm = /* @__PURE__ */ Y((e) => {
+	let { __scopeMenu: t, forceMount: n, children: r, container: i } = e, a = fm(_m, t);
+	return /* @__PURE__ */ v(vm, {
 		scope: t,
 		forceMount: n,
-		children: /* @__PURE__ */ _(Sd, {
+		children: /* @__PURE__ */ v(Jd, {
 			present: n || a.open,
-			children: /* @__PURE__ */ _(vd, {
+			children: /* @__PURE__ */ v(Wd, {
 				asChild: !0,
 				container: i,
 				children: r
 			})
 		})
 	});
-}, "MenuPortal"), Yp = "MenuContent", [Xp, Zp] = Fp(Yp), Qp = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
-	let n = qp(Yp, e.__scopeMenu), { forceMount: r = n.forceMount, ...i } = e, a = Bp(Yp, e.__scopeMenu), o = Hp(Yp, e.__scopeMenu);
-	return /* @__PURE__ */ _(Mp.Provider, {
+}, "MenuPortal"), xm = "MenuContent", [Sm, Cm] = sm(xm), wm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
+	let n = ym(xm, e.__scopeMenu), { forceMount: r = n.forceMount, ...i } = e, a = fm(xm, e.__scopeMenu), o = mm(xm, e.__scopeMenu);
+	return /* @__PURE__ */ v(im.Provider, {
 		scope: e.__scopeMenu,
-		children: /* @__PURE__ */ _(Sd, {
+		children: /* @__PURE__ */ v(Jd, {
 			present: r || a.open,
-			children: /* @__PURE__ */ _(Mp.Slot, {
+			children: /* @__PURE__ */ v(im.Slot, {
 				scope: e.__scopeMenu,
-				children: o.modal ? /* @__PURE__ */ _($p, {
+				children: o.modal ? /* @__PURE__ */ v(Tm, {
 					...i,
 					ref: t
-				}) : /* @__PURE__ */ _(em, {
+				}) : /* @__PURE__ */ v(Em, {
 					...i,
 					ref: t
 				})
 			})
 		})
 	});
-}, "MenuContent")), $p = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(t, n) {
-	let r = Bp(Yp, t.__scopeMenu), i = e.useRef(null), a = J(n, i);
+}, "MenuContent")), Tm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(t, n) {
+	let r = fm(xm, t.__scopeMenu), i = e.useRef(null), a = J(n, i);
 	return e.useEffect(() => {
 		let e = i.current;
-		if (e) return mf(e);
-	}, []), /* @__PURE__ */ _(nm, {
+		if (e) return Bf(e);
+	}, []), /* @__PURE__ */ v(Om, {
 		...t,
 		ref: a,
 		trapFocus: r.open,
@@ -8907,9 +9203,9 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 		onFocusOutside: q(t.onFocusOutside, (e) => e.preventDefault(), { checkForDefaultPrevented: !1 }),
 		onDismiss: () => r.onOpenChange(!1)
 	});
-}, "MenuRootContentModal")), em = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
-	let n = Bp(Yp, e.__scopeMenu);
-	return /* @__PURE__ */ _(nm, {
+}, "MenuRootContentModal")), Em = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
+	let n = fm(xm, e.__scopeMenu);
+	return /* @__PURE__ */ v(Om, {
 		...e,
 		ref: t,
 		trapFocus: !1,
@@ -8917,26 +9213,26 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 		disableOutsideScroll: !1,
 		onDismiss: () => n.onOpenChange(!1)
 	});
-}, "MenuRootContentNonModal")), tm = /* @__PURE__ */ os("MenuContent.ScrollLock"), nm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(t, n) {
-	let { __scopeMenu: r, loop: i = !1, trapFocus: a, onOpenAutoFocus: o, onCloseAutoFocus: s, disableOutsidePointerEvents: c, onEntryFocus: l, onEscapeKeyDown: u, onPointerDownOutside: d, onFocusOutside: f, onInteractOutside: p, onDismiss: m, disableOutsideScroll: h, ...g } = t, v = Bp(Yp, r), y = Hp(Yp, r), b = Lp(r), x = Rp(r), S = Np(r), [C, w] = e.useState(null), T = e.useRef(null), [E, D] = e.useState(null);
-	xc(E);
-	let { nodes: O, registry: k } = bc(), A = !!(a || h), j = J(n, T, v.onContentChange, D), M = e.useRef(0), N = e.useRef(""), P = e.useRef(0), F = e.useRef(null), I = e.useRef("right"), L = e.useRef(0), R = e.useMemo(() => h ? [T, ...O.map((e) => ({ current: e }))] : [], [
+}, "MenuRootContentNonModal")), Dm = /* @__PURE__ */ Ms("MenuContent.ScrollLock"), Om = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(t, n) {
+	let { __scopeMenu: r, loop: i = !1, trapFocus: a, onOpenAutoFocus: o, onCloseAutoFocus: s, disableOutsidePointerEvents: c, onEntryFocus: l, onEscapeKeyDown: u, onPointerDownOutside: d, onFocusOutside: f, onInteractOutside: p, onDismiss: m, disableOutsideScroll: h, ...g } = t, _ = fm(xm, r), y = mm(xm, r), b = lm(r), x = um(r), S = am(r), [C, w] = e.useState(null), T = e.useRef(null), [E, D] = e.useState(null);
+	qc(E);
+	let { nodes: O, registry: k } = Kc(), A = !!(a || h), j = J(n, T, _.onContentChange, D), M = e.useRef(0), N = e.useRef(""), P = e.useRef(0), F = e.useRef(null), I = e.useRef("right"), L = e.useRef(0), R = e.useMemo(() => h ? [T, ...O.map((e) => ({ current: e }))] : [], [
 		T,
 		O,
 		h
-	]), ee = h ? Sp : e.Fragment, te = h ? {
-		as: tm,
+	]), ee = h ? Jp : e.Fragment, te = h ? {
+		as: Dm,
 		allowPinchZoom: !0,
 		shards: R
 	} : void 0, z = /* @__PURE__ */ Y((e) => {
-		let t = N.current + e, n = S().filter((e) => !e.disabled), r = document.activeElement, i = n.find((e) => e.ref.current === r)?.textValue, a = km(n.map((e) => e.textValue), t, i), o = n.find((e) => e.textValue === a)?.ref.current;
+		let t = N.current + e, n = S().filter((e) => !e.disabled), r = document.activeElement, i = n.find((e) => e.ref.current === r)?.textValue, a = th(n.map((e) => e.textValue), t, i), o = n.find((e) => e.textValue === a)?.ref.current;
 		(/* @__PURE__ */ Y((function e(t) {
 			N.current = t, window.clearTimeout(M.current), t !== "" && (M.current = window.setTimeout(() => e(""), 1e3));
 		}), "updateSearch"))(t), o && setTimeout(() => o.focus());
 	}, "handleTypeaheadSearch");
-	e.useEffect(() => () => window.clearTimeout(M.current), []), uc();
-	let B = e.useCallback((e) => I.current === F.current?.side && jm(e, F.current?.area), []);
-	return /* @__PURE__ */ _(Xp, {
+	e.useEffect(() => () => window.clearTimeout(M.current), []), Ic();
+	let B = e.useCallback((e) => I.current === F.current?.side && rh(e, F.current?.area), []);
+	return /* @__PURE__ */ v(Sm, {
 		scope: r,
 		searchRef: N,
 		onItemEnter: e.useCallback((e) => {
@@ -8952,11 +9248,11 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 		onPointerGraceIntentChange: e.useCallback((e) => {
 			F.current = e;
 		}, []),
-		children: /* @__PURE__ */ _(yc, {
+		children: /* @__PURE__ */ v(Gc, {
 			registry: A ? k : null,
-			children: /* @__PURE__ */ _(ee, {
+			children: /* @__PURE__ */ v(ee, {
 				...te,
-				children: /* @__PURE__ */ _(_c, {
+				children: /* @__PURE__ */ v(Uc, {
 					asChild: !0,
 					trapped: a,
 					branches: O,
@@ -8964,7 +9260,7 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 						e.preventDefault(), T.current?.focus({ preventScroll: !0 });
 					}),
 					onUnmountAutoFocus: s,
-					children: /* @__PURE__ */ _(Qs, {
+					children: /* @__PURE__ */ v(wc, {
 						asChild: !0,
 						disableOutsidePointerEvents: c,
 						onEscapeKeyDown: u,
@@ -8972,7 +9268,7 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 						onFocusOutside: f,
 						onInteractOutside: p,
 						onDismiss: m,
-						children: /* @__PURE__ */ _(Xd, {
+						children: /* @__PURE__ */ v(Cf, {
 							asChild: !0,
 							...x,
 							dir: y.dir,
@@ -8984,10 +9280,10 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 								y.isUsingKeyboardRef.current || e.preventDefault();
 							}),
 							preventScrollOnEntryFocus: !0,
-							children: /* @__PURE__ */ _(pd, {
+							children: /* @__PURE__ */ v(zd, {
 								role: "menu",
 								"aria-orientation": "vertical",
-								"data-state": wm(v.open),
+								"data-state": Xm(_.open),
 								"data-radix-menu-content": "",
 								dir: y.dir,
 								...b,
@@ -9001,15 +9297,15 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 									let t = e.target.closest("[data-radix-menu-content]") === e.currentTarget, n = e.ctrlKey || e.altKey || e.metaKey, r = e.key.length === 1;
 									t && (e.key === "Tab" && e.preventDefault(), !n && r && z(e.key));
 									let i = T.current;
-									if (e.target !== i || !Op.includes(e.key)) return;
+									if (e.target !== i || !em.includes(e.key)) return;
 									e.preventDefault();
 									let a = S().filter((e) => !e.disabled).map((e) => e.ref.current);
-									Dp.includes(e.key) && a.reverse(), Dm(a);
+									$p.includes(e.key) && a.reverse(), $m(a);
 								}),
 								onBlur: q(t.onBlur, (e) => {
 									e.currentTarget.contains(e.target) || (window.clearTimeout(M.current), N.current = "");
 								}),
-								onPointerMove: q(t.onPointerMove, Mm((e) => {
+								onPointerMove: q(t.onPointerMove, ih((e) => {
 									let t = e.target, n = L.current !== e.clientX;
 									if (e.currentTarget.contains(t) && n) {
 										let t = e.clientX > L.current ? "right" : "left";
@@ -9023,24 +9319,24 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 			})
 		})
 	});
-}, "MenuContentImpl")), rm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
+}, "MenuContentImpl")), km = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
 	let { __scopeMenu: n, ...r } = e;
-	return /* @__PURE__ */ _(Ss.div, {
+	return /* @__PURE__ */ v(Js.div, {
 		...r,
 		ref: t
 	});
-}, "MenuLabel")), im = "MenuItem", am = "menu.itemSelect", om = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(t, n) {
-	let { disabled: r = !1, onSelect: i, ...a } = t, o = e.useRef(null), s = Hp(im, t.__scopeMenu), c = Zp(im, t.__scopeMenu), l = J(n, o), u = e.useRef(!1), d = /* @__PURE__ */ Y(() => {
+}, "MenuLabel")), Am = "MenuItem", jm = "menu.itemSelect", Mm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(t, n) {
+	let { disabled: r = !1, onSelect: i, ...a } = t, o = e.useRef(null), s = mm(Am, t.__scopeMenu), c = Cm(Am, t.__scopeMenu), l = J(n, o), u = e.useRef(!1), d = /* @__PURE__ */ Y(() => {
 		let e = o.current;
 		if (!r && e) {
-			let t = new CustomEvent(am, {
+			let t = new CustomEvent(jm, {
 				bubbles: !0,
 				cancelable: !0
 			});
-			e.addEventListener(am, (e) => i?.(e), { once: !0 }), Cs(e, t), t.defaultPrevented ? u.current = !1 : s.onClose();
+			e.addEventListener(jm, (e) => i?.(e), { once: !0 }), Ys(e, t), t.defaultPrevented ? u.current = !1 : s.onClose();
 		}
 	}, "handleSelect");
-	return /* @__PURE__ */ _(sm, {
+	return /* @__PURE__ */ v(Nm, {
 		...a,
 		ref: l,
 		disabled: r,
@@ -9052,99 +9348,99 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 			u.current || e.currentTarget?.click();
 		}),
 		onKeyDown: q(t.onKeyDown, (e) => {
-			r || e.target !== e.currentTarget || (c.searchRef.current === "" || e.key !== " ") && Tp.includes(e.key) && (e.currentTarget.click(), e.preventDefault());
+			r || e.target !== e.currentTarget || (c.searchRef.current === "" || e.key !== " ") && Zp.includes(e.key) && (e.currentTarget.click(), e.preventDefault());
 		})
 	});
-}, "MenuItem")), sm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(t, n) {
-	let { __scopeMenu: r, disabled: i = !1, textValue: a, ...o } = t, s = Zp(im, r), c = Rp(r), l = e.useRef(null), u = J(n, l), [d, f] = e.useState(!1), [p, m] = e.useState("");
+}, "MenuItem")), Nm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(t, n) {
+	let { __scopeMenu: r, disabled: i = !1, textValue: a, ...o } = t, s = Cm(Am, r), c = um(r), l = e.useRef(null), u = J(n, l), [d, f] = e.useState(!1), [p, m] = e.useState("");
 	return e.useEffect(() => {
 		let e = l.current;
 		e && m((e.textContent ?? "").trim());
-	}, [o.children]), /* @__PURE__ */ _(Mp.ItemSlot, {
+	}, [o.children]), /* @__PURE__ */ v(im.ItemSlot, {
 		scope: r,
 		disabled: i,
 		textValue: a ?? p,
-		children: /* @__PURE__ */ _($d, {
+		children: /* @__PURE__ */ v(Ef, {
 			asChild: !0,
 			...c,
 			focusable: !i,
-			children: /* @__PURE__ */ _(Ss.div, {
+			children: /* @__PURE__ */ v(Js.div, {
 				role: "menuitem",
 				"data-highlighted": d ? "" : void 0,
 				"aria-disabled": i || void 0,
 				"data-disabled": i ? "" : void 0,
 				...o,
 				ref: u,
-				onPointerMove: q(t.onPointerMove, Mm((e) => {
+				onPointerMove: q(t.onPointerMove, ih((e) => {
 					i ? s.onItemLeave(e) : (s.onItemEnter(e), e.defaultPrevented || e.currentTarget.focus({ preventScroll: !0 }));
 				})),
-				onPointerLeave: q(t.onPointerLeave, Mm((e) => s.onItemLeave(e))),
+				onPointerLeave: q(t.onPointerLeave, ih((e) => s.onItemLeave(e))),
 				onFocus: q(t.onFocus, () => f(!0)),
 				onBlur: q(t.onBlur, () => f(!1))
 			})
 		})
 	});
-}, "MenuItemImpl")), cm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
+}, "MenuItemImpl")), Pm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
 	let { checked: n = !1, onCheckedChange: r, ...i } = e;
-	return /* @__PURE__ */ _(pm, {
+	return /* @__PURE__ */ v(zm, {
 		scope: e.__scopeMenu,
 		checked: n,
-		children: /* @__PURE__ */ _(om, {
+		children: /* @__PURE__ */ v(Mm, {
 			role: "menuitemcheckbox",
-			"aria-checked": Tm(n) ? "mixed" : n,
+			"aria-checked": Zm(n) ? "mixed" : n,
 			...i,
 			ref: t,
-			"data-state": Em(n),
-			onSelect: q(i.onSelect, () => r?.(Tm(n) ? !0 : !n), { checkForDefaultPrevented: !1 })
+			"data-state": Qm(n),
+			onSelect: q(i.onSelect, () => r?.(Zm(n) ? !0 : !n), { checkForDefaultPrevented: !1 })
 		})
 	});
-}, "MenuCheckboxItem")), [lm, um] = Fp("MenuRadioGroup", {
+}, "MenuCheckboxItem")), [Fm, Im] = sm("MenuRadioGroup", {
 	value: void 0,
 	onValueChange: /* @__PURE__ */ Y(() => {}, "onValueChange")
-}), dm = "MenuRadioItem", fm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
-	let { value: n, ...r } = e, i = um(dm, e.__scopeMenu), a = n === i.value;
-	return /* @__PURE__ */ _(pm, {
+}), Lm = "MenuRadioItem", Rm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
+	let { value: n, ...r } = e, i = Im(Lm, e.__scopeMenu), a = n === i.value;
+	return /* @__PURE__ */ v(zm, {
 		scope: e.__scopeMenu,
 		checked: a,
-		children: /* @__PURE__ */ _(om, {
+		children: /* @__PURE__ */ v(Mm, {
 			role: "menuitemradio",
 			"aria-checked": a,
 			...r,
 			ref: t,
-			"data-state": Em(a),
+			"data-state": Qm(a),
 			onSelect: q(r.onSelect, () => i.onValueChange?.(n), { checkForDefaultPrevented: !1 })
 		})
 	});
-}, "MenuRadioItem")), [pm, mm] = Fp("MenuItemIndicator", { checked: !1 }), hm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
+}, "MenuRadioItem")), [zm, Bm] = sm("MenuItemIndicator", { checked: !1 }), Vm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(e, t) {
 	let { __scopeMenu: n, ...r } = e;
-	return /* @__PURE__ */ _(Ss.div, {
+	return /* @__PURE__ */ v(Js.div, {
 		role: "separator",
 		"aria-orientation": "horizontal",
 		...r,
 		ref: t
 	});
-}, "MenuSeparator")), gm = "MenuSub", [_m, vm] = Fp(gm), ym = /* @__PURE__ */ Y((t) => {
-	let { __scopeMenu: n, children: r, open: i = !1, onOpenChange: a } = t, o = Bp(gm, n), s = Lp(n), [c, l] = e.useState(null), [u, d] = e.useState(null), f = Ws(a);
-	return e.useEffect(() => (o.open === !1 && f(!1), () => f(!1)), [o.open, f]), /* @__PURE__ */ _(sd, {
+}, "MenuSeparator")), Hm = "MenuSub", [Um, Wm] = sm(Hm), Gm = /* @__PURE__ */ Y((t) => {
+	let { __scopeMenu: n, children: r, open: i = !1, onOpenChange: a } = t, o = fm(Hm, n), s = lm(n), [c, l] = e.useState(null), [u, d] = e.useState(null), f = gc(a);
+	return e.useEffect(() => (o.open === !1 && f(!1), () => f(!1)), [o.open, f]), /* @__PURE__ */ v(Nd, {
 		...s,
-		children: /* @__PURE__ */ _(zp, {
+		children: /* @__PURE__ */ v(dm, {
 			scope: n,
 			open: i,
 			onOpenChange: f,
 			content: u,
 			onContentChange: d,
-			children: /* @__PURE__ */ _(_m, {
+			children: /* @__PURE__ */ v(Um, {
 				scope: n,
-				contentId: Lc(),
-				triggerId: Lc(),
+				contentId: ll(),
+				triggerId: ll(),
 				trigger: c,
 				onTriggerChange: l,
 				children: r
 			})
 		})
 	});
-}, "MenuSub"), bm = "MenuSubTrigger", xm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(t, n) {
-	let r = Bp(bm, t.__scopeMenu), i = Hp(bm, t.__scopeMenu), a = vm(bm, t.__scopeMenu), o = Zp(bm, t.__scopeMenu), s = e.useRef(null), { pointerGraceTimerRef: c, onPointerGraceIntentChange: l } = o, u = { __scopeMenu: t.__scopeMenu }, d = e.useCallback(() => {
+}, "MenuSub"), Km = "MenuSubTrigger", qm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(t, n) {
+	let r = fm(Km, t.__scopeMenu), i = mm(Km, t.__scopeMenu), a = Wm(Km, t.__scopeMenu), o = Cm(Km, t.__scopeMenu), s = e.useRef(null), { pointerGraceTimerRef: c, onPointerGraceIntentChange: l } = o, u = { __scopeMenu: t.__scopeMenu }, d = e.useCallback(() => {
 		s.current && window.clearTimeout(s.current), s.current = null;
 	}, []);
 	e.useEffect(() => d, [d]), e.useEffect(() => {
@@ -9154,26 +9450,26 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 		};
 	}, [c, l]);
 	let f = J(n, a.onTriggerChange);
-	return /* @__PURE__ */ _(Wp, {
+	return /* @__PURE__ */ v(gm, {
 		asChild: !0,
 		...u,
-		children: /* @__PURE__ */ _(sm, {
+		children: /* @__PURE__ */ v(Nm, {
 			id: a.triggerId,
 			"aria-haspopup": "menu",
 			"aria-expanded": r.open,
 			"aria-controls": r.open ? a.contentId : void 0,
-			"data-state": wm(r.open),
+			"data-state": Xm(r.open),
 			...t,
 			ref: f,
 			onClick: (e) => {
 				t.onClick?.(e), !(t.disabled || e.defaultPrevented) && (e.currentTarget.focus(), r.open || r.onOpenChange(!0));
 			},
-			onPointerMove: q(t.onPointerMove, Mm((e) => {
+			onPointerMove: q(t.onPointerMove, ih((e) => {
 				o.onItemEnter(e), !e.defaultPrevented && !t.disabled && !r.open && !s.current && (o.onPointerGraceIntentChange(null), s.current = window.setTimeout(() => {
 					r.onOpenChange(!0), d();
 				}, 100));
 			})),
-			onPointerLeave: q(t.onPointerLeave, Mm((e) => {
+			onPointerLeave: q(t.onPointerLeave, ih((e) => {
 				d();
 				let t = r.content?.getBoundingClientRect();
 				if (t) {
@@ -9209,25 +9505,25 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 				}
 			})),
 			onKeyDown: q(t.onKeyDown, (e) => {
-				t.disabled || e.target !== e.currentTarget || (o.searchRef.current === "" || e.key !== " ") && kp[i.dir].includes(e.key) && (r.onOpenChange(!0), r.content?.focus(), e.preventDefault());
+				t.disabled || e.target !== e.currentTarget || (o.searchRef.current === "" || e.key !== " ") && tm[i.dir].includes(e.key) && (r.onOpenChange(!0), r.content?.focus(), e.preventDefault());
 			})
 		})
 	});
-}, "MenuSubTrigger")), Sm = "MenuSubContent", Cm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(t, n) {
-	let r = qp(Yp, t.__scopeMenu), { forceMount: i = r.forceMount, align: a = "start", ...o } = t, s = Bp(Yp, t.__scopeMenu), c = Hp(Yp, t.__scopeMenu), l = vm(Sm, t.__scopeMenu), u = e.useRef(null), d = J(n, u);
-	return /* @__PURE__ */ _(Mp.Provider, {
+}, "MenuSubTrigger")), Jm = "MenuSubContent", Ym = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Y(function(t, n) {
+	let r = ym(xm, t.__scopeMenu), { forceMount: i = r.forceMount, align: a = "start", ...o } = t, s = fm(xm, t.__scopeMenu), c = mm(xm, t.__scopeMenu), l = Wm(Jm, t.__scopeMenu), u = e.useRef(null), d = J(n, u);
+	return /* @__PURE__ */ v(im.Provider, {
 		scope: t.__scopeMenu,
-		children: /* @__PURE__ */ _(Sd, {
+		children: /* @__PURE__ */ v(Jd, {
 			present: i || s.open,
-			children: /* @__PURE__ */ _(Mp.Slot, {
+			children: /* @__PURE__ */ v(im.Slot, {
 				scope: t.__scopeMenu,
-				children: /* @__PURE__ */ _(nm, {
+				children: /* @__PURE__ */ v(Om, {
 					id: l.contentId,
 					"aria-labelledby": l.triggerId,
 					...o,
 					ref: d,
 					align: a,
-					side: c.dir === wp.RTL ? "left" : "right",
+					side: c.dir === Xp.RTL ? "left" : "right",
 					disableOutsidePointerEvents: !1,
 					disableOutsideScroll: !1,
 					trapFocus: !1,
@@ -9242,7 +9538,7 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 						c.onClose(), e.preventDefault();
 					}),
 					onKeyDown: q(t.onKeyDown, (e) => {
-						let t = e.currentTarget.contains(e.target), n = Ap[c.dir].includes(e.key);
+						let t = e.currentTarget.contains(e.target), n = nm[c.dir].includes(e.key);
 						t && n && (s.onOpenChange(!1), l.trigger?.focus(), e.preventDefault());
 					})
 				})
@@ -9250,35 +9546,35 @@ var Cp = Object.defineProperty, Y = (e, t) => Cp(e, "name", {
 		})
 	});
 }, "MenuSubContent"));
-function wm(e) {
+function Xm(e) {
 	return e ? "open" : "closed";
 }
-Y(wm, "getOpenState");
-function Tm(e) {
+Y(Xm, "getOpenState");
+function Zm(e) {
 	return e === "indeterminate";
 }
-Y(Tm, "isIndeterminate");
-function Em(e) {
-	return Tm(e) ? "indeterminate" : e ? "checked" : "unchecked";
+Y(Zm, "isIndeterminate");
+function Qm(e) {
+	return Zm(e) ? "indeterminate" : e ? "checked" : "unchecked";
 }
-Y(Em, "getCheckedState");
-function Dm(e) {
+Y(Qm, "getCheckedState");
+function $m(e) {
 	let t = document.activeElement;
 	for (let n of e) if (n === t || (n.focus(), document.activeElement !== t)) return;
 }
-Y(Dm, "focusFirst");
-function Om(e, t) {
+Y($m, "focusFirst");
+function eh(e, t) {
 	return e.map((n, r) => e[(t + r) % e.length]);
 }
-Y(Om, "wrapArray");
-function km(e, t, n) {
-	let r = t.length > 1 && Array.from(t).every((e) => e === t[0]) ? t[0] : t, i = n ? e.indexOf(n) : -1, a = Om(e, Math.max(i, 0));
+Y(eh, "wrapArray");
+function th(e, t, n) {
+	let r = t.length > 1 && Array.from(t).every((e) => e === t[0]) ? t[0] : t, i = n ? e.indexOf(n) : -1, a = eh(e, Math.max(i, 0));
 	r.length === 1 && (a = a.filter((e) => e !== n));
 	let o = a.find((e) => e.toLowerCase().startsWith(r.toLowerCase()));
 	return o === n ? void 0 : o;
 }
-Y(km, "getNextMatch");
-function Am(e, t) {
+Y(th, "getNextMatch");
+function nh(e, t) {
 	let { x: n, y: r } = e, i = !1;
 	for (let e = 0, a = t.length - 1; e < t.length; a = e++) {
 		let o = t[e], s = t[a], c = o.x, l = o.y, u = s.x, d = s.y;
@@ -9286,40 +9582,40 @@ function Am(e, t) {
 	}
 	return i;
 }
-Y(Am, "isPointInPolygon");
-function jm(e, t) {
-	return t ? Am({
+Y(nh, "isPointInPolygon");
+function rh(e, t) {
+	return t ? nh({
 		x: e.clientX,
 		y: e.clientY
 	}, t) : !1;
 }
-Y(jm, "isPointerInGraceArea");
-function Mm(e) {
+Y(rh, "isPointerInGraceArea");
+function ih(e) {
 	return (t) => t.pointerType === "mouse" ? e(t) : void 0;
 }
-Y(Mm, "whenMouse");
+Y(ih, "whenMouse");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-dropdown-menu@2.1.25_@types+react-dom@19.3.0_@types+react@19.3.0__@type_629a5a4a562bce11ef9cf18d771c29ae/node_modules/@radix-ui/react-dropdown-menu/dist/index.mjs
-var Nm = Object.defineProperty, Pm = (e, t) => Nm(e, "name", {
+var ah = Object.defineProperty, oh = (e, t) => ah(e, "name", {
 	value: t,
 	configurable: !0
-}), Fm = "DropdownMenu", [Im, Lm] = /* @__PURE__ */ Ho(Fm, [Ip]), Rm = Ip(), [zm, Bm] = Im(Fm), Vm = /* @__PURE__ */ Pm((t) => {
-	let { __scopeDropdownMenu: n, children: r, dir: i, open: a, defaultOpen: o, onOpenChange: s, modal: c = !0 } = t, l = Rm(n), u = e.useRef(null), [d, f] = $o({
+}), sh = "DropdownMenu", [ch, lh] = /* @__PURE__ */ ms(sh, [cm]), uh = cm(), [dh, fh] = ch(sh), ph = /* @__PURE__ */ oh((t) => {
+	let { __scopeDropdownMenu: n, children: r, dir: i, open: a, defaultOpen: o, onOpenChange: s, modal: c = !0 } = t, l = uh(n), u = e.useRef(null), [d, f] = Ts({
 		prop: a,
 		defaultProp: o ?? !1,
 		onChange: s,
-		caller: Fm
+		caller: sh
 	});
-	return /* @__PURE__ */ _(zm, {
+	return /* @__PURE__ */ v(dh, {
 		scope: n,
-		triggerId: Lc(),
+		triggerId: ll(),
 		triggerRef: u,
-		contentId: Lc(),
+		contentId: ll(),
 		open: d,
 		onOpenChange: f,
 		onOpenToggle: e.useCallback(() => f((e) => !e), [f]),
 		modal: c,
-		children: /* @__PURE__ */ _(Up, {
+		children: /* @__PURE__ */ v(hm, {
 			...l,
 			open: d,
 			onOpenChange: f,
@@ -9328,12 +9624,12 @@ var Nm = Object.defineProperty, Pm = (e, t) => Nm(e, "name", {
 			children: r
 		})
 	});
-}, "DropdownMenu"), Hm = "DropdownMenuTrigger", Um = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Pm(function(e, t) {
-	let { __scopeDropdownMenu: n, disabled: r = !1, ...i } = e, a = Bm(Hm, n), o = Rm(n), s = J(t, a.triggerRef);
-	return /* @__PURE__ */ _(Wp, {
+}, "DropdownMenu"), mh = "DropdownMenuTrigger", hh = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ oh(function(e, t) {
+	let { __scopeDropdownMenu: n, disabled: r = !1, ...i } = e, a = fh(mh, n), o = uh(n), s = J(t, a.triggerRef);
+	return /* @__PURE__ */ v(gm, {
 		asChild: !0,
 		...o,
-		children: /* @__PURE__ */ _(Ss.button, {
+		children: /* @__PURE__ */ v(Js.button, {
 			type: "button",
 			id: a.triggerId,
 			"aria-haspopup": "menu",
@@ -9356,15 +9652,15 @@ var Nm = Object.defineProperty, Pm = (e, t) => Nm(e, "name", {
 			})
 		})
 	});
-}, "DropdownMenuTrigger")), Wm = /* @__PURE__ */ Pm((e) => {
-	let { __scopeDropdownMenu: t, ...n } = e, r = Rm(t);
-	return /* @__PURE__ */ _(Jp, {
+}, "DropdownMenuTrigger")), gh = /* @__PURE__ */ oh((e) => {
+	let { __scopeDropdownMenu: t, ...n } = e, r = uh(t);
+	return /* @__PURE__ */ v(bm, {
 		...r,
 		...n
 	});
-}, "DropdownMenuPortal"), Gm = "DropdownMenuContent", Km = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Pm(function(t, n) {
-	let { __scopeDropdownMenu: r, ...i } = t, a = Bm(Gm, r), o = Rm(r), s = e.useRef(!1);
-	return /* @__PURE__ */ _(Qp, {
+}, "DropdownMenuPortal"), _h = "DropdownMenuContent", vh = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ oh(function(t, n) {
+	let { __scopeDropdownMenu: r, ...i } = t, a = fh(_h, r), o = uh(r), s = e.useRef(!1);
+	return /* @__PURE__ */ v(wm, {
 		id: a.contentId,
 		"aria-labelledby": a.triggerId,
 		...o,
@@ -9386,64 +9682,64 @@ var Nm = Object.defineProperty, Pm = (e, t) => Nm(e, "name", {
 			"--radix-dropdown-menu-trigger-height": "var(--radix-popper-anchor-height)"
 		}
 	});
-}, "DropdownMenuContent")), qm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Pm(function(e, t) {
-	let { __scopeDropdownMenu: n, ...r } = e, i = Rm(n);
-	return /* @__PURE__ */ _(rm, {
+}, "DropdownMenuContent")), yh = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ oh(function(e, t) {
+	let { __scopeDropdownMenu: n, ...r } = e, i = uh(n);
+	return /* @__PURE__ */ v(km, {
 		...i,
 		...r,
 		ref: t
 	});
-}, "DropdownMenuLabel")), Jm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Pm(function(e, t) {
-	let { __scopeDropdownMenu: n, ...r } = e, i = Rm(n);
-	return /* @__PURE__ */ _(om, {
+}, "DropdownMenuLabel")), bh = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ oh(function(e, t) {
+	let { __scopeDropdownMenu: n, ...r } = e, i = uh(n);
+	return /* @__PURE__ */ v(Mm, {
 		...i,
 		...r,
 		ref: t
 	});
-}, "DropdownMenuItem")), Ym = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Pm(function(e, t) {
-	let { __scopeDropdownMenu: n, ...r } = e, i = Rm(n);
-	return /* @__PURE__ */ _(cm, {
+}, "DropdownMenuItem")), xh = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ oh(function(e, t) {
+	let { __scopeDropdownMenu: n, ...r } = e, i = uh(n);
+	return /* @__PURE__ */ v(Pm, {
 		...i,
 		...r,
 		ref: t
 	});
-}, "DropdownMenuCheckboxItem")), Xm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Pm(function(e, t) {
-	let { __scopeDropdownMenu: n, ...r } = e, i = Rm(n);
-	return /* @__PURE__ */ _(fm, {
+}, "DropdownMenuCheckboxItem")), Sh = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ oh(function(e, t) {
+	let { __scopeDropdownMenu: n, ...r } = e, i = uh(n);
+	return /* @__PURE__ */ v(Rm, {
 		...i,
 		...r,
 		ref: t
 	});
-}, "DropdownMenuRadioItem")), Zm = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Pm(function(e, t) {
-	let { __scopeDropdownMenu: n, ...r } = e, i = Rm(n);
-	return /* @__PURE__ */ _(hm, {
+}, "DropdownMenuRadioItem")), Ch = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ oh(function(e, t) {
+	let { __scopeDropdownMenu: n, ...r } = e, i = uh(n);
+	return /* @__PURE__ */ v(Vm, {
 		...i,
 		...r,
 		ref: t
 	});
-}, "DropdownMenuSeparator")), Qm = /* @__PURE__ */ Pm((e) => {
-	let { __scopeDropdownMenu: t, children: n, open: r, onOpenChange: i, defaultOpen: a } = e, o = Rm(t), [s, c] = $o({
+}, "DropdownMenuSeparator")), wh = /* @__PURE__ */ oh((e) => {
+	let { __scopeDropdownMenu: t, children: n, open: r, onOpenChange: i, defaultOpen: a } = e, o = uh(t), [s, c] = Ts({
 		prop: r,
 		defaultProp: a ?? !1,
 		onChange: i,
 		caller: "DropdownMenuSub"
 	});
-	return /* @__PURE__ */ _(ym, {
+	return /* @__PURE__ */ v(Gm, {
 		...o,
 		open: s,
 		onOpenChange: c,
 		children: n
 	});
-}, "DropdownMenuSub"), $m = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Pm(function(e, t) {
-	let { __scopeDropdownMenu: n, ...r } = e, i = Rm(n);
-	return /* @__PURE__ */ _(xm, {
+}, "DropdownMenuSub"), Th = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ oh(function(e, t) {
+	let { __scopeDropdownMenu: n, ...r } = e, i = uh(n);
+	return /* @__PURE__ */ v(qm, {
 		...i,
 		...r,
 		ref: t
 	});
-}, "DropdownMenuSubTrigger")), eh = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Pm(function(e, t) {
-	let { __scopeDropdownMenu: n, ...r } = e, i = Rm(n);
-	return /* @__PURE__ */ _(Cm, {
+}, "DropdownMenuSubTrigger")), Eh = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ oh(function(e, t) {
+	let { __scopeDropdownMenu: n, ...r } = e, i = uh(n);
+	return /* @__PURE__ */ v(Ym, {
 		...i,
 		...r,
 		ref: t,
@@ -9456,24 +9752,24 @@ var Nm = Object.defineProperty, Pm = (e, t) => Nm(e, "name", {
 			"--radix-dropdown-menu-trigger-height": "var(--radix-popper-anchor-height)"
 		}
 	});
-}, "DropdownMenuSubContent")), th = Vm, nh = Um, rh = Qm, ih = e.forwardRef(({ className: e, inset: t, children: n, ...r }, i) => /* @__PURE__ */ _($m, {
+}, "DropdownMenuSubContent")), Dh = ph, Oh = hh, kh = wh, Ah = e.forwardRef(({ className: e, inset: t, children: n, ...r }, i) => /* @__PURE__ */ v(Th, {
 	ref: i,
 	className: K("uhuu:flex uhuu:cursor-default uhuu:select-none uhuu:items-center uhuu:rounded-sm uhuu:px-2 uhuu:py-1.5 uhuu:text-sm uhuu:outline-none uhuu:focus:bg-gray-100 uhuu:data-[state=open]:bg-gray-100", t && "uhuu:pl-8", e),
 	...r,
 	children: n
 }));
-ih.displayName = $m.displayName;
-var ah = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ _(eh, {
+Ah.displayName = Th.displayName;
+var jh = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(Eh, {
 	ref: n,
 	className: K("uhuu:z-50 uhuu:min-w-[8rem] uhuu:overflow-hidden uhuu:rounded-md uhuu:border uhuu:border-gray-200 uhuu:bg-(--uhuu-shell-surface) uhuu:p-1 uhuu:text-gray-900 uhuu:shadow-lg data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2", e),
 	...t
 }));
-ah.displayName = eh.displayName;
-var oh = e.forwardRef(({ className: e, sideOffset: t = 4, ...n }, r) => {
-	let { portalContainer: i } = aa();
-	return /* @__PURE__ */ _(Wm, {
+jh.displayName = Eh.displayName;
+var Mh = e.forwardRef(({ className: e, sideOffset: t = 4, ...n }, r) => {
+	let { portalContainer: i } = Ca();
+	return /* @__PURE__ */ v(gh, {
 		container: i || void 0,
-		children: /* @__PURE__ */ _(Km, {
+		children: /* @__PURE__ */ v(vh, {
 			ref: r,
 			sideOffset: t,
 			"data-uhuu-editor": !0,
@@ -9482,43 +9778,43 @@ var oh = e.forwardRef(({ className: e, sideOffset: t = 4, ...n }, r) => {
 		})
 	});
 });
-oh.displayName = Km.displayName;
-var sh = e.forwardRef(({ className: e, inset: t, ...n }, r) => /* @__PURE__ */ _(Jm, {
+Mh.displayName = vh.displayName;
+var Nh = e.forwardRef(({ className: e, inset: t, ...n }, r) => /* @__PURE__ */ v(bh, {
 	ref: r,
 	className: K("uhuu:relative uhuu:flex uhuu:cursor-default uhuu:select-none uhuu:items-center uhuu:rounded-sm uhuu:px-2 uhuu:py-1.5 uhuu:text-sm uhuu:outline-none uhuu:transition-colors uhuu:focus:bg-gray-100 uhuu:focus:text-gray-900 uhuu:data-[disabled]:pointer-events-none uhuu:data-[disabled]:opacity-50", t && "uhuu:pl-8", e),
 	...n
 }));
-sh.displayName = Jm.displayName;
-var ch = e.forwardRef(({ className: e, children: t, checked: n, ...r }, i) => /* @__PURE__ */ _(Ym, {
+Nh.displayName = bh.displayName;
+var Ph = e.forwardRef(({ className: e, children: t, checked: n, ...r }, i) => /* @__PURE__ */ v(xh, {
 	ref: i,
 	className: K("uhuu:relative uhuu:flex uhuu:cursor-default uhuu:select-none uhuu:items-center uhuu:rounded-sm uhuu:py-1.5 uhuu:pl-8 uhuu:pr-2 uhuu:text-sm uhuu:outline-none uhuu:transition-colors uhuu:focus:bg-gray-100 uhuu:focus:text-gray-900 uhuu:data-[disabled]:pointer-events-none uhuu:data-[disabled]:opacity-50", e),
 	checked: n,
 	...r,
 	children: t
 }));
-ch.displayName = Ym.displayName;
-var lh = e.forwardRef(({ className: e, children: t, ...n }, r) => /* @__PURE__ */ _(Xm, {
+Ph.displayName = xh.displayName;
+var Fh = e.forwardRef(({ className: e, children: t, ...n }, r) => /* @__PURE__ */ v(Sh, {
 	ref: r,
 	className: K("uhuu:relative uhuu:flex uhuu:cursor-default uhuu:select-none uhuu:items-center uhuu:rounded-sm uhuu:py-1.5 uhuu:pl-8 uhuu:pr-2 uhuu:text-sm uhuu:outline-none uhuu:transition-colors uhuu:focus:bg-gray-100 uhuu:focus:text-gray-900 uhuu:data-[disabled]:pointer-events-none uhuu:data-[disabled]:opacity-50", e),
 	...n,
 	children: t
 }));
-lh.displayName = Xm.displayName;
-var uh = e.forwardRef(({ className: e, inset: t, ...n }, r) => /* @__PURE__ */ _(qm, {
+Fh.displayName = Sh.displayName;
+var Ih = e.forwardRef(({ className: e, inset: t, ...n }, r) => /* @__PURE__ */ v(yh, {
 	ref: r,
 	className: K("uhuu:px-2 uhuu:py-1.5 uhuu:text-sm uhuu:font-medium", t && "uhuu:pl-8", e),
 	...n
 }));
-uh.displayName = qm.displayName;
-var dh = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ _(Zm, {
+Ih.displayName = yh.displayName;
+var Lh = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(Ch, {
 	ref: n,
 	className: K("uhuu:-mx-1 uhuu:my-1 uhuu:h-px uhuu:bg-gray-200", e),
 	...t
 }));
-dh.displayName = Zm.displayName;
-var fh = (e, t) => {
+Lh.displayName = Ch.displayName;
+var Rh = (e, t) => {
 	typeof window < "u" && window.$uhuu_renderer || (e.stopPropagation(), t.onSelect ? t.onSelect(e) : t.dialog && typeof window < "u" && window.$uhuu?.editDialog?.(t.dialog));
-}, ph = (e, t) => {
+}, zh = (e, t) => {
 	if (!e) return null;
 	let n = e.trim();
 	if (n.startsWith("<")) {
@@ -9526,85 +9822,85 @@ var fh = (e, t) => {
 			let n = t;
 			return /\bwidth=/.test(n) ? n = n.replace(/\bwidth=(\"[^\"]*\"|'[^']*'|[^\s>]+)/i, "width=\"100%\"") : n += " width=\"100%\"", /\bheight=/.test(n) ? n = n.replace(/\bheight=(\"[^\"]*\"|'[^']*'|[^\s>]+)/i, "height=\"100%\"") : n += " height=\"100%\"", /\bpreserveAspectRatio=/.test(n) ? n = n.replace(/\bpreserveAspectRatio=(\"[^\"]*\"|'[^']*'|[^\s>]+)/i, "preserveAspectRatio=\"xMidYMid slice\"") : n += " preserveAspectRatio=\"xMidYMid slice\"", `<svg${n}>`;
 		});
-		return /* @__PURE__ */ _("div", {
-			className: xi("uhuu-image-overlay", t),
+		return /* @__PURE__ */ v("div", {
+			className: Ri("uhuu-image-overlay", t),
 			"aria-hidden": "true",
 			dangerouslySetInnerHTML: { __html: e }
 		});
 	}
-	return /* @__PURE__ */ _("img", {
+	return /* @__PURE__ */ v("img", {
 		src: e,
 		alt: "",
 		"aria-hidden": "true",
-		className: xi("uhuu-image-overlay uhuu-image-overlay-img", t)
+		className: Ri("uhuu-image-overlay uhuu-image-overlay-img", t)
 	});
 };
-function mh({ options: e, anchorInsets: t }) {
-	let { t: n } = Ua(), r = /* @__PURE__ */ _("div", {
+function Bh({ options: e, anchorInsets: t }) {
+	let { t: n } = go(), r = /* @__PURE__ */ v("div", {
 		"data-uhuu-chrome": !0,
 		className: "uhuu:pointer-events-auto uhuu:absolute uhuu:right-2 uhuu:top-2 uhuu:z-20",
-		children: /* @__PURE__ */ v(th, {
+		children: /* @__PURE__ */ y(Dh, {
 			modal: !1,
-			children: [/* @__PURE__ */ _(nh, {
+			children: [/* @__PURE__ */ v(Oh, {
 				asChild: !0,
-				children: /* @__PURE__ */ _(Do, {
+				children: /* @__PURE__ */ v($o, {
 					variant: "secondary",
 					size: "icon",
 					title: n("image.options"),
 					className: "uhuu:h-7 uhuu:w-7 uhuu:shadow-sm",
 					onPointerDown: (e) => e.stopPropagation(),
 					onClick: (e) => e.stopPropagation(),
-					children: /* @__PURE__ */ _(Wi, { className: "uhuu:h-4 uhuu:w-4" })
+					children: /* @__PURE__ */ v(sa, { className: "uhuu:h-4 uhuu:w-4" })
 				})
-			}), /* @__PURE__ */ _(oh, {
+			}), /* @__PURE__ */ v(Mh, {
 				className: "uhuu:w-40 uhuu:p-1.5",
 				align: "end",
-				children: e.map((e) => /* @__PURE__ */ v(sh, {
-					onSelect: (t) => fh(t, e),
+				children: e.map((e) => /* @__PURE__ */ y(Nh, {
+					onSelect: (t) => Rh(t, e),
 					disabled: e.disabled,
-					children: [e.icon && /* @__PURE__ */ _("span", {
+					children: [e.icon && /* @__PURE__ */ v("span", {
 						className: "uhuu:mr-2 uhuu:inline-flex",
 						children: e.icon
-					}), /* @__PURE__ */ _("span", { children: e.label })]
+					}), /* @__PURE__ */ v("span", { children: e.label })]
 				}, e.id))
 			})]
 		})
 	});
-	return t ? /* @__PURE__ */ _("div", {
+	return t ? /* @__PURE__ */ v("div", {
 		className: "uhuu:pointer-events-none uhuu:absolute uhuu:z-20",
 		style: t,
 		children: r
 	}) : r;
 }
-var hh = (e, t, n) => t ? /* @__PURE__ */ _(mh, {
+var Vh = (e, t, n) => t ? /* @__PURE__ */ v(Bh, {
 	options: e,
 	anchorInsets: n
-}) : null, gh = (e = []) => {
-	let t = yo();
+}) : null, Hh = (e = []) => {
+	let t = Go();
 	return e.length > 0 && !t;
-}, _h = ({ className: e, style: t, overlaySvg: n, overlayClassName: r, options: i = [], dialog: a, dialogProps: o, bleedProps: s, children: l }) => {
-	let u = c(L), d = gh(i), f = Ti({
+}, Uh = ({ className: e, style: t, overlaySvg: n, overlayClassName: r, options: i = [], dialog: a, dialogProps: o, bleedProps: s, children: l }) => {
+	let u = c(R), d = Hh(i), f = Hi({
 		...s,
 		pageWidth: s?.pageWidth ?? u?.page?.width ?? 210,
 		bleed: s?.bleed ?? u?.page?.bleed ?? 0
 	}, "bleed");
-	return /* @__PURE__ */ v(g, { children: [/* @__PURE__ */ v(Ei, {
+	return /* @__PURE__ */ y(_, { children: [/* @__PURE__ */ y(Ui, {
 		...s,
 		dialog: a,
-		children: [ph(n, r), l]
-	}), hh(i, d, f)] });
+		children: [zh(n, r), l]
+	}), Vh(i, d, f)] });
 };
 //#endregion
 //#region src/uhuu/image/image-spread.tsx
-function vh(e) {
-	let t = c(L), n = Si({ onError: e.onError }), r = e.bleed ?? t?.page?.bleed ?? 0, i = e.pageWidth ?? t?.page?.width ?? 210, a = e.pageHeight ?? t?.page?.height ?? 297, { src: o, imageClassName: s, side: l, backgroundColor: u, width: d, height: f, left: p = 0, right: m = 0, top: h = 0, bottom: g = 0 } = e, y = (e) => `${e}mm`, b = () => wi({
+function Wh(e) {
+	let t = c(R), n = zi({ onError: e.onError }), r = e.bleed ?? t?.page?.bleed ?? 0, i = e.pageWidth ?? t?.page?.width ?? 210, a = e.pageHeight ?? t?.page?.height ?? 297, { src: o, imageClassName: s, side: l, backgroundColor: u, width: d, height: f, left: p = 0, right: m = 0, top: h = 0, bottom: g = 0 } = e, _ = (e) => `${e}mm`, b = () => Vi({
 		width: d,
 		left: p,
 		right: m
 	}, i, r, 2), x = () => {
 		let e = f ?? 0;
 		return f ? !h && !g && (e += r) : (e = a, h || (e += r), g || (e += r), (h || g) && (e -= (h ?? 0) + (g ?? 0))), e;
-	}, S = b(), C = x(), w = (e) => e === void 0 ? void 0 : y(e), T = (e) => Object.fromEntries(Object.entries(e).filter(([e, t]) => t !== void 0)), E = p > 0 ? p + r : 0;
+	}, S = b(), C = x(), w = (e) => e === void 0 ? void 0 : _(e), T = (e) => Object.fromEntries(Object.entries(e).filter(([e, t]) => t !== void 0)), E = p > 0 ? p + r : 0;
 	m > 0 && m + r;
 	let D = h > 0 ? h + r : 0, O = g > 0 ? g + r : 0, k = -1 * i + E, A = h > 0 && g > 0, j = T({
 		backgroundColor: u,
@@ -9620,15 +9916,16 @@ function vh(e) {
 		top: w(D),
 		bottom: w(O)
 	});
-	return /* @__PURE__ */ _("div", {
+	return /* @__PURE__ */ v("div", {
 		className: "uhuu-image-container",
 		style: l == "end" ? M : j,
 		...e.dataUhuu === void 0 ? {} : { "data-uhuu": e.dataUhuu },
-		children: /* @__PURE__ */ v("div", {
+		children: /* @__PURE__ */ y("div", {
 			className: "uhuu-image-inner",
-			...Qt(e),
-			children: [/* @__PURE__ */ _("img", {
-				className: xi("cover-image object-cover object-center", s),
+			...nn(e),
+			children: [/* @__PURE__ */ v("img", {
+				alt: e.alt ?? "",
+				className: Ri("uhuu-image-geometry cover-image object-cover object-center", s),
 				src: o || void 0,
 				onError: n
 			}), e.children]
@@ -9637,65 +9934,65 @@ function vh(e) {
 }
 //#endregion
 //#region src/uhuu/image/image-spread-with-overlay.tsx
-var yh = ({ overlaySvg: e, overlayClassName: t, options: n = [], dialog: r, spreadProps: i, children: a }) => {
-	let o = c(L), s = gh(n), l = Ti({
+var Gh = ({ overlaySvg: e, overlayClassName: t, options: n = [], dialog: r, spreadProps: i, children: a }) => {
+	let o = c(R), s = Hh(n), l = Hi({
 		...i,
 		pageWidth: i?.pageWidth ?? o?.page?.width ?? 210,
 		bleed: i?.bleed ?? o?.page?.bleed ?? 0
 	}, "spread");
-	return /* @__PURE__ */ v(g, { children: [/* @__PURE__ */ v(vh, {
+	return /* @__PURE__ */ y(_, { children: [/* @__PURE__ */ y(Wh, {
 		...i,
 		dialog: r,
-		children: [ph(e, t), a]
-	}), hh(n, s, l)] });
-}, bh = ({ src: t, alt: n = "", className: r, imageClassName: i, style: a, imageStyle: o, overlaySvg: s, overlayClassName: c, options: l = [], dialog: u, dialogProps: d, placeholder: f, children: p, imageProps: m, renderImage: h, onError: g }) => {
-	let y = e.useMemo(() => u ? Qt({ dialog: u }) : {}, [u]), b = gh(l), x = Si({ onError: (e) => {
+		children: [zh(e, t), a]
+	}), Vh(n, s, l)] });
+}, Kh = ({ src: t, alt: n = "", className: r, imageClassName: i, style: a, imageStyle: o, overlaySvg: s, overlayClassName: c, options: l = [], dialog: u, dialogProps: d, placeholder: f, children: p, imageProps: m, renderImage: h, onError: g }) => {
+	let _ = e.useMemo(() => u ? nn({ dialog: u }) : {}, [u]), b = Hh(l), x = zi({ onError: (e) => {
 		g?.(e), m?.onError?.(e);
 	} }), S = e.useMemo(() => {
-		if (!d) return y;
+		if (!d) return _;
 		let e = {
-			...y,
+			..._,
 			...d
 		};
-		return (y.className || d.className) && (e.className = xi(y.className, d.className)), Object.keys(y).forEach((t) => {
-			let n = y[t], r = d[t];
+		return (_.className || d.className) && (e.className = Ri(_.className, d.className)), Object.keys(_).forEach((t) => {
+			let n = _[t], r = d[t];
 			t.startsWith("on") && typeof n == "function" && typeof r == "function" && (e[t] = (e) => {
 				n(e), r(e);
 			});
 		}), e;
-	}, [y, d]), C = m?.src ?? t, w = !C && !f && !h, T = () => {
+	}, [_, d]), C = m?.src ?? t, w = !C && !f && !h, T = () => {
 		let e = m?.className, t = m?.style, r = C, a = m?.alt ?? n, s = {
 			...m,
 			src: r,
 			alt: a,
-			className: xi("uhuu-image-img", i, e),
+			className: Ri("uhuu-image-img", i, e),
 			style: {
 				...o,
 				...t
 			}
 		};
-		return h ? h(s) : r ? /* @__PURE__ */ _("img", {
+		return h ? h(s) : r ? /* @__PURE__ */ v("img", {
 			...s,
 			onError: x
 		}) : f ?? null;
-	}, E = S["data-uhuu"], D = e.Children.toArray(p).some((t) => e.isValidElement(t) ? t.type === vh || t.type === Ei : !1);
-	D && delete S["data-uhuu"];
-	let O = e.Children.map(p, (t) => e.isValidElement(t) ? e.cloneElement(t, { dataUhuu: E }) : t);
-	return /* @__PURE__ */ v("div", {
-		className: xi(D ? "uhuu-image-block uhuu-image-block-fill" : "uhuu-image-block", r),
+	}, E = S["data-uhuu"], D = e.Children.toArray(p).some((t) => e.isValidElement(t) ? t.type === Wh || t.type === Ui : !1), O = { ...S };
+	D && delete O["data-uhuu"];
+	let k = e.Children.map(p, (t) => e.isValidElement(t) && (t.type === Wh || t.type === Ui) ? e.cloneElement(t, { dataUhuu: E }) : t);
+	return /* @__PURE__ */ y("div", {
+		className: Ri(D ? "uhuu-image-block uhuu-image-block-fill" : "uhuu-image-block", r),
 		style: a,
-		children: [/* @__PURE__ */ v("div", {
-			...S,
-			className: xi("uhuu-image-body", w && "uhuu-image-empty", S.className),
+		children: [/* @__PURE__ */ y("div", {
+			...O,
+			className: Ri("uhuu-image-body", w && "uhuu-image-empty", S.className),
 			children: [
 				T(),
-				O,
-				ph(s, c)
+				k,
+				zh(s, c)
 			]
-		}), hh(l, b)]
+		}), Vh(l, b)]
 	});
-}, xh = (e) => {
-	let { t } = Ua(), { computedOverlaySvg: n, computedOptions: r, computedDirectDialog: i } = d(() => {
+}, qh = (e) => {
+	let { t } = go(), { computedOverlaySvg: n, computedOptions: r, computedDirectDialog: i } = f(() => {
 		let { annotation: n, dialog: r, overlaySvg: i, options: a, src: o } = e;
 		if (!n && !r) return {
 			computedOverlaySvg: i,
@@ -9756,7 +10053,7 @@ var yh = ({ overlaySvg: e, overlayClassName: t, options: n = [], dialog: r, spre
 		e.options,
 		e.src,
 		t
-	]), a = d(() => e.mode ? e.mode : e.side === void 0 ? e.width !== void 0 || e.height !== void 0 || e.left !== void 0 || e.right !== void 0 || e.top !== void 0 || e.bottom !== void 0 ? "bleed" : "auto" : "spread", [
+	]), a = f(() => e.mode ? e.mode : e.side === void 0 ? e.width !== void 0 || e.height !== void 0 || e.left !== void 0 || e.right !== void 0 || e.top !== void 0 || e.bottom !== void 0 ? "bleed" : "auto" : "spread", [
 		e.mode,
 		e.side,
 		e.width,
@@ -9765,10 +10062,11 @@ var yh = ({ overlaySvg: e, overlayClassName: t, options: n = [], dialog: r, spre
 		e.right,
 		e.top,
 		e.bottom
-	]), o = a === "auto" || r && r.length > 0 || n || i || e.renderImage !== void 0 || e.placeholder !== void 0 || e.children !== void 0, { mode: s, side: c, src: l, alt: u, className: f, imageClassName: p, style: m, imageStyle: h, backgroundColor: g, width: v, height: y, left: b, right: x, top: S, bottom: C, pageWidth: w, pageHeight: T, bleed: E, overlayClassName: D, dialogProps: O, placeholder: k, children: A, imageProps: j, renderImage: M, onError: N } = e, P = {
+	]), o = a === "auto" || r && r.length > 0 || n || i || e.renderImage !== void 0 || e.placeholder !== void 0 || e.children !== void 0, { mode: s, side: c, src: l, alt: u, className: d, imageClassName: p, style: m, imageStyle: h, backgroundColor: g, width: _, height: y, left: b, right: x, top: S, bottom: C, pageWidth: w, pageHeight: T, bleed: E, overlayClassName: D, dialogProps: O, placeholder: k, children: A, imageProps: j, renderImage: M, onError: N } = e, P = {
 		src: l,
+		alt: u,
 		backgroundColor: g,
-		width: v,
+		width: _,
 		height: y,
 		left: b,
 		right: x,
@@ -9780,10 +10078,10 @@ var yh = ({ overlaySvg: e, overlayClassName: t, options: n = [], dialog: r, spre
 		imageClassName: p,
 		onError: N
 	};
-	if (a === "auto") return /* @__PURE__ */ _(bh, {
+	if (a === "auto") return /* @__PURE__ */ v(Kh, {
 		src: l,
 		alt: u,
-		className: f,
+		className: d,
 		style: m,
 		imageClassName: p,
 		imageStyle: h,
@@ -9804,8 +10102,8 @@ var yh = ({ overlaySvg: e, overlayClassName: t, options: n = [], dialog: r, spre
 			side: c,
 			imageClassName: p
 		};
-		return o && (n || r?.length || i) ? /* @__PURE__ */ _(yh, {
-			className: f,
+		return o && (n || r?.length || i) ? /* @__PURE__ */ v(Gh, {
+			className: d,
 			style: m,
 			overlaySvg: n,
 			overlayClassName: D,
@@ -9814,10 +10112,10 @@ var yh = ({ overlaySvg: e, overlayClassName: t, options: n = [], dialog: r, spre
 			dialogProps: O,
 			spreadProps: e,
 			children: A
-		}) : /* @__PURE__ */ _(vh, { ...e });
+		}) : /* @__PURE__ */ v(Wh, { ...e });
 	}
-	return o && (n || r?.length || i) ? /* @__PURE__ */ _(_h, {
-		className: f,
+	return o && (n || r?.length || i) ? /* @__PURE__ */ v(Uh, {
+		className: d,
 		style: m,
 		overlaySvg: n,
 		overlayClassName: D,
@@ -9826,51 +10124,51 @@ var yh = ({ overlaySvg: e, overlayClassName: t, options: n = [], dialog: r, spre
 		dialogProps: O,
 		bleedProps: P,
 		children: A
-	}) : /* @__PURE__ */ _(Ei, { ...P });
-}, X = (e) => typeof e == "object" && !!e && !Array.isArray(e), Sh = (e, t) => Object.prototype.hasOwnProperty.call(e, t), Z = (e) => typeof e == "string" && e.trim() !== "" ? e.trim() : void 0, Ch = "https://render.uhuu.io/media/thumb", wh = "image/svg+xml";
-function Th(e) {
+	}) : /* @__PURE__ */ v(Ui, { ...P });
+}, X = (e) => typeof e == "object" && !!e && !Array.isArray(e), Jh = (e, t) => Object.prototype.hasOwnProperty.call(e, t), Z = (e) => typeof e == "string" && e.trim() !== "" ? e.trim() : void 0, Yh = "https://render.uhuu.io/media/thumb", Xh = "image/svg+xml";
+function Zh(e) {
 	return typeof e == "string" ? { url: Z(e) } : X(e) ? {
 		url: Z(e.contentUrl) ?? Z(e.url) ?? Z(e.src),
 		type: Z(e.encodingFormat) ?? Z(e.mimeType)
 	} : { url: void 0 };
 }
-function Eh() {
+function Qh() {
 	try {
 		return !!globalThis.$uhuu?.is?.printProduct?.();
 	} catch {
 		return !1;
 	}
 }
-function Dh(e) {
+function $h(e) {
 	try {
 		return new URL(e);
 	} catch {
 		return;
 	}
 }
-function Oh(e, t, n) {
-	if (n && n.toLowerCase().startsWith(wh)) return !0;
+function eg(e, t, n) {
+	if (n && n.toLowerCase().startsWith(Xh)) return !0;
 	if (!t) return /\.svgz?(?:[?#]|$)/i.test(e);
 	if (/\.svgz?$/i.test(t.pathname)) return !0;
 	for (let e of t.searchParams.values()) {
 		let t = e.toLowerCase();
-		if (t === "svg" || t === wh) return !0;
+		if (t === "svg" || t === Xh) return !0;
 	}
 	return !1;
 }
-var kh = (e) => !!e && `${e.origin}${e.pathname}` == "https://render.uhuu.io/media/thumb" && e.searchParams.has("url");
-function Ah(e, t = {}) {
-	let n = X(t) ? t : {}, { url: r, type: i } = Th(e);
+var tg = (e) => !!e && `${e.origin}${e.pathname}` == "https://render.uhuu.io/media/thumb" && e.searchParams.has("url");
+function ng(e, t = {}) {
+	let n = X(t) ? t : {}, { url: r, type: i } = Zh(e);
 	if (!r) return;
 	if (/^(?:data|blob):/i.test(r)) return r;
-	let a = r, o = Dh(r), s = Z(n.format);
-	if (kh(o) && (s ||= Z(o.searchParams.get("format")), a = Z(o.searchParams.get("url")) ?? r, o = Dh(a)), !/^https?:\/\//i.test(a) || Oh(a, o, i)) return a;
-	let c = (typeof n.print == "boolean" ? n.print : Eh()) ? Z(n.printSize) ?? "4000x4000" : Z(n.size) ?? "2000x2000", l = s ? `&format=${encodeURIComponent(s)}` : "";
-	return `${Ch}?blank=true&size=${encodeURIComponent(c)}${l}&url=${encodeURIComponent(a)}`;
+	let a = r, o = $h(r), s = Z(n.format);
+	if (tg(o) && (s ||= Z(o.searchParams.get("format")), a = Z(o.searchParams.get("url")) ?? r, o = $h(a)), !/^https?:\/\//i.test(a) || eg(a, o, i)) return a;
+	let c = (typeof n.print == "boolean" ? n.print : Qh()) ? Z(n.printSize) ?? "4000x4000" : Z(n.size) ?? "2000x2000", l = s ? `&format=${encodeURIComponent(s)}` : "";
+	return `${Yh}?blank=true&size=${encodeURIComponent(c)}${l}&url=${encodeURIComponent(a)}`;
 }
 //#endregion
 //#region src/uhuu/brand-kit/brand-kit-css-vars.js
-var jh = [
+var rg = [
 	["primary", [
 		"primary",
 		"colorPrimary",
@@ -9946,7 +10244,7 @@ var jh = [
 	["hero-via", ["heroVia", "hero:via"]],
 	["hero-to", ["heroTo", "hero:to"]],
 	["hero-glow", ["heroGlow", "hero:glow"]]
-], Mh = [
+], ig = [
 	["sans", {
 		token: "fontFamilySans",
 		primitive: "fontSans",
@@ -9971,7 +10269,7 @@ var jh = [
 		keys: ["mono"],
 		generic: "monospace"
 	}]
-], Nh = [
+], ag = [
 	["background", "background"],
 	["foreground", "foreground"],
 	["card", "card"],
@@ -9991,50 +10289,50 @@ var jh = [
 	["border", "border"],
 	["input", "input"],
 	["ring", "ring"]
-], Ph = [
-	...Nh.map(([e]) => e),
+], og = [
+	...ag.map(([e]) => e),
 	"chart-1",
 	"chart-2",
 	"chart-3",
 	"chart-4",
 	"chart-5"
-], Fh = RegExp(`^--(?:color-)?(?:${Ph.join("|")})$`), Ih = /^--color-kit-[A-Za-z0-9_-]+$/, Lh = /^--font-(?:kit-)?(?:sans|serif|display|mono)$/;
-function Rh(e) {
+], sg = RegExp(`^--(?:color-)?(?:${og.join("|")})$`), cg = /^--color-kit-[A-Za-z0-9_-]+$/, lg = /^--font-(?:kit-)?(?:sans|serif|display|mono)$/;
+function ug(e) {
 	let t = X(e) ? e.runtime : void 0;
 	return X(t) && t.version === 2 && X(t.light) ? t : void 0;
 }
-var zh = /^#(?:[0-9a-f]{3,4}|[0-9a-f]{6}|[0-9a-f]{8})$/i, Bh = /^rgba?\(\s*[\d.%\s,/+-]+\)$/i, Vh = "(?:[+-]?(?:\\d+\\.?\\d*|\\.\\d+)(?:%|deg)?|none)", Hh = RegExp(`^ok(?:lch|lab)\\(\\s*${Vh}\\s+${Vh}\\s+${Vh}(?:\\s*\\/\\s*${Vh})?\\s*\\)$`, "i"), Uh = /^[a-z]+$/i, Wh = /* @__PURE__ */ new Set([
+var dg = /^#(?:[0-9a-f]{3,4}|[0-9a-f]{6}|[0-9a-f]{8})$/i, fg = /^rgba?\(\s*[\d.%\s,/+-]+\)$/i, pg = "(?:[+-]?(?:\\d+\\.?\\d*|\\.\\d+)(?:%|deg)?|none)", mg = RegExp(`^ok(?:lch|lab)\\(\\s*${pg}\\s+${pg}\\s+${pg}(?:\\s*\\/\\s*${pg})?\\s*\\)$`, "i"), hg = /^[a-z]+$/i, gg = /* @__PURE__ */ new Set([
 	"inherit",
 	"initial",
 	"unset",
 	"revert",
 	"none"
-]), Gh = "[+-]?(?:\\d+\\.?\\d*|\\.\\d+)", Kh = RegExp(`^(${Gh})(deg|turn|rad|grad)?\\s+(${Gh})%\\s+(${Gh})%(?:\\s*\\/\\s*(${Gh})(%)?)?$`, "i"), qh = RegExp(`^hsla?\\(\\s*(${Gh})(deg|turn|rad|grad)?\\s*(?:,\\s*|\\s+)(${Gh})%\\s*(?:,\\s*|\\s+)(${Gh})%\\s*(?:(?:,|\\/)\\s*(${Gh})(%)?\\s*)?\\)$`, "i"), Jh = /[;{}<>\\\n\r]/, Yh = /^[A-Za-z0-9_-]+$/, Xh = (e, t, n) => Math.min(n, Math.max(t, e)), Zh = (e) => e.toString(16).padStart(2, "0"), Qh = {
+]), _g = "[+-]?(?:\\d+\\.?\\d*|\\.\\d+)", vg = RegExp(`^(${_g})(deg|turn|rad|grad)?\\s+(${_g})%\\s+(${_g})%(?:\\s*\\/\\s*(${_g})(%)?)?$`, "i"), yg = RegExp(`^hsla?\\(\\s*(${_g})(deg|turn|rad|grad)?\\s*(?:,\\s*|\\s+)(${_g})%\\s*(?:,\\s*|\\s+)(${_g})%\\s*(?:(?:,|\\/)\\s*(${_g})(%)?\\s*)?\\)$`, "i"), bg = /[;{}<>\\\n\r]/, xg = /^[A-Za-z0-9_-]+$/, Sg = (e, t, n) => Math.min(n, Math.max(t, e)), Cg = (e) => e.toString(16).padStart(2, "0"), wg = {
 	deg: 1,
 	turn: 360,
 	rad: 180 / Math.PI,
 	grad: .9
 };
-function $h(e, t, n, r, i, a) {
-	let o = (Number(e) * Qh[(t || "deg").toLowerCase()] % 360 + 360) % 360, s = Xh(Number(n) / 100, 0, 1), c = Xh(Number(r) / 100, 0, 1), l = s * Math.min(c, 1 - c), u = (e) => {
+function Tg(e, t, n, r, i, a) {
+	let o = (Number(e) * wg[(t || "deg").toLowerCase()] % 360 + 360) % 360, s = Sg(Number(n) / 100, 0, 1), c = Sg(Number(r) / 100, 0, 1), l = s * Math.min(c, 1 - c), u = (e) => {
 		let t = (e + o / 30) % 12;
 		return Math.round((c - l * Math.max(-1, Math.min(t - 3, 9 - t, 1))) * 255);
 	}, [d, f, p] = [
 		u(0),
 		u(8),
 		u(4)
-	], m = i === void 0 ? 1 : Xh(Number(i) / (a ? 100 : 1), 0, 1);
-	return m >= 1 ? `#${Zh(d)}${Zh(f)}${Zh(p)}` : `rgba(${d}, ${f}, ${p}, ${Number(m.toFixed(3))})`;
+	], m = i === void 0 ? 1 : Sg(Number(i) / (a ? 100 : 1), 0, 1);
+	return m >= 1 ? `#${Cg(d)}${Cg(f)}${Cg(p)}` : `rgba(${d}, ${f}, ${p}, ${Number(m.toFixed(3))})`;
 }
-function eg(e) {
+function Eg(e) {
 	let t = Z(e);
 	if (!t) return;
-	if (zh.test(t) || Bh.test(t) || Hh.test(t)) return t;
-	if (Uh.test(t)) return Wh.has(t.toLowerCase()) ? void 0 : t;
-	let n = Kh.exec(t) ?? qh.exec(t);
-	if (n) return $h(n[1], n[2], n[3], n[4], n[5], !!n[6]);
+	if (dg.test(t) || fg.test(t) || mg.test(t)) return t;
+	if (hg.test(t)) return gg.has(t.toLowerCase()) ? void 0 : t;
+	let n = vg.exec(t) ?? yg.exec(t);
+	if (n) return Tg(n[1], n[2], n[3], n[4], n[5], !!n[6]);
 }
-function tg(e, t) {
+function Dg(e, t) {
 	if (t.startsWith("s:")) {
 		let n = e.light?.semantic;
 		return X(n) ? n[t.slice(2)] : void 0;
@@ -10045,93 +10343,93 @@ function tg(e, t) {
 	}
 	return e[t];
 }
-function ng(e, t) {
+function Og(e, t) {
 	for (let n of t) {
-		let t = eg(tg(e, n));
+		let t = Eg(Dg(e, n));
 		if (t !== void 0) return t;
 	}
 }
-var rg = (e) => {
+var kg = (e) => {
 	if (typeof e == "string" && e.includes(",")) return Z(e.slice(e.indexOf(",") + 1));
 };
-function ig(e, t) {
+function Ag(e, t) {
 	if (e.includes(",")) return e;
 	let n = /^(["']).*\1$/.test(e) ? e : `"${e}"`;
 	return t ? `${n}, ${t}` : n;
 }
-function ag(e, t) {
+function jg(e, t) {
 	if (typeof t == "string" && t) {
 		if (Array.isArray(e)) return e.find((e) => X(e) && e.id === t);
-		if (X(e)) return Sh(e, t) && X(e[t]) ? e[t] : Object.values(e).find((e) => X(e) && e.id === t);
+		if (X(e)) return Jh(e, t) && X(e[t]) ? e[t] : Object.values(e).find((e) => X(e) && e.id === t);
 	}
 }
-function og(e, t) {
-	let n = Mh.find(([e]) => e === t)?.[1];
+function Mg(e, t) {
+	let n = ig.find(([e]) => e === t)?.[1];
 	if (!n || !X(e)) return;
-	let r = X(e.tokens) ? e.tokens : {}, i = Z(r[n.token]), a = Z(r.primitives?.typography?.[n.primitive]), o = ag(e.fonts, e.assignments?.[`font.${t}`]);
-	!Z(o?.family) && X(e.fonts) && (o = n.keys.map((t) => Sh(e.fonts, t) ? e.fonts[t] : void 0).find((e) => X(e) && Z(e.family)));
+	let r = X(e.tokens) ? e.tokens : {}, i = Z(r[n.token]), a = Z(r.primitives?.typography?.[n.primitive]), o = jg(e.fonts, e.assignments?.[`font.${t}`]);
+	!Z(o?.family) && X(e.fonts) && (o = n.keys.map((t) => Jh(e.fonts, t) ? e.fonts[t] : void 0).find((e) => X(e) && Z(e.family)));
 	let s = Z(o?.family);
-	if (s) return ig(s, Z(o.fallback) ?? rg(a) ?? rg(i) ?? n.generic);
+	if (s) return Ag(s, Z(o.fallback) ?? kg(a) ?? kg(i) ?? n.generic);
 	let c = i ?? a;
-	return c ? ig(c, rg(a) ?? n.generic) : void 0;
+	return c ? Ag(c, kg(a) ?? n.generic) : void 0;
 }
-function sg(e, t = {}) {
+function Ng(e, t = {}) {
 	let n = {};
 	if (X(t?.defaults)) for (let [e, r] of Object.entries(t.defaults)) {
 		if (!e.startsWith("--")) continue;
-		let t = e.startsWith("--color-") ? eg(r) : Z(r);
-		t !== void 0 && !Jh.test(t) && (n[e] = t);
+		let t = e.startsWith("--color-") ? Eg(r) : Z(r);
+		t !== void 0 && !bg.test(t) && (n[e] = t);
 	}
 	if (!X(e)) return n;
-	let r = Rh(e);
+	let r = ug(e);
 	if (r) {
 		for (let [e, t] of Object.entries(r.light)) {
-			let r = Fh.test(e) || Ih.test(e) ? eg(t) : Lh.test(e) ? Z(t) : void 0;
-			r !== void 0 && !Jh.test(r) && (n[e] = r);
+			let r = sg.test(e) || cg.test(e) ? Eg(t) : lg.test(e) ? Z(t) : void 0;
+			r !== void 0 && !bg.test(r) && (n[e] = r);
 		}
 		return n;
 	}
 	let i = X(e.tokens) ? e.tokens : {}, a = X(i.light?.semantic) ? i.light.semantic : {};
-	for (let [e, t] of Nh) {
-		let r = eg(a[t]);
+	for (let [e, t] of ag) {
+		let r = Eg(a[t]);
 		r !== void 0 && (n[`--${e}`] = r, n[`--color-${e}`] = r);
 	}
-	for (let [e, t] of jh) {
-		let r = ng(i, t);
+	for (let [e, t] of rg) {
+		let r = Og(i, t);
 		r !== void 0 && (n[`--color-kit-${e}`] = r);
 	}
 	let o = i.light?.aliases;
 	if (X(o)) {
 		let e = (e, t) => {
-			let r = Yh.test(e) ? eg(t) : void 0;
+			let r = xg.test(e) ? Eg(t) : void 0;
 			r !== void 0 && (n[`--color-kit-${e}`] = r);
 		};
 		for (let [t, n] of Object.entries(o)) if (t !== "hero" && X(n)) for (let [r, i] of Object.entries(n)) e(t === "template" ? r : `${t}-${r}`, i);
 		for (let [t, n] of Object.entries(o)) X(n) || e(t, n);
 	}
-	for (let [t] of Mh) {
-		let r = og(e, t);
-		r === void 0 || Jh.test(r) || (n[`--font-${t}`] = r, n[`--font-kit-${t}`] = r);
+	for (let [t] of ig) {
+		let r = Mg(e, t);
+		r === void 0 || bg.test(r) || (n[`--font-${t}`] = r, n[`--font-kit-${t}`] = r);
 	}
 	return n;
 }
 //#endregion
 //#region src/uhuu/brand-kit/brand-kit-assets.js
-var cg = /^https?:\/\//i, lg = "https://uhuu-brandkit.s3.eu-west-1.amazonaws.com/live";
-function ug(e, t) {
+var Pg = /^https?:\/\//i, Fg = "https://uhuu-brandkit.s3.eu-west-1.amazonaws.com/live";
+function Ig(e, t) {
 	let n = X(e) ? Z(e.baseUrl) : void 0;
 	if (n) return n.replace(/\/+$/, "");
 	let r = Z(t);
-	if (r && cg.test(r)) try {
+	if (r && Pg.test(r)) try {
 		return new URL(".", r).toString().replace(/\/+$/, "");
 	} catch {
 		return;
 	}
 }
-function dg(e, t) {
+function Lg(e, t) {
 	let n = Z(e);
 	if (n && !/\s/.test(n)) {
-		if (cg.test(n) || /^data:/i.test(n)) return n;
+		if (Pg.test(n) || /^data:/i.test(n)) return n;
 		if (!(/^[a-z][a-z0-9+.-]*:/i.test(n) || n.startsWith("//"))) {
 			if (!t) return n;
 			try {
@@ -10142,17 +10440,17 @@ function dg(e, t) {
 		}
 	}
 }
-var fg = /^kit-[\w-]+$/i;
-function pg(e, t = {}) {
+var Rg = /^kit-[\w-]+$/i;
+function zg(e, t = {}) {
 	if (!X(e)) return null;
 	let n = (Z(t.publicBaseUrl) ?? "https://uhuu-brandkit.s3.eu-west-1.amazonaws.com/live").replace(/\/+$/, ""), r = Z(String(e.brandKitTeamId ?? t.teamId ?? "")), i = (e) => r ? `${n}/teams/${encodeURIComponent(r)}/kits/${encodeURIComponent(e)}/brandkit.json` : null, a = Z(e.brandKitUrl);
-	if (a) return fg.test(a) ? i(a) : dg(a) ?? null;
+	if (a) return Rg.test(a) ? i(a) : Lg(a) ?? null;
 	let o = Z(e.brandKitId);
-	if (o) return fg.test(o) ? i(o) : null;
+	if (o) return Rg.test(o) ? i(o) : null;
 	let s = X(e.brandKit?.storage) ? Z(e.brandKit.storage.publicUrl) : void 0;
-	return s && cg.test(s) ? s : null;
+	return s && Pg.test(s) ? s : null;
 }
-async function mg(e, t = {}) {
+async function Bg(e, t = {}) {
 	let n = t.fetch ?? globalThis.fetch;
 	if (typeof n != "function") throw Error("loadBrandKit needs fetch");
 	let r = await n(e, {
@@ -10164,7 +10462,7 @@ async function mg(e, t = {}) {
 	if (!X(i)) throw Error(`Brand kit ${e} is not a JSON object`);
 	return i;
 }
-var hg = {
+var Vg = {
 	primary: "primary",
 	logo: "primary",
 	lockup: "primary",
@@ -10172,25 +10470,25 @@ var hg = {
 	icon: "mark",
 	symbol: "mark",
 	wordmark: "wordmark"
-}, gg = {
+}, Hg = {
 	primary: "logo",
 	mark: "icon"
-}, _g = {
+}, Ug = {
 	primary: "logo.primary",
 	mark: "logo.icon"
-}, vg = (e) => X(e) ? Z(e.svg) ?? Z(e.png) : void 0;
-function yg(e, t = {}) {
+}, Wg = (e) => X(e) ? Z(e.svg) ?? Z(e.png) : void 0;
+function Gg(e, t = {}) {
 	if (!X(e)) return null;
-	let n = hg[String(t.kind ?? "primary").toLowerCase()] ?? "primary", r = t.background === "dark" ? "dark" : "light", i = ug(e, t.sourceUrl), a = Z(e.name), o = bg(e, n, r, i, a) ?? (n === "wordmark" ? null : xg(e, n, r, i, a));
-	return o || n !== "wordmark" ? o : yg(e, {
+	let n = Vg[String(t.kind ?? "primary").toLowerCase()] ?? "primary", r = t.background === "dark" ? "dark" : "light", i = Ig(e, t.sourceUrl), a = Z(e.name), o = Kg(e, n, r, i, a) ?? (n === "wordmark" ? null : qg(e, n, r, i, a));
+	return o || n !== "wordmark" ? o : Gg(e, {
 		...t,
 		kind: "primary"
 	});
 }
-function bg(e, t, n, r, i) {
-	let a = (Array.isArray(e.logoSystem?.variants) ? e.logoSystem.variants.filter(X) : []).filter((e) => e.kind === t && vg(e.files)), o = a.find((e) => e.background === n) ?? a.find((e) => e.background === "any") ?? a[0];
+function Kg(e, t, n, r, i) {
+	let a = (Array.isArray(e.logoSystem?.variants) ? e.logoSystem.variants.filter(X) : []).filter((e) => e.kind === t && Wg(e.files)), o = a.find((e) => e.background === n) ?? a.find((e) => e.background === "any") ?? a[0];
 	if (!o) return null;
-	let s = dg(vg(o.files), r);
+	let s = Lg(Wg(o.files), r);
 	return s ? {
 		src: s,
 		alt: Z(o.name) ?? i,
@@ -10200,12 +10498,12 @@ function bg(e, t, n, r, i) {
 		...X(o.clearSpace) ? { clearSpace: o.clearSpace } : {}
 	} : null;
 }
-function xg(e, t, n, r, i) {
-	let a = X(e.logos) ? e.logos : {}, o = a[gg[t]];
+function qg(e, t, n, r, i) {
+	let a = X(e.logos) ? e.logos : {}, o = a[Hg[t]];
 	if (X(o)) {
 		let e = n === "dark" ? "light" : "dark";
 		for (let a of [n, e]) {
-			let e = o[a], n = dg(X(e) ? e.src ?? e.url : e, r);
+			let e = o[a], n = Lg(X(e) ? e.src ?? e.url : e, r);
 			if (n) return {
 				src: n,
 				alt: Z(o.alt) ?? i,
@@ -10214,9 +10512,9 @@ function xg(e, t, n, r, i) {
 			};
 		}
 	}
-	let s = Z(e.assignments?.[_g[t]]), c = s && a[s] || e.assets?.[t === "mark" ? "icon" : "primary"];
+	let s = Z(e.assignments?.[Ug[t]]), c = s && a[s] || e.assets?.[t === "mark" ? "icon" : "primary"];
 	if (X(c)) {
-		let e = dg(c.src ?? c.url, r);
+		let e = Lg(c.src ?? c.url, r);
 		if (e) return {
 			src: e,
 			alt: Z(c.alt) ?? Z(c.name) ?? i,
@@ -10225,22 +10523,22 @@ function xg(e, t, n, r, i) {
 	}
 	return null;
 }
-var Sg = {
+var Jg = {
 	photos: "photo",
 	icons: "icon",
 	graphics: "graphic",
 	backgrounds: "background",
 	templates: "template"
 };
-function Cg(e, t, n = {}) {
+function Yg(e, t, n = {}) {
 	if (!X(e) || !X(e.collections)) return null;
-	let r = e.collections, i = Sg[t] ?? t, a = Z(e.assignments?.[`media.${t}`]), o = (a && X(r[a]) ? a : void 0) ?? Object.keys(r).find((e) => X(r[e]) && r[e].type === i);
+	let r = e.collections, i = Jg[t] ?? t, a = Z(e.assignments?.[`media.${t}`]), o = (a && X(r[a]) ? a : void 0) ?? Object.keys(r).find((e) => X(r[e]) && r[e].type === i);
 	if (!o) return null;
-	let s = r[o], c = ug(e, n.sourceUrl), l = X(s.versions) ? s.versions : {}, u = [Z(n.versionId), Z(s.defaultVersionId)].find((e) => e && X(l[e])), d = u ? l[u] : void 0, f = X(s.schema?.keys) ? s.schema.keys : {}, p = [];
+	let s = r[o], c = Ig(e, n.sourceUrl), l = X(s.versions) ? s.versions : {}, u = [Z(n.versionId), Z(s.defaultVersionId)].find((e) => e && X(l[e])), d = u ? l[u] : void 0, f = X(s.schema?.keys) ? s.schema.keys : {}, p = [];
 	d && X(d.items) ? p = [...Object.keys(f).filter((e) => e in d.items), ...Object.keys(d.items).filter((e) => !(e in f))].map((e) => [e, d.items[e]]) : Array.isArray(s.items) && (p = s.items.map((e, t) => [String(X(e) && Z(e.key) ? e.key : t), e]));
 	let m = p.flatMap(([e, t]) => {
 		if (!X(t)) return [];
-		let n = dg(t.src ?? t.url, c);
+		let n = Lg(t.src ?? t.url, c);
 		if (!n) return [];
 		let r = Z(t.label) ?? Z(f[e]?.label) ?? Z(t.name);
 		return [{
@@ -10258,22 +10556,22 @@ function Cg(e, t, n = {}) {
 		items: m
 	};
 }
-var wg = (e) => typeof e == "string" ? e.trim().toUpperCase().replace(/[^A-Z0-9]+/g, "_") : "";
-function Tg(e, t) {
+var Xg = (e) => typeof e == "string" ? e.trim().toUpperCase().replace(/[^A-Z0-9]+/g, "_") : "";
+function Zg(e, t) {
 	let n = Array.isArray(e?.config?.env) ? e.config.env : [];
-	for (let e of (Array.isArray(t) ? t : [t]).map(wg)) {
-		let t = n.find((t) => X(t) && wg(t.key) === e && Z(t.value));
+	for (let e of (Array.isArray(t) ? t : [t]).map(Xg)) {
+		let t = n.find((t) => X(t) && Xg(t.key) === e && Z(t.value));
 		if (t) return t.value.trim();
 	}
 }
-function Eg(e, t) {
+function Qg(e, t) {
 	let n = t === "macro" ? "macro" : "micro", r = e?.config?.maps?.styles?.[n], i = X(r) ? Z(r.url) : void 0;
 	if (i) return {
 		url: i,
 		...Z(r.name) ? { name: Z(r.name) } : {},
 		source: "config.maps"
 	};
-	let a = n.toUpperCase(), o = Tg(e, [
+	let a = n.toUpperCase(), o = Zg(e, [
 		`MAP_${a}_STYLE_URL`,
 		`MAP_STYLE_${a}_URL`,
 		`${a}_MAP_STYLE_URL`,
@@ -10286,24 +10584,24 @@ function Eg(e, t) {
 }
 //#endregion
 //#region src/uhuu/brand-kit/brand-kit-fonts.js
-var Dg = /["\\\n\r\f<>]/, Og = (e) => (Array.isArray(e) ? e : X(e) ? Object.values(e) : []).filter(X);
-function kg(e) {
+var $g = /["\\\n\r\f<>]/, e_ = (e) => (Array.isArray(e) ? e : X(e) ? Object.values(e) : []).filter(X);
+function t_(e) {
 	return e.provider === "google" || e.provider === "css" ? e.provider : e.source === "google" || e.source === "css" ? e.source : Z(e.cssUrl) ? "css" : void 0;
 }
-var Ag = (e) => Z(e.split(",")[0]?.replace(/^\s*(["'])(.*)\1\s*$/, "$2"));
-function jg(e) {
+var n_ = (e) => Z(e.split(",")[0]?.replace(/^\s*(["'])(.*)\1\s*$/, "$2"));
+function r_(e) {
 	let t = (Array.isArray(e.weights) ? e.weights : (e.faces ?? []).map((e) => e?.weight)).map(Number).filter((e) => Number.isInteger(e) && e >= 1 && e <= 1e3);
 	return [...new Set(t)].sort((e, t) => e - t);
 }
-function Mg(e, t) {
-	let n = encodeURIComponent(e).replace(/%20/g, "+"), r = jg(t), i = Array.isArray(t.faces) ? t.faces : [], a = Array.isArray(t.styles) ? t.styles : i.map((e) => e?.style), o = r.length > 0 ? `:wght@${r.join(";")}` : "";
+function i_(e, t) {
+	let n = encodeURIComponent(e).replace(/%20/g, "+"), r = r_(t), i = Array.isArray(t.faces) ? t.faces : [], a = Array.isArray(t.styles) ? t.styles : i.map((e) => e?.style), o = r.length > 0 ? `:wght@${r.join(";")}` : "";
 	if (a.includes("italic")) {
 		let e = (Array.isArray(t.styles) ? (a.includes("normal") ? [0, 1] : [1]).flatMap((e) => (r.length ? r : [400]).map((t) => [e, t])) : i.filter((e) => e?.style === "normal" || e?.style === "italic").map((e) => [+(e.style === "italic"), Number(e.weight)]).filter(([, e]) => Number.isInteger(e) && e >= 1 && e <= 1e3)).sort(([e, t], [n, r]) => e - n || t - r).map((e) => e.join(","));
 		o = `:ital,wght@${[...new Set(e)].join(";")}`;
 	}
 	return `https://fonts.googleapis.com/css2?family=${n}${o}&display=swap`;
 }
-function Ng(e) {
+function a_(e) {
 	return Array.isArray(e.files) && e.files.length > 0 ? e.files.filter(X).map((e) => ({ ...e })) : Array.isArray(e.faces) ? e.faces.filter(X).flatMap((e) => Array.isArray(e.files) ? e.files.filter(X).map((t) => ({
 		...t,
 		weight: t.weight ?? e.weight,
@@ -10315,42 +10613,42 @@ function Ng(e) {
 		style: e.style
 	}))) : [];
 }
-function Pg(e) {
+function o_(e) {
 	let t = String(e.format ?? e.src ?? "").toLowerCase();
 	return t.includes("woff2") ? "woff2" : t.includes("woff") ? "woff" : t.includes("otf") || t.includes("opentype") ? "opentype" : "truetype";
 }
-function Fg(e) {
+function s_(e) {
 	let t = String(e ?? "").trim();
 	return /^\d{1,4}(?:\s+\d{1,4})?$/.test(t) ? t : "400";
 }
-function Ig(e, t, n) {
-	let r = dg(t.src, n);
-	if (r && !Dg.test(r)) return [
+function c_(e, t, n) {
+	let r = Lg(t.src, n);
+	if (r && !$g.test(r)) return [
 		"@font-face {",
 		`  font-family: "${e}";`,
-		`  src: url("${r}") format("${Pg(t)}");`,
+		`  src: url("${r}") format("${o_(t)}");`,
 		`  font-style: ${t.style === "italic" ? "italic" : "normal"};`,
-		`  font-weight: ${Fg(t.weight)};`,
+		`  font-weight: ${s_(t.weight)};`,
 		"  font-display: swap;",
 		"}"
 	].join("\n");
 }
-function Lg(e, t = {}) {
+function l_(e, t = {}) {
 	if (!X(e)) return {
 		fontFaceCss: "",
 		stylesheetUrls: []
 	};
-	let n = ug(e, t?.sourceUrl), r = [], i = [], a = (e) => {
-		let t = dg(e, n);
+	let n = Ig(e, t?.sourceUrl), r = [], i = [], a = (e) => {
+		let t = Lg(e, n);
 		t && !/^data:/i.test(t) && !r.includes(t) && r.push(t);
-	}, o = Rh(e);
+	}, o = ug(e);
 	if (o) {
 		for (let e of Array.isArray(o.fontStylesheets) ? o.fontStylesheets : []) a(e);
 		for (let e of Array.isArray(o.fontFaces) ? o.fontFaces : []) {
 			if (!X(e)) continue;
-			let t = Z(e.family), r = t ? Ag(t) : void 0;
-			if (!r || Dg.test(r)) continue;
-			let a = Ig(r, e, n);
+			let t = Z(e.family), r = t ? n_(t) : void 0;
+			if (!r || $g.test(r)) continue;
+			let a = c_(r, e, n);
 			a && !i.includes(a) && i.push(a);
 		}
 		return {
@@ -10358,14 +10656,14 @@ function Lg(e, t = {}) {
 			stylesheetUrls: r
 		};
 	}
-	for (let t of Og(e.fonts)) {
-		let e = Z(t.family), r = e ? Ag(e) : void 0;
-		if (!r || Dg.test(r)) continue;
-		let o = kg(t);
-		o && a(Z(t.cssUrl) ? t.cssUrl : o === "google" ? Mg(r, t) : void 0);
+	for (let t of e_(e.fonts)) {
+		let e = Z(t.family), r = e ? n_(e) : void 0;
+		if (!r || $g.test(r)) continue;
+		let o = t_(t);
+		o && a(Z(t.cssUrl) ? t.cssUrl : o === "google" ? i_(r, t) : void 0);
 		for (let e of Array.isArray(t.faces) ? t.faces : []) a(e?.cssUrl);
-		if (!o) for (let e of Ng(t)) {
-			let t = Ig(r, e, n);
+		if (!o) for (let e of a_(t)) {
+			let t = c_(r, e, n);
 			t && !i.includes(t) && i.push(t);
 		}
 	}
@@ -10376,86 +10674,108 @@ function Lg(e, t = {}) {
 }
 //#endregion
 //#region src/uhuu/brand-kit/brand-kit-provider.tsx
-var Rg = r(null), zg = typeof window > "u" ? l : u, Bg = 1e4;
-function Vg(e) {
+var u_ = r(null), d_ = typeof window > "u" ? l : d;
+function f_(e) {
 	try {
 		return typeof location > "u" ? e : new URL(e, location.href).toString();
 	} catch {
 		return e;
 	}
 }
-function Hg({ brandKit: e, src: t, defaults: n, sourceUrl: r, onLoad: i, onError: a, className: o, style: s, children: c }) {
-	let u = typeof t == "string" && t.trim() !== "" ? t.trim() : void 0, [f, p] = m(null);
-	l(() => {
+function p_({ brandKit: e, src: t, defaults: n, sourceUrl: r, onLoad: i, onError: a, className: o, style: s, children: c }) {
+	let u = typeof t == "string" && t.trim() !== "" ? t.trim() : void 0, [d, p] = h(null), g = m({
+		onLoad: i,
+		onError: a
+	});
+	d_(() => {
+		g.current = {
+			onLoad: i,
+			onError: a
+		};
+	}, [i, a]), l(() => {
 		if (!u) return;
-		let e = new AbortController();
-		return mg(u, { signal: e.signal }).then((t) => {
-			e.signal.aborted || (p({
-				src: u,
-				brandKit: t
-			}), i?.(t));
-		}, (t) => {
-			e.signal.aborted || (p({
+		let e = new AbortController(), t = (e) => {
+			p({
 				src: u,
 				brandKit: null
-			}), a ? a(t) : console.error(t));
-		}), () => e.abort();
+			}), g.current.onError ? g.current.onError(e) : console.error(e);
+		}, n = setTimeout(() => {
+			e.abort();
+			let n = /* @__PURE__ */ Error(`BrandKitProvider ${u} is still loading after ${pe / 1e3} s; using the fallback kit.`);
+			t(n);
+		}, pe);
+		return Bg(u, { signal: e.signal }).then((t) => {
+			e.signal.aborted || (clearTimeout(n), p({
+				src: u,
+				brandKit: t
+			}), g.current.onLoad?.(t));
+		}, (r) => {
+			e.signal.aborted || (clearTimeout(n), t(r));
+		}), () => {
+			clearTimeout(n), e.abort();
+		};
 	}, [u]);
-	let h = u && f?.src === u ? f : null, g = h?.brandKit ?? e ?? null, y = h?.brandKit && u ? Vg(u) : r, b = u ? h ? h.brandKit ? "ready" : "error" : "loading" : "idle", x = d(() => {
-		let e = ug(g, y);
+	let _ = u && d?.src === u ? d : null, b = _?.brandKit ?? e ?? null, x = _?.brandKit && u ? f_(u) : r, S = u ? _ ? _.brandKit ? "ready" : "error" : "loading" : "idle", C = f(() => {
+		let e = Ig(b, x);
 		return {
-			brandKit: g,
-			cssVars: sg(g, { defaults: n }),
-			sourceUrl: y,
-			status: b,
-			logo: (e = {}) => yg(g, {
+			brandKit: b,
+			cssVars: Ng(b, { defaults: n }),
+			sourceUrl: x,
+			status: S,
+			logo: (e = {}) => Gg(b, {
 				...e,
-				sourceUrl: y
+				sourceUrl: x
 			}),
-			collection: (e, t = {}) => Cg(g, e, {
+			collection: (e, t = {}) => Yg(b, e, {
 				...t,
-				sourceUrl: y
+				sourceUrl: x
 			}),
-			mapStyle: (e) => Eg(g, e),
-			env: (e) => Tg(g, e),
-			resolveUrl: (t) => dg(t, e)
+			mapStyle: (e) => Qg(b, e),
+			env: (e) => Zg(b, e),
+			resolveUrl: (t) => Lg(t, e)
 		};
 	}, [
-		g,
-		y,
+		b,
+		x,
 		n,
-		b
-	]), S = d(() => Lg(g, { sourceUrl: y }), [g, y]), [C, w] = m(() => /* @__PURE__ */ new Set()), T = (e) => w((t) => t.has(e) ? t : new Set(t).add(e)), E = S.stylesheetUrls.filter((e) => !C.has(e)), D = E.join("\n"), O = b === "loading" || E.length > 0;
-	return zg(() => O ? B.hold() : void 0, [O]), l(() => {
-		if (!D) return;
+		S
+	]), w = f(() => l_(b, { sourceUrl: x }), [b, x]), [T, E] = h(() => /* @__PURE__ */ new Set()), D = (e) => E((t) => t.has(e) ? t : new Set(t).add(e)), O = w.stylesheetUrls.filter((e) => !T.has(e)).join("\n"), k = S === "loading";
+	return d_(() => k ? ne.hold({
+		label: `BrandKitProvider ${u}`,
+		waitMs: pe
+	}) : void 0, [k, u]), d_(() => O ? ne.hold({
+		label: `BrandKitProvider font stylesheet ${O}`,
+		waitMs: pe
+	}) : void 0, [O]), l(() => {
+		if (!O) return;
 		let e = setTimeout(() => {
-			for (let e of D.split("\n")) T(e);
-		}, Bg);
+			for (let e of O.split("\n")) D(e);
+		}, pe);
 		return () => clearTimeout(e);
-	}, [D]), /* @__PURE__ */ v(Rg.Provider, {
-		value: x,
+	}, [O]), /* @__PURE__ */ y(u_.Provider, {
+		value: C,
 		children: [
-			S.stylesheetUrls.map((e) => /* @__PURE__ */ _("link", {
+			w.stylesheetUrls.map((e) => /* @__PURE__ */ v("link", {
 				rel: "stylesheet",
 				href: e,
 				"data-uhuu-brand-kit-font": "",
 				ref: (t) => {
-					t?.sheet && T(e);
+					t?.sheet && D(e);
 				},
-				onLoad: () => T(e),
-				onError: () => T(e)
+				onLoad: () => D(e),
+				onError: () => D(e)
 			}, e)),
-			S.fontFaceCss ? /* @__PURE__ */ _("style", {
+			w.fontFaceCss ? /* @__PURE__ */ v("style", {
 				"data-uhuu-brand-kit-font": "",
-				children: S.fontFaceCss
+				children: w.fontFaceCss
 			}) : null,
-			/* @__PURE__ */ _("div", {
-				"data-uhuu-brand-kit": typeof g?.id == "string" ? g.id : "",
-				"data-uhuu-brand-kit-status": b,
+			/* @__PURE__ */ v("div", {
+				"data-uhuu-brand-kit": typeof b?.id == "string" ? b.id : "",
+				"data-uhuu-brand-kit-status": S,
 				className: o,
 				style: {
 					display: "contents",
-					...x.cssVars,
+					...C.cssVars,
 					...s
 				},
 				children: c
@@ -10463,18 +10783,92 @@ function Hg({ brandKit: e, src: t, defaults: n, sourceUrl: r, onLoad: i, onError
 		]
 	});
 }
-function Ug() {
-	return c(Rg);
+function m_() {
+	return c(u_);
+}
+//#endregion
+//#region src/uhuu/editor-shell/document/template-payload-core.ts
+var h_ = (e) => typeof e == "object" && !!e && !Array.isArray(e);
+function g_(e, t, n = /* @__PURE__ */ new WeakMap()) {
+	if (Object.is(e, t)) return !0;
+	if (!h_(e) && !Array.isArray(e) || !h_(t) && !Array.isArray(t) || Array.isArray(e) !== Array.isArray(t)) return !1;
+	if (n.get(e) === t) return !0;
+	if (n.set(e, t), Array.isArray(e) && Array.isArray(t) && e.length !== t.length) return !1;
+	let r = __(e), i = __(t);
+	return r.length === i.length && r.every((r) => Object.prototype.hasOwnProperty.call(t, r) && g_(e[r], t[r], n));
+}
+function __(e) {
+	return Object.keys(e).filter((t) => e[t] !== void 0 && typeof e[t] != "function" && typeof e[t] != "symbol");
+}
+function v_(e, t, n) {
+	let r = __(e).filter((e) => e !== n), i = __(t).filter((e) => e !== n);
+	return r.length === i.length && r.every((n) => Object.prototype.hasOwnProperty.call(t, n) && g_(e[n], t[n]));
+}
+function y_(e) {
+	return {
+		payload: e ?? {},
+		sequence: 0,
+		outgoing: []
+	};
+}
+function b_(e, t) {
+	let n = typeof t == "function" ? t(e.payload) : t;
+	if (n === e.payload) return e;
+	let r = {
+		sequence: e.sequence + 1,
+		payload: n
+	};
+	return {
+		...e,
+		payload: n,
+		sequence: r.sequence,
+		lastWrite: r
+	};
+}
+function x_(e, t, n = 1) {
+	return e.outgoing.some((e) => e.sequence === t.sequence) ? e : {
+		...e,
+		outgoing: [...e.outgoing, {
+			...t,
+			remainingEchoes: n
+		}].slice(-32)
+	};
+}
+function S_(e, t, n) {
+	if (!t) return e;
+	let r = e.outgoing.findIndex((e) => v_(e.payload, t, n));
+	if (r !== -1) {
+		let t = (e.outgoing[r].remainingEchoes ?? 1) - 1;
+		return {
+			...e,
+			outgoing: t ? e.outgoing.map((e, n) => n === r ? {
+				...e,
+				remainingEchoes: t
+			} : e) : e.outgoing.filter((e, t) => t !== r)
+		};
+	}
+	let i = e.payload[n] === void 0 ? t : {
+		...t,
+		[n]: e.payload[n]
+	}, a = e.outgoing.length ? [] : e.outgoing;
+	return g_(i, e.payload) ? a === e.outgoing ? e : {
+		...e,
+		outgoing: a
+	} : {
+		...e,
+		payload: i,
+		outgoing: a
+	};
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/page-group-utils.ts
-var Wg = "uhuu_page_editor";
-function Gg(e) {
+var C_ = "uhuu_page_editor";
+function w_(e) {
 	return e.kind === "group";
 }
-function Kg(e) {
+function T_(e) {
 	let t = [], n = 1;
-	for (let r of e) if (Gg(r)) for (let e of r.pages) t.push({
+	for (let r of e) if (w_(r)) for (let e of r.pages) t.push({
 		...e,
 		kind: "page",
 		pageNum: n++
@@ -10485,9 +10879,9 @@ function Kg(e) {
 	});
 	return t;
 }
-function qg(e) {
+function E_(e) {
 	let t = [], n = 1;
-	for (let r of e) if (Gg(r)) {
+	for (let r of e) if (w_(r)) {
 		let e = r.pages.map((e) => ({
 			...e,
 			kind: "page",
@@ -10503,13 +10897,13 @@ function qg(e) {
 	});
 	return t;
 }
-function Jg(e) {
-	return Kg(e).length;
+function D_(e) {
+	return T_(e).length;
 }
-function Yg(e) {
+function O_(e) {
 	return e.map((e) => {
 		let t = e.strictPosition;
-		if (Gg(e)) {
+		if (w_(e)) {
 			let n = e.pages[0], r = n?.componentKey ?? n?.id;
 			return {
 				kind: "group",
@@ -10539,7 +10933,7 @@ function Yg(e) {
 		}
 	});
 }
-function Xg(e, t) {
+function k_(e, t) {
 	let n = /* @__PURE__ */ new Map();
 	t.forEach((e) => {
 		n.set(e.id, e);
@@ -10551,7 +10945,7 @@ function Xg(e, t) {
 	}
 	return r;
 }
-function Zg(e) {
+function A_(e) {
 	return e.map((e) => {
 		if ("kind" in e && e.kind) return e;
 		if (e.pages && Array.isArray(e.pages)) return {
@@ -10572,40 +10966,40 @@ function Zg(e) {
 		};
 	});
 }
-function Qg(e, t = Wg) {
-	let n = Zg(e);
+function j_(e, t = C_) {
+	let n = A_(e);
 	return {
 		key: t,
 		items: n,
-		totalPages: Jg(n),
+		totalPages: D_(n),
 		updatedAt: (/* @__PURE__ */ new Date()).toISOString()
 	};
 }
-function $g(e, t = Wg) {
+function M_(e, t = C_) {
 	let n = e?.[t];
 	if (!n?.items) return null;
-	let r = Zg(n.items);
+	let r = A_(n.items);
 	return {
 		key: t,
 		items: r,
-		totalPages: Jg(r),
+		totalPages: D_(r),
 		updatedAt: n.updatedAt || (/* @__PURE__ */ new Date()).toISOString()
 	};
 }
-function e_(e, t, n = Wg) {
-	let r = Qg(t, n);
+function N_(e, t, n = C_) {
+	let r = j_(t, n);
 	return {
 		...e ?? {},
 		[n]: r
 	};
 }
-function t_() {
+function P_() {
 	return Math.random().toString(36).slice(2, 11);
 }
-function n_(e, t, n) {
+function F_(e, t, n) {
 	return {
 		kind: "page",
-		id: n?.repeatable ? t_() : e,
+		id: n?.repeatable ? P_() : e,
 		componentKey: t,
 		templateId: e,
 		label: n?.label,
@@ -10614,8 +11008,8 @@ function n_(e, t, n) {
 		...n
 	};
 }
-function r_(e, t, n) {
-	let r = n?.repeatable ? t_() : e;
+function I_(e, t, n) {
+	let r = n?.repeatable ? P_() : e;
 	return {
 		kind: "group",
 		id: r,
@@ -10636,17 +11030,17 @@ function r_(e, t, n) {
 		...n
 	};
 }
-function i_(e, t) {
+function L_(e, t) {
 	return e < 0 ? t + e + 1 : e;
 }
-function a_(e, t, n) {
+function R_(e, t, n) {
 	for (let r of t) {
-		let t = i_(r.start, n), i = i_(r.end, n);
+		let t = L_(r.start, n), i = L_(r.end, n);
 		if (e >= t && e <= i) return !0;
 	}
 	return !1;
 }
-function o_(e, t, n = 2) {
+function z_(e, t, n = 2) {
 	switch (e) {
 		case "all": return [{
 			start: 1,
@@ -10666,52 +11060,52 @@ function o_(e, t, n = 2) {
 		default: return [];
 	}
 }
-function s_(e, t) {
+function B_(e, t) {
 	if (!t || t.mode === "all") return e;
-	let n = Jg(e), r = t.mode ?? "all", i = t.coverPageCount ?? 2, a = r === "custom" && t.ranges ? t.ranges : o_(r, n, i);
+	let n = D_(e), r = t.mode ?? "all", i = t.coverPageCount ?? 2, a = r === "custom" && t.ranges ? t.ranges : z_(r, n, i);
 	if (a.length === 0) return [];
 	let o = [];
-	for (let t of e) if (Gg(t)) {
-		let e = t.pages.filter((e) => e.pageNum && a_(e.pageNum, a, n));
+	for (let t of e) if (w_(t)) {
+		let e = t.pages.filter((e) => e.pageNum && R_(e.pageNum, a, n));
 		e.length > 0 && o.push({
 			...t,
 			pages: e
 		});
-	} else t.pageNum && a_(t.pageNum, a, n) && o.push(t);
+	} else t.pageNum && R_(t.pageNum, a, n) && o.push(t);
 	return o;
 }
-function c_(e, t, n) {
+function V_(e, t, n) {
 	if (!n || n.mode === "all") return !0;
-	let r = n.mode ?? "all", i = n.coverPageCount ?? 2, a = r === "custom" && n.ranges ? n.ranges : o_(r, t, i);
-	return a.length !== 0 && a_(e, a, t);
+	let r = n.mode ?? "all", i = n.coverPageCount ?? 2, a = r === "custom" && n.ranges ? n.ranges : z_(r, t, i);
+	return a.length !== 0 && R_(e, a, t);
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/integration-utils.ts
-function l_(e, t) {
+function H_(e, t) {
 	if (e?.integrations) return e.integrations[t];
 }
-function u_(e, t) {
-	return t && Gg(t) ? t.id : e?.id ?? null;
+function U_(e, t) {
+	return t && w_(t) ? t.id : e?.id ?? null;
 }
-function d_(e, t, n) {
-	let r = u_(t, n);
+function W_(e, t, n) {
+	let r = U_(t, n);
 	return r ? {
 		instanceId: r,
-		integration: l_(e, r)
+		integration: H_(e, r)
 	} : {
 		instanceId: null,
 		integration: void 0
 	};
 }
-function f_(e, t, n) {
-	return d_(e, t, n).integration;
+function G_(e, t, n) {
+	return W_(e, t, n).integration;
 }
-function p_(e, t) {
+function K_(e, t) {
 	if (!e) return null;
 	let n = `integrations.${e}`;
 	return t ? `${n}.${t}` : n;
 }
-function m_(e) {
+function q_(e) {
 	if (!e) return {
 		instanceId: null,
 		fieldPath: e,
@@ -10735,7 +11129,7 @@ function m_(e) {
 		isIntegrationPath: !1
 	};
 }
-function h_(e, t, n) {
+function J_(e, t, n) {
 	if (!t) return n;
 	let r = t.split("."), i = { ...e }, a = i;
 	for (let e = 0; e < r.length - 1; e++) {
@@ -10745,10 +11139,10 @@ function h_(e, t, n) {
 	let o = r[r.length - 1];
 	return a[o] = n, i;
 }
-function g_(e, t, n) {
-	let r = m_(t);
+function Y_(e, t, n) {
+	let r = q_(t);
 	if (!r.isIntegrationPath || !r.instanceId) return e;
-	let { instanceId: i, fieldPath: a } = r, o = h_(l_(e, i) || {}, a, n);
+	let { instanceId: i, fieldPath: a } = r, o = J_(H_(e, i) || {}, a, n);
 	return {
 		...e,
 		integrations: {
@@ -10759,7 +11153,7 @@ function g_(e, t, n) {
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/template-data-provider.tsx
-function __(e, t) {
+function X_(e, t) {
 	if (!e || !t) return;
 	let n = typeof t == "string" ? t : t?.id, r = typeof t == "string" ? void 0 : t?.templateId ?? t?.componentKey, i = typeof t == "string" ? void 0 : t?.componentKey, a = Array.from(new Set([
 		n,
@@ -10770,71 +11164,32 @@ function __(e, t) {
 	for (let t of a) if (e?.groups?.[t] !== void 0) return e.groups[t];
 	for (let t of a) if (e[t] !== void 0) return e[t];
 }
-var v_ = e.createContext(null);
-function y_(e = Wg) {
-	return [e];
-}
-function b_(e, t, n) {
-	if (!t) return e;
-	if (!e) return t;
-	let r = { ...t };
-	return n.forEach((t) => {
-		e[t] !== void 0 && (r[t] = e[t]);
-	}), r;
-}
-function x_({ payload: t, onPayloadChange: n, children: r, stateKey: i = Wg }) {
-	let [a, o] = e.useState(t ?? {}), s = e.useRef(null), c = e.useRef(!1), l = e.useRef(null), u = e.useRef(0), d = e.useRef(!0), f = e.useCallback((e) => {
-		try {
-			return JSON.stringify(e);
-		} catch {
-			return String(e);
-		}
-	}, []), p = e.useMemo(() => y_(i), [i]), m = e.useCallback((e, t) => {
-		if (!e) return null;
-		let n = { ...e };
-		return t.forEach((e) => {
-			delete n[e];
-		}), n;
-	}, []);
+var Z_ = e.createContext(null);
+function Q_({ payload: t, onPayloadChange: n, children: r, stateKey: i = C_ }) {
+	let [a, o] = e.useReducer((e, t) => t.type === "local" ? b_(e, t.update) : t.type === "sent" ? x_(e, t.write, t.publishers) : S_(e, t.payload, t.key), t, y_), s = a.payload, c = e.useRef(0);
 	e.useEffect(() => {
-		if (d.current) d.current = !1, t && (s.current = t, o(t));
-		else {
-			if (c.current) {
-				c.current = !1;
-				let e = l.current === null ? null : f(m(l.current, p)), n = f(m(t, p));
-				if (e !== null && e === n) {
-					s.current = t;
-					return;
-				}
-			}
-			if (t !== s.current) {
-				if (Date.now() - u.current < 500 && l.current !== null) {
-					let e = m(t, p), n = m(l.current, p), r = e ? f(e) : null, i = n ? f(n) : null;
-					if (r && r === i) {
-						l.current = null, s.current = t;
-						return;
-					}
-				}
-				s.current = t, o((e) => t ? b_(e, t, p) : e);
-			}
-		}
-	}, [
-		t,
-		p,
-		f,
-		m
-	]);
-	let h = e.useCallback((e) => {
-		if (n?.(e), typeof window > "u") return;
-		let t = window.$uhuu;
-		t?.emitPayload && t.emitPayload(e);
-	}, [n]), g = e.useCallback((e) => {
-		c.current = !0, o((t) => {
-			let n = typeof e == "function" ? e(t) : e, r = n;
-			return n && typeof n == "object" && Object.keys(n).filter((e) => e.startsWith("integrations.") || e === "integrations").length > 0 && n.integrations && (r = n), l.current = r, u.current = Date.now(), queueMicrotask(() => h(r)), r;
+		o({
+			type: "external",
+			payload: t,
+			key: i
 		});
-	}, [h]), v = e.useCallback((e, t, n) => {
-		g((r) => ({
+	}, [t, i]), e.useEffect(() => {
+		if (!a.lastWrite || a.lastWrite.sequence <= c.current) return;
+		c.current = a.lastWrite.sequence;
+		let e = typeof window > "u" ? void 0 : window.$uhuu, t = typeof e?.emitPayload == "function";
+		(n || t) && o({
+			type: "sent",
+			write: a.lastWrite,
+			publishers: Number(!!n) + Number(t)
+		}), n?.(a.lastWrite.payload), t && e.emitPayload(a.lastWrite.payload);
+	}, [a.lastWrite, n]);
+	let l = e.useCallback((e) => {
+		o({
+			type: "local",
+			update: e
+		});
+	}, []), u = e.useCallback((e, t, n) => {
+		l((r) => ({
 			...r ?? {},
 			pages: {
 				...r?.pages ?? {},
@@ -10844,8 +11199,8 @@ function x_({ payload: t, onPayloadChange: n, children: r, stateKey: i = Wg }) {
 				}
 			}
 		}));
-	}, [g]), y = e.useCallback((e, t) => {
-		g((n) => {
+	}, [l]), d = e.useCallback((e, t) => {
+		l((n) => {
 			let r = n?.integrations ?? {}, i = r[e], a = typeof t == "function" ? t(i) : t;
 			return {
 				...n ?? {},
@@ -10855,13 +11210,13 @@ function x_({ payload: t, onPayloadChange: n, children: r, stateKey: i = Wg }) {
 				}
 			};
 		});
-	}, [g]), b = e.useCallback((e, t, n) => {
-		y(e, (e) => ({
-			...e ?? {},
+	}, [l]), f = e.useCallback((e, t, n) => {
+		d(e, (e) => ({
+			...h_(e) ? e : {},
 			[t]: n
 		}));
-	}, [y]), x = e.useCallback((e) => {
-		g((t) => {
+	}, [d]), p = e.useCallback((e) => {
+		l((t) => {
 			if (!t?.integrations || !t.integrations[e]) return t;
 			let { [e]: n, ...r } = t.integrations;
 			return {
@@ -10869,826 +11224,230 @@ function x_({ payload: t, onPayloadChange: n, children: r, stateKey: i = Wg }) {
 				integrations: Object.keys(r).length > 0 ? r : void 0
 			};
 		});
-	}, [g]), S = e.useCallback((e, t) => {
-		g((n) => g_(n, e, t));
-	}, [g]), C = e.useCallback((e, t) => {
+	}, [l]), m = e.useCallback((e, t) => {
+		l((n) => Y_(n, e, t));
+	}, [l]), h = e.useCallback((e, t) => {
 		let n = t ?? i;
-		g((t) => e_(t, e, n));
-	}, [g, i]), w = e.useCallback((e) => __(a, e), [a]), T = e.useMemo(() => ({
-		payload: a,
-		setPayload: g,
-		setPageOptionValue: v,
-		setIntegrationPayload: y,
-		setIntegrationPayloadValue: b,
-		removeIntegrationPayload: x,
-		updateIntegrationByDialogPath: S,
-		mergePageEditorState: C,
-		getPagePayload: w
+		l((t) => N_(t, e, n));
+	}, [l, i]), g = e.useCallback((e) => X_(s, e), [s]), _ = e.useMemo(() => ({
+		payload: s,
+		setPayload: l,
+		setPageOptionValue: u,
+		setIntegrationPayload: d,
+		setIntegrationPayloadValue: f,
+		removeIntegrationPayload: p,
+		updateIntegrationByDialogPath: m,
+		mergePageEditorState: h,
+		getPagePayload: g
 	}), [
-		a,
-		g,
-		v,
-		y,
-		b,
-		x,
-		S,
-		C,
-		w
+		s,
+		l,
+		u,
+		d,
+		f,
+		p,
+		m,
+		h,
+		g
 	]);
-	return /* @__PURE__ */ _(v_.Provider, {
-		value: T,
+	return /* @__PURE__ */ v(Z_.Provider, {
+		value: _,
 		children: r
 	});
 }
-function S_(e) {
+function $_(e) {
 	return e.defaultValue === void 0 ? e.type === "toggle" ? !1 : e.type === "slider" || e.type === "counter" ? 0 : "" : e.defaultValue;
 }
-function C_(e, t) {
+function ev(e, t) {
 	return e.type === "toggle" ? t === !0 || t === "true" : e.type === "slider" || e.type === "counter" ? Number(t) : t;
 }
-function w_(e, t, n) {
+function tv(e, t, n) {
 	let r = e.field ?? e.id;
 	return {
 		...e,
 		getValue: (n) => {
 			let i = t?.pages?.[n.id]?.[r];
-			return i === void 0 ? S_(e) : e.type === "toggle" ? !!i : i;
+			return i === void 0 ? $_(e) : e.type === "toggle" ? !!i : i;
 		},
 		onChange: (t, i) => {
-			n(t, r, C_(e, i));
+			n(t, r, ev(e, i));
 		}
 	};
 }
 //#endregion
-//#region src/uhuu/editor-shell/resizers/zoom-fit-core.js
-function T_(e) {
-	switch (e) {
-		case "fit-width": return "width";
-		case "fit-height": return "height";
-		case "fit-page": return "both";
-		default: return "none";
-	}
-}
-function E_(e) {
-	let t = e.filter(({ width: e, height: t }) => e > 0 && t > 0);
-	return t.length ? {
-		width: t.reduce((e, t) => e + t.width, 0),
-		height: Math.max(...t.map((e) => e.height))
-	} : null;
-}
-function D_(e, t) {
-	if (e === "two_pages") return E_(t);
-	let n = t.find(({ width: e, height: t }) => e > 0 && t > 0);
-	return n ? {
-		width: n.width,
-		height: n.height
-	} : null;
-}
-function O_({ paneClientHeight: e, paneTop: t, viewportHeight: n }) {
-	let r = [e, n - Math.max(t, 0)].filter((e) => e > 0);
-	return r.length ? Math.min(...r) : 0;
-}
-function k_({ paneWidth: e, paneHeight: t, paddingX: n = 0, paddingY: r = 0, chromeHeight: i = 0 }) {
+//#region src/uhuu/editor-shell/document/page-management.js
+var nv = [
+	"add",
+	"remove",
+	"reorder",
+	"duplicate",
+	"rename"
+];
+function rv(e) {
+	let t = e && typeof e == "object" ? e : {}, n = t.locked !== !0, r = Object.fromEntries(nv.map((e) => [e, typeof t[e] == "boolean" ? t[e] : n]));
 	return {
-		availableWidth: Math.max(e - n, 0),
-		availableHeight: Math.max(t - r - i, 0)
+		...r,
+		templateOwnsPages: !r.add && !r.remove && !r.reorder && !r.duplicate
 	};
 }
-function A_({ mode: e, contentWidth: t, contentHeight: n, availableWidth: r, availableHeight: i, minZoom: a, maxZoom: o }) {
-	if (e === "none" || t <= 0 || n <= 0 || r <= 0 || i <= 0) return null;
-	let s = r / t * 100, c = i / n * 100;
-	return Math.min(Math.max(e === "width" ? s : e === "height" ? c : Math.min(s, c), a), o);
-}
-//#endregion
-//#region src/uhuu/editor-shell/resizers/zoom-focal-core.js
-function j_(e, t, n) {
-	return t >= e.left && t <= e.left + e.width && n >= e.top && n <= e.top + e.height ? {
-		clientX: t,
-		clientY: n
-	} : {
-		clientX: e.left + e.width / 2,
-		clientY: e.top + e.height / 2
-	};
-}
-function M_(e, t, n, r) {
-	if (e.width <= 0 || e.height <= 0) return {
-		deltaLeft: 0,
-		deltaTop: 0
-	};
-	let i = n - e.left, a = r - e.top, o = t.left + i * (t.width / e.width), s = t.top + a * (t.height / e.height);
-	return {
-		deltaLeft: o - n,
-		deltaTop: s - r
-	};
-}
-function N_(e) {
-	return {
-		left: e.left,
-		top: e.top,
-		width: e.width,
-		height: e.height
-	};
-}
-function P_(e, t, n) {
-	let r = -1, i = Infinity;
-	for (let a = 0; a < e.length; a += 1) {
-		let o = e[a];
-		if (o.width <= 0 || o.height <= 0) continue;
-		if (t >= o.left && t <= o.left + o.width && n >= o.top && n <= o.top + o.height) return a;
-		let s = t - (o.left + o.width / 2), c = n - (o.top + o.height / 2), l = s * s + c * c;
-		l < i && (i = l, r = a);
-	}
-	return r;
-}
-function F_(e) {
-	return e === "auto" || e === "scroll" || e === "overlay";
-}
-//#endregion
-//#region src/uhuu/editor-shell/resizers/section-page-resizer.tsx
-var I_ = 24, L_ = 64, R_ = 1e3, z_ = {
-	width: "max-content",
-	margin: "auto",
-	padding: `0 ${I_}px ${L_}px`,
-	overflowAnchor: "none"
-};
-function B_(e) {
-	let t = e, n = null, r = null;
-	for (; t && t !== document.documentElement;) {
-		let e = window.getComputedStyle(t);
-		if (!n && F_(e.overflowX) && (n = t), !r && F_(e.overflowY) && (r = t), n && r) return {
-			x: n,
-			y: r
+var iv = /* @__PURE__ */ new Set([
+	"kind",
+	"id",
+	"pages",
+	"templateId",
+	"componentKey",
+	"dataKey",
+	"hasFlow",
+	"strictPosition",
+	"label",
+	"className",
+	"repeatable",
+	"maxInstances",
+	"allowAsSinglePage",
+	"thumbnail"
+]);
+function av(e, t, { rename: n = !1 } = {}) {
+	if (!t?.length) return e;
+	let r = /* @__PURE__ */ new Map(), i = (e) => e.forEach((e) => {
+		e?.id && r.set(e.id, e), Array.isArray(e?.pages) && i(e.pages);
+	});
+	i(t);
+	let a = (e) => {
+		let t = r.get(e.id), i = t ? Object.fromEntries(Object.entries(t).filter(([e]) => !iv.has(e))) : {};
+		t && n && !Ka(t.label, e.label) && (i.label = t.label);
+		let o = {
+			...e,
+			...i
 		};
-		t = t.parentElement;
-	}
-	let i = document.scrollingElement;
-	return {
-		x: n ?? i,
-		y: r ?? i
+		return Array.isArray(e.pages) ? {
+			...o,
+			pages: e.pages.map(a)
+		} : o;
 	};
+	return e.map(a);
 }
-function V_(e) {
-	let t = Math.max(e.getBoundingClientRect().top, 0), n = 0, r = e.parentElement;
-	for (; r && r !== document.documentElement;) {
-		let e = window.getComputedStyle(r);
-		e.display !== "contents" && (n += (Number.parseFloat(e.paddingBottom) || 0) + (Number.parseFloat(e.borderBottomWidth) || 0) + Math.max(Number.parseFloat(e.marginBottom) || 0, 0)), r = r.parentElement;
-	}
-	return t + n;
-}
-function H_(e) {
-	let t = e.querySelector("[data-section-content]"), n = t?.closest("[class*=\"group/section\"]");
-	if (!t || !n) return 0;
-	let r = t.getBoundingClientRect().height;
-	return r > 0 ? Math.max(n.getBoundingClientRect().height - r, 0) : 0;
-}
-var U_ = r({
-	zoom: 100,
-	scaleValue: 1,
-	hideUI: !1
-});
-function W_({ children: e, layout: t = "spread", pageItemId: n }) {
-	let { scaleValue: r } = c(U_), i = p(null);
-	return l(() => {
-		if (!i.current) return;
-		let e = () => {
-			let e = i.current?.querySelectorAll("[data-section-content]");
-			if (!e?.length) return;
-			let t = Array.from(e).reduce((e, t) => e + Number.parseInt(t.getAttribute("data-natural-width") || "0"), 0);
-			if (t > 0) {
-				let e = t * r;
-				i.current?.style.setProperty("--uhuu-group-pair-width", `${e}px`);
+//#endregion
+//#region src/uhuu/editor-shell/document/page-items-core.ts
+function ov(e, t) {
+	if (!e) return { keys: [] };
+	if (Array.isArray(e)) return { keys: e };
+	try {
+		let n = e(t);
+		if (!Array.isArray(n)) return {
+			keys: [],
+			issue: {
+				reason: "invalid-result",
+				detail: typeof n
 			}
 		};
-		e();
-		let t = new ResizeObserver(e);
-		return i.current.querySelectorAll("[data-section-content]").forEach((e) => t.observe(e)), () => t.disconnect();
-	}, [e, r]), /* @__PURE__ */ _("div", {
-		ref: i,
-		className: `two-pages-pair two-pages-pair--${t}`,
-		"data-page-item-id": n,
-		children: e
-	});
-}
-function G_(e) {
-	let t = Number.parseFloat(e.getAttribute("data-natural-width") || "0"), n = Number.parseFloat(e.getAttribute("data-natural-height") || "0");
-	return t > 0 && n > 0 ? {
-		width: t,
-		height: n
-	} : null;
-}
-function K_(e, t) {
-	let n = t === "two_pages" ? e.querySelector(".two-pages-pair") : e;
-	if (!n) return null;
-	let r = t === "two_pages" ? Array.from(n.querySelectorAll("[data-section-content]")) : (() => {
-		let e = n.querySelector("[data-section-content]");
-		return e ? [e] : [];
-	})();
-	return r.length ? D_(t, r.map(G_).filter((e) => e !== null)) : null;
-}
-function q_({ children: e, title: t, className: n = "", controls: r, origin: i = "center" }) {
-	let { scaleValue: a, hideUI: o } = c(U_), s = p(null), [u, d] = m(0), [f, h] = m(0);
-	l(() => {
-		if (s.current) {
-			let e = () => {
-				let e = s.current;
-				if (e) {
-					let t = e.style.transform;
-					e.style.transform = "scale(1)";
-					let n = e.scrollHeight, r = e.scrollWidth;
-					e.style.transform = t, d(n), h(r);
-				}
-			};
-			e();
-			let t = new ResizeObserver(e);
-			return t.observe(s.current), () => {
-				t.disconnect();
-			};
-		}
-	}, [e]);
-	let g = u * a, y = Math.max(f * a, 150), { justify: b, origin: x } = {
-		left: {
-			justify: "uhuu:justify-start",
-			origin: "top left"
-		},
-		right: {
-			justify: "uhuu:justify-end",
-			origin: "top right"
-		},
-		center: {
-			justify: "uhuu:justify-center",
-			origin: "top center"
-		}
-	}[i];
-	return o ? /* @__PURE__ */ _("div", {
-		className: n,
-		children: e
-	}) : /* @__PURE__ */ v("div", {
-		className: `uhuu:group/section ${n}`,
-		style: {
-			width: `${y}px`,
-			minWidth: "150px"
-		},
-		children: [/* @__PURE__ */ _("div", { children: r ?? /* @__PURE__ */ _("div", {
-			"data-uhuu-editor": !0,
-			className: "uhuu:px-4 uhuu:py-2 uhuu:border-b uhuu:border-gray-200",
-			children: /* @__PURE__ */ v("div", {
-				className: "uhuu:text-sm uhuu:font-medium uhuu:text-gray-700",
-				children: [t, " Controls"]
-			})
-		}) }), /* @__PURE__ */ _("div", {
-			className: "uhuu:pt-1",
-			style: {
-				height: g > 0 ? `${g + 32}px` : "auto",
-				minHeight: "100px"
-			},
-			children: /* @__PURE__ */ _("div", {
-				className: `uhuu:flex uhuu:items-start ${b}`,
-				children: /* @__PURE__ */ _("div", {
-					ref: s,
-					"data-section-content": !0,
-					"data-natural-width": f,
-					"data-natural-height": u,
-					style: {
-						transform: `scale(${a})`,
-						transformOrigin: x
-					},
-					children: e
-				})
-			})
-		})]
-	});
-}
-function J_({ children: e, className: t = "", defaultZoom: n = 100, minZoom: r = 25, maxZoom: i = 200, onAddPage: a, menuItems: o, hideUI: c, preview: u = "single_page", defaultZoomMode: d = "manual", scrollMode: f = "pane" }) {
-	let h = yo(), g = c ?? h, { t: y } = Ua(), [b, S] = m(n), [C, w] = m(() => T_(d)), [T, E] = m(() => T_(d) !== "none"), [D, O] = m(0), k = p(null), A = p(null), j = p(null), M = p(null), N = p(b);
-	l(() => {
-		N.current = b;
-	}, [b]);
-	let P = s(() => f === "pane" && A.current ? {
-		x: A.current,
-		y: A.current
-	} : B_(k.current), [f]), F = s((e, t, n) => {
-		let a = Math.min(Math.max(e, r), i), o = M.current;
-		if (!o) {
-			S(a), w("none");
-			return;
-		}
-		let s = P(), c = Array.from(o.querySelectorAll("[data-section-content]")), l = P_(c.map((e) => N_(e.getBoundingClientRect())), t, n), u = l >= 0 ? c[l] : o, d = N_(u.getBoundingClientRect()), f = j_(d, t, n);
-		x(() => {
-			S(a), w("none");
-		});
-		let p = () => {
-			let e = N_(u.getBoundingClientRect()), { deltaLeft: t, deltaTop: n } = M_(d, e, f.clientX, f.clientY);
-			t !== 0 && s.x && (s.x.scrollLeft += t), n !== 0 && s.y && (s.y.scrollTop += n);
-		};
-		p(), window.requestAnimationFrame(p);
-	}, [
-		i,
-		r,
-		P
-	]), I = s(() => {
-		let e = (f === "pane" ? A.current : k.current)?.getBoundingClientRect();
-		return e ? {
-			clientX: e.left + e.width / 2,
-			clientY: e.top + e.height / 2
-		} : {
-			clientX: 0,
-			clientY: 0
-		};
-	}, [f]), L = s(() => {
-		let e = M.current;
-		if (C === "none" || !e) return;
-		let t = K_(e, u);
-		if (!t) return;
-		let n = f === "pane" ? A.current : k.current;
-		if (!n) return;
-		let a = n.getBoundingClientRect(), o = n.ownerDocument.defaultView ?? window, s = o.visualViewport?.height ?? n.ownerDocument.documentElement.clientHeight ?? o.innerHeight, c = n.clientWidth || a.width, l = f === "pane" ? O_({
-			paneClientHeight: n.clientHeight || a.height,
-			paneTop: a.top,
-			viewportHeight: s
-		}) : s - Math.max(a.top, 0), d = j.current ? window.getComputedStyle(j.current) : null, { availableWidth: p, availableHeight: m } = k_({
-			paneWidth: c,
-			paneHeight: l,
-			paddingX: d ? Number.parseFloat(d.paddingLeft) + Number.parseFloat(d.paddingRight) : 0,
-			paddingY: d ? Number.parseFloat(d.paddingTop) + Number.parseFloat(d.paddingBottom) : 0,
-			chromeHeight: H_(e)
-		}), h = A_({
-			mode: C,
-			contentWidth: t.width,
-			contentHeight: t.height,
-			availableWidth: p,
-			availableHeight: m,
-			minZoom: r,
-			maxZoom: i
-		});
-		h !== null && (S((e) => Math.abs(e - h) < .01 ? e : h), E(!1));
-	}, [
-		C,
-		i,
-		r,
-		u,
-		f
-	]), R = (e) => {
-		w(e);
-	};
-	l(() => {
-		if (!T) return;
-		if (C === "none") {
-			E(!1);
-			return;
-		}
-		let e = window.setTimeout(() => E(!1), R_);
-		return () => window.clearTimeout(e);
-	}, [T, C]);
-	let ee = () => {
-		let e = I();
-		F(b + 25, e.clientX, e.clientY);
-	}, te = () => {
-		let e = I();
-		F(b - 25, e.clientX, e.clientY);
-	};
-	l(() => {
-		if (C === "none" || !k.current || !M.current) return;
-		let e = 0, t = () => {
-			window.cancelAnimationFrame(e), e = window.requestAnimationFrame(L);
-		}, n = new ResizeObserver(t);
-		n.observe(k.current), A.current && n.observe(A.current), n.observe(M.current);
-		let r = () => {
-			M.current?.querySelectorAll("[data-section-content]").forEach((e) => {
-				n.observe(e);
-			});
-		};
-		r();
-		let i = new MutationObserver(() => {
-			r(), t();
-		});
-		return i.observe(M.current, {
-			childList: !0,
-			subtree: !0
-		}), window.addEventListener("resize", t), window.visualViewport?.addEventListener("resize", t), t(), () => {
-			window.cancelAnimationFrame(e), n.disconnect(), i.disconnect(), window.removeEventListener("resize", t), window.visualViewport?.removeEventListener("resize", t);
-		};
-	}, [C, L]), l(() => {
-		if (g || f !== "pane") return;
-		let e = k.current;
-		if (!e) return;
-		let t = () => {
-			let t = V_(e);
-			O((e) => Math.abs(e - t) < .5 ? e : t);
-		};
-		t();
-		let n = new ResizeObserver(t);
-		return n.observe(e), window.addEventListener("resize", t), window.visualViewport?.addEventListener("resize", t), () => {
-			n.disconnect(), window.removeEventListener("resize", t), window.visualViewport?.removeEventListener("resize", t);
-		};
-	}, [g, f]), l(() => {
-		if (g) return;
-		let e = null, t = null, n = null, a = {
-			clientX: 0,
-			clientY: 0
-		}, o = null, s = !1, c = () => {
-			e = null;
-			let t = n;
-			n = null, t !== null && F(t, a.clientX, a.clientY);
-		}, l = (t) => {
-			if (!t.ctrlKey && !t.metaKey) return;
-			t.preventDefault();
-			let o = t.deltaMode === 1 ? t.deltaY * 16 : t.deltaMode === 2 ? t.deltaY * 16 * 32 : t.deltaY, s = n ?? N.current, l = Math.min(Math.max(s * 1.003 ** -o, r), i);
-			a = {
-				clientX: t.clientX,
-				clientY: t.clientY
-			}, (l !== s || n !== null) && (n = l, e === null && (e = window.requestAnimationFrame(c)));
-		}, u = () => {
-			t = null, !s && (o = f === "pane" ? A.current : k.current, o ? o.addEventListener("wheel", l, { passive: !1 }) : t = window.requestAnimationFrame(u));
-		};
-		return u(), () => {
-			s = !0, e !== null && window.cancelAnimationFrame(e), t !== null && window.cancelAnimationFrame(t), o?.removeEventListener("wheel", l);
-		};
-	}, [
-		F,
-		g,
-		i,
-		r,
-		f
-	]);
-	let z = b / 100;
-	return g ? /* @__PURE__ */ _(U_.Provider, {
-		value: {
-			zoom: 100,
-			scaleValue: 1,
-			hideUI: !0
-		},
-		children: /* @__PURE__ */ _("div", {
-			className: t,
-			children: e
-		})
-	}) : /* @__PURE__ */ _(U_.Provider, {
-		value: {
-			zoom: b,
-			scaleValue: z,
-			hideUI: !1
-		},
-		children: /* @__PURE__ */ v("div", {
-			ref: k,
-			className: `uhuu:flex uhuu:flex-col uhuu:flex-1 uhuu:min-h-0 ${t}`,
-			children: [/* @__PURE__ */ v("div", {
-				"data-uhuu-editor": !0,
-				className: "uhuu:fixed uhuu:right-4 uhuu:bottom-4 uhuu:z-50 uhuu:flex uhuu:items-center uhuu:gap-1.5 uhuu:px-2.5 uhuu:py-1.5 uhuu:bg-(--uhuu-shell-surface)/90 uhuu:backdrop-blur-md uhuu:border uhuu:border-gray-200/60 uhuu:rounded-lg uhuu:shadow-sm",
-				children: [
-					o,
-					/* @__PURE__ */ _("div", { className: "uhuu:h-4 uhuu:w-px uhuu:bg-gray-200 uhuu:mx-0.5" }),
-					/* @__PURE__ */ v(th, {
-						modal: !1,
-						children: [/* @__PURE__ */ _(nh, {
-							asChild: !0,
-							children: /* @__PURE__ */ v(Do, {
-								variant: "ghost",
-								size: "sm",
-								title: y("zoom.menu"),
-								className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-700 uhuu:hover:bg-gray-100/80 uhuu:h-7 uhuu:px-2.5",
-								children: [
-									Math.round(b),
-									"%",
-									/* @__PURE__ */ _(Bi, { className: "uhuu:w-3 uhuu:h-3 uhuu:ml-1 uhuu:opacity-60" })
-								]
-							})
-						}), /* @__PURE__ */ v(oh, {
-							className: "uhuu:w-52 uhuu:p-1.5",
-							align: "end",
-							children: [
-								/* @__PURE__ */ v(sh, {
-									onClick: () => R("width"),
-									className: `uhuu:cursor-pointer uhuu:flex uhuu:items-center ${C === "width" ? "uhuu:bg-gray-100" : ""}`,
-									children: [/* @__PURE__ */ _($i, { className: "uhuu:w-4 uhuu:h-4 uhuu:mr-2" }), /* @__PURE__ */ _("span", { children: y("zoom.fitWidth") })]
-								}),
-								/* @__PURE__ */ v(sh, {
-									onClick: () => R("height"),
-									className: `uhuu:cursor-pointer uhuu:flex uhuu:items-center ${C === "height" ? "uhuu:bg-gray-100" : ""}`,
-									children: [/* @__PURE__ */ _(ea, { className: "uhuu:w-4 uhuu:h-4 uhuu:mr-2" }), /* @__PURE__ */ _("span", { children: y("zoom.fitHeight") })]
-								}),
-								/* @__PURE__ */ v(sh, {
-									onClick: () => R("both"),
-									className: `uhuu:cursor-pointer uhuu:flex uhuu:items-center ${C === "both" ? "uhuu:bg-gray-100" : ""}`,
-									children: [/* @__PURE__ */ _(qi, { className: "uhuu:w-4 uhuu:h-4 uhuu:mr-2" }), /* @__PURE__ */ _("span", { children: y("zoom.fitPage") })]
-								}),
-								/* @__PURE__ */ _(dh, { className: "uhuu:my-1.5" }),
-								/* @__PURE__ */ v("div", {
-									className: "uhuu:flex uhuu:items-center uhuu:justify-center uhuu:gap-2 uhuu:px-3 uhuu:py-2.5",
-									onClick: (e) => e.stopPropagation(),
-									children: [
-										/* @__PURE__ */ _(Do, {
-											variant: "ghost",
-											size: "sm",
-											onClick: (e) => {
-												e.stopPropagation(), te();
-											},
-											disabled: b <= r,
-											className: "uhuu:h-8 uhuu:w-8 uhuu:p-0 uhuu:hover:bg-gray-100 uhuu:disabled:opacity-40",
-											title: y("zoom.zoomOut"),
-											children: /* @__PURE__ */ _(ra, { className: "uhuu:w-4 uhuu:h-4" })
-										}),
-										/* @__PURE__ */ v("div", {
-											className: "uhuu:relative",
-											children: [/* @__PURE__ */ _("input", {
-												type: "number",
-												value: Math.round(b),
-												onChange: (e) => {
-													let t = Number.parseInt(e.target.value);
-													if (!isNaN(t)) {
-														let e = I();
-														F(t, e.clientX, e.clientY);
-													}
-												},
-												onFocus: (e) => e.target.select(),
-												className: "uhuu:w-20 uhuu:pr-6 uhuu:text-center uhuu:text-sm uhuu:text-gray-700 uhuu:bg-(--uhuu-shell-surface) uhuu:border uhuu:border-gray-300 uhuu:rounded uhuu:px-2 uhuu:py-1.5 uhuu:focus:outline-none uhuu:focus:ring-2 uhuu:focus:ring-blue-500 uhuu:focus:border-transparent uhuu:transition-all",
-												min: r,
-												max: i
-											}), /* @__PURE__ */ _("span", {
-												className: "uhuu:absolute uhuu:right-2 uhuu:top-1/2 uhuu:-translate-y-1/2 uhuu:text-xs uhuu:text-gray-400 uhuu:pointer-events-none",
-												children: "%"
-											})]
-										}),
-										/* @__PURE__ */ _(Do, {
-											variant: "ghost",
-											size: "sm",
-											onClick: (e) => {
-												e.stopPropagation(), ee();
-											},
-											disabled: b >= i,
-											className: "uhuu:h-8 uhuu:w-8 uhuu:p-0 uhuu:hover:bg-gray-100 uhuu:disabled:opacity-40",
-											title: y("zoom.zoomIn"),
-											children: /* @__PURE__ */ _(na, { className: "uhuu:w-4 uhuu:h-4" })
-										})
-									]
-								})
-							]
-						})]
-					})
-				]
-			}), /* @__PURE__ */ _("div", {
-				ref: A,
-				className: f === "pane" ? "uhuu-zoom-pane" : void 0,
-				style: f === "pane" ? {
-					height: `calc(100dvh - ${D}px)`,
-					maxHeight: "100%",
-					overflow: "auto",
-					overscrollBehavior: "contain"
-				} : void 0,
-				children: /* @__PURE__ */ _("div", {
-					ref: j,
-					className: "uhuu-zoom-pane-content",
-					style: T ? {
-						...z_,
-						visibility: "hidden"
-					} : z_,
-					children: /* @__PURE__ */ _("div", {
-						ref: M,
-						className: u === "two_pages" ? "group_two_pages" : "uhuu:flex uhuu:flex-col uhuu:items-center",
-						children: e
-					})
-				})
-			})]
-		})
-	});
-}
-//#endregion
-//#region node_modules/.pnpm/@radix-ui+react-dialog@1.2.0_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_c1edb718822a6de77ff35d62c5110ee0/node_modules/@radix-ui/react-dialog/dist/index.mjs
-var Y_ = Object.defineProperty, X_ = (e, t) => Y_(e, "name", {
-	value: t,
-	configurable: !0
-}), Z_ = "Dialog", [Q_, $_] = /* @__PURE__ */ Ho(Z_), [ev, tv] = Q_(Z_), nv = /* @__PURE__ */ X_((t) => {
-	let { __scopeDialog: n, children: r, open: i, defaultOpen: a, onOpenChange: o, modal: s = !0 } = t, c = e.useRef(null), l = e.useRef(null), { nodes: u, registry: d } = bc(), [f, p] = $o({
-		prop: i,
-		defaultProp: a ?? !1,
-		onChange: o,
-		caller: Z_
-	}), [m, h] = e.useState(0), [g, v] = e.useState(0);
-	return /* @__PURE__ */ _(ev, {
-		scope: n,
-		triggerRef: c,
-		contentRef: l,
-		contentId: Lc(),
-		titleId: Lc(),
-		descriptionId: Lc(),
-		titlePresent: m > 0,
-		descriptionPresent: g > 0,
-		setTitleCount: h,
-		setDescriptionCount: v,
-		open: f,
-		onOpenChange: p,
-		onOpenToggle: e.useCallback(() => p((e) => !e), [p]),
-		modal: s,
-		branchNodes: u,
-		branchRegistry: d,
-		children: r
-	});
-}, "Dialog"), rv = "DialogTrigger", iv = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ X_(function(e, t) {
-	let { __scopeDialog: n, ...r } = e, i = tv(rv, n), a = J(t, i.triggerRef);
-	return /* @__PURE__ */ _(Ss.button, {
-		type: "button",
-		"aria-haspopup": "dialog",
-		"aria-expanded": i.open,
-		"aria-controls": i.open ? i.contentId : void 0,
-		"data-state": Cv(i.open),
-		...r,
-		ref: a,
-		onClick: q(e.onClick, i.onOpenToggle)
-	});
-}, "DialogTrigger")), av = "DialogPortal", [ov, sv] = Q_(av, { forceMount: void 0 }), cv = /* @__PURE__ */ X_((t) => {
-	let { __scopeDialog: n, forceMount: r, children: i, container: a } = t, o = tv(av, n);
-	return /* @__PURE__ */ _(ov, {
-		scope: n,
-		forceMount: r,
-		children: e.Children.map(i, (e) => /* @__PURE__ */ _(Sd, {
-			present: r || o.open,
-			children: /* @__PURE__ */ _(vd, {
-				asChild: !0,
-				container: a,
-				children: e
-			})
-		}))
-	});
-}, "DialogPortal"), lv = "DialogOverlay", uv = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ X_(function(e, t) {
-	let n = sv(lv, e.__scopeDialog), { forceMount: r = n.forceMount, ...i } = e, a = tv(lv, e.__scopeDialog);
-	return a.modal ? /* @__PURE__ */ _(Sd, {
-		present: r || a.open,
-		children: /* @__PURE__ */ _(fv, {
-			...i,
-			ref: t
-		})
-	}) : null;
-}, "DialogOverlay")), dv = /* @__PURE__ */ os("DialogOverlay.RemoveScroll"), fv = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ X_(function(t, n) {
-	let { __scopeDialog: r, ...i } = t, a = tv(lv, r), o = J(n, $s());
-	return /* @__PURE__ */ _(Sp, {
-		as: dv,
-		allowPinchZoom: !0,
-		shards: e.useMemo(() => [a.contentRef, ...a.branchNodes.map((e) => ({ current: e }))], [a.contentRef, a.branchNodes]),
-		children: /* @__PURE__ */ _(Ss.div, {
-			"data-state": Cv(a.open),
-			...i,
-			ref: o,
-			style: {
-				pointerEvents: "auto",
-				...i.style
+		let r = n.filter((e) => typeof e == "string");
+		return r.length === n.length ? { keys: r } : {
+			keys: r,
+			issue: {
+				reason: "invalid-keys",
+				detail: n
 			}
-		})
-	});
-}, "DialogOverlayImpl")), pv = "DialogContent", mv = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ X_(function(e, t) {
-	let n = sv(pv, e.__scopeDialog), { forceMount: r = n.forceMount, ...i } = e, a = tv(pv, e.__scopeDialog);
-	return /* @__PURE__ */ _(Sd, {
-		present: r || a.open,
-		children: a.modal ? /* @__PURE__ */ _(hv, {
-			...i,
-			ref: t
-		}) : /* @__PURE__ */ _(gv, {
-			...i,
-			ref: t
-		})
-	});
-}, "DialogContent")), hv = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ X_(function(t, n) {
-	let r = tv(pv, t.__scopeDialog), i = e.useRef(null), a = J(n, r.contentRef, i);
-	return e.useEffect(() => {
-		let e = i.current;
-		if (e) return mf(e);
-	}, []), /* @__PURE__ */ _(_v, {
-		...t,
-		ref: a,
-		trapFocus: r.open,
-		disableOutsidePointerEvents: r.open,
-		onCloseAutoFocus: q(t.onCloseAutoFocus, (e) => {
-			e.preventDefault(), r.triggerRef.current?.focus();
-		}),
-		onPointerDownOutside: q(t.onPointerDownOutside, (e) => {
-			let t = e.detail.originalEvent, n = t.button === 0 && t.ctrlKey === !0;
-			(t.button === 2 || n) && e.preventDefault();
-		}),
-		onFocusOutside: q(t.onFocusOutside, (e) => e.preventDefault())
-	});
-}, "DialogContentModal")), gv = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ X_(function(t, n) {
-	let r = tv(pv, t.__scopeDialog), i = e.useRef(!1), a = e.useRef(!1);
-	return /* @__PURE__ */ _(_v, {
-		...t,
-		ref: n,
-		trapFocus: !1,
-		disableOutsidePointerEvents: !1,
-		onCloseAutoFocus: (e) => {
-			t.onCloseAutoFocus?.(e), e.defaultPrevented || (i.current || r.triggerRef.current?.focus(), e.preventDefault()), i.current = !1, a.current = !1;
-		},
-		onInteractOutside: (e) => {
-			t.onInteractOutside?.(e), e.defaultPrevented || (i.current = !0, e.detail.originalEvent.type === "pointerdown" && (a.current = !0));
-			let n = e.target;
-			r.triggerRef.current?.contains(n) && e.preventDefault(), e.detail.originalEvent.type === "focusin" && a.current && e.preventDefault();
-		}
-	});
-}, "DialogContentNonModal")), _v = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ X_(function(e, t) {
-	let { __scopeDialog: n, trapFocus: r, onOpenAutoFocus: i, onCloseAutoFocus: a, "aria-describedby": o, children: s, ...c } = e, l = tv(pv, n);
-	return uc(), /* @__PURE__ */ _(yc, {
-		registry: l.branchRegistry,
-		children: /* @__PURE__ */ _(_c, {
-			asChild: !0,
-			loop: !0,
-			trapped: r,
-			branches: l.branchNodes,
-			onMountAutoFocus: i,
-			onUnmountAutoFocus: a,
-			children: /* @__PURE__ */ _(Qs, {
-				role: "dialog",
-				id: l.contentId,
-				"aria-labelledby": l.titlePresent ? l.titleId : void 0,
-				"aria-describedby": l.descriptionPresent ? Sv(o, l.descriptionId) : o,
-				"data-state": Cv(l.open),
-				...c,
-				ref: t,
-				deferPointerDownOutside: !0,
-				onDismiss: () => l.onOpenChange(!1),
-				children: s
-			})
-		})
-	});
-}, "DialogContentImpl")), vv = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ X_(function(e, t) {
-	let { __scopeDialog: n, ...r } = e, i = tv("DialogTitle", n), { setTitleCount: a } = i;
-	return Wo(() => (a((e) => e + 1), () => a((e) => e - 1)), [a]), /* @__PURE__ */ _(Ss.h2, {
-		id: i.titleId,
-		...r,
-		ref: t
-	});
-}, "DialogTitle")), yv = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ X_(function(e, t) {
-	let { __scopeDialog: n, ...r } = e, i = tv("DialogDescription", n), { setDescriptionCount: a } = i;
-	return Wo(() => (a((e) => e + 1), () => a((e) => e - 1)), [a]), /* @__PURE__ */ _(Ss.p, {
-		id: i.descriptionId,
-		...r,
-		ref: t
-	});
-}, "DialogDescription")), bv = "DialogClose", xv = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ X_(function(e, t) {
-	let { __scopeDialog: n, ...r } = e, i = tv(bv, n);
-	return /* @__PURE__ */ _(Ss.button, {
-		type: "button",
-		...r,
-		ref: t,
-		onClick: q(e.onClick, () => i.onOpenChange(!1))
-	});
-}, "DialogClose"));
-function Sv(...e) {
-	let t = /* @__PURE__ */ new Set();
-	for (let n of e) if (typeof n == "string") for (let e of String(n).trim().split(/\s+/)) e && t.add(e);
-	return t.size > 0 ? Array.from(t).join(" ") : void 0;
+		};
+	} catch (e) {
+		return {
+			keys: [],
+			issue: {
+				reason: "evaluation-error",
+				detail: e
+			}
+		};
+	}
 }
-X_(Sv, "concatAriaDescribedby");
-function Cv(e) {
-	return e ? "open" : "closed";
+function sv(e, t) {
+	let n = ov(e, t);
+	return cv(n.issue), n.keys;
 }
-X_(Cv, "getState");
+function cv(e) {
+	e && (e.reason === "invalid-keys" ? console.warn("[uhuu-components] pageComponentKeys returned non-string values, filtering them out") : e.reason === "invalid-result" ? console.error("[uhuu-components] pageComponentKeys function must return an array, got:", e.detail) : console.error("[uhuu-components] Error evaluating pageComponentKeys function:", e.detail));
+}
+function lv(e) {
+	let t = [], n = [], r = [];
+	for (let i of e) i.strictPosition === "start" ? t.push(i) : i.strictPosition === "end" ? r.push(i) : n.push(i);
+	return {
+		start: t,
+		middle: n,
+		end: r
+	};
+}
+function uv(e) {
+	let { start: t, middle: n, end: r } = lv(e);
+	return [
+		...t,
+		...n,
+		...r
+	];
+}
+function dv(e, t, n) {
+	if (t.strictPosition === "start") return [t, ...e];
+	if (t.strictPosition === "end") return [...e, t];
+	let { start: r, middle: i, end: a } = lv(e), o = i.length;
+	if (n && n.mode !== "end") {
+		let t = i.findIndex((e) => e.id === n.anchorId);
+		t === -1 ? e.find((e) => e.id === n.anchorId)?.strictPosition === "start" && (o = 0) : o = t + +(n.mode === "after");
+	}
+	return [
+		...r,
+		...i.slice(0, o),
+		t,
+		...i.slice(o),
+		...a
+	];
+}
 //#endregion
-//#region src/uhuu/ui/sheet.tsx
-var wv = nv, Tv = cv, Ev = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ _(uv, {
-	className: K("uhuu:fixed uhuu:inset-0 uhuu:z-50 uhuu:bg-black/50 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0", e),
-	...t,
-	ref: n
-}));
-Ev.displayName = uv.displayName;
-var Dv = e.forwardRef(({ side: e = "right", className: t, children: n, ...r }, i) => {
-	let { portalContainer: a } = aa(), o = Ua().t("dialog.close");
-	return /* @__PURE__ */ v(Tv, {
-		container: a || void 0,
-		children: [/* @__PURE__ */ _(Ev, {}), /* @__PURE__ */ v(mv, {
-			ref: i,
-			className: K("uhuu:fixed uhuu:z-50 uhuu:gap-4 uhuu:bg-(--uhuu-shell-surface) uhuu:p-6 uhuu:shadow-lg uhuu:transition uhuu:ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out uhuu:data-[state=closed]:duration-300 uhuu:data-[state=open]:duration-500", e === "top" && "uhuu:inset-x-0 uhuu:top-0 uhuu:border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top", e === "bottom" && "uhuu:inset-x-0 uhuu:bottom-0 uhuu:border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom", e === "left" && "uhuu:inset-y-0 uhuu:left-0 uhuu:h-full uhuu:w-3/4 uhuu:border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left uhuu:sm:max-w-sm", e === "right" && "uhuu:inset-y-0 uhuu:right-0 uhuu:h-full uhuu:w-3/4 uhuu:border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right uhuu:sm:max-w-sm", t),
-			...r,
-			children: [n, /* @__PURE__ */ v(xv, {
-				className: "uhuu:absolute uhuu:right-4 uhuu:top-4 uhuu:rounded-sm uhuu:opacity-70 uhuu:ring-offset-(--uhuu-shell-surface) uhuu:transition-opacity uhuu:hover:opacity-100 uhuu:focus:outline-none uhuu:focus:ring-2 uhuu:focus:ring-gray-400 uhuu:focus:ring-offset-2 uhuu:disabled:pointer-events-none uhuu:data-[state=open]:bg-gray-100",
-				children: [/* @__PURE__ */ _(ta, { className: "uhuu:h-4 uhuu:w-4" }), /* @__PURE__ */ _("span", {
-					className: "uhuu:sr-only",
-					children: o
-				})]
-			})]
-		})]
-	});
-});
-Dv.displayName = mv.displayName;
-var Ov = ({ className: e, ...t }) => /* @__PURE__ */ _("div", {
-	className: K("uhuu:flex uhuu:flex-col uhuu:space-y-2 uhuu:text-center uhuu:sm:text-left", e),
-	...t
-});
-Ov.displayName = "SheetHeader";
-var kv = ({ className: e, ...t }) => /* @__PURE__ */ _("div", {
-	className: K("uhuu:flex uhuu:flex-col-reverse uhuu:sm:flex-row uhuu:sm:justify-end uhuu:sm:space-x-2", e),
-	...t
-});
-kv.displayName = "SheetFooter";
-var Av = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ _(vv, {
-	ref: n,
-	className: K("uhuu:text-lg uhuu:font-medium uhuu:text-gray-900", e),
-	...t
-}));
-Av.displayName = vv.displayName;
-var jv = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ _(yv, {
-	ref: n,
-	className: K("uhuu:text-sm uhuu:text-gray-500", e),
-	...t
-}));
-jv.displayName = yv.displayName;
+//#region src/uhuu/editor-shell/document/page-editor-restore.ts
+function fv({ initialItems: e, savedItems: t, config: n, payload: r, management: i }) {
+	if (i.templateOwnsPages) return av(e, t, { rename: i.rename });
+	if (!t) return e;
+	let a = n.groups ?? {}, o = Array.isArray(a) ? a : Object.entries(a).map(([e, t]) => ({
+		...t,
+		id: e
+	})), s = new Map(o.map((e) => [e.id, e])), c = n.pages ?? {}, l = (e) => c[e.componentKey ?? e.templateId ?? e.id] ?? (e.templateId ? c[e.templateId] : void 0) ?? c[e.id], u = (e) => l(e)?.hasFlow && !e.hasFlow ? {
+		...e,
+		hasFlow: !0
+	} : e, d = (e, t) => t !== void 0 && Ka(e.label, t) && e.label !== t ? {
+		...e,
+		label: t
+	} : e, f = t.map((e) => {
+		if (e.kind !== "group") return d(u(e), l(e)?.label);
+		let t = s.get(e.templateId ?? e.id), n = d(e, t?.label), i = {
+			...n,
+			...t?.strictPosition !== void 0 && !n.strictPosition ? { strictPosition: t.strictPosition } : {},
+			pages: n.pages.map(u)
+		};
+		if (typeof t?.pageComponentKeys != "function") return i;
+		let a = ov(t.pageComponentKeys, {
+			payload: r,
+			item: void 0,
+			parent: void 0
+		});
+		return cv(a.issue), a.issue && a.issue.reason !== "invalid-keys" ? i : {
+			...i,
+			pages: a.keys.map((e, t) => {
+				let n = c[e], r = n?.dataKey;
+				return {
+					id: `${i.id}__${r ?? e}__${t}`,
+					componentKey: e,
+					templateId: e,
+					...r ? { dataKey: r } : {},
+					...n?.hasFlow ? { hasFlow: !0 } : {}
+				};
+			})
+		};
+	}), p = new Set(e.map((e) => e.id)), m = f.filter((e) => p.has(e.id));
+	if (![...p].some((e) => !m.some((t) => t.id === e)) && D_(m) !== D_(e)) {
+		let t = f.filter((e) => !p.has(e.id) && (e.kind !== "group" || e.id !== (e.templateId ?? e.id)));
+		return t.length ? uv([...e, ...t]) : e;
+	}
+	return f;
+}
 //#endregion
 //#region src/uhuu/editor-shell/document/document-typography.js
-var Mv = [
+var pv = [
 	"font-family",
 	"font-size",
 	"font-weight",
@@ -11705,38 +11464,57 @@ var Mv = [
 	"text-align",
 	"text-shadow",
 	"color"
-], Nv = (e) => e.replace(/-([a-z])/g, (e, t) => t.toUpperCase());
-function Pv(e = typeof document > "u" ? void 0 : document) {
+], mv = (e) => e.replace(/-([a-z])/g, (e, t) => t.toUpperCase());
+function hv(e = typeof document > "u" ? void 0 : document) {
 	let t = e?.querySelector("[data-uhuu-interactive]") ?? e?.body, n = t ? e.defaultView?.getComputedStyle(t) : void 0;
 	if (!n) return;
 	let r = {};
-	for (let e of Mv) {
+	for (let e of pv) {
 		let t = n.getPropertyValue(e);
-		t && (r[Nv(e)] = t);
+		t && (r[mv(e)] = t);
 	}
 	return r;
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/default-render-thumbnail.tsx
-function Fv(e) {
+var gv = typeof window > "u" ? e.useEffect : e.useLayoutEffect;
+function _v({ children: t, style: n, acquireTypography: r }) {
+	let [i, a] = e.useState();
+	return gv(() => {
+		let e = r();
+		return a(e.style), e.release;
+	}, [r]), /* @__PURE__ */ v("div", {
+		className: "uhuu:shrink-0!",
+		style: {
+			...i,
+			...n
+		},
+		children: t
+	});
+}
+function vv(e) {
 	let { pageComponents: t, payload: n, setup: r = {
 		width: 210,
 		height: 297
-	}, thumbnailWidth: i = 200, thumbnailHeight: a, i18n: o } = e, { t: s, localize: c } = o, l = I.resolveDimensions(r), u = l.width, d = l.height, f = u / d, p = i, m = a ?? Math.round(p / f), h = u * 3.779527559, g = d * 3.779527559, y, b = () => (y ??= Pv() ?? {}, {
-		...y,
+	}, thumbnailWidth: i = 200, thumbnailHeight: a, i18n: o } = e, { t: s, localize: c } = o, l = L.resolveDimensions(r), u = l.width, d = l.height, f = u / d, p = i, m = a ?? Math.round(p / f), h = u * 3.779527559, g = d * 3.779527559, _, b = 0, x = () => (_ ??= hv() ?? {}, b += 1, {
+		style: _,
+		release: () => {
+			--b, b || (_ = void 0);
+		}
+	}), S = {
 		width: `${h}px`,
 		height: `${g}px`,
 		backgroundColor: "white",
 		pointerEvents: "none"
-	});
+	};
 	return (e, r, i) => {
 		let a = e.strictPosition, o = a === "start" || a === "end";
 		if (e.kind === "group") {
-			let r = e.firstPageId, l = e.firstPageComponentKey ?? r, u = __(n, {
+			let r = e.firstPageId, l = e.firstPageComponentKey ?? r, u = X_(n, {
 				id: r,
 				componentKey: l
 			}), d = e.firstPageComponent || (l ? t[l] : null), f = n?.integrations?.[e.id];
-			return /* @__PURE__ */ v("div", {
+			return /* @__PURE__ */ y("div", {
 				"data-uhuu-paper": !0,
 				className: `uhuu:relative uhuu:bg-white uhuu:border uhuu:transition-all ${i ? "uhuu:border-blue-400 uhuu:shadow-2xl uhuu:scale-105" : o ? "uhuu:border-(--uhuu-thumbnail-border-strong) uhuu:bg-gray-50" : "uhuu:border-(--uhuu-thumbnail-border) uhuu:hover:border-(--uhuu-thumbnail-border-strong) uhuu:hover:shadow-lg"}`,
 				style: {
@@ -11745,17 +11523,17 @@ function Fv(e) {
 				},
 				title: e.id,
 				children: [
-					d ? /* @__PURE__ */ _("div", {
+					d ? /* @__PURE__ */ v("div", {
 						className: "uhuu:w-full uhuu:h-full uhuu:flex uhuu:items-center uhuu:justify-center uhuu:bg-gray-50 uhuu:overflow-hidden uhuu:relative uhuu:pointer-events-none",
-						children: /* @__PURE__ */ _("div", {
+						children: /* @__PURE__ */ v("div", {
 							style: {
 								transform: `scale(${Math.min(p / h, m / g)})`,
 								transformOrigin: "center"
 							},
-							children: /* @__PURE__ */ _("div", {
-								className: "uhuu:shrink-0!",
-								style: b(),
-								children: /* @__PURE__ */ _(d, {
+							children: /* @__PURE__ */ v(_v, {
+								style: S,
+								acquireTypography: x,
+								children: /* @__PURE__ */ v(d, {
 									payload: n,
 									pageId: r,
 									templateId: l,
@@ -11766,48 +11544,48 @@ function Fv(e) {
 								})
 							})
 						})
-					}) : /* @__PURE__ */ _("div", {
+					}) : /* @__PURE__ */ v("div", {
 						"data-uhuu-chrome": !0,
 						className: "uhuu:w-full uhuu:h-full uhuu:flex uhuu:items-center uhuu:justify-center uhuu:bg-gray-50 uhuu:pointer-events-none",
-						children: /* @__PURE__ */ v("div", {
+						children: /* @__PURE__ */ y("div", {
 							className: "uhuu:text-center uhuu:p-4",
-							children: [/* @__PURE__ */ _("div", {
+							children: [/* @__PURE__ */ v("div", {
 								className: "uhuu:text-sm uhuu:font-medium uhuu:text-gray-700",
 								children: s("thumbnail.groupFallbackName", { id: e.id })
-							}), /* @__PURE__ */ _("div", {
+							}), /* @__PURE__ */ v("div", {
 								className: "uhuu:text-xs uhuu:text-gray-500 uhuu:mt-1",
 								children: r || s("thumbnail.noPreview")
 							})]
 						})
 					}),
-					/* @__PURE__ */ _("div", {
+					/* @__PURE__ */ v("div", {
 						"data-uhuu-chrome": !0,
 						className: "uhuu:absolute uhuu:top-2 uhuu:right-2 uhuu:px-2 uhuu:py-1 uhuu:bg-blue-600/80 uhuu:backdrop-blur-sm uhuu:text-white uhuu:text-xs uhuu:font-medium uhuu:rounded uhuu:shadow-lg uhuu:pointer-events-none",
 						children: s("thumbnail.groupBadge", { count: e.pageCount })
 					}),
-					o && /* @__PURE__ */ v("div", {
+					o && /* @__PURE__ */ y("div", {
 						"data-uhuu-chrome": !0,
 						className: "uhuu:absolute uhuu:top-2 uhuu:left-2 uhuu:px-2 uhuu:py-1 uhuu:bg-gray-600/80 uhuu:backdrop-blur-sm uhuu:text-white uhuu:text-xs uhuu:font-medium uhuu:rounded uhuu:shadow-lg uhuu:pointer-events-none uhuu:flex uhuu:items-center uhuu:gap-1",
-						children: [/* @__PURE__ */ _(Ki, { className: "uhuu:size-3" }), /* @__PURE__ */ _("span", { children: s(a === "start" ? "thumbnail.start" : "thumbnail.end") })]
+						children: [/* @__PURE__ */ v(la, { className: "uhuu:size-3" }), /* @__PURE__ */ v("span", { children: s(a === "start" ? "thumbnail.start" : "thumbnail.end") })]
 					}),
-					/* @__PURE__ */ _("div", {
+					/* @__PURE__ */ v("div", {
 						"data-uhuu-chrome": !0,
 						className: "uhuu:absolute uhuu:bottom-0 uhuu:left-0 uhuu:right-0 uhuu:bg-(--uhuu-thumbnail-caption) uhuu:backdrop-blur-sm uhuu:p-3 uhuu:pointer-events-none",
-						children: /* @__PURE__ */ _("div", {
+						children: /* @__PURE__ */ v("div", {
 							className: "uhuu:flex uhuu:items-center uhuu:justify-between uhuu:gap-2 uhuu:text-white",
-							children: /* @__PURE__ */ _("div", {
+							children: /* @__PURE__ */ v("div", {
 								className: "uhuu:flex-1 uhuu:min-w-0",
-								children: /* @__PURE__ */ _("div", {
+								children: /* @__PURE__ */ v("div", {
 									className: "uhuu:text-sm uhuu:font-medium uhuu:truncate",
 									children: c(e.label) || e.id
 								})
 							})
 						})
 					}),
-					i && /* @__PURE__ */ _("div", {
+					i && /* @__PURE__ */ v("div", {
 						"data-uhuu-chrome": !0,
 						className: "uhuu:absolute uhuu:inset-0 uhuu:flex uhuu:items-center uhuu:justify-center uhuu:bg-blue-500/10 uhuu:pointer-events-none",
-						children: /* @__PURE__ */ _("div", {
+						children: /* @__PURE__ */ v("div", {
 							className: "uhuu:text-blue-600 uhuu:font-medium uhuu:text-sm uhuu:bg-white/90 uhuu:px-3 uhuu:py-1 uhuu:rounded-full uhuu:shadow-lg",
 							children: s("thumbnail.draggingGroup")
 						})
@@ -11816,11 +11594,11 @@ function Fv(e) {
 			});
 		}
 		{
-			let r = e.pageId, l = e.pageComponentKey ?? r, u = __(n, {
+			let r = e.pageId, l = e.pageComponentKey ?? r, u = X_(n, {
 				id: r,
 				componentKey: l
-			}), d = e.pageComponent || (l ? t[l] : null), f = r ? f_(n, { id: r }) : void 0;
-			return /* @__PURE__ */ v("div", {
+			}), d = e.pageComponent || (l ? t[l] : null), f = r ? G_(n, { id: r }) : void 0;
+			return /* @__PURE__ */ y("div", {
 				"data-uhuu-paper": !0,
 				className: `uhuu:relative uhuu:bg-white uhuu:border uhuu:transition-all ${i ? "uhuu:border-blue-400 uhuu:shadow-2xl uhuu:scale-105" : o ? "uhuu:border-(--uhuu-thumbnail-border-strong) uhuu:bg-gray-50" : "uhuu:border-(--uhuu-thumbnail-border) uhuu:hover:border-(--uhuu-thumbnail-border-strong) uhuu:hover:shadow-lg"}`,
 				style: {
@@ -11829,18 +11607,18 @@ function Fv(e) {
 				},
 				title: e.pageId,
 				children: [
-					d ? /* @__PURE__ */ _("div", {
+					d ? /* @__PURE__ */ v("div", {
 						className: "uhuu:w-full uhuu:h-full uhuu:flex uhuu:items-center uhuu:justify-center uhuu:bg-gray-50 uhuu:overflow-hidden uhuu:relative uhuu:pointer-events-none",
-						children: /* @__PURE__ */ _("div", {
+						children: /* @__PURE__ */ v("div", {
 							className: "uhuu:flex uhuu:items-center uhuu:justify-center uhuu:pointer-events-none",
 							style: {
 								transform: `scale(${Math.min(p / h, m / g)})`,
 								transformOrigin: "center"
 							},
-							children: /* @__PURE__ */ _("div", {
-								className: "uhuu:shrink-0!",
-								style: b(),
-								children: /* @__PURE__ */ _(d, {
+							children: /* @__PURE__ */ v(_v, {
+								style: S,
+								acquireTypography: x,
+								children: /* @__PURE__ */ v(d, {
 									payload: n,
 									pageId: r,
 									templateId: l,
@@ -11850,43 +11628,43 @@ function Fv(e) {
 								})
 							})
 						})
-					}) : /* @__PURE__ */ _("div", {
+					}) : /* @__PURE__ */ v("div", {
 						"data-uhuu-chrome": !0,
 						className: "uhuu:w-full uhuu:h-full uhuu:flex uhuu:items-center uhuu:justify-center uhuu:bg-gray-50 uhuu:pointer-events-none",
-						children: /* @__PURE__ */ v("div", {
+						children: /* @__PURE__ */ y("div", {
 							className: "uhuu:text-center uhuu:p-4",
-							children: [/* @__PURE__ */ _("div", {
+							children: [/* @__PURE__ */ v("div", {
 								className: "uhuu:text-sm uhuu:font-medium uhuu:text-gray-700",
 								children: s("page.fallbackName", { number: e.pageNum })
-							}), /* @__PURE__ */ _("div", {
+							}), /* @__PURE__ */ v("div", {
 								className: "uhuu:text-xs uhuu:text-gray-500 uhuu:mt-1",
 								children: r || s("thumbnail.noPreview")
 							})]
 						})
 					}),
-					o && /* @__PURE__ */ v("div", {
+					o && /* @__PURE__ */ y("div", {
 						"data-uhuu-chrome": !0,
 						className: "uhuu:absolute uhuu:top-2 uhuu:left-2 uhuu:px-2 uhuu:py-1 uhuu:bg-gray-600/80 uhuu:backdrop-blur-sm uhuu:text-white uhuu:text-xs uhuu:font-medium uhuu:rounded uhuu:shadow-lg uhuu:pointer-events-none uhuu:flex uhuu:items-center uhuu:gap-1",
-						children: [/* @__PURE__ */ _(Ki, { className: "uhuu:size-3" }), /* @__PURE__ */ _("span", { children: s(a === "start" ? "thumbnail.start" : "thumbnail.end") })]
+						children: [/* @__PURE__ */ v(la, { className: "uhuu:size-3" }), /* @__PURE__ */ v("span", { children: s(a === "start" ? "thumbnail.start" : "thumbnail.end") })]
 					}),
-					/* @__PURE__ */ _("div", {
+					/* @__PURE__ */ v("div", {
 						"data-uhuu-chrome": !0,
 						className: "uhuu:absolute uhuu:bottom-0 uhuu:left-0 uhuu:right-0 uhuu:bg-(--uhuu-thumbnail-caption) uhuu:backdrop-blur-sm uhuu:p-3 uhuu:pointer-events-none",
-						children: /* @__PURE__ */ _("div", {
+						children: /* @__PURE__ */ v("div", {
 							className: "uhuu:flex uhuu:items-center uhuu:justify-between uhuu:gap-2 uhuu:text-white",
-							children: /* @__PURE__ */ _("div", {
+							children: /* @__PURE__ */ v("div", {
 								className: "uhuu:flex-1 uhuu:min-w-0",
-								children: /* @__PURE__ */ _("div", {
+								children: /* @__PURE__ */ v("div", {
 									className: "uhuu:text-sm uhuu:font-medium uhuu:truncate",
 									children: c(e.pageLabel) || s("page.fallbackName", { number: e.pageNum })
 								})
 							})
 						})
 					}),
-					i && /* @__PURE__ */ _("div", {
+					i && /* @__PURE__ */ v("div", {
 						"data-uhuu-chrome": !0,
 						className: "uhuu:absolute uhuu:inset-0 uhuu:flex uhuu:items-center uhuu:justify-center uhuu:bg-blue-500/10 uhuu:pointer-events-none",
-						children: /* @__PURE__ */ _("div", {
+						children: /* @__PURE__ */ v("div", {
 							className: "uhuu:text-blue-600 uhuu:font-medium uhuu:text-sm uhuu:bg-white/90 uhuu:px-3 uhuu:py-1 uhuu:rounded-full uhuu:shadow-lg",
 							children: s("thumbnail.draggingPage")
 						})
@@ -11897,56 +11675,800 @@ function Fv(e) {
 	};
 }
 //#endregion
+//#region src/uhuu/editor-shell/resizers/zoom-fit-core.js
+function yv(e) {
+	switch (e) {
+		case "fit-width": return "width";
+		case "fit-height": return "height";
+		case "fit-page": return "both";
+		default: return "none";
+	}
+}
+function bv(e) {
+	let t = e.filter(({ width: e, height: t }) => e > 0 && t > 0);
+	return t.length ? {
+		width: t.reduce((e, t) => e + t.width, 0),
+		height: Math.max(...t.map((e) => e.height))
+	} : null;
+}
+function xv(e, t) {
+	if (e === "two_pages") return bv(t);
+	let n = t.find(({ width: e, height: t }) => e > 0 && t > 0);
+	return n ? {
+		width: n.width,
+		height: n.height
+	} : null;
+}
+function Sv({ paneClientHeight: e, paneTop: t, viewportHeight: n }) {
+	let r = [e, n - Math.max(t, 0)].filter((e) => e > 0);
+	return r.length ? Math.min(...r) : 0;
+}
+function Cv({ paneWidth: e, paneHeight: t, paddingX: n = 0, paddingY: r = 0, chromeHeight: i = 0 }) {
+	return {
+		availableWidth: Math.max(e - n, 0),
+		availableHeight: Math.max(t - r - i, 0)
+	};
+}
+function wv({ mode: e, contentWidth: t, contentHeight: n, availableWidth: r, availableHeight: i, minZoom: a, maxZoom: o }) {
+	if (e === "none" || t <= 0 || n <= 0 || r <= 0 || i <= 0) return null;
+	let s = r / t * 100, c = i / n * 100;
+	return Math.min(Math.max(e === "width" ? s : e === "height" ? c : Math.min(s, c), a), o);
+}
+//#endregion
+//#region src/uhuu/editor-shell/resizers/zoom-focal-core.js
+function Tv(e, t, n) {
+	return t >= e.left && t <= e.left + e.width && n >= e.top && n <= e.top + e.height ? {
+		clientX: t,
+		clientY: n
+	} : {
+		clientX: e.left + e.width / 2,
+		clientY: e.top + e.height / 2
+	};
+}
+function Ev(e, t, n, r) {
+	if (e.width <= 0 || e.height <= 0) return {
+		deltaLeft: 0,
+		deltaTop: 0
+	};
+	let i = n - e.left, a = r - e.top, o = t.left + i * (t.width / e.width), s = t.top + a * (t.height / e.height);
+	return {
+		deltaLeft: o - n,
+		deltaTop: s - r
+	};
+}
+function Dv(e) {
+	return {
+		left: e.left,
+		top: e.top,
+		width: e.width,
+		height: e.height
+	};
+}
+function Ov(e, t, n) {
+	let r = -1, i = Infinity;
+	for (let a = 0; a < e.length; a += 1) {
+		let o = e[a];
+		if (o.width <= 0 || o.height <= 0) continue;
+		if (t >= o.left && t <= o.left + o.width && n >= o.top && n <= o.top + o.height) return a;
+		let s = t - (o.left + o.width / 2), c = n - (o.top + o.height / 2), l = s * s + c * c;
+		l < i && (i = l, r = a);
+	}
+	return r;
+}
+function kv(e) {
+	return e === "auto" || e === "scroll" || e === "overlay";
+}
+//#endregion
+//#region src/uhuu/editor-shell/resizers/section-page-resizer.tsx
+var Av = 24, jv = 64, Mv = 1e3, Nv = {
+	width: "max-content",
+	margin: "auto",
+	padding: `0 ${Av}px ${jv}px`,
+	overflowAnchor: "none"
+};
+function Pv(e) {
+	let t = e, n = null, r = null;
+	for (; t && t !== document.documentElement;) {
+		let e = window.getComputedStyle(t);
+		if (!n && kv(e.overflowX) && (n = t), !r && kv(e.overflowY) && (r = t), n && r) return {
+			x: n,
+			y: r
+		};
+		t = t.parentElement;
+	}
+	let i = document.scrollingElement;
+	return {
+		x: n ?? i,
+		y: r ?? i
+	};
+}
+function Fv(e) {
+	let t = Math.max(e.getBoundingClientRect().top, 0), n = 0, r = e.parentElement;
+	for (; r && r !== document.documentElement;) {
+		let e = window.getComputedStyle(r);
+		e.display !== "contents" && (n += (Number.parseFloat(e.paddingBottom) || 0) + (Number.parseFloat(e.borderBottomWidth) || 0) + Math.max(Number.parseFloat(e.marginBottom) || 0, 0)), r = r.parentElement;
+	}
+	return t + n;
+}
+function Iv(e) {
+	let t = e.querySelector("[data-section-content]"), n = t?.closest("[class*=\"group/section\"]");
+	if (!t || !n) return 0;
+	let r = t.getBoundingClientRect().height;
+	return r > 0 ? Math.max(n.getBoundingClientRect().height - r, 0) : 0;
+}
+var Lv = r({
+	zoom: 100,
+	scaleValue: 1,
+	hideUI: !1
+});
+function Rv({ children: e, layout: t = "spread", pageItemId: n }) {
+	let { scaleValue: r } = c(Lv), i = m(null);
+	return l(() => {
+		if (!i.current) return;
+		let e = () => {
+			let e = i.current?.querySelectorAll("[data-section-content]");
+			if (!e?.length) return;
+			let t = Array.from(e).reduce((e, t) => e + Number.parseInt(t.getAttribute("data-natural-width") || "0"), 0);
+			if (t > 0) {
+				let e = t * r;
+				i.current?.style.setProperty("--uhuu-group-pair-width", `${e}px`);
+			}
+		};
+		e();
+		let t = new ResizeObserver(e);
+		return i.current.querySelectorAll("[data-section-content]").forEach((e) => t.observe(e)), () => t.disconnect();
+	}, [e, r]), /* @__PURE__ */ v("div", {
+		ref: i,
+		className: `two-pages-pair two-pages-pair--${t}`,
+		"data-page-item-id": n,
+		children: e
+	});
+}
+function zv(e) {
+	let t = Number.parseFloat(e.getAttribute("data-natural-width") || "0"), n = Number.parseFloat(e.getAttribute("data-natural-height") || "0");
+	return t > 0 && n > 0 ? {
+		width: t,
+		height: n
+	} : null;
+}
+function Bv(e, t) {
+	let n = t === "two_pages" ? e.querySelector(".two-pages-pair") : e;
+	if (!n) return null;
+	let r = t === "two_pages" ? Array.from(n.querySelectorAll("[data-section-content]")) : (() => {
+		let e = n.querySelector("[data-section-content]");
+		return e ? [e] : [];
+	})();
+	return r.length ? xv(t, r.map(zv).filter((e) => e !== null)) : null;
+}
+function Vv({ children: e, title: t, className: n = "", controls: r, origin: i = "center" }) {
+	let { scaleValue: a, hideUI: o } = c(Lv), s = m(null), [u, d] = h(0), [f, p] = h(0);
+	l(() => {
+		if (s.current) {
+			let e = () => {
+				let e = s.current;
+				if (e) {
+					let t = e.scrollHeight, n = e.scrollWidth;
+					d(t), p(n);
+				}
+			};
+			e();
+			let t = new ResizeObserver(e);
+			return t.observe(s.current), () => {
+				t.disconnect();
+			};
+		}
+	}, [e]);
+	let g = u * a, _ = Math.max(f * a, 150), { justify: b, origin: x } = {
+		left: {
+			justify: "uhuu:justify-start",
+			origin: "top left"
+		},
+		right: {
+			justify: "uhuu:justify-end",
+			origin: "top right"
+		},
+		center: {
+			justify: "uhuu:justify-center",
+			origin: "top center"
+		}
+	}[i];
+	return o ? /* @__PURE__ */ v("div", {
+		className: n,
+		children: e
+	}) : /* @__PURE__ */ y("div", {
+		className: `uhuu:group/section ${n}`,
+		style: {
+			width: `${_}px`,
+			minWidth: "150px"
+		},
+		children: [/* @__PURE__ */ v("div", { children: r ?? /* @__PURE__ */ v("div", {
+			"data-uhuu-editor": !0,
+			className: "uhuu:px-4 uhuu:py-2 uhuu:border-b uhuu:border-gray-200",
+			children: /* @__PURE__ */ y("div", {
+				className: "uhuu:text-sm uhuu:font-medium uhuu:text-gray-700",
+				children: [t, " Controls"]
+			})
+		}) }), /* @__PURE__ */ v("div", {
+			className: "uhuu:pt-1",
+			style: {
+				height: g > 0 ? `${g + 32}px` : "auto",
+				minHeight: "100px"
+			},
+			children: /* @__PURE__ */ v("div", {
+				className: `uhuu:flex uhuu:items-start ${b}`,
+				children: /* @__PURE__ */ v("div", {
+					ref: s,
+					"data-section-content": !0,
+					"data-natural-width": f,
+					"data-natural-height": u,
+					style: {
+						transform: `scale(${Number(a.toPrecision(6))})`,
+						transformOrigin: x
+					},
+					children: e
+				})
+			})
+		})]
+	});
+}
+function Hv({ children: e, className: t = "", defaultZoom: n = 100, minZoom: r = 25, maxZoom: i = 200, onAddPage: a, menuItems: o, hideUI: c, preview: u = "single_page", defaultZoomMode: d = "manual", scrollMode: f = "pane" }) {
+	let p = Go(), g = c ?? p, { t: _ } = go(), b = Ma(), [x, C] = h(n), [w, T] = h(() => yv(d)), [E, D] = h(() => yv(d) !== "none"), [O, k] = h(0), A = m(null), j = m(null), M = m(null), N = m(null), P = m(x);
+	l(() => {
+		P.current = x;
+	}, [x]);
+	let F = s(() => f === "pane" && j.current ? {
+		x: j.current,
+		y: j.current
+	} : Pv(A.current), [f]), I = s((e, t, n) => {
+		let a = Math.min(Math.max(e, r), i), o = N.current;
+		if (!o) {
+			C(a), T("none");
+			return;
+		}
+		let s = F(), c = Array.from(o.querySelectorAll("[data-section-content]")), l = Ov(c.map((e) => Dv(e.getBoundingClientRect())), t, n), u = l >= 0 ? c[l] : o, d = Dv(u.getBoundingClientRect()), f = Tv(d, t, n);
+		S(() => {
+			C(a), T("none");
+		});
+		let p = () => {
+			let e = Dv(u.getBoundingClientRect()), { deltaLeft: t, deltaTop: n } = Ev(d, e, f.clientX, f.clientY);
+			t !== 0 && s.x && (s.x.scrollLeft += t), n !== 0 && s.y && (s.y.scrollTop += n);
+		};
+		p(), window.requestAnimationFrame(p);
+	}, [
+		i,
+		r,
+		F
+	]), L = s(() => {
+		let e = (f === "pane" ? j.current : A.current)?.getBoundingClientRect();
+		return e ? {
+			clientX: e.left + e.width / 2,
+			clientY: e.top + e.height / 2
+		} : {
+			clientX: 0,
+			clientY: 0
+		};
+	}, [f]), R = s(() => {
+		let e = N.current;
+		if (w === "none" || !e) return;
+		let t = Bv(e, u);
+		if (!t) return;
+		let n = f === "pane" ? j.current : A.current;
+		if (!n) return;
+		let a = n.getBoundingClientRect(), o = n.ownerDocument.defaultView ?? window, s = o.visualViewport?.height ?? n.ownerDocument.documentElement.clientHeight ?? o.innerHeight, c = n.clientWidth || a.width, l = f === "pane" ? Sv({
+			paneClientHeight: n.clientHeight || a.height,
+			paneTop: a.top,
+			viewportHeight: s
+		}) : s - Math.max(a.top, 0), d = M.current ? window.getComputedStyle(M.current) : null, { availableWidth: p, availableHeight: m } = Cv({
+			paneWidth: c,
+			paneHeight: l,
+			paddingX: d ? Number.parseFloat(d.paddingLeft) + Number.parseFloat(d.paddingRight) : 0,
+			paddingY: d ? Number.parseFloat(d.paddingTop) + Number.parseFloat(d.paddingBottom) : 0,
+			chromeHeight: Iv(e)
+		}), h = wv({
+			mode: w,
+			contentWidth: t.width,
+			contentHeight: t.height,
+			availableWidth: p,
+			availableHeight: m,
+			minZoom: r,
+			maxZoom: i
+		});
+		h !== null && (C((e) => Math.abs(e - h) < .01 ? e : h), D(!1));
+	}, [
+		w,
+		i,
+		r,
+		u,
+		f
+	]), ee = (e) => {
+		T(e);
+	};
+	l(() => {
+		if (!E) return;
+		if (w === "none") {
+			D(!1);
+			return;
+		}
+		let e = window.setTimeout(() => D(!1), Mv);
+		return () => window.clearTimeout(e);
+	}, [E, w]);
+	let te = () => {
+		let e = L();
+		I(x + 25, e.clientX, e.clientY);
+	}, z = () => {
+		let e = L();
+		I(x - 25, e.clientX, e.clientY);
+	};
+	l(() => {
+		if (w === "none" || !A.current || !N.current) return;
+		let e = 0, t = () => {
+			window.cancelAnimationFrame(e), e = window.requestAnimationFrame(R);
+		}, n = new ResizeObserver(t);
+		n.observe(A.current), j.current && n.observe(j.current), n.observe(N.current);
+		let r = () => {
+			N.current?.querySelectorAll("[data-section-content]").forEach((e) => {
+				n.observe(e);
+			});
+		};
+		r();
+		let i = new MutationObserver(() => {
+			r(), t();
+		});
+		return i.observe(N.current, {
+			childList: !0,
+			subtree: !0
+		}), window.addEventListener("resize", t), window.visualViewport?.addEventListener("resize", t), t(), () => {
+			window.cancelAnimationFrame(e), n.disconnect(), i.disconnect(), window.removeEventListener("resize", t), window.visualViewport?.removeEventListener("resize", t);
+		};
+	}, [w, R]), l(() => {
+		if (g || f !== "pane") return;
+		let e = A.current;
+		if (!e) return;
+		let t = () => {
+			let t = Fv(e);
+			k((e) => Math.abs(e - t) < .5 ? e : t);
+		};
+		t();
+		let n = new ResizeObserver(t);
+		return n.observe(e), window.addEventListener("resize", t), window.visualViewport?.addEventListener("resize", t), () => {
+			n.disconnect(), window.removeEventListener("resize", t), window.visualViewport?.removeEventListener("resize", t);
+		};
+	}, [g, f]), l(() => {
+		if (g) return;
+		let e = null, t = null, n = null, a = {
+			clientX: 0,
+			clientY: 0
+		}, o = null, s = !1, c = () => {
+			e = null;
+			let t = n;
+			n = null, t !== null && I(t, a.clientX, a.clientY);
+		}, l = (t) => {
+			if (!t.ctrlKey && !t.metaKey) return;
+			t.preventDefault();
+			let o = t.deltaMode === 1 ? t.deltaY * 16 : t.deltaMode === 2 ? t.deltaY * 16 * 32 : t.deltaY, s = n ?? P.current, l = Math.min(Math.max(s * 1.003 ** -o, r), i);
+			a = {
+				clientX: t.clientX,
+				clientY: t.clientY
+			}, (l !== s || n !== null) && (n = l, e === null && (e = window.requestAnimationFrame(c)));
+		}, u = () => {
+			t = null, !s && (o = f === "pane" ? j.current : A.current, o ? o.addEventListener("wheel", l, { passive: !1 }) : t = window.requestAnimationFrame(u));
+		};
+		return u(), () => {
+			s = !0, e !== null && window.cancelAnimationFrame(e), t !== null && window.cancelAnimationFrame(t), o?.removeEventListener("wheel", l);
+		};
+	}, [
+		I,
+		g,
+		i,
+		r,
+		f
+	]);
+	let B = x / 100;
+	return g ? /* @__PURE__ */ v(Lv.Provider, {
+		value: {
+			zoom: 100,
+			scaleValue: 1,
+			hideUI: !0
+		},
+		children: /* @__PURE__ */ v("div", {
+			className: t,
+			children: e
+		})
+	}) : /* @__PURE__ */ v(Lv.Provider, {
+		value: {
+			zoom: x,
+			scaleValue: B,
+			hideUI: !1
+		},
+		children: /* @__PURE__ */ y("div", {
+			ref: A,
+			className: `uhuu:flex uhuu:flex-col uhuu:flex-1 uhuu:min-h-0 ${t}`,
+			children: [/* @__PURE__ */ y("div", {
+				"data-uhuu-editor": !0,
+				className: "uhuu:fixed uhuu:right-4 uhuu:bottom-4 uhuu:z-50 uhuu:flex uhuu:items-center uhuu:gap-1.5 uhuu:px-2.5 uhuu:py-1.5 uhuu:bg-(--uhuu-shell-surface)/90 uhuu:backdrop-blur-md uhuu:border uhuu:border-gray-200/60 uhuu:rounded-lg uhuu:shadow-sm",
+				children: [
+					o,
+					/* @__PURE__ */ v("div", {
+						ref: b,
+						className: "uhuu:contents"
+					}),
+					/* @__PURE__ */ v("div", { className: "uhuu:h-4 uhuu:w-px uhuu:bg-gray-200 uhuu:mx-0.5" }),
+					/* @__PURE__ */ y(Dh, {
+						modal: !1,
+						children: [/* @__PURE__ */ v(Oh, {
+							asChild: !0,
+							children: /* @__PURE__ */ y($o, {
+								variant: "ghost",
+								size: "sm",
+								title: _("zoom.menu"),
+								className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-700 uhuu:hover:bg-gray-100/80 uhuu:h-7 uhuu:px-2.5",
+								children: [
+									Math.round(x),
+									"%",
+									/* @__PURE__ */ v(ra, { className: "uhuu:w-3 uhuu:h-3 uhuu:ml-1 uhuu:opacity-60" })
+								]
+							})
+						}), /* @__PURE__ */ y(Mh, {
+							className: "uhuu:w-52 uhuu:p-1.5",
+							align: "end",
+							children: [
+								/* @__PURE__ */ y(Nh, {
+									onClick: () => ee("width"),
+									className: `uhuu:cursor-pointer uhuu:flex uhuu:items-center ${w === "width" ? "uhuu:bg-gray-100" : ""}`,
+									children: [/* @__PURE__ */ v(_a, { className: "uhuu:w-4 uhuu:h-4 uhuu:mr-2" }), /* @__PURE__ */ v("span", { children: _("zoom.fitWidth") })]
+								}),
+								/* @__PURE__ */ y(Nh, {
+									onClick: () => ee("height"),
+									className: `uhuu:cursor-pointer uhuu:flex uhuu:items-center ${w === "height" ? "uhuu:bg-gray-100" : ""}`,
+									children: [/* @__PURE__ */ v(va, { className: "uhuu:w-4 uhuu:h-4 uhuu:mr-2" }), /* @__PURE__ */ v("span", { children: _("zoom.fitHeight") })]
+								}),
+								/* @__PURE__ */ y(Nh, {
+									onClick: () => ee("both"),
+									className: `uhuu:cursor-pointer uhuu:flex uhuu:items-center ${w === "both" ? "uhuu:bg-gray-100" : ""}`,
+									children: [/* @__PURE__ */ v(ua, { className: "uhuu:w-4 uhuu:h-4 uhuu:mr-2" }), /* @__PURE__ */ v("span", { children: _("zoom.fitPage") })]
+								}),
+								/* @__PURE__ */ v(Lh, { className: "uhuu:my-1.5" }),
+								/* @__PURE__ */ y("div", {
+									className: "uhuu:flex uhuu:items-center uhuu:justify-center uhuu:gap-2 uhuu:px-3 uhuu:py-2.5",
+									onClick: (e) => e.stopPropagation(),
+									children: [
+										/* @__PURE__ */ v($o, {
+											variant: "ghost",
+											size: "sm",
+											onClick: (e) => {
+												e.stopPropagation(), z();
+											},
+											disabled: x <= r,
+											className: "uhuu:h-8 uhuu:w-8 uhuu:p-0 uhuu:hover:bg-gray-100 uhuu:disabled:opacity-40",
+											title: _("zoom.zoomOut"),
+											children: /* @__PURE__ */ v(xa, { className: "uhuu:w-4 uhuu:h-4" })
+										}),
+										/* @__PURE__ */ y("div", {
+											className: "uhuu:relative",
+											children: [/* @__PURE__ */ v("input", {
+												type: "number",
+												value: Math.round(x),
+												onChange: (e) => {
+													let t = Number.parseInt(e.target.value);
+													if (!isNaN(t)) {
+														let e = L();
+														I(t, e.clientX, e.clientY);
+													}
+												},
+												onFocus: (e) => e.target.select(),
+												className: "uhuu:w-20 uhuu:pr-6 uhuu:text-center uhuu:text-sm uhuu:text-gray-700 uhuu:bg-(--uhuu-shell-surface) uhuu:border uhuu:border-gray-300 uhuu:rounded uhuu:px-2 uhuu:py-1.5 uhuu:focus:outline-none uhuu:focus:ring-2 uhuu:focus:ring-blue-500 uhuu:focus:border-transparent uhuu:transition-all",
+												min: r,
+												max: i
+											}), /* @__PURE__ */ v("span", {
+												className: "uhuu:absolute uhuu:right-2 uhuu:top-1/2 uhuu:-translate-y-1/2 uhuu:text-xs uhuu:text-gray-400 uhuu:pointer-events-none",
+												children: "%"
+											})]
+										}),
+										/* @__PURE__ */ v($o, {
+											variant: "ghost",
+											size: "sm",
+											onClick: (e) => {
+												e.stopPropagation(), te();
+											},
+											disabled: x >= i,
+											className: "uhuu:h-8 uhuu:w-8 uhuu:p-0 uhuu:hover:bg-gray-100 uhuu:disabled:opacity-40",
+											title: _("zoom.zoomIn"),
+											children: /* @__PURE__ */ v(ba, { className: "uhuu:w-4 uhuu:h-4" })
+										})
+									]
+								})
+							]
+						})]
+					})
+				]
+			}), /* @__PURE__ */ v("div", {
+				ref: j,
+				className: f === "pane" ? "uhuu-zoom-pane" : void 0,
+				style: f === "pane" ? {
+					height: `calc(100dvh - ${O}px)`,
+					maxHeight: "100%",
+					overflow: "auto",
+					overscrollBehavior: "contain"
+				} : void 0,
+				children: /* @__PURE__ */ v("div", {
+					ref: M,
+					className: "uhuu-zoom-pane-content",
+					style: E ? {
+						...Nv,
+						visibility: "hidden"
+					} : Nv,
+					children: /* @__PURE__ */ v("div", {
+						ref: N,
+						className: u === "two_pages" ? "group_two_pages" : "uhuu:flex uhuu:flex-col uhuu:items-center",
+						children: e
+					})
+				})
+			})]
+		})
+	});
+}
+//#endregion
+//#region node_modules/.pnpm/@radix-ui+react-dialog@1.2.0_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_c1edb718822a6de77ff35d62c5110ee0/node_modules/@radix-ui/react-dialog/dist/index.mjs
+var Uv = Object.defineProperty, Wv = (e, t) => Uv(e, "name", {
+	value: t,
+	configurable: !0
+}), Gv = "Dialog", [Kv, qv] = /* @__PURE__ */ ms(Gv), [Jv, Yv] = Kv(Gv), Xv = /* @__PURE__ */ Wv((t) => {
+	let { __scopeDialog: n, children: r, open: i, defaultOpen: a, onOpenChange: o, modal: s = !0 } = t, c = e.useRef(null), l = e.useRef(null), { nodes: u, registry: d } = Kc(), [f, p] = Ts({
+		prop: i,
+		defaultProp: a ?? !1,
+		onChange: o,
+		caller: Gv
+	}), [m, h] = e.useState(0), [g, _] = e.useState(0);
+	return /* @__PURE__ */ v(Jv, {
+		scope: n,
+		triggerRef: c,
+		contentRef: l,
+		contentId: ll(),
+		titleId: ll(),
+		descriptionId: ll(),
+		titlePresent: m > 0,
+		descriptionPresent: g > 0,
+		setTitleCount: h,
+		setDescriptionCount: _,
+		open: f,
+		onOpenChange: p,
+		onOpenToggle: e.useCallback(() => p((e) => !e), [p]),
+		modal: s,
+		branchNodes: u,
+		branchRegistry: d,
+		children: r
+	});
+}, "Dialog"), Zv = "DialogTrigger", Qv = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Wv(function(e, t) {
+	let { __scopeDialog: n, ...r } = e, i = Yv(Zv, n), a = J(t, i.triggerRef);
+	return /* @__PURE__ */ v(Js.button, {
+		type: "button",
+		"aria-haspopup": "dialog",
+		"aria-expanded": i.open,
+		"aria-controls": i.open ? i.contentId : void 0,
+		"data-state": _y(i.open),
+		...r,
+		ref: a,
+		onClick: q(e.onClick, i.onOpenToggle)
+	});
+}, "DialogTrigger")), $v = "DialogPortal", [ey, ty] = Kv($v, { forceMount: void 0 }), ny = /* @__PURE__ */ Wv((t) => {
+	let { __scopeDialog: n, forceMount: r, children: i, container: a } = t, o = Yv($v, n);
+	return /* @__PURE__ */ v(ey, {
+		scope: n,
+		forceMount: r,
+		children: e.Children.map(i, (e) => /* @__PURE__ */ v(Jd, {
+			present: r || o.open,
+			children: /* @__PURE__ */ v(Wd, {
+				asChild: !0,
+				container: a,
+				children: e
+			})
+		}))
+	});
+}, "DialogPortal"), ry = "DialogOverlay", iy = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Wv(function(e, t) {
+	let n = ty(ry, e.__scopeDialog), { forceMount: r = n.forceMount, ...i } = e, a = Yv(ry, e.__scopeDialog);
+	return a.modal ? /* @__PURE__ */ v(Jd, {
+		present: r || a.open,
+		children: /* @__PURE__ */ v(oy, {
+			...i,
+			ref: t
+		})
+	}) : null;
+}, "DialogOverlay")), ay = /* @__PURE__ */ Ms("DialogOverlay.RemoveScroll"), oy = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Wv(function(t, n) {
+	let { __scopeDialog: r, ...i } = t, a = Yv(ry, r), o = J(n, Tc());
+	return /* @__PURE__ */ v(Jp, {
+		as: ay,
+		allowPinchZoom: !0,
+		shards: e.useMemo(() => [a.contentRef, ...a.branchNodes.map((e) => ({ current: e }))], [a.contentRef, a.branchNodes]),
+		children: /* @__PURE__ */ v(Js.div, {
+			"data-state": _y(a.open),
+			...i,
+			ref: o,
+			style: {
+				pointerEvents: "auto",
+				...i.style
+			}
+		})
+	});
+}, "DialogOverlayImpl")), sy = "DialogContent", cy = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Wv(function(e, t) {
+	let n = ty(sy, e.__scopeDialog), { forceMount: r = n.forceMount, ...i } = e, a = Yv(sy, e.__scopeDialog);
+	return /* @__PURE__ */ v(Jd, {
+		present: r || a.open,
+		children: a.modal ? /* @__PURE__ */ v(ly, {
+			...i,
+			ref: t
+		}) : /* @__PURE__ */ v(uy, {
+			...i,
+			ref: t
+		})
+	});
+}, "DialogContent")), ly = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Wv(function(t, n) {
+	let r = Yv(sy, t.__scopeDialog), i = e.useRef(null), a = J(n, r.contentRef, i);
+	return e.useEffect(() => {
+		let e = i.current;
+		if (e) return Bf(e);
+	}, []), /* @__PURE__ */ v(dy, {
+		...t,
+		ref: a,
+		trapFocus: r.open,
+		disableOutsidePointerEvents: r.open,
+		onCloseAutoFocus: q(t.onCloseAutoFocus, (e) => {
+			e.preventDefault(), r.triggerRef.current?.focus();
+		}),
+		onPointerDownOutside: q(t.onPointerDownOutside, (e) => {
+			let t = e.detail.originalEvent, n = t.button === 0 && t.ctrlKey === !0;
+			(t.button === 2 || n) && e.preventDefault();
+		}),
+		onFocusOutside: q(t.onFocusOutside, (e) => e.preventDefault())
+	});
+}, "DialogContentModal")), uy = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Wv(function(t, n) {
+	let r = Yv(sy, t.__scopeDialog), i = e.useRef(!1), a = e.useRef(!1);
+	return /* @__PURE__ */ v(dy, {
+		...t,
+		ref: n,
+		trapFocus: !1,
+		disableOutsidePointerEvents: !1,
+		onCloseAutoFocus: (e) => {
+			t.onCloseAutoFocus?.(e), e.defaultPrevented || (i.current || r.triggerRef.current?.focus(), e.preventDefault()), i.current = !1, a.current = !1;
+		},
+		onInteractOutside: (e) => {
+			t.onInteractOutside?.(e), e.defaultPrevented || (i.current = !0, e.detail.originalEvent.type === "pointerdown" && (a.current = !0));
+			let n = e.target;
+			r.triggerRef.current?.contains(n) && e.preventDefault(), e.detail.originalEvent.type === "focusin" && a.current && e.preventDefault();
+		}
+	});
+}, "DialogContentNonModal")), dy = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Wv(function(e, t) {
+	let { __scopeDialog: n, trapFocus: r, onOpenAutoFocus: i, onCloseAutoFocus: a, "aria-describedby": o, children: s, ...c } = e, l = Yv(sy, n);
+	return Ic(), /* @__PURE__ */ v(Gc, {
+		registry: l.branchRegistry,
+		children: /* @__PURE__ */ v(Uc, {
+			asChild: !0,
+			loop: !0,
+			trapped: r,
+			branches: l.branchNodes,
+			onMountAutoFocus: i,
+			onUnmountAutoFocus: a,
+			children: /* @__PURE__ */ v(wc, {
+				role: "dialog",
+				id: l.contentId,
+				"aria-labelledby": l.titlePresent ? l.titleId : void 0,
+				"aria-describedby": l.descriptionPresent ? gy(o, l.descriptionId) : o,
+				"data-state": _y(l.open),
+				...c,
+				ref: t,
+				deferPointerDownOutside: !0,
+				onDismiss: () => l.onOpenChange(!1),
+				children: s
+			})
+		})
+	});
+}, "DialogContentImpl")), fy = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Wv(function(e, t) {
+	let { __scopeDialog: n, ...r } = e, i = Yv("DialogTitle", n), { setTitleCount: a } = i;
+	return gs(() => (a((e) => e + 1), () => a((e) => e - 1)), [a]), /* @__PURE__ */ v(Js.h2, {
+		id: i.titleId,
+		...r,
+		ref: t
+	});
+}, "DialogTitle")), py = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Wv(function(e, t) {
+	let { __scopeDialog: n, ...r } = e, i = Yv("DialogDescription", n), { setDescriptionCount: a } = i;
+	return gs(() => (a((e) => e + 1), () => a((e) => e - 1)), [a]), /* @__PURE__ */ v(Js.p, {
+		id: i.descriptionId,
+		...r,
+		ref: t
+	});
+}, "DialogDescription")), my = "DialogClose", hy = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ Wv(function(e, t) {
+	let { __scopeDialog: n, ...r } = e, i = Yv(my, n);
+	return /* @__PURE__ */ v(Js.button, {
+		type: "button",
+		...r,
+		ref: t,
+		onClick: q(e.onClick, () => i.onOpenChange(!1))
+	});
+}, "DialogClose"));
+function gy(...e) {
+	let t = /* @__PURE__ */ new Set();
+	for (let n of e) if (typeof n == "string") for (let e of String(n).trim().split(/\s+/)) e && t.add(e);
+	return t.size > 0 ? Array.from(t).join(" ") : void 0;
+}
+Wv(gy, "concatAriaDescribedby");
+function _y(e) {
+	return e ? "open" : "closed";
+}
+Wv(_y, "getState");
+//#endregion
+//#region src/uhuu/ui/sheet.tsx
+var vy = Xv, yy = ny, by = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(iy, {
+	className: K("uhuu:fixed uhuu:inset-0 uhuu:z-50 uhuu:bg-black/50 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0", e),
+	...t,
+	ref: n
+}));
+by.displayName = iy.displayName;
+var xy = e.forwardRef(({ side: e = "right", className: t, children: n, ...r }, i) => {
+	let { portalContainer: a } = Ca(), o = go().t("dialog.close");
+	return /* @__PURE__ */ y(yy, {
+		container: a || void 0,
+		children: [/* @__PURE__ */ v(by, {}), /* @__PURE__ */ y(cy, {
+			ref: i,
+			className: K("uhuu:fixed uhuu:z-50 uhuu:gap-4 uhuu:bg-(--uhuu-shell-surface) uhuu:p-6 uhuu:shadow-lg uhuu:transition uhuu:ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out uhuu:data-[state=closed]:duration-300 uhuu:data-[state=open]:duration-500", e === "top" && "uhuu:inset-x-0 uhuu:top-0 uhuu:border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top", e === "bottom" && "uhuu:inset-x-0 uhuu:bottom-0 uhuu:border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom", e === "left" && "uhuu:inset-y-0 uhuu:left-0 uhuu:h-full uhuu:w-3/4 uhuu:border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left uhuu:sm:max-w-sm", e === "right" && "uhuu:inset-y-0 uhuu:right-0 uhuu:h-full uhuu:w-3/4 uhuu:border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right uhuu:sm:max-w-sm", t),
+			...r,
+			children: [n, /* @__PURE__ */ y(hy, {
+				className: "uhuu:absolute uhuu:right-4 uhuu:top-4 uhuu:rounded-sm uhuu:opacity-70 uhuu:ring-offset-(--uhuu-shell-surface) uhuu:transition-opacity uhuu:hover:opacity-100 uhuu:focus:outline-none uhuu:focus:ring-2 uhuu:focus:ring-gray-400 uhuu:focus:ring-offset-2 uhuu:disabled:pointer-events-none uhuu:data-[state=open]:bg-gray-100",
+				children: [/* @__PURE__ */ v(ya, { className: "uhuu:h-4 uhuu:w-4" }), /* @__PURE__ */ v("span", {
+					className: "uhuu:sr-only",
+					children: o
+				})]
+			})]
+		})]
+	});
+});
+xy.displayName = cy.displayName;
+var Sy = ({ className: e, ...t }) => /* @__PURE__ */ v("div", {
+	className: K("uhuu:flex uhuu:flex-col uhuu:space-y-2 uhuu:text-center uhuu:sm:text-left", e),
+	...t
+});
+Sy.displayName = "SheetHeader";
+var Cy = ({ className: e, ...t }) => /* @__PURE__ */ v("div", {
+	className: K("uhuu:flex uhuu:flex-col-reverse uhuu:sm:flex-row uhuu:sm:justify-end uhuu:sm:space-x-2", e),
+	...t
+});
+Cy.displayName = "SheetFooter";
+var wy = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(fy, {
+	ref: n,
+	className: K("uhuu:text-lg uhuu:font-medium uhuu:text-gray-900", e),
+	...t
+}));
+wy.displayName = fy.displayName;
+var Ty = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(py, {
+	ref: n,
+	className: K("uhuu:text-sm uhuu:text-gray-500", e),
+	...t
+}));
+Ty.displayName = py.displayName;
+//#endregion
 //#region src/uhuu/editor-shell/document/add-page-dialog.tsx
-function Iv({ open: t, onOpenChange: n, availableItems: r, onSelectItem: i, pageComponents: a, payload: o, setup: s = {
+function Ey({ open: t, onOpenChange: n, availableItems: r, onSelectItem: i, renderThumbnail: a, payload: o, setup: s = {
 	width: 210,
 	height: 297
 }, gridColsClass: c = "uhuu-page-order-grid-cols" }) {
-	let l = Ua(), { t: u, localize: d } = l, [f, p] = e.useState(""), m = e.useMemo(() => {
-		if (!f.trim()) return r;
-		let e = f.toLowerCase();
-		return r.filter((t) => (d(t.label) || "").toLowerCase().includes(e) || t.id.toLowerCase().includes(e));
+	let { t: l, localize: u } = go(), [d, f] = e.useState(""), p = e.useMemo(() => {
+		if (!d.trim()) return r;
+		let e = d.toLowerCase();
+		return r.filter((t) => (u(t.label) || "").toLowerCase().includes(e) || t.id.toLowerCase().includes(e));
 	}, [
 		r,
-		f,
-		d
-	]), h = (e) => {
+		d,
+		u
+	]), m = (e) => {
 		n(!1), i(e);
-	}, y = I.resolveDimensions(s), b = y.width / y.height, x = Math.round(200 / b), S = {
+	}, h = L.resolveDimensions(s), g = h.width / h.height, b = {
 		width: "200px",
-		height: `${x}px`
-	}, C = e.useMemo(() => a ? Fv({
-		pageComponents: a,
-		payload: o,
-		setup: s,
-		thumbnailWidth: 200,
-		thumbnailHeight: x,
-		i18n: l
-	}) : null, [
-		a,
-		o,
-		s,
-		200,
-		x,
-		l
-	]), w = (e, t) => {
-		if (!e) return [];
-		if (Array.isArray(e)) return e;
-		try {
-			let n = e(t);
-			if (!Array.isArray(n)) return console.error("[uhuu-components] pageComponentKeys function must return an array, got:", typeof n), [];
-			let r = n.filter((e) => typeof e == "string");
-			return r.length !== n.length && console.warn("[uhuu-components] pageComponentKeys returned non-string values, filtering them out"), r;
-		} catch (e) {
-			return console.error("[uhuu-components] Error evaluating pageComponentKeys function:", e), [];
-		}
-	}, T = (e, t) => {
+		height: `${Math.round(200 / g)}px`
+	}, x = (e, t) => {
 		if (e.kind === "group") {
 			let t = e, n = {
 				payload: o,
 				item: void 0,
 				parent: void 0
-			}, r = w(t.pageComponentKeys, n), i = r[0];
+			}, r = sv(t.pageComponentKeys, n), i = r[0];
 			return {
 				kind: "group",
 				id: e.id,
@@ -11966,158 +12488,158 @@ function Iv({ open: t, onOpenChange: n, availableItems: r, onSelectItem: i, page
 			pageNum: t + 1
 		};
 	};
-	return /* @__PURE__ */ _(wv, {
+	return /* @__PURE__ */ v(vy, {
 		open: t,
 		onOpenChange: n,
-		children: /* @__PURE__ */ v(Dv, {
+		children: /* @__PURE__ */ y(xy, {
 			side: "bottom",
 			className: "uhuu:h-[90vh] uhuu:w-full uhuu:max-w-none uhuu:flex uhuu:flex-col uhuu:gap-0 uhuu:bg-gray-50 uhuu:p-0",
 			"data-uhuu-editor": !0,
-			children: [/* @__PURE__ */ _(Ov, {
+			children: [/* @__PURE__ */ v(Sy, {
 				className: "uhuu:border-b uhuu:border-gray-200 uhuu:p-4 uhuu:bg-(--uhuu-shell-surface)",
-				children: /* @__PURE__ */ v("div", {
+				children: /* @__PURE__ */ y("div", {
 					className: "uhuu:flex uhuu:items-end uhuu:gap-3",
 					children: [
-						/* @__PURE__ */ _("div", {
-							className: "uhuu:w-8 uhuu:h-8 uhuu:bg-gray-100 uhuu:rounded-full uhuu:flex uhuu:items-center uhuu:justify-center uhuu:shrink-0 uhuu:mb-0.5",
-							children: /* @__PURE__ */ _(Xi, { className: "uhuu:w-4 uhuu:h-4" })
-						}),
 						/* @__PURE__ */ v("div", {
+							className: "uhuu:w-8 uhuu:h-8 uhuu:bg-gray-100 uhuu:rounded-full uhuu:flex uhuu:items-center uhuu:justify-center uhuu:shrink-0 uhuu:mb-0.5",
+							children: /* @__PURE__ */ v(pa, { className: "uhuu:w-4 uhuu:h-4" })
+						}),
+						/* @__PURE__ */ y("div", {
 							className: "uhuu:flex-1",
-							children: [/* @__PURE__ */ _(Av, {
+							children: [/* @__PURE__ */ v(wy, {
 								className: "uhuu:text-base uhuu:font-medium uhuu:text-gray-900 uhuu:leading-tight",
-								children: u("addDialog.title")
-							}), /* @__PURE__ */ _(jv, {
+								children: l("addDialog.title")
+							}), /* @__PURE__ */ v(Ty, {
 								className: "uhuu:text-xs uhuu:text-gray-400 uhuu:mt-0.5",
-								children: u("addDialog.description")
+								children: l("addDialog.description")
 							})]
 						}),
-						/* @__PURE__ */ v("div", {
+						/* @__PURE__ */ y("div", {
 							className: "uhuu:mb-0.5 uhuu:mr-8 uhuu:flex uhuu:items-center uhuu:gap-1.5 uhuu:rounded-md uhuu:border uhuu:border-gray-200 uhuu:bg-(--uhuu-shell-surface) uhuu:px-2 uhuu:py-1 uhuu:text-gray-400 uhuu:focus-within:border-gray-400 uhuu:focus-within:ring-2 uhuu:focus-within:ring-gray-200",
 							children: [
-								/* @__PURE__ */ _(Zi, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:shrink-0" }),
-								/* @__PURE__ */ _("label", {
+								/* @__PURE__ */ v(ma, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:shrink-0" }),
+								/* @__PURE__ */ v("label", {
 									className: "uhuu:sr-only",
 									htmlFor: "uhuu-add-page-filter",
-									children: u("addDialog.filterLabel")
+									children: l("addDialog.filterLabel")
 								}),
-								/* @__PURE__ */ _("input", {
+								/* @__PURE__ */ v("input", {
 									id: "uhuu-add-page-filter",
 									type: "text",
-									placeholder: u("addDialog.filterPlaceholder"),
-									value: f,
-									onChange: (e) => p(e.target.value),
+									placeholder: l("addDialog.filterPlaceholder"),
+									value: d,
+									onChange: (e) => f(e.target.value),
 									className: "uhuu:w-24 uhuu:border-0 uhuu:bg-transparent uhuu:text-sm uhuu:text-gray-600 uhuu:placeholder:text-gray-400 uhuu:outline-none uhuu:transition-all uhuu:duration-150 uhuu:focus:w-40"
 								})
 							]
 						})
 					]
 				})
-			}), /* @__PURE__ */ _("div", {
+			}), /* @__PURE__ */ v("div", {
 				className: "uhuu:min-h-0 uhuu:flex-1 uhuu:overflow-auto uhuu:bg-gray-50 uhuu:p-6",
-				children: m.length === 0 ? /* @__PURE__ */ v("div", {
+				children: p.length === 0 ? /* @__PURE__ */ y("div", {
 					className: "uhuu:text-center uhuu:py-16",
 					children: [
-						/* @__PURE__ */ _("div", {
+						/* @__PURE__ */ v("div", {
 							className: "uhuu:w-16 uhuu:h-16 uhuu:bg-gray-100 uhuu:rounded-full uhuu:flex uhuu:items-center uhuu:justify-center uhuu:mx-auto uhuu:mb-4",
-							children: /* @__PURE__ */ _(Xi, { className: "uhuu:w-8 uhuu:h-8 uhuu:text-gray-400" })
+							children: /* @__PURE__ */ v(pa, { className: "uhuu:w-8 uhuu:h-8 uhuu:text-gray-400" })
 						}),
-						/* @__PURE__ */ _("div", {
+						/* @__PURE__ */ v("div", {
 							className: "uhuu:text-lg uhuu:font-medium uhuu:text-gray-900 uhuu:mb-2",
-							children: u("addDialog.emptyTitle")
+							children: l("addDialog.emptyTitle")
 						}),
-						/* @__PURE__ */ _("p", {
+						/* @__PURE__ */ v("p", {
 							className: "uhuu:text-gray-500 uhuu:mb-4",
-							children: f.trim() ? u("addDialog.emptyFiltered") : u("addDialog.emptyAdded")
+							children: d.trim() ? l("addDialog.emptyFiltered") : l("addDialog.emptyAdded")
 						})
 					]
-				}) : /* @__PURE__ */ _("div", {
+				}) : /* @__PURE__ */ v("div", {
 					className: c,
-					children: m.map((e, t) => {
-						let n = e.kind === "group", r = e.id, i = n ? d(e.label) || u("addDialog.groupFallbackName", { number: t + 1 }) : d(e.label) || u("addDialog.pageFallbackName", { id: e.id }), a = {
+					children: p.map((e, t) => {
+						let n = e.kind === "group", r = e.id, i = n ? u(e.label) || l("addDialog.groupFallbackName", { number: t + 1 }) : u(e.label) || l("addDialog.pageFallbackName", { id: e.id }), s = {
 							payload: o,
 							item: void 0,
 							parent: void 0
-						}, s = n ? w(e.pageComponentKeys, a).length : 1, c = !!C;
-						return /* @__PURE__ */ v("div", {
-							onClick: () => h(e),
+						}, c = n ? sv(e.pageComponentKeys, s).length : 1, d = !!a;
+						return /* @__PURE__ */ y("div", {
+							onClick: () => m(e),
 							onKeyDown: (t) => {
-								(t.key === "Enter" || t.key === " ") && (t.preventDefault(), h(e));
+								(t.key === "Enter" || t.key === " ") && (t.preventDefault(), m(e));
 							},
 							role: "button",
 							tabIndex: 0,
-							"aria-label": u("addDialog.addItem", { name: i }),
-							className: ["uhuu:group uhuu:relative uhuu:block uhuu:cursor-pointer uhuu:border-0 uhuu:bg-transparent uhuu:p-0 uhuu:text-left uhuu:transition-all uhuu:focus-visible:outline-none uhuu:focus-visible:ring-2 uhuu:focus-visible:ring-gray-900 uhuu:focus-visible:ring-offset-2", !c && "uhuu:bg-(--uhuu-shell-surface) uhuu:border-2 uhuu:border-gray-200"].filter(Boolean).join(" "),
-							style: S,
+							"aria-label": l("addDialog.addItem", { name: i }),
+							className: ["uhuu:group uhuu:relative uhuu:block uhuu:cursor-pointer uhuu:border-0 uhuu:bg-transparent uhuu:p-0 uhuu:text-left uhuu:transition-all uhuu:focus-visible:outline-none uhuu:focus-visible:ring-2 uhuu:focus-visible:ring-gray-900 uhuu:focus-visible:ring-offset-2", !d && "uhuu:bg-(--uhuu-shell-surface) uhuu:border-2 uhuu:border-gray-200"].filter(Boolean).join(" "),
+							style: b,
 							children: [
-								/* @__PURE__ */ _("div", {
+								/* @__PURE__ */ v("div", {
 									className: "uhuu:w-full uhuu:h-full uhuu:relative",
-									children: e.thumbnail ? /* @__PURE__ */ _("div", {
+									children: e.thumbnail ? /* @__PURE__ */ v("div", {
 										"data-uhuu-paper": !0,
 										className: "uhuu:absolute uhuu:inset-0 uhuu:bg-gray-100 uhuu:hover:bg-white",
-										children: /* @__PURE__ */ _("img", {
+										children: /* @__PURE__ */ v("img", {
 											"data-uhuu-chrome": !0,
 											src: e.thumbnail,
 											className: "uhuu:w-full uhuu:h-full uhuu:object-contain uhuu:pointer-events-none uhuu:object-top uhuu:border uhuu:border-gray-200 uhuu:p-4",
 											alt: i
 										})
-									}) : C ? /* @__PURE__ */ _("div", {
+									}) : a ? /* @__PURE__ */ v("div", {
 										className: "uhuu:absolute uhuu:inset-0 uhuu:flex uhuu:items-center uhuu:pointer-events-none",
-										children: C(T(e, t), t, !1)
-									}) : /* @__PURE__ */ _(g, { children: n ? /* @__PURE__ */ v("div", {
+										children: a(x(e, t), t, !1)
+									}) : /* @__PURE__ */ v(_, { children: n ? /* @__PURE__ */ y("div", {
 										className: "uhuu:flex uhuu:h-full uhuu:flex-col uhuu:items-center uhuu:justify-center uhuu:p-4 uhuu:text-center",
 										children: [
-											/* @__PURE__ */ _("div", {
+											/* @__PURE__ */ v("div", {
 												className: "uhuu:w-16 uhuu:h-16 uhuu:bg-blue-100 uhuu:rounded-full uhuu:flex uhuu:items-center uhuu:justify-center uhuu:mx-auto uhuu:mb-3",
-												children: /* @__PURE__ */ _(Xi, { className: "uhuu:w-8 uhuu:h-8 uhuu:text-blue-600" })
+												children: /* @__PURE__ */ v(pa, { className: "uhuu:w-8 uhuu:h-8 uhuu:text-blue-600" })
 											}),
-											/* @__PURE__ */ _("div", {
+											/* @__PURE__ */ v("div", {
 												className: "uhuu:text-sm uhuu:font-medium uhuu:text-gray-700",
 												children: i
 											}),
-											/* @__PURE__ */ _("div", {
+											/* @__PURE__ */ v("div", {
 												className: "uhuu:text-xs uhuu:text-gray-500 uhuu:mt-1",
-												children: u("page.count", { count: s })
+												children: l("page.count", { count: c })
 											})
 										]
-									}) : /* @__PURE__ */ v("div", {
+									}) : /* @__PURE__ */ y("div", {
 										className: "uhuu:flex uhuu:h-full uhuu:flex-col uhuu:items-center uhuu:justify-center uhuu:p-4 uhuu:text-center",
 										children: [
-											/* @__PURE__ */ _("div", {
+											/* @__PURE__ */ v("div", {
 												className: "uhuu:w-16 uhuu:h-16 uhuu:bg-gray-100 uhuu:rounded-full uhuu:flex uhuu:items-center uhuu:justify-center uhuu:mx-auto uhuu:mb-3",
-												children: /* @__PURE__ */ _(Xi, { className: "uhuu:w-8 uhuu:h-8 uhuu:text-gray-400" })
+												children: /* @__PURE__ */ v(pa, { className: "uhuu:w-8 uhuu:h-8 uhuu:text-gray-400" })
 											}),
-											/* @__PURE__ */ _("div", {
+											/* @__PURE__ */ v("div", {
 												className: "uhuu:text-sm uhuu:font-medium uhuu:text-gray-700",
 												children: i
 											}),
-											/* @__PURE__ */ _("div", {
+											/* @__PURE__ */ v("div", {
 												className: "uhuu:text-xs uhuu:text-gray-500 uhuu:mt-1",
 												children: r
 											})
 										]
 									}) })
 								}),
-								(!C || e?.thumbnail) && /* @__PURE__ */ v(g, { children: [n && /* @__PURE__ */ _("div", {
+								(!a || e?.thumbnail) && /* @__PURE__ */ y(_, { children: [n && /* @__PURE__ */ v("div", {
 									className: "uhuu:absolute uhuu:top-2 uhuu:right-2 uhuu:px-2 uhuu:py-1 uhuu:bg-blue-600/80 uhuu:backdrop-blur-sm uhuu:text-white uhuu:text-xs uhuu:font-medium uhuu:rounded uhuu:shadow-lg uhuu:pointer-events-none",
-									children: u("thumbnail.groupBadge", { count: s })
-								}), /* @__PURE__ */ _("div", {
+									children: l("thumbnail.groupBadge", { count: c })
+								}), /* @__PURE__ */ v("div", {
 									className: "uhuu:absolute uhuu:bottom-0 uhuu:left-0 uhuu:right-0 uhuu:bg-(--uhuu-thumbnail-caption) uhuu:backdrop-blur-sm uhuu:p-3 uhuu:pointer-events-none",
 									"data-item-id": r,
-									children: /* @__PURE__ */ _("div", {
+									children: /* @__PURE__ */ v("div", {
 										className: "uhuu:flex uhuu:items-center uhuu:justify-between uhuu:gap-2 uhuu:text-white",
-										children: /* @__PURE__ */ _("div", {
+										children: /* @__PURE__ */ v("div", {
 											className: "uhuu:flex-1 uhuu:min-w-0",
-											children: /* @__PURE__ */ _("div", {
+											children: /* @__PURE__ */ v("div", {
 												className: "uhuu:text-sm uhuu:font-medium uhuu:truncate",
 												children: i
 											})
 										})
 									})
 								})] }),
-								/* @__PURE__ */ _("div", {
+								/* @__PURE__ */ v("div", {
 									className: "uhuu:absolute uhuu:top-3 uhuu:left-3 uhuu:w-8 uhuu:h-8 uhuu:bg-black uhuu:rounded-full uhuu:flex uhuu:items-center uhuu:justify-center uhuu:shadow-lg uhuu:opacity-0 uhuu:group-hover:opacity-100 uhuu:transition-opacity uhuu:pointer-events-none uhuu:z-10",
-									children: /* @__PURE__ */ _(Xi, { className: "uhuu:w-4 uhuu:h-4 uhuu:text-white" })
+									children: /* @__PURE__ */ v(pa, { className: "uhuu:w-4 uhuu:h-4 uhuu:text-white" })
 								})
 							]
 						}, r);
@@ -12129,89 +12651,89 @@ function Iv({ open: t, onOpenChange: n, availableItems: r, onSelectItem: i, page
 }
 //#endregion
 //#region node_modules/.pnpm/@dnd-kit+utilities@3.2.2_react@19.3.0/node_modules/@dnd-kit/utilities/dist/utilities.esm.js
-function Lv() {
+function Dy() {
 	var e = [...arguments];
-	return d(() => (t) => {
+	return f(() => (t) => {
 		e.forEach((e) => e(t));
 	}, e);
 }
-var Rv = typeof window < "u" && window.document !== void 0 && window.document.createElement !== void 0;
-function zv(e) {
+var Oy = typeof window < "u" && window.document !== void 0 && window.document.createElement !== void 0;
+function ky(e) {
 	let t = Object.prototype.toString.call(e);
 	return t === "[object Window]" || t === "[object global]";
 }
-function Bv(e) {
+function Ay(e) {
 	return "nodeType" in e;
 }
-function Vv(e) {
-	return e ? zv(e) ? e : Bv(e) ? e.ownerDocument?.defaultView ?? window : window : window;
+function jy(e) {
+	return e ? ky(e) ? e : Ay(e) ? e.ownerDocument?.defaultView ?? window : window : window;
 }
-function Hv(e) {
-	let { Document: t } = Vv(e);
+function My(e) {
+	let { Document: t } = jy(e);
 	return e instanceof t;
 }
-function Uv(e) {
-	return !zv(e) && e instanceof Vv(e).HTMLElement;
+function Ny(e) {
+	return !ky(e) && e instanceof jy(e).HTMLElement;
 }
-function Wv(e) {
-	return e instanceof Vv(e).SVGElement;
+function Py(e) {
+	return e instanceof jy(e).SVGElement;
 }
-function Gv(e) {
-	return e ? zv(e) ? e.document : Bv(e) ? Hv(e) ? e : Uv(e) || Wv(e) ? e.ownerDocument : document : document : document;
+function Fy(e) {
+	return e ? ky(e) ? e.document : Ay(e) ? My(e) ? e : Ny(e) || Py(e) ? e.ownerDocument : document : document : document;
 }
-var Kv = Rv ? u : l;
-function qv(e) {
-	let t = p(e);
-	return Kv(() => {
+var Iy = Oy ? d : l;
+function Ly(e) {
+	let t = m(e);
+	return Iy(() => {
 		t.current = e;
 	}), s(function() {
 		var e = [...arguments];
 		return t.current == null ? void 0 : t.current(...e);
 	}, []);
 }
-function Jv() {
-	let e = p(null);
+function Ry() {
+	let e = m(null);
 	return [s((t, n) => {
 		e.current = setInterval(t, n);
 	}, []), s(() => {
 		e.current !== null && (clearInterval(e.current), e.current = null);
 	}, [])];
 }
-function Yv(e, t) {
+function zy(e, t) {
 	t === void 0 && (t = [e]);
-	let n = p(e);
-	return Kv(() => {
+	let n = m(e);
+	return Iy(() => {
 		n.current !== e && (n.current = e);
 	}, t), n;
 }
-function Xv(e, t) {
-	let n = p();
-	return d(() => {
+function By(e, t) {
+	let n = m();
+	return f(() => {
 		let t = e(n.current);
 		return n.current = t, t;
 	}, [...t]);
 }
-function Zv(e) {
-	let t = qv(e), n = p(null);
+function Vy(e) {
+	let t = Ly(e), n = m(null);
 	return [n, s((e) => {
 		e !== n.current && t?.(e, n.current), n.current = e;
 	}, [])];
 }
-function Qv(e) {
-	let t = p();
+function Hy(e) {
+	let t = m();
 	return l(() => {
 		t.current = e;
 	}, [e]), t.current;
 }
-var $v = {};
-function ey(e, t) {
-	return d(() => {
+var Uy = {};
+function Wy(e, t) {
+	return f(() => {
 		if (t) return t;
-		let n = $v[e] == null ? 0 : $v[e] + 1;
-		return $v[e] = n, e + "-" + n;
+		let n = Uy[e] == null ? 0 : Uy[e] + 1;
+		return Uy[e] = n, e + "-" + n;
 	}, [e, t]);
 }
-function ty(e) {
+function Gy(e) {
 	return function(t) {
 		return [...arguments].slice(1).reduce((t, n) => {
 			let r = Object.entries(n);
@@ -12223,22 +12745,22 @@ function ty(e) {
 		}, { ...t });
 	};
 }
-var ny = /*#__PURE__*/ ty(1), ry = /*#__PURE__*/ ty(-1);
-function iy(e) {
+var Ky = /*#__PURE__*/ Gy(1), qy = /*#__PURE__*/ Gy(-1);
+function Jy(e) {
 	return "clientX" in e && "clientY" in e;
 }
-function ay(e) {
+function Yy(e) {
 	if (!e) return !1;
-	let { KeyboardEvent: t } = Vv(e.target);
+	let { KeyboardEvent: t } = jy(e.target);
 	return t && e instanceof t;
 }
-function oy(e) {
+function Xy(e) {
 	if (!e) return !1;
-	let { TouchEvent: t } = Vv(e.target);
+	let { TouchEvent: t } = jy(e.target);
 	return t && e instanceof t;
 }
-function sy(e) {
-	if (oy(e)) {
+function Zy(e) {
+	if (Xy(e)) {
 		if (e.touches && e.touches.length) {
 			let { clientX: t, clientY: n } = e.touches[0];
 			return {
@@ -12254,12 +12776,12 @@ function sy(e) {
 			};
 		}
 	}
-	return iy(e) ? {
+	return Jy(e) ? {
 		x: e.clientX,
 		y: e.clientY
 	} : null;
 }
-var cy = /*#__PURE__*/ Object.freeze({
+var Qy = /*#__PURE__*/ Object.freeze({
 	Translate: { toString(e) {
 		if (!e) return;
 		let { x: t, y: n } = e;
@@ -12271,27 +12793,27 @@ var cy = /*#__PURE__*/ Object.freeze({
 		return "scaleX(" + t + ") scaleY(" + n + ")";
 	} },
 	Transform: { toString(e) {
-		if (e) return [cy.Translate.toString(e), cy.Scale.toString(e)].join(" ");
+		if (e) return [Qy.Translate.toString(e), Qy.Scale.toString(e)].join(" ");
 	} },
 	Transition: { toString(e) {
 		let { property: t, duration: n, easing: r } = e;
 		return t + " " + n + "ms " + r;
 	} }
-}), ly = "a,frame,iframe,input:not([type=hidden]):not(:disabled),select:not(:disabled),textarea:not(:disabled),button:not(:disabled),*[tabindex]";
-function uy(e) {
-	return e.matches(ly) ? e : e.querySelector(ly);
+}), $y = "a,frame,iframe,input:not([type=hidden]):not(:disabled),select:not(:disabled),textarea:not(:disabled),button:not(:disabled),*[tabindex]";
+function eb(e) {
+	return e.matches($y) ? e : e.querySelector($y);
 }
 //#endregion
 //#region node_modules/.pnpm/@dnd-kit+accessibility@3.1.1_react@19.3.0/node_modules/@dnd-kit/accessibility/dist/accessibility.esm.js
-var dy = { display: "none" };
-function fy(e) {
+var tb = { display: "none" };
+function nb(e) {
 	let { id: n, value: r } = e;
 	return t.createElement("div", {
 		id: n,
-		style: dy
+		style: tb
 	}, r);
 }
-function py(e) {
+function rb(e) {
 	let { id: n, announcement: r, ariaLiveType: i = "assertive" } = e;
 	return t.createElement("div", {
 		id: n,
@@ -12314,8 +12836,8 @@ function py(e) {
 		"aria-atomic": !0
 	}, r);
 }
-function my() {
-	let [e, t] = m("");
+function ib() {
+	let [e, t] = h("");
 	return {
 		announce: s((e) => {
 			e != null && t(e);
@@ -12325,22 +12847,22 @@ function my() {
 }
 //#endregion
 //#region node_modules/.pnpm/@dnd-kit+core@6.3.1_react-dom@19.3.0_react@19.3.0__react@19.3.0/node_modules/@dnd-kit/core/dist/core.esm.js
-var hy = /*#__PURE__*/ r(null);
-function gy(e) {
-	let t = c(hy);
+var ab = /*#__PURE__*/ r(null);
+function ob(e) {
+	let t = c(ab);
 	l(() => {
 		if (!t) throw Error("useDndMonitor must be used within a children of <DndContext>");
 		return t(e);
 	}, [e, t]);
 }
-function _y() {
-	let [e] = m(() => /* @__PURE__ */ new Set()), t = s((t) => (e.add(t), () => e.delete(t)), [e]);
+function sb() {
+	let [e] = h(() => /* @__PURE__ */ new Set()), t = s((t) => (e.add(t), () => e.delete(t)), [e]);
 	return [s((t) => {
 		let { type: n, event: r } = t;
 		e.forEach((e) => e[n]?.call(e, r));
 	}, [e]), t];
 }
-var vy = { draggable: "\n    To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel.\n  " }, yy = {
+var cb = { draggable: "\n    To pick up a draggable item, press the space bar.\n    While dragging, use the arrow keys to move the item.\n    Press space again to drop the item in its new position, or press escape to cancel.\n  " }, lb = {
 	onDragStart(e) {
 		let { active: t } = e;
 		return "Picked up draggable item " + t.id + ".";
@@ -12358,11 +12880,11 @@ var vy = { draggable: "\n    To pick up a draggable item, press the space bar.\n
 		return "Dragging was cancelled. Draggable item " + t.id + " was dropped.";
 	}
 };
-function by(e) {
-	let { announcements: n = yy, container: r, hiddenTextDescribedById: i, screenReaderInstructions: a = vy } = e, { announce: o, announcement: s } = my(), c = ey("DndLiveRegion"), [u, f] = m(!1);
+function ub(e) {
+	let { announcements: n = lb, container: r, hiddenTextDescribedById: i, screenReaderInstructions: a = cb } = e, { announce: o, announcement: s } = ib(), c = Wy("DndLiveRegion"), [u, d] = h(!1);
 	if (l(() => {
-		f(!0);
-	}, []), gy(d(() => ({
+		d(!0);
+	}, []), ob(f(() => ({
 		onDragStart(e) {
 			let { active: t } = e;
 			o(n.onDragStart({ active: t }));
@@ -12396,39 +12918,39 @@ function by(e) {
 			}));
 		}
 	}), [o, n])), !u) return null;
-	let p = t.createElement(t.Fragment, null, t.createElement(fy, {
+	let p = t.createElement(t.Fragment, null, t.createElement(nb, {
 		id: i,
 		value: a.draggable
-	}), t.createElement(py, {
+	}), t.createElement(rb, {
 		id: c,
 		announcement: s
 	}));
-	return r ? b(p, r) : p;
+	return r ? x(p, r) : p;
 }
-var xy;
+var db;
 (function(e) {
 	e.DragStart = "dragStart", e.DragMove = "dragMove", e.DragEnd = "dragEnd", e.DragCancel = "dragCancel", e.DragOver = "dragOver", e.RegisterDroppable = "registerDroppable", e.SetDroppableDisabled = "setDroppableDisabled", e.UnregisterDroppable = "unregisterDroppable";
-})(xy ||= {});
-function Sy() {}
-function Cy(e, t) {
-	return d(() => ({
+})(db ||= {});
+function fb() {}
+function pb(e, t) {
+	return f(() => ({
 		sensor: e,
 		options: t ?? {}
 	}), [e, t]);
 }
-function wy() {
+function mb() {
 	var e = [...arguments];
-	return d(() => [...e].filter((e) => e != null), [...e]);
+	return f(() => [...e].filter((e) => e != null), [...e]);
 }
-var Ty = /*#__PURE__*/ Object.freeze({
+var hb = /*#__PURE__*/ Object.freeze({
 	x: 0,
 	y: 0
 });
-function Ey(e, t) {
+function gb(e, t) {
 	return Math.sqrt((e.x - t.x) ** 2 + (e.y - t.y) ** 2);
 }
-function Dy(e, t) {
-	let n = sy(e);
+function _b(e, t) {
+	let n = Zy(e);
 	if (!n) return "0 0";
 	let r = {
 		x: (n.x - t.left) / t.width * 100,
@@ -12436,15 +12958,15 @@ function Dy(e, t) {
 	};
 	return r.x + "% " + r.y + "%";
 }
-function Oy(e, t) {
+function vb(e, t) {
 	let { data: { value: n } } = e, { data: { value: r } } = t;
 	return n - r;
 }
-function ky(e, t) {
+function yb(e, t) {
 	let { data: { value: n } } = e, { data: { value: r } } = t;
 	return r - n;
 }
-function Ay(e) {
+function bb(e) {
 	let { left: t, top: n, height: r, width: i } = e;
 	return [
 		{
@@ -12465,23 +12987,23 @@ function Ay(e) {
 		}
 	];
 }
-function jy(e, t) {
+function xb(e, t) {
 	if (!e || e.length === 0) return null;
 	let [n] = e;
 	return t ? n[t] : n;
 }
-function My(e, t, n) {
+function Sb(e, t, n) {
 	return t === void 0 && (t = e.left), n === void 0 && (n = e.top), {
 		x: t + e.width * .5,
 		y: n + e.height * .5
 	};
 }
-var Ny = (e) => {
-	let { collisionRect: t, droppableRects: n, droppableContainers: r } = e, i = My(t, t.left, t.top), a = [];
+var Cb = (e) => {
+	let { collisionRect: t, droppableRects: n, droppableContainers: r } = e, i = Sb(t, t.left, t.top), a = [];
 	for (let e of r) {
 		let { id: t } = e, r = n.get(t);
 		if (r) {
-			let n = Ey(My(r), i);
+			let n = gb(Sb(r), i);
 			a.push({
 				id: t,
 				data: {
@@ -12491,13 +13013,13 @@ var Ny = (e) => {
 			});
 		}
 	}
-	return a.sort(Oy);
-}, Py = (e) => {
-	let { collisionRect: t, droppableRects: n, droppableContainers: r } = e, i = Ay(t), a = [];
+	return a.sort(vb);
+}, wb = (e) => {
+	let { collisionRect: t, droppableRects: n, droppableContainers: r } = e, i = bb(t), a = [];
 	for (let e of r) {
 		let { id: t } = e, r = n.get(t);
 		if (r) {
-			let n = Ay(r), o = i.reduce((e, t, r) => e + Ey(n[r], t), 0), s = Number((o / 4).toFixed(4));
+			let n = bb(r), o = i.reduce((e, t, r) => e + gb(n[r], t), 0), s = Number((o / 4).toFixed(4));
 			a.push({
 				id: t,
 				data: {
@@ -12507,9 +13029,9 @@ var Ny = (e) => {
 			});
 		}
 	}
-	return a.sort(Oy);
+	return a.sort(vb);
 };
-function Fy(e, t) {
+function Tb(e, t) {
 	let n = Math.max(t.top, e.top), r = Math.max(t.left, e.left), i = Math.min(t.left + t.width, e.left + e.width), a = Math.min(t.top + t.height, e.top + e.height), o = i - r, s = a - n;
 	if (r < i && n < a) {
 		let n = t.width * t.height, r = e.width * e.height, i = o * s, a = i / (n + r - i);
@@ -12517,12 +13039,12 @@ function Fy(e, t) {
 	}
 	return 0;
 }
-var Iy = (e) => {
+var Eb = (e) => {
 	let { collisionRect: t, droppableRects: n, droppableContainers: r } = e, i = [];
 	for (let e of r) {
 		let { id: r } = e, a = n.get(r);
 		if (a) {
-			let n = Fy(a, t);
+			let n = Tb(a, t);
 			n > 0 && i.push({
 				id: r,
 				data: {
@@ -12532,22 +13054,22 @@ var Iy = (e) => {
 			});
 		}
 	}
-	return i.sort(ky);
+	return i.sort(yb);
 };
-function Ly(e, t, n) {
+function Db(e, t, n) {
 	return {
 		...e,
 		scaleX: t && n ? t.width / n.width : 1,
 		scaleY: t && n ? t.height / n.height : 1
 	};
 }
-function Ry(e, t) {
+function Ob(e, t) {
 	return e && t ? {
 		x: e.left - t.left,
 		y: e.top - t.top
-	} : Ty;
+	} : hb;
 }
-function zy(e) {
+function kb(e) {
 	return function(t) {
 		return [...arguments].slice(1).reduce((t, n) => ({
 			...t,
@@ -12558,8 +13080,8 @@ function zy(e) {
 		}), { ...t });
 	};
 }
-var By = /*#__PURE__*/ zy(1);
-function Vy(e) {
+var Ab = /*#__PURE__*/ kb(1);
+function jb(e) {
 	if (e.startsWith("matrix3d(")) {
 		let t = e.slice(9, -1).split(/, /);
 		return {
@@ -12580,8 +13102,8 @@ function Vy(e) {
 	}
 	return null;
 }
-function Hy(e, t, n) {
-	let r = Vy(t);
+function Mb(e, t, n) {
+	let r = jb(t);
 	if (!r) return e;
 	let { scaleX: i, scaleY: a, x: o, y: s } = r, c = e.left - o - (1 - i) * parseFloat(n), l = e.top - s - (1 - a) * parseFloat(n.slice(n.indexOf(" ") + 1)), u = i ? e.width / i : e.width, d = a ? e.height / a : e.height;
 	return {
@@ -12593,13 +13115,13 @@ function Hy(e, t, n) {
 		left: c
 	};
 }
-var Uy = { ignoreTransform: !1 };
-function Wy(e, t) {
-	t === void 0 && (t = Uy);
+var Nb = { ignoreTransform: !1 };
+function Pb(e, t) {
+	t === void 0 && (t = Nb);
 	let n = e.getBoundingClientRect();
 	if (t.ignoreTransform) {
-		let { transform: t, transformOrigin: r } = Vv(e).getComputedStyle(e);
-		t && (n = Hy(n, t, r));
+		let { transform: t, transformOrigin: r } = jy(e).getComputedStyle(e);
+		t && (n = Mb(n, t, r));
 	}
 	let { top: r, left: i, width: a, height: o, bottom: s, right: c } = n;
 	return {
@@ -12611,10 +13133,10 @@ function Wy(e, t) {
 		right: c
 	};
 }
-function Gy(e) {
-	return Wy(e, { ignoreTransform: !0 });
+function Fb(e) {
+	return Pb(e, { ignoreTransform: !0 });
 }
-function Ky(e) {
+function Ib(e) {
 	let t = e.innerWidth, n = e.innerHeight;
 	return {
 		top: 0,
@@ -12625,11 +13147,11 @@ function Ky(e) {
 		height: n
 	};
 }
-function qy(e, t) {
-	return t === void 0 && (t = Vv(e).getComputedStyle(e)), t.position === "fixed";
+function Lb(e, t) {
+	return t === void 0 && (t = jy(e).getComputedStyle(e)), t.position === "fixed";
 }
-function Jy(e, t) {
-	t === void 0 && (t = Vv(e).getComputedStyle(e));
+function Rb(e, t) {
+	t === void 0 && (t = jy(e).getComputedStyle(e));
 	let n = /(auto|scroll|overlay)/;
 	return [
 		"overflow",
@@ -12640,48 +13162,48 @@ function Jy(e, t) {
 		return typeof r == "string" && n.test(r);
 	});
 }
-function Yy(e, t) {
+function zb(e, t) {
 	let n = [];
 	function r(i) {
 		if (t != null && n.length >= t || !i) return n;
-		if (Hv(i) && i.scrollingElement != null && !n.includes(i.scrollingElement)) return n.push(i.scrollingElement), n;
-		if (!Uv(i) || Wv(i) || n.includes(i)) return n;
-		let a = Vv(e).getComputedStyle(i);
-		return i !== e && Jy(i, a) && n.push(i), qy(i, a) ? n : r(i.parentNode);
+		if (My(i) && i.scrollingElement != null && !n.includes(i.scrollingElement)) return n.push(i.scrollingElement), n;
+		if (!Ny(i) || Py(i) || n.includes(i)) return n;
+		let a = jy(e).getComputedStyle(i);
+		return i !== e && Rb(i, a) && n.push(i), Lb(i, a) ? n : r(i.parentNode);
 	}
 	return e ? r(e) : n;
 }
-function Xy(e) {
-	let [t] = Yy(e, 1);
+function Bb(e) {
+	let [t] = zb(e, 1);
 	return t ?? null;
 }
-function Zy(e) {
-	return !Rv || !e ? null : zv(e) ? e : Bv(e) ? Hv(e) || e === Gv(e).scrollingElement ? window : Uv(e) ? e : null : null;
+function Vb(e) {
+	return !Oy || !e ? null : ky(e) ? e : Ay(e) ? My(e) || e === Fy(e).scrollingElement ? window : Ny(e) ? e : null : null;
 }
-function Qy(e) {
-	return zv(e) ? e.scrollX : e.scrollLeft;
+function Hb(e) {
+	return ky(e) ? e.scrollX : e.scrollLeft;
 }
-function $y(e) {
-	return zv(e) ? e.scrollY : e.scrollTop;
+function Ub(e) {
+	return ky(e) ? e.scrollY : e.scrollTop;
 }
-function eb(e) {
+function Wb(e) {
 	return {
-		x: Qy(e),
-		y: $y(e)
+		x: Hb(e),
+		y: Ub(e)
 	};
 }
-var tb;
+var Gb;
 (function(e) {
 	e[e.Forward = 1] = "Forward", e[e.Backward = -1] = "Backward";
-})(tb ||= {});
-function nb(e) {
-	return !Rv || !e ? !1 : e === document.scrollingElement;
+})(Gb ||= {});
+function Kb(e) {
+	return !Oy || !e ? !1 : e === document.scrollingElement;
 }
-function rb(e) {
+function qb(e) {
 	let t = {
 		x: 0,
 		y: 0
-	}, n = nb(e) ? {
+	}, n = Kb(e) ? {
 		height: window.innerHeight,
 		width: window.innerWidth
 	} : {
@@ -12700,14 +13222,14 @@ function rb(e) {
 		minScroll: t
 	};
 }
-var ib = {
+var Jb = {
 	x: .2,
 	y: .2
 };
-function ab(e, t, n, r, i) {
+function Yb(e, t, n, r, i) {
 	let { top: a, left: o, right: s, bottom: c } = n;
-	r === void 0 && (r = 10), i === void 0 && (i = ib);
-	let { isTop: l, isBottom: u, isLeft: d, isRight: f } = rb(e), p = {
+	r === void 0 && (r = 10), i === void 0 && (i = Jb);
+	let { isTop: l, isBottom: u, isLeft: d, isRight: f } = qb(e), p = {
 		x: 0,
 		y: 0
 	}, m = {
@@ -12717,12 +13239,12 @@ function ab(e, t, n, r, i) {
 		height: t.height * i.y,
 		width: t.width * i.x
 	};
-	return !l && a <= t.top + h.height ? (p.y = tb.Backward, m.y = r * Math.abs((t.top + h.height - a) / h.height)) : !u && c >= t.bottom - h.height && (p.y = tb.Forward, m.y = r * Math.abs((t.bottom - h.height - c) / h.height)), !f && s >= t.right - h.width ? (p.x = tb.Forward, m.x = r * Math.abs((t.right - h.width - s) / h.width)) : !d && o <= t.left + h.width && (p.x = tb.Backward, m.x = r * Math.abs((t.left + h.width - o) / h.width)), {
+	return !l && a <= t.top + h.height ? (p.y = Gb.Backward, m.y = r * Math.abs((t.top + h.height - a) / h.height)) : !u && c >= t.bottom - h.height && (p.y = Gb.Forward, m.y = r * Math.abs((t.bottom - h.height - c) / h.height)), !f && s >= t.right - h.width ? (p.x = Gb.Forward, m.x = r * Math.abs((t.right - h.width - s) / h.width)) : !d && o <= t.left + h.width && (p.x = Gb.Backward, m.x = r * Math.abs((t.left + h.width - o) / h.width)), {
 		direction: p,
 		speed: m
 	};
 }
-function ob(e) {
+function Xb(e) {
 	if (e === document.scrollingElement) {
 		let { innerWidth: e, innerHeight: t } = window;
 		return {
@@ -12744,37 +13266,37 @@ function ob(e) {
 		height: e.clientHeight
 	};
 }
-function sb(e) {
-	return e.reduce((e, t) => ny(e, eb(t)), Ty);
+function Zb(e) {
+	return e.reduce((e, t) => Ky(e, Wb(t)), hb);
 }
-function cb(e) {
-	return e.reduce((e, t) => e + Qy(t), 0);
+function Qb(e) {
+	return e.reduce((e, t) => e + Hb(t), 0);
 }
-function lb(e) {
-	return e.reduce((e, t) => e + $y(t), 0);
+function $b(e) {
+	return e.reduce((e, t) => e + Ub(t), 0);
 }
-function ub(e, t) {
-	if (t === void 0 && (t = Wy), !e) return;
+function ex(e, t) {
+	if (t === void 0 && (t = Pb), !e) return;
 	let { top: n, left: r, bottom: i, right: a } = t(e);
-	Xy(e) && (i <= 0 || a <= 0 || n >= window.innerHeight || r >= window.innerWidth) && e.scrollIntoView({
+	Bb(e) && (i <= 0 || a <= 0 || n >= window.innerHeight || r >= window.innerWidth) && e.scrollIntoView({
 		block: "center",
 		inline: "center"
 	});
 }
-var db = [[
+var tx = [[
 	"x",
 	["left", "right"],
-	cb
+	Qb
 ], [
 	"y",
 	["top", "bottom"],
-	lb
-]], fb = class {
+	$b
+]], nx = class {
 	constructor(e, t) {
 		this.rect = void 0, this.width = void 0, this.height = void 0, this.top = void 0, this.bottom = void 0, this.right = void 0, this.left = void 0;
-		let n = Yy(t), r = sb(n);
+		let n = zb(t), r = Zb(n);
 		this.rect = { ...e }, this.width = e.width, this.height = e.height;
-		for (let [e, t, i] of db) for (let a of t) Object.defineProperty(this, a, {
+		for (let [e, t, i] of tx) for (let a of t) Object.defineProperty(this, a, {
 			get: () => {
 				let t = i(n), o = r[e] - t;
 				return this.rect[a] + o;
@@ -12783,7 +13305,7 @@ var db = [[
 		});
 		Object.defineProperty(this, "rect", { enumerable: !1 });
 	}
-}, pb = class {
+}, rx = class {
 	constructor(e) {
 		this.target = void 0, this.listeners = [], this.removeAll = () => {
 			this.listeners.forEach((e) => this.target?.removeEventListener(...e));
@@ -12798,29 +13320,29 @@ var db = [[
 		]);
 	}
 };
-function mb(e) {
-	let { EventTarget: t } = Vv(e);
-	return e instanceof t ? e : Gv(e);
+function ix(e) {
+	let { EventTarget: t } = jy(e);
+	return e instanceof t ? e : Fy(e);
 }
-function hb(e, t) {
+function ax(e, t) {
 	let n = Math.abs(e.x), r = Math.abs(e.y);
 	return typeof t == "number" ? Math.sqrt(n ** 2 + r ** 2) > t : "x" in t && "y" in t ? n > t.x && r > t.y : "x" in t ? n > t.x : "y" in t && r > t.y;
 }
-var gb;
+var ox;
 (function(e) {
 	e.Click = "click", e.DragStart = "dragstart", e.Keydown = "keydown", e.ContextMenu = "contextmenu", e.Resize = "resize", e.SelectionChange = "selectionchange", e.VisibilityChange = "visibilitychange";
-})(gb ||= {});
-function _b(e) {
+})(ox ||= {});
+function sx(e) {
 	e.preventDefault();
 }
-function vb(e) {
+function cx(e) {
 	e.stopPropagation();
 }
 var Q;
 (function(e) {
 	e.Space = "Space", e.Down = "ArrowDown", e.Right = "ArrowRight", e.Left = "ArrowLeft", e.Up = "ArrowUp", e.Esc = "Escape", e.Enter = "Enter", e.Tab = "Tab";
 })(Q ||= {});
-var yb = {
+var lx = {
 	start: [Q.Space, Q.Enter],
 	cancel: [Q.Esc],
 	end: [
@@ -12828,7 +13350,7 @@ var yb = {
 		Q.Enter,
 		Q.Tab
 	]
-}, bb = (e, t) => {
+}, ux = (e, t) => {
 	let { currentCoordinates: n } = t;
 	switch (e.code) {
 		case Q.Right: return {
@@ -12848,22 +13370,22 @@ var yb = {
 			y: n.y - 25
 		};
 	}
-}, xb = class {
+}, dx = class {
 	constructor(e) {
 		this.props = void 0, this.autoScrollEnabled = !1, this.referenceCoordinates = void 0, this.listeners = void 0, this.windowListeners = void 0, this.props = e;
 		let { event: { target: t } } = e;
-		this.props = e, this.listeners = new pb(Gv(t)), this.windowListeners = new pb(Vv(t)), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleCancel = this.handleCancel.bind(this), this.attach();
+		this.props = e, this.listeners = new rx(Fy(t)), this.windowListeners = new rx(jy(t)), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleCancel = this.handleCancel.bind(this), this.attach();
 	}
 	attach() {
-		this.handleStart(), this.windowListeners.add(gb.Resize, this.handleCancel), this.windowListeners.add(gb.VisibilityChange, this.handleCancel), setTimeout(() => this.listeners.add(gb.Keydown, this.handleKeyDown));
+		this.handleStart(), this.windowListeners.add(ox.Resize, this.handleCancel), this.windowListeners.add(ox.VisibilityChange, this.handleCancel), setTimeout(() => this.listeners.add(ox.Keydown, this.handleKeyDown));
 	}
 	handleStart() {
 		let { activeNode: e, onStart: t } = this.props, n = e.node.current;
-		n && ub(n), t(Ty);
+		n && ex(n), t(hb);
 	}
 	handleKeyDown(e) {
-		if (ay(e)) {
-			let { active: t, context: n, options: r } = this.props, { keyboardCodes: i = yb, coordinateGetter: a = bb, scrollBehavior: o = "smooth" } = r, { code: s } = e;
+		if (Yy(e)) {
+			let { active: t, context: n, options: r } = this.props, { keyboardCodes: i = lx, coordinateGetter: a = ux, scrollBehavior: o = "smooth" } = r, { code: s } = e;
 			if (i.end.includes(s)) {
 				this.handleEnd(e);
 				return;
@@ -12875,7 +13397,7 @@ var yb = {
 			let { collisionRect: c } = n.current, l = c ? {
 				x: c.left,
 				y: c.top
-			} : Ty;
+			} : hb;
 			this.referenceCoordinates ||= l;
 			let u = a(e, {
 				active: t,
@@ -12883,12 +13405,12 @@ var yb = {
 				currentCoordinates: l
 			});
 			if (u) {
-				let t = ry(u, l), r = {
+				let t = qy(u, l), r = {
 					x: 0,
 					y: 0
 				}, { scrollableAncestors: i } = n.current;
 				for (let n of i) {
-					let i = e.code, { isTop: a, isRight: s, isLeft: c, isBottom: l, maxScroll: d, minScroll: f } = rb(n), p = ob(n), m = {
+					let i = e.code, { isTop: a, isRight: s, isLeft: c, isBottom: l, maxScroll: d, minScroll: f } = qb(n), p = Xb(n), m = {
 						x: Math.min(i === Q.Right ? p.right - p.width / 2 : p.right, Math.max(i === Q.Right ? p.left : p.left + p.width / 2, u.x)),
 						y: Math.min(i === Q.Down ? p.bottom - p.height / 2 : p.bottom, Math.max(i === Q.Down ? p.top : p.top + p.height / 2, u.y))
 					}, h = i === Q.Right && !s || i === Q.Left && !c, g = i === Q.Down && !l || i === Q.Up && !a;
@@ -12923,7 +13445,7 @@ var yb = {
 						break;
 					}
 				}
-				this.handleMove(e, ny(ry(u, this.referenceCoordinates), r));
+				this.handleMove(e, Ky(qy(u, this.referenceCoordinates), r));
 			}
 		}
 	}
@@ -12943,10 +13465,10 @@ var yb = {
 		this.listeners.removeAll(), this.windowListeners.removeAll();
 	}
 };
-xb.activators = [{
+dx.activators = [{
 	eventName: "onKeyDown",
 	handler: (e, t, n) => {
-		let { keyboardCodes: r = yb, onActivation: i } = t, { active: a } = n, { code: o } = e.nativeEvent;
+		let { keyboardCodes: r = lx, onActivation: i } = t, { active: a } = n, { code: o } = e.nativeEvent;
 		if (r.start.includes(o)) {
 			let t = a.activatorNode.current;
 			return t && e.target !== t ? !1 : (e.preventDefault(), i?.({ event: e.nativeEvent }), !0);
@@ -12954,31 +13476,31 @@ xb.activators = [{
 		return !1;
 	}
 }];
-function Sb(e) {
+function fx(e) {
 	return !!(e && "distance" in e);
 }
-function Cb(e) {
+function px(e) {
 	return !!(e && "delay" in e);
 }
-var wb = class {
+var mx = class {
 	constructor(e, t, n) {
-		n === void 0 && (n = mb(e.event.target)), this.props = void 0, this.events = void 0, this.autoScrollEnabled = !0, this.document = void 0, this.activated = !1, this.initialCoordinates = void 0, this.timeoutId = null, this.listeners = void 0, this.documentListeners = void 0, this.windowListeners = void 0, this.props = e, this.events = t;
+		n === void 0 && (n = ix(e.event.target)), this.props = void 0, this.events = void 0, this.autoScrollEnabled = !0, this.document = void 0, this.activated = !1, this.initialCoordinates = void 0, this.timeoutId = null, this.listeners = void 0, this.documentListeners = void 0, this.windowListeners = void 0, this.props = e, this.events = t;
 		let { event: r } = e, { target: i } = r;
-		this.props = e, this.events = t, this.document = Gv(i), this.documentListeners = new pb(this.document), this.listeners = new pb(n), this.windowListeners = new pb(Vv(i)), this.initialCoordinates = sy(r) ?? Ty, this.handleStart = this.handleStart.bind(this), this.handleMove = this.handleMove.bind(this), this.handleEnd = this.handleEnd.bind(this), this.handleCancel = this.handleCancel.bind(this), this.handleKeydown = this.handleKeydown.bind(this), this.removeTextSelection = this.removeTextSelection.bind(this), this.attach();
+		this.props = e, this.events = t, this.document = Fy(i), this.documentListeners = new rx(this.document), this.listeners = new rx(n), this.windowListeners = new rx(jy(i)), this.initialCoordinates = Zy(r) ?? hb, this.handleStart = this.handleStart.bind(this), this.handleMove = this.handleMove.bind(this), this.handleEnd = this.handleEnd.bind(this), this.handleCancel = this.handleCancel.bind(this), this.handleKeydown = this.handleKeydown.bind(this), this.removeTextSelection = this.removeTextSelection.bind(this), this.attach();
 	}
 	attach() {
 		let { events: e, props: { options: { activationConstraint: t, bypassActivationConstraint: n } } } = this;
-		if (this.listeners.add(e.move.name, this.handleMove, { passive: !1 }), this.listeners.add(e.end.name, this.handleEnd), e.cancel && this.listeners.add(e.cancel.name, this.handleCancel), this.windowListeners.add(gb.Resize, this.handleCancel), this.windowListeners.add(gb.DragStart, _b), this.windowListeners.add(gb.VisibilityChange, this.handleCancel), this.windowListeners.add(gb.ContextMenu, _b), this.documentListeners.add(gb.Keydown, this.handleKeydown), t) {
+		if (this.listeners.add(e.move.name, this.handleMove, { passive: !1 }), this.listeners.add(e.end.name, this.handleEnd), e.cancel && this.listeners.add(e.cancel.name, this.handleCancel), this.windowListeners.add(ox.Resize, this.handleCancel), this.windowListeners.add(ox.DragStart, sx), this.windowListeners.add(ox.VisibilityChange, this.handleCancel), this.windowListeners.add(ox.ContextMenu, sx), this.documentListeners.add(ox.Keydown, this.handleKeydown), t) {
 			if (n != null && n({
 				event: this.props.event,
 				activeNode: this.props.activeNode,
 				options: this.props.options
 			})) return this.handleStart();
-			if (Cb(t)) {
+			if (px(t)) {
 				this.timeoutId = setTimeout(this.handleStart, t.delay), this.handlePending(t);
 				return;
 			}
-			if (Sb(t)) {
+			if (fx(t)) {
 				this.handlePending(t);
 				return;
 			}
@@ -12994,18 +13516,18 @@ var wb = class {
 	}
 	handleStart() {
 		let { initialCoordinates: e } = this, { onStart: t } = this.props;
-		e && (this.activated = !0, this.documentListeners.add(gb.Click, vb, { capture: !0 }), this.removeTextSelection(), this.documentListeners.add(gb.SelectionChange, this.removeTextSelection), t(e));
+		e && (this.activated = !0, this.documentListeners.add(ox.Click, cx, { capture: !0 }), this.removeTextSelection(), this.documentListeners.add(ox.SelectionChange, this.removeTextSelection), t(e));
 	}
 	handleMove(e) {
 		let { activated: t, initialCoordinates: n, props: r } = this, { onMove: i, options: { activationConstraint: a } } = r;
 		if (!n) return;
-		let o = sy(e) ?? Ty, s = ry(n, o);
+		let o = Zy(e) ?? hb, s = qy(n, o);
 		if (!t && a) {
-			if (Sb(a)) {
-				if (a.tolerance != null && hb(s, a.tolerance)) return this.handleCancel();
-				if (hb(s, a.distance)) return this.handleStart();
+			if (fx(a)) {
+				if (a.tolerance != null && ax(s, a.tolerance)) return this.handleCancel();
+				if (ax(s, a.distance)) return this.handleStart();
 			}
-			if (Cb(a) && hb(s, a.tolerance)) return this.handleCancel();
+			if (px(a) && ax(s, a.tolerance)) return this.handleCancel();
 			this.handlePending(a, s);
 		} else e.cancelable && e.preventDefault(), i(o);
 	}
@@ -13024,113 +13546,113 @@ var wb = class {
 		var e;
 		(e = this.document.getSelection()) == null || e.removeAllRanges();
 	}
-}, Tb = {
+}, hx = {
 	cancel: { name: "pointercancel" },
 	move: { name: "pointermove" },
 	end: { name: "pointerup" }
-}, Eb = class extends wb {
+}, gx = class extends mx {
 	constructor(e) {
-		let { event: t } = e, n = Gv(t.target);
-		super(e, Tb, n);
+		let { event: t } = e, n = Fy(t.target);
+		super(e, hx, n);
 	}
 };
-Eb.activators = [{
+gx.activators = [{
 	eventName: "onPointerDown",
 	handler: (e, t) => {
 		let { nativeEvent: n } = e, { onActivation: r } = t;
 		return !n.isPrimary || n.button !== 0 ? !1 : (r?.({ event: n }), !0);
 	}
 }];
-var Db = {
+var _x = {
 	move: { name: "mousemove" },
 	end: { name: "mouseup" }
-}, Ob;
+}, vx;
 (function(e) {
 	e[e.RightClick = 2] = "RightClick";
-})(Ob ||= {});
-var kb = class extends wb {
+})(vx ||= {});
+var yx = class extends mx {
 	constructor(e) {
-		super(e, Db, Gv(e.event.target));
+		super(e, _x, Fy(e.event.target));
 	}
 };
-kb.activators = [{
+yx.activators = [{
 	eventName: "onMouseDown",
 	handler: (e, t) => {
 		let { nativeEvent: n } = e, { onActivation: r } = t;
-		return n.button !== Ob.RightClick && (r?.({ event: n }), !0);
+		return n.button !== vx.RightClick && (r?.({ event: n }), !0);
 	}
 }];
-var Ab = {
+var bx = {
 	cancel: { name: "touchcancel" },
 	move: { name: "touchmove" },
 	end: { name: "touchend" }
-}, jb = class extends wb {
+}, xx = class extends mx {
 	constructor(e) {
-		super(e, Ab);
+		super(e, bx);
 	}
 	static setup() {
-		return window.addEventListener(Ab.move.name, e, {
+		return window.addEventListener(bx.move.name, e, {
 			capture: !1,
 			passive: !1
 		}), function() {
-			window.removeEventListener(Ab.move.name, e);
+			window.removeEventListener(bx.move.name, e);
 		};
 		function e() {}
 	}
 };
-jb.activators = [{
+xx.activators = [{
 	eventName: "onTouchStart",
 	handler: (e, t) => {
 		let { nativeEvent: n } = e, { onActivation: r } = t, { touches: i } = n;
 		return i.length > 1 ? !1 : (r?.({ event: n }), !0);
 	}
 }];
-var Mb;
+var Sx;
 (function(e) {
 	e[e.Pointer = 0] = "Pointer", e[e.DraggableRect = 1] = "DraggableRect";
-})(Mb ||= {});
-var Nb;
+})(Sx ||= {});
+var Cx;
 (function(e) {
 	e[e.TreeOrder = 0] = "TreeOrder", e[e.ReversedTreeOrder = 1] = "ReversedTreeOrder";
-})(Nb ||= {});
-function Pb(e) {
-	let { acceleration: t, activator: n = Mb.Pointer, canScroll: r, draggingRect: i, enabled: a, interval: o = 5, order: c = Nb.TreeOrder, pointerCoordinates: u, scrollableAncestors: f, scrollableAncestorRects: m, delta: h, threshold: g } = e, _ = Ib({
+})(Cx ||= {});
+function wx(e) {
+	let { acceleration: t, activator: n = Sx.Pointer, canScroll: r, draggingRect: i, enabled: a, interval: o = 5, order: c = Cx.TreeOrder, pointerCoordinates: u, scrollableAncestors: d, scrollableAncestorRects: p, delta: h, threshold: g } = e, _ = Ex({
 		delta: h,
 		disabled: !a
-	}), [v, y] = Jv(), b = p({
+	}), [v, y] = Ry(), b = m({
 		x: 0,
 		y: 0
-	}), x = p({
+	}), x = m({
 		x: 0,
 		y: 0
-	}), S = d(() => {
+	}), S = f(() => {
 		switch (n) {
-			case Mb.Pointer: return u ? {
+			case Sx.Pointer: return u ? {
 				top: u.y,
 				bottom: u.y,
 				left: u.x,
 				right: u.x
 			} : null;
-			case Mb.DraggableRect: return i;
+			case Sx.DraggableRect: return i;
 		}
 	}, [
 		n,
 		i,
 		u
-	]), C = p(null), w = s(() => {
+	]), C = m(null), w = s(() => {
 		let e = C.current;
 		if (!e) return;
 		let t = b.current.x * x.current.x, n = b.current.y * x.current.y;
 		e.scrollBy(t, n);
-	}, []), T = d(() => c === Nb.TreeOrder ? [...f].reverse() : f, [c, f]);
+	}, []), T = f(() => c === Cx.TreeOrder ? [...d].reverse() : d, [c, d]);
 	l(() => {
-		if (!a || !f.length || !S) y();
+		if (!a || !d.length || !S) y();
 		else {
 			for (let e of T) {
 				if (r?.(e) === !1) continue;
-				let n = f.indexOf(e), i = m[n];
+				let n = d.indexOf(e), i = p[n];
 				if (!i) continue;
-				let { direction: a, speed: s } = ab(e, i, S, t, g);
+				let { direction: a, speed: s } = Yb(e, i, S, t, g);
 				for (let e of ["x", "y"]) _[e][a[e]] || (s[e] = 0, a[e] = 0);
 				if (s.x > 0 || s.y > 0) {
 					y(), C.current = e, v(w, o), b.current = s, x.current = a;
@@ -13155,38 +13677,38 @@ function Pb(e) {
 		JSON.stringify(S),
 		JSON.stringify(_),
 		v,
-		f,
+		d,
 		T,
-		m,
+		p,
 		JSON.stringify(g)
 	]);
 }
-var Fb = {
+var Tx = {
 	x: {
-		[tb.Backward]: !1,
-		[tb.Forward]: !1
+		[Gb.Backward]: !1,
+		[Gb.Forward]: !1
 	},
 	y: {
-		[tb.Backward]: !1,
-		[tb.Forward]: !1
+		[Gb.Backward]: !1,
+		[Gb.Forward]: !1
 	}
 };
-function Ib(e) {
-	let { delta: t, disabled: n } = e, r = Qv(t);
-	return Xv((e) => {
-		if (n || !r || !e) return Fb;
+function Ex(e) {
+	let { delta: t, disabled: n } = e, r = Hy(t);
+	return By((e) => {
+		if (n || !r || !e) return Tx;
 		let i = {
 			x: Math.sign(t.x - r.x),
 			y: Math.sign(t.y - r.y)
 		};
 		return {
 			x: {
-				[tb.Backward]: e.x[tb.Backward] || i.x === -1,
-				[tb.Forward]: e.x[tb.Forward] || i.x === 1
+				[Gb.Backward]: e.x[Gb.Backward] || i.x === -1,
+				[Gb.Forward]: e.x[Gb.Forward] || i.x === 1
 			},
 			y: {
-				[tb.Backward]: e.y[tb.Backward] || i.y === -1,
-				[tb.Forward]: e.y[tb.Forward] || i.y === 1
+				[Gb.Backward]: e.y[Gb.Backward] || i.y === -1,
+				[Gb.Forward]: e.y[Gb.Forward] || i.y === 1
 			}
 		};
 	}, [
@@ -13195,12 +13717,12 @@ function Ib(e) {
 		r
 	]);
 }
-function Lb(e, t) {
+function Dx(e, t) {
 	let n = t == null ? void 0 : e.get(t), r = n ? n.node.current : null;
-	return Xv((e) => t == null ? null : r ?? e ?? null, [r, t]);
+	return By((e) => t == null ? null : r ?? e ?? null, [r, t]);
 }
-function Rb(e, t) {
-	return d(() => e.reduce((e, n) => {
+function Ox(e, t) {
+	return f(() => e.reduce((e, n) => {
 		let { sensor: r } = n, i = r.activators.map((e) => ({
 			eventName: e.eventName,
 			handler: t(e.handler, n)
@@ -13208,21 +13730,21 @@ function Rb(e, t) {
 		return [...e, ...i];
 	}, []), [e, t]);
 }
-var zb;
+var kx;
 (function(e) {
 	e[e.Always = 0] = "Always", e[e.BeforeDragging = 1] = "BeforeDragging", e[e.WhileDragging = 2] = "WhileDragging";
-})(zb ||= {});
-var Bb;
+})(kx ||= {});
+var Ax;
 (function(e) {
 	e.Optimized = "optimized";
-})(Bb ||= {});
-var Vb = /*#__PURE__*/ new Map();
-function Hb(e, t) {
-	let { dragging: n, dependencies: r, config: i } = t, [a, o] = m(null), { frequency: c, measure: u, strategy: d } = i, f = p(e), h = b(), g = Yv(h), _ = s(function(e) {
+})(Ax ||= {});
+var jx = /*#__PURE__*/ new Map();
+function Mx(e, t) {
+	let { dragging: n, dependencies: r, config: i } = t, [a, o] = h(null), { frequency: c, measure: u, strategy: d } = i, f = m(e), p = b(), g = zy(p), _ = s(function(e) {
 		e === void 0 && (e = []), !g.current && o((t) => t === null ? e : t.concat(e.filter((e) => !t.includes(e))));
-	}, [g]), v = p(null), y = Xv((t) => {
-		if (h && !n) return Vb;
-		if (!t || t === Vb || f.current !== e || a != null) {
+	}, [g]), v = m(null), y = By((t) => {
+		if (p && !n) return jx;
+		if (!t || t === jx || f.current !== e || a != null) {
 			let t = /* @__PURE__ */ new Map();
 			for (let n of e) {
 				if (!n) continue;
@@ -13230,7 +13752,7 @@ function Hb(e, t) {
 					t.set(n.id, n.rect.current);
 					continue;
 				}
-				let e = n.node.current, r = e ? new fb(u(e), e) : null;
+				let e = n.node.current, r = e ? new nx(u(e), e) : null;
 				n.rect.current = r, r && t.set(n.id, r);
 			}
 			return t;
@@ -13240,22 +13762,22 @@ function Hb(e, t) {
 		e,
 		a,
 		n,
-		h,
+		p,
 		u
 	]);
 	return l(() => {
 		f.current = e;
 	}, [e]), l(() => {
-		h || _();
-	}, [n, h]), l(() => {
+		p || _();
+	}, [n, p]), l(() => {
 		a && a.length > 0 && o(null);
 	}, [JSON.stringify(a)]), l(() => {
-		h || typeof c != "number" || v.current !== null || (v.current = setTimeout(() => {
+		p || typeof c != "number" || v.current !== null || (v.current = setTimeout(() => {
 			_(), v.current = null;
 		}, c));
 	}, [
 		c,
-		h,
+		p,
 		_,
 		...r
 	]), {
@@ -13265,40 +13787,40 @@ function Hb(e, t) {
 	};
 	function b() {
 		switch (d) {
-			case zb.Always: return !1;
-			case zb.BeforeDragging: return n;
+			case kx.Always: return !1;
+			case kx.BeforeDragging: return n;
 			default: return !n;
 		}
 	}
 }
-function Ub(e, t) {
-	return Xv((n) => e ? n || (typeof t == "function" ? t(e) : e) : null, [t, e]);
+function Nx(e, t) {
+	return By((n) => e ? n || (typeof t == "function" ? t(e) : e) : null, [t, e]);
 }
-function Wb(e, t) {
-	return Ub(e, t);
+function Px(e, t) {
+	return Nx(e, t);
 }
-function Gb(e) {
-	let { callback: t, disabled: n } = e, r = qv(t), i = d(() => {
+function Fx(e) {
+	let { callback: t, disabled: n } = e, r = Ly(t), i = f(() => {
 		if (n || typeof window > "u" || window.MutationObserver === void 0) return;
 		let { MutationObserver: e } = window;
 		return new e(r);
 	}, [r, n]);
 	return l(() => () => i?.disconnect(), [i]), i;
 }
-function Kb(e) {
-	let { callback: t, disabled: n } = e, r = qv(t), i = d(() => {
+function Ix(e) {
+	let { callback: t, disabled: n } = e, r = Ly(t), i = f(() => {
 		if (n || typeof window > "u" || window.ResizeObserver === void 0) return;
 		let { ResizeObserver: e } = window;
 		return new e(r);
 	}, [n]);
 	return l(() => () => i?.disconnect(), [i]), i;
 }
-function qb(e) {
-	return new fb(Wy(e), e);
+function Lx(e) {
+	return new nx(Pb(e), e);
 }
-function Jb(e, t, n) {
-	t === void 0 && (t = qb);
-	let [r, i] = m(null);
+function Rx(e, t, n) {
+	t === void 0 && (t = Lx);
+	let [r, i] = h(null);
 	function a() {
 		i((r) => {
 			if (!e) return null;
@@ -13307,7 +13829,7 @@ function Jb(e, t, n) {
 			return JSON.stringify(r) === JSON.stringify(i) ? r : i;
 		});
 	}
-	let o = Gb({ callback(t) {
+	let o = Fx({ callback(t) {
 		if (e) for (let n of t) {
 			let { type: t, target: r } = n;
 			if (t === "childList" && r instanceof HTMLElement && r.contains(e)) {
@@ -13315,36 +13837,36 @@ function Jb(e, t, n) {
 				break;
 			}
 		}
-	} }), s = Kb({ callback: a });
-	return Kv(() => {
+	} }), s = Ix({ callback: a });
+	return Iy(() => {
 		a(), e ? (s?.observe(e), o?.observe(document.body, {
 			childList: !0,
 			subtree: !0
 		})) : (s?.disconnect(), o?.disconnect());
 	}, [e]), r;
 }
-function Yb(e) {
-	return Ry(e, Ub(e));
+function zx(e) {
+	return Ob(e, Nx(e));
 }
-var Xb = [];
-function Zb(e) {
-	let t = p(e), n = Xv((n) => e ? n && n !== Xb && e && t.current && e.parentNode === t.current.parentNode ? n : Yy(e) : Xb, [e]);
+var Bx = [];
+function Vx(e) {
+	let t = m(e), n = By((n) => e ? n && n !== Bx && e && t.current && e.parentNode === t.current.parentNode ? n : zb(e) : Bx, [e]);
 	return l(() => {
 		t.current = e;
 	}, [e]), n;
 }
-function Qb(e) {
-	let [t, n] = m(null), r = p(e), i = s((e) => {
-		let t = Zy(e.target);
-		t && n((e) => e ? (e.set(t, eb(t)), new Map(e)) : null);
+function Hx(e) {
+	let [t, n] = h(null), r = m(e), i = s((e) => {
+		let t = Vb(e.target);
+		t && n((e) => e ? (e.set(t, Wb(t)), new Map(e)) : null);
 	}, []);
 	return l(() => {
 		let t = r.current;
 		if (e !== t) {
 			a(t);
 			let o = e.map((e) => {
-				let t = Zy(e);
-				return t ? (t.addEventListener("scroll", i, { passive: !0 }), [t, eb(t)]) : null;
+				let t = Vb(e);
+				return t ? (t.addEventListener("scroll", i, { passive: !0 }), [t, Wb(t)]) : null;
 			}).filter((e) => e != null);
 			n(o.length ? new Map(o) : null), r.current = e;
 		}
@@ -13353,24 +13875,24 @@ function Qb(e) {
 		};
 		function a(e) {
 			e.forEach((e) => {
-				Zy(e)?.removeEventListener("scroll", i);
+				Vb(e)?.removeEventListener("scroll", i);
 			});
 		}
-	}, [i, e]), d(() => e.length ? t ? Array.from(t.values()).reduce((e, t) => ny(e, t), Ty) : sb(e) : Ty, [e, t]);
+	}, [i, e]), f(() => e.length ? t ? Array.from(t.values()).reduce((e, t) => Ky(e, t), hb) : Zb(e) : hb, [e, t]);
 }
-function $b(e, t) {
+function Ux(e, t) {
 	t === void 0 && (t = []);
-	let n = p(null);
+	let n = m(null);
 	return l(() => {
 		n.current = null;
 	}, t), l(() => {
-		let t = e !== Ty;
+		let t = e !== hb;
 		t && !n.current && (n.current = e), !t && n.current && (n.current = null);
-	}, [e]), n.current ? ry(e, n.current) : Ty;
+	}, [e]), n.current ? qy(e, n.current) : hb;
 }
-function ex(e) {
+function Wx(e) {
 	l(() => {
-		if (!Rv) return;
+		if (!Oy) return;
 		let t = e.map((e) => {
 			let { sensor: t } = e;
 			return t.setup == null ? void 0 : t.setup();
@@ -13383,38 +13905,38 @@ function ex(e) {
 		return t;
 	}));
 }
-function tx(e, t) {
-	return d(() => e.reduce((e, n) => {
+function Gx(e, t) {
+	return f(() => e.reduce((e, n) => {
 		let { eventName: r, handler: i } = n;
 		return e[r] = (e) => {
 			i(e, t);
 		}, e;
 	}, {}), [e, t]);
 }
-function nx(e) {
-	return d(() => e ? Ky(e) : null, [e]);
+function Kx(e) {
+	return f(() => e ? Ib(e) : null, [e]);
 }
-var rx = [];
-function ix(e, t) {
-	t === void 0 && (t = Wy);
-	let [n] = e, r = nx(n ? Vv(n) : null), [i, a] = m(rx);
+var qx = [];
+function Jx(e, t) {
+	t === void 0 && (t = Pb);
+	let [n] = e, r = Kx(n ? jy(n) : null), [i, a] = h(qx);
 	function o() {
-		a(() => e.length ? e.map((e) => nb(e) ? r : new fb(t(e), e)) : rx);
+		a(() => e.length ? e.map((e) => Kb(e) ? r : new nx(t(e), e)) : qx);
 	}
-	let s = Kb({ callback: o });
-	return Kv(() => {
+	let s = Ix({ callback: o });
+	return Iy(() => {
 		s?.disconnect(), o(), e.forEach((e) => s?.observe(e));
 	}, [e]), i;
 }
-function ax(e) {
+function Yx(e) {
 	if (!e) return null;
 	if (e.children.length > 1) return e;
 	let t = e.children[0];
-	return Uv(t) ? t : e;
+	return Ny(t) ? t : e;
 }
-function ox(e) {
-	let { measure: t } = e, [n, r] = m(null), i = Kb({ callback: s((e) => {
-		for (let { target: n } of e) if (Uv(n)) {
+function Xx(e) {
+	let { measure: t } = e, [n, r] = h(null), i = Ix({ callback: s((e) => {
+		for (let { target: n } of e) if (Ny(n)) {
 			r((e) => {
 				let r = t(n);
 				return e ? {
@@ -13425,11 +13947,11 @@ function ox(e) {
 			});
 			break;
 		}
-	}, [t]) }), [a, o] = Zv(s((e) => {
-		let n = ax(e);
+	}, [t]) }), [a, o] = Vy(s((e) => {
+		let n = Yx(e);
 		i?.disconnect(), n && i?.observe(n), r(n ? t(n) : null);
 	}, [t, i]));
-	return d(() => ({
+	return f(() => ({
 		nodeRef: a,
 		rect: n,
 		setRef: o
@@ -13439,21 +13961,21 @@ function ox(e) {
 		o
 	]);
 }
-var sx = [{
-	sensor: Eb,
+var Zx = [{
+	sensor: gx,
 	options: {}
 }, {
-	sensor: xb,
+	sensor: dx,
 	options: {}
-}], cx = { current: {} }, lx = {
-	draggable: { measure: Gy },
+}], Qx = { current: {} }, $x = {
+	draggable: { measure: Fb },
 	droppable: {
-		measure: Gy,
-		strategy: zb.WhileDragging,
-		frequency: Bb.Optimized
+		measure: Fb,
+		strategy: kx.WhileDragging,
+		frequency: Ax.Optimized
 	},
-	dragOverlay: { measure: Wy }
-}, ux = class extends Map {
+	dragOverlay: { measure: Pb }
+}, eS = class extends Map {
 	get(e) {
 		return e == null ? void 0 : super.get(e) ?? void 0;
 	}
@@ -13469,7 +13991,7 @@ var sx = [{
 	getNodeFor(e) {
 		return this.get(e)?.node.current ?? void 0;
 	}
-}, dx = {
+}, tS = {
 	activatorEvent: null,
 	active: null,
 	activeNode: null,
@@ -13478,31 +14000,31 @@ var sx = [{
 	containerNodeRect: null,
 	draggableNodes: /*#__PURE__*/ new Map(),
 	droppableRects: /*#__PURE__*/ new Map(),
-	droppableContainers: /*#__PURE__*/ new ux(),
+	droppableContainers: /*#__PURE__*/ new eS(),
 	over: null,
 	dragOverlay: {
 		nodeRef: { current: null },
 		rect: null,
-		setRef: Sy
+		setRef: fb
 	},
 	scrollableAncestors: [],
 	scrollableAncestorRects: [],
-	measuringConfiguration: lx,
-	measureDroppableContainers: Sy,
+	measuringConfiguration: $x,
+	measureDroppableContainers: fb,
 	windowRect: null,
 	measuringScheduled: !1
-}, fx = {
+}, nS = {
 	activatorEvent: null,
 	activators: [],
 	active: null,
 	activeNodeRect: null,
 	ariaDescribedById: { draggable: "" },
-	dispatch: Sy,
+	dispatch: fb,
 	draggableNodes: /*#__PURE__*/ new Map(),
 	over: null,
-	measureDroppableContainers: Sy
-}, px = /*#__PURE__*/ r(fx), mx = /*#__PURE__*/ r(dx);
-function hx() {
+	measureDroppableContainers: fb
+}, rS = /*#__PURE__*/ r(nS), iS = /*#__PURE__*/ r(tS);
+function aS() {
 	return {
 		draggable: {
 			active: null,
@@ -13516,12 +14038,12 @@ function hx() {
 				y: 0
 			}
 		},
-		droppable: { containers: new ux() }
+		droppable: { containers: new eS() }
 	};
 }
-function gx(e, t) {
+function oS(e, t) {
 	switch (t.type) {
-		case xy.DragStart: return {
+		case db.DragStart: return {
 			...e,
 			draggable: {
 				...e.draggable,
@@ -13529,7 +14051,7 @@ function gx(e, t) {
 				active: t.active
 			}
 		};
-		case xy.DragMove: return e.draggable.active == null ? e : {
+		case db.DragMove: return e.draggable.active == null ? e : {
 			...e,
 			draggable: {
 				...e.draggable,
@@ -13539,8 +14061,8 @@ function gx(e, t) {
 				}
 			}
 		};
-		case xy.DragEnd:
-		case xy.DragCancel: return {
+		case db.DragEnd:
+		case db.DragCancel: return {
 			...e,
 			draggable: {
 				...e.draggable,
@@ -13555,8 +14077,8 @@ function gx(e, t) {
 				}
 			}
 		};
-		case xy.RegisterDroppable: {
-			let { element: n } = t, { id: r } = n, i = new ux(e.droppable.containers);
+		case db.RegisterDroppable: {
+			let { element: n } = t, { id: r } = n, i = new eS(e.droppable.containers);
 			return i.set(r, n), {
 				...e,
 				droppable: {
@@ -13565,10 +14087,10 @@ function gx(e, t) {
 				}
 			};
 		}
-		case xy.SetDroppableDisabled: {
+		case db.SetDroppableDisabled: {
 			let { id: n, key: r, disabled: i } = t, a = e.droppable.containers.get(n);
 			if (!a || r !== a.key) return e;
-			let o = new ux(e.droppable.containers);
+			let o = new eS(e.droppable.containers);
 			return o.set(n, {
 				...a,
 				disabled: i
@@ -13580,10 +14102,10 @@ function gx(e, t) {
 				}
 			};
 		}
-		case xy.UnregisterDroppable: {
+		case db.UnregisterDroppable: {
 			let { id: n, key: r } = t, i = e.droppable.containers.get(n);
 			if (!i || r !== i.key) return e;
-			let a = new ux(e.droppable.containers);
+			let a = new eS(e.droppable.containers);
 			return a.delete(n), {
 				...e,
 				droppable: {
@@ -13595,11 +14117,11 @@ function gx(e, t) {
 		default: return e;
 	}
 }
-function _x(e) {
-	let { disabled: t } = e, { active: n, activatorEvent: r, draggableNodes: i } = c(px), a = Qv(r), o = Qv(n?.id);
+function sS(e) {
+	let { disabled: t } = e, { active: n, activatorEvent: r, draggableNodes: i } = c(rS), a = Hy(r), o = Hy(n?.id);
 	return l(() => {
 		if (!t && !r && a && o != null) {
-			if (!ay(a) || document.activeElement === a.target) return;
+			if (!Yy(a) || document.activeElement === a.target) return;
 			let e = i.get(o);
 			if (!e) return;
 			let { activatorNode: t, node: n } = e;
@@ -13607,7 +14129,7 @@ function _x(e) {
 			requestAnimationFrame(() => {
 				for (let e of [t.current, n.current]) {
 					if (!e) continue;
-					let t = uy(e);
+					let t = eb(e);
 					if (t) {
 						t.focus();
 						break;
@@ -13623,25 +14145,25 @@ function _x(e) {
 		a
 	]), null;
 }
-function vx(e, t) {
+function cS(e, t) {
 	let { transform: n, ...r } = t;
 	return e != null && e.length ? e.reduce((e, t) => t({
 		transform: e,
 		...r
 	}), n) : n;
 }
-function yx(e) {
-	return d(() => ({
+function lS(e) {
+	return f(() => ({
 		draggable: {
-			...lx.draggable,
+			...$x.draggable,
 			...e?.draggable
 		},
 		droppable: {
-			...lx.droppable,
+			...$x.droppable,
 			...e?.droppable
 		},
 		dragOverlay: {
-			...lx.dragOverlay,
+			...$x.dragOverlay,
 			...e?.dragOverlay
 		}
 	}), [
@@ -13650,12 +14172,12 @@ function yx(e) {
 		e?.dragOverlay
 	]);
 }
-function bx(e) {
-	let { activeNode: t, measure: n, initialRect: r, config: i = !0 } = e, a = p(!1), { x: o, y: s } = typeof i == "boolean" ? {
+function uS(e) {
+	let { activeNode: t, measure: n, initialRect: r, config: i = !0 } = e, a = m(!1), { x: o, y: s } = typeof i == "boolean" ? {
 		x: i,
 		y: i
 	} : i;
-	Kv(() => {
+	Iy(() => {
 		if (!o && !s || !t) {
 			a.current = !1;
 			return;
@@ -13663,9 +14185,9 @@ function bx(e) {
 		if (a.current || !r) return;
 		let e = t?.node.current;
 		if (!e || e.isConnected === !1) return;
-		let i = Ry(n(e), r);
+		let i = Ob(n(e), r);
 		if (o || (i.x = 0), s || (i.y = 0), a.current = !0, Math.abs(i.x) > 0 || Math.abs(i.y) > 0) {
-			let t = Xy(e);
+			let t = Bb(e);
 			t && t.scrollBy({
 				top: i.y,
 				left: i.x
@@ -13679,34 +14201,34 @@ function bx(e) {
 		n
 	]);
 }
-var xx = /*#__PURE__*/ r({
-	...Ty,
+var dS = /*#__PURE__*/ r({
+	...hb,
 	scaleX: 1,
 	scaleY: 1
-}), Sx;
+}), fS;
 (function(e) {
 	e[e.Uninitialized = 0] = "Uninitialized", e[e.Initializing = 1] = "Initializing", e[e.Initialized = 2] = "Initialized";
-})(Sx ||= {});
-var Cx = /*#__PURE__*/ o(function(e) {
-	let { id: n, accessibility: r, autoScroll: i = !0, children: a, sensors: o = sx, collisionDetection: c = Iy, measuring: u, modifiers: h, ...g } = e, [_, v] = f(gx, void 0, hx), [y, b] = _y(), [x, C] = m(Sx.Uninitialized), w = x === Sx.Initialized, { draggable: { active: T, nodes: E, translate: D }, droppable: { containers: O } } = _, k = T == null ? null : E.get(T), A = p({
+})(fS ||= {});
+var pS = /*#__PURE__*/ o(function(e) {
+	let { id: n, accessibility: r, autoScroll: i = !0, children: a, sensors: o = Zx, collisionDetection: c = Eb, measuring: u, modifiers: d, ...g } = e, [_, v] = p(oS, void 0, aS), [y, b] = sb(), [x, S] = h(fS.Uninitialized), w = x === fS.Initialized, { draggable: { active: T, nodes: E, translate: D }, droppable: { containers: O } } = _, k = T == null ? null : E.get(T), A = m({
 		initial: null,
 		translated: null
-	}), j = d(() => T == null ? null : {
+	}), j = f(() => T == null ? null : {
 		id: T,
-		data: k?.data ?? cx,
+		data: k?.data ?? Qx,
 		rect: A
-	}, [T, k]), M = p(null), [N, P] = m(null), [F, I] = m(null), L = Yv(g, Object.values(g)), R = ey("DndDescribedBy", n), ee = d(() => O.getEnabled(), [O]), te = yx(u), { droppableRects: z, measureDroppableContainers: B, measuringScheduled: ne } = Hb(ee, {
+	}, [T, k]), M = m(null), [N, P] = h(null), [F, I] = h(null), L = zy(g, Object.values(g)), R = Wy("DndDescribedBy", n), ee = f(() => O.getEnabled(), [O]), te = lS(u), { droppableRects: z, measureDroppableContainers: B, measuringScheduled: ne } = Mx(ee, {
 		dragging: w,
 		dependencies: [D.x, D.y],
 		config: te.droppable
-	}), re = Lb(E, T), ie = d(() => F ? sy(F) : null, [F]), ae = Pe(), V = Wb(re, te.draggable.measure);
-	bx({
+	}), re = Dx(E, T), ie = f(() => F ? Zy(F) : null, [F]), ae = Pe(), oe = Px(re, te.draggable.measure);
+	uS({
 		activeNode: T == null ? null : E.get(T),
 		config: ae.layoutShiftCompensation,
-		initialRect: V,
+		initialRect: oe,
 		measure: te.draggable.measure
 	});
-	let H = Jb(re, te.draggable.measure, V), oe = Jb(re ? re.parentElement : null), se = p({
+	let V = Rx(re, te.draggable.measure, oe), H = Rx(re ? re.parentElement : null), se = m({
 		activatorEvent: null,
 		active: null,
 		activeNode: re,
@@ -13720,7 +14242,7 @@ var Cx = /*#__PURE__*/ o(function(e) {
 		over: null,
 		scrollableAncestors: [],
 		scrollAdjustedTranslate: null
-	}), ce = O.getNodeFor(se.current.over?.id), le = ox({ measure: te.dragOverlay.measure }), ue = le.nodeRef.current ?? re, de = w ? le.rect ?? H : null, fe = !!(le.nodeRef.current && le.rect), pe = Yb(fe ? null : H), me = nx(ue ? Vv(ue) : null), he = Zb(w ? ce ?? re : null), ge = ix(he), _e = vx(h, {
+	}), ce = O.getNodeFor(se.current.over?.id), le = Xx({ measure: te.dragOverlay.measure }), ue = le.nodeRef.current ?? re, de = w ? le.rect ?? V : null, fe = !!(le.nodeRef.current && le.rect), pe = zx(fe ? null : V), me = Kx(ue ? jy(ue) : null), he = Vx(w ? ce ?? re : null), ge = Jx(he), _e = cS(d, {
 		transform: {
 			x: D.x - pe.x,
 			y: D.y - pe.y,
@@ -13729,21 +14251,21 @@ var Cx = /*#__PURE__*/ o(function(e) {
 		},
 		activatorEvent: F,
 		active: j,
-		activeNodeRect: H,
-		containerNodeRect: oe,
+		activeNodeRect: V,
+		containerNodeRect: H,
 		draggingNodeRect: de,
 		over: se.current.over,
 		overlayNodeRect: le.rect,
 		scrollableAncestors: he,
 		scrollableAncestorRects: ge,
 		windowRect: me
-	}), ve = ie ? ny(ie, D) : null, ye = Qb(he), be = $b(ye), xe = $b(ye, [H]), Se = ny(_e, be), Ce = de ? By(de, _e) : null, we = j && Ce ? c({
+	}), ve = ie ? Ky(ie, D) : null, ye = Hx(he), be = Ux(ye), xe = Ux(ye, [V]), Se = Ky(_e, be), Ce = de ? Ab(de, _e) : null, we = j && Ce ? c({
 		active: j,
 		collisionRect: Ce,
 		droppableRects: z,
 		droppableContainers: ee,
 		pointerCoordinates: ve
-	}) : null, Te = jy(we, "id"), [Ee, De] = m(null), Oe = Ly(fe ? _e : ny(_e, xe), Ee?.rect ?? null, H), ke = p(null), Ae = s((e, t) => {
+	}) : null, Te = xb(we, "id"), [Ee, De] = h(null), Oe = Db(fe ? _e : Ky(_e, xe), Ee?.rect ?? null, V), ke = m(null), Ae = s((e, t) => {
 		let { sensor: n, options: r } = t;
 		if (M.current == null) return;
 		let i = E.get(M.current);
@@ -13788,9 +14310,9 @@ var Cx = /*#__PURE__*/ o(function(e) {
 						rect: A
 					}
 				};
-				S(() => {
-					r?.(i), C(Sx.Initializing), v({
-						type: xy.DragStart,
+				C(() => {
+					r?.(i), S(fS.Initializing), v({
+						type: db.DragStart,
 						initialCoordinates: e,
 						active: t
 					}), y({
@@ -13801,12 +14323,12 @@ var Cx = /*#__PURE__*/ o(function(e) {
 			},
 			onMove(e) {
 				v({
-					type: xy.DragMove,
+					type: db.DragMove,
 					coordinates: e
 				});
 			},
-			onEnd: s(xy.DragEnd),
-			onCancel: s(xy.DragCancel)
+			onEnd: s(db.DragEnd),
+			onCancel: s(db.DragCancel)
 		});
 		ke.current = o;
 		function s(e) {
@@ -13820,11 +14342,11 @@ var Cx = /*#__PURE__*/ o(function(e) {
 						collisions: n,
 						delta: i,
 						over: r
-					}, e === xy.DragEnd && typeof s == "function" && await Promise.resolve(s(o)) && (e = xy.DragCancel);
+					}, e === db.DragEnd && typeof s == "function" && await Promise.resolve(s(o)) && (e = db.DragCancel);
 				}
-				M.current = null, S(() => {
-					v({ type: e }), C(Sx.Uninitialized), De(null), P(null), I(null), ke.current = null;
-					let t = e === xy.DragEnd ? "onDragEnd" : "onDragCancel";
+				M.current = null, C(() => {
+					v({ type: e }), S(fS.Uninitialized), De(null), P(null), I(null), ke.current = null;
+					let t = e === db.DragEnd ? "onDragEnd" : "onDragCancel";
 					if (o) {
 						let e = L.current[t];
 						e?.(o), y({
@@ -13835,15 +14357,15 @@ var Cx = /*#__PURE__*/ o(function(e) {
 				});
 			};
 		}
-	}, [E]), je = Rb(o, s((e, t) => (n, r) => {
+	}, [E]), je = Ox(o, s((e, t) => (n, r) => {
 		let i = n.nativeEvent, a = E.get(r);
 		if (M.current !== null || !a || i.dndKit || i.defaultPrevented) return;
 		let o = { active: a };
 		e(n, t.options, o) === !0 && (i.dndKit = { capturedBy: t.sensor }, M.current = r, Ae(n, t));
 	}, [E, Ae]));
-	ex(o), Kv(() => {
-		H && x === Sx.Initializing && C(Sx.Initialized);
-	}, [H, x]), l(() => {
+	Wx(o), Iy(() => {
+		V && x === fS.Initializing && S(fS.Initialized);
+	}, [V, x]), l(() => {
 		let { onDragMove: e } = L.current, { active: t, activatorEvent: n, collisions: r, over: i } = se.current;
 		if (!t || !n) return;
 		let a = {
@@ -13856,7 +14378,7 @@ var Cx = /*#__PURE__*/ o(function(e) {
 			},
 			over: i
 		};
-		S(() => {
+		C(() => {
 			e?.(a), y({
 				type: "onDragMove",
 				event: a
@@ -13880,13 +14402,13 @@ var Cx = /*#__PURE__*/ o(function(e) {
 			},
 			over: s
 		};
-		S(() => {
+		C(() => {
 			De(s), a?.(c), y({
 				type: "onDragOver",
 				event: c
 			});
 		});
-	}, [Te]), Kv(() => {
+	}, [Te]), Iy(() => {
 		se.current = {
 			activatorEvent: F,
 			active: j,
@@ -13918,7 +14440,7 @@ var Cx = /*#__PURE__*/ o(function(e) {
 		Ee,
 		he,
 		Se
-	]), Pb({
+	]), wx({
 		...ae,
 		delta: D,
 		draggingRect: Ce,
@@ -13926,13 +14448,13 @@ var Cx = /*#__PURE__*/ o(function(e) {
 		scrollableAncestors: he,
 		scrollableAncestorRects: ge
 	});
-	let Me = d(() => ({
+	let Me = f(() => ({
 		active: j,
 		activeNode: re,
-		activeNodeRect: H,
+		activeNodeRect: V,
 		activatorEvent: F,
 		collisions: we,
-		containerNodeRect: oe,
+		containerNodeRect: H,
 		dragOverlay: le,
 		draggableNodes: E,
 		droppableContainers: O,
@@ -13947,10 +14469,10 @@ var Cx = /*#__PURE__*/ o(function(e) {
 	}), [
 		j,
 		re,
-		H,
+		V,
 		F,
 		we,
-		oe,
+		H,
 		le,
 		E,
 		O,
@@ -13962,11 +14484,11 @@ var Cx = /*#__PURE__*/ o(function(e) {
 		te,
 		ne,
 		me
-	]), Ne = d(() => ({
+	]), Ne = f(() => ({
 		activatorEvent: F,
 		activators: je,
 		active: j,
-		activeNodeRect: H,
+		activeNodeRect: V,
 		ariaDescribedById: { draggable: R },
 		dispatch: v,
 		draggableNodes: E,
@@ -13976,14 +14498,14 @@ var Cx = /*#__PURE__*/ o(function(e) {
 		F,
 		je,
 		j,
-		H,
+		V,
 		v,
 		R,
 		E,
 		Ee,
 		B
 	]);
-	return t.createElement(hy.Provider, { value: b }, t.createElement(px.Provider, { value: Ne }, t.createElement(mx.Provider, { value: Me }, t.createElement(xx.Provider, { value: Oe }, a)), t.createElement(_x, { disabled: r?.restoreFocus === !1 })), t.createElement(by, {
+	return t.createElement(ab.Provider, { value: b }, t.createElement(rS.Provider, { value: Ne }, t.createElement(iS.Provider, { value: Me }, t.createElement(dS.Provider, { value: Oe }, a)), t.createElement(sS, { disabled: r?.restoreFocus === !1 })), t.createElement(ub, {
 		...r,
 		hiddenTextDescribedById: R
 	}));
@@ -13994,10 +14516,10 @@ var Cx = /*#__PURE__*/ o(function(e) {
 			enabled: n
 		} : { enabled: n };
 	}
-}), wx = /*#__PURE__*/ r(null), Tx = "button", Ex = "Draggable";
-function Dx(e) {
-	let { id: t, data: n, disabled: r = !1, attributes: i } = e, a = ey(Ex), { activators: o, activatorEvent: s, active: l, activeNodeRect: u, ariaDescribedById: f, draggableNodes: p, over: m } = c(px), { role: h = Tx, roleDescription: g = "draggable", tabIndex: _ = 0 } = i ?? {}, v = l?.id === t, y = c(v ? xx : wx), [b, x] = Zv(), [S, C] = Zv(), w = tx(o, t), T = Yv(n);
-	return Kv(() => (p.set(t, {
+}), mS = /*#__PURE__*/ r(null), hS = "button", gS = "Draggable";
+function _S(e) {
+	let { id: t, data: n, disabled: r = !1, attributes: i } = e, a = Wy(gS), { activators: o, activatorEvent: s, active: l, activeNodeRect: u, ariaDescribedById: d, draggableNodes: p, over: m } = c(rS), { role: h = hS, roleDescription: g = "draggable", tabIndex: _ = 0 } = i ?? {}, v = l?.id === t, y = c(v ? dS : mS), [b, x] = Vy(), [S, C] = Vy(), w = Gx(o, t), T = zy(n);
+	return Iy(() => (p.set(t, {
 		id: t,
 		key: a,
 		node: b,
@@ -14010,20 +14532,20 @@ function Dx(e) {
 		active: l,
 		activatorEvent: s,
 		activeNodeRect: u,
-		attributes: d(() => ({
+		attributes: f(() => ({
 			role: h,
 			tabIndex: _,
 			"aria-disabled": r,
-			"aria-pressed": v && h === Tx ? !0 : void 0,
+			"aria-pressed": v && h === hS ? !0 : void 0,
 			"aria-roledescription": g,
-			"aria-describedby": f.draggable
+			"aria-describedby": d.draggable
 		}), [
 			r,
 			h,
 			_,
 			v,
 			g,
-			f.draggable
+			d.draggable
 		]),
 		isDragging: v,
 		listeners: r ? void 0 : w,
@@ -14034,28 +14556,28 @@ function Dx(e) {
 		transform: y
 	};
 }
-function Ox() {
-	return c(mx);
+function vS() {
+	return c(iS);
 }
-var kx = "Droppable", Ax = { timeout: 25 };
-function jx(e) {
-	let { data: t, disabled: n = !1, id: r, resizeObserverConfig: i } = e, a = ey(kx), { active: o, dispatch: u, over: d, measureDroppableContainers: f } = c(px), m = p({ disabled: n }), h = p(!1), g = p(null), _ = p(null), { disabled: v, updateMeasurementsFor: y, timeout: b } = {
-		...Ax,
+var yS = "Droppable", bS = { timeout: 25 };
+function xS(e) {
+	let { data: t, disabled: n = !1, id: r, resizeObserverConfig: i } = e, a = Wy(yS), { active: o, dispatch: u, over: d, measureDroppableContainers: f } = c(rS), p = m({ disabled: n }), h = m(!1), g = m(null), _ = m(null), { disabled: v, updateMeasurementsFor: y, timeout: b } = {
+		...bS,
 		...i
-	}, x = Yv(y ?? r), S = Kb({
+	}, x = zy(y ?? r), S = Ix({
 		callback: s(() => {
 			h.current ? (_.current != null && clearTimeout(_.current), _.current = setTimeout(() => {
 				f(Array.isArray(x.current) ? x.current : [x.current]), _.current = null;
 			}, b)) : h.current = !0;
 		}, [b]),
 		disabled: v || !o
-	}), [C, w] = Zv(s((e, t) => {
+	}), [C, w] = Vy(s((e, t) => {
 		S && (t && (S.unobserve(t), h.current = !1), e && S.observe(e));
-	}, [S])), T = Yv(t);
+	}, [S])), T = zy(t);
 	return l(() => {
 		S && C.current && (S.disconnect(), h.current = !1, S.observe(C.current));
 	}, [C, S]), l(() => (u({
-		type: xy.RegisterDroppable,
+		type: db.RegisterDroppable,
 		element: {
 			id: r,
 			key: a,
@@ -14065,16 +14587,16 @@ function jx(e) {
 			data: T
 		}
 	}), () => u({
-		type: xy.UnregisterDroppable,
+		type: db.UnregisterDroppable,
 		key: a,
 		id: r
 	})), [r]), l(() => {
-		n !== m.current.disabled && (u({
-			type: xy.SetDroppableDisabled,
+		n !== p.current.disabled && (u({
+			type: db.SetDroppableDisabled,
 			id: r,
 			key: a,
 			disabled: n
-		}), m.current.disabled = n);
+		}), p.current.disabled = n);
 	}, [
 		r,
 		a,
@@ -14089,9 +14611,9 @@ function jx(e) {
 		setNodeRef: w
 	};
 }
-function Mx(e) {
-	let { animation: r, children: i } = e, [a, o] = m(null), [s, c] = m(null), l = Qv(i);
-	return !i && !a && l && o(l), Kv(() => {
+function SS(e) {
+	let { animation: r, children: i } = e, [a, o] = h(null), [s, c] = h(null), l = Hy(i);
+	return !i && !a && l && o(l), Iy(() => {
 		if (!s) return;
 		let e = a?.key, t = a?.props.id;
 		e == null || t == null ? o(null) : Promise.resolve(r(t, s)).then(() => {
@@ -14103,34 +14625,34 @@ function Mx(e) {
 		s
 	]), t.createElement(t.Fragment, null, i, a ? n(a, { ref: c }) : null);
 }
-var Nx = {
+var CS = {
 	x: 0,
 	y: 0,
 	scaleX: 1,
 	scaleY: 1
 };
-function Px(e) {
+function wS(e) {
 	let { children: n } = e;
-	return t.createElement(px.Provider, { value: fx }, t.createElement(xx.Provider, { value: Nx }, n));
+	return t.createElement(rS.Provider, { value: nS }, t.createElement(dS.Provider, { value: CS }, n));
 }
-var Fx = {
+var TS = {
 	position: "fixed",
 	touchAction: "none"
-}, Ix = (e) => ay(e) ? "transform 250ms ease" : void 0, Lx = /*#__PURE__*/ a((e, n) => {
-	let { as: r, activatorEvent: i, adjustScale: a, children: o, className: s, rect: c, style: l, transform: u, transition: d = Ix } = e;
+}, ES = (e) => Yy(e) ? "transform 250ms ease" : void 0, DS = /*#__PURE__*/ a((e, n) => {
+	let { as: r, activatorEvent: i, adjustScale: a, children: o, className: s, rect: c, style: l, transform: u, transition: d = ES } = e;
 	if (!c) return null;
 	let f = a ? u : {
 		...u,
 		scaleX: 1,
 		scaleY: 1
 	}, p = {
-		...Fx,
+		...TS,
 		width: c.width,
 		height: c.height,
 		top: c.top,
 		left: c.left,
-		transform: cy.Transform.toString(f),
-		transformOrigin: a && i ? Dy(i, c) : void 0,
+		transform: Qy.Transform.toString(f),
+		transformOrigin: a && i ? _b(i, c) : void 0,
 		transition: typeof d == "function" ? d(i) : d,
 		...l
 	};
@@ -14139,12 +14661,12 @@ var Fx = {
 		style: p,
 		ref: n
 	}, o);
-}), Rx = {
+}), OS = {
 	duration: 250,
 	easing: "ease",
 	keyframes: (e) => {
 		let { transform: { initial: t, final: n } } = e;
-		return [{ transform: cy.Transform.toString(t) }, { transform: cy.Transform.toString(n) }];
+		return [{ transform: Qy.Transform.toString(t) }, { transform: Qy.Transform.toString(n) }];
 	},
 	sideEffects: /*#__PURE__*/ ((e) => (t) => {
 		let { active: n, dragOverlay: r } = t, i = {}, { styles: a, className: o } = e;
@@ -14156,20 +14678,20 @@ var Fx = {
 		};
 	})({ styles: { active: { opacity: "0" } } })
 };
-function zx(e) {
+function kS(e) {
 	let { config: t, draggableNodes: n, droppableContainers: r, measuringConfiguration: i } = e;
-	return qv((e, a) => {
+	return Ly((e, a) => {
 		if (t === null) return;
 		let o = n.get(e);
 		if (!o) return;
 		let s = o.node.current;
 		if (!s) return;
-		let c = ax(a);
+		let c = Yx(a);
 		if (!c) return;
-		let { transform: l } = Vv(a).getComputedStyle(a), u = Vy(l);
+		let { transform: l } = jy(a).getComputedStyle(a), u = jb(l);
 		if (!u) return;
-		let d = typeof t == "function" ? t : Bx(t);
-		return ub(s, i.draggable.measure), d({
+		let d = typeof t == "function" ? t : AS(t);
+		return ex(s, i.draggable.measure), d({
 			active: {
 				id: e,
 				data: o.data,
@@ -14187,9 +14709,9 @@ function zx(e) {
 		});
 	});
 }
-function Bx(e) {
+function AS(e) {
 	let { duration: t, easing: n, sideEffects: r, keyframes: i } = {
-		...Rx,
+		...OS,
 		...e
 	};
 	return (e) => {
@@ -14231,14 +14753,14 @@ function Bx(e) {
 		});
 	};
 }
-var Vx = 0;
-function Hx(e) {
-	return d(() => {
-		if (e != null) return Vx++, Vx;
+var jS = 0;
+function MS(e) {
+	return f(() => {
+		if (e != null) return jS++, jS;
 	}, [e]);
 }
-var Ux = /*#__PURE__*/ t.memo((e) => {
-	let { adjustScale: n = !1, children: r, dropAnimation: i, style: a, transition: o, modifiers: s, wrapperElement: l = "div", className: u, zIndex: d = 999 } = e, { activatorEvent: f, active: p, activeNodeRect: m, containerNodeRect: h, draggableNodes: g, droppableContainers: _, dragOverlay: v, over: y, measuringConfiguration: b, scrollableAncestors: x, scrollableAncestorRects: S, windowRect: C } = Ox(), w = c(xx), T = Hx(p?.id), E = vx(s, {
+var NS = /*#__PURE__*/ t.memo((e) => {
+	let { adjustScale: n = !1, children: r, dropAnimation: i, style: a, transition: o, modifiers: s, wrapperElement: l = "div", className: u, zIndex: d = 999 } = e, { activatorEvent: f, active: p, activeNodeRect: m, containerNodeRect: h, draggableNodes: g, droppableContainers: _, dragOverlay: v, over: y, measuringConfiguration: b, scrollableAncestors: x, scrollableAncestorRects: S, windowRect: C } = vS(), w = c(dS), T = MS(p?.id), E = cS(s, {
 		activatorEvent: f,
 		active: p,
 		activeNodeRect: m,
@@ -14250,13 +14772,13 @@ var Ux = /*#__PURE__*/ t.memo((e) => {
 		scrollableAncestorRects: S,
 		transform: w,
 		windowRect: C
-	}), D = Ub(m), O = zx({
+	}), D = Nx(m), O = kS({
 		config: i,
 		draggableNodes: g,
 		droppableContainers: _,
 		measuringConfiguration: b
 	}), k = D ? v.setRef : void 0;
-	return t.createElement(Px, null, t.createElement(Mx, { animation: O }, p && T ? t.createElement(Lx, {
+	return t.createElement(wS, null, t.createElement(SS, { animation: O }, p && T ? t.createElement(DS, {
 		key: T,
 		id: p.id,
 		ref: k,
@@ -14275,66 +14797,66 @@ var Ux = /*#__PURE__*/ t.memo((e) => {
 });
 //#endregion
 //#region node_modules/.pnpm/@dnd-kit+sortable@10.0.0_@dnd-kit+core@6.3.1_react-dom@19.3.0_react@19.3.0__react@19.3.0__react@19.3.0/node_modules/@dnd-kit/sortable/dist/sortable.esm.js
-function Wx(e, t, n) {
+function PS(e, t, n) {
 	let r = e.slice();
 	return r.splice(n < 0 ? r.length + n : n, 0, r.splice(t, 1)[0]), r;
 }
-function Gx(e, t) {
+function FS(e, t) {
 	return e.reduce((e, n, r) => {
 		let i = t.get(n);
 		return i && (e[r] = i), e;
 	}, Array(e.length));
 }
-function Kx(e) {
+function IS(e) {
 	return e !== null && e >= 0;
 }
-function qx(e, t) {
+function LS(e, t) {
 	if (e === t) return !0;
 	if (e.length !== t.length) return !1;
 	for (let n = 0; n < e.length; n++) if (e[n] !== t[n]) return !1;
 	return !0;
 }
-function Jx(e) {
+function RS(e) {
 	return typeof e == "boolean" ? {
 		draggable: e,
 		droppable: e
 	} : e;
 }
-var Yx = (e) => {
-	let { rects: t, activeIndex: n, overIndex: r, index: i } = e, a = Wx(t, r, n), o = t[i], s = a[i];
+var zS = (e) => {
+	let { rects: t, activeIndex: n, overIndex: r, index: i } = e, a = PS(t, r, n), o = t[i], s = a[i];
 	return !s || !o ? null : {
 		x: s.left - o.left,
 		y: s.top - o.top,
 		scaleX: s.width / o.width,
 		scaleY: s.height / o.height
 	};
-}, Xx = "Sortable", Zx = /*#__PURE__*/ t.createContext({
+}, BS = "Sortable", VS = /*#__PURE__*/ t.createContext({
 	activeIndex: -1,
-	containerId: Xx,
+	containerId: BS,
 	disableTransforms: !1,
 	items: [],
 	overIndex: -1,
 	useDragOverlay: !1,
 	sortedRects: [],
-	strategy: Yx,
+	strategy: zS,
 	disabled: {
 		draggable: !1,
 		droppable: !1
 	}
 });
-function Qx(e) {
-	let { children: n, id: r, items: i, strategy: a = Yx, disabled: o = !1 } = e, { active: s, dragOverlay: c, droppableRects: u, over: f, measureDroppableContainers: m } = Ox(), h = ey(Xx, r), g = c.rect !== null, _ = d(() => i.map((e) => typeof e == "object" && "id" in e ? e.id : e), [i]), v = s != null, y = s ? _.indexOf(s.id) : -1, b = f ? _.indexOf(f.id) : -1, x = p(_), S = !qx(_, x.current), C = b !== -1 && y === -1 || S, w = Jx(o);
-	Kv(() => {
-		S && v && m(_);
+function HS(e) {
+	let { children: n, id: r, items: i, strategy: a = zS, disabled: o = !1 } = e, { active: s, dragOverlay: c, droppableRects: u, over: d, measureDroppableContainers: p } = vS(), h = Wy(BS, r), g = c.rect !== null, _ = f(() => i.map((e) => typeof e == "object" && "id" in e ? e.id : e), [i]), v = s != null, y = s ? _.indexOf(s.id) : -1, b = d ? _.indexOf(d.id) : -1, x = m(_), S = !LS(_, x.current), C = b !== -1 && y === -1 || S, w = RS(o);
+	Iy(() => {
+		S && v && p(_);
 	}, [
 		S,
 		_,
 		v,
-		m
+		p
 	]), l(() => {
 		x.current = _;
 	}, [_]);
-	let T = d(() => ({
+	let T = f(() => ({
 		activeIndex: y,
 		containerId: h,
 		disabled: w,
@@ -14342,7 +14864,7 @@ function Qx(e) {
 		items: _,
 		overIndex: b,
 		useDragOverlay: g,
-		sortedRects: Gx(_, u),
+		sortedRects: FS(_, u),
 		strategy: a
 	}), [
 		y,
@@ -14356,29 +14878,29 @@ function Qx(e) {
 		g,
 		a
 	]);
-	return t.createElement(Zx.Provider, { value: T }, n);
+	return t.createElement(VS.Provider, { value: T }, n);
 }
-var $x = (e) => {
+var US = (e) => {
 	let { id: t, items: n, activeIndex: r, overIndex: i } = e;
-	return Wx(n, r, i).indexOf(t);
-}, eS = (e) => {
+	return PS(n, r, i).indexOf(t);
+}, WS = (e) => {
 	let { containerId: t, isSorting: n, wasDragging: r, index: i, items: a, newIndex: o, previousItems: s, previousContainerId: c, transition: l } = e;
 	return !l || !r || s !== a && i === o ? !1 : n ? !0 : o !== i && t === c;
-}, tS = {
+}, GS = {
 	duration: 200,
 	easing: "ease"
-}, nS = "transform", rS = /*#__PURE__*/ cy.Transition.toString({
-	property: nS,
+}, KS = "transform", qS = /*#__PURE__*/ Qy.Transition.toString({
+	property: KS,
 	duration: 0,
 	easing: "linear"
-}), iS = { roleDescription: "sortable" };
-function aS(e) {
-	let { disabled: t, index: n, node: r, rect: i } = e, [a, o] = m(null), s = p(n);
-	return Kv(() => {
+}), JS = { roleDescription: "sortable" };
+function YS(e) {
+	let { disabled: t, index: n, node: r, rect: i } = e, [a, o] = h(null), s = m(n);
+	return Iy(() => {
 		if (!t && n !== s.current && r.current) {
 			let e = i.current;
 			if (e) {
-				let t = Wy(r.current, { ignoreTransform: !0 }), n = {
+				let t = Pb(r.current, { ignoreTransform: !0 }), n = {
 					x: e.left - t.left,
 					y: e.top - t.top,
 					scaleX: e.width / t.width,
@@ -14397,20 +14919,20 @@ function aS(e) {
 		a && o(null);
 	}, [a]), a;
 }
-function oS(e) {
-	let { animateLayoutChanges: t = eS, attributes: n, disabled: r, data: i, getNewIndex: a = $x, id: o, strategy: s, resizeObserverConfig: u, transition: f = tS } = e, { items: m, containerId: h, activeIndex: g, disabled: _, disableTransforms: v, sortedRects: y, overIndex: b, useDragOverlay: x, strategy: S } = c(Zx), C = sS(r, _), w = m.indexOf(o), T = d(() => ({
+function XS(e) {
+	let { animateLayoutChanges: t = WS, attributes: n, disabled: r, data: i, getNewIndex: a = US, id: o, strategy: s, resizeObserverConfig: u, transition: d = GS } = e, { items: p, containerId: h, activeIndex: g, disabled: _, disableTransforms: v, sortedRects: y, overIndex: b, useDragOverlay: x, strategy: S } = c(VS), C = ZS(r, _), w = p.indexOf(o), T = f(() => ({
 		sortable: {
 			containerId: h,
 			index: w,
-			items: m
+			items: p
 		},
 		...i
 	}), [
 		h,
 		i,
 		w,
-		m
-	]), E = d(() => m.slice(m.indexOf(o)), [m, o]), { rect: D, node: O, isOver: k, setNodeRef: A } = jx({
+		p
+	]), E = f(() => p.slice(p.indexOf(o)), [p, o]), { rect: D, node: O, isOver: k, setNodeRef: A } = xS({
 		id: o,
 		data: T,
 		disabled: C.droppable,
@@ -14418,67 +14940,67 @@ function oS(e) {
 			updateMeasurementsFor: E,
 			...u
 		}
-	}), { active: j, activatorEvent: M, activeNodeRect: N, attributes: P, setNodeRef: F, listeners: I, isDragging: L, over: R, setActivatorNodeRef: ee, transform: te } = Dx({
+	}), { active: j, activatorEvent: M, activeNodeRect: N, attributes: P, setNodeRef: F, listeners: I, isDragging: L, over: R, setActivatorNodeRef: ee, transform: te } = _S({
 		id: o,
 		data: T,
 		attributes: {
-			...iS,
+			...JS,
 			...n
 		},
 		disabled: C.draggable
-	}), z = Lv(A, F), B = !!j, ne = B && !v && Kx(g) && Kx(b), re = !x && L, ie = ne ? (re && ne ? te : null) ?? (s ?? S)({
+	}), z = Dy(A, F), B = !!j, ne = B && !v && IS(g) && IS(b), re = !x && L, ie = ne ? (re && ne ? te : null) ?? (s ?? S)({
 		rects: y,
 		activeNodeRect: N,
 		activeIndex: g,
 		overIndex: b,
 		index: w
-	}) : null, ae = Kx(g) && Kx(b) ? a({
+	}) : null, ae = IS(g) && IS(b) ? a({
 		id: o,
-		items: m,
+		items: p,
 		activeIndex: g,
 		overIndex: b
-	}) : w, V = j?.id, H = p({
-		activeId: V,
-		items: m,
+	}) : w, oe = j?.id, V = m({
+		activeId: oe,
+		items: p,
 		newIndex: ae,
 		containerId: h
-	}), oe = m !== H.current.items, se = t({
+	}), H = p !== V.current.items, se = t({
 		active: j,
 		containerId: h,
 		isDragging: L,
 		isSorting: B,
 		id: o,
 		index: w,
-		items: m,
-		newIndex: H.current.newIndex,
-		previousItems: H.current.items,
-		previousContainerId: H.current.containerId,
-		transition: f,
-		wasDragging: H.current.activeId != null
-	}), ce = aS({
+		items: p,
+		newIndex: V.current.newIndex,
+		previousItems: V.current.items,
+		previousContainerId: V.current.containerId,
+		transition: d,
+		wasDragging: V.current.activeId != null
+	}), ce = YS({
 		disabled: !se,
 		index: w,
 		node: O,
 		rect: D
 	});
 	return l(() => {
-		B && H.current.newIndex !== ae && (H.current.newIndex = ae), h !== H.current.containerId && (H.current.containerId = h), m !== H.current.items && (H.current.items = m);
+		B && V.current.newIndex !== ae && (V.current.newIndex = ae), h !== V.current.containerId && (V.current.containerId = h), p !== V.current.items && (V.current.items = p);
 	}, [
 		B,
 		ae,
 		h,
-		m
+		p
 	]), l(() => {
-		if (V === H.current.activeId) return;
-		if (V != null && H.current.activeId == null) {
-			H.current.activeId = V;
+		if (oe === V.current.activeId) return;
+		if (oe != null && V.current.activeId == null) {
+			V.current.activeId = oe;
 			return;
 		}
 		let e = setTimeout(() => {
-			H.current.activeId = V;
+			V.current.activeId = oe;
 		}, 50);
 		return () => clearTimeout(e);
-	}, [V]), {
+	}, [oe]), {
 		active: j,
 		activeIndex: g,
 		attributes: P,
@@ -14486,7 +15008,7 @@ function oS(e) {
 		rect: D,
 		index: w,
 		newIndex: ae,
-		items: m,
+		items: p,
 		isOver: k,
 		isSorting: B,
 		isDragging: L,
@@ -14502,14 +15024,14 @@ function oS(e) {
 		transition: le()
 	};
 	function le() {
-		if (ce || oe && H.current.newIndex === w) return rS;
-		if (!(re && !ay(M) || !f) && (B || se)) return cy.Transition.toString({
-			...f,
-			property: nS
+		if (ce || H && V.current.newIndex === w) return qS;
+		if (!(re && !Yy(M) || !d) && (B || se)) return Qy.Transition.toString({
+			...d,
+			property: KS
 		});
 	}
 }
-function sS(e, t) {
+function ZS(e, t) {
 	return typeof e == "boolean" ? {
 		draggable: e,
 		droppable: !1
@@ -14518,19 +15040,19 @@ function sS(e, t) {
 		droppable: e?.droppable ?? t.droppable
 	};
 }
-function cS(e) {
+function QS(e) {
 	if (!e) return !1;
 	let t = e.data.current;
 	return !!(t && "sortable" in t && typeof t.sortable == "object" && "containerId" in t.sortable && "items" in t.sortable && "index" in t.sortable);
 }
-var lS = [
+var $S = [
 	Q.Down,
 	Q.Right,
 	Q.Up,
 	Q.Left
-], uS = (e, t) => {
+], eC = (e, t) => {
 	let { context: { active: n, collisionRect: r, droppableRects: i, droppableContainers: a, over: o, scrollableAncestors: s } } = t;
-	if (lS.includes(e.code)) {
+	if ($S.includes(e.code)) {
 		if (e.preventDefault(), !n || !r) return;
 		let t = [];
 		a.getEnabled().forEach((n) => {
@@ -14549,17 +15071,17 @@ var lS = [
 				case Q.Right: r.left < a.left && t.push(n);
 			}
 		});
-		let c = Py({
+		let c = wb({
 			active: n,
 			collisionRect: r,
 			droppableRects: i,
 			droppableContainers: t,
 			pointerCoordinates: null
-		}), l = jy(c, "id");
+		}), l = xb(c, "id");
 		if (l === o?.id && c.length > 1 && (l = c[1].id), l != null) {
 			let e = a.get(n.id), t = a.get(l), o = t ? i.get(t.id) : null, c = t?.node.current;
 			if (c && o && e && t) {
-				let n = Yy(c).some((e, t) => s[t] !== e), i = dS(e, t), a = fS(e, t), l = n || !i ? {
+				let n = zb(c).some((e, t) => s[t] !== e), i = tC(e, t), a = nC(e, t), l = n || !i ? {
 					x: 0,
 					y: 0
 				} : {
@@ -14569,55 +15091,55 @@ var lS = [
 					x: o.left,
 					y: o.top
 				};
-				return l.x && l.y ? u : ry(u, l);
+				return l.x && l.y ? u : qy(u, l);
 			}
 		}
 	}
 };
-function dS(e, t) {
-	return !cS(e) || !cS(t) ? !1 : e.data.current.sortable.containerId === t.data.current.sortable.containerId;
+function tC(e, t) {
+	return !QS(e) || !QS(t) ? !1 : e.data.current.sortable.containerId === t.data.current.sortable.containerId;
 }
-function fS(e, t) {
-	return !cS(e) || !cS(t) || !dS(e, t) ? !1 : e.data.current.sortable.index < t.data.current.sortable.index;
+function nC(e, t) {
+	return !QS(e) || !QS(t) || !tC(e, t) ? !1 : e.data.current.sortable.index < t.data.current.sortable.index;
 }
 //#endregion
 //#region src/uhuu/utility/drag-drop-grid.tsx
-function pS({ item: e, index: t, renderItem: n, renderDragIndicator: r, keyExtractor: i, disabled: a = !1 }) {
-	let { attributes: o, listeners: s, setNodeRef: c, transform: l, transition: u, isDragging: d } = oS({
+function rC({ item: e, index: t, renderItem: n, renderDragIndicator: r, keyExtractor: i, disabled: a = !1 }) {
+	let { attributes: o, listeners: s, setNodeRef: c, transform: l, transition: u, isDragging: d } = XS({
 		id: i(e),
 		disabled: a
 	}), f = {
-		transform: cy.Transform.toString(l),
+		transform: Qy.Transform.toString(l),
 		transition: u
 	};
-	return /* @__PURE__ */ v("div", {
+	return /* @__PURE__ */ y("div", {
 		ref: c,
 		style: f,
 		className: `uhuu:relative uhuu:group/drag-item ${d ? "uhuu:opacity-50" : ""} ${a ? "uhuu:opacity-60" : ""}`,
-		children: [n(e, t, d), !a && (r ? /* @__PURE__ */ _("div", {
+		children: [n(e, t, d), !a && (r ? /* @__PURE__ */ v("div", {
 			...o,
 			...s,
 			children: r(e, t)
-		}) : /* @__PURE__ */ _("div", {
+		}) : /* @__PURE__ */ v("div", {
 			...o,
 			...s,
 			className: "uhuu:absolute uhuu:inset-0 uhuu:cursor-grab uhuu:active:cursor-grabbing uhuu:outline-none uhuu:touch-none"
 		}))]
 	});
 }
-function mS({ item: e, index: t, renderItem: n }) {
-	return /* @__PURE__ */ _("div", {
+function iC({ item: e, index: t, renderItem: n }) {
+	return /* @__PURE__ */ v("div", {
 		className: "uhuu:rotate-2",
 		children: n(e, t, !0)
 	});
 }
-function hS({ items: e, onChange: t, renderItem: n, renderDragIndicator: r, keyExtractor: i, gridColsClass: a = "uhuu-page-drag-drop-grid-cols", className: o = "", renderToolbar: s, renderEmptyState: c, showDebugInfo: u = !1, renderDragOverlay: d, isItemDisabled: f, canDropAt: p }) {
-	let [h, g] = m(e);
+function aC({ items: e, onChange: t, renderItem: n, renderDragIndicator: r, keyExtractor: i, gridColsClass: a = "uhuu-page-drag-drop-grid-cols", className: o = "", renderToolbar: s, renderEmptyState: c, showDebugInfo: u = !1, renderDragOverlay: d, isItemDisabled: f, canDropAt: p }) {
+	let [m, g] = h(e);
 	l(() => {
 		g(e);
 	}, [e]);
-	let [y, b] = m(null), x = wy(Cy(Eb), Cy(xb, { coordinateGetter: uS })), S = (e) => {
-		let t = h.find((t) => i(t) === e.active.id);
+	let [_, b] = h(null), x = mb(pb(gx), pb(dx, { coordinateGetter: eC })), S = (e) => {
+		let t = m.find((t) => i(t) === e.active.id);
 		t && f && f(t) || b(e.active.id);
 	}, C = (e) => {
 		let { active: n, over: r } = e;
@@ -14625,37 +15147,37 @@ function hS({ items: e, onChange: t, renderItem: n, renderDragIndicator: r, keyE
 			b(null);
 			return;
 		}
-		let a = h.find((e) => i(e) === n.id), o = h.findIndex((e) => i(e) === n.id), s = h.findIndex((e) => i(e) === r.id);
+		let a = m.find((e) => i(e) === n.id), o = m.findIndex((e) => i(e) === n.id), s = m.findIndex((e) => i(e) === r.id);
 		if (a && f && f(a)) b(null);
-		else if (p && !p(a, s, h)) b(null);
+		else if (p && !p(a, s, m)) b(null);
 		else {
 			if (o !== -1 && s !== -1) {
-				let e = Wx(h, o, s);
+				let e = PS(m, o, s);
 				g(e), t(e);
 			}
 			b(null);
 		}
-	}, w = h.find((e) => i(e) === y), T = w ? h.findIndex((e) => i(e) === y) : -1;
-	return /* @__PURE__ */ v("div", {
+	}, w = m.find((e) => i(e) === _), T = w ? m.findIndex((e) => i(e) === _) : -1;
+	return /* @__PURE__ */ y("div", {
 		className: `uhuu:w-full ${o}`,
 		children: [
-			s && /* @__PURE__ */ _("div", {
+			s && /* @__PURE__ */ v("div", {
 				className: "uhuu:mb-6",
 				children: s()
 			}),
-			h.length === 0 && c ? c() : /* @__PURE__ */ _("div", {
+			m.length === 0 && c ? c() : /* @__PURE__ */ v("div", {
 				className: "uhuu:mb-6",
-				children: /* @__PURE__ */ v(Cx, {
+				children: /* @__PURE__ */ y(pS, {
 					sensors: x,
-					collisionDetection: Ny,
+					collisionDetection: Cb,
 					onDragStart: S,
 					onDragEnd: C,
-					children: [/* @__PURE__ */ _(Qx, {
-						items: h.map(i),
-						strategy: Yx,
-						children: /* @__PURE__ */ _("div", {
+					children: [/* @__PURE__ */ v(HS, {
+						items: m.map(i),
+						strategy: zS,
+						children: /* @__PURE__ */ v("div", {
 							className: a,
-							children: h.map((e, t) => /* @__PURE__ */ _(pS, {
+							children: m.map((e, t) => /* @__PURE__ */ v(rC, {
 								item: e,
 								index: t,
 								renderItem: n,
@@ -14664,36 +15186,36 @@ function hS({ items: e, onChange: t, renderItem: n, renderDragIndicator: r, keyE
 								disabled: f ? f(e) : !1
 							}, i(e)))
 						})
-					}), /* @__PURE__ */ _(Ux, { children: w ? d ? /* @__PURE__ */ _("div", {
+					}), /* @__PURE__ */ v(NS, { children: w ? d ? /* @__PURE__ */ v("div", {
 						className: "uhuu:rotate-2 uhuu:shadow-lg",
 						children: d(w, T)
-					}) : /* @__PURE__ */ _(mS, {
+					}) : /* @__PURE__ */ v(iC, {
 						item: w,
 						index: T,
 						renderItem: n
 					}) : null })]
 				})
 			}),
-			u && /* @__PURE__ */ v("div", {
+			u && /* @__PURE__ */ y("div", {
 				"data-uhuu-editor": !0,
 				className: "uhuu:fixed uhuu:top-4 uhuu:left-4 uhuu:bg-(--uhuu-shell-surface) uhuu:rounded-lg uhuu:border uhuu:shadow-lg uhuu:p-3 uhuu:text-sm uhuu:max-w-xs",
 				children: [
-					/* @__PURE__ */ _("div", {
+					/* @__PURE__ */ v("div", {
 						className: "uhuu:font-medium uhuu:mb-1",
 						children: "Debug Info"
 					}),
-					/* @__PURE__ */ v("div", {
+					/* @__PURE__ */ y("div", {
 						className: "uhuu:text-gray-600 uhuu:text-xs",
 						children: [
 							"Items: ",
-							h.length,
+							m.length,
 							" | Active: ",
-							y || "none"
+							_ || "none"
 						]
 					}),
-					/* @__PURE__ */ v("div", {
+					/* @__PURE__ */ y("div", {
 						className: "uhuu:text-xs uhuu:text-gray-500 uhuu:mt-1 uhuu:break-all",
-						children: ["Order: ", h.map((e, t) => `${t + 1}:${i(e).slice(0, 3)}`).join(" → ")]
+						children: ["Order: ", m.map((e, t) => `${t + 1}:${i(e).slice(0, 3)}`).join(" → ")]
 					})
 				]
 			})
@@ -14702,7 +15224,7 @@ function hS({ items: e, onChange: t, renderItem: n, renderDragIndicator: r, keyE
 }
 //#endregion
 //#region src/uhuu/ui/badge.tsx
-var gS = To("uhuu:inline-flex uhuu:items-center uhuu:rounded-md uhuu:border uhuu:px-2.5 uhuu:py-0.5 uhuu:text-xs uhuu:font-medium uhuu:transition-colors uhuu:focus:outline-none uhuu:focus:ring-2 uhuu:focus:ring-offset-2", {
+var oC = Zo("uhuu:inline-flex uhuu:items-center uhuu:rounded-md uhuu:border uhuu:px-2.5 uhuu:py-0.5 uhuu:text-xs uhuu:font-medium uhuu:transition-colors uhuu:focus:outline-none uhuu:focus:ring-2 uhuu:focus:ring-offset-2", {
 	variants: { variant: {
 		default: "uhuu:border-transparent uhuu:bg-gray-900 uhuu:text-(--uhuu-shell-on-inverse)",
 		secondary: "uhuu:border-transparent uhuu:bg-gray-100 uhuu:text-gray-900",
@@ -14710,49 +15232,49 @@ var gS = To("uhuu:inline-flex uhuu:items-center uhuu:rounded-md uhuu:border uhuu
 	} },
 	defaultVariants: { variant: "default" }
 });
-function _S({ className: e, variant: t, ...n }) {
-	return /* @__PURE__ */ _("div", {
-		className: K(gS({ variant: t }), e),
+function sC({ className: e, variant: t, ...n }) {
+	return /* @__PURE__ */ v("div", {
+		className: K(oC({ variant: t }), e),
 		...n
 	});
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/page-order-dialog.tsx
-function vS({ page: e, index: t, isDragging: n }) {
-	let { t: r, localize: i } = Ua(), a = e.strictPosition, o = a === "start" || a === "end";
-	return /* @__PURE__ */ v("div", {
+function cC({ page: e, index: t, isDragging: n }) {
+	let { t: r, localize: i } = go(), a = e.strictPosition, o = a === "start" || a === "end";
+	return /* @__PURE__ */ y("div", {
 		className: `uhuu:flex uhuu:items-center uhuu:justify-center uhuu:border uhuu:relative uhuu:rounded-lg uhuu:bg-(--uhuu-shell-surface) uhuu:overflow-hidden uhuu:transition-all ${n ? "uhuu:opacity-50 uhuu:border-gray-400 uhuu:shadow-xl uhuu:scale-105" : o ? "uhuu:border-gray-300 uhuu:bg-gray-50" : "uhuu:border-gray-200 uhuu:group-hover/drag-item:border-gray-300 uhuu:group-hover/drag-item:shadow-md"}`,
-		children: [/* @__PURE__ */ _("div", {
+		children: [/* @__PURE__ */ v("div", {
 			className: "uhuu:flex uhuu:items-center uhuu:justify-center",
 			style: {
 				width: "200px",
 				height: "280px"
 			},
-			children: e.content || /* @__PURE__ */ v("div", {
+			children: e.content || /* @__PURE__ */ y("div", {
 				className: "uhuu:text-center uhuu:p-4",
-				children: [/* @__PURE__ */ _("div", {
+				children: [/* @__PURE__ */ v("div", {
 					className: "uhuu:text-sm uhuu:font-medium uhuu:text-gray-700",
 					children: i(e.label) || r("page.fallbackName", { number: t + 1 })
-				}), /* @__PURE__ */ _("div", {
+				}), /* @__PURE__ */ v("div", {
 					className: "uhuu:text-xs uhuu:text-gray-400 uhuu:mt-1 uhuu:font-mono",
 					children: e.id
 				})]
 			})
-		}), /* @__PURE__ */ _("div", {
+		}), /* @__PURE__ */ v("div", {
 			className: "uhuu:absolute uhuu:top-2 uhuu:left-2 uhuu:z-20",
-			children: /* @__PURE__ */ _(_S, {
+			children: /* @__PURE__ */ v(sC, {
 				variant: "secondary",
 				className: `uhuu:text-xs uhuu:min-w-[24px] uhuu:h-6 uhuu:font-medium uhuu:bg-(--uhuu-shell-surface)/95 uhuu:backdrop-blur-sm uhuu:flex uhuu:items-center uhuu:justify-center uhuu:shadow-sm uhuu:border uhuu:border-gray-200 ${o ? "uhuu:opacity-75" : ""}`,
-				children: o ? /* @__PURE__ */ _(Ki, { className: "uhuu:size-3 uhuu:text-gray-500" }) : /* @__PURE__ */ v(g, { children: [/* @__PURE__ */ _("span", {
+				children: o ? /* @__PURE__ */ v(la, { className: "uhuu:size-3 uhuu:text-gray-500" }) : /* @__PURE__ */ y(_, { children: [/* @__PURE__ */ v("span", {
 					className: "uhuu:group-hover/drag-item:hidden",
 					children: t + 1
-				}), /* @__PURE__ */ _(Gi, { className: "uhuu:size-4 uhuu:text-gray-400 uhuu:hidden uhuu:group-hover/drag-item:block" })] })
+				}), /* @__PURE__ */ v(ca, { className: "uhuu:size-4 uhuu:text-gray-400 uhuu:hidden uhuu:group-hover/drag-item:block" })] })
 			})
 		})]
 	});
 }
-function yS({ open: t, onOpenChange: n, pages: r, onReorder: i, onRemove: a, renderThumbnail: o, pageComponents: s, payload: c, setup: l, title: u, description: d, gridColsClass: f = "uhuu-page-order-grid-cols" }) {
-	let p = Ua(), { t: m, localize: h } = p, g = h(u) ?? m("reorderDialog.title"), y = h(d) ?? m("reorderDialog.description"), [b, x] = e.useState(r), [S, C] = e.useState(!1), w = e.useCallback((e) => e.id, []);
+function lC({ open: t, onOpenChange: n, pages: r, onReorder: i, onRemove: a, renderThumbnail: o, pageComponents: s, payload: c, setup: l, title: u, description: d, gridColsClass: f = "uhuu-page-order-grid-cols" }) {
+	let p = go(), { t: m, localize: h } = p, g = h(u) ?? m("reorderDialog.title"), _ = h(d) ?? m("reorderDialog.description"), [b, x] = e.useState(r), [S, C] = e.useState(!1), w = e.useCallback((e) => e.id, []);
 	e.useEffect(() => {
 		if (!t) x(r), C(!1);
 		else if (!S) x(r);
@@ -14773,7 +15295,7 @@ function yS({ open: t, onOpenChange: n, pages: r, onReorder: i, onRemove: a, ren
 		i(b), C(!1), n(!1);
 	}, D = () => {
 		x(r), C(!1), n(!1);
-	}, O = e.useMemo(() => (!o || typeof o != "function") && s ? Fv({
+	}, O = e.useMemo(() => (!o || typeof o != "function") && s ? vv({
 		pageComponents: s,
 		payload: c,
 		setup: l,
@@ -14787,34 +15309,34 @@ function yS({ open: t, onOpenChange: n, pages: r, onReorder: i, onRemove: a, ren
 	]), k = (e, t, n) => {
 		let r = e.strictPosition, i = !!a && r !== "start" && r !== "end", s = (t) => {
 			t.preventDefault(), t.stopPropagation(), a && (a(e), x((t) => t.filter((t) => w(t) !== w(e))), C(!0));
-		}, c = o && typeof o == "function" ? o(e, t, n) : O ? O(e, t, n) : /* @__PURE__ */ _(vS, {
+		}, c = o && typeof o == "function" ? o(e, t, n) : O ? O(e, t, n) : /* @__PURE__ */ v(cC, {
 			page: e,
 			index: t,
 			isDragging: n
 		});
-		return /* @__PURE__ */ v("div", {
+		return /* @__PURE__ */ y("div", {
 			className: "uhuu:relative uhuu:inline-block uhuu:align-top",
-			children: [c, i && /* @__PURE__ */ v("button", {
+			children: [c, i && /* @__PURE__ */ y("button", {
 				type: "button",
 				title: m("reorderDialog.remove"),
 				onClick: s,
 				onPointerDown: (e) => e.stopPropagation(),
 				className: "uhuu:group/remove-btn uhuu:absolute uhuu:-top-3 uhuu:-right-3 uhuu:z-30 uhuu:hidden uhuu:h-6 uhuu:w-6 uhuu:items-center uhuu:justify-center uhuu:rounded-full uhuu:bg-(--uhuu-shell-surface)/50 uhuu:hover:bg-(--uhuu-shell-surface) uhuu:text-gray-900 uhuu:backdrop-blur-md uhuu:group-hover/drag-item:flex uhuu:border uhuu:border-gray-200",
-				children: [/* @__PURE__ */ _(Gi, { className: "uhuu:size-3.5 uhuu:opacity-60 uhuu:group-hover/remove-btn:hidden" }), /* @__PURE__ */ _(Xi, { className: "uhuu:size-3.5 uhuu:rotate-45 uhuu:hidden uhuu:group-hover/remove-btn:block" })]
+				children: [/* @__PURE__ */ v(ca, { className: "uhuu:size-3.5 uhuu:opacity-60 uhuu:group-hover/remove-btn:hidden" }), /* @__PURE__ */ v(pa, { className: "uhuu:size-3.5 uhuu:rotate-45 uhuu:hidden uhuu:group-hover/remove-btn:block" })]
 			})]
 		});
-	}, A = () => /* @__PURE__ */ v("div", {
+	}, A = () => /* @__PURE__ */ y("div", {
 		className: "uhuu:text-center uhuu:py-20",
 		children: [
-			/* @__PURE__ */ _("div", {
+			/* @__PURE__ */ v("div", {
 				className: "uhuu:w-12 uhuu:h-12 uhuu:bg-gray-50 uhuu:rounded-lg uhuu:flex uhuu:items-center uhuu:justify-center uhuu:mx-auto uhuu:mb-3",
-				children: /* @__PURE__ */ _(Ii, { className: "uhuu:w-6 uhuu:h-6 uhuu:text-gray-400" })
+				children: /* @__PURE__ */ v($i, { className: "uhuu:w-6 uhuu:h-6 uhuu:text-gray-400" })
 			}),
-			/* @__PURE__ */ _("div", {
+			/* @__PURE__ */ v("div", {
 				className: "uhuu:text-base uhuu:font-medium uhuu:text-gray-900 uhuu:mb-1",
 				children: m("reorderDialog.emptyTitle")
 			}),
-			/* @__PURE__ */ _("p", {
+			/* @__PURE__ */ v("p", {
 				className: "uhuu:text-sm uhuu:text-gray-500",
 				children: m("reorderDialog.emptyDescription")
 			})
@@ -14832,12 +15354,12 @@ function yS({ open: t, onOpenChange: n, pages: r, onReorder: i, onRemove: a, ren
 		}
 		return !(t <= i || t >= a);
 	}, []);
-	return /* @__PURE__ */ _(wv, {
+	return /* @__PURE__ */ v(vy, {
 		open: t,
 		onOpenChange: (e) => {
 			e || D();
 		},
-		children: /* @__PURE__ */ v(Dv, {
+		children: /* @__PURE__ */ y(xy, {
 			side: "bottom",
 			className: "uhuu:h-[90vh] uhuu:p-0 uhuu:gap-0 uhuu:w-full uhuu:max-w-none uhuu:flex uhuu:flex-col uhuu:[&>button]:hidden",
 			onPointerDownOutside: (e) => {
@@ -14848,26 +15370,26 @@ function yS({ open: t, onOpenChange: n, pages: r, onReorder: i, onRemove: a, ren
 			},
 			"data-uhuu-editor": !0,
 			children: [
-				/* @__PURE__ */ _(Ov, {
+				/* @__PURE__ */ v(Sy, {
 					className: "uhuu:border-b uhuu:border-gray-200 uhuu:p-4",
-					children: /* @__PURE__ */ v("div", {
+					children: /* @__PURE__ */ y("div", {
 						className: "uhuu:flex uhuu:items-end uhuu:gap-3",
 						children: [
-							/* @__PURE__ */ _("div", {
-								className: "uhuu:w-8 uhuu:h-8 uhuu:bg-gray-100 uhuu:rounded-full uhuu:flex uhuu:items-center uhuu:justify-center uhuu:shrink-0 uhuu:mb-0.5",
-								children: /* @__PURE__ */ _(Ii, { className: "uhuu:w-4 uhuu:h-4" })
-							}),
 							/* @__PURE__ */ v("div", {
+								className: "uhuu:w-8 uhuu:h-8 uhuu:bg-gray-100 uhuu:rounded-full uhuu:flex uhuu:items-center uhuu:justify-center uhuu:shrink-0 uhuu:mb-0.5",
+								children: /* @__PURE__ */ v($i, { className: "uhuu:w-4 uhuu:h-4" })
+							}),
+							/* @__PURE__ */ y("div", {
 								className: "uhuu:flex-1",
-								children: [/* @__PURE__ */ _(Av, {
+								children: [/* @__PURE__ */ v(wy, {
 									className: "uhuu:text-base uhuu:font-medium uhuu:text-gray-900 uhuu:leading-tight",
 									children: g
-								}), /* @__PURE__ */ _(jv, {
+								}), /* @__PURE__ */ v(Ty, {
 									className: "uhuu:text-xs uhuu:text-gray-400 uhuu:mt-0.5",
-									children: y
+									children: _
 								})]
 							}),
-							/* @__PURE__ */ _(_S, {
+							/* @__PURE__ */ v(sC, {
 								variant: "outline",
 								className: "uhuu:text-xs uhuu:mb-0.5 uhuu:mr-8",
 								children: m("page.count", { count: b.length })
@@ -14875,11 +15397,11 @@ function yS({ open: t, onOpenChange: n, pages: r, onReorder: i, onRemove: a, ren
 						]
 					})
 				}),
-				/* @__PURE__ */ _("div", {
+				/* @__PURE__ */ v("div", {
 					className: "uhuu:flex-1 uhuu:overflow-hidden uhuu:flex uhuu:flex-col",
-					children: /* @__PURE__ */ _("div", {
+					children: /* @__PURE__ */ v("div", {
 						className: "uhuu:flex-1 uhuu:overflow-auto uhuu:p-6 uhuu:bg-gray-50",
-						children: /* @__PURE__ */ _(hS, {
+						children: /* @__PURE__ */ v(aC, {
 							items: b,
 							onChange: T,
 							renderItem: k,
@@ -14892,13 +15414,13 @@ function yS({ open: t, onOpenChange: n, pages: r, onReorder: i, onRemove: a, ren
 						})
 					})
 				}),
-				/* @__PURE__ */ v(kv, {
+				/* @__PURE__ */ y(Cy, {
 					className: "uhuu:border-t uhuu:border-gray-200 uhuu:px-4 uhuu:py-3 uhuu:gap-3",
-					children: [/* @__PURE__ */ _(Do, {
+					children: [/* @__PURE__ */ v($o, {
 						variant: "outline",
 						onClick: D,
 						children: m("reorderDialog.cancel")
-					}), /* @__PURE__ */ _(Do, {
+					}), /* @__PURE__ */ v($o, {
 						variant: "default",
 						onClick: E,
 						disabled: !S,
@@ -14911,68 +15433,80 @@ function yS({ open: t, onOpenChange: n, pages: r, onReorder: i, onRemove: a, ren
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/page-canvas.tsx
-var bS = typeof window > "u" ? e.useEffect : e.useLayoutEffect, xS = 1e3, SS = /* @__PURE__ */ new Set();
-function CS(e, t) {
-	return Array.from(e.querySelectorAll(t)).filter((e) => !e.closest(`[${mt}]`));
+var uC = typeof window > "u" ? e.useEffect : e.useLayoutEffect, dC = /* @__PURE__ */ new Set();
+function fC(e, t) {
+	return Array.from(e.querySelectorAll(t)).filter((e) => !e.closest(`[${H}]`));
 }
-function wS({ pageKey: t, version: n, readiness: r, onMeasurement: i, onPrune: a, children: o }) {
-	let [s] = e.useState(() => ({ mounted: !0 })), c = e.useRef(null), [l, u] = e.useState(0), d = e.useCallback(() => {
-		u((e) => e + 1);
+function pC({ pageKey: t, version: n, readiness: r, onMeasurement: i, onPrune: a, children: o }) {
+	let [s] = e.useState(() => ({ mounted: !0 })), c = e.useRef(null), l = e.useRef(a);
+	uC(() => {
+		l.current = a;
+	}, [a]);
+	let [u, d] = e.useState(0), f = e.useCallback(() => {
+		d((e) => e + 1);
 		let e = !1;
 		return () => {
-			e || (e = !0, u((e) => e - 1));
+			e || (e = !0, d((e) => e - 1));
 		};
 	}, []);
-	bS(() => (s.mounted = !0, () => {
+	uC(() => (s.mounted = !0, () => {
 		s.mounted = !1;
 	}), [s]);
-	let f = e.useCallback(() => {
+	let p = e.useCallback(() => {
 		let e = c.current;
 		if (!s.mounted || !e) return;
-		let n = new Set(CS(e, "[data-uhuu-flow=\"true\"]").map((e) => e.dataset.uhuuFlowId ?? ""));
-		a?.(t, n);
+		let n = new Set(fC(e, "[data-uhuu-flow=\"true\"]").map((e) => e.dataset.uhuuFlowId ?? ""));
+		l.current?.(t, n);
+	}, [s, t]);
+	uC(() => {
+		p();
+	}, [p]);
+	let m = e.useRef(void 0), h = e.useCallback(() => {
+		clearTimeout(m.current), m.current = void 0;
+	}, []), g = e.useCallback(() => {
+		h();
+		let e = c.current;
+		s.mounted && e && (fC(e, "[data-uhuu-flow-area]").length ? e.removeAttribute("data-uhuu-flow-error") : (e.setAttribute("data-uhuu-flow-error", "missing-flow-region"), !dC.has(t) && (m.current = setTimeout(() => {
+			e.isConnected && !fC(e, "[data-uhuu-flow-area]").length && (dC.add(t), console.warn(`[uhuu-components] Page "${t}" is marked hasFlow but renders no Static.FlowArea, so data-uhuu-pagination stays "measuring". Render a FlowArea with one Static.Flow in every branch (an empty Flow is one page), or remove hasFlow.`));
+		}, de))));
 	}, [
 		s,
 		t,
-		a
+		h
 	]);
-	bS(() => {
-		f();
-		let e = c.current;
-		if (!e || CS(e, "[data-uhuu-flow-area]").length) {
-			e?.removeAttribute("data-uhuu-flow-error");
-			return;
-		}
-		if (e.setAttribute("data-uhuu-flow-error", "missing-flow-region"), !H() || SS.has(t)) return;
-		let n = setTimeout(() => {
-			e.isConnected && !CS(e, "[data-uhuu-flow-area]").length && (SS.add(t), console.warn(`[uhuu-components] Page "${t}" is marked hasFlow but renders no Static.FlowArea, so data-uhuu-pagination stays "measuring". Render a FlowArea with one Static.Flow in every branch (an empty Flow is one page), or remove hasFlow.`));
-		}, xS);
-		return () => clearTimeout(n);
-	});
-	let p = e.useCallback((e, n) => i(t, e, n), [t, i]), m = e.useCallback(() => f(), [f]), h = e.useMemo(() => ({
+	uC(() => (g(), h), [g, h]);
+	let _ = e.useCallback((e, n) => {
+		h(), c.current?.removeAttribute("data-uhuu-flow-error"), i(t, e, n);
+	}, [
+		t,
+		i,
+		h
+	]), b = e.useCallback(() => {
+		p(), g();
+	}, [p, g]), x = e.useMemo(() => ({
 		mode: "measure",
 		pageIndex: 0,
 		measurementVersion: n,
 		pageKey: t,
 		readiness: r,
-		registerMeasurement: p,
-		unregisterMeasurement: m,
-		requestContinuation: d
+		registerMeasurement: _,
+		unregisterMeasurement: b,
+		requestContinuation: f
 	}), [
 		n,
 		t,
 		r,
-		p,
-		m,
-		d
-	]), g = e.useMemo(() => ({
+		_,
+		b,
+		f
+	]), S = e.useMemo(() => ({
 		mode: "measure",
 		pageIndex: 1,
 		measurementVersion: n,
 		pageKey: t,
 		copy: "continuation"
 	}), [n, t]);
-	return /* @__PURE__ */ v("div", {
+	return /* @__PURE__ */ y("div", {
 		ref: c,
 		style: {
 			position: "fixed",
@@ -14989,17 +15523,17 @@ function wS({ pageKey: t, version: n, readiness: r, onMeasurement: i, onPrune: a
 		},
 		"aria-hidden": "true",
 		"data-uhuu-flow-measurement": "true",
-		children: [o(h), l > 0 && /* @__PURE__ */ _("div", {
+		children: [o(x), u > 0 && /* @__PURE__ */ v("div", {
 			"data-uhuu-flow-continuation-copy": "true",
-			children: o(g)
+			children: o(S)
 		})]
 	});
 }
-function TS({ pageId: t, templateId: n, componentKey: r, component: i, payload: a, pagePayload: o, integration: s, page: c, parentGroup: l, setup: u, reference: d, overlay: f, className: p, pageNo: m = 0, totalPages: h, measurementPageNo: y, measurementTotalPages: b, dataBinding: x, flowPageIndex: S = 0, flowChunksByFlowId: C, measureFlow: w = !1, flowMeasurementKey: T, flowMeasurementVersion: E, flowReadiness: D, onFlowMeasurement: O, onFlowPrune: k, renderVisible: A = !0, renderMode: j = "sheet", spread: M }) {
+function mC({ pageId: t, templateId: n, componentKey: r, component: i, payload: a, pagePayload: o, integration: s, page: c, parentGroup: l, setup: u, reference: d, overlay: f, className: p, pageNo: m = 0, totalPages: h, measurementPageNo: g, measurementTotalPages: b, dataBinding: x, flowPageIndex: S = 0, flowChunksByFlowId: C, measureFlow: w = !1, flowMeasurementKey: T, flowMeasurementVersion: E, flowReadiness: D, onFlowMeasurement: O, onFlowPrune: k, renderVisible: A = !0, renderMode: j = "sheet", spread: M }) {
 	let N = typeof f == "function" ? (e) => f({
 		pageNo: e,
 		pageId: t
-	}) : () => f, P = r || n || t, F = [P ? `uhuu-page--${P}` : "", p].filter(Boolean).join(" "), I = (e = m, u = h, d = c) => i ? /* @__PURE__ */ _(i, {
+	}) : () => f, P = r || n || t, F = [P ? `uhuu-page--${P}` : "", p].filter(Boolean).join(" "), I = (e = m, u = h, d = c) => i ? /* @__PURE__ */ v(i, {
 		payload: a,
 		pagePayload: o,
 		integration: s,
@@ -15028,38 +15562,38 @@ function TS({ pageId: t, templateId: n, componentKey: r, component: i, payload: 
 			virtualPageCount: 2
 		}
 	}, [c]);
-	return j === "content" ? /* @__PURE__ */ v(g, { children: [d, /* @__PURE__ */ _(ht.Provider, {
+	return j === "content" ? /* @__PURE__ */ y(_, { children: [d, /* @__PURE__ */ v(se.Provider, {
 		value: L,
 		children: I(m, h)
-	})] }) : /* @__PURE__ */ v(g, { children: [w && O && T && /* @__PURE__ */ _(wS, {
+	})] }) : /* @__PURE__ */ y(_, { children: [w && O && T && /* @__PURE__ */ v(pC, {
 		pageKey: T,
 		version: E,
 		readiness: D,
 		onMeasurement: O,
 		onPrune: k,
 		children: (e) => {
-			let t = e.copy === "continuation", n = y ?? m, r = b ?? h;
-			return /* @__PURE__ */ _(ae, {
+			let t = e.copy === "continuation", n = g ?? m, r = b ?? h;
+			return /* @__PURE__ */ v(oe, {
 				setup: u,
-				children: /* @__PURE__ */ _(V, {
+				children: /* @__PURE__ */ v(V, {
 					className: F,
 					pageNo: m,
 					"data-page-key": P,
-					children: /* @__PURE__ */ _(ht.Provider, {
+					children: /* @__PURE__ */ v(se.Provider, {
 						value: e,
 						children: t ? I(n + 1, r === void 0 ? void 0 : r + 1, R?.continuation) : I(n, r, R?.first)
 					})
 				})
 			});
 		}
-	}), A && /* @__PURE__ */ _(ae, {
+	}), A && /* @__PURE__ */ v(oe, {
 		setup: u,
-		children: /* @__PURE__ */ v(V, {
+		children: /* @__PURE__ */ y(V, {
 			className: F,
 			pageNo: m,
 			overlay: ({ pageNo: e }) => N(e),
 			"data-page-key": P,
-			children: [d, /* @__PURE__ */ _(ht.Provider, {
+			children: [d, /* @__PURE__ */ v(se.Provider, {
 				value: L,
 				children: I(m, h)
 			})]
@@ -15068,26 +15602,26 @@ function TS({ pageId: t, templateId: n, componentKey: r, component: i, payload: 
 }
 //#endregion
 //#region src/uhuu/ui/select.tsx
-var ES = e.forwardRef(({ className: e, children: t, ...n }, r) => /* @__PURE__ */ _("select", {
+var hC = e.forwardRef(({ className: e, children: t, ...n }, r) => /* @__PURE__ */ v("select", {
 	className: K("uhuu:flex uhuu:h-8 uhuu:w-full uhuu:rounded-md uhuu:border uhuu:border-gray-200 uhuu:bg-(--uhuu-shell-surface) uhuu:px-2.5 uhuu:py-1 uhuu:text-sm uhuu:text-gray-900 uhuu:outline-none uhuu:transition-colors uhuu:focus:border-gray-400 uhuu:focus:ring-2 uhuu:focus:ring-gray-200 uhuu:focus:ring-offset-0 uhuu:disabled:cursor-not-allowed uhuu:disabled:opacity-50", e),
 	ref: r,
 	...n,
 	children: t
 }));
-ES.displayName = "Select";
+hC.displayName = "Select";
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-switch@1.3.8_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_9e907e973c095d314448b5bf7a7b557b/node_modules/@radix-ui/react-switch/dist/index.mjs
-var DS = Object.defineProperty, OS = (e, t) => DS(e, "name", {
+var gC = Object.defineProperty, _C = (e, t) => gC(e, "name", {
 	value: t,
 	configurable: !0
-}), kS = "Switch", [AS, jS] = /* @__PURE__ */ Ho(kS), [MS, NS] = AS(kS);
-function PS(t) {
-	let { __scopeSwitch: n, checked: r, children: i, defaultChecked: a, disabled: o, form: s, name: c, onCheckedChange: l, required: u, value: d = "on", internal_do_not_use_render: f } = t, [p, m] = $o({
+}), vC = "Switch", [yC, bC] = /* @__PURE__ */ ms(vC), [xC, SC] = yC(vC);
+function CC(t) {
+	let { __scopeSwitch: n, checked: r, children: i, defaultChecked: a, disabled: o, form: s, name: c, onCheckedChange: l, required: u, value: d = "on", internal_do_not_use_render: f } = t, [p, m] = Ts({
 		prop: r,
 		defaultProp: a ?? !1,
 		onChange: l,
-		caller: kS
-	}), [h, g] = e.useState(null), [v, y] = e.useState(null), b = e.useRef(!1), [x, S] = e.useReducer((e) => e + 1, 0), C = {
+		caller: vC
+	}), [h, g] = e.useState(null), [_, y] = e.useState(null), b = e.useRef(!1), [x, S] = e.useReducer((e) => e + 1, 0), C = {
 		checked: p,
 		setChecked: m,
 		disabled: o,
@@ -15102,46 +15636,46 @@ function PS(t) {
 		required: u,
 		defaultChecked: a,
 		isFormControl: !h || !!s || !!h.closest("form"),
-		bubbleInput: v,
+		bubbleInput: _,
 		setBubbleInput: y
 	};
-	return /* @__PURE__ */ _(MS, {
+	return /* @__PURE__ */ v(xC, {
 		scope: n,
 		...C,
-		children: HS(f) ? f(C) : i
+		children: jC(f) ? f(C) : i
 	});
 }
-OS(PS, "SwitchProvider");
-var FS = "SwitchTrigger", IS = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ OS(function({ __scopeSwitch: t, onClick: n, ...r }, i) {
-	let { control: a, form: o, value: s, disabled: c, checked: l, required: u, setControl: d, setChecked: f, hasConsumerStoppedPropagationRef: p, onUserInteraction: m, isFormControl: h, bubbleInput: g } = NS(FS, t), v = J(i, d), y = e.useRef(l);
+_C(CC, "SwitchProvider");
+var wC = "SwitchTrigger", TC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ _C(function({ __scopeSwitch: t, onClick: n, ...r }, i) {
+	let { control: a, form: o, value: s, disabled: c, checked: l, required: u, setControl: d, setChecked: f, hasConsumerStoppedPropagationRef: p, onUserInteraction: m, isFormControl: h, bubbleInput: g } = SC(wC, t), _ = J(i, d), y = e.useRef(l);
 	return e.useEffect(() => {
 		let e = o ? a?.ownerDocument.getElementById(o) : a?.form;
 		if (e instanceof HTMLFormElement) {
-			let t = /* @__PURE__ */ OS(() => f(y.current), "reset");
+			let t = /* @__PURE__ */ _C(() => f(y.current), "reset");
 			return e.addEventListener("reset", t), () => e.removeEventListener("reset", t);
 		}
 	}, [
 		a,
 		o,
 		f
-	]), /* @__PURE__ */ _(Ss.button, {
+	]), /* @__PURE__ */ v(Js.button, {
 		type: "button",
 		role: "switch",
 		"aria-checked": l,
 		"aria-required": u,
-		"data-state": US(l),
+		"data-state": MC(l),
 		"data-disabled": c ? "" : void 0,
 		disabled: c,
 		value: s,
 		...r,
-		ref: v,
+		ref: _,
 		onClick: q(n, (e) => {
 			m(), f((e) => !e), g && h && (p.current = e.isPropagationStopped(), p.current || e.stopPropagation());
 		})
 	});
-}, "SwitchTrigger")), LS = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ OS(function(e, t) {
+}, "SwitchTrigger")), EC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ _C(function(e, t) {
 	let { __scopeSwitch: n, name: r, checked: i, defaultChecked: a, required: o, disabled: s, value: c, onCheckedChange: l, form: u, ...d } = e;
-	return /* @__PURE__ */ _(PS, {
+	return /* @__PURE__ */ v(CC, {
 		__scopeSwitch: n,
 		checked: i,
 		defaultChecked: a,
@@ -15151,22 +15685,22 @@ var FS = "SwitchTrigger", IS = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ OS(f
 		name: r,
 		form: u,
 		value: c,
-		internal_do_not_use_render: ({ isFormControl: e }) => /* @__PURE__ */ v(g, { children: [/* @__PURE__ */ _(IS, {
+		internal_do_not_use_render: ({ isFormControl: e }) => /* @__PURE__ */ y(_, { children: [/* @__PURE__ */ v(TC, {
 			...d,
 			ref: t,
 			__scopeSwitch: n
-		}), e && /* @__PURE__ */ _(VS, { __scopeSwitch: n })] })
+		}), e && /* @__PURE__ */ v(AC, { __scopeSwitch: n })] })
 	});
-}, "Switch")), RS = "SwitchThumb", zS = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ OS(function(e, t) {
-	let { __scopeSwitch: n, ...r } = e, i = NS(RS, n);
-	return /* @__PURE__ */ _(Ss.span, {
-		"data-state": US(i.checked),
+}, "Switch")), DC = "SwitchThumb", OC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ _C(function(e, t) {
+	let { __scopeSwitch: n, ...r } = e, i = SC(DC, n);
+	return /* @__PURE__ */ v(Js.span, {
+		"data-state": MC(i.checked),
 		"data-disabled": i.disabled ? "" : void 0,
 		...r,
 		ref: t
 	});
-}, "SwitchThumb")), BS = "SwitchBubbleInput", VS = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ OS(function({ __scopeSwitch: t, onClick: n, ...r }, i) {
-	let { control: a, hasConsumerStoppedPropagationRef: o, userInteractionCount: s, checked: c, defaultChecked: l, required: u, disabled: d, name: f, value: p, form: m, bubbleInput: h, setBubbleInput: g } = NS(BS, t), v = J(i, g), y = Zu(a), b = e.useRef(!1), x = e.useRef(c), S = e.useRef(s);
+}, "SwitchThumb")), kC = "SwitchBubbleInput", AC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ _C(function({ __scopeSwitch: t, onClick: n, ...r }, i) {
+	let { control: a, hasConsumerStoppedPropagationRef: o, userInteractionCount: s, checked: c, defaultChecked: l, required: u, disabled: d, name: f, value: p, form: m, bubbleInput: h, setBubbleInput: g } = SC(kC, t), _ = J(i, g), y = Cd(a), b = e.useRef(!1), x = e.useRef(c), S = e.useRef(s);
 	e.useEffect(() => {
 		let e = h;
 		if (!e) return;
@@ -15187,7 +15721,7 @@ var FS = "SwitchTrigger", IS = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ OS(f
 		s
 	]);
 	let C = e.useRef(c);
-	return /* @__PURE__ */ _(Ss.input, {
+	return /* @__PURE__ */ v(Js.input, {
 		type: "checkbox",
 		"aria-hidden": !0,
 		defaultChecked: l ?? C.current,
@@ -15198,7 +15732,7 @@ var FS = "SwitchTrigger", IS = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ OS(f
 		form: m,
 		...r,
 		tabIndex: -1,
-		ref: v,
+		ref: _,
 		onClick: q(n, (e) => {
 			b.current && e.stopPropagation();
 		}),
@@ -15213,64 +15747,64 @@ var FS = "SwitchTrigger", IS = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ OS(f
 		}
 	});
 }, "SwitchBubbleInput"));
-function HS(e) {
+function jC(e) {
 	return typeof e == "function";
 }
-OS(HS, "isFunction");
-function US(e) {
+_C(jC, "isFunction");
+function MC(e) {
 	return e ? "checked" : "unchecked";
 }
-OS(US, "getState");
+_C(MC, "getState");
 //#endregion
 //#region src/uhuu/ui/switch.tsx
-var WS = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ _(LS, {
+var NC = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(EC, {
 	ref: n,
 	className: K("uhuu:peer uhuu:inline-flex uhuu:h-5 uhuu:w-9 uhuu:shrink-0 uhuu:cursor-pointer uhuu:items-center uhuu:rounded-full uhuu:border-2 uhuu:border-transparent uhuu:bg-gray-200 uhuu:transition-colors uhuu:focus-visible:outline-none uhuu:focus-visible:ring-2 uhuu:focus-visible:ring-gray-400 uhuu:focus-visible:ring-offset-2 uhuu:focus-visible:ring-offset-(--uhuu-shell-surface) uhuu:disabled:cursor-not-allowed uhuu:disabled:opacity-50 uhuu:data-[state=checked]:bg-gray-900 uhuu:data-[state=unchecked]:bg-gray-200", e),
 	...t,
-	children: /* @__PURE__ */ _(zS, { className: K("uhuu:pointer-events-none uhuu:block uhuu:h-4 uhuu:w-4 uhuu:rounded-full uhuu:bg-white uhuu:shadow-lg uhuu:ring-0 uhuu:data-[state=checked]:bg-(--uhuu-shell-on-inverse) uhuu:transition-transform uhuu:data-[state=checked]:translate-x-4 uhuu:data-[state=unchecked]:translate-x-0") })
+	children: /* @__PURE__ */ v(OC, { className: K("uhuu:pointer-events-none uhuu:block uhuu:h-4 uhuu:w-4 uhuu:rounded-full uhuu:bg-white uhuu:shadow-lg uhuu:ring-0 uhuu:data-[state=checked]:bg-(--uhuu-shell-on-inverse) uhuu:transition-transform uhuu:data-[state=checked]:translate-x-4 uhuu:data-[state=unchecked]:translate-x-0") })
 }));
-WS.displayName = LS.displayName;
+NC.displayName = EC.displayName;
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+number@1.1.3/node_modules/@radix-ui/number/dist/index.mjs
-var GS = Object.defineProperty, KS = (e, t) => GS(e, "name", {
+var PC = Object.defineProperty, FC = (e, t) => PC(e, "name", {
 	value: t,
 	configurable: !0
 });
-function qS(e, [t, n]) {
+function IC(e, [t, n]) {
 	return Math.min(n, Math.max(t, e));
 }
-KS(qS, "clamp");
+FC(IC, "clamp");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-use-previous@1.1.4_@types+react@19.3.0_react@19.3.0/node_modules/@radix-ui/react-use-previous/dist/index.mjs
-var JS = Object.defineProperty, YS = (e, t) => JS(e, "name", {
+var LC = Object.defineProperty, RC = (e, t) => LC(e, "name", {
 	value: t,
 	configurable: !0
 });
-function XS(t) {
+function zC(t) {
 	let n = e.useRef({
 		value: t,
 		previous: t
 	});
 	return e.useMemo(() => (n.current.value !== t && (n.current.previous = n.current.value, n.current.value = t), n.current.previous), [t]);
 }
-YS(XS, "usePrevious");
+RC(zC, "usePrevious");
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-slider@1.5.0_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_764b979897bd8e11b24e0a133366e2c3/node_modules/@radix-ui/react-slider/dist/index.mjs
-var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
+var BC = Object.defineProperty, $ = (e, t) => BC(e, "name", {
 	value: t,
 	configurable: !0
-}), QS = {
+}), VC = {
 	Vertical: "vertical",
 	Horizontal: "horizontal"
-}, $S = {
+}, HC = {
 	LTR: "ltr",
 	RTL: "rtl"
-}, eC = ["PageUp", "PageDown"], tC = [
+}, UC = ["PageUp", "PageDown"], WC = [
 	"ArrowUp",
 	"ArrowDown",
 	"ArrowLeft",
 	"ArrowRight"
-], nC = {
+], GC = {
 	"from-left": [
 		"Home",
 		"PageDown",
@@ -15295,8 +15829,8 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 		"ArrowUp",
 		"ArrowLeft"
 	]
-}, rC = "Slider", [iC, aC, oC] = /* @__PURE__ */ Es(rC), [sC, cC] = /* @__PURE__ */ Ho(rC, [oC]), [lC, uC] = sC(rC), dC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(t, n) {
-	let { name: r, min: i = 0, max: a = 100, step: o = 1, orientation: s = QS.Horizontal, disabled: c = !1, minStepsBetweenThumbs: l = 0, preserveThumbOrder: u = !1, defaultValue: d = [i], value: f, onValueChange: p = /* @__PURE__ */ $(() => {}, "onValueChange"), onValueCommit: m = /* @__PURE__ */ $(() => {}, "onValueCommit"), inverted: h = !1, form: g, ...v } = t, y = e.useRef(/* @__PURE__ */ new Set()), b = e.useRef(0), x = e.useRef(!1), S = s === QS.Horizontal ? mC : hC, [C, w] = e.useState(null), T = J(n, w), [E = [], D] = $o({
+}, KC = "Slider", [qC, JC, YC] = /* @__PURE__ */ Qs(KC), [XC, ZC] = /* @__PURE__ */ ms(KC, [YC]), [QC, $C] = XC(KC), ew = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(t, n) {
+	let { name: r, min: i = 0, max: a = 100, step: o = 1, orientation: s = VC.Horizontal, disabled: c = !1, minStepsBetweenThumbs: l = 0, preserveThumbOrder: u = !1, defaultValue: d = [i], value: f, onValueChange: p = /* @__PURE__ */ $(() => {}, "onValueChange"), onValueCommit: m = /* @__PURE__ */ $(() => {}, "onValueCommit"), inverted: h = !1, form: g, ..._ } = t, y = e.useRef(/* @__PURE__ */ new Set()), b = e.useRef(0), x = e.useRef(!1), S = s === VC.Horizontal ? rw : iw, [C, w] = e.useState(null), T = J(n, w), [E = [], D] = Ts({
 		prop: f,
 		defaultProp: d,
 		onChange: /* @__PURE__ */ $((e) => {
@@ -15318,7 +15852,7 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 		D
 	]);
 	function A(e) {
-		N(e, NC(E, e));
+		N(e, Sw(E, e));
 	}
 	$(A, "handleSlideStart");
 	function j(e) {
@@ -15330,10 +15864,10 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 	}
 	$(M, "handleSlideEnd");
 	function N(e, t, { commit: n } = { commit: !1 }) {
-		let r = RC(o), s = qS(zC(Math.round((e - i) / o) * o + i, r), [i, a]);
+		let r = Dw(o), s = IC(Ow(Math.round((e - i) / o) * o + i, r), [i, a]);
 		D((e = []) => {
-			let r = l * o, c = u ? qS(s, [e[t - 1] === void 0 ? i : e[t - 1] + r, e[t + 1] === void 0 ? a : e[t + 1] - r]) : s, d = AC(e, c, t);
-			if (IC(d, r)) {
+			let r = l * o, c = u ? IC(s, [e[t - 1] === void 0 ? i : e[t - 1] + r, e[t + 1] === void 0 ? a : e[t + 1] - r]) : s, d = yw(e, c, t);
+			if (Tw(d, r)) {
 				b.current = u ? t : d.indexOf(c);
 				let r = String(d) !== String(e);
 				return r && n && m(d), r ? d : e;
@@ -15341,7 +15875,7 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 			return e;
 		});
 	}
-	return $(N, "updateValues"), /* @__PURE__ */ _(lC, {
+	return $(N, "updateValues"), /* @__PURE__ */ v(QC, {
 		scope: t.__scopeSlider,
 		name: r,
 		disabled: c,
@@ -15352,16 +15886,16 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 		values: E,
 		orientation: s,
 		form: g,
-		children: /* @__PURE__ */ _(iC.Provider, {
+		children: /* @__PURE__ */ v(qC.Provider, {
 			scope: t.__scopeSlider,
-			children: /* @__PURE__ */ _(iC.Slot, {
+			children: /* @__PURE__ */ v(qC.Slot, {
 				scope: t.__scopeSlider,
-				children: /* @__PURE__ */ _(S, {
+				children: /* @__PURE__ */ v(S, {
 					"aria-disabled": c,
 					"data-disabled": c ? "" : void 0,
-					...v,
+					..._,
 					ref: T,
-					onPointerDown: q(v.onPointerDown, () => {
+					onPointerDown: q(_.onPointerDown, () => {
 						c || (O.current = E, x.current = !1);
 					}),
 					min: i,
@@ -15379,8 +15913,8 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 					onStepKeyDown: ({ event: e, direction: t }) => {
 						if (!c) {
 							x.current = !0;
-							let n = eC.includes(e.key) || e.shiftKey && tC.includes(e.key) ? 10 : 1, r = b.current, a = E[r];
-							N(BC(a, {
+							let n = UC.includes(e.key) || e.shiftKey && WC.includes(e.key) ? 10 : 1, r = b.current, a = E[r];
+							N(kw(a, {
 								min: i,
 								step: o,
 								direction: t,
@@ -15392,24 +15926,24 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 			})
 		})
 	});
-}, "Slider")), [fC, pC] = sC(rC, {
+}, "Slider")), [tw, nw] = XC(KC, {
 	startEdge: "left",
 	endEdge: "right",
 	size: "width",
 	direction: 1
-}), mC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(t, n) {
-	let { min: r, max: i, dir: a, inverted: o, onSlideStart: s, onSlideMove: c, onSlideEnd: l, onStepKeyDown: u, ...d } = t, [f, p] = e.useState(null), m = J(n, p), h = e.useRef(void 0), g = Vs(a), v = g === $S.LTR, y = v && !o || !v && o;
+}), rw = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(t, n) {
+	let { min: r, max: i, dir: a, inverted: o, onSlideStart: s, onSlideMove: c, onSlideEnd: l, onStepKeyDown: u, ...d } = t, [f, p] = e.useState(null), m = J(n, p), h = e.useRef(void 0), g = pc(a), _ = g === HC.LTR, y = _ && !o || !_ && o;
 	function b(e) {
-		let t = h.current || f.getBoundingClientRect(), n = LC([0, t.width], y ? [r, i] : [i, r]);
+		let t = h.current || f.getBoundingClientRect(), n = Ew([0, t.width], y ? [r, i] : [i, r]);
 		return h.current = t, n(e - t.left);
 	}
-	return $(b, "getValueFromPointer"), /* @__PURE__ */ _(fC, {
+	return $(b, "getValueFromPointer"), /* @__PURE__ */ v(tw, {
 		scope: t.__scopeSlider,
 		startEdge: y ? "left" : "right",
 		endEdge: y ? "right" : "left",
 		direction: y ? 1 : -1,
 		size: "width",
-		children: /* @__PURE__ */ _(gC, {
+		children: /* @__PURE__ */ v(aw, {
 			dir: g,
 			"data-orientation": "horizontal",
 			...d,
@@ -15430,7 +15964,7 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 				h.current = void 0, l?.();
 			},
 			onStepKeyDown: (e) => {
-				let t = nC[y ? "from-left" : "from-right"].includes(e.key);
+				let t = GC[y ? "from-left" : "from-right"].includes(e.key);
 				u?.({
 					event: e,
 					direction: t ? -1 : 1
@@ -15438,19 +15972,19 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 			}
 		})
 	});
-}, "SliderHorizontal")), hC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(t, n) {
+}, "SliderHorizontal")), iw = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(t, n) {
 	let { min: r, max: i, inverted: a, onSlideStart: o, onSlideMove: s, onSlideEnd: c, onStepKeyDown: l, ...u } = t, d = e.useRef(null), f = J(n, d), p = e.useRef(void 0), m = !a;
 	function h(e) {
-		let t = p.current || d.current.getBoundingClientRect(), n = LC([0, t.height], m ? [i, r] : [r, i]);
+		let t = p.current || d.current.getBoundingClientRect(), n = Ew([0, t.height], m ? [i, r] : [r, i]);
 		return p.current = t, n(e - t.top);
 	}
-	return $(h, "getValueFromPointer"), /* @__PURE__ */ _(fC, {
+	return $(h, "getValueFromPointer"), /* @__PURE__ */ v(tw, {
 		scope: t.__scopeSlider,
 		startEdge: m ? "bottom" : "top",
 		endEdge: m ? "top" : "bottom",
 		size: "height",
 		direction: m ? 1 : -1,
-		children: /* @__PURE__ */ _(gC, {
+		children: /* @__PURE__ */ v(aw, {
 			"data-orientation": "vertical",
 			...u,
 			ref: f,
@@ -15470,7 +16004,7 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 				p.current = void 0, c?.();
 			},
 			onStepKeyDown: (e) => {
-				let t = nC[m ? "from-bottom" : "from-top"].includes(e.key);
+				let t = GC[m ? "from-bottom" : "from-top"].includes(e.key);
 				l?.({
 					event: e,
 					direction: t ? -1 : 1
@@ -15478,13 +16012,13 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 			}
 		})
 	});
-}, "SliderVertical")), gC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(e, t) {
-	let { __scopeSlider: n, onSlideStart: r, onSlideMove: i, onSlideEnd: a, onHomeKeyDown: o, onEndKeyDown: s, onStepKeyDown: c, ...l } = e, u = uC(rC, n);
-	return /* @__PURE__ */ _(Ss.span, {
+}, "SliderVertical")), aw = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(e, t) {
+	let { __scopeSlider: n, onSlideStart: r, onSlideMove: i, onSlideEnd: a, onHomeKeyDown: o, onEndKeyDown: s, onStepKeyDown: c, ...l } = e, u = $C(KC, n);
+	return /* @__PURE__ */ v(Js.span, {
 		...l,
 		ref: t,
 		onKeyDown: q(e.onKeyDown, (e) => {
-			e.key === "Home" ? (o(e), e.preventDefault()) : e.key === "End" ? (s(e), e.preventDefault()) : eC.concat(tC).includes(e.key) && (c(e), e.preventDefault());
+			e.key === "Home" ? (o(e), e.preventDefault()) : e.key === "End" ? (s(e), e.preventDefault()) : UC.concat(WC).includes(e.key) && (c(e), e.preventDefault());
 		}),
 		onPointerDown: q(e.onPointerDown, (e) => {
 			let t = e.target;
@@ -15501,17 +16035,17 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 			t.hasPointerCapture(e.pointerId) && (t.releasePointerCapture(e.pointerId), a(e));
 		})
 	});
-}, "SliderImpl")), _C = "SliderTrack", vC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(e, t) {
-	let { __scopeSlider: n, ...r } = e, i = uC(_C, n);
-	return /* @__PURE__ */ _(Ss.span, {
+}, "SliderImpl")), ow = "SliderTrack", sw = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(e, t) {
+	let { __scopeSlider: n, ...r } = e, i = $C(ow, n);
+	return /* @__PURE__ */ v(Js.span, {
 		"data-disabled": i.disabled ? "" : void 0,
 		"data-orientation": i.orientation,
 		...r,
 		ref: t
 	});
-}, "SliderTrack")), yC = "SliderRange", bC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(t, n) {
-	let { __scopeSlider: r, ...i } = t, a = uC(yC, r), o = pC(yC, r), s = J(n, e.useRef(null)), c = a.values.length, l = a.values.map((e) => jC(e, a.min, a.max)), u = c > 1 ? Math.min(...l) : 0, d = 100 - Math.max(...l);
-	return /* @__PURE__ */ _(Ss.span, {
+}, "SliderTrack")), cw = "SliderRange", lw = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(t, n) {
+	let { __scopeSlider: r, ...i } = t, a = $C(cw, r), o = nw(cw, r), s = J(n, e.useRef(null)), c = a.values.length, l = a.values.map((e) => bw(e, a.min, a.max)), u = c > 1 ? Math.min(...l) : 0, d = 100 - Math.max(...l);
+	return /* @__PURE__ */ v(Js.span, {
 		"data-orientation": a.orientation,
 		"data-disabled": a.disabled ? "" : void 0,
 		...i,
@@ -15522,9 +16056,9 @@ var ZS = Object.defineProperty, $ = (e, t) => ZS(e, "name", {
 			[o.endEdge]: d + "%"
 		}
 	});
-}, "SliderRange")), [xC, SC] = sC("SliderThumb"), CC = "SliderThumbProvider";
-function wC(t) {
-	let { __scopeSlider: n, name: r, children: i, internal_do_not_use_render: a } = t, o = uC(CC, n), s = aC(n), [c, l] = e.useState(null), u = e.useMemo(() => c ? s().findIndex((e) => e.ref.current === c) : -1, [s, c]), d = Zu(c), f = !c || !!o.form || !!c.closest("form"), p = o.values[u], m = r ?? (o.name ? o.name + (o.values.length > 1 ? "[]" : "") : void 0), h = p === void 0 ? 0 : jC(p, o.min, o.max);
+}, "SliderRange")), [uw, dw] = XC("SliderThumb"), fw = "SliderThumbProvider";
+function pw(t) {
+	let { __scopeSlider: n, name: r, children: i, internal_do_not_use_render: a } = t, o = $C(fw, n), s = JC(n), [c, l] = e.useState(null), u = e.useMemo(() => c ? s().findIndex((e) => e.ref.current === c) : -1, [s, c]), d = Cd(c), f = !c || !!o.form || !!c.closest("form"), p = o.values[u], m = r ?? (o.name ? o.name + (o.values.length > 1 ? "[]" : "") : void 0), h = p === void 0 ? 0 : bw(p, o.min, o.max);
 	e.useEffect(() => {
 		if (c) return o.thumbs.add(c), () => {
 			o.thumbs.delete(c);
@@ -15541,24 +16075,24 @@ function wC(t) {
 		percent: h,
 		size: d
 	};
-	return /* @__PURE__ */ _(xC, {
+	return /* @__PURE__ */ v(uw, {
 		scope: n,
 		...g,
-		children: VC(a) ? a(g) : i
+		children: Aw(a) ? a(g) : i
 	});
 }
-$(wC, "SliderThumbProvider");
-var TC = "SliderThumbTrigger", EC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(e, t) {
-	let { __scopeSlider: n, ...r } = e, i = uC(TC, n), a = pC(TC, n), { index: o, value: s, percent: c, size: l, onThumbChange: u } = SC(TC, n), d = J(t, u), f = MC(o, i.values.length), p = l?.[a.size], m = p ? PC(p, c, a.direction) : 0;
-	return /* @__PURE__ */ _("span", {
+$(pw, "SliderThumbProvider");
+var mw = "SliderThumbTrigger", hw = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(e, t) {
+	let { __scopeSlider: n, ...r } = e, i = $C(mw, n), a = nw(mw, n), { index: o, value: s, percent: c, size: l, onThumbChange: u } = dw(mw, n), d = J(t, u), f = xw(o, i.values.length), p = l?.[a.size], m = p ? Cw(p, c, a.direction) : 0;
+	return /* @__PURE__ */ v("span", {
 		style: {
 			transform: "var(--radix-slider-thumb-transform)",
 			position: "absolute",
 			[a.startEdge]: `calc(${c}% + ${m}px)`
 		},
-		children: /* @__PURE__ */ _(iC.ItemSlot, {
+		children: /* @__PURE__ */ v(qC.ItemSlot, {
 			scope: n,
-			children: /* @__PURE__ */ _(Ss.span, {
+			children: /* @__PURE__ */ v(Js.span, {
 				role: "slider",
 				"aria-label": e["aria-label"] || f,
 				"aria-valuemin": i.min,
@@ -15577,19 +16111,19 @@ var TC = "SliderThumbTrigger", EC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */
 			})
 		})
 	});
-}, "SliderThumbTrigger")), DC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(e, t) {
+}, "SliderThumbTrigger")), gw = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function(e, t) {
 	let { __scopeSlider: n, name: r, ...i } = e;
-	return /* @__PURE__ */ _(wC, {
+	return /* @__PURE__ */ v(pw, {
 		__scopeSlider: n,
 		name: r,
-		internal_do_not_use_render: ({ index: e, isFormControl: r }) => /* @__PURE__ */ v(g, { children: [/* @__PURE__ */ _(EC, {
+		internal_do_not_use_render: ({ index: e, isFormControl: r }) => /* @__PURE__ */ y(_, { children: [/* @__PURE__ */ v(hw, {
 			...i,
 			ref: t,
 			__scopeSlider: n
-		}), r ? /* @__PURE__ */ _(kC, { __scopeSlider: n }, e) : null] })
+		}), r ? /* @__PURE__ */ v(vw, { __scopeSlider: n }, e) : null] })
 	});
-}, "SliderThumb")), OC = "SliderBubbleInput", kC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function({ __scopeSlider: t, ...n }, r) {
-	let { value: i, name: a, form: o } = SC(OC, t), s = e.useRef(null), c = J(s, r), l = XS(i);
+}, "SliderThumb")), _w = "SliderBubbleInput", vw = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ $(function({ __scopeSlider: t, ...n }, r) {
+	let { value: i, name: a, form: o } = dw(_w, t), s = e.useRef(null), c = J(s, r), l = zC(i);
 	return e.useEffect(() => {
 		let e = s.current;
 		if (!e) return;
@@ -15598,7 +16132,7 @@ var TC = "SliderThumbTrigger", EC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */
 			let t = new Event("input", { bubbles: !0 });
 			n.call(e, i), e.dispatchEvent(t);
 		}
-	}, [l, i]), /* @__PURE__ */ _(Ss.input, {
+	}, [l, i]), /* @__PURE__ */ v(Js.input, {
 		style: { display: "none" },
 		name: a,
 		form: o,
@@ -15607,52 +16141,52 @@ var TC = "SliderThumbTrigger", EC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */
 		defaultValue: i
 	});
 }, "SliderBubbleInput"));
-function AC(e = [], t, n) {
+function yw(e = [], t, n) {
 	let r = [...e];
 	return r[n] = t, r.sort((e, t) => e - t);
 }
-$(AC, "getNextSortedValues");
-function jC(e, t, n) {
-	return qS(100 / (n - t) * (e - t), [0, 100]);
+$(yw, "getNextSortedValues");
+function bw(e, t, n) {
+	return IC(100 / (n - t) * (e - t), [0, 100]);
 }
-$(jC, "convertValueToPercentage");
-function MC(e, t) {
+$(bw, "convertValueToPercentage");
+function xw(e, t) {
 	if (t > 2) return `Value ${e + 1} of ${t}`;
 	if (t === 2) return ["Minimum", "Maximum"][e];
 }
-$(MC, "getLabel");
-function NC(e, t) {
+$(xw, "getLabel");
+function Sw(e, t) {
 	if (e.length === 1) return 0;
 	let n = e.map((e) => Math.abs(e - t)), r = Math.min(...n);
 	return n.indexOf(r);
 }
-$(NC, "getClosestValueIndex");
-function PC(e, t, n) {
+$(Sw, "getClosestValueIndex");
+function Cw(e, t, n) {
 	let r = e / 2;
-	return (r - LC([0, 50], [0, r])(t) * n) * n;
+	return (r - Ew([0, 50], [0, r])(t) * n) * n;
 }
-$(PC, "getThumbInBoundsOffset");
-function FC(e) {
+$(Cw, "getThumbInBoundsOffset");
+function ww(e) {
 	return e.slice(0, -1).map((t, n) => e[n + 1] - t);
 }
-$(FC, "getStepsBetweenValues");
-function IC(e, t) {
+$(ww, "getStepsBetweenValues");
+function Tw(e, t) {
 	if (t > 0) {
-		let n = FC(e);
+		let n = ww(e);
 		return Math.min(...n) >= t;
 	}
 	return !0;
 }
-$(IC, "hasMinStepsBetweenValues");
-function LC(e, t) {
+$(Tw, "hasMinStepsBetweenValues");
+function Ew(e, t) {
 	return (n) => {
 		if (e[0] === e[1] || t[0] === t[1]) return t[0];
 		let r = (t[1] - t[0]) / (e[1] - e[0]);
 		return t[0] + r * (n - e[0]);
 	};
 }
-$(LC, "linearScale");
-function RC(e) {
+$(Ew, "linearScale");
+function Dw(e) {
 	if (!Number.isFinite(e)) return 0;
 	let t = e.toString();
 	if (t.includes("e")) {
@@ -15662,55 +16196,55 @@ function RC(e) {
 	let n = t.split(".")[1];
 	return n ? n.length : 0;
 }
-$(RC, "getDecimalCount");
-function zC(e, t) {
+$(Dw, "getDecimalCount");
+function Ow(e, t) {
 	let n = 10 ** t;
 	return Math.round(e * n) / n;
 }
-$(zC, "roundValue");
-function BC(e, { min: t, step: n, direction: r, multiplier: i }) {
-	let a = RC(n), o = (e - t) / n, s = Math.round(o), c = zC(s * n + t, a) === zC(e, a), l;
-	return l = c ? s + i * r : r > 0 ? Math.ceil(o) : Math.floor(o), zC(l * n + t, a);
+$(Ow, "roundValue");
+function kw(e, { min: t, step: n, direction: r, multiplier: i }) {
+	let a = Dw(n), o = (e - t) / n, s = Math.round(o), c = Ow(s * n + t, a) === Ow(e, a), l;
+	return l = c ? s + i * r : r > 0 ? Math.ceil(o) : Math.floor(o), Ow(l * n + t, a);
 }
-$(BC, "getNextStepValue");
-function VC(e) {
+$(kw, "getNextStepValue");
+function Aw(e) {
 	return typeof e == "function";
 }
-$(VC, "isFunction");
+$(Aw, "isFunction");
 //#endregion
 //#region src/uhuu/ui/slider.tsx
-var HC = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(dC, {
+var jw = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ y(ew, {
 	ref: n,
 	className: K("uhuu:relative uhuu:flex uhuu:w-full uhuu:touch-none uhuu:select-none uhuu:items-center uhuu:data-[disabled]:opacity-50", e),
 	...t,
-	children: [/* @__PURE__ */ _(vC, {
+	children: [/* @__PURE__ */ v(sw, {
 		className: "uhuu:relative uhuu:h-1.5 uhuu:w-full uhuu:grow uhuu:overflow-hidden uhuu:rounded-full uhuu:bg-gray-200",
-		children: /* @__PURE__ */ _(bC, { className: "uhuu:absolute uhuu:h-full uhuu:bg-gray-900" })
-	}), /* @__PURE__ */ _(DC, { className: "uhuu:block uhuu:h-4 uhuu:w-4 uhuu:rounded-full uhuu:border-2 uhuu:border-gray-900 uhuu:bg-(--uhuu-shell-surface) uhuu:shadow uhuu:transition-colors uhuu:focus-visible:outline-none uhuu:focus-visible:ring-2 uhuu:focus-visible:ring-gray-400 uhuu:focus-visible:ring-offset-2 uhuu:disabled:pointer-events-none uhuu:disabled:opacity-50" })]
+		children: /* @__PURE__ */ v(lw, { className: "uhuu:absolute uhuu:h-full uhuu:bg-gray-900" })
+	}), /* @__PURE__ */ v(gw, { className: "uhuu:block uhuu:h-4 uhuu:w-4 uhuu:rounded-full uhuu:border-2 uhuu:border-gray-900 uhuu:bg-(--uhuu-shell-surface) uhuu:shadow uhuu:transition-colors uhuu:focus-visible:outline-none uhuu:focus-visible:ring-2 uhuu:focus-visible:ring-gray-400 uhuu:focus-visible:ring-offset-2 uhuu:disabled:pointer-events-none uhuu:disabled:opacity-50" })]
 }));
-HC.displayName = dC.displayName;
+jw.displayName = ew.displayName;
 //#endregion
 //#region node_modules/.pnpm/@radix-ui+react-label@2.1.16_@types+react-dom@19.3.0_@types+react@19.3.0__@types+react@_a0d6e2f71ba73dadad94263bc45ff639/node_modules/@radix-ui/react-label/dist/index.mjs
-var UC = Object.defineProperty, WC = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ ((e, t) => UC(e, "name", {
+var Mw = Object.defineProperty, Nw = /* @__PURE__ */ e.forwardRef(/* @__PURE__ */ ((e, t) => Mw(e, "name", {
 	value: t,
 	configurable: !0
 }))(function(e, t) {
-	return /* @__PURE__ */ _(Ss.label, {
+	return /* @__PURE__ */ v(Js.label, {
 		...e,
 		ref: t,
 		onMouseDown: (t) => {
 			t.target.closest("button, input, select, textarea") || (e.onMouseDown?.(t), !t.defaultPrevented && t.detail > 1 && t.preventDefault());
 		}
 	});
-}, "Label")), GC = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ _(WC, {
+}, "Label")), Pw = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(Nw, {
 	ref: n,
 	className: K("uhuu:text-sm uhuu:font-medium uhuu:leading-none uhuu:text-gray-700 uhuu:peer-disabled:cursor-not-allowed uhuu:peer-disabled:opacity-70", e),
 	...t
 }));
-GC.displayName = WC.displayName;
+Pw.displayName = Nw.displayName;
 //#endregion
 //#region src/uhuu/editor-shell/document/page-options-renderer.tsx
-function KC(e, t) {
+function Fw(e, t) {
 	let n = (e, t) => !e.appliesTo || (Array.isArray(e.appliesTo) ? e.appliesTo : [e.appliesTo]).some((e) => typeof e == "function" ? e(t) : e === t.id || e === t.templateId || t.componentKey === e);
 	return e.filter((e) => {
 		if (!n(e, t)) return !1;
@@ -15718,22 +16252,22 @@ function KC(e, t) {
 		return e.type === "select" || e.type === "color-series" ? r !== "" : !0;
 	});
 }
-function qC({ pageOptions: e, targetItem: t, onChange: n }) {
-	let { localize: r } = Ua(), i = KC(e, t), a = (e) => {
+function Iw({ pageOptions: e, targetItem: t, onChange: n }) {
+	let { localize: r } = go(), i = Fw(e, t), a = (e) => {
 		let i = e.getValue(t), a = r(e.label);
 		switch (e.type) {
-			case "select": return /* @__PURE__ */ v("div", {
+			case "select": return /* @__PURE__ */ y("div", {
 				className: "uhuu:space-y-1.5",
-				children: [/* @__PURE__ */ _(GC, {
+				children: [/* @__PURE__ */ v(Pw, {
 					htmlFor: e.id,
 					className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-500",
 					children: a
-				}), /* @__PURE__ */ _(ES, {
+				}), /* @__PURE__ */ v(hC, {
 					id: e.id,
 					value: String(i),
 					onChange: (r) => n(e, t, r.target.value),
 					className: "uhuu:w-full uhuu:text-sm",
-					children: e.options.map((e) => /* @__PURE__ */ _("option", {
+					children: e.options.map((e) => /* @__PURE__ */ v("option", {
 						value: e.value,
 						children: r(e.label)
 					}, e.value))
@@ -15741,13 +16275,13 @@ function qC({ pageOptions: e, targetItem: t, onChange: n }) {
 			}, e.id);
 			case "toggle": {
 				let r = typeof i == "boolean" ? i : i === "true";
-				return /* @__PURE__ */ v("div", {
+				return /* @__PURE__ */ y("div", {
 					className: "uhuu:flex uhuu:items-center uhuu:justify-between uhuu:py-1.5",
-					children: [/* @__PURE__ */ _(GC, {
+					children: [/* @__PURE__ */ v(Pw, {
 						htmlFor: e.id,
 						className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-500",
 						children: a
-					}), /* @__PURE__ */ _(WS, {
+					}), /* @__PURE__ */ v(NC, {
 						id: e.id,
 						checked: r,
 						onCheckedChange: (r) => n(e, t, String(r))
@@ -15756,19 +16290,19 @@ function qC({ pageOptions: e, targetItem: t, onChange: n }) {
 			}
 			case "slider": {
 				let r = typeof i == "number" ? i : Number(i) || e.min;
-				return /* @__PURE__ */ v("div", {
+				return /* @__PURE__ */ y("div", {
 					className: "uhuu:space-y-1.5",
-					children: [/* @__PURE__ */ v("div", {
+					children: [/* @__PURE__ */ y("div", {
 						className: "uhuu:flex uhuu:items-center uhuu:justify-between",
-						children: [/* @__PURE__ */ _(GC, {
+						children: [/* @__PURE__ */ v(Pw, {
 							htmlFor: e.id,
 							className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-500",
 							children: a
-						}), /* @__PURE__ */ _("span", {
+						}), /* @__PURE__ */ v("span", {
 							className: "uhuu:text-xs uhuu:font-mono uhuu:tabular-nums uhuu:text-gray-700",
 							children: r
 						})]
-					}), /* @__PURE__ */ _(HC, {
+					}), /* @__PURE__ */ v(jw, {
 						id: e.id,
 						min: e.min,
 						max: e.max,
@@ -15780,15 +16314,15 @@ function qC({ pageOptions: e, targetItem: t, onChange: n }) {
 			}
 			case "counter": {
 				let r = typeof i == "number" ? i : Number(i) || e.min;
-				return /* @__PURE__ */ v("div", {
+				return /* @__PURE__ */ y("div", {
 					className: "uhuu:space-y-1.5",
-					children: [/* @__PURE__ */ _(GC, {
+					children: [/* @__PURE__ */ v(Pw, {
 						className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-500",
 						children: a
-					}), /* @__PURE__ */ v("div", {
+					}), /* @__PURE__ */ y("div", {
 						className: "uhuu:flex uhuu:items-center uhuu:gap-2",
 						children: [
-							/* @__PURE__ */ _(Do, {
+							/* @__PURE__ */ v($o, {
 								variant: "outline",
 								size: "sm",
 								className: "uhuu:h-8 uhuu:w-8 uhuu:shrink-0 uhuu:p-0",
@@ -15798,16 +16332,16 @@ function qC({ pageOptions: e, targetItem: t, onChange: n }) {
 								},
 								disabled: r <= e.min,
 								type: "button",
-								children: /* @__PURE__ */ _(Ji, { className: "uhuu:h-3.5 uhuu:w-3.5" })
+								children: /* @__PURE__ */ v(da, { className: "uhuu:h-3.5 uhuu:w-3.5" })
 							}),
-							/* @__PURE__ */ _("div", {
+							/* @__PURE__ */ v("div", {
 								className: "uhuu:flex-1 uhuu:text-center uhuu:px-3 uhuu:py-1.5 uhuu:bg-gray-50 uhuu:rounded-md uhuu:border uhuu:border-gray-200",
-								children: /* @__PURE__ */ _("span", {
+								children: /* @__PURE__ */ v("span", {
 									className: "uhuu:text-sm uhuu:font-mono uhuu:tabular-nums uhuu:font-medium uhuu:text-gray-900",
 									children: r
 								})
 							}),
-							/* @__PURE__ */ _(Do, {
+							/* @__PURE__ */ v($o, {
 								variant: "outline",
 								size: "sm",
 								className: "uhuu:h-8 uhuu:w-8 uhuu:shrink-0 uhuu:p-0",
@@ -15817,7 +16351,7 @@ function qC({ pageOptions: e, targetItem: t, onChange: n }) {
 								},
 								disabled: r >= e.max,
 								type: "button",
-								children: /* @__PURE__ */ _(Xi, { className: "uhuu:h-3.5 uhuu:w-3.5" })
+								children: /* @__PURE__ */ v(pa, { className: "uhuu:h-3.5 uhuu:w-3.5" })
 							})
 						]
 					})]
@@ -15825,22 +16359,22 @@ function qC({ pageOptions: e, targetItem: t, onChange: n }) {
 			}
 			case "color-series": {
 				let o = String(i);
-				return /* @__PURE__ */ v("div", {
+				return /* @__PURE__ */ y("div", {
 					className: "uhuu:space-y-1.5",
-					children: [/* @__PURE__ */ _(GC, {
+					children: [/* @__PURE__ */ v(Pw, {
 						className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-500",
 						children: a
-					}), /* @__PURE__ */ _("div", {
+					}), /* @__PURE__ */ v("div", {
 						className: "uhuu:flex uhuu:flex-wrap uhuu:gap-1.5",
 						children: e.options.map((i) => {
 							let a = o === i.value, s = r(i.label) ?? i.value;
-							return /* @__PURE__ */ _("button", {
+							return /* @__PURE__ */ v("button", {
 								onClick: () => n(e, t, i.value),
 								className: `uhuu:h-7 uhuu:w-7 uhuu:rounded-md uhuu:border-2 uhuu:transition-all uhuu:flex uhuu:items-center uhuu:justify-center ${a ? "uhuu:border-gray-900 uhuu:scale-110" : "uhuu:border-gray-200 uhuu:hover:border-gray-400 uhuu:hover:scale-105"}`,
 								style: { backgroundColor: i.hex || i.value },
 								type: "button",
 								title: `${s}${i.hex ? ` (${i.hex})` : ""}`,
-								children: a && /* @__PURE__ */ _(zi, {
+								children: a && /* @__PURE__ */ v(na, {
 									className: "uhuu:h-4 uhuu:w-4 uhuu:text-white uhuu:drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]",
 									strokeWidth: 3
 								})
@@ -15852,34 +16386,34 @@ function qC({ pageOptions: e, targetItem: t, onChange: n }) {
 			default: return console.warn(`Unknown option type: ${e.type}`), null;
 		}
 	};
-	return /* @__PURE__ */ _("div", {
+	return /* @__PURE__ */ v("div", {
 		className: "uhuu:space-y-3",
 		children: i.map((e) => a(e))
 	});
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/page-options-dropdown.tsx
-function JC({ pageOptions: e, targetItem: t, onChange: n, title: r, triggerClassName: i }) {
-	let { t: a } = Ua(), o = r ?? a("page.optionsMenu");
-	return !t || KC(e, t).length === 0 ? null : /* @__PURE__ */ v(th, {
+function Lw({ pageOptions: e, targetItem: t, onChange: n, title: r, triggerClassName: i }) {
+	let { t: a } = go(), o = r ?? a("page.optionsMenu");
+	return !t || Fw(e, t).length === 0 ? null : /* @__PURE__ */ y(Dh, {
 		modal: !1,
-		children: [/* @__PURE__ */ _(nh, {
+		children: [/* @__PURE__ */ v(Oh, {
 			asChild: !0,
 			className: i || "uhuu-page-options-trigger",
-			children: /* @__PURE__ */ v(Do, {
+			children: /* @__PURE__ */ y($o, {
 				variant: "ghost",
 				size: "sm",
 				className: "uhuu:h-7 uhuu:w-7 uhuu:text-gray-400 uhuu:hover:text-gray-600 uhuu:border uhuu:border-transparent uhuu:hover:border-gray-200 uhuu:rounded-md",
 				title: o,
-				children: [/* @__PURE__ */ _(Wi, { className: "uhuu:w-3.5 uhuu:h-3.5" }), /* @__PURE__ */ _("span", {
+				children: [/* @__PURE__ */ v(sa, { className: "uhuu:w-3.5 uhuu:h-3.5" }), /* @__PURE__ */ v("span", {
 					className: "uhuu:sr-only",
 					children: o
 				})]
 			})
-		}), /* @__PURE__ */ _(oh, {
+		}), /* @__PURE__ */ v(Mh, {
 			className: "uhuu:min-w-48 uhuu:p-3",
 			align: "center",
-			children: /* @__PURE__ */ _(qC, {
+			children: /* @__PURE__ */ v(Iw, {
 				pageOptions: e,
 				targetItem: t,
 				onChange: n
@@ -15889,8 +16423,8 @@ function JC({ pageOptions: e, targetItem: t, onChange: n, title: r, triggerClass
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/page-name-dropdown.tsx
-function YC({ name: e, canRename: t, canMoveUp: n, canMoveDown: r, canAddPage: i, canDuplicate: a, canDelete: o, onRename: s, onMoveUp: c, onMoveDown: u, onAddPage: d, onDuplicate: f, onDelete: h }) {
-	let { t: g } = Ua(), [y, b] = m(!1), [x, S] = m(!1), [C, w] = m(e), T = p(null);
+function Rw({ name: e, canRename: t, canMoveUp: n, canMoveDown: r, canAddPage: i, canDuplicate: a, canDelete: o, onRename: s, onMoveUp: c, onMoveDown: u, onAddPage: d, onDuplicate: f, onDelete: p }) {
+	let { t: g } = go(), [_, b] = h(!1), [x, S] = h(!1), [C, w] = h(e), T = m(null);
 	l(() => {
 		w(e);
 	}, [e]), l(() => {
@@ -15902,7 +16436,7 @@ function YC({ name: e, canRename: t, canMoveUp: n, canMoveDown: r, canAddPage: i
 		let t = C.trim();
 		t && t !== e && s?.(t), S(!1);
 	}, D = n || r || i || a || o;
-	return x ? /* @__PURE__ */ _("input", {
+	return x ? /* @__PURE__ */ v("input", {
 		ref: T,
 		value: C,
 		onChange: (e) => w(e.target.value),
@@ -15912,87 +16446,87 @@ function YC({ name: e, canRename: t, canMoveUp: n, canMoveDown: r, canAddPage: i
 		onBlur: E,
 		className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-800 uhuu:bg-(--uhuu-shell-surface) uhuu:border uhuu:border-blue-400 uhuu:rounded-md uhuu:px-2 uhuu:py-1 uhuu:focus:outline-none uhuu:focus:ring-2 uhuu:focus:ring-blue-400/30 uhuu:max-w-[140px] uhuu:h-7",
 		"data-uhuu-editor": !0
-	}) : t || D ? /* @__PURE__ */ v(th, {
-		open: y,
+	}) : t || D ? /* @__PURE__ */ y(Dh, {
+		open: _,
 		onOpenChange: b,
 		modal: !1,
-		children: [/* @__PURE__ */ _(nh, {
+		children: [/* @__PURE__ */ v(Oh, {
 			asChild: !0,
-			children: /* @__PURE__ */ v("button", {
+			children: /* @__PURE__ */ y("button", {
 				className: "uhuu:flex uhuu:items-center uhuu:gap-1 uhuu:text-xs uhuu:font-medium uhuu:text-gray-700 uhuu:hover:text-gray-900 uhuu:rounded-md uhuu:px-2 uhuu:h-7 uhuu:hover:bg-gray-100 uhuu:transition-colors uhuu:border uhuu:border-transparent uhuu:hover:border-gray-200",
 				"data-uhuu-editor": !0,
-				children: [/* @__PURE__ */ _("span", {
+				children: [/* @__PURE__ */ v("span", {
 					className: "uhuu:truncate uhuu:max-w-[120px]",
 					children: e
-				}), /* @__PURE__ */ _(Bi, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:text-gray-500 uhuu:shrink-0" })]
+				}), /* @__PURE__ */ v(ra, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:text-gray-500 uhuu:shrink-0" })]
 			})
-		}), /* @__PURE__ */ v(oh, {
+		}), /* @__PURE__ */ y(Mh, {
 			className: "uhuu:min-w-44 uhuu:p-1",
 			align: "start",
 			children: [
-				t && /* @__PURE__ */ v(sh, {
+				t && /* @__PURE__ */ y(Nh, {
 					onSelect: (e) => {
 						e.preventDefault(), b(!1), S(!0);
 					},
-					children: [/* @__PURE__ */ _(Yi, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:mr-2" }), g("page.rename")]
+					children: [/* @__PURE__ */ v(fa, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:mr-2" }), g("page.rename")]
 				}),
-				t && D && /* @__PURE__ */ _(dh, {}),
-				n && /* @__PURE__ */ v(sh, {
+				t && D && /* @__PURE__ */ v(Lh, {}),
+				n && /* @__PURE__ */ y(Nh, {
 					onClick: c,
-					children: [/* @__PURE__ */ _(Li, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:mr-2" }), g("page.moveUp")]
+					children: [/* @__PURE__ */ v(ea, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:mr-2" }), g("page.moveUp")]
 				}),
-				r && /* @__PURE__ */ v(sh, {
+				r && /* @__PURE__ */ y(Nh, {
 					onClick: u,
-					children: [/* @__PURE__ */ _(Fi, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:mr-2" }), g("page.moveDown")]
+					children: [/* @__PURE__ */ v(Qi, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:mr-2" }), g("page.moveDown")]
 				}),
-				i && (n || r) && /* @__PURE__ */ _(dh, {}),
-				i && /* @__PURE__ */ v(sh, {
+				i && (n || r) && /* @__PURE__ */ v(Lh, {}),
+				i && /* @__PURE__ */ y(Nh, {
 					onClick: d,
-					children: [/* @__PURE__ */ _(Xi, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:mr-2" }), g("page.addPage")]
+					children: [/* @__PURE__ */ v(pa, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:mr-2" }), g("page.addPage")]
 				}),
-				a && /* @__PURE__ */ v(sh, {
+				a && /* @__PURE__ */ y(Nh, {
 					onClick: f,
-					children: [/* @__PURE__ */ _(Ui, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:mr-2" }), g("page.duplicate")]
+					children: [/* @__PURE__ */ v(oa, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:mr-2" }), g("page.duplicate")]
 				}),
-				o && /* @__PURE__ */ _(dh, {}),
-				o && /* @__PURE__ */ v(sh, {
-					onClick: h,
+				o && /* @__PURE__ */ v(Lh, {}),
+				o && /* @__PURE__ */ y(Nh, {
+					onClick: p,
 					className: "uhuu:text-red-600 uhuu:focus:text-red-700 uhuu:focus:bg-red-50",
-					children: [/* @__PURE__ */ _(Qi, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:mr-2" }), g("page.delete")]
+					children: [/* @__PURE__ */ v(ga, { className: "uhuu:w-3.5 uhuu:h-3.5 uhuu:mr-2" }), g("page.delete")]
 				})
 			]
 		})]
-	}) : /* @__PURE__ */ _("span", {
+	}) : /* @__PURE__ */ v("span", {
 		className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-600 uhuu:truncate uhuu:max-w-[120px]",
 		children: e
 	});
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/cover-spread-layout.js
-function XC(e) {
+function zw(e) {
 	if (!e || typeof e != "object" || !("binding" in e)) return e;
 	let { binding: t, ...n } = e;
 	return n;
 }
-function ZC(e, t) {
-	return !!k(e?.binding) && t?.mode === "cover";
+function Bw(e, t) {
+	return !!A(e?.binding) && t?.mode === "cover";
 }
-function QC({ pageFormat: e = {}, pageFilter: t, pages: n = [] } = {}) {
+function Vw({ pageFormat: e = {}, pageFilter: t, pages: n = [] } = {}) {
 	let r = {
 		active: !1,
 		plan: null,
-		setup: XC(e),
+		setup: zw(e),
 		warnings: []
 	};
-	if (!ZC(e, t)) return r;
-	let i = k(e.binding), a = {
-		...I.resolveDimensions(e),
-		bleed: I.clampBleed(e.bleed),
+	if (!Bw(e, t)) return r;
+	let i = A(e.binding), a = {
+		...L.resolveDimensions(e),
+		bleed: L.clampBleed(e.bleed),
 		binding: i
-	}, o = N({
+	}, o = P({
 		...a,
 		coverPages: n
-	}), s = F({
+	}), s = I({
 		...a,
 		coverPageCount: t.coverPageCount ?? 2,
 		coverPages: n,
@@ -16014,56 +16548,45 @@ function QC({ pageFormat: e = {}, pageFilter: t, pages: n = [] } = {}) {
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/use-page-groups.ts
-function $C(e) {
-	let { initialItems: t, availableItems: n = [], onItemsChange: r, onStateChange: i, pageComponents: a, payload: o, setup: u, stateKey: f = Wg, resolveNewItem: h, notifyError: g, pageFilter: _ } = e, [v, y] = m(t), [b, x] = m(!1), S = Ua(), { t: C } = S, w = p(t);
+function Hw(e) {
+	let { initialItems: t, availableItems: n = [], onItemsChange: r, onStateChange: i, payload: a, stateKey: o = C_, resolveNewItem: u, notifyError: d, pageFilter: p } = e, [g, _] = h(t), [v, y] = h(!1), { t: b } = go(), x = m(t);
 	l(() => {
 		try {
-			JSON.stringify(w.current) !== JSON.stringify(t) && (w.current = t, y(t));
+			JSON.stringify(x.current) !== JSON.stringify(t) && (x.current = t, _(t));
 		} catch {
-			w.current !== t && (w.current = t, y(t));
+			x.current !== t && (x.current = t, _(t));
 		}
 	}, [t]);
-	let T = c(v_), E = s((e) => {
-		y(e);
-		let t = Qg(e, f);
-		T?.mergePageEditorState && T.mergePageEditorState(e, f), i?.(t), r?.(e, t);
+	let S = c(Z_), C = s((e) => {
+		_(e);
+		let t = j_(e, o);
+		S?.mergePageEditorState && S.mergePageEditorState(e, o), i?.(t), r?.(e, t);
 	}, [
 		r,
 		i,
-		f,
-		T
-	]), D = d(() => {
+		o,
+		S
+	]), w = f(() => {
 		let e = /* @__PURE__ */ new Map();
-		return v.forEach((t) => {
+		return g.forEach((t) => {
 			let n = t.templateId ?? t.id;
-			e.set(n, (e.get(n) ?? 0) + 1), Gg(t) && t.pages?.forEach((t) => {
+			e.set(n, (e.get(n) ?? 0) + 1), w_(t) && t.pages?.forEach((t) => {
 				let n = t.templateId ?? t.id;
 				e.set(n, (e.get(n) ?? 0) + 1);
 			});
 		}), e;
-	}, [v]), O = d(() => n.filter((e) => {
+	}, [g]), T = f(() => n.filter((e) => {
 		if (e.kind === "page") {
-			let t = e, n = t.templateId ?? t.id, r = D.get(n) ?? 0, i = t.repeatable ?? !1, a = t.maxInstances ?? null;
+			let t = e, n = t.templateId ?? t.id, r = w.get(n) ?? 0, i = t.repeatable ?? !1, a = t.maxInstances ?? null;
 			return !(!i && r > 0 || a !== null && r >= a);
 		}
-		let t = e, n = t.templateId ?? t.id, r = D.get(n) ?? 0, i = t.repeatable ?? !1, a = t.maxInstances ?? null;
+		let t = e, n = t.templateId ?? t.id, r = w.get(n) ?? 0, i = t.repeatable ?? !1, a = t.maxInstances ?? null;
 		return !(!i && r > 0 || i && a !== null && r >= a);
-	}), [n, D]), k = d(() => Jg(v), [v]), A = s(async (e, t) => {
-		let n = (e) => e ? typeof e == "string" ? e : e.mode ?? "optional" : "none", r = (e, t) => {
-			if (!e) return [];
-			if (Array.isArray(e)) return e;
-			try {
-				let n = e(t);
-				if (!Array.isArray(n)) return console.error("[uhuu-components] pageComponentKeys function must return an array, got:", typeof n), [];
-				let r = n.filter((e) => typeof e == "string");
-				return r.length !== n.length && console.warn("[uhuu-components] pageComponentKeys returned non-string values, filtering them out"), r;
-			} catch (e) {
-				return console.error("[uhuu-components] Error evaluating pageComponentKeys function:", e), [];
-			}
-		}, i = ((e) => {
+	}), [n, w]), E = f(() => D_(g), [g]), D = s(async (e, t) => {
+		let n = (e) => e ? typeof e == "string" ? e : e.mode ?? "optional" : "none", r = ((e) => {
 			if (e.kind === "page") {
 				let t = e;
-				return n_(t.templateId ?? t.id, t.componentKey ?? t.id, {
+				return F_(t.templateId ?? t.id, t.componentKey ?? t.id, {
 					label: t.label,
 					className: t.className,
 					repeatable: t.repeatable,
@@ -16072,12 +16595,12 @@ function $C(e) {
 					strictPosition: t.strictPosition
 				});
 			}
-			let t = e, n = t.templateId ?? t.id, i = {
-				payload: o,
+			let t = e, n = t.templateId ?? t.id, r = {
+				payload: a,
 				item: void 0,
 				parent: void 0
 			};
-			return r_(n, r(t.pageComponentKeys, i), {
+			return I_(n, sv(t.pageComponentKeys, r), {
 				label: t.label,
 				repeatable: t.repeatable ?? !1,
 				maxInstances: t.maxInstances ?? null,
@@ -16086,207 +16609,211 @@ function $C(e) {
 			});
 		})(e);
 		typeof window < "u" && window.$uhuu?.debug;
-		let a, s = i;
-		if (h) s = await h(i);
+		let i, o = r;
+		if (u) o = await u(r);
 		else {
-			let e = n(i.integration), t = !1;
+			let e = n(r.integration), t = !1;
 			if (e !== "none" && typeof window < "u") {
 				let n = window.$uhuu?.requestIntegration?.bind(window.$uhuu);
-				n && (a = await n({
-					item: i,
+				n && (i = await n({
+					item: r,
 					mode: e
-				}), a == null && e === "required" && (t = !0));
+				}), i == null && e === "required" && (t = !0));
 			}
 			if (t) return { success: !1 };
 		}
-		if (s === null) return { success: !1 };
-		let c = s ?? i;
-		if (a !== void 0 && T?.setIntegrationPayload) {
-			let e = c.id;
-			T.setIntegrationPayload(e, a);
+		if (o === null) return { success: !1 };
+		let s = o ?? r;
+		if (i !== void 0 && S?.setIntegrationPayload) {
+			let e = s.id;
+			S.setIntegrationPayload(e, i);
 		}
-		return E(((e, t, n) => {
-			let r = t.strictPosition;
-			if (r === "start") return [t, ...e];
-			if (r === "end") return [...e, t];
-			let i = [], a = [], o = [];
-			if (e.forEach((e) => {
-				let t = e.strictPosition;
-				t === "start" ? i.push(e) : t === "end" ? o.push(e) : a.push(e);
-			}), !n || n.mode === "end") return [
-				...i,
-				...a,
-				t,
-				...o
-			];
-			let s = a.findIndex((e) => e.id === n.anchorId);
-			return s === -1 ? e.find((e) => e.id === n.anchorId)?.strictPosition === "start" ? [
-				...i,
-				t,
-				...a,
-				...o
-			] : [
-				...i,
-				...a,
-				t,
-				...o
-			] : (n.mode === "before" ? a.splice(s, 0, t) : a.splice(s + 1, 0, t), [
-				...i,
-				...a,
-				...o
-			]);
-		})(v, c, t)), {
+		return C(dv(g, s, t)), {
 			success: !0,
-			insertedId: c.id
+			insertedId: s.id
 		};
 	}, [
-		v,
-		E,
-		h,
-		T,
-		o
-	]), j = s((e) => {
+		g,
+		C,
+		u,
+		S,
+		a
+	]), O = s((e) => {
 		let t = (e) => {
-			g ? g(e) : alert(e);
-		}, n = v.find((t) => t.id === e);
+			d ? d(e) : alert(e);
+		}, n = g.find((t) => t.id === e);
 		if (n) {
-			if (Jg(v) <= 1) {
-				t(C("notice.lastPage"));
+			if (D_(g) <= 1) {
+				t(b("notice.lastPage"));
 				return;
 			}
-			if (T?.removeIntegrationPayload) {
+			if (S?.removeIntegrationPayload) {
 				let e = n.id;
-				T.payload?.integrations?.[e] !== void 0 && T.removeIntegrationPayload(e);
+				S.payload?.integrations?.[e] !== void 0 && S.removeIntegrationPayload(e);
 			}
-			E(v.filter((t) => t.id !== e));
-		} else for (let n of v) if (Gg(n) && n.pages.some((t) => t.id === e)) {
-			if (Jg(v) <= 1) {
-				t(C("notice.lastPage"));
+			C(g.filter((t) => t.id !== e));
+		} else for (let n of g) if (w_(n) && n.pages.some((t) => t.id === e)) {
+			if (D_(g) <= 1) {
+				t(b("notice.lastPage"));
 				return;
 			}
 			if (n.pages.length === 1) {
-				if (T?.removeIntegrationPayload) {
+				if (S?.removeIntegrationPayload) {
 					let e = n.id;
-					T.payload?.integrations?.[e] !== void 0 && T.removeIntegrationPayload(e);
+					S.payload?.integrations?.[e] !== void 0 && S.removeIntegrationPayload(e);
 				}
-				E(v.filter((e) => e.id !== n.id));
-			} else E(v.map((t) => t.id === n.id && Gg(t) ? {
+				C(g.filter((e) => e.id !== n.id));
+			} else C(g.map((t) => t.id === n.id && w_(t) ? {
 				...t,
 				pages: t.pages.filter((t) => t.id !== e)
 			} : t));
 			return;
 		}
 	}, [
-		v,
 		g,
-		E,
-		T,
-		C
-	]), M = s((e, t) => {
-		E(v.map((n) => n.id === e ? (Gg(n), {
+		d,
+		C,
+		S,
+		b
+	]), k = s((e, t) => {
+		C(g.map((n) => n.id === e ? (w_(n), {
 			...n,
 			...t
 		}) : n));
-	}, [v, E]), N = s((e) => {
-		E(e);
-	}, [E]), P = d(() => {
-		let e = qg(v);
-		return _ ? s_(e, _) : e;
-	}, [v, _]), F = s((e) => {
+	}, [g, C]), A = s((e) => {
+		C(e);
+	}, [C]), j = f(() => {
+		let e = E_(g);
+		return p ? B_(e, p) : e;
+	}, [g, p]), M = s((e) => {
 		let t = [];
-		return P.forEach((n) => {
-			Gg(n) ? (n.pages ?? []).forEach((r) => {
+		return j.forEach((n) => {
+			w_(n) ? (n.pages ?? []).forEach((r) => {
 				t.push(e(r, n));
 			}) : t.push(e(n, n));
 		}), t;
-	}, [P]), I = d(() => Yg(P), [P]), L = s((e) => {
-		let t = Xg(e, v);
-		E(((e) => {
-			let t = [], n = [], r = [];
-			return e.forEach((e) => {
-				let i = e.strictPosition;
-				i === "start" ? t.push(e) : i === "end" ? r.push(e) : n.push(e);
-			}), [
-				...t,
-				...n,
-				...r
-			];
-		})(t));
-	}, [v, E]);
+	}, [j]), N = f(() => O_(j), [j]), P = s((e) => {
+		let t = k_(e, g);
+		C(uv(t));
+	}, [g, C]);
 	return {
-		items: v,
-		itemsWithPageNum: P,
-		totalPageCount: k,
-		availableItemsToAdd: O,
-		addItem: A,
-		removeItem: j,
-		updateItemFields: M,
-		reorderItems: N,
-		addDialogOpen: b,
-		setAddDialogOpen: x,
+		items: g,
+		itemsWithPageNum: j,
+		totalPageCount: E,
+		availableItemsToAdd: T,
+		addItem: D,
+		removeItem: O,
+		updateItemFields: k,
+		reorderItems: A,
+		addDialogOpen: v,
+		setAddDialogOpen: y,
 		openAddDialog: s(() => {
-			x(!0);
+			y(!0);
 		}, []),
-		renderItems: F,
-		itemsForReorder: I,
-		handleReorder: L,
-		defaultRenderThumbnail: d(() => {
-			if (a) return Fv({
-				pageComponents: a,
-				payload: o,
-				setup: u,
-				i18n: S
-			});
-		}, [
-			a,
-			o,
-			u,
-			S
-		])
+		renderItems: M,
+		itemsForReorder: N,
+		handleReorder: P
 	};
 }
 //#endregion
+//#region src/uhuu/editor-shell/document/page-item-duplicate.ts
+function Uw(e) {
+	let t = e.templateId ?? e.id;
+	if (!w_(e)) {
+		let n = F_(t, e.componentKey ?? t, { repeatable: !0 });
+		return {
+			...e,
+			id: n.id,
+			templateId: t,
+			componentKey: n.componentKey
+		};
+	}
+	let n = I_(t, e.pages.map((e) => ({
+		key: e.componentKey ?? e.templateId ?? e.id,
+		dataKey: e.dataKey,
+		hasFlow: e.hasFlow
+	})), { repeatable: !0 });
+	return {
+		...e,
+		id: n.id,
+		templateId: t,
+		pages: e.pages.map((e, t) => ({
+			...e,
+			id: n.pages[t].id
+		}))
+	};
+}
+function Ww(e) {
+	return Array.isArray(e) ? e.map(Ww) : e && typeof e == "object" ? Object.fromEntries(Object.entries(e).map(([e, t]) => [e, Ww(t)])) : e;
+}
+function Gw(e, t, n, r = []) {
+	let i = [[t, n]];
+	w_(t) && w_(n) && t.pages.forEach((e, t) => i.push([e, n.pages[t]]));
+	let a = { ...e ?? {} }, o = r.filter((e) => w_(e) && e.id !== t.id).map((e) => `${e.id}__`);
+	for (let r of [
+		"pages",
+		"groups",
+		"integrations"
+	]) {
+		let s = { ...e?.[r] ?? {} }, c = !1;
+		for (let [e, t] of i) s[e.id] !== void 0 && (s[t.id] = Ww(s[e.id]), c = !0);
+		if (w_(t)) {
+			let i = `${t.id}__`;
+			for (let [t, a] of Object.entries(e?.[r] ?? {})) t.startsWith(i) && !o.some((e) => t.startsWith(e)) && (s[`${n.id}__${t.slice(i.length)}`] = Ww(a), c = !0);
+		}
+		c && (a[r] = s);
+	}
+	for (let [t, n] of i) {
+		let r = X_(e, t);
+		r !== void 0 && a.pages?.[n.id] === void 0 && (a.pages = {
+			...a.pages ?? {},
+			[n.id]: Ww(r)
+		});
+	}
+	return a;
+}
+//#endregion
 //#region src/uhuu/editor-shell/document/use-page-item-actions.ts
-function ew({ items: e, reorderItems: t, availableItemsToAdd: n, setPendingInsertPosition: r, openAddDialog: i }) {
-	let a = d(() => e.filter((e) => !e.strictPosition), [e]);
-	return s((o, s) => {
-		if (!o) return {};
-		let c = o.id, l = a.findIndex((e) => e.id === c), u = l !== -1, d = u && l > 0 ? () => {
-			let n = [...e], r = n.findIndex((e) => e.id === c);
+function Kw({ items: e, reorderItems: t, availableItemsToAdd: n, setPendingInsertPosition: r, openAddDialog: i }) {
+	let a = c(Z_), o = f(() => e.filter((e) => !e.strictPosition), [e]);
+	return s((s, c) => {
+		if (!s) return {};
+		let l = s.id, u = o.findIndex((e) => e.id === l), d = u !== -1, f = d && u > 0 ? () => {
+			let n = [...e], r = n.findIndex((e) => e.id === l);
 			r < 1 || ([n[r - 1], n[r]] = [n[r], n[r - 1]], t(n));
-		} : void 0, f = u && l < a.length - 1 ? () => {
-			let n = [...e], r = n.findIndex((e) => e.id === c);
+		} : void 0, p = d && u < o.length - 1 ? () => {
+			let n = [...e], r = n.findIndex((e) => e.id === l);
 			r < 0 || r >= n.length - 1 || ([n[r], n[r + 1]] = [n[r + 1], n[r]], t(n));
-		} : void 0, p = u && o.repeatable ? () => {
-			let n = {
-				...e.find((e) => e.id === c) ?? o,
-				id: `${c}_copy_${Date.now()}`
-			}, r = [...e], i = r.findIndex((e) => e.id === c);
-			r.splice(i < 0 ? r.length : i + 1, 0, n), t(r);
+		} : void 0, m = d && s.repeatable ? () => {
+			let n = e.find((e) => e.id === l) ?? s, r = Uw(n);
+			a?.setPayload((t) => Gw(t, n, r, e));
+			let i = [...e], o = i.findIndex((e) => e.id === l);
+			i.splice(o < 0 ? i.length : o + 1, 0, r), t(i);
 		} : void 0;
 		return {
-			onAddPage: s && n.length > 0 ? () => {
+			onAddPage: c && n.length > 0 ? () => {
 				r({
 					mode: "before",
-					anchorId: s
+					anchorId: c
 				}), i();
 			} : void 0,
-			onMoveUp: d,
-			onMoveDown: f,
-			onDuplicate: p
+			onMoveUp: f,
+			onMoveDown: p,
+			onDuplicate: m
 		};
 	}, [
 		e,
-		a,
+		o,
 		t,
 		n,
 		r,
-		i
+		i,
+		a
 	]);
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/flow-layout-core.js
-function tw(e = [], t = {}) {
+function qw(e = [], t = {}) {
 	let n = [], r = 1;
 	for (let i of e) {
 		let e = i.hasFlow ? t[i.flowKey] : void 0, a = Object.values(e?.flows ?? {}), o = Math.max(1, ...a.map((e) => e.length));
@@ -16303,11 +16830,11 @@ function tw(e = [], t = {}) {
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/use-flow-layouts.ts
-function nw({ logicalPages: e, pageFilter: t, layoutKey: n = "" }) {
-	let [r, i] = m({
+function Jw({ logicalPages: e, pageFilter: t, layoutKey: n = "" }) {
+	let [r, i] = h({
 		layoutKey: n,
 		layouts: {}
-	}), a = d(() => r.layoutKey === n ? r.layouts : {}, [r, n]), o = d(() => e.filter((e) => e.hasFlow).map((e) => e.flowKey).join("|"), [e]), c = d(() => new Set(o ? o.split("|") : []), [o]), l = d(() => {
+	}), a = f(() => r.layoutKey === n ? r.layouts : {}, [r, n]), o = f(() => e.filter((e) => e.hasFlow).map((e) => e.flowKey).join("|"), [e]), c = f(() => new Set(o ? o.split("|") : []), [o]), l = f(() => {
 		let t = {};
 		for (let n of e) {
 			if (!n.hasFlow) continue;
@@ -16345,7 +16872,7 @@ function nw({ logicalPages: e, pageFilter: t, layoutKey: n = "" }) {
 				}
 			};
 		});
-	}, [c, n]), f = s((e, t) => {
+	}, [c, n]), d = s((e, t) => {
 		i((r) => {
 			let i = r.layouts[e];
 			if (r.layoutKey !== n || !i) return r;
@@ -16365,30 +16892,30 @@ function nw({ logicalPages: e, pageFilter: t, layoutKey: n = "" }) {
 				}
 			};
 		});
-	}, [n]), p = d(() => tw(e, l), [e, l]), h = p.length;
+	}, [n]), p = f(() => qw(e, l), [e, l]), m = p.length;
 	return {
 		committedFlowLayouts: l,
 		allVirtualPages: p,
-		renderedVirtualPages: d(() => p.filter((e) => c_(e.pageNum, h, t ?? void 0)), [
+		renderedVirtualPages: f(() => p.filter((e) => V_(e.pageNum, m, t ?? void 0)), [
 			p,
-			h,
+			m,
 			t
 		]),
-		virtualTotalPageCount: h,
+		virtualTotalPageCount: m,
 		registerMeasurement: u,
-		pruneMeasurements: f
+		pruneMeasurements: d
 	};
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/data-binding.ts
-function rw(e, t) {
+function Yw(e, t) {
 	return e ? t ? `${e}.${t}` : e : null;
 }
-function iw(e, t, n) {
+function Xw(e, t, n) {
 	return t?.meta?.imageGalleryPath ?? t?.config?.imageGalleryPath ?? t?.imageGalleryPath ?? e?.options?.imageGalleryPath ?? e?.templateSetup?.options?.imageGalleryPath ?? n?.imageGalleryPath;
 }
-function aw({ payload: e, page: t, parentGroup: n, pagePayload: r, defaults: i }) {
-	let a = d_(e, t, n), o = n && Gg(n) ? n.id : void 0, s = `pages.${t.id}`, c = o ? `pages.${o}` : null;
+function Zw({ payload: e, page: t, parentGroup: n, pagePayload: r, defaults: i }) {
+	let a = W_(e, t, n), o = n && w_(n) ? n.id : void 0, s = `pages.${t.id}`, c = o ? `pages.${o}` : null;
 	return {
 		payload: e,
 		pageId: t.id,
@@ -16397,20 +16924,20 @@ function aw({ payload: e, page: t, parentGroup: n, pagePayload: r, defaults: i }
 		integration: {
 			instanceId: a.instanceId,
 			data: a.integration,
-			path: (e) => p_(a.instanceId, e)
+			path: (e) => K_(a.instanceId, e)
 		},
 		paths: {
-			integration: (e) => p_(a.instanceId, e),
-			page: (e) => rw(s, e),
-			group: (e) => rw(c, e),
+			integration: (e) => K_(a.instanceId, e),
+			page: (e) => Yw(s, e),
+			group: (e) => Yw(c, e),
 			document: (e) => e ?? null
 		},
-		defaults: { imageGalleryPath: iw(e, a.integration, i) }
+		defaults: { imageGalleryPath: Xw(e, a.integration, i) }
 	};
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/page-group-presets.ts
-var ow = (e, t, n = !1, r, i) => {
+var Qw = (e, t, n = !1, r, i) => {
 	let a = typeof e == "string" ? e : e.id, o = r?.[a], s = typeof e == "string" ? o?.componentKey ?? a : e.componentKey ?? o?.componentKey ?? e.id, c = t ?? a, l = (typeof e == "string" ? void 0 : e.repeatable) ?? o?.repeatable ?? !1, u = (typeof e == "string" ? void 0 : e.maxInstances) ?? o?.maxInstances ?? null, d = (typeof e == "string" ? void 0 : e.label) ?? o?.label, f = (typeof e == "string" ? void 0 : e.className) ?? o?.className, p = (typeof e == "string" ? void 0 : e.component) ?? o?.component, m = (typeof e == "string" ? void 0 : e.integration) ?? o?.integration, h = (typeof e == "string" ? void 0 : e.strictPosition) ?? o?.strictPosition, g = (typeof e == "string" ? void 0 : e.hasFlow) ?? o?.hasFlow;
 	return n ? {
 		kind: "page",
@@ -16427,7 +16954,7 @@ var ow = (e, t, n = !1, r, i) => {
 		hasFlow: g,
 		...typeof e == "string" ? {} : e,
 		...i ? { id: i } : {}
-	} : n_(c, s, {
+	} : F_(c, s, {
 		label: d,
 		className: f,
 		repeatable: l,
@@ -16438,12 +16965,12 @@ var ow = (e, t, n = !1, r, i) => {
 		hasFlow: g,
 		...typeof e == "string" ? {} : e
 	});
-}, sw = (e, t = !1, n, r, i) => {
+}, $w = (e, t = !1, n, r, i) => {
 	let a = {
 		payload: n,
 		item: void 0,
 		parent: void 0
-	}, o = lw(e.pageComponentKeys, a).map((e) => {
+	}, o = sv(e.pageComponentKeys, a).map((e) => {
 		let t = r?.[e], n = t?.dataKey, i = t?.hasFlow;
 		return n || i ? {
 			key: e,
@@ -16474,29 +17001,18 @@ var ow = (e, t, n = !1, r, i) => {
 			})
 		};
 	}
-	return r_(e.id, o, {
+	return I_(e.id, o, {
 		label: e.label,
 		repeatable: e.repeatable ?? !1,
 		maxInstances: e.maxInstances ?? null,
 		integration: e.integration,
 		strictPosition: e.strictPosition
 	});
-}, cw = (e) => e ? Array.isArray(e) ? e : Object.entries(e).map(([e, t]) => ({
+}, eT = (e) => e ? Array.isArray(e) ? e : Object.entries(e).map(([e, t]) => ({
 	...t,
 	id: e
-})) : [], lw = (e, t) => {
-	if (!e) return [];
-	if (Array.isArray(e)) return e;
-	try {
-		let n = e(t);
-		if (!Array.isArray(n)) return console.error("[uhuu-components] pageComponentKeys function must return an array, got:", typeof n), [];
-		let r = n.filter((e) => typeof e == "string");
-		return r.length !== n.length && console.warn("[uhuu-components] pageComponentKeys returned non-string values, filtering them out"), r;
-	} catch (e) {
-		return console.error("[uhuu-components] Error evaluating pageComponentKeys function:", e), [];
-	}
-}, uw = (e) => {
-	let { initial: t, groups: n, pageComponentKeys: r = [], pages: i = {}, pageComponents: a = {}, payload: o } = e, s = cw(n), c = /* @__PURE__ */ new Map();
+})) : [], tT = (e) => {
+	let { initial: t, groups: n, pageComponentKeys: r = [], pages: i = {}, pageComponents: a = {}, payload: o } = e, s = eT(n), c = /* @__PURE__ */ new Map();
 	s.forEach((e) => c.set(e.id, e));
 	let l = r.length ? r : Object.keys(i), u = { ...a };
 	Object.entries(i).forEach(([e, t]) => {
@@ -16509,14 +17025,14 @@ var ow = (e, t, n = !1, r, i) => {
 	}, p = t.map((e) => {
 		if (typeof e == "string") {
 			let t = c.get(e);
-			return t ? sw(t, !0, o, i, f(t.id)) : ow(e, void 0, !0, i, f(e));
+			return t ? $w(t, !0, o, i, f(t.id)) : Qw(e, void 0, !0, i, f(e));
 		}
 		if (e.pageComponentKeys !== void 0) {
 			let t = e;
-			return sw(t, !0, o, i, f(t.id));
+			return $w(t, !0, o, i, f(t.id));
 		}
 		let t = e;
-		return ow(t, void 0, !0, i, f(t.id));
+		return Qw(t, void 0, !0, i, f(t.id));
 	}), m = s.map((e) => ({
 		kind: "group",
 		id: e.id,
@@ -16550,44 +17066,44 @@ var ow = (e, t, n = !1, r, i) => {
 		}), ...m],
 		pageComponents: u
 	};
-}, dw = Object.defineProperty, fw = (e, t) => dw(e, "name", {
+}, nT = Object.defineProperty, rT = (e, t) => nT(e, "name", {
 	value: t,
 	configurable: !0
-}), [pw, mw] = /* @__PURE__ */ Ho("AlertDialog", [$_]), hw = $_(), gw = /* @__PURE__ */ fw((e) => {
-	let { __scopeAlertDialog: t, ...n } = e, r = hw(t);
-	return /* @__PURE__ */ _(nv, {
+}), [iT, aT] = /* @__PURE__ */ ms("AlertDialog", [qv]), oT = qv(), sT = /* @__PURE__ */ rT((e) => {
+	let { __scopeAlertDialog: t, ...n } = e, r = oT(t);
+	return /* @__PURE__ */ v(Xv, {
 		...r,
 		...n,
 		modal: !0
 	});
 }, "AlertDialog");
-e.forwardRef(/* @__PURE__ */ fw(function(e, t) {
-	let { __scopeAlertDialog: n, ...r } = e, i = hw(n);
-	return /* @__PURE__ */ _(iv, {
+e.forwardRef(/* @__PURE__ */ rT(function(e, t) {
+	let { __scopeAlertDialog: n, ...r } = e, i = oT(n);
+	return /* @__PURE__ */ v(Qv, {
 		...i,
 		...r,
 		ref: t
 	});
 }, "AlertDialogTrigger"));
-var _w = /* @__PURE__ */ fw((e) => {
-	let { __scopeAlertDialog: t, ...n } = e, r = hw(t);
-	return /* @__PURE__ */ _(cv, {
+var cT = /* @__PURE__ */ rT((e) => {
+	let { __scopeAlertDialog: t, ...n } = e, r = oT(t);
+	return /* @__PURE__ */ v(ny, {
 		...r,
 		...n
 	});
-}, "AlertDialogPortal"), vw = e.forwardRef(/* @__PURE__ */ fw(function(e, t) {
-	let { __scopeAlertDialog: n, ...r } = e, i = hw(n);
-	return /* @__PURE__ */ _(uv, {
+}, "AlertDialogPortal"), lT = e.forwardRef(/* @__PURE__ */ rT(function(e, t) {
+	let { __scopeAlertDialog: n, ...r } = e, i = oT(n);
+	return /* @__PURE__ */ v(iy, {
 		...i,
 		...r,
 		ref: t
 	});
-}, "AlertDialogOverlay")), [yw, bw] = pw("AlertDialogContent"), xw = e.forwardRef(/* @__PURE__ */ fw(function(t, n) {
-	let { __scopeAlertDialog: r, children: i, ...a } = t, o = hw(r), s = J(n, e.useRef(null)), c = e.useRef(null);
-	return /* @__PURE__ */ _(yw, {
+}, "AlertDialogOverlay")), [uT, dT] = iT("AlertDialogContent"), fT = e.forwardRef(/* @__PURE__ */ rT(function(t, n) {
+	let { __scopeAlertDialog: r, children: i, ...a } = t, o = oT(r), s = J(n, e.useRef(null)), c = e.useRef(null);
+	return /* @__PURE__ */ v(uT, {
 		scope: r,
 		cancelRef: c,
-		children: /* @__PURE__ */ _(mv, {
+		children: /* @__PURE__ */ v(cy, {
 			role: "alertdialog",
 			...o,
 			...a,
@@ -16600,45 +17116,45 @@ var _w = /* @__PURE__ */ fw((e) => {
 			children: i
 		})
 	});
-}, "AlertDialogContent")), Sw = e.forwardRef(/* @__PURE__ */ fw(function(e, t) {
-	let { __scopeAlertDialog: n, ...r } = e, i = hw(n);
-	return /* @__PURE__ */ _(vv, {
+}, "AlertDialogContent")), pT = e.forwardRef(/* @__PURE__ */ rT(function(e, t) {
+	let { __scopeAlertDialog: n, ...r } = e, i = oT(n);
+	return /* @__PURE__ */ v(fy, {
 		...i,
 		...r,
 		ref: t
 	});
-}, "AlertDialogTitle")), Cw = e.forwardRef(/* @__PURE__ */ fw(function(e, t) {
-	let { __scopeAlertDialog: n, ...r } = e, i = hw(n);
-	return /* @__PURE__ */ _(yv, {
+}, "AlertDialogTitle")), mT = e.forwardRef(/* @__PURE__ */ rT(function(e, t) {
+	let { __scopeAlertDialog: n, ...r } = e, i = oT(n);
+	return /* @__PURE__ */ v(py, {
 		...i,
 		...r,
 		ref: t
 	});
-}, "AlertDialogDescription")), ww = e.forwardRef(/* @__PURE__ */ fw(function(e, t) {
-	let { __scopeAlertDialog: n, ...r } = e, i = hw(n);
-	return /* @__PURE__ */ _(xv, {
+}, "AlertDialogDescription")), hT = e.forwardRef(/* @__PURE__ */ rT(function(e, t) {
+	let { __scopeAlertDialog: n, ...r } = e, i = oT(n);
+	return /* @__PURE__ */ v(hy, {
 		...i,
 		...r,
 		ref: t
 	});
-}, "AlertDialogAction")), Tw = "AlertDialogCancel", Ew = e.forwardRef(/* @__PURE__ */ fw(function(e, t) {
-	let { __scopeAlertDialog: n, ...r } = e, { cancelRef: i } = bw(Tw, n), a = hw(n), o = J(t, i);
-	return /* @__PURE__ */ _(xv, {
+}, "AlertDialogAction")), gT = "AlertDialogCancel", _T = e.forwardRef(/* @__PURE__ */ rT(function(e, t) {
+	let { __scopeAlertDialog: n, ...r } = e, { cancelRef: i } = dT(gT, n), a = oT(n), o = J(t, i);
+	return /* @__PURE__ */ v(hy, {
 		...a,
 		...r,
 		ref: o
 	});
-}, "AlertDialogCancel")), Dw = gw, Ow = _w, kw = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ _(vw, {
+}, "AlertDialogCancel")), vT = sT, yT = cT, bT = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(lT, {
 	ref: n,
 	className: K("uhuu:fixed uhuu:inset-0 uhuu:z-50 uhuu:bg-black/40 uhuu:backdrop-blur-[1px] data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0", e),
 	...t
 }));
-kw.displayName = vw.displayName;
-var Aw = e.forwardRef(({ className: e, ...t }, n) => {
-	let { portalContainer: r } = aa();
-	return /* @__PURE__ */ v(Ow, {
+bT.displayName = lT.displayName;
+var xT = e.forwardRef(({ className: e, ...t }, n) => {
+	let { portalContainer: r } = Ca();
+	return /* @__PURE__ */ y(yT, {
 		container: r || void 0,
-		children: [/* @__PURE__ */ _(kw, {}), /* @__PURE__ */ _(xw, {
+		children: [/* @__PURE__ */ v(bT, {}), /* @__PURE__ */ v(fT, {
 			ref: n,
 			"data-uhuu-editor": !0,
 			className: K("uhuu:fixed uhuu:left-[50%] uhuu:top-[50%] uhuu:z-50 uhuu:w-full uhuu:max-w-md uhuu:translate-x-[-50%] uhuu:translate-y-[-50%] uhuu:rounded-md uhuu:border uhuu:border-gray-200 uhuu:bg-(--uhuu-shell-surface) uhuu:p-6 uhuu:shadow-lg uhuu:outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0", e),
@@ -16646,152 +17162,152 @@ var Aw = e.forwardRef(({ className: e, ...t }, n) => {
 		})]
 	});
 });
-Aw.displayName = xw.displayName;
-var jw = ({ className: e, ...t }) => /* @__PURE__ */ _("div", {
+xT.displayName = fT.displayName;
+var ST = ({ className: e, ...t }) => /* @__PURE__ */ v("div", {
 	className: K("uhuu:flex uhuu:flex-col uhuu:gap-2 uhuu:text-left", e),
 	...t
 });
-jw.displayName = "AlertDialogHeader";
-var Mw = ({ className: e, ...t }) => /* @__PURE__ */ _("div", {
+ST.displayName = "AlertDialogHeader";
+var CT = ({ className: e, ...t }) => /* @__PURE__ */ v("div", {
 	className: K("uhuu:mt-6 uhuu:flex uhuu:flex-col-reverse uhuu:gap-2 uhuu:sm:flex-row uhuu:sm:justify-end", e),
 	...t
 });
-Mw.displayName = "AlertDialogFooter";
-var Nw = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ _(Sw, {
+CT.displayName = "AlertDialogFooter";
+var wT = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(pT, {
 	ref: n,
 	className: K("uhuu:text-base uhuu:font-semibold uhuu:text-gray-900", e),
 	...t
 }));
-Nw.displayName = Sw.displayName;
-var Pw = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ _(Cw, {
+wT.displayName = pT.displayName;
+var TT = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(mT, {
 	ref: n,
 	className: K("uhuu:text-sm uhuu:text-gray-600", e),
 	...t
 }));
-Pw.displayName = Cw.displayName;
-var Fw = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ _(ww, {
+TT.displayName = mT.displayName;
+var ET = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(hT, {
 	ref: n,
 	className: K("uhuu:inline-flex uhuu:h-9 uhuu:items-center uhuu:justify-center uhuu:rounded-md uhuu:bg-gray-900 uhuu:px-4 uhuu:text-sm uhuu:font-medium uhuu:text-(--uhuu-shell-on-inverse) uhuu:transition-colors uhuu:hover:bg-gray-800", e),
 	...t
 }));
-Fw.displayName = ww.displayName;
-var Iw = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ _(Ew, {
+ET.displayName = hT.displayName;
+var DT = e.forwardRef(({ className: e, ...t }, n) => /* @__PURE__ */ v(_T, {
 	ref: n,
 	className: K("uhuu:inline-flex uhuu:h-9 uhuu:items-center uhuu:justify-center uhuu:rounded-md uhuu:border uhuu:border-gray-200 uhuu:bg-(--uhuu-shell-surface) uhuu:px-4 uhuu:text-sm uhuu:font-medium uhuu:text-gray-900 uhuu:transition-colors uhuu:hover:bg-gray-50", e),
 	...t
 }));
-Iw.displayName = Ew.displayName;
+DT.displayName = _T.displayName;
 //#endregion
 //#region src/uhuu/editor-shell/document/dev-print-controls.tsx
-var Lw = "__edit__", Rw = "__print__";
-function zw({ checked: e, label: t, onSelect: n, keepOpen: r = !1 }) {
-	return /* @__PURE__ */ v(sh, {
+var OT = "__edit__", kT = "__print__";
+function AT({ checked: e, label: t, onSelect: n, keepOpen: r = !1 }) {
+	return /* @__PURE__ */ y(Nh, {
 		onSelect: (e) => {
 			r && e.preventDefault(), n();
 		},
 		className: "uhuu:flex uhuu:items-center uhuu:gap-2",
-		children: [e ? /* @__PURE__ */ _(zi, { className: "uhuu:w-3 uhuu:h-3 uhuu:text-gray-400" }) : /* @__PURE__ */ _("span", { className: "uhuu:w-3 uhuu:h-3" }), /* @__PURE__ */ _("span", {
+		children: [e ? /* @__PURE__ */ v(na, { className: "uhuu:w-3 uhuu:h-3 uhuu:text-gray-400" }) : /* @__PURE__ */ v("span", { className: "uhuu:w-3 uhuu:h-3" }), /* @__PURE__ */ v("span", {
 			className: "uhuu:flex-1 uhuu:truncate",
 			children: t
 		})]
 	});
 }
-function Bw({ label: e, value: t }) {
-	return /* @__PURE__ */ v(ih, {
+function jT({ label: e, value: t }) {
+	return /* @__PURE__ */ y(Ah, {
 		className: "uhuu:flex uhuu:items-center uhuu:justify-between uhuu:gap-4 uhuu:text-xs",
-		children: [/* @__PURE__ */ _("span", {
+		children: [/* @__PURE__ */ v("span", {
 			className: "uhuu:text-gray-700",
 			children: e
-		}), /* @__PURE__ */ v("span", {
+		}), /* @__PURE__ */ y("span", {
 			className: "uhuu:flex uhuu:items-center uhuu:gap-1 uhuu:text-gray-400",
-			children: [t ? /* @__PURE__ */ _("span", {
+			children: [t ? /* @__PURE__ */ v("span", {
 				className: "uhuu:max-w-[110px] uhuu:truncate",
 				children: t
-			}) : null, /* @__PURE__ */ _(Vi, { className: "uhuu:w-3.5 uhuu:h-3.5" })]
+			}) : null, /* @__PURE__ */ v(ia, { className: "uhuu:w-3.5 uhuu:h-3.5" })]
 		})]
 	});
 }
-function Vw({ modes: e, selectedMode: t, onModeChange: n, interactive: r, onInteractiveChange: i, hasReferenceRenderer: a = !1, referenceOpacity: o = 50, onReferenceOpacityChange: s, brandKits: c, activeBrandKitId: l, onSelectBrandKit: u, onAddBrandKit: d }) {
+function MT({ modes: e, selectedMode: t, onModeChange: n, interactive: r, onInteractiveChange: i, hasReferenceRenderer: a = !1, referenceOpacity: o = 50, onReferenceOpacityChange: s, brandKits: c, activeBrandKitId: l, onSelectBrandKit: u, onAddBrandKit: d }) {
 	let f = e ? Object.keys(e) : [], p = [{
-		value: Lw,
+		value: OT,
 		label: "Edit"
 	}, ...f.length > 0 ? f.map((t) => ({
 		value: t,
 		label: e[t].label
 	})) : [{
-		value: Rw,
+		value: kT,
 		label: "Print"
-	}]], m = r ? Lw : t || f[0] || Rw, h = p.find((e) => e.value === m)?.label ?? "Edit", y = (t) => {
-		t === Lw ? i(!0) : (i(!1), t !== Rw && e && e[t] && n?.(t, e[t]));
+	}]], m = r ? OT : t || f[0] || kT, h = p.find((e) => e.value === m)?.label ?? "Edit", g = (t) => {
+		t === OT ? i(!0) : (i(!1), t !== kT && e && e[t] && n?.(t, e[t]));
 	}, b = !!c && c.length > 0, x = c?.find((e) => e.id === l)?.name, S = () => {
 		let e = window.prompt("Add a published brand kit to test — paste a brandkit.json URL, a kit id, or raw JSON:");
 		e && e.trim() && d?.(e.trim());
 	};
-	return /* @__PURE__ */ v(th, {
+	return /* @__PURE__ */ y(Dh, {
 		modal: !1,
-		children: [/* @__PURE__ */ _(nh, {
+		children: [/* @__PURE__ */ v(Oh, {
 			asChild: !0,
-			children: /* @__PURE__ */ v(Do, {
+			children: /* @__PURE__ */ y($o, {
 				variant: "ghost",
 				size: "sm",
 				className: `uhuu:text-xs uhuu:font-medium uhuu:text-gray-700 uhuu:hover:bg-gray-100/80 uhuu:h-7 uhuu:px-2.5 ${r ? "" : "uhuu:bg-gray-100/80"}`,
-				children: [/* @__PURE__ */ _(Ri, { className: "uhuu:w-3.5 uhuu:h-3.5" }), /* @__PURE__ */ _("span", {
+				children: [/* @__PURE__ */ v(ta, { className: "uhuu:w-3.5 uhuu:h-3.5" }), /* @__PURE__ */ v("span", {
 					className: "uhuu:text-[10px] uhuu:uppercase uhuu:tracking-wide",
 					children: "Dev"
 				})]
 			})
-		}), /* @__PURE__ */ v(oh, {
+		}), /* @__PURE__ */ y(Mh, {
 			align: "end",
 			className: "uhuu:min-w-[200px]",
 			children: [
-				/* @__PURE__ */ v(rh, { children: [/* @__PURE__ */ _(Bw, {
+				/* @__PURE__ */ y(kh, { children: [/* @__PURE__ */ v(jT, {
 					label: "Print Preview",
 					value: h
-				}), /* @__PURE__ */ _(ah, {
+				}), /* @__PURE__ */ v(jh, {
 					className: "uhuu:min-w-[180px]",
-					children: p.map((e) => /* @__PURE__ */ _(zw, {
+					children: p.map((e) => /* @__PURE__ */ v(AT, {
 						checked: m === e.value,
 						label: e.label,
-						onSelect: () => y(e.value)
+						onSelect: () => g(e.value)
 					}, e.value))
 				})] }),
-				b && /* @__PURE__ */ v(rh, { children: [/* @__PURE__ */ _(Bw, {
+				b && /* @__PURE__ */ y(kh, { children: [/* @__PURE__ */ v(jT, {
 					label: "Brand Kit",
 					value: x
-				}), /* @__PURE__ */ v(ah, {
+				}), /* @__PURE__ */ y(jh, {
 					className: "uhuu:min-w-[200px]",
-					children: [c.map((e) => /* @__PURE__ */ _(zw, {
+					children: [c.map((e) => /* @__PURE__ */ v(AT, {
 						checked: l === e.id,
 						label: e.name,
 						keepOpen: !0,
 						onSelect: () => u?.(e.id)
-					}, e.id)), d && /* @__PURE__ */ v(g, { children: [/* @__PURE__ */ _(dh, {}), /* @__PURE__ */ v(sh, {
+					}, e.id)), d && /* @__PURE__ */ y(_, { children: [/* @__PURE__ */ v(Lh, {}), /* @__PURE__ */ y(Nh, {
 						onSelect: (e) => {
 							e.preventDefault(), S();
 						},
 						className: "uhuu:flex uhuu:items-center uhuu:gap-2",
-						children: [/* @__PURE__ */ _(Xi, { className: "uhuu:w-3 uhuu:h-3 uhuu:text-gray-400" }), /* @__PURE__ */ _("span", {
+						children: [/* @__PURE__ */ v(pa, { className: "uhuu:w-3 uhuu:h-3 uhuu:text-gray-400" }), /* @__PURE__ */ v("span", {
 							className: "uhuu:flex-1",
 							children: "Add published kit…"
 						})]
 					})] })]
 				})] }),
-				a && /* @__PURE__ */ v(g, { children: [
-					/* @__PURE__ */ _(dh, {}),
-					/* @__PURE__ */ _(uh, {
+				a && /* @__PURE__ */ y(_, { children: [
+					/* @__PURE__ */ v(Lh, {}),
+					/* @__PURE__ */ v(Ih, {
 						className: "uhuu:text-xs uhuu:text-gray-500",
 						children: "Reference Overlay"
 					}),
-					/* @__PURE__ */ v("div", {
+					/* @__PURE__ */ y("div", {
 						className: "uhuu:px-2 uhuu:py-2",
 						children: [
-							/* @__PURE__ */ v("div", {
+							/* @__PURE__ */ y("div", {
 								className: "uhuu:flex uhuu:items-center uhuu:justify-between uhuu:text-xs uhuu:text-gray-600",
-								children: [/* @__PURE__ */ _("span", { children: "Opacity" }), /* @__PURE__ */ v("span", { children: [o, "%"] })]
+								children: [/* @__PURE__ */ v("span", { children: "Opacity" }), /* @__PURE__ */ y("span", { children: [o, "%"] })]
 							}),
-							/* @__PURE__ */ _("div", {
+							/* @__PURE__ */ v("div", {
 								className: "uhuu:pt-2",
-								children: /* @__PURE__ */ _(HC, {
+								children: /* @__PURE__ */ v(jw, {
 									value: [o],
 									min: 0,
 									max: 100,
@@ -16802,9 +17318,9 @@ function Vw({ modes: e, selectedMode: t, onModeChange: n, interactive: r, onInte
 									}
 								})
 							}),
-							/* @__PURE__ */ v("div", {
+							/* @__PURE__ */ y("div", {
 								className: "uhuu:pt-2 uhuu:flex uhuu:items-center uhuu:justify-between uhuu:text-xs uhuu:text-gray-500",
-								children: [/* @__PURE__ */ _("span", { children: "Hidden" }), /* @__PURE__ */ _("span", { children: "Solid" })]
+								children: [/* @__PURE__ */ v("span", { children: "Hidden" }), /* @__PURE__ */ v("span", { children: "Solid" })]
 							})
 						]
 					})
@@ -16814,94 +17330,42 @@ function Vw({ modes: e, selectedMode: t, onModeChange: n, interactive: r, onInte
 	});
 }
 //#endregion
-//#region src/uhuu/editor-shell/document/page-management.js
-var Hw = [
-	"add",
-	"remove",
-	"reorder",
-	"duplicate",
-	"rename"
-];
-function Uw(e) {
-	let t = e && typeof e == "object" ? e : {}, n = t.locked !== !0, r = Object.fromEntries(Hw.map((e) => [e, typeof t[e] == "boolean" ? t[e] : n]));
-	return {
-		...r,
-		templateOwnsPages: !r.add && !r.remove && !r.reorder && !r.duplicate
-	};
-}
-var Ww = /* @__PURE__ */ new Set([
-	"kind",
-	"id",
-	"pages",
-	"templateId",
-	"componentKey",
-	"dataKey",
-	"hasFlow",
-	"strictPosition",
-	"label",
-	"className",
-	"repeatable",
-	"maxInstances",
-	"allowAsSinglePage",
-	"thumbnail"
-]);
-function Gw(e, t, { rename: n = !1 } = {}) {
-	if (!t?.length) return e;
-	let r = /* @__PURE__ */ new Map(), i = (e) => e.forEach((e) => {
-		e?.id && r.set(e.id, e), Array.isArray(e?.pages) && i(e.pages);
-	});
-	i(t);
-	let a = (e) => {
-		let t = r.get(e.id), i = t ? Object.fromEntries(Object.entries(t).filter(([e]) => !Ww.has(e))) : {};
-		t && n && !ba(t.label, e.label) && (i.label = t.label);
-		let o = {
-			...e,
-			...i
-		};
-		return Array.isArray(e.pages) ? {
-			...o,
-			pages: e.pages.map(a)
-		} : o;
-	};
-	return e.map(a);
-}
-//#endregion
 //#region src/uhuu/editor-shell/document/page-editor.tsx
-var Kw = {
+var NT = {
 	width: 210,
 	height: 297
-}, qw = typeof window > "u" ? e.useEffect : e.useLayoutEffect;
-function Jw(e, t) {
+}, PT = typeof window > "u" ? e.useEffect : e.useLayoutEffect;
+function FT(e, t) {
 	return t ? `${t.id}/${e.id}` : e.id;
 }
-function Yw({ label: e, onDone: t, onAddAnother: n }) {
-	let { t: r } = Ua();
-	return e ? /* @__PURE__ */ _("div", {
+function IT({ label: e, onDone: t, onAddAnother: n }) {
+	let { t: r } = go();
+	return e ? /* @__PURE__ */ v("div", {
 		className: "uhuu:fixed uhuu:inset-0 uhuu:z-50 uhuu:flex uhuu:items-center uhuu:justify-center uhuu:bg-black/30",
-		children: /* @__PURE__ */ v("div", {
+		children: /* @__PURE__ */ y("div", {
 			"data-uhuu-editor": !0,
 			className: "uhuu:bg-(--uhuu-shell-surface) uhuu:rounded-lg uhuu:border uhuu:border-gray-200/80 uhuu:shadow-xl uhuu:p-6 uhuu:w-full uhuu:max-w-sm uhuu:mx-4 uhuu:flex uhuu:flex-col uhuu:items-center uhuu:text-center",
 			children: [
-				/* @__PURE__ */ _("div", {
+				/* @__PURE__ */ v("div", {
 					className: "uhuu:rounded-full uhuu:bg-emerald-100 uhuu:p-3 uhuu:mb-4",
-					children: /* @__PURE__ */ _(zi, {
+					children: /* @__PURE__ */ v(na, {
 						className: "uhuu:h-6 uhuu:w-6 uhuu:text-emerald-600",
 						strokeWidth: 2.5
 					})
 				}),
-				/* @__PURE__ */ _("h2", {
+				/* @__PURE__ */ v("h2", {
 					className: "uhuu:text-base uhuu:font-medium uhuu:text-gray-900 uhuu:mb-5",
 					children: r("addDialog.added", { name: e })
 				}),
-				/* @__PURE__ */ v("div", {
+				/* @__PURE__ */ y("div", {
 					className: "uhuu:flex uhuu:gap-2 uhuu:w-full",
-					children: [/* @__PURE__ */ _(Do, {
+					children: [/* @__PURE__ */ v($o, {
 						variant: "outline",
 						size: "sm",
 						onClick: n,
 						className: "uhuu:flex-1",
 						children: r("addDialog.addAnother")
-					}), /* @__PURE__ */ _(Do, {
+					}), /* @__PURE__ */ v($o, {
 						variant: "default",
 						size: "sm",
 						onClick: t,
@@ -16913,43 +17377,51 @@ function Yw({ label: e, onDone: t, onAddAnother: n }) {
 		})
 	}) : null;
 }
-var Xw = /* @__PURE__ */ new Set();
-function Zw({ initialItems: t = [], availableItems: n = [], pageComponents: r = {}, spineComponent: i, payload: a, pageFormat: o, pageOptions: l = [], notifyError: u, referenceRenderer: f, renderOverlay: h, renderPage: y, menuItems: x, gridColsClass: S, reorderTitle: C, reorderDescription: w, stateKey: T = Wg, onItemsChange: E, onStateChange: D, resolveNewItem: O, pageFilter: k, printConfigs: A, defaultZoomMode: j = "fit-page", brandKits: M, activeBrandKitId: N, onSelectBrandKit: P, onAddBrandKit: F, pageManagement: I = $w }) {
-	let [L] = m(() => B.createScope()), R = I, ee = o ?? Kw, { interactive: te, setInteractive: z, enableDevTools: ne } = vo(), re = yo(), { portalContainer: ie } = aa(), { t: V, localize: oe } = Ua(), [se, ce] = m(null), [le, ue] = m(null), [de, fe] = m(void 0), [pe, me] = m(0), [he, ge] = m(0), _e = se ?? k, ve = d(() => le ? {
+var LT = /* @__PURE__ */ new Set();
+function RT({ initialItems: t = [], availableItems: n = [], pageComponents: r = {}, spineComponent: i, payload: a, pageFormat: o, pageOptions: l = [], notifyError: u, referenceRenderer: d, renderOverlay: p, renderPage: g, menuItems: b, gridColsClass: S, reorderTitle: C, reorderDescription: w, stateKey: T = C_, onItemsChange: E, onStateChange: D, resolveNewItem: O, pageFilter: k, printConfigs: A, defaultZoomMode: j = "fit-page", brandKits: M, activeBrandKitId: N, onSelectBrandKit: P, onAddBrandKit: F, pageManagement: I = BT }) {
+	let [L] = h(() => ne.createScope()), R = I, ee = o ?? NT, { interactive: te, setInteractive: z, enableDevTools: B } = Wo(), re = ue(), ie = Go(), { portalContainer: ae } = Ca(), V = go(), { t: H, localize: se } = V, [ce, le] = h(null), [de, fe] = h(null), [pe, me] = h(void 0), [he, ge] = h(0), [_e, ve] = h(0), ye = ce ?? k, be = f(() => de ? {
 		...ee,
-		...le
-	} : ee, [ee, le]), ye = c(v_), be = ye?.payload ?? a, [xe, Se] = m(!1), Ce = !te && ZC(ve, _e), we = ve?.preview ?? "single_page", Te = Ce ? "single_page" : we, Ee = d(() => {
-		let e = XC(ve);
-		return we === "two_pages" || Ce ? {
+		...de
+	} : ee, [ee, de]), xe = c(Z_), Se = xe?.payload ?? a, [Ce, we] = h(!1), Te = !te && Bw(be, ye), Ee = be?.preview ?? "single_page", De = Te ? "single_page" : Ee, Oe = f(() => {
+		let e = zw(be);
+		return Ee === "two_pages" || Te ? {
 			...e,
 			preview: "single_page"
 		} : e;
 	}, [
-		we,
-		Ce,
-		ve
-	]), De = d(() => XC(ee), [ee]), Oe = d(() => Zg(t), [t]), ke = d(() => l?.length ? l.map((e) => "getValue" in e ? e : ye?.setPageOptionValue ? w_(e, ye.payload, ye.setPageOptionValue) : ((H() || ne) && console.warn("PageEditor: payload-backed pageOptions require TemplateDataProvider or payload/onPayloadChange."), null)).filter(Boolean) : [], [
+		Ee,
+		Te,
+		be
+	]), ke = f(() => zw(ee), [ee]), Ae = f(() => A_(t), [t]), je = f(() => l?.length ? l.map((e) => "getValue" in e ? e : xe?.setPageOptionValue ? tv(e, xe.payload, xe.setPageOptionValue) : (re && console.warn("PageEditor: payload-backed pageOptions require TemplateDataProvider or payload/onPayloadChange."), null)).filter(Boolean) : [], [
 		l,
-		ye,
-		ne
-	]), [Ae, je] = m(null), [Me, Ne] = m({ mode: "end" }), [Pe, Fe] = m(null), Ie = p(null), { items: Le, itemsWithPageNum: Re, availableItemsToAdd: ze, addItem: Be, removeItem: Ve, reorderItems: He, updateItemFields: Ue, addDialogOpen: We, setAddDialogOpen: Ge, openAddDialog: Ke, itemsForReorder: qe, handleReorder: Je, defaultRenderThumbnail: Ye } = $C({
-		initialItems: Oe,
+		xe,
+		re
+	]), [Me, Ne] = h(null), [Pe, Fe] = h({ mode: "end" }), [Ie, Le] = h(null), Re = m(null), { items: ze, itemsWithPageNum: Be, availableItemsToAdd: Ve, addItem: He, removeItem: Ue, reorderItems: We, updateItemFields: Ge, addDialogOpen: Ke, setAddDialogOpen: qe, openAddDialog: Je, itemsForReorder: Ye, handleReorder: Xe } = Hw({
+		initialItems: Ae,
 		availableItems: n,
-		pageComponents: r,
-		payload: be,
-		setup: Ee,
+		payload: Se,
 		stateKey: T,
 		onItemsChange: E,
 		onStateChange: D,
 		resolveNewItem: O,
 		notifyError: u
-	}), Xe = d(() => {
+	}), Ze = f(() => vv({
+		pageComponents: r,
+		payload: Se,
+		setup: Oe,
+		i18n: V
+	}), [
+		r,
+		Se,
+		Oe,
+		V
+	]), Qe = f(() => {
 		let e = [];
-		for (let t of Re) {
-			let n = Gg(t) ? t.pages ?? [] : [t];
+		for (let t of Be) {
+			let n = w_(t) ? t.pages ?? [] : [t];
 			for (let r of n) {
 				if (!r?.id) continue;
-				let n = Gg(t) ? t : void 0;
+				let n = w_(t) ? t : void 0;
 				e.push({
 					...r,
 					kind: "page",
@@ -16957,82 +17429,82 @@ function Zw({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 					pageNum: r.pageNum ?? e.length + 1,
 					basePageNum: r.pageNum ?? e.length + 1,
 					parentGroup: n,
-					flowKey: Jw(r, n)
+					flowKey: FT(r, n)
 				});
 			}
 		}
 		return e.sort((e, t) => (e.basePageNum ?? 0) - (t.basePageNum ?? 0));
-	}, [Re]), Ze = d(() => JSON.stringify({
-		format: Ee?.format,
-		orientation: Ee?.orientation,
-		width: Ee?.width,
-		height: Ee?.height,
-		bleed: Ee?.bleed,
-		showBleed: Ee?.showBleed,
-		preview: Ee?.preview,
-		flowPages: Xe.filter((e) => e.hasFlow).map((e) => e.flowKey).join("|")
-	}), [Ee, Xe]), Qe = d(() => Jg(Le), [Le]), { committedFlowLayouts: $e, allVirtualPages: et, renderedVirtualPages: tt, virtualTotalPageCount: nt, registerMeasurement: rt, pruneMeasurements: it } = nw({
-		logicalPages: Xe,
-		pageFilter: _e,
-		layoutKey: Ze
+	}, [Be]), $e = f(() => JSON.stringify({
+		format: Oe?.format,
+		orientation: Oe?.orientation,
+		width: Oe?.width,
+		height: Oe?.height,
+		bleed: Oe?.bleed,
+		showBleed: Oe?.showBleed,
+		preview: Oe?.preview,
+		flowPages: Qe.filter((e) => e.hasFlow).map((e) => e.flowKey).join("|")
+	}), [Oe, Qe]), et = f(() => D_(ze), [ze]), { committedFlowLayouts: tt, allVirtualPages: nt, renderedVirtualPages: rt, virtualTotalPageCount: it, registerMeasurement: at, pruneMeasurements: ot } = Jw({
+		logicalPages: Qe,
+		pageFilter: ye,
+		layoutKey: $e
 	});
-	qw(() => {
-		L.commit(Xe.filter((e) => e.hasFlow).map((e) => e.flowKey), $e);
-	}), qw(() => () => L.suspend(), [L]), e.useEffect(() => () => L.unmount(), [L]);
-	let at = d(() => new Set(tt.map((e) => e.virtualPageId)), [tt]), ot = d(() => QC({
-		pageFormat: Ce ? ve : XC(ve),
-		pageFilter: _e,
-		pages: tt
+	PT(() => {
+		L.commit(Qe.filter((e) => e.hasFlow).map((e) => e.flowKey), tt);
+	}), PT(() => () => L.suspend(), [L]), e.useEffect(() => () => L.unmount(), [L]);
+	let st = f(() => new Set(rt.map((e) => e.virtualPageId)), [rt]), ct = f(() => Vw({
+		pageFormat: Te ? be : zw(be),
+		pageFilter: ye,
+		pages: rt
 	}), [
-		Ce,
-		ve,
-		_e,
-		tt
-	]), st = ot.active ? ot.plan : null, ct = d(() => st ? {
-		...Ee,
-		binding: ot.setup.binding
-	} : Ee, [
+		Te,
+		be,
+		ye,
+		rt
+	]), lt = ct.active ? ct.plan : null, ut = f(() => lt ? {
+		...Oe,
+		binding: ct.setup.binding
+	} : Oe, [
+		lt,
+		Oe,
+		ct.setup
+	]);
+	e.useEffect(() => {
+		if (ct.warnings.length) for (let e of ct.warnings) LT.has(e) || (LT.add(e), console.warn(`[uhuu-components] PageEditor cover spread: ${e}`));
+	}, [ct.warnings]);
+	let dt = f(() => nt.filter((e) => e.hasFlow && e.virtualPageIndex === 0 && (g || !!lt || !st.has(e.virtualPageId))), [
+		nt,
 		st,
-		Ee,
-		ot.setup
+		g,
+		lt
 	]);
 	e.useEffect(() => {
-		if (H() && ot.warnings.length) for (let e of ot.warnings) Xw.has(e) || (Xw.add(e), console.warn(`[uhuu-components] PageEditor cover spread: ${e}`));
-	}, [ot.warnings]);
-	let lt = d(() => et.filter((e) => e.hasFlow && e.virtualPageIndex === 0 && (y || !!st || !at.has(e.virtualPageId))), [
-		et,
-		at,
-		y,
-		st
-	]);
-	e.useEffect(() => {
-		if (!Pe) return;
+		if (!Ie) return;
 		let e = setTimeout(() => {
-			document.querySelector(`[data-page-item-id="${Pe}"]`)?.scrollIntoView({
+			document.querySelector(`[data-page-item-id="${Ie}"]`)?.scrollIntoView({
 				behavior: "smooth",
 				block: "start"
 			});
 		}, 300);
 		return () => clearTimeout(e);
-	}, [Pe]);
-	let ut = ew({
-		items: Le,
-		reorderItems: He,
-		availableItemsToAdd: ze,
-		setPendingInsertPosition: Ne,
-		openAddDialog: Ke
-	}), dt = (e, t) => {
-		let n = ut(e, t);
+	}, [Ie]);
+	let ft = Kw({
+		items: ze,
+		reorderItems: We,
+		availableItemsToAdd: Ve,
+		setPendingInsertPosition: Fe,
+		openAddDialog: Je
+	}), pt = (e, t) => {
+		let n = ft(e, t);
 		return {
 			onAddPage: R.add ? n.onAddPage : void 0,
 			onMoveUp: R.reorder ? n.onMoveUp : void 0,
 			onMoveDown: R.reorder ? n.onMoveDown : void 0,
 			onDuplicate: R.duplicate ? n.onDuplicate : void 0
 		};
-	}, ft = s(async (e) => {
-		let t = await Be(e, Me);
-		t.success && (Fe(t.insertedId), Ie.current && clearTimeout(Ie.current), Ie.current = setTimeout(() => Fe(null), 1200), Ne({ mode: "end" }), e.repeatable && e.integration && je(e));
-	}, [Be, Me]), pt = s(() => {
+	}, mt = s(async (e) => {
+		let t = await He(e, Pe);
+		t.success && (Le(t.insertedId), Re.current && clearTimeout(Re.current), Re.current = setTimeout(() => Le(null), 1200), Fe({ mode: "end" }), e.repeatable && e.integration && Ne(e));
+	}, [He, Pe]), ht = s(() => {
 		let e = Array.from(document.querySelectorAll("[data-page-item-id]"));
 		if (!e.length) return { mode: "end" };
 		let t = window.innerHeight / 2, n = null, r = Infinity;
@@ -17045,129 +17517,129 @@ function Zw({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 			mode: "after",
 			anchorId: i
 		} : { mode: "end" };
-	}, []), mt = s(() => {
-		Ne(pt()), Ke();
-	}, [pt, Ke]), ht = e.useCallback((e, t, n) => {
+	}, []), gt = s(() => {
+		Fe(ht()), Je();
+	}, [ht, Je]), _t = e.useCallback((e, t, n) => {
 		if (!t) return;
 		let r = e.applyPatch?.(n, t);
-		r && Ue(t.id, r), e.onChange?.(t.id, n, {
+		r && Ge(t.id, r), e.onChange?.(t.id, n, {
 			item: t,
-			updateItem: (e) => Ue(t.id, e)
+			updateItem: (e) => Ge(t.id, e)
 		});
-	}, [Ue]), gt = (e) => /* @__PURE__ */ v("div", {
+	}, [Ge]), vt = (e) => /* @__PURE__ */ y("div", {
 		className: "uhuu-page-overlay",
-		children: [/* @__PURE__ */ _("span", { children: "Page" }), /* @__PURE__ */ v("span", { children: [
+		children: [/* @__PURE__ */ v("span", { children: "Page" }), /* @__PURE__ */ y("span", { children: [
 			e.pageNo,
 			" / ",
 			e.total
 		] })]
-	}), _t = (e, t, n) => h === !1 || h === null ? null : h ? h({
+	}), yt = (e, t, n) => p === !1 || p === null ? null : p ? p({
 		pageNo: e,
-		total: nt,
+		total: it,
 		pageId: t,
 		parent: n
-	}) : gt({
+	}) : vt({
 		pageNo: e,
-		total: nt
-	}), vt = (t, n = {}) => {
+		total: it
+	}), bt = (t, n = {}) => {
 		let i = t.parentGroup;
-		if (y && n.renderVisible !== !1 && n.renderMode !== "content") return y({
+		if (g && n.renderVisible !== !1 && n.renderMode !== "content") return g({
 			page: t,
 			parent: i
 		});
-		let a = t.componentKey ?? t.id, o = ne && f ? f(t) : null, s = ne && f ? e.isValidElement(o) ? e.cloneElement(o, { opacity: he }) : o : null, c = t.templateId ?? a, l = r[a], u = ye?.getPagePayload ? ye.getPagePayload(t) : __(be, {
+		let a = t.componentKey ?? t.id, o = B && d ? d(t) : null, s = B && d ? e.isValidElement(o) ? e.cloneElement(o, { opacity: _e }) : o : null, c = t.templateId ?? a, l = r[a], u = xe?.getPagePayload ? xe.getPagePayload(t) : X_(Se, {
 			id: t.id,
 			templateId: c,
 			componentKey: a
-		}), d = f_(be, t, i), p = aw({
-			payload: be,
+		}), f = G_(Se, t, i), p = Zw({
+			payload: Se,
 			page: t,
 			parentGroup: i,
 			pagePayload: u
 		});
-		return /* @__PURE__ */ _(TS, {
+		return /* @__PURE__ */ v(mC, {
 			pageId: t.id,
 			templateId: c,
 			pageNo: t.pageNum,
 			measurementPageNo: t.basePageNum,
 			component: l,
-			payload: be,
+			payload: Se,
 			pagePayload: u,
-			integration: d,
+			integration: f,
 			page: t,
 			parentGroup: i,
 			componentKey: a,
-			setup: ct,
+			setup: ut,
 			reference: s,
-			overlay: ({ pageNo: e }) => _t(e, t.id, i),
+			overlay: ({ pageNo: e }) => yt(e, t.id, i),
 			className: t.className,
 			dataBinding: p,
-			totalPages: nt,
-			measurementTotalPages: Qe,
+			totalPages: it,
+			measurementTotalPages: et,
 			flowPageIndex: t.virtualPageIndex,
 			flowChunksByFlowId: t.flowChunksByFlowId,
 			measureFlow: n.measureFlow ?? (!!t.hasFlow && t.virtualPageIndex === 0),
 			flowMeasurementKey: t.flowKey,
-			flowMeasurementVersion: Ze,
+			flowMeasurementVersion: $e,
 			flowReadiness: L,
-			onFlowMeasurement: t.hasFlow ? rt : void 0,
-			onFlowPrune: it,
+			onFlowMeasurement: t.hasFlow ? at : void 0,
+			onFlowPrune: ot,
 			renderVisible: n.renderVisible ?? !0,
 			renderMode: n.renderMode,
 			spread: n.spread
 		}, `${n.renderVisible === !1 ? "measure-only" : "page"}-${t.virtualPageId}`);
-	}, yt = (e) => {
+	}, xt = (e) => {
 		let t = e.componentKey ?? e.templateId ?? e.id;
 		return [t ? `uhuu-page--${t}` : "", e.className].filter(Boolean).join(" ");
-	}, bt = (e) => {
-		if (!st) return null;
-		let { binding: t, page: n } = st, [r, a] = e.panels, o = r.page, s = a.page, c = (r) => ({
+	}, St = (e) => {
+		if (!lt) return null;
+		let { binding: t, page: n } = lt, [r, a] = e.panels, o = r.page, s = a.page, c = (r) => ({
 			sheet: e.sheet,
 			side: r,
 			spine: t.spine,
 			glue: t.glue,
 			bleed: n.bleed
 		}), l = `Cover sheet ${e.index + 1} · ${e.sheet} (pages ${o.pageNum} + ${s.pageNum})`;
-		return /* @__PURE__ */ _("div", {
+		return /* @__PURE__ */ v("div", {
 			"data-page-item-id": s.parentGroup?.id ?? s.id,
-			children: /* @__PURE__ */ _(q_, {
+			children: /* @__PURE__ */ v(Vv, {
 				title: l,
-				controls: /* @__PURE__ */ v("div", {
+				controls: /* @__PURE__ */ y("div", {
 					"data-uhuu-editor": !0,
 					className: "uhuu:pl-0 uhuu:pr-3 uhuu:py-1.5 uhuu:flex uhuu:items-center uhuu:gap-2 uhuu:h-9",
-					children: [/* @__PURE__ */ v("span", {
+					children: [/* @__PURE__ */ y("span", {
 						className: "uhuu-page-number",
 						children: [
 							o.pageNum,
 							" + ",
 							s.pageNum
 						]
-					}), /* @__PURE__ */ _("span", {
+					}), /* @__PURE__ */ v("span", {
 						className: "uhuu:text-xs uhuu:text-gray-500",
 						children: l
 					})]
 				}),
-				children: /* @__PURE__ */ _(ae, {
-					setup: ct,
-					children: /* @__PURE__ */ _(Ln, {
+				children: /* @__PURE__ */ v(oe, {
+					setup: ut,
+					children: /* @__PURE__ */ v(er, {
 						sheet: e.sheet,
 						pageNo: [o.pageNum, s.pageNum],
-						left: vt(o, {
+						left: bt(o, {
 							renderMode: "content",
 							spread: c("left")
 						}),
-						right: vt(s, {
+						right: bt(s, {
 							renderMode: "content",
 							spread: c("right")
 						}),
-						spine: i && e.sheet === "outer" ? /* @__PURE__ */ _(i, {
-							payload: be,
+						spine: i && e.sheet === "outer" ? /* @__PURE__ */ v(i, {
+							payload: Se,
 							sheet: "outer",
 							spine: t.spine,
 							glue: t.glue,
 							bleed: n.bleed,
 							height: n.height,
-							totalPages: nt,
+							totalPages: it,
 							pages: {
 								left: o,
 								right: s
@@ -17175,88 +17647,88 @@ function Zw({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 						}) : void 0,
 						overlay: ({ pageNo: e, side: t }) => {
 							let n = t === "left" ? o : s;
-							return _t(e, n.id, n.parentGroup);
+							return yt(e, n.id, n.parentGroup);
 						},
-						leftClassName: yt(o),
-						rightClassName: yt(s),
+						leftClassName: xt(o),
+						rightClassName: xt(s),
 						leftPageKey: o.componentKey ?? o.templateId ?? o.id,
 						rightPageKey: s.componentKey ?? s.templateId ?? s.id
 					})
 				})
 			})
 		}, `cover-sheet-${e.sheet}`);
-	}, xt = (e, t, n) => {
-		let r = !!t && Gg(t), i = r && t.pages[0]?.id === e.id;
-		if (e.virtualPageIndex > 0) return /* @__PURE__ */ v("div", {
+	}, Ct = (e, t, n) => {
+		let r = !!t && w_(t), i = r && t.pages[0]?.id === e.id;
+		if (e.virtualPageIndex > 0) return /* @__PURE__ */ y("div", {
 			"data-uhuu-editor": !0,
 			className: "uhuu:pl-0 uhuu:pr-3 uhuu:py-1.5 uhuu:flex uhuu:items-center uhuu:gap-2 uhuu:h-9",
-			children: [/* @__PURE__ */ _("span", {
+			children: [/* @__PURE__ */ v("span", {
 				className: "uhuu-page-number",
 				children: e.pageNum
-			}), /* @__PURE__ */ _("span", {
+			}), /* @__PURE__ */ v("span", {
 				className: "uhuu:text-xs uhuu:text-gray-500",
-				children: V("page.continued", { name: oe(e.label) || e.componentKey || e.id })
+				children: H("page.continued", { name: se(e.label) || e.componentKey || e.id })
 			})]
 		});
-		if (r && !i) return /* @__PURE__ */ _("div", {
+		if (r && !i) return /* @__PURE__ */ v("div", {
 			"data-uhuu-editor": !0,
 			className: "uhuu:pl-0 uhuu:pr-3 uhuu:py-1.5 uhuu:flex uhuu:justify-between uhuu:items-center uhuu:h-9",
-			children: /* @__PURE__ */ v("div", {
+			children: /* @__PURE__ */ y("div", {
 				className: "uhuu:flex uhuu:items-center uhuu:gap-2",
 				children: [
-					/* @__PURE__ */ _("span", {
+					/* @__PURE__ */ v("span", {
 						className: "uhuu-page-number",
 						children: e.pageNum
 					}),
-					e.label && /* @__PURE__ */ _("span", {
+					e.label && /* @__PURE__ */ v("span", {
 						className: "uhuu:text-xs uhuu:text-gray-500",
-						children: oe(e.label)
+						children: se(e.label)
 					}),
-					/* @__PURE__ */ _("span", {
+					/* @__PURE__ */ v("span", {
 						className: "uhuu:text-xs uhuu:text-gray-400",
 						children: "·"
 					})
 				]
 			})
 		});
-		let a = r ? t : e, o = r ? oe(t.label) || t.id : oe(e.label) || V("page.fallbackName", { number: e.pageNum });
-		return /* @__PURE__ */ v("div", {
+		let a = r ? t : e, o = r ? se(t.label) || t.id : se(e.label) || H("page.fallbackName", { number: e.pageNum });
+		return /* @__PURE__ */ y("div", {
 			"data-uhuu-editor": !0,
 			className: "uhuu:pl-0 uhuu:flex uhuu:items-center uhuu:h-9",
 			children: [
-				/* @__PURE__ */ _("span", {
+				/* @__PURE__ */ v("span", {
 					className: "uhuu-page-number uhuu:shrink-0 uhuu:text-xs uhuu:tabular-nums uhuu:text-gray-400 uhuu:font-medium uhuu:pr-1",
 					children: e.pageNum
 				}),
-				/* @__PURE__ */ _(YC, {
+				/* @__PURE__ */ v(Rw, {
 					name: o,
 					canRename: R.rename,
 					canMoveUp: !!n?.onMoveUp,
 					canMoveDown: !!n?.onMoveDown,
 					canAddPage: !!n?.onAddPage,
 					canDuplicate: !!n?.onDuplicate,
-					canDelete: R.remove && Qe > 1,
-					onRename: (e) => Ue(a.id, { label: e || void 0 }),
+					canDelete: R.remove && et > 1,
+					onRename: (e) => Ge(a.id, { label: e || void 0 }),
 					onMoveUp: n?.onMoveUp,
 					onMoveDown: n?.onMoveDown,
 					onAddPage: n?.onAddPage,
 					onDuplicate: n?.onDuplicate,
-					onDelete: () => Ve(a.id)
+					onDelete: () => Ue(a.id)
 				}),
-				/* @__PURE__ */ _("span", {
+				/* @__PURE__ */ v("span", {
 					className: "uhuu:pl-1",
-					children: ke.length > 0 && /* @__PURE__ */ _(JC, {
-						pageOptions: ke,
+					children: je.length > 0 && /* @__PURE__ */ v(Lw, {
+						pageOptions: je,
 						targetItem: a,
-						onChange: ht,
-						title: V(r ? "page.groupOptions" : "page.options")
+						onChange: _t,
+						title: H(r ? "page.groupOptions" : "page.options")
 					})
 				})
 			]
 		});
-	}, St = d(() => {
-		if (Te !== "two_pages") return [];
-		let e = tt;
+	}, wt = f(() => {
+		if (De !== "two_pages") return [];
+		let e = rt;
 		if (!e.length) return [];
 		let t = [{
 			left: void 0,
@@ -17280,159 +17752,159 @@ function Zw({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 			}
 		}
 		return t;
-	}, [Te, tt]), Ct = /* @__PURE__ */ v("div", {
+	}, [De, rt]), Tt = /* @__PURE__ */ y("div", {
 		className: "uhuu:flex uhuu:items-center uhuu:gap-1",
 		children: [
-			/* @__PURE__ */ _(_S, {
+			/* @__PURE__ */ v(sC, {
 				variant: "secondary",
 				className: "uhuu:font-normal uhuu:text-xs uhuu:bg-gray-100/80 uhuu:text-gray-700 uhuu:border-0",
-				children: V("toolbar.pages", { count: nt })
+				children: H("toolbar.pages", { count: it })
 			}),
-			ne && /* @__PURE__ */ _(Vw, {
+			B && /* @__PURE__ */ v(MT, {
 				modes: A,
-				selectedMode: de,
+				selectedMode: pe,
 				onModeChange: (e, t) => {
-					fe(e), ce(t.filter ?? null), ue(t.pageFormat ?? null), me((e) => e + 1);
+					me(e), le(t.filter ?? null), fe(t.pageFormat ?? null), ge((e) => e + 1);
 				},
 				interactive: te,
 				onInteractiveChange: (e) => {
-					z(e), e && ue(null);
+					z(e), e && fe(null);
 				},
-				hasReferenceRenderer: !!f,
-				referenceOpacity: he,
-				onReferenceOpacityChange: ge,
+				hasReferenceRenderer: !!d,
+				referenceOpacity: _e,
+				onReferenceOpacityChange: ve,
 				brandKits: M,
 				activeBrandKitId: N,
 				onSelectBrandKit: P,
 				onAddBrandKit: F
 			}),
-			te && /* @__PURE__ */ v(g, { children: [R.add && ze.length > 0 && /* @__PURE__ */ v(Do, {
+			te && /* @__PURE__ */ y(_, { children: [R.add && Ve.length > 0 && /* @__PURE__ */ y($o, {
 				variant: "ghost",
 				size: "sm",
-				onClick: mt,
-				title: V("toolbar.addHint"),
+				onClick: gt,
+				title: H("toolbar.addHint"),
 				className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-700 uhuu:hover:bg-gray-100/80 uhuu:h-7 uhuu:px-2.5",
-				children: [/* @__PURE__ */ _(Xi, { className: "uhuu:w-3.5 uhuu:h-3.5" }), V("toolbar.add")]
-			}), R.reorder && /* @__PURE__ */ v(Do, {
+				children: [/* @__PURE__ */ v(pa, { className: "uhuu:w-3.5 uhuu:h-3.5" }), H("toolbar.add")]
+			}), R.reorder && /* @__PURE__ */ y($o, {
 				variant: "ghost",
 				size: "sm",
-				onClick: () => Se(!0),
-				title: V("toolbar.reorderHint"),
+				onClick: () => we(!0),
+				title: H("toolbar.reorderHint"),
 				className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-700 uhuu:hover:bg-gray-100/80 uhuu:h-7 uhuu:px-2.5",
-				children: [/* @__PURE__ */ _(Hi, { className: "uhuu:w-3.5 uhuu:h-3.5" }), V("toolbar.reorder")]
+				children: [/* @__PURE__ */ v(aa, { className: "uhuu:w-3.5 uhuu:h-3.5" }), H("toolbar.reorder")]
 			})] })
 		]
 	});
-	return /* @__PURE__ */ v(g, { children: [
-		lt.map((e) => vt(e, {
+	return /* @__PURE__ */ y(_, { children: [
+		dt.map((e) => bt(e, {
 			renderVisible: !1,
 			measureFlow: !0
 		})),
-		ne && !te && ie && b(/* @__PURE__ */ v(Do, {
+		B && !te && ae && x(/* @__PURE__ */ y($o, {
 			onClick: () => {
-				z(!0), ue(null);
+				z(!0), fe(null);
 			},
 			"data-uhuu-editor": !0,
 			size: "sm",
 			className: "uhuu-screen-only uhuu:fixed uhuu:top-4 uhuu:right-4 uhuu:z-50 uhuu:flex uhuu:items-center uhuu:gap-1.5 uhuu:text-xs! uhuu:rounded-full",
 			title: "Back to Edit Mode",
-			children: [/* @__PURE__ */ _(ta, { className: "uhuu:w-4 uhuu:h-4" }), "Back to Editor"]
-		}), ie),
-		/* @__PURE__ */ _(J_, {
+			children: [/* @__PURE__ */ v(ya, { className: "uhuu:w-4 uhuu:h-4" }), "Back to Editor"]
+		}), ae),
+		/* @__PURE__ */ v(Hv, {
 			defaultZoom: 80,
 			defaultZoomMode: j,
 			minZoom: 25,
 			maxZoom: 200,
-			menuItems: x ?? Ct,
-			onAddPage: R.add ? mt : void 0,
-			preview: Te,
-			children: st ? st.sheets.map(bt) : Te === "two_pages" ? St.map((e, t) => {
-				let n = e.left ?? e.right, r = e.right ?? e.left, i = n?.parentGroup?.id ?? n?.id ?? null, a = r?.parentGroup?.id ?? r?.id ?? null, o = e.left?.parentGroup?.id ?? e.left?.id, s = e.right?.parentGroup?.id ?? e.right?.id, c = o === Pe, l = s === Pe, u = (e, t) => dt(e ? e.parentGroup ?? e : void 0, t);
-				return /* @__PURE__ */ v(W_, {
+			menuItems: b ?? Tt,
+			onAddPage: R.add ? gt : void 0,
+			preview: De,
+			children: lt ? lt.sheets.map(St) : De === "two_pages" ? wt.map((e, t) => {
+				let n = e.left ?? e.right, r = e.right ?? e.left, i = n?.parentGroup?.id ?? n?.id ?? null, a = r?.parentGroup?.id ?? r?.id ?? null, o = e.left?.parentGroup?.id ?? e.left?.id, s = e.right?.parentGroup?.id ?? e.right?.id, c = o === Ie, l = s === Ie, u = (e, t) => pt(e ? e.parentGroup ?? e : void 0, t);
+				return /* @__PURE__ */ y(Rv, {
 					layout: e.layout,
 					pageItemId: a ?? void 0,
-					children: [e.left && /* @__PURE__ */ _("div", {
+					children: [e.left && /* @__PURE__ */ v("div", {
 						"data-page-item-id": e.left.virtualPageIndex === 0 ? o : void 0,
 						className: c ? "uhuu:outline uhuu:outline-2 uhuu:outline-offset-2 uhuu:outline-blue-100 uhuu:bg-blue-50" : void 0,
-						children: /* @__PURE__ */ _(q_, {
+						children: /* @__PURE__ */ v(Vv, {
 							title: `Sheet ${e.left.pageNum}`,
-							controls: xt(e.left, e.left.parentGroup, u(e.left, i)),
+							controls: Ct(e.left, e.left.parentGroup, u(e.left, i)),
 							origin: e.left.pageNum % 2 == 0 ? "right" : "left",
-							children: vt(e.left)
+							children: bt(e.left)
 						}, e.left.virtualPageId)
-					}), e.right && /* @__PURE__ */ _("div", {
+					}), e.right && /* @__PURE__ */ v("div", {
 						"data-page-item-id": e.right.virtualPageIndex === 0 ? s : void 0,
 						className: l ? "uhuu:outline uhuu:outline-2 uhuu:outline-offset-2 uhuu:outline-blue-100 uhuu:bg-blue-50" : void 0,
-						children: /* @__PURE__ */ _(q_, {
+						children: /* @__PURE__ */ v(Vv, {
 							title: `Sheet ${e.right.pageNum}`,
-							controls: xt(e.right, e.right.parentGroup, u(e.right, a)),
+							controls: Ct(e.right, e.right.parentGroup, u(e.right, a)),
 							origin: e.right.pageNum % 2 == 0 ? "right" : "left",
-							children: vt(e.right)
+							children: bt(e.right)
 						}, e.right.virtualPageId)
 					})]
 				}, `pair-${t}`);
-			}) : tt.map((e) => {
-				let t = e.parentGroup ?? e, n = e.parentGroup?.id ?? e.id, r = dt(t, n), i = e.parentGroup?.id ?? e.id, a = Pe === i;
-				return /* @__PURE__ */ _("div", {
+			}) : rt.map((e) => {
+				let t = e.parentGroup ?? e, n = e.parentGroup?.id ?? e.id, r = pt(t, n), i = e.parentGroup?.id ?? e.id, a = Ie === i;
+				return /* @__PURE__ */ v("div", {
 					"data-page-item-id": e.virtualPageIndex === 0 ? i : void 0,
 					className: a ? "uhuu:outline uhuu:outline-2 uhuu:outline-offset-2 uhuu:outline-blue-100 uhuu:bg-blue-50" : void 0,
-					children: /* @__PURE__ */ _(q_, {
+					children: /* @__PURE__ */ v(Vv, {
 						title: `Sheet ${e.pageNum}`,
-						controls: xt(e, e.parentGroup, r),
-						children: vt(e)
+						controls: Ct(e, e.parentGroup, r),
+						children: bt(e)
 					})
 				}, e.virtualPageId);
 			})
-		}, `dev-mode-${pe}-${de ?? "default"}`),
-		te && !re && /* @__PURE__ */ v(g, { children: [R.add && /* @__PURE__ */ _(Iv, {
-			open: We,
-			onOpenChange: Ge,
-			availableItems: ze,
-			onSelectItem: ft,
-			pageComponents: r,
-			payload: be,
-			setup: De,
+		}, `dev-mode-${he}-${pe ?? "default"}`),
+		te && !ie && /* @__PURE__ */ y(_, { children: [R.add && /* @__PURE__ */ v(Ey, {
+			open: Ke,
+			onOpenChange: qe,
+			availableItems: Ve,
+			renderThumbnail: Ze,
+			onSelectItem: mt,
+			payload: Se,
+			setup: ke,
 			gridColsClass: S,
 			"data-uhuu-editor": !0
-		}), R.reorder && /* @__PURE__ */ _(yS, {
-			open: xe,
-			onOpenChange: Se,
-			pages: qe,
+		}), R.reorder && /* @__PURE__ */ v(lC, {
+			open: Ce,
+			onOpenChange: we,
+			pages: Ye,
 			onReorder: (e) => {
-				Je(e), Se(!1);
+				Xe(e), we(!1);
 			},
-			onRemove: R.remove ? (e) => Ve(e.id) : void 0,
+			onRemove: R.remove ? (e) => Ue(e.id) : void 0,
 			pageComponents: r,
-			payload: be,
-			setup: De,
-			renderThumbnail: Ye,
-			title: oe(C) ?? V("reorderDialog.title"),
-			description: oe(w) ?? V("reorderDialog.description"),
+			payload: Se,
+			setup: ke,
+			renderThumbnail: Ze,
+			title: se(C) ?? H("reorderDialog.title"),
+			description: se(w) ?? H("reorderDialog.description"),
 			gridColsClass: S,
 			"data-uhuu-editor": !0
 		})] }),
-		/* @__PURE__ */ _(Yw, {
-			label: Ae ? oe(Ae.label) ?? Ae.id : null,
-			onDone: () => je(null),
+		/* @__PURE__ */ v(IT, {
+			label: Me ? se(Me.label) ?? Me.id : null,
+			onDone: () => Ne(null),
 			onAddAnother: () => {
-				let e = Ae;
-				je(null), e && ft(e);
+				let e = Me;
+				Ne(null), e && mt(e);
 			}
 		})
 	] });
 }
-function Qw(e) {
+function zT(e) {
 	let { templateConfig: t, ...n } = e;
-	return c(v_) || !e.payload && !e.onPayloadChange ? /* @__PURE__ */ _(Zw, { ...n }) : /* @__PURE__ */ _(x_, {
+	return c(Z_) || !e.payload && !e.onPayloadChange ? /* @__PURE__ */ v(RT, { ...n }) : /* @__PURE__ */ v(Q_, {
 		payload: e.payload,
 		onPayloadChange: e.onPayloadChange,
 		stateKey: e.stateKey,
-		children: /* @__PURE__ */ _(Zw, { ...n })
+		children: /* @__PURE__ */ v(RT, { ...n })
 	});
 }
-var $w = Uw();
-function eT(t) {
-	let n = c(v_), { t: r } = Ua(), i = n?.payload ?? t.payload, a = e.useMemo(() => uw({
+var BT = rv();
+function VT(t) {
+	let n = c(Z_), { t: r } = go(), i = n?.payload ?? t.payload, a = e.useMemo(() => tT({
 		...t.templateConfig,
 		payload: i
 	}), [t.templateConfig, i]), o = t.templateConfig?.spine?.component, [s, l] = e.useState({
@@ -17443,96 +17915,34 @@ function eT(t) {
 			open: !0,
 			message: e
 		});
-	}, []), d = e.useMemo(() => $g(i, t.stateKey ?? "uhuu_page_editor"), [i, t.stateKey]), f = e.useMemo(() => {
+	}, []), d = e.useMemo(() => M_(i, t.stateKey ?? "uhuu_page_editor"), [i, t.stateKey]), f = e.useMemo(() => {
 		let e = t.templateConfig.pageManagement;
-		return e != null && typeof e != "object" && H() && console.warn(`[uhuu-components] templateConfig.pageManagement takes an object, e.g. { locked: true }; ${JSON.stringify(e)} is ignored and every page-management control stays on.`), Uw(e);
-	}, [t.templateConfig.pageManagement]), p = f.templateOwnsPages, m = e.useMemo(() => {
-		if (p) return Gw(a.initialItems, d?.items, { rename: f.rename });
-		if (!d?.items) return a.initialItems;
-		let e = t.templateConfig.groups ?? {}, n = Array.isArray(e) ? e : Object.entries(e).map(([e, t]) => ({
-			id: e,
-			...t
-		})), r = new Map(n.map((e) => [e.id, e])), o = t.templateConfig.pages ?? {}, s = (e) => {
-			let t = e?.componentKey ?? e?.templateId ?? e?.id;
-			return o[t] ?? o[e?.templateId] ?? o[e?.id];
-		}, c = (e) => !s(e)?.hasFlow || e?.hasFlow ? e : {
-			...e,
-			hasFlow: !0
-		}, l = (e, t) => t === void 0 || !ba(e?.label, t) || e.label === t ? e : {
-			...e,
-			label: t
-		}, u = d.items.map((e) => {
-			if (e.kind !== "group") return l(c(e), s(e)?.label);
-			let t = e.templateId ?? e.id, n = r.get(t), a = l(e, n?.label), u = n?.strictPosition !== void 0 && !a.strictPosition ? {
-				...a,
-				strictPosition: n.strictPosition
-			} : a, d = {
-				...u,
-				pages: (u.pages ?? []).map(c)
-			};
-			if (!n || typeof n.pageComponentKeys != "function") return d;
-			try {
-				let e = n.pageComponentKeys({
-					payload: i,
-					item: void 0,
-					parent: void 0
-				});
-				return Array.isArray(e) ? e.length === 0 ? {
-					...d,
-					pages: []
-				} : {
-					...d,
-					pages: e.map((e, t) => {
-						let n = o[e], r = n?.dataKey;
-						return {
-							id: `${d.id}__${r ?? e}__${t}`,
-							componentKey: e,
-							templateId: e,
-							...r ? { dataKey: r } : {},
-							...n?.hasFlow ? { hasFlow: !0 } : {}
-						};
-					})
-				} : (console.error(`[PageEditor] pageComponentKeys for group ${u.id} must return an array, got:`, typeof e), u);
-			} catch (e) {
-				return console.error(`[PageEditor] Error evaluating pageComponentKeys for group ${d.id}:`, e), d;
-			}
-		}), m = new Set(a.initialItems.map((e) => e.id)), h = u.filter((e) => m.has(e.id)), g = Jg(h), _ = Jg(a.initialItems);
-		if (!Array.from(m).some((e) => !h.some((t) => t.id === e)) && g !== _) {
-			let e = u.filter((e) => {
-				if (e.kind !== "group") return !m.has(e.id);
-				let t = e.templateId ?? e.id;
-				return e.id !== t && !m.has(e.id);
-			});
-			if (e.length === 0) return a.initialItems;
-			let t = [...a.initialItems, ...e], n = t.filter((e) => e.strictPosition === "start"), r = t.filter((e) => e.strictPosition === "end"), i = t.filter((e) => !e.strictPosition);
-			return [
-				...n,
-				...i,
-				...r
-			];
-		}
-		return u;
-	}, [
+		return e != null && typeof e != "object" && console.warn(`[uhuu-components] templateConfig.pageManagement takes an object, e.g. { locked: true }; ${JSON.stringify(e)} is ignored and every page-management control stays on.`), rv(e);
+	}, [t.templateConfig.pageManagement]), p = e.useMemo(() => fv({
+		initialItems: a.initialItems,
+		savedItems: d?.items,
+		config: t.templateConfig,
+		payload: i,
+		management: f
+	}), [
 		d?.items,
 		a.initialItems,
 		i,
-		t.templateConfig.groups,
-		t.templateConfig.pages,
-		p,
-		f.rename
+		t.templateConfig,
+		f
 	]);
-	return /* @__PURE__ */ v(ne.Provider, {
+	return /* @__PURE__ */ y(re.Provider, {
 		value: !0,
-		children: [/* @__PURE__ */ _(Qw, {
+		children: [/* @__PURE__ */ v(zT, {
 			...t,
 			payload: i,
-			initialItems: m,
+			initialItems: p,
 			availableItems: f.add || f.duplicate ? a.availableItems : [],
 			pageManagement: f,
 			pageComponents: a.pageComponents,
 			spineComponent: o,
 			notifyError: u
-		}), /* @__PURE__ */ _(Dw, {
+		}), /* @__PURE__ */ v(vT, {
 			open: s.open,
 			onOpenChange: (e) => {
 				e || l({
@@ -17540,7 +17950,7 @@ function eT(t) {
 					message: ""
 				});
 			},
-			children: /* @__PURE__ */ v(Aw, { children: [/* @__PURE__ */ v(jw, { children: [/* @__PURE__ */ _(Nw, { children: r("notice.cannotRemoveTitle") }), /* @__PURE__ */ _(Pw, { children: s.message })] }), /* @__PURE__ */ _(Mw, { children: /* @__PURE__ */ _(Fw, {
+			children: /* @__PURE__ */ y(xT, { children: [/* @__PURE__ */ y(ST, { children: [/* @__PURE__ */ v(wT, { children: r("notice.cannotRemoveTitle") }), /* @__PURE__ */ v(TT, { children: s.message })] }), /* @__PURE__ */ v(CT, { children: /* @__PURE__ */ v(ET, {
 				onClick: () => l({
 					open: !1,
 					message: ""
@@ -17552,18 +17962,18 @@ function eT(t) {
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/integration-adapter.ts
-function tT(e, t) {
+function HT(e, t) {
 	if (e && t) {
 		if (e.includes("??")) {
 			let n = e.split("??").map((e) => e.trim());
 			for (let e of n) {
-				let n = nT(t, e);
+				let n = UT(t, e);
 				if (n != null) return n;
 			}
-		} else return nT(t, e);
+		} else return UT(t, e);
 	}
 }
-function nT(e, t) {
+function UT(e, t) {
 	if (!t) return e;
 	let n = t.split("."), r = e;
 	for (let e of n) {
@@ -17572,18 +17982,18 @@ function nT(e, t) {
 	}
 	return r;
 }
-function rT(e, t, n) {
+function WT(e, t, n) {
 	let r = {};
-	for (let [n, i] of Object.entries(e)) typeof i == "function" ? r[n] = i(t) : typeof i == "string" && (r[n] = tT(i.startsWith("integration.") ? i.slice(12) : i, t));
+	for (let [n, i] of Object.entries(e)) typeof i == "function" ? r[n] = i(t) : typeof i == "string" && (r[n] = HT(i.startsWith("integration.") ? i.slice(12) : i, t));
 	return r;
 }
-function iT(e, t, n) {
+function GT(e, t, n) {
 	return e(t, n);
 }
-function aT(e, t, n) {
-	return typeof e == "function" ? iT(e, t, n) : rT(e, t, n);
+function KT(e, t, n) {
+	return typeof e == "function" ? GT(e, t, n) : WT(e, t, n);
 }
-function oT(e, t, n) {
+function qT(e, t, n) {
 	if (e?.defaults?.imageGalleryPath) return e.defaults.imageGalleryPath;
 	if (n) {
 		if (typeof n == "function") {
@@ -17593,7 +18003,7 @@ function oT(e, t, n) {
 	}
 	return t?.media?.images ? "media.images" : t?.listing?.media?.images ? "listing.media.images" : t?.pba_listing?.media?.images ? "pba_listing.media.images" : t?.property?.media?.images ? "property.media.images" : null;
 }
-function sT(e, t, n = {}, r, i = null) {
+function JT(e, t, n = {}, r, i = null) {
 	let a = e?.integration?.path?.();
 	if (!a) return null;
 	let o = n.type === "assistant", s = n.type === "image" || n.imagePath, c = o ? e.integration.path(t) ?? [a, t].filter(Boolean).join(".") : [a, t].filter(Boolean).join(".");
@@ -17627,18 +18037,18 @@ function sT(e, t, n = {}, r, i = null) {
 		...n
 	};
 }
-function cT(t) {
-	let { dataBinding: n, integration: r, resolver: i, galleryPath: a, defaults: o } = t, s = e.useMemo(() => aT(i, r, n?.payload), [
+function YT(t) {
+	let { dataBinding: n, integration: r, resolver: i, galleryPath: a, defaults: o } = t, s = e.useMemo(() => KT(i, r, n?.payload), [
 		i,
 		r,
 		n?.payload
-	]), c = e.useMemo(() => oT(n, r, a), [
+	]), c = e.useMemo(() => qT(n, r, a), [
 		n,
 		r,
 		a
-	]), l = e.useCallback((e, t = {}, r) => sT(n, e, t, r, c), [n, c]), u = e.useCallback((e, t = {}, n) => {
+	]), l = e.useCallback((e, t = {}, r) => JT(n, e, t, r, c), [n, c]), u = e.useCallback((e, t = {}, n) => {
 		let r = l(e, t, n);
-		return r ? Qt({ dialog: r }) : {};
+		return r ? nn({ dialog: r }) : {};
 	}, [l]);
 	return e.useMemo(() => ({
 		data: s,
@@ -17657,34 +18067,299 @@ function cT(t) {
 	]);
 }
 //#endregion
+//#region src/uhuu/editor-shell/document/document-options-core.js
+function XT(e) {
+	return e?.type === "toggle" ? "toggle" : "select";
+}
+function ZT(e) {
+	let t = e?.valueType;
+	return t === "string" || t === "number" || t === "boolean" ? t : XT(e) === "toggle" ? "boolean" : "string";
+}
+function QT(e) {
+	return typeof e == "object" && !!e && !Array.isArray(e);
+}
+function $T(e, t) {
+	return (QT(e) && t?.key ? e[t.key] : void 0) ?? t?.defaultValue;
+}
+function eE(e, t) {
+	return e == null || t == null ? !1 : String(e) === String(t);
+}
+function tE(e, t) {
+	return (Array.isArray(e?.options) ? e.options : []).find((e) => eE(e?.value, t));
+}
+function nE(e) {
+	return e === !0 || e === "true";
+}
+function rE(e) {
+	if (typeof e == "number") return Number.isFinite(e) ? e : void 0;
+	if (typeof e != "string" || e.trim() === "") return;
+	let t = Number(e);
+	return Number.isFinite(t) ? t : void 0;
+}
+function iE(e, t) {
+	if (t == null) return t;
+	switch (ZT(e)) {
+		case "number": {
+			let e = rE(t);
+			return e === void 0 ? t : e;
+		}
+		case "boolean": return nE(t);
+		default: return String(t);
+	}
+}
+function aE(e) {
+	return typeof e?.editDialog == "function" ? "dialog" : "none";
+}
+function oE(e, t, n = (e) => typeof e == "string" ? e : void 0) {
+	let r = n(e.label) ?? e.key;
+	if (XT(e) === "toggle") return {
+		path: e.key,
+		type: "switch",
+		label: r,
+		value: nE(t)
+	};
+	let i = Array.isArray(e.options) ? e.options : [];
+	return {
+		path: e.key,
+		type: "select",
+		label: r,
+		...t == null ? {} : { value: String(t) },
+		options: i.map((e) => ({
+			value: String(e.value),
+			label: n(e.label) ?? String(e.value)
+		}))
+	};
+}
+//#endregion
+//#region src/uhuu/editor-shell/document/document-options.tsx
+var sE = "__uhuu_document_option_unset__", cE = !1;
+function lE() {
+	return typeof window > "u" ? void 0 : window.$uhuu;
+}
+function uE(e) {
+	let [t, n] = h(null);
+	return l(() => {
+		if (!e || typeof document > "u" || Aa()) return;
+		let t = document.createElement("div");
+		return t.setAttribute("data-uhuu-portal", ""), t.style.cssText = "position: fixed; top: 0; left: 0; z-index: 9999;", document.body.appendChild(t), n(t), () => {
+			t.remove(), n(null);
+		};
+	}, [e]), e ? t : null;
+}
+function dE({ payload: e, options: t, title: n, onChange: r, className: i, style: a }) {
+	let { interactive: o } = Wo(), { t: d, localize: p } = go(), g = c(Z_), _ = e ?? g?.payload ?? null, b = f(() => Array.isArray(t) ? t : [], [t]), S = o && !Ko() && b.length > 0, C = ja(), w = Ca(), T = uE(S && !C && !w.inProvider), E = C ?? w.portalContainer ?? T, D = u(), O = `${D}-panel`, k = `${D}-heading`, A = m(null), j = m(null), M = m(null), [N, P] = h(!1), [F, I] = h({ side: "top" }), [L, R] = h({});
+	l(() => {
+		R((e) => {
+			let t = Object.fromEntries(Object.entries(e).filter(([e, t]) => {
+				let n = b.find((t) => t.key === e);
+				return n && Object.is($T(_, n), t.previousValue);
+			}));
+			return Object.keys(t).length === Object.keys(e).length ? e : t;
+		});
+	}, [_, b]);
+	let ee = (e) => {
+		let t = $T(_, e), n = L[e.key];
+		return n && Object.is(t, n.previousValue) ? n.value : t;
+	}, te = s((e) => {
+		P(!1), e && j.current?.focus();
+	}, []), z = () => {
+		let e = j.current?.getBoundingClientRect();
+		if (e && typeof window < "u") {
+			let t = e.top + e.height / 2 > window.innerHeight / 2 ? "top" : "bottom", n = t === "top" ? e.top : window.innerHeight - e.bottom;
+			I({
+				side: t,
+				maxHeight: Math.max(160, Math.floor(n - 24))
+			});
+		}
+		P(!0);
+	};
+	l(() => {
+		S || P(!1);
+	}, [S]), l(() => {
+		if (!N) return;
+		M.current?.querySelector("select, button")?.focus();
+		let e = (e) => {
+			A.current?.contains(e.target) || P(!1);
+		};
+		return document.addEventListener("pointerdown", e, !0), () => document.removeEventListener("pointerdown", e, !0);
+	}, [N]);
+	let B = (e) => {
+		let t = lE();
+		typeof t?.editDialog == "function" && (t.editDialog(oE(e, $T(_, e), p)), P(!1));
+	}, ne = (e, t) => {
+		if (aE(lE()) === "dialog") {
+			B(e);
+			return;
+		}
+		let n = iE(e, t);
+		cE || (cE = !0, console.warn("[uhuu-components] DocumentOptions: no supported $uhuu.editDialog on this page; a change only calls onChange.")), R((t) => ({
+			...t,
+			[e.key]: {
+				value: n,
+				previousValue: $T(_, e)
+			}
+		})), r?.(e.key, n);
+	};
+	if (!S || !E || typeof document > "u") return null;
+	let re = p(n) ?? d("documentOptions.title"), ie = aE(lE()) === "dialog", ae = (e, t) => {
+		let n = p(e.description);
+		return n ? /* @__PURE__ */ v("p", {
+			id: t,
+			className: "uhuu:text-xs uhuu:text-gray-500",
+			children: n
+		}) : null;
+	}, oe = /* @__PURE__ */ y("div", {
+		ref: A,
+		className: K("uhuu-screen-only uhuu:relative uhuu:flex uhuu:items-center", C && i),
+		style: C ? a : void 0,
+		onKeyDown: (e) => {
+			e.key === "Escape" && N && (e.preventDefault(), e.stopPropagation(), te(!0));
+		},
+		onBlur: (e) => {
+			let t = e.relatedTarget;
+			N && t && !A.current?.contains(t) && P(!1);
+		},
+		children: [/* @__PURE__ */ y($o, {
+			ref: j,
+			type: "button",
+			variant: "ghost",
+			size: "sm",
+			"aria-haspopup": "dialog",
+			"aria-expanded": N,
+			"aria-controls": N ? O : void 0,
+			onClick: () => N ? te(!1) : z(),
+			className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-700 uhuu:hover:bg-gray-100/80 uhuu:h-7 uhuu:px-2.5 uhuu:gap-1.5",
+			children: [/* @__PURE__ */ v(ha, {
+				"aria-hidden": "true",
+				className: "uhuu:w-3.5 uhuu:h-3.5"
+			}), re]
+		}), N && /* @__PURE__ */ y("div", {
+			ref: M,
+			id: O,
+			role: "dialog",
+			"aria-labelledby": k,
+			className: K("uhuu:absolute uhuu:right-0 uhuu:z-50 uhuu:w-72 uhuu:max-w-[calc(100vw-2rem)] uhuu:overflow-y-auto uhuu:rounded-md uhuu:border uhuu:border-gray-200 uhuu:bg-(--uhuu-shell-surface) uhuu:p-3 uhuu:text-gray-900 uhuu:shadow-md", F.side === "top" ? "uhuu:bottom-full uhuu:mb-3" : "uhuu:top-full uhuu:mt-3"),
+			style: { maxHeight: F.maxHeight },
+			children: [/* @__PURE__ */ v("h2", {
+				id: k,
+				className: "uhuu:mb-3 uhuu:text-sm uhuu:font-medium uhuu:text-gray-900",
+				children: re
+			}), /* @__PURE__ */ v("div", {
+				className: "uhuu:space-y-3",
+				children: b.map((e, t) => {
+					let n = `${D}-option-${t}`, r = `${n}-description`, i = e.description ? r : void 0, a = p(e.label) ?? e.key, o = ee(e), s = XT(e) === "toggle", c = Array.isArray(e.options) ? e.options : [], l = s ? void 0 : tE(e, o), u = o == null || o === "" ? d("documentOptions.notSet") : String(o);
+					if (ie) {
+						let t = s ? d(nE(o) ? "documentOptions.on" : "documentOptions.off") : l ? p(l.label) ?? String(l.value) : u;
+						return /* @__PURE__ */ y("div", {
+							className: "uhuu:space-y-1.5",
+							children: [/* @__PURE__ */ y("button", {
+								type: "button",
+								"aria-haspopup": "dialog",
+								"aria-describedby": i,
+								title: d("documentOptions.change", { name: a }),
+								onClick: () => B(e),
+								className: "uhuu:flex uhuu:w-full uhuu:items-center uhuu:justify-between uhuu:gap-3 uhuu:rounded-md uhuu:border uhuu:border-gray-200 uhuu:bg-(--uhuu-shell-surface) uhuu:px-2.5 uhuu:py-1.5 uhuu:text-left uhuu:transition-colors uhuu:hover:bg-gray-50 uhuu:focus-visible:outline-none uhuu:focus-visible:ring-2 uhuu:focus-visible:ring-gray-200",
+								children: [/* @__PURE__ */ y("span", {
+									className: "uhuu:min-w-0",
+									children: [/* @__PURE__ */ v("span", {
+										className: "uhuu:block uhuu:text-xs uhuu:font-medium uhuu:text-gray-500",
+										children: a
+									}), /* @__PURE__ */ v("span", {
+										className: "uhuu:block uhuu:truncate uhuu:text-sm uhuu:text-gray-900",
+										children: t
+									})]
+								}), /* @__PURE__ */ v(fa, {
+									"aria-hidden": "true",
+									className: "uhuu:h-3.5 uhuu:w-3.5 uhuu:shrink-0 uhuu:text-gray-400"
+								})]
+							}), ae(e, r)]
+						}, e.key);
+					}
+					return s ? /* @__PURE__ */ y("div", {
+						className: "uhuu:space-y-1",
+						children: [/* @__PURE__ */ y("div", {
+							className: "uhuu:flex uhuu:items-center uhuu:justify-between uhuu:gap-3 uhuu:py-1",
+							children: [/* @__PURE__ */ v(Pw, {
+								htmlFor: n,
+								className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-500",
+								children: a
+							}), /* @__PURE__ */ v(NC, {
+								id: n,
+								"aria-describedby": i,
+								checked: nE(o),
+								onCheckedChange: (t) => ne(e, t)
+							})]
+						}), ae(e, r)]
+					}, e.key) : /* @__PURE__ */ y("div", {
+						className: "uhuu:space-y-1.5",
+						children: [
+							/* @__PURE__ */ v(Pw, {
+								htmlFor: n,
+								className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-500",
+								children: a
+							}),
+							/* @__PURE__ */ y(hC, {
+								id: n,
+								"aria-describedby": i,
+								value: l ? String(l.value) : sE,
+								onChange: (t) => {
+									let n = c.find((e) => String(e.value) === t.target.value);
+									n && ne(e, n.value);
+								},
+								className: "uhuu:w-full uhuu:text-sm",
+								children: [!l && /* @__PURE__ */ v("option", {
+									value: sE,
+									disabled: !0,
+									children: u
+								}), c.map((e, t) => /* @__PURE__ */ v("option", {
+									value: String(e.value),
+									children: p(e.label) ?? String(e.value)
+								}, `${t}:${String(e.value)}`))]
+							}),
+							ae(e, r)
+						]
+					}, e.key);
+				})
+			})]
+		})]
+	});
+	return C ? x(oe, C) : x(/* @__PURE__ */ v("div", {
+		"data-uhuu-editor": !0,
+		className: K("uhuu-screen-only uhuu:fixed uhuu:right-4 uhuu:bottom-4 uhuu:z-50 uhuu:flex uhuu:items-center uhuu:p-1.5 uhuu:bg-(--uhuu-shell-surface)/90 uhuu:backdrop-blur-md uhuu:border uhuu:border-gray-200/60 uhuu:rounded-lg uhuu:shadow-sm", i),
+		style: a,
+		children: oe
+	}), E);
+}
+//#endregion
 //#region src/index.js
-var lT = {
-	Pagination: ae,
+var fE = {
+	Pagination: oe,
 	Sheet: V,
-	FlowArea: Nt,
-	FlowPage: Pt,
-	Flow: Xt,
-	FlowColumns: Zt,
-	FlowText: dt,
-	planFlowChunks: be,
-	planFlowColumnChunks: Ae,
-	createFlowPlanMetrics: ye,
-	flowMeasure: je,
-	FlowDocument: yn,
-	markdownToFlowItems: Pn,
-	htmlToFlowItems: hn,
-	planCoverSpread: N,
-	resolveSheetSize: j,
-	CoverSpread: Ln,
-	usePaginationHold: zn
-}, uT = {
-	TemplateDataProvider: x_,
-	PageEditor: eT,
-	InteractiveModeProvider: So,
-	useInteractive: vo,
-	useIntegrationAdapter: cT
+	FlowArea: bt,
+	FlowPage: xt,
+	Flow: en,
+	FlowColumns: tn,
+	FlowText: Pt,
+	planFlowChunks: Je,
+	planFlowColumnChunks: it,
+	createFlowPlanMetrics: qe,
+	flowMeasure: he,
+	FlowDocument: In,
+	markdownToFlowItems: Zn,
+	htmlToFlowItems: En,
+	planCoverSpread: P,
+	resolveSheetSize: M,
+	CoverSpread: er,
+	usePaginationHold: nr
+}, pE = {
+	TemplateDataProvider: Q_,
+	PageEditor: VT,
+	InteractiveModeProvider: Jo,
+	useInteractive: Wo,
+	useIntegrationAdapter: YT,
+	DocumentOptions: dE
 };
 //#endregion
-export { lg as BRAND_KIT_PUBLIC_BASE_URL, Hg as BrandKitProvider, rn as Editable, uT as EditorShell, xh as ImageBlock, lT as Static, Cg as brandKitCollection, Tg as brandKitEnv, yg as brandKitLogo, Eg as brandKitMapStyle, pg as brandKitSourceUrl, Qt as getDialogProps, Ah as imageUrl, mg as loadBrandKit, Ug as useBrandKit };
+export { Fg as BRAND_KIT_PUBLIC_BASE_URL, p_ as BrandKitProvider, cn as Editable, pE as EditorShell, qh as ImageBlock, fE as Static, Yg as brandKitCollection, Zg as brandKitEnv, Gg as brandKitLogo, Qg as brandKitMapStyle, zg as brandKitSourceUrl, nn as getDialogProps, ng as imageUrl, Bg as loadBrandKit, m_ as useBrandKit };
 
 //# sourceMappingURL=uhuu-components.es.js.map
