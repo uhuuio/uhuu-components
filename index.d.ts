@@ -33,6 +33,9 @@ export interface StaticFlowItemLines {
   lines: Array<{ top: number; bottom: number; start: number; hyphen?: boolean }>;
   end: number;
   justify: boolean;
+  /** The text's computed CSS `orphans` / `widows`, where the browser reports them; the item's meta wins. */
+  orphans?: number;
+  widows?: number;
 }
 
 /** One piece of an item split between the lines of its `Static.FlowText`. */
@@ -201,6 +204,16 @@ export interface StaticFlowMeasureApi {
   readUnwrappedHeights: (area: HTMLElement, flow: HTMLElement, scale?: number) => Map<HTMLElement, number>;
   /** Every measured leaf under `root`, in document order. */
   readFlowItemElements: (root: HTMLElement) => HTMLElement[];
+  /**
+   * The first of `items` that does not lie below the item before it in `area` (beside it, in
+   * another column), or `null`: such a flow cannot be planned (`unstacked-flow-items`).
+   */
+  readUnstackedItem: (area: HTMLElement, flow: HTMLElement, items: HTMLElement[]) => HTMLElement | null;
+  /**
+   * A CSS length with an absolute unit (`"20mm"`, `"12px"`) or a number of px, in CSS px;
+   * `undefined` for anything else. What `breakReserve` is read with.
+   */
+  parseAbsoluteLength: (value: number | string | undefined) => number | undefined;
   parseKeepWithNext: (value: string | undefined) => boolean | number;
   serializeKeepWithNext: (value: StaticFlowItemMeta['keepWithNext']) => string | undefined;
   /** `orphans` / `widows` attribute values: a positive whole number, else `undefined`. */
@@ -243,6 +256,12 @@ export interface StaticFlowPlanInput {
    * Without `lines` the plan is item-level. `planFlowColumnChunks` does not split.
    */
   lines?: Array<StaticFlowItemLines | undefined>;
+  /**
+   * Room kept free at the bottom of every page the flow breaks from, in px; the page it ends on
+   * keeps its full region, so a flow that fits one page plans as without it. 0 by default; a
+   * reserve of a page or more is ignored. `planFlowColumnChunks` does not take it.
+   */
+  breakReserve?: number;
 }
 
 /** Input for `Static.planFlowColumnChunks`, using globally indexed leaf measurements. */
@@ -869,6 +888,13 @@ export interface StaticFlowAreaProps {
    * and plans every later sheet with that height. Default: every sheet has the first one's height.
    */
   measureContinuation?: boolean;
+  /**
+   * Room kept free at the bottom of every sheet the flow continues from, so a break never sits on
+   * the sheet's edge; the sheet the flow ends on keeps its full area, and a flow that fits one
+   * sheet lays out as without it. A CSS length with an absolute unit (`"20mm"`, `"12px"`) or a
+   * number of px. `Static.FlowColumns` does not keep it.
+   */
+  breakReserve?: number | string;
 }
 
 export interface StaticFlowPageProps {
@@ -882,6 +908,8 @@ export interface StaticFlowPageProps {
   onFlowMeasurement?: (measurement: StaticFlowMeasurement) => void;
   /** See `StaticFlowAreaProps.measureContinuation`. */
   measureContinuation?: boolean;
+  /** See `StaticFlowAreaProps.breakReserve`. */
+  breakReserve?: number | string;
 }
 
 export interface StaticFlowProps<TItem = unknown> {
@@ -999,6 +1027,8 @@ export interface StaticFlowDocumentProps {
   flowAreaStyle?: CSSProperties;
   /** See `StaticFlowAreaProps.measureContinuation`. */
   measureContinuation?: boolean;
+  /** See `StaticFlowAreaProps.breakReserve`. */
+  breakReserve?: number | string;
   id?: string;
   idPrefix?: string;
   flowClassName?: string;
