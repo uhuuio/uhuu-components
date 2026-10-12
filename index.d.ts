@@ -852,7 +852,8 @@ export interface PageEditorTemplateConfig {
 
 export interface PageOptionSelectValue {
   label: LocalizedText;
-  value: string;
+  /** Matched to the stored value as a string (`2` is `"2"`); a payload option writes it typed by `valueType`. */
+  value: string | number | boolean;
   hex?: string;
 }
 
@@ -883,11 +884,26 @@ export type ColorSeriesPageOption = BasePageOption & {
 };
 export type PageOption = SelectPageOption | TogglePageOption | SliderPageOption | CounterPageOption | ColorSeriesPageOption;
 
+/** How a payload option writes a choice: default `boolean` for a toggle, `number` for a slider or counter, else `string`. */
+export type OptionValueType = "string" | "number" | "boolean";
+
+/** What a payload option (a page option without callbacks, or a document option) adds to its control. */
+interface PayloadOptionStorage {
+  /** Shown while the payload holds no value (`stored ?? defaultValue`). */
+  defaultValue?: any;
+  /** The stored key. Default: `id`. */
+  field?: string;
+  valueType?: OptionValueType;
+}
+
 type PayloadOptionFor<Option> = Option extends PageOption
-  ? Omit<Option, "getValue" | "onChange" | "applyPatch"> & { defaultValue?: any; field?: string }
+  ? Omit<Option, "getValue" | "onChange" | "applyPatch"> & PayloadOptionStorage
   : never;
-/** A page option stored automatically in `payload.pages`, without custom callbacks. */
+/** A page option stored automatically in `payload.pages[pageId]`, without custom callbacks. */
 export type PayloadOptionDefinition = PayloadOptionFor<PageOption>;
+
+/** The corner of PageEditor's floating toolbar. */
+export type ToolbarPosition = "bottom-right" | "bottom-left" | "top-right" | "top-left";
 
 export interface PageEditorProps {
   /** Pages, groups and initial items; `pageManagement` sets the page-management controls. */
@@ -907,6 +923,12 @@ export interface PageEditorProps {
   pageFilter?: PageFilterConfig;
   printConfigs?: PrintConfigMap;
   defaultZoomMode?: PageEditorDefaultZoomMode;
+  /**
+   * The corner the floating toolbar (page count, Add, Reorder, document options, zoom) starts in.
+   * Default `bottom-right`. A user moves it from the zoom menu; their corner is remembered in the
+   * browser and wins over this one.
+   */
+  toolbarPosition?: ToolbarPosition;
   onItemsChange?: (items: PageItem[], state: PageEditorState) => void;
   onStateChange?: (state: PageEditorState) => void;
   /**
@@ -963,25 +985,31 @@ export interface IntegrationAdapter {
   [key: string]: unknown;
 }
 
+type DocumentOptionFor<Option> = Option extends PageOption
+  ? Omit<Option, "getValue" | "onChange" | "applyPatch" | "appliesTo"> & PayloadOptionStorage
+  : never;
+
 /**
- * One document-level option: a top-level payload key the template reads (`payload.language`).
- * The shape `uhuu templates theme inspect <templateId> --snippet` prints from a legacy template
- * theme. See docs/document-options.md.
+ * The 0.4 shape, as `uhuu templates theme inspect <templateId> --snippet` prints a legacy theme:
+ * `key` names the payload key, and a select may leave out `type`.
+ * @deprecated Define document options as payload page options are, with `id`.
  */
-export interface DocumentOptionDefinition {
-  /** The top-level payload key, the same one the platform's theme option wrote. */
+export interface LegacyDocumentOptionDefinition {
   key: string;
-  /** Default `select`. */
   type?: "select" | "toggle";
   label: LocalizedText;
   description?: LocalizedText;
-  /** A select's choices. A stored value matches a choice as a string: `2` matches `"2"`. */
   options?: Array<{ value: string | number | boolean; label: LocalizedText }>;
-  /** Shown while the payload has no value for the key (`payload[key] ?? defaultValue`). */
   defaultValue?: unknown;
-  /** Local onChange previews: default `string` for a select, `boolean` for a toggle. Editor selects save strings. */
-  valueType?: "string" | "number" | "boolean";
+  valueType?: OptionValueType;
 }
+
+/**
+ * One document-level option: a top-level payload key the template reads (`payload.language`),
+ * defined, valued and drawn as a payload page option is (`id` names the key, `field` overrides
+ * it). See docs/document-options.md.
+ */
+export type DocumentOptionDefinition = DocumentOptionFor<PageOption> | LegacyDocumentOptionDefinition;
 
 export interface DocumentOptionsProps {
   /**
@@ -993,14 +1021,13 @@ export interface DocumentOptionsProps {
   /** Heading of the control. Default: "Document options" in the shell's interface language. */
   title?: LocalizedText;
   /**
-   * Called for local choices when no supported $uhuu.editDialog is available. The editor field
-   * saves through the next payload update and does not call onChange.
+   * Called for local choices, when there is no uhuu document editor on the page. In the editor a
+   * choice arrives through the next payload update.
    */
   onChange?: (key: string, value: unknown) => void;
-  /**
-   * Inside PageEditor's floating toolbar: the entry's wrapper. Otherwise the control's own
-   * floating bar, bottom right by default (move it with `style`, e.g. `{ top: 16, bottom: "auto" }`).
-   */
+  /** The corner of the control's own floating bar, drawn when no PageEditor toolbar is on screen. Default `bottom-right`. */
+  toolbarPosition?: ToolbarPosition;
+  /** Inside PageEditor's floating toolbar: the entry's wrapper. Otherwise the control's own floating bar. */
   className?: string;
   style?: CSSProperties;
 }
@@ -1012,9 +1039,10 @@ export const EditorShell: {
   useInteractive: () => InteractiveModeContextValue;
   useIntegrationAdapter: (config: IntegrationAdapterConfig) => IntegrationAdapter;
   /**
-   * Document-level switches for top-level payload keys, edited through the released editor's
-   * `$uhuu.editDialog` field. Joins the nearest InteractiveModeProvider's PageEditor toolbar, else floats bottom right.
-   * Hidden outside edit mode, in the PDF renderer and in print. See docs/document-options.md.
+   * Document-level options for top-level payload keys, defined and drawn as page options are. A
+   * choice is an edit in the uhuu document editor. Joins the nearest InteractiveModeProvider's
+   * PageEditor toolbar, else floats in a corner. Hidden outside edit mode, in the PDF renderer and
+   * in print. See docs/document-options.md.
    */
   DocumentOptions: ComponentType<DocumentOptionsProps>;
 };
