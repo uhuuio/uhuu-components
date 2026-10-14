@@ -414,6 +414,246 @@ export interface ImageUrlOptions {
  */
 export function imageUrl(src: ImageSource, options?: ImageUrlOptions): string | undefined;
 
+// --- Image frames (src/uhuu/frame/). See docs/frame-block.md. ---
+// The read helpers are the vendored `uhuu.frame.v1` module (src/uhuu/frame/vendor, generated from
+// uhuu-editor-dialogs). dist ships this file alone, so the module's types are mirrored here;
+// test/frame-vendor.test.mjs checks the mirror against the vendored source.
+
+/** `value.uhuuFrame.schema` of a frame. */
+export const FRAME_SCHEMA: "uhuu.frame.v1";
+/** Key of the frame record inside a frame value. Namespaced so it cannot collide with template keys. */
+export const FRAME_KEY: "uhuuFrame";
+
+/** Which legacy image wins when an old value carries both a generated image and a pick. */
+export type FrameLegacyPrecedence = "generated" | "pick";
+
+/** A transform applied to a source's image (crop, AI enhance, …). Its base is the previous step. */
+export interface FrameStep {
+  type: string;
+  url: string;
+  width?: number;
+  height?: number;
+  mimeType?: string;
+  /** Replayable parameters or result metadata (crop box, AI asset id, …). */
+  state?: Record<string, unknown>;
+}
+
+/** An overlay drawn over a source's image by the page (annotation). Never composited into the image. */
+export interface FrameLayer {
+  state: unknown;
+  /** The image the overlay was drawn on. */
+  baseUrl?: string;
+  /** The image under the overlay changed after it was drawn. */
+  stale?: boolean;
+}
+
+/** One dialog's own entry: its last image, the state it reopens with, its steps and layers. */
+export interface FrameSource {
+  /** Absent for state-only saves (a map saved without a design image). */
+  url?: string;
+  /** Key the dialog used for its URL (`image` for generated dialogs); reproduced when it reopens. */
+  urlKey?: string;
+  width?: number;
+  height?: number;
+  mimeType?: string;
+  /** Everything else the dialog saved, URL keys removed. */
+  state?: Record<string, unknown>;
+  steps?: FrameStep[];
+  layers?: Record<string, FrameLayer>;
+}
+
+/** One-level undo: the active source before the last action and the entry it changed. */
+export interface FrameUndo {
+  active: string | null;
+  /** Source entry the action changed; absent when only `active` moved. */
+  type?: string;
+  /** That entry before the action; `null` when the action created it. */
+  before?: FrameSource | null;
+}
+
+/** `value.uhuuFrame`: every source the slot holds and the one it shows. */
+export interface FrameRecord {
+  schema: "uhuu.frame.v1";
+  active: string | null;
+  sources: Record<string, FrameSource>;
+  previous?: FrameUndo;
+}
+
+/**
+ * A frame value as stored in the payload. Its top level mirrors the active source in the shape it
+ * saved before frames — a map's image under `image`, a pick's under `contentUrl`, both also under
+ * `url` — so `imageUrl(value)` and the readers templates already have keep working.
+ */
+export type FrameValue = Record<string, unknown> & { uhuuFrame: FrameRecord };
+
+export interface FrameOptions {
+  /** Source types the field declares, in order. Resolves a legacy generated shape with no identifying key (a bare `{ image }`). */
+  sources?: readonly string[];
+  /** Default `'generated'`. Implenia IM passes `'pick'`. */
+  legacyPrecedence?: FrameLegacyPrecedence;
+  /**
+   * A legacy generated value whose upload failed keeps its render as a `data:` URL
+   * (`dataImage`). `'show'` (default) shows it, as Implenia IM, implenia-teaser and jbre's
+   * cadastral do; `'ignore'` treats the source as having no image, as wuw, evernest, go and
+   * jbre's map do (their placeholder shows). New saves never carry one.
+   */
+  legacyDataImage?: 'show' | 'ignore';
+  /**
+   * Also draw the overlay a source dialog keeps in its own state (cadastral's
+   * `annotationSvg`). Off by default: the cadastral dialog bakes that outline into its image.
+   */
+  intrinsicOverlays?: boolean;
+  /** A legacy overlay saved at a separate path (`annotationPath`); folded into the active source. */
+  legacyLayer?: unknown;
+  /** Layer type the legacy overlay becomes. Default `'annotation'`. */
+  legacyLayerType?: string;
+}
+
+export interface FrameDisplay {
+  /** The image to show; `''` when there is none. */
+  url: string;
+  width?: number;
+  height?: number;
+  mimeType?: string;
+  /** Active source type. */
+  source: string | null;
+  /** Number of transforms applied on top of the source image. */
+  steps: number;
+}
+
+export interface FrameOverlay {
+  /** Layer type, or the source type for an overlay the source dialog drew itself (cadastral). */
+  key: string;
+  svg: string;
+  stale: boolean;
+  /** Drawn by the source dialog as part of its own output. */
+  intrinsic: boolean;
+}
+
+/** The image an image-accepting dialog opens with (`eventData.input`). */
+export interface FrameImageInput {
+  url: string;
+  width?: number;
+  height?: number;
+  mimeType?: string;
+  /** Frame source the image comes from. */
+  source?: string;
+}
+
+/** True when `value` carries a `uhuu.frame.v1` record. */
+export function isFrameValue(value: unknown): value is FrameValue;
+
+/**
+ * The frame record of any value: a frame (validated), or a value saved before frames (URL string,
+ * ImageObject, a generated dialog's output) read into one in memory. Never writes. `null` for an
+ * empty slot. A frame whose mirrored `contentUrl` was patched by a writer that does not know frames
+ * reads that patch as the newest pick.
+ */
+export function normalizeFrame(value: unknown, options?: FrameOptions): FrameRecord | null;
+
+/** What the page should show for this value: URL, size and the source it comes from. */
+export function frameDisplay(value: unknown, options?: FrameOptions): FrameDisplay;
+
+/** The image URL to show for a frame or legacy value; `''` when there is none. */
+export function frameImage(value: unknown, options?: FrameOptions): string;
+
+/** The active source type, or `null`. */
+export function frameActive(value: unknown, options?: FrameOptions): string | null;
+
+/** The input an image-accepting dialog opens with; `null` when nothing is shown. */
+export function frameInput(value: unknown, options?: FrameOptions): FrameImageInput | null;
+
+/**
+ * The overlays to draw over the shown image, bottom to top: the source dialog's own overlay
+ * (cadastral's `annotationSvg`), then the active source's layers. Stale layers are included.
+ */
+export function frameOverlays(value: unknown, options?: FrameOptions): FrameOverlay[];
+
+/**
+ * The value a source dialog reopens with, in the shape it saved (`{ list, home, mapbox, image }` for
+ * the map). `undefined` when the source has never been saved.
+ */
+export function frameSourceView(value: unknown, type: string, options?: FrameOptions): Record<string, unknown> | undefined;
+
+/** Any value as a stored frame, showing what it showed before. `null` for an empty slot. */
+export function toFrameValue(value: unknown, options?: FrameOptions): FrameValue | null;
+
+/**
+ * The options every reader of a slot passes, from its declaration: its sources, legacy
+ * precedence, failed-upload rule, and the overlay saved at `annotationPath` (read from `payload`).
+ */
+export function frameOptionsOf(declaration: Partial<FrameDeclaration>, payload?: unknown): FrameOptions;
+
+/** The image shown now and the overlay saved at `annotationPath`: what an editor without frames annotates. */
+export interface FrameLegacyCurrent {
+  image?: string;
+  annotation?: unknown;
+}
+
+/**
+ * `{ path, frame, types }`: the message `$uhuu.editFrame` sends, for an `ImageBlock` `dialog` or an
+ * SDK without `editFrame`. `types` is the chooser an editor without frames shows. `null` without a
+ * `path` or a source with a `type`.
+ */
+export function frameEditDialog(
+  declaration: FrameDeclaration,
+  current?: FrameLegacyCurrent | null,
+): { path: string; frame: Omit<FrameDeclaration, "path">; types: Record<string, unknown>[] } | null;
+
+/** Opens a frame from a template's own click handler: `$uhuu.editFrame` when the SDK has it, else `editDialog` with `frameEditDialog`'s message. No host, no call. */
+export function openFrame(declaration: FrameDeclaration, current?: FrameLegacyCurrent | null): void;
+
+/** One dialog a frame offers: its type, its title in the chooser, and that dialog's own options. */
+export interface FrameDialogEntry {
+  type: string;
+  title?: string;
+  /** The dialog's configuration (coordinates, styles, zoom, `visualGallery`, …). */
+  config?: Record<string, unknown>;
+  /** Other options for that dialog (`imageGalleryPath`, `galleryUpload`, …). */
+  [key: string]: unknown;
+}
+
+/** What `$uhuu.editFrame` takes (uhuu-sdk): the slot and the dialogs it offers. */
+export interface FrameDeclaration {
+  /** Where the frame is saved. */
+  path: string;
+  /** The dialogs that create the image (`map`, `satellite`, `cadastral`, `image`, …), in chooser order. */
+  sources: FrameDialogEntry[];
+  /** Overlays drawn over the shown image (`annotation`). */
+  layers?: FrameDialogEntry[];
+  /** Transforms offered on the shown image (`image-editor`, `ai-marketing-studio`). Default: all the editor offers; `false` for none. */
+  transforms?: string[] | false;
+  /** Crop aspect ratio, width / height. */
+  ratio?: number;
+  /** Which image an old document shows when it holds both a generated image and a pick. Default `'generated'`. */
+  legacyPrecedence?: FrameLegacyPrecedence;
+  /** Whether an old map whose upload failed shows its unsaved render (`'show'`, default) or the placeholder (`'ignore'`). */
+  legacyDataImage?: 'show' | 'ignore';
+  /** An overlay saved at its own path before frames. Pass its value as FrameBlock's `annotation`. */
+  annotationPath?: string;
+}
+
+export interface FrameBlockProps extends FrameDeclaration, Omit<ImageBlockProps, "src" | "dialog" | "annotation"> {
+  /** The value at `path`: a frame, or anything saved there before frames. */
+  value?: unknown;
+  /** Also draw a source's own outline (cadastral `annotationSvg`); off because the cadastral image has it baked in. */
+  intrinsicOverlays?: boolean;
+  /** The overlay value saved at `annotationPath`; read as the active source's layer until the frame holds its own. */
+  annotation?: ImageBlockAnnotationValue | null;
+  /** Rendered instead of the frame's image: a template adapter's own URL. */
+  src?: string;
+  /** `imageUrl` options for the shown image (`print`, `size`, `printSize`, `format`). */
+  imageUrlOptions?: ImageUrlOptions;
+}
+
+/**
+ * An image slot several dialogs write (map, satellite, cadastral, gallery pick, crop, annotation),
+ * stored as a `uhuu.frame.v1` value. Renders the shown image through `imageUrl` with every overlay
+ * of the active source over it, and opens `$uhuu.editFrame` on click in the editor (`editDialog`
+ * with the legacy `types` on an older SDK; nothing in renderer mode). Layout props are ImageBlock's.
+ */
+export const FrameBlock: ComponentType<FrameBlockProps>;
+
 // --- Brand-kit runtime (src/uhuu/brand-kit/). See docs/brand-kit-runtime.md. ---
 
 export interface BrandKitFontFile {
