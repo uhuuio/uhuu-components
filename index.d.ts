@@ -22,6 +22,13 @@ export interface StaticFlowItemMeta {
   orphans?: number;
   /** An item split between the lines of its `Static.FlowText`: fewest lines on the piece that starts the next page. Default 2. */
   widows?: number;
+  /**
+   * The screen view (`PageEditor` `view="screen"`): where print would scale the item onto a page of
+   * its own (taller than its page, and not split by a `Static.FlowText`), it is drawn whole at full
+   * size and its sheet grows to hold it. Taller than any page, it starts right under what precedes
+   * it. Print ignores it, and so does an item inside a `Static.FlowColumns` column group.
+   */
+  growSheet?: boolean;
 }
 
 /**
@@ -69,6 +76,13 @@ export type StaticFlowTextIssue =
 export interface StaticFlowItemGroup {
   key: string;
   repeatHeader?: boolean;
+  /**
+   * The screen view (`PageEditor` `view="screen"`): the group is one unit, its header and every item
+   * on one sheet. It fits the room left, or moves whole to a page that holds it; taller than any
+   * page, it starts right under what precedes it and its sheet grows (`--uhuu-sheet-growth`). Print
+   * ignores it, and so does a `Static.FlowColumns` column group.
+   */
+  growSheet?: boolean;
 }
 
 export interface StaticFlowFragmentContext<TItem = unknown> {
@@ -133,6 +147,11 @@ export interface StaticFlowChunk {
   layout?: StaticFlowLayoutFragment[];
   /** The pieces of items split between lines on this page, by item index. */
   splits?: Record<number, StaticFlowTextSplit>;
+  /**
+   * How much taller than its page this sheet is drawn, in px, to hold an item with `growSheet`
+   * (the screen view). The sheet exposes it as `--uhuu-sheet-growth`.
+   */
+  growth?: number;
 }
 
 export interface StaticFlowColumn {
@@ -194,6 +213,11 @@ export interface StaticFlowMeasureApi {
   readHeaderGroupKey: (element: HTMLElement) => string | undefined;
   /** @internal Library measurement detail; retained for compatibility. */
   readHeaderGroupRepeats: (itemElements: HTMLElement[]) => Record<string, boolean>;
+  /**
+   * @internal The header groups whose items carry `data-uhuu-flow-header-grow-sheet`
+   * (`getItemGroup` `growSheet`, the screen view), for `headerGroupGrows`.
+   */
+  readHeaderGroupGrows: (itemElements: HTMLElement[]) => Record<string, boolean>;
   /** `unwrapped`: heights from `readUnwrappedHeights`, used for the headers it covers. */
   readHeaderGroupHeights: (
     root: HTMLElement,
@@ -268,11 +292,14 @@ export interface StaticFlowPlanInput {
   headerGroupKeys?: Array<string | null | undefined>;
   headerGroupHeights?: Record<string, number>;
   headerGroupRepeats?: Record<string, boolean>;
+  /** Header groups that are one unit on one sheet (`getItemGroup` `growSheet`, the screen view). */
+  headerGroupGrows?: Record<string, boolean>;
   onUnplaceableItem?: (item: StaticFlowUnplaceableItem) => void;
+  /** @internal Filled with the planner's work counters (hosts tuning their own canvas). */
   metrics?: StaticFlowPlanMetrics;
   /**
-   * Line metrics per item (`flowMeasure.readFlowTextLines`); `undefined` for items that do not
-   * split. An item that does not fit the room left is split at a line (chunks gain `splits`).
+   * @internal Line metrics per item, as `flowMeasure.readFlowTextLines` reads them (hosts that run
+   * their own Flow canvas); `undefined` for items that do not split. An item that does not fit the room left is split at a line (chunks gain `splits`).
    * Without `lines` the plan is item-level. `planFlowColumnChunks` does not split.
    */
   lines?: Array<StaticFlowItemLines | undefined>;
@@ -293,7 +320,8 @@ export interface StaticFlowColumnPlanInput extends StaticFlowPlanInput {
 
 export interface ImageBlockDialog {
   path: string;
-  type: "image" | "satellite";
+  /** The dialog to open. A frame message (`frameEditDialog`) has `frame` instead. */
+  type?: "image" | "satellite";
   [key: string]: unknown;
 }
 
@@ -317,16 +345,35 @@ export interface ImageBlockProps {
   style?: CSSProperties;
   imageStyle?: CSSProperties;
   backgroundColor?: string;
+  /**
+   * `auto` (an image in the flow of the page), `bleed` (positioned on the page by its geometry, into
+   * the bleed where it touches an edge) or `spread` (one half of an image across two facing pages).
+   * Unset: `spread` when `side` is set, `bleed` when any of `width`, `height`, `left`, `right`,
+   * `top`, `bottom` is set, else `auto`.
+   */
   mode?: "bleed" | "spread" | "auto";
-  side?: "start" | "end";
+  /**
+   * `spread`: which page of the pair this half is on: `start` (or `left`) the left page, `end` (or
+   * `right`) the right one. `left` / `right` as a cover spread's `spread.side` names them.
+   */
+  side?: "start" | "end" | "left" | "right";
+  /** Geometry in mm from the trim box, as every page dimension: the image's width. */
   width?: number;
+  /** Geometry in mm: the image's height. */
   height?: number;
+  /** Geometry in mm: distance from the left trim edge (0 runs into the bleed). */
   left?: number;
+  /** Geometry in mm: distance from the right trim edge (0 runs into the bleed). */
   right?: number;
+  /** Geometry in mm: distance from the top trim edge (0 runs into the bleed). */
   top?: number;
+  /** Geometry in mm: distance from the bottom trim edge (0 runs into the bleed). */
   bottom?: number;
+  /** Page width in mm; default from the page setup (ConfigContext). */
   pageWidth?: number;
+  /** Page height in mm; default from the page setup. */
   pageHeight?: number;
+  /** Bleed in mm; default from the page setup. */
   bleed?: number;
   dialog?: ImageBlockDialog;
   annotation?: ImageBlockAnnotation;
@@ -337,7 +384,10 @@ export interface ImageBlockProps {
    * Extra props (className, handlers, data attributes) merged into the click target that `dialog`
    * binds. Applied in `auto` mode, where ImageBlock renders that element itself. In `bleed` and
    * `spread` modes the image is positioned on the page and its element is the library's: there
-   * `dialogProps` is not applied; style the block through `className` / `imageClassName`.
+   * `dialogProps` is not applied, and neither are `className`, `style`, `imageStyle`, `imageProps`,
+   * `renderImage` and `placeholder` (development builds warn). Style the image with
+   * `imageClassName`; `children` render over it only with `dialog`, `annotation`, `overlaySvg` or
+   * `options`.
    */
   dialogProps?: Record<string, unknown>;
   placeholder?: ReactNode;
@@ -890,6 +940,7 @@ export interface BrandKitOption {
   name: string;
 }
 
+/** @deprecated Nothing takes or returns it; use `PageItem`. Removed in 0.5.0. */
 export interface PageEditorItem {
   id?: string;
   templateId?: string;
@@ -1169,30 +1220,69 @@ export interface PageEditorProps {
    * browser and wins over this one.
    */
   toolbarPosition?: ToolbarPosition;
+  /**
+   * What the pages are drawn for: `print` (default), the document as it prints, or `screen`, the
+   * document read on screen (a host's "Print" switch). Pages read it with `Static.useView()` and
+   * decide what changes (a table kept whole); a `Static.Flow` item with meta `growSheet` is drawn
+   * whole on a taller sheet instead of scaled to fit a page. The renderer always draws `print`;
+   * any other value draws `print` and warns.
+   */
+  view?: StaticView;
+  /** Called with the page list after every change a user makes (add, remove, reorder, rename). */
   onItemsChange?: (items: PageItem[], state: PageEditorState) => void;
+  /** Called with the saved editor state after every change, as it is written to the payload. */
   onStateChange?: (state: PageEditorState) => void;
+  /**
+   * Shows a page-management error (a page that cannot be added or removed). Default: the shell's
+   * own notice dialog.
+   */
+  notifyError?: (message: string) => void;
+  /** Development only (dev tools on): draws a reference image under each page to compare against. */
+  referenceRenderer?: (page: StandalonePage & { pageNum: number }) => ReactNode;
+  /** Replaces the whole sheet of each page (Pagination and Sheet included); cover spreads excepted. */
+  renderPage?: (args: { page: StandalonePage & { pageNum: number }; parent?: PageItem }) => ReactNode;
+  /** Extra items in the toolbar's menu, before the shell's own. */
+  menuItems?: ReactNode;
+  /**
+   * The grid class of the reorder dialog's page thumbnails. It replaces the shell's
+   * `uhuu-page-order-grid-cols` (it does not merge).
+   */
+  gridColsClass?: string;
+  /**
+   * Called with the item a user is about to add: return it (or a changed copy, async allowed) to
+   * add it, or `null` to cancel.
+   */
+  resolveNewItem?: (draft: PageItem) => Promise<PageItem | null | void> | PageItem | null | void;
   /**
    * What prints over every page. Default: the shell's page number ("Page N / total", untranslated).
    * `false` or `null`: nothing, for templates that number their own pages.
    */
-  notifyError?: (message: string) => void;
-  referenceRenderer?: (page: StandalonePage & { pageNum: number }) => ReactNode;
-  renderPage?: (args: { page: StandalonePage & { pageNum: number }; parent?: PageItem }) => ReactNode;
-  menuItems?: ReactNode;
-  gridColsClass?: string;
-  resolveNewItem?: (draft: PageItem) => Promise<PageItem | null | void> | PageItem | null | void;
   renderOverlay?: false | null | ((context: {
+    /** 1-based position in the flow-expanded document, as page components get it. */
+    pageNum: number;
+    /** Sheets in the flow-expanded document. */
+    totalPages: number;
+    /** @deprecated Use `pageNum`. */
     pageNo: number;
+    /** @deprecated Use `totalPages`. */
     total: number;
     pageId: string;
     parent?: PageItem;
   }) => ReactNode);
   reorderTitle?: LocalizedText;
   reorderDescription?: LocalizedText;
+  /** The payload key the page list and its state are saved under. Default `uhuu_page_editor`. */
   stateKey?: string;
+  /**
+   * Development only: the brand-kit switcher in the dev tools menu (dev tools on). It lists
+   * `brandKits` and calls back; it does not load a kit: wire the choice to `BrandKitProvider`.
+   */
   brandKits?: BrandKitOption[];
+  /** Development only: the kit the dev switcher marks as active. */
   activeBrandKitId?: string;
+  /** Development only: a kit chosen in the dev switcher. */
   onSelectBrandKit?: (id: string) => void;
+  /** Development only: a kit URL or id typed into the dev switcher. */
   onAddBrandKit?: (input: string) => void;
 }
 
@@ -1211,17 +1301,47 @@ export interface TemplateDataProviderProps {
 }
 
 export interface IntegrationAdapterConfig {
-  dataBinding?: Record<string, unknown>;
-  integration?: Record<string, unknown>;
-  resolver?: Record<string, unknown> | ((integration: unknown, payload?: unknown) => unknown);
-  galleryPath?: string | ((integration: unknown) => string | null);
+  /** The page's `dataBinding` prop: dialog paths are built from its integration binding. */
+  dataBinding?: PageDataBinding | Record<string, unknown>;
+  /** The integration's data the resolver reads. */
+  integration?: unknown;
+  /**
+   * Required: how `data` is read from `integration`. A map of keys to paths
+   * (`"listing ?? pba_listing"`) or functions, or one function `(integration, payload) => data`.
+   */
+  resolver?: Record<string, string | ((integration: any) => unknown)> | ((integration: any, payload?: unknown) => unknown);
+  /** The gallery image dialogs browse: a path, or read from the integration. */
+  galleryPath?: string | ((integration: any) => string | null);
+  /** @deprecated Never read: `data` is what `resolver` returns. Removed in 0.5.0. */
   defaults?: Record<string, unknown>;
   [key: string]: unknown;
 }
 
-export interface IntegrationAdapter {
-  dialog: (...args: unknown[]) => Record<string, unknown> | null;
-  dialogProps: (...args: unknown[]) => Record<string, unknown>;
+/** A dialog `useIntegrationAdapter` builds, its `path` under the page's integration binding. */
+export interface IntegrationDialog {
+  path: string;
+  subPath?: string | null;
+  imageGalleryPath?: string | null;
+  type?: string;
+  imagePath?: string;
+  ratio?: number;
+  rows?: number;
+  value?: unknown;
+  payload?: unknown;
+  [key: string]: unknown;
+}
+
+export interface IntegrationAdapter<TData = any> {
+  /** What `resolver` returned. */
+  data: TData;
+  /** The dialog for a field under the integration (`null` without an integration binding). */
+  dialog: (subPath: string, options?: Record<string, unknown>, value?: unknown) => IntegrationDialog | null;
+  /** `getDialogProps` of that dialog: spread onto the element that renders the field. */
+  dialogProps: (subPath: string, options?: Record<string, unknown>, value?: unknown) => DialogBindingProps;
+  galleryPath: string | null;
+  /** The integration instance the page is bound to. */
+  instanceId: string | null;
+  integration: unknown;
   [key: string]: unknown;
 }
 
@@ -1277,7 +1397,7 @@ export const EditorShell: {
   PageEditor: ComponentType<PageEditorProps>;
   InteractiveModeProvider: ComponentType<InteractiveModeProviderProps>;
   useInteractive: () => InteractiveModeContextValue;
-  useIntegrationAdapter: (config: IntegrationAdapterConfig) => IntegrationAdapter;
+  useIntegrationAdapter: <TData = any>(config: IntegrationAdapterConfig) => IntegrationAdapter<TData>;
   /**
    * Document-level options for top-level payload keys, defined and drawn as page options are. A
    * choice is an edit in the uhuu document editor. Joins the nearest InteractiveModeProvider's
@@ -1359,7 +1479,31 @@ export interface StaticCoverSpreadProps {
 export interface StaticPaginationProps {
   children: ReactNode;
   className?: string;
-  setup: Record<string, unknown>;
+  setup: StaticPageSetup;
+}
+
+/**
+ * A page setup (`Static.Pagination` `setup`, `PageEditor` `pageFormat`), in mm. `format`
+ * (`"A4"`, `"LETTER"`, …) with `orientation`, or `width` and `height`; a custom size outside
+ * 10–4000 mm falls back to A4.
+ */
+export interface StaticPageSetup {
+  format?: string;
+  // `string & {}`: suggestions for the known values without rejecting a string variable.
+  orientation?: "portrait" | "landscape" | (string & {});
+  width?: number;
+  height?: number;
+  bleed?: number;
+  /** Draws the bleed and trim guides on screen. */
+  showBleed?: boolean;
+  /** `single_page` (default) or `two_pages` (facing pages side by side). */
+  preview?: "single_page" | "two_pages" | (string & {});
+  /** A print stylesheet URL, or its CSS text, added for printing. */
+  printCssUrl?: string;
+  printCssRaw?: string;
+  /** Perfect-binding spine/glue, for a cover spread. */
+  binding?: BindingConfig | null;
+  [key: string]: unknown;
 }
 
 export interface StaticFlowAreaProps {
@@ -1377,10 +1521,17 @@ export interface StaticFlowAreaProps {
    * Room kept free at the bottom of every sheet the flow continues from, so a break never sits on
    * the sheet's edge; the sheet the flow ends on keeps its full area, and a flow that fits one
    * sheet lays out as without it. A CSS length with an absolute unit (`"20mm"`, `"12px"`) or a
-   * number of px. `Static.FlowColumns` does not keep it.
+   * number of px (not mm: write `"20mm"`); any other value keeps no room and warns. `Static.FlowColumns`
+   * does not keep it.
    */
   breakReserve?: number | string;
 }
+
+/**
+ * What the pages are drawn for: `print`, the document as it prints, or `screen`, the document read
+ * on screen (`PageEditor` `view`).
+ */
+export type StaticView = "print" | "screen";
 
 export interface StaticFlowPageProps {
   children: ReactNode;
@@ -1397,18 +1548,26 @@ export interface StaticFlowPageProps {
   breakReserve?: number | string;
 }
 
-export interface StaticFlowProps<TItem = unknown> {
+/**
+ * `TType`: the item types `metaDefaults` keys and `getItemType` returns, so a misspelled type key is
+ * a type error (`Static.Flow<Row, "heading" | "row">`). Default: any string.
+ */
+export interface StaticFlowProps<TItem = unknown, TType extends string = string> {
+  /** Stable and unique within the page. */
   id: string;
   items: TItem[];
   getKey: (item: TItem, index: number) => Key;
+  /** The third argument describes this item's visible fragment (page, position, split piece). */
   renderItem: (
     item: TItem,
     index: number,
     fragment: StaticFlowFragmentContext<TItem>
   ) => ReactNode;
   getItemMeta?: (item: TItem, index: number) => StaticFlowItemMeta | undefined;
-  metaDefaults?: Partial<Record<string, StaticFlowItemMeta>>;
-  getItemType?: (item: TItem, index: number) => string | undefined;
+  /** Meta per item type, under `getItemMeta`; the type is `getItemType`'s, else `item.type`. */
+  metaDefaults?: Partial<Record<TType, StaticFlowItemMeta>>;
+  getItemType?: (item: TItem, index: number) => TType | undefined;
+  /** Opt into a separately measured, repeatable group header (`renderGroupHeader`). */
   getItemGroup?: (
     item: TItem,
     index: number
@@ -1467,7 +1626,7 @@ export interface StaticFlowColumnsContainerProps {
   style?: CSSProperties;
 }
 
-export interface StaticFlowColumnsProps<TItem = unknown> extends StaticFlowProps<TItem> {
+export interface StaticFlowColumnsProps<TItem = unknown, TType extends string = string> extends StaticFlowProps<TItem, TType> {
   /** One-level story layout. Recursive columns are intentionally unsupported. */
   layout: StaticFlowLayoutNode[];
   getColumnGroupProps?: (
@@ -1503,6 +1662,7 @@ export type MarkdownFlowItem = {
 };
 
 export interface StaticFlowDocumentProps {
+  /** Rendered HTML to paginate. Convert markdown or Notion content to HTML first. */
   html: string;
   header?: ReactNode;
   footer?: ReactNode;
@@ -1514,15 +1674,27 @@ export interface StaticFlowDocumentProps {
   measureContinuation?: boolean;
   /** See `StaticFlowAreaProps.breakReserve`. */
   breakReserve?: number | string;
+  /** Stable flow id within the page. Default `"flow-document"`. */
   id?: string;
   idPrefix?: string;
   flowClassName?: string;
   itemClassName?: string | ((item: HtmlFlowItem, index: number) => string | undefined);
+  /**
+   * Break meta per tag, merged over the built-in defaults (shallow, by tag): headings keep with
+   * the next block; `table`, lists, `pre`, `blockquote`, `figure` and `img` avoid breaking inside.
+   */
   metaDefaults?: Partial<Record<string, StaticFlowItemMeta>>;
   getItemMeta?: (item: HtmlFlowItem, index: number) => StaticFlowItemMeta | undefined;
+  /** Replaces the default renderer of sanitized HTML (to map HTML to your own components). */
   renderItem?: (item: HtmlFlowItem, index: number) => ReactNode;
+  /**
+   * The sanitizer the default renderer applies. Default: the built-in DOM URL allow-list. Pass your
+   * own (DOMPurify), or `false` only for trusted HTML (development warns once).
+   */
   sanitize?: ((html: string) => string) | false;
+  /** Wraps the body in an `Editable` with this dialog, so a click edits the HTML. */
   editable?: { path: string; type?: string; [key: string]: unknown };
+  /** A parser to use without a DOM (server rendering, tests). Default: the DOM parser. */
   parseHtml?: (html: string) => unknown[];
 }
 
@@ -1598,8 +1770,8 @@ export const Static: {
   Sheet: ComponentType<StaticSheetProps>;
   FlowArea: ComponentType<StaticFlowAreaProps>;
   FlowPage: ComponentType<StaticFlowPageProps>;
-  Flow: <TItem = unknown>(props: StaticFlowProps<TItem>) => ReactElement | null;
-  FlowColumns: <TItem = unknown>(props: StaticFlowColumnsProps<TItem>) => ReactElement | null;
+  Flow: <TItem = unknown, TType extends string = string>(props: StaticFlowProps<TItem, TType>) => ReactElement | null;
+  FlowColumns: <TItem = unknown, TType extends string = string>(props: StaticFlowColumnsProps<TItem, TType>) => ReactElement | null;
   /**
    * Text a `Static.Flow` item may split between lines when it does not fit the room left on its
    * sheet (one per item; `orphans`/`widows` in the item's meta). Renders `<as data-uhuu-flow-text>`.
@@ -1633,4 +1805,10 @@ export const Static: {
    * stops waiting.
    */
   usePaginationHold: (pending?: boolean, label?: string) => void;
+  /**
+   * The view the pages are drawn for (`PageEditor` `view`): `print` or `screen`. Outside a
+   * PageEditor, and always in the renderer, `print`. A template keeps content whole on screen that
+   * print splits across pages (a table's rows), and gives such an item meta `growSheet`.
+   */
+  useView: () => StaticView;
 };
