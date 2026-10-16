@@ -161,7 +161,24 @@ export interface StaticFlowColumn {
 
 export type StaticFlowLayoutNode =
   | { kind: "item"; index: number }
-  | { kind: "columns"; id: string; columns: StaticFlowColumn[] };
+  | { kind: "columns"; id: string; columns: StaticFlowColumn[] }
+  /**
+   * One text set in `columns` columns, read as a newspaper: `indexes` (reading order) fill the first
+   * column, then the next, then the first column of the next sheet. Items move whole. Columns get
+   * ids `column-1` … `column-<n>` (`getColumnProps`, `data-uhuu-flow-column`) and equal widths.
+   */
+  | {
+      kind: "flowingColumns";
+      id: string;
+      indexes: number[];
+      /** How many columns, 1 or more. */
+      columns: number;
+      /**
+       * The group's last sheet: "balance" (default) evens its columns out, "auto" fills them in
+       * order, as CSS `column-fill`.
+       */
+      columnFill?: "balance" | "auto";
+    };
 
 export interface StaticFlowColumnFragment {
   id: string;
