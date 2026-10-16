@@ -721,6 +721,50 @@ export interface FrameBlockProps extends FrameDeclaration, Omit<ImageBlockProps,
  */
 export const FrameBlock: ComponentType<FrameBlockProps>;
 
+/**
+ * A neutral, brand-free empty image (outline and icon in Text mixed into Paper) for `ImageBlock`'s
+ * `placeholder`, so templates never borrow placeholder photos from a client folder.
+ */
+export const ImagePlaceholder: ComponentType<{ label?: string; className?: string; style?: CSSProperties }>;
+
+/** A position on the sheet in mm: `left` or `right`, and `top` or `bottom`. */
+export interface FurniturePosition { left?: number; right?: number; top?: number; bottom?: number }
+
+/**
+ * The printed page number of sheet `pageNo` (1-based, deck order), or `null` when it is not numbered.
+ * Counting starts at the first numbered sheet and skips unnumbered sheets after it; `offset` is subtracted.
+ */
+export function folioNumber(input: {
+  pageNo: number;
+  sheetKeys: readonly string[];
+  numbered: readonly string[] | ((key: string) => boolean);
+  offset?: number;
+}): number | null;
+
+/** The page number in the brand's body font and muted colour, at the verso (even) or recto (odd) position. */
+export const PageFolio: ComponentType<{
+  number: number | null | undefined;
+  pageNo: number;
+  verso: FurniturePosition;
+  recto: FurniturePosition;
+  /** pt, default 9. */
+  size?: number;
+  className?: string;
+  style?: CSSProperties;
+}>;
+
+/** A running header: title, the brand's logo (default the mark on Paper) and a `border` or `accent` rule. */
+export const RunningHeader: ComponentType<{
+  position: FurniturePosition;
+  children?: ReactNode;
+  logo?: false | { kind?: "primary" | "mark" | "wordmark"; background?: "light" | "dark"; name?: string; locale?: string };
+  /** mm, default 6. */
+  logoHeight?: number;
+  rule?: "border" | "accent" | false;
+  className?: string;
+  style?: CSSProperties;
+}>;
+
 // --- Brand-kit runtime (src/uhuu/brand-kit/). See docs/brand-kit-runtime.md. ---
 
 export interface BrandKitFontFile {
@@ -781,7 +825,16 @@ export interface BrandKitRuntimeBlock {
   version: 2;
   light: Record<string, string>;
   fontStylesheets?: string[];
-  fontFaces?: Array<{ family: string; src: string; weight?: number; style?: "normal" | "italic"; format?: string }>;
+  fontFaces?: Array<{
+    family: string;
+    src: string;
+    weight?: number;
+    style?: "normal" | "italic";
+    format?: string;
+    ascentOverride?: number;
+    descentOverride?: number;
+    lineGapOverride?: number;
+  }>;
 }
 
 export interface BrandKitLogo {
@@ -790,6 +843,8 @@ export interface BrandKitLogo {
   alt?: string;
   kind: "primary" | "mark" | "wordmark";
   background?: "light" | "dark" | "any";
+  /** The language a named or language version is for. */
+  locale?: string;
   minWidth?: { value: number; unit: "px" | "mm" };
   clearSpace?: { value: number; unit: "px" | "mm" | "mark" };
 }
@@ -831,10 +886,19 @@ export interface BrandKitRuntime {
   cssVars: Record<string, string>;
   /** Where the rendered kit came from (`src` once fetched, else the `sourceUrl` prop). */
   sourceUrl?: string;
-  /** `idle` without `src`; `loading` until it arrives; `ready`; `error` (the `brandKit` prop renders). */
+  /** `idle` without `src` (a snapshot or the `brandKit` prop renders); `loading` until it arrives; `ready`; `error`. */
   status: "idle" | "loading" | "ready" | "error";
-  /** A logo, resolved: `logoSystem` first, then `logos`. Default `{ kind: "primary", background: "light" }`. */
-  logo(options?: { kind?: BrandKitLogoKind; background?: "light" | "dark" }): BrandKitLogo | null;
+  /** The snapshot the rendered kit came from, when no fetched kit replaced it. */
+  snapshot: BrandKitSnapshotInfo | null;
+  /**
+   * A logo, resolved: `logoSystem` first, then `logos`. Default `{ kind: "primary", background: "light" }`.
+   * `name` and `locale` pick a named or language version, falling back to the standard logo.
+   */
+  logo(options?: { kind?: BrandKitLogoKind; background?: "light" | "dark"; name?: string; locale?: string }): BrandKitLogo | null;
+  /** The brand's chart colors as hex when it set them, else `fallback` (the template's). */
+  chartPalette(options?: { fallback?: string[]; count?: number }): BrandChartPalette;
+  /** The brand's default locale and currency (`extensions.locale`); `payload.locale` wins over it. */
+  locale: { locale?: string; currency?: string };
   /** The assigned media collection's promoted version, items resolved. */
   collection(kind: BrandKitMediaKind | string, options?: { versionId?: string }): BrandKitCollection | null;
   mapStyle(mode: "micro" | "macro"): BrandKitMapStyle | null;
@@ -847,8 +911,16 @@ export interface BrandKitRuntime {
 export interface BrandKitProviderProps {
   /** The kit to render; with `src`, the fallback until the fetched kit arrives or when the fetch fails. */
   brandKit?: BrandKitJson | null;
-  /** A brandkit.json URL to fetch, usually `brandKitSourceUrl(payload)`. */
+  /** A brandkit.json URL to fetch, usually `brandKitSelection(payload, { snapshot }).src`. */
   src?: string | null;
+  /**
+   * The template's locked brand (`src/brand/`, from `brandkit pull`): renders with no request for
+   * the brand, logos and fonts from the template's copies. Wins over `brandKit`; a fetched `src`
+   * replaces it. Pass a stable object.
+   */
+  snapshot?: BrandKitSnapshot | null;
+  /** Brand values the template opts into beyond colours and fonts: `{ radius: true }` adds `--radius*`. Stable object. */
+  adopt?: { radius?: boolean };
   /** Custom properties for whatever the kit leaves out; the kit wins. Pass a stable object. */
   defaults?: Record<string, string>;
   /** Where a `brandKit` passed in came from; its directory resolves relative URLs when the kit has no `baseUrl`. */
@@ -879,18 +951,89 @@ export const BRAND_KIT_PUBLIC_BASE_URL: string;
 /**
  * The brandkit.json URL a payload points at: `brandKitUrl` (URL or `kit-…` id), `brandKitId`, or
  * `brandKit.storage.publicUrl`. Ids need `brandKitTeamId` (or `teamId`) and resolve under `publicBaseUrl`.
+ * @deprecated Use `brandKitSelection(payload, { snapshot })`: a pinned `payload.brand`, then the template's snapshot.
  */
 export function brandKitSourceUrl(
   payload: Record<string, unknown> | null | undefined,
   options?: { publicBaseUrl?: string; teamId?: string | number },
 ): string | null;
 
+/**
+ * Which brand a document renders: a pinned `payload.brand` (unpinned warns), then the deprecated
+ * `brandKitUrl` / `brandKitId` (warns), then the template's snapshot, then none.
+ */
+export function brandKitSelection(
+  payload: Record<string, unknown> | null | undefined,
+  options?: { snapshot?: BrandKitSnapshot | null; publicBaseUrl?: string; teamId?: string | number },
+): { source: "payload" | "payload-legacy" | "snapshot" | "none"; src: string | null; pinned: boolean; presetId?: string };
+
+/** A template's locked brand: the published document, its `brand.lock.json`, and where the copies are served. */
+export interface BrandKitSnapshot {
+  brandKit: BrandKitJson;
+  /** `brand.lock.json` (`uhuu.brand-lock.v1`). */
+  lock: Record<string, unknown>;
+  /** The folder the snapshot is served from (`/brand`, an absolute URL). */
+  baseUrl?: string;
+  /** Snapshot paths to bundled URLs (`import.meta.glob('./brand/assets/**', { query: '?url', import: 'default', eager: true })`, keyed by `assets/…`). */
+  assets?: Record<string, string>;
+}
+
+export interface BrandKitSnapshotInfo {
+  kind: "team" | "template";
+  kitId?: string;
+  version?: string;
+  digest?: string;
+}
+
+export const BRAND_LOCK_SCHEMA: "uhuu.brand-lock.v1";
+
+/** The kit a snapshot renders: copied files point at the template's copies, the rest at absolute published URLs. */
+export function brandKitFromSnapshot(snapshot: BrandKitSnapshot): { brandKit: BrandKitJson; lock: Record<string, unknown>; info: BrandKitSnapshotInfo } | null;
+
+export interface BrandChartPalette {
+  colors: string[];
+  source: "brand" | "template";
+}
+
+/** Chart colors as `#rrggbb`: the brand's when it set them (Brand Kit publishes them only then), else `fallback`. */
+export function brandChartPalette(brandKit: BrandKitJson | null | undefined, options?: { fallback?: string[]; count?: number }): BrandChartPalette;
+
+/**
+ * The chart dialog's `config.brand` (`ChartDialogBrand`): the series palette from `brandChartPalette`
+ * and ink, line, muted and surface, all `#rrggbb`. Missing roles are left for the dialog's defaults.
+ */
+export function brandChartDialogBrand(
+  brandKit: BrandKitJson | null | undefined,
+  options?: { fallback?: string[]; count?: number },
+): { palette?: string[]; ink?: string; line?: string; muted?: string; surface?: string };
+
+/** `#rrggbb` for hex, `rgb()`, HSL, `oklch()` or `oklab()`; `undefined` otherwise. */
+export function colorToHex(value: unknown): string | undefined;
+
+/** The brand's default locale and currency (`extensions.locale.strings`). */
+export function brandKitLocale(brandKit: BrandKitJson | null | undefined): { locale?: string; currency?: string };
+
+/** A number in the locale (`payload.locale`, else the brand's); Swiss locales group with `'`. */
+export function formatNumber(
+  value: number,
+  options?: { locale?: string; brandKit?: BrandKitJson | null; apostrophe?: "straight" | "typographic" } & Intl.NumberFormatOptions,
+): string;
+
+/** Money; Swiss locales print `CHF 3'600'000.–` (whole) and `CHF 1'250.50`. Currency: option, brand, `CHF`. */
+export function formatMoney(
+  value: number,
+  options?: { locale?: string; currency?: string; brandKit?: BrandKitJson | null; wholeDash?: boolean; apostrophe?: "straight" | "typographic" },
+): string;
+
+/** A date in the locale; `dateStyle: "long"` unless date fields are given. */
+export function formatDate(value: Date | string | number, options?: { locale?: string; brandKit?: BrandKitJson | null } & Intl.DateTimeFormatOptions): string;
+
 /** Fetches a brandkit.json; rejects on network errors, non-2xx and non-object bodies. */
 export function loadBrandKit(url: string, options?: { fetch?: typeof fetch; signal?: AbortSignal }): Promise<BrandKitJson>;
 
 export function brandKitLogo(
   brandKit: BrandKitJson | null | undefined,
-  options?: { kind?: BrandKitLogoKind; background?: "light" | "dark"; sourceUrl?: string },
+  options?: { kind?: BrandKitLogoKind; background?: "light" | "dark"; name?: string; locale?: string; sourceUrl?: string },
 ): BrandKitLogo | null;
 
 export function brandKitCollection(
