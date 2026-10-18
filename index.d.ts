@@ -812,7 +812,7 @@ export interface BrandKitJson {
     [token: string]: unknown;
   };
   colorMode?: "light" | "manual" | "shade";
-  /** Template variables Brand Kit precomputed at publish for current public 3.x documents. */
+  /** Template variables Brand Kit precomputed at publish for current public 1.x documents. */
   runtime?: BrandKitRuntimeBlock;
   /** What wrote the document; a published version names itself in `release`. */
   generator?: { name?: string; release?: BrandKitRelease; [key: string]: unknown };
@@ -836,11 +836,11 @@ export interface BrandKitRelease {
 }
 
 /**
- * `brandkit.json.runtime` (public 3.x): canonical semantic and font-role variables, ready to
+ * `brandkit.json.runtime` (public 1.x): canonical semantic and font-role variables, ready to
  * apply, and the fonts to load. It cannot carry template layout or decoration tokens.
  */
 export interface BrandKitRuntimeBlock {
-  version: 3;
+  version: 1;
   light: Record<string, string>;
   fontStylesheets?: string[];
   fontFaces?: Array<{
@@ -888,7 +888,7 @@ export interface BrandKitCollection {
 export interface BrandKitMapStyle {
   url: string;
   name?: string;
-  source: "extensions.maps" | "extensions.env";
+  source: "extensions.maps";
 }
 
 export type BrandKitLogoKind = "primary" | "logo" | "lockup" | "mark" | "icon" | "symbol" | "wordmark";
@@ -913,11 +913,9 @@ export interface BrandKitRuntime {
   chartPalette(options?: { fallback?: string[]; count?: number }): BrandChartPalette;
   /** The brand's default locale and currency (`extensions.locale`); `payload.locale` wins over it. */
   locale: { locale?: string; currency?: string };
-  /** Public 3.x: canonical kind/id and active-version selection. */
+  /** Public 1.x: canonical kind/id and active-version selection. */
   collection(kindOrId: BrandKitMediaKind | string, options?: { versionId?: string }): BrandKitCollection | null;
   mapStyle(mode: "micro" | "macro"): BrandKitMapStyle | null;
-  /** An `extensions.env.strings` value; keys compare case- and punctuation-insensitively. */
-  env(keys: string | string[]): string | undefined;
   /** A kit-relative asset path made absolute. */
   resolveUrl(path: unknown): string | undefined;
 }
@@ -1029,7 +1027,6 @@ export function brandKitCollection(
 
 export function brandKitMapStyle(brandKit: BrandKitJson | null | undefined, mode: "micro" | "macro"): BrandKitMapStyle | null;
 
-export function brandKitEnv(brandKit: BrandKitJson | null | undefined, keys: string | string[]): string | undefined;
 
 export interface InteractiveModeContextValue {
   interactive: boolean;
