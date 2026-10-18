@@ -812,17 +812,35 @@ export interface BrandKitJson {
     [token: string]: unknown;
   };
   colorMode?: "light" | "manual" | "shade";
-  /** Template variables Brand Kit precomputed at publish. Applied as is when `version` is 2. */
+  /** Template variables Brand Kit precomputed at publish for current public 3.x documents. */
   runtime?: BrandKitRuntimeBlock;
+  /** What wrote the document; a published version names itself in `release`. */
+  generator?: { name?: string; release?: BrandKitRelease; [key: string]: unknown };
   [key: string]: unknown;
 }
 
 /**
- * `brandkit.json.runtime` (brandkit.json "2.0"): shadcn role variables (`--primary`, `--color-primary`),
- * `--color-kit-*` / `--font-*` / `--font-kit-*` values, ready to apply, and the fonts to load.
+ * `generator.release` of a published version's document (older documents have none): it lets
+ * `?brand=v9` and `uhuu-components brand status | activate v9` name another version of the brand a
+ * template's `src/brand/brandkit.json` holds.
+ */
+export interface BrandKitRelease {
+  teamId: string;
+  kitId: string;
+  /** `v1`, `v2`… */
+  version: string;
+  /** This version's immutable `…/versions/vN/brandkit.json`. */
+  url: string;
+  /** The Brand Kit app's origin, which says which version is newest. */
+  appUrl?: string;
+}
+
+/**
+ * `brandkit.json.runtime` (public 3.x): canonical semantic and font-role variables, ready to
+ * apply, and the fonts to load. It cannot carry template layout or decoration tokens.
  */
 export interface BrandKitRuntimeBlock {
-  version: 2;
+  version: 3;
   light: Record<string, string>;
   fontStylesheets?: string[];
   fontFaces?: Array<{
@@ -838,15 +856,13 @@ export interface BrandKitRuntimeBlock {
 }
 
 export interface BrandKitLogo {
-  /** Absolute URL (SVG preferred, else PNG). */
+  /** Absolute SVG URL. */
   src: string;
   alt?: string;
   kind: "primary" | "mark" | "wordmark";
   background?: "light" | "dark" | "any";
   /** The language a named or language version is for. */
   locale?: string;
-  minWidth?: { value: number; unit: "px" | "mm" };
-  clearSpace?: { value: number; unit: "px" | "mm" | "mark" };
 }
 
 export interface BrandKitCollectionItem {
@@ -872,7 +888,7 @@ export interface BrandKitCollection {
 export interface BrandKitMapStyle {
   url: string;
   name?: string;
-  source: "config.maps" | "config.env";
+  source: "extensions.maps" | "extensions.env";
 }
 
 export type BrandKitLogoKind = "primary" | "logo" | "lockup" | "mark" | "icon" | "symbol" | "wordmark";
@@ -882,16 +898,14 @@ export type BrandKitMediaKind = "photos" | "icons" | "graphics" | "backgrounds" 
 export interface BrandKitRuntime {
   /** The kit being rendered: the fetched one, else the `brandKit` prop. */
   brandKit: BrandKitJson | null;
-  /** `--<role>`, `--color-<role>`, `--color-kit-*`, `--font-*` and `--font-kit-*`, as the provider's scope element carries them. */
+  /** Canonical semantic, extension-colour and font-role variables as the provider's scope element carries them. */
   cssVars: Record<string, string>;
   /** Where the rendered kit came from (`src` once fetched, else the `sourceUrl` prop). */
   sourceUrl?: string;
-  /** `idle` without `src` (a snapshot or the `brandKit` prop renders); `loading` until it arrives; `ready`; `error`. */
+  /** `idle` without `src` (the `brandKit` prop renders); `loading` until it arrives; `ready`; `error`. */
   status: "idle" | "loading" | "ready" | "error";
-  /** The snapshot the rendered kit came from, when no fetched kit replaced it. */
-  snapshot: BrandKitSnapshotInfo | null;
   /**
-   * A logo, resolved: `logoSystem` first, then `logos`. Default `{ kind: "primary", background: "light" }`.
+   * A logo resolved from `logoSystem`. Default `{ kind: "primary", background: "light" }`.
    * `name` and `locale` pick a named or language version, falling back to the standard logo.
    */
   logo(options?: { kind?: BrandKitLogoKind; background?: "light" | "dark"; name?: string; locale?: string }): BrandKitLogo | null;
@@ -899,34 +913,32 @@ export interface BrandKitRuntime {
   chartPalette(options?: { fallback?: string[]; count?: number }): BrandChartPalette;
   /** The brand's default locale and currency (`extensions.locale`); `payload.locale` wins over it. */
   locale: { locale?: string; currency?: string };
-  /** The assigned media collection's promoted version, items resolved. */
-  collection(kind: BrandKitMediaKind | string, options?: { versionId?: string }): BrandKitCollection | null;
+  /** Public 3.x: canonical kind/id and active-version selection. */
+  collection(kindOrId: BrandKitMediaKind | string, options?: { versionId?: string }): BrandKitCollection | null;
   mapStyle(mode: "micro" | "macro"): BrandKitMapStyle | null;
-  /** A `config.env` value; keys compare case- and punctuation-insensitively, first present wins. */
+  /** An `extensions.env.strings` value; keys compare case- and punctuation-insensitively. */
   env(keys: string | string[]): string | undefined;
   /** A kit-relative asset path made absolute. */
   resolveUrl(path: unknown): string | undefined;
 }
 
 export interface BrandKitProviderProps {
-  /** The kit to render; with `src`, the fallback until the fetched kit arrives or when the fetch fails. */
-  brandKit?: BrandKitJson | null;
-  /** A brandkit.json URL to fetch, usually `brandKitSelection(payload, { snapshot }).src`. */
-  src?: string | null;
   /**
-   * The template's locked brand (`src/brand/`, from `brandkit pull`): renders with no request for
-   * the brand, logos and fonts from the template's copies. Wins over `brandKit`; a fetched `src`
-   * replaces it. Pass a stable object.
+   * The kit to render, usually the template's own `src/brand/brandkit.json`; with `src`, the fallback
+   * until the fetched kit arrives or when the fetch fails.
    */
-  snapshot?: BrandKitSnapshot | null;
+  brandKit?: BrandKitJson | null;
+  /** A brandkit.json URL to fetch, usually `brandKitSelection(payload).src`. */
+  src?: string | null;
   /** Brand values the template opts into beyond colours and fonts: `{ radius: true }` adds `--radius*`. Stable object. */
   adopt?: { radius?: boolean };
   /** Custom properties for whatever the kit leaves out; the kit wins. Pass a stable object. */
   defaults?: Record<string, string>;
   /** Where a `brandKit` passed in came from; its directory resolves relative URLs when the kit has no `baseUrl`. */
   sourceUrl?: string;
+  /** Called with each kit fetched from `src`; never for a development preview (`?brand=`). */
   onLoad?: (brandKit: BrandKitJson) => void;
-  /** Default: `console.error`. */
+  /** Called when `src` fails to load; never for a development preview. Default: `console.error`. */
   onError?: (error: unknown) => void;
   /** For the scope element. `style` is applied last, so `{ display: "block" }` gives it a box. */
   className?: string;
@@ -939,6 +951,10 @@ export interface BrandKitProviderProps {
  * element (`data-uhuu-brand-kit-status` tells a print step when a fetched kit has arrived), and
  * loads the fonts the kit declares. Colours are hex, `rgb()`/`rgba()`, `oklch()`/`oklab()` or
  * keywords: HSL is converted, anything else is skipped as if absent.
+ *
+ * On a development host, and never when `$uhuu_renderer` is set, `?brand=` on the page URL (`v9`, a
+ * `…/versions/vN/brandkit.json` link, or a same-origin path) renders that candidate instead, under a
+ * bar with what changed and Stop. It is written nowhere and never printed.
  */
 export const BrandKitProvider: ComponentType<BrandKitProviderProps>;
 
@@ -949,46 +965,15 @@ export function useBrandKit(): BrandKitRuntime | null;
 export const BRAND_KIT_PUBLIC_BASE_URL: string;
 
 /**
- * The brandkit.json URL a payload points at: `brandKitUrl` (URL or `kit-…` id), `brandKitId`, or
- * `brandKit.storage.publicUrl`. Ids need `brandKitTeamId` (or `teamId`) and resolve under `publicBaseUrl`.
- * @deprecated Use `brandKitSelection(payload, { snapshot })`: a pinned `payload.brand`, then the template's snapshot.
- */
-export function brandKitSourceUrl(
-  payload: Record<string, unknown> | null | undefined,
-  options?: { publicBaseUrl?: string; teamId?: string | number },
-): string | null;
-
-/**
- * Which brand a document renders: a pinned `payload.brand` (unpinned warns), then the deprecated
- * `brandKitUrl` / `brandKitId` (warns), then the template's snapshot, then none.
+ * Which brand a document renders: a pinned `payload.brand` (unpinned warns), then none: the
+ * template's own current `brandkit.json` (`brandKit` prop) renders.
+ * `pinned` is true when `src` is an immutable `…/versions/vN/brandkit.json` (and for a preset, which
+ * fetches nothing). A `version: "vN"` beside a kit's root `…/kits/<kit>/brandkit.json` selects that
+ * version's URL; a version alone pins nothing.
  */
 export function brandKitSelection(
   payload: Record<string, unknown> | null | undefined,
-  options?: { snapshot?: BrandKitSnapshot | null; publicBaseUrl?: string; teamId?: string | number },
-): { source: "payload" | "payload-legacy" | "snapshot" | "none"; src: string | null; pinned: boolean; presetId?: string };
-
-/** A template's locked brand: the published document, its `brand.lock.json`, and where the copies are served. */
-export interface BrandKitSnapshot {
-  brandKit: BrandKitJson;
-  /** `brand.lock.json` (`uhuu.brand-lock.v1`). */
-  lock: Record<string, unknown>;
-  /** The folder the snapshot is served from (`/brand`, an absolute URL). */
-  baseUrl?: string;
-  /** Snapshot paths to bundled URLs (`import.meta.glob('./brand/assets/**', { query: '?url', import: 'default', eager: true })`, keyed by `assets/…`). */
-  assets?: Record<string, string>;
-}
-
-export interface BrandKitSnapshotInfo {
-  kind: "team" | "template";
-  kitId?: string;
-  version?: string;
-  digest?: string;
-}
-
-export const BRAND_LOCK_SCHEMA: "uhuu.brand-lock.v1";
-
-/** The kit a snapshot renders: copied files point at the template's copies, the rest at absolute published URLs. */
-export function brandKitFromSnapshot(snapshot: BrandKitSnapshot): { brandKit: BrandKitJson; lock: Record<string, unknown>; info: BrandKitSnapshotInfo } | null;
+): { source: "payload" | "none"; src: string | null; pinned: boolean; presetId?: string };
 
 export interface BrandChartPalette {
   colors: string[];
@@ -1436,6 +1421,8 @@ export interface PageEditorProps {
   /**
    * Development only: the brand-kit switcher in the dev tools menu (dev tools on). It lists
    * `brandKits` and calls back; it does not load a kit: wire the choice to `BrandKitProvider`.
+   * Inside a `BrandKitProvider` on a development host the Brand Kit submenu also offers
+   * *Preview a version…* (`?brand=`), with or without `brandKits`.
    */
   brandKits?: BrandKitOption[];
   /** Development only: the kit the dev switcher marks as active. */

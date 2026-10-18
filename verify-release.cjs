@@ -18,11 +18,22 @@ try {
 } catch {
   problems.push('release.json is missing: this checkout was not handed off from a build');
 }
-if (release) {
+if (!release || typeof release !== 'object' || Array.isArray(release)) {
+  problems.push('release manifest is not an object');
+} else {
   if (release.version !== pkg.version) {
     problems.push(`package.json is ${pkg.version}, but the files were built as ${release.version}`);
   }
-  for (const [file, expected] of Object.entries(release.files ?? {})) {
+  const descriptorHash = crypto.createHash('sha256').update(read('package.json')).digest('hex');
+  const descriptorMatches = descriptorHash === release.descriptorSha256;
+  if (!descriptorMatches) problems.push('package.json is not the descriptor the build produced');
+  const files = release.files;
+  const expectedFiles = Array.isArray(pkg.files) ? pkg.files : [];
+  const complete = files && typeof files === 'object' && !Array.isArray(files) && expectedFiles.length > 0 &&
+    expectedFiles.length === Object.keys(files).length && expectedFiles.every((file) => Object.hasOwn(files, file));
+  if (!complete) problems.push('release file list is incomplete or does not match the built descriptor');
+  for (const file of complete && descriptorMatches ? expectedFiles : []) {
+    const expected = files[file];
     let actual = null;
     try { actual = crypto.createHash('sha256').update(read(file)).digest('hex'); } catch { /* reported below */ }
     if (actual !== expected) problems.push(`${file} is not the file the build produced`);
