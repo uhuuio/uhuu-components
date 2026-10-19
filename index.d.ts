@@ -708,6 +708,13 @@ export interface BrandKitRuntime {
   logo(options?: { kind?: BrandKitLogoKind; background?: "light" | "dark"; name?: string; locale?: string }): BrandKitLogo | null;
   /** The brand's chart colors as hex when it set them, else `fallback` (the template's). */
   chartPalette(options?: { fallback?: string[]; count?: number }): BrandChartPalette;
+  /**
+   * One chart colour set for the printed chart and the chart dialog's `config.brand`: the brand's
+   * chart colours when it set them (as many as `defaults.palette` has), else `defaults.palette`; the
+   * template's `ink`, `line`, `muted` and `surface` when it passes them, else the kit's foreground,
+   * border, muted-foreground and background. All `#rrggbb`.
+   */
+  chartBrand(defaults?: ChartBrand): ChartBrand;
   /** The brand's default locale and currency (`extensions.locale`); `payload.locale` wins over it. */
   locale: { locale?: string; currency?: string };
   /** Public 1.x: canonical kind/id and active-version selection. */
@@ -739,6 +746,15 @@ export interface BrandKitProviderProps {
   className?: string;
   style?: CSSProperties;
   children?: ReactNode;
+}
+
+/** A chart's colours, as the chart dialog's `config.brand` (`ChartDialogBrand`) takes them. */
+export interface ChartBrand {
+  palette?: string[];
+  ink?: string;
+  line?: string;
+  muted?: string;
+  surface?: string;
 }
 
 export interface BrandChartPalette {
@@ -775,15 +791,6 @@ export const BrandKit: {
   ): { source: "payload" | "none"; src: string | null; pinned: boolean; presetId?: string };
   /** Fetches a brandkit.json; rejects on network errors, non-2xx and non-object bodies. */
   load(url: string, options?: { fetch?: typeof fetch; signal?: AbortSignal }): Promise<BrandKitJson>;
-  /**
-   * The chart dialog's `config.brand` (`ChartDialogBrand`): the brand's series palette (as
-   * `useBrandKit().chartPalette`) and ink, line, muted and surface, all `#rrggbb`. Missing roles are
-   * left for the dialog's defaults.
-   */
-  chartDialogBrand(
-    brandKit: BrandKitJson | null | undefined,
-    options?: { fallback?: string[]; count?: number },
-  ): { palette?: string[]; ink?: string; line?: string; muted?: string; surface?: string };
 };
 
 export interface InteractiveModeContextValue {
