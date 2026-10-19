@@ -1,12 +1,12 @@
 {
-  "version": "0.4.8",
-  "descriptorSha256": "734cd933de23d8aa56af325256dacb666286459884d34523a329f5dba0789e68",
+  "version": "0.5.0",
+  "descriptorSha256": "d9cb617aec1dca67881e97e9888421cb3dc79dc2bfb39fa8bb2920a314eccade",
   "files": {
-    "uhuu-components.es.js": "e0b0545f8c8b9147279e58368f9c4fb160f2474c7705c46cfa5b99986c48d9b0",
-    "uhuu-components.es.js.map": "2dffe6ca6b2bb3c9bd40e2ddfdbcbb78470b47fa3a60ac49c12415bf45515f07",
-    "uhuu-components.umd.cjs": "364b768556d0f5e9e4316d3aea212d8820ad3e5df15ed8203a66d3b9ef3698a1",
-    "uhuu-components.umd.cjs.map": "3669d9e74a72314b54328c0345c0898c899e9e92970388daacffc33309b71858",
-    "index.d.ts": "521f6ff51941d0f5212f86676d2540449494b01d64a4a74546a4cf11f75b805a",
+    "uhuu-components.es.js": "2342d1da4ef2fd489af58e96855c84ce34f6119a30793c5aecfce7541d4772b4",
+    "uhuu-components.es.js.map": "1dc94ae7459faed6bf2eca96c1f566fdec4de6fa6b9a1bf0fe7edc4442d3041c",
+    "uhuu-components.umd.cjs": "814c6a432e04d20ad3a3351922603e4e5b923874a94e76505e6d3d8cf8573fad",
+    "uhuu-components.umd.cjs.map": "2f3c141994e8de05eb310d054cd862c9b82074ec607e8754a33d30c1720343cd",
+    "index.d.ts": "c9b653eaf888379a0fe54a8f57e3a37b4b30d57703ee1018b20b664c6f5da8b8",
     "cli.js": "28b8e98a1e69ee5329dfc6f1694ae0368f7f8ec0c2d9c342cae46240de3ffc9f"
   }
 }

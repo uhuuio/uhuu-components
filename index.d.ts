@@ -18,21 +18,21 @@ export interface StaticFlowItemMeta {
   /** Never split the item; with `groupKey`, also move its avoid-break group as one. */
   avoidBreakInside?: boolean;
   groupKey?: string;
-  /** An item split between the lines of its `Static.FlowText`: fewest lines on a piece that ends a page. Default 2. */
+  /** An item split between the lines of its `Flow.Text`: fewest lines on a piece that ends a page. Default 2. */
   orphans?: number;
-  /** An item split between the lines of its `Static.FlowText`: fewest lines on the piece that starts the next page. Default 2. */
+  /** An item split between the lines of its `Flow.Text`: fewest lines on the piece that starts the next page. Default 2. */
   widows?: number;
   /**
    * The screen view (`PageEditor` `view="screen"`): where print would scale the item onto a page of
-   * its own (taller than its page, and not split by a `Static.FlowText`), it is drawn whole at full
+   * its own (taller than its page, and not split by a `Flow.Text`), it is drawn whole at full
    * size and its sheet grows to hold it. Taller than any page, it starts right under what precedes
-   * it. Print ignores it, and so does an item inside a `Static.FlowColumns` column group.
+   * it. Print ignores it, and so does an item inside a `Flow.Columns` column group.
    */
   growSheet?: boolean;
 }
 
 /**
- * The lines of an item's `Static.FlowText` (`Static.flowMeasure.readFlowTextLines`), in layout px
+ * The lines of an item's `Flow.Text` (`Flow.measure.readFlowTextLines`), in layout px
  * from the item's measured origin: each line box's top and bottom, and the UTF-16 text offset
  * (across the FlowText's text nodes in order) where it starts. `end`: the text's length.
  */
@@ -46,7 +46,7 @@ export interface StaticFlowItemLines {
   widows?: number;
 }
 
-/** One piece of an item split between the lines of its `Static.FlowText`. */
+/** One piece of an item split between the lines of its `Flow.Text`. */
 export interface StaticFlowTextSplit {
   /** 0-based piece number. */
   part: number;
@@ -80,7 +80,7 @@ export interface StaticFlowItemGroup {
    * The screen view (`PageEditor` `view="screen"`): the group is one unit, its header and every item
    * on one sheet. It fits the room left, or moves whole to a page that holds it; taller than any
    * page, it starts right under what precedes it and its sheet grows (`--uhuu-sheet-growth`). Print
-   * ignores it, and so does a `Static.FlowColumns` column group.
+   * ignores it, and so does a `Flow.Columns` column group.
    */
   growSheet?: boolean;
 }
@@ -104,7 +104,7 @@ export interface StaticFlowFragmentContext<TItem = unknown> {
   /** The group resumed from the preceding virtual page. */
   isGroupContinuation: boolean;
   /**
-   * Present on every piece of an item split between the lines of its `Static.FlowText`; absent for
+   * Present on every piece of an item split between the lines of its `Flow.Text`; absent for
    * an item rendered whole and in the measurement copy, which renders the whole item.
    */
   split?: { part: number; parts: number; from: number; to: number };
@@ -213,7 +213,7 @@ export interface StaticFlowPlanMetrics {
 }
 
 /**
- * The DOM reads `Static.FlowArea` measures a laid-out Flow with. Hosts that run
+ * The DOM reads `Flow.Area` measures a laid-out Flow with. Hosts that run
  * their own Flow canvas (an editor drawing the same document) must use these
  * instead of re-deriving them: the planner is deterministic, so a difference in
  * how height or transform scale is read here is the one thing that can still
@@ -274,12 +274,12 @@ export interface StaticFlowMeasureApi {
   /** @internal Library measurement detail; retained for compatibility. */
   serializeLineCount: (value: number | undefined) => string | undefined;
   /**
-   * The `Static.FlowText` elements of `item` itself (not those of a Flow nested in it).
+   * The `Flow.Text` elements of `item` itself (not those of a Flow nested in it).
    * @internal Library measurement detail; retained for compatibility.
    */
   readItemFlowTexts: (item: HTMLElement) => HTMLElement[];
   /**
-   * The lines of the one `Static.FlowText` in a measured item, for `planFlowChunks({ lines })`, or
+   * The lines of the one `Flow.Text` in a measured item, for `Flow.planChunks({ lines })`, or
    * `undefined` when it has none or cannot split (`report` says why). `height` is the item's
    * measured height (`getOuterHeight`, or `readUnwrappedHeights` for `asChild`).
    * @internal Library measurement detail; retained for compatibility.
@@ -297,7 +297,7 @@ export interface StaticFlowMeasureApi {
   hashString: (value: string) => string;
 }
 
-/** Input for `Static.planFlowChunks`, using heights measured by the consumer. */
+/** Input for `Flow.planChunks`, using heights measured by the consumer. */
 export interface StaticFlowPlanInput {
   heights?: number[];
   keys?: string[];
@@ -315,20 +315,20 @@ export interface StaticFlowPlanInput {
   /** @internal Filled with the planner's work counters (hosts tuning their own canvas). */
   metrics?: StaticFlowPlanMetrics;
   /**
-   * @internal Line metrics per item, as `flowMeasure.readFlowTextLines` reads them (hosts that run
+   * @internal Line metrics per item, as `Flow.measure.readFlowTextLines` reads them (hosts that run
    * their own Flow canvas); `undefined` for items that do not split. An item that does not fit the room left is split at a line (chunks gain `splits`).
-   * Without `lines` the plan is item-level. `planFlowColumnChunks` does not split.
+   * Without `lines` the plan is item-level. `Flow.planColumnChunks` does not split.
    */
   lines?: Array<StaticFlowItemLines | undefined>;
   /**
    * Room kept free at the bottom of every page the flow breaks from, in px; the page it ends on
    * keeps its full region, so a flow that fits one page plans as without it. 0 by default; a
-   * reserve of a page or more is ignored. `planFlowColumnChunks` does not take it.
+   * reserve of a page or more is ignored. `Flow.planColumnChunks` does not take it.
    */
   breakReserve?: number;
 }
 
-/** Input for `Static.planFlowColumnChunks`, using globally indexed leaf measurements. */
+/** Input for `Flow.planColumnChunks`, using globally indexed leaf measurements. */
 export interface StaticFlowColumnPlanInput extends StaticFlowPlanInput {
   nodes: StaticFlowLayoutNode[];
   columnHeaderGroupHeights?: Record<string, Record<string, Record<string, number>>>;
@@ -337,7 +337,7 @@ export interface StaticFlowColumnPlanInput extends StaticFlowPlanInput {
 
 export interface ImageBlockDialog {
   path: string;
-  /** The dialog to open. A frame message (`frameEditDialog`) has `frame` instead. */
+  /** The dialog to open. A frame message (`Frame.editDialog`) has `frame` instead. */
   type?: "image" | "satellite";
   [key: string]: unknown;
 }
@@ -428,7 +428,15 @@ export interface EditableProps {
  * Template CSS controls print layout. Only text/textarea/markdown dialogs get the marker.
  * Pass `null`, not a renderer element around an empty string.
  */
-export const Editable: ComponentType<EditableProps>;
+export const Editing: {
+  /** A region that opens its dialog in the editor; wraps its children in a bound element. */
+  Editable: ComponentType<EditableProps>;
+  /**
+   * The props Editable and ImageBlock attach, for a template's own element: renderer guard and
+   * `data-uhuu-type` included. `{}` without a dialog.
+   */
+  getDialogProps(props: { dialog?: object | null } | null | undefined): DialogBindingProps;
+};
 
 /** What `getDialogProps` returns. Spread it onto the element that renders the field. */
 export interface DialogBindingProps {
@@ -439,13 +447,6 @@ export interface DialogBindingProps {
   /** Opens the dialog in the interactive editor. Never set in renderer mode (`window.$uhuu_renderer`). */
   onClick?: MouseEventHandler<HTMLElement>;
 }
-
-/**
- * The props `Editable` and `ImageBlock` attach, for a template that binds its own element:
- * `<p {...getDialogProps({ dialog: { path, type: "textarea", value } })}>`. Renderer mode gets
- * the markers without a click handler. No dialog returns `{}`. Never returns `className`.
- */
-export function getDialogProps(props: { dialog?: object | null } | null | undefined): DialogBindingProps;
 
 // --- Image URLs (src/uhuu/image/image-url.js). See docs/image-url.md. ---
 
@@ -482,193 +483,16 @@ export interface ImageUrlOptions {
 export function imageUrl(src: ImageSource, options?: ImageUrlOptions): string | undefined;
 
 // --- Image frames (src/uhuu/frame/). See docs/frame-block.md. ---
-// The read helpers are the vendored `uhuu.frame.v1` module (src/uhuu/frame/vendor, generated from
-// uhuu-editor-dialogs). dist ships this file alone, so the module's types are mirrored here;
-// test/frame-vendor.test.mjs checks the mirror against the vendored source.
-
-/** `value.uhuuFrame.schema` of a frame. */
-export const FRAME_SCHEMA: "uhuu.frame.v1";
-/** Key of the frame record inside a frame value. Namespaced so it cannot collide with template keys. */
-export const FRAME_KEY: "uhuuFrame";
+// test/frame-vendor.test.mjs checks the types mirrored from the vendored `uhuu.frame.v1` module.
 
 /** Which legacy image wins when an old value carries both a generated image and a pick. */
 export type FrameLegacyPrecedence = "generated" | "pick";
-
-/** A transform applied to a source's image (crop, AI enhance, …). Its base is the previous step. */
-export interface FrameStep {
-  type: string;
-  url: string;
-  width?: number;
-  height?: number;
-  mimeType?: string;
-  /** Replayable parameters or result metadata (crop box, AI asset id, …). */
-  state?: Record<string, unknown>;
-}
-
-/** An overlay drawn over a source's image by the page (annotation). Never composited into the image. */
-export interface FrameLayer {
-  state: unknown;
-  /** The image the overlay was drawn on. */
-  baseUrl?: string;
-  /** The image under the overlay changed after it was drawn. */
-  stale?: boolean;
-}
-
-/** One dialog's own entry: its last image, the state it reopens with, its steps and layers. */
-export interface FrameSource {
-  /** Absent for state-only saves (a map saved without a design image). */
-  url?: string;
-  /** Key the dialog used for its URL (`image` for generated dialogs); reproduced when it reopens. */
-  urlKey?: string;
-  width?: number;
-  height?: number;
-  mimeType?: string;
-  /** Everything else the dialog saved, URL keys removed. */
-  state?: Record<string, unknown>;
-  steps?: FrameStep[];
-  layers?: Record<string, FrameLayer>;
-}
-
-/** One-level undo: the active source before the last action and the entry it changed. */
-export interface FrameUndo {
-  active: string | null;
-  /** Source entry the action changed; absent when only `active` moved. */
-  type?: string;
-  /** That entry before the action; `null` when the action created it. */
-  before?: FrameSource | null;
-}
-
-/** `value.uhuuFrame`: every source the slot holds and the one it shows. */
-export interface FrameRecord {
-  schema: "uhuu.frame.v1";
-  active: string | null;
-  sources: Record<string, FrameSource>;
-  previous?: FrameUndo;
-}
-
-/**
- * A frame value as stored in the payload. Its top level mirrors the active source in the shape it
- * saved before frames — a map's image under `image`, a pick's under `contentUrl`, both also under
- * `url` — so `imageUrl(value)` and the readers templates already have keep working.
- */
-export type FrameValue = Record<string, unknown> & { uhuuFrame: FrameRecord };
-
-export interface FrameOptions {
-  /** Source types the field declares, in order. Resolves a legacy generated shape with no identifying key (a bare `{ image }`). */
-  sources?: readonly string[];
-  /** Default `'generated'`. Implenia IM passes `'pick'`. */
-  legacyPrecedence?: FrameLegacyPrecedence;
-  /**
-   * A legacy generated value whose upload failed keeps its render as a `data:` URL
-   * (`dataImage`). `'show'` (default) shows it, as Implenia IM, implenia-teaser and jbre's
-   * cadastral do; `'ignore'` treats the source as having no image, as wuw, evernest, go and
-   * jbre's map do (their placeholder shows). New saves never carry one.
-   */
-  legacyDataImage?: 'show' | 'ignore';
-  /**
-   * Also draw the overlay a source dialog keeps in its own state (cadastral's
-   * `annotationSvg`). Off by default: the cadastral dialog bakes that outline into its image.
-   */
-  intrinsicOverlays?: boolean;
-  /** A legacy overlay saved at a separate path (`annotationPath`); folded into the active source. */
-  legacyLayer?: unknown;
-  /** Layer type the legacy overlay becomes. Default `'annotation'`. */
-  legacyLayerType?: string;
-}
-
-export interface FrameDisplay {
-  /** The image to show; `''` when there is none. */
-  url: string;
-  width?: number;
-  height?: number;
-  mimeType?: string;
-  /** Active source type. */
-  source: string | null;
-  /** Number of transforms applied on top of the source image. */
-  steps: number;
-}
-
-export interface FrameOverlay {
-  /** Layer type, or the source type for an overlay the source dialog drew itself (cadastral). */
-  key: string;
-  svg: string;
-  stale: boolean;
-  /** Drawn by the source dialog as part of its own output. */
-  intrinsic: boolean;
-}
-
-/** The image an image-accepting dialog opens with (`eventData.input`). */
-export interface FrameImageInput {
-  url: string;
-  width?: number;
-  height?: number;
-  mimeType?: string;
-  /** Frame source the image comes from. */
-  source?: string;
-}
-
-/** True when `value` carries a `uhuu.frame.v1` record. */
-export function isFrameValue(value: unknown): value is FrameValue;
-
-/**
- * The frame record of any value: a frame (validated), or a value saved before frames (URL string,
- * ImageObject, a generated dialog's output) read into one in memory. Never writes. `null` for an
- * empty slot. A frame whose mirrored `contentUrl` was patched by a writer that does not know frames
- * reads that patch as the newest pick.
- */
-export function normalizeFrame(value: unknown, options?: FrameOptions): FrameRecord | null;
-
-/** What the page should show for this value: URL, size and the source it comes from. */
-export function frameDisplay(value: unknown, options?: FrameOptions): FrameDisplay;
-
-/** The image URL to show for a frame or legacy value; `''` when there is none. */
-export function frameImage(value: unknown, options?: FrameOptions): string;
-
-/** The active source type, or `null`. */
-export function frameActive(value: unknown, options?: FrameOptions): string | null;
-
-/** The input an image-accepting dialog opens with; `null` when nothing is shown. */
-export function frameInput(value: unknown, options?: FrameOptions): FrameImageInput | null;
-
-/**
- * The overlays to draw over the shown image, bottom to top: the source dialog's own overlay
- * (cadastral's `annotationSvg`), then the active source's layers. Stale layers are included.
- */
-export function frameOverlays(value: unknown, options?: FrameOptions): FrameOverlay[];
-
-/**
- * The value a source dialog reopens with, in the shape it saved (`{ list, home, mapbox, image }` for
- * the map). `undefined` when the source has never been saved.
- */
-export function frameSourceView(value: unknown, type: string, options?: FrameOptions): Record<string, unknown> | undefined;
-
-/** Any value as a stored frame, showing what it showed before. `null` for an empty slot. */
-export function toFrameValue(value: unknown, options?: FrameOptions): FrameValue | null;
-
-/**
- * The options every reader of a slot passes, from its declaration: its sources, legacy
- * precedence, failed-upload rule, and the overlay saved at `annotationPath` (read from `payload`).
- */
-export function frameOptionsOf(declaration: Partial<FrameDeclaration>, payload?: unknown): FrameOptions;
 
 /** The image shown now and the overlay saved at `annotationPath`: what an editor without frames annotates. */
 export interface FrameLegacyCurrent {
   image?: string;
   annotation?: unknown;
 }
-
-/**
- * `{ path, frame, types }`: the message `$uhuu.editFrame` sends, for an `ImageBlock` `dialog` or an
- * SDK without `editFrame`. `types` is the chooser an editor without frames shows. `null` without a
- * `path` or a source with a `type`.
- */
-export function frameEditDialog(
-  declaration: FrameDeclaration,
-  current?: FrameLegacyCurrent | null,
-): { path: string; frame: Omit<FrameDeclaration, "path">; types: Record<string, unknown>[] } | null;
-
-/** Opens a frame from a template's own click handler: `$uhuu.editFrame` when the SDK has it, else `editDialog` with `frameEditDialog`'s message. No host, no call. */
-export function openFrame(declaration: FrameDeclaration, current?: FrameLegacyCurrent | null): void;
 
 /** One dialog a frame offers: its type, its title in the chooser, and that dialog's own options. */
 export interface FrameDialogEntry {
@@ -713,57 +537,30 @@ export interface FrameBlockProps extends FrameDeclaration, Omit<ImageBlockProps,
   imageUrlOptions?: ImageUrlOptions;
 }
 
-/**
- * An image slot several dialogs write (map, satellite, cadastral, gallery pick, crop, annotation),
- * stored as a `uhuu.frame.v1` value. Renders the shown image through `imageUrl` with every overlay
- * of the active source over it, and opens `$uhuu.editFrame` on click in the editor (`editDialog`
- * with the legacy `types` on an older SDK; nothing in renderer mode). Layout props are ImageBlock's.
- */
-export const FrameBlock: ComponentType<FrameBlockProps>;
-
-/**
- * A neutral, brand-free empty image (outline and icon in Text mixed into Paper) for `ImageBlock`'s
- * `placeholder`, so templates never borrow placeholder photos from a client folder.
- */
-export const ImagePlaceholder: ComponentType<{ label?: string; className?: string; style?: CSSProperties }>;
-
-/** A position on the sheet in mm: `left` or `right`, and `top` or `bottom`. */
-export interface FurniturePosition { left?: number; right?: number; top?: number; bottom?: number }
-
-/**
- * The printed page number of sheet `pageNo` (1-based, deck order), or `null` when it is not numbered.
- * Counting starts at the first numbered sheet and skips unnumbered sheets after it; `offset` is subtracted.
- */
-export function folioNumber(input: {
-  pageNo: number;
-  sheetKeys: readonly string[];
-  numbered: readonly string[] | ((key: string) => boolean);
-  offset?: number;
-}): number | null;
-
-/** The page number in the brand's body font and muted colour, at the verso (even) or recto (odd) position. */
-export const PageFolio: ComponentType<{
-  number: number | null | undefined;
-  pageNo: number;
-  verso: FurniturePosition;
-  recto: FurniturePosition;
-  /** pt, default 9. */
-  size?: number;
-  className?: string;
-  style?: CSSProperties;
-}>;
-
-/** A running header: title, the brand's logo (default the mark on Paper) and a `border` or `accent` rule. */
-export const RunningHeader: ComponentType<{
-  position: FurniturePosition;
-  children?: ReactNode;
-  logo?: false | { kind?: "primary" | "mark" | "wordmark"; background?: "light" | "dark"; name?: string; locale?: string };
-  /** mm, default 6. */
-  logoHeight?: number;
-  rule?: "border" | "accent" | false;
-  className?: string;
-  style?: CSSProperties;
-}>;
+/** Opening a frame from a template's own element, or as an ImageBlock `dialog`. */
+export const Frame: {
+  /**
+   * An image slot several dialogs write (map, satellite, cadastral, gallery pick, crop, annotation),
+   * stored as a `uhuu.frame.v1` value. Renders the shown image through `imageUrl` with every overlay
+   * of the active source over it, and opens `$uhuu.editFrame` on click in the editor (`editDialog`
+   * with the legacy `types` on an older SDK; nothing in renderer mode). Layout props are ImageBlock's.
+   */
+  Block: ComponentType<FrameBlockProps>;
+  /**
+   * Opens a frame from a template's own click handler: `$uhuu.editFrame` when the SDK has it, else
+   * `editDialog` with `Frame.editDialog`'s message. No host, no call.
+   */
+  open(declaration: FrameDeclaration, current?: FrameLegacyCurrent | null): void;
+  /**
+   * `{ path, frame, types }`: the message `$uhuu.editFrame` sends, for an `ImageBlock` `dialog` or an
+   * SDK without `editFrame`. `types` is the chooser an editor without frames shows. `null` without a
+   * `path` or a source with a `type`.
+   */
+  editDialog(
+    declaration: FrameDeclaration,
+    current?: FrameLegacyCurrent | null,
+  ): { path: string; frame: Omit<FrameDeclaration, "path">; types: Record<string, unknown>[] } | null;
+};
 
 // --- Brand-kit runtime (src/uhuu/brand-kit/). See docs/brand-kit-runtime.md. ---
 
@@ -926,7 +723,7 @@ export interface BrandKitProviderProps {
    * until the fetched kit arrives or when the fetch fails.
    */
   brandKit?: BrandKitJson | null;
-  /** A brandkit.json URL to fetch, usually `brandKitSelection(payload).src`. */
+  /** A brandkit.json URL to fetch, usually `BrandKit.selection(payload).src`. */
   src?: string | null;
   /** Brand values the template opts into beyond colours and fonts: `{ radius: true }` adds `--radius*`. Stable object. */
   adopt?: { radius?: boolean };
@@ -944,89 +741,50 @@ export interface BrandKitProviderProps {
   children?: ReactNode;
 }
 
-/**
- * Scopes a kit's CSS variables around the pages and their overlay chrome, on a `display: contents`
- * element (`data-uhuu-brand-kit-status` tells a print step when a fetched kit has arrived), and
- * loads the fonts the kit declares. Colours are hex, `rgb()`/`rgba()`, `oklch()`/`oklab()` or
- * keywords: HSL is converted, anything else is skipped as if absent.
- *
- * On a development host, and never when `$uhuu_renderer` is set, `?brand=` on the page URL (`v9`, a
- * `…/versions/vN/brandkit.json` link, or a same-origin path) renders that candidate instead, under a
- * bar with what changed and Stop. It is written nowhere and never printed.
- */
-export const BrandKitProvider: ComponentType<BrandKitProviderProps>;
-
-/** The nearest `BrandKitProvider`'s runtime, or `null` outside one. */
-export function useBrandKit(): BrandKitRuntime | null;
-
-/** Brand Kit's production location for published kits. */
-export const BRAND_KIT_PUBLIC_BASE_URL: string;
-
-/**
- * Which brand a document renders: a pinned `payload.brand` (unpinned warns), then none: the
- * template's own current `brandkit.json` (`brandKit` prop) renders.
- * `pinned` is true when `src` is an immutable `…/versions/vN/brandkit.json` (and for a preset, which
- * fetches nothing). A `version: "vN"` beside a kit's root `…/kits/<kit>/brandkit.json` selects that
- * version's URL; a version alone pins nothing.
- */
-export function brandKitSelection(
-  payload: Record<string, unknown> | null | undefined,
-): { source: "payload" | "none"; src: string | null; pinned: boolean; presetId?: string };
-
 export interface BrandChartPalette {
   colors: string[];
   source: "brand" | "template";
 }
 
-/** Chart colors as `#rrggbb`: the brand's when it set them (Brand Kit publishes them only then), else `fallback`. */
-export function brandChartPalette(brandKit: BrandKitJson | null | undefined, options?: { fallback?: string[]; count?: number }): BrandChartPalette;
-
-/**
- * The chart dialog's `config.brand` (`ChartDialogBrand`): the series palette from `brandChartPalette`
- * and ink, line, muted and surface, all `#rrggbb`. Missing roles are left for the dialog's defaults.
- */
-export function brandChartDialogBrand(
-  brandKit: BrandKitJson | null | undefined,
-  options?: { fallback?: string[]; count?: number },
-): { palette?: string[]; ink?: string; line?: string; muted?: string; surface?: string };
-
-/** `#rrggbb` for hex, `rgb()`, HSL, `oklch()` or `oklab()`; `undefined` otherwise. */
-export function colorToHex(value: unknown): string | undefined;
-
-/** The brand's default locale and currency (`extensions.locale.strings`). */
-export function brandKitLocale(brandKit: BrandKitJson | null | undefined): { locale?: string; currency?: string };
-
-/** A number in the locale (`payload.locale`, else the brand's); Swiss locales group with `'`. */
-export function formatNumber(
-  value: number,
-  options?: { locale?: string; brandKit?: BrandKitJson | null; apostrophe?: "straight" | "typographic" } & Intl.NumberFormatOptions,
-): string;
-
-/** Money; Swiss locales print `CHF 3'600'000.–` (whole) and `CHF 1'250.50`. Currency: option, brand, `CHF`. */
-export function formatMoney(
-  value: number,
-  options?: { locale?: string; currency?: string; brandKit?: BrandKitJson | null; wholeDash?: boolean; apostrophe?: "straight" | "typographic" },
-): string;
-
-/** A date in the locale; `dateStyle: "long"` unless date fields are given. */
-export function formatDate(value: Date | string | number, options?: { locale?: string; brandKit?: BrandKitJson | null } & Intl.DateTimeFormatOptions): string;
-
-/** Fetches a brandkit.json; rejects on network errors, non-2xx and non-object bodies. */
-export function loadBrandKit(url: string, options?: { fetch?: typeof fetch; signal?: AbortSignal }): Promise<BrandKitJson>;
-
-export function brandKitLogo(
-  brandKit: BrandKitJson | null | undefined,
-  options?: { kind?: BrandKitLogoKind; background?: "light" | "dark"; name?: string; locale?: string; sourceUrl?: string },
-): BrandKitLogo | null;
-
-export function brandKitCollection(
-  brandKit: BrandKitJson | null | undefined,
-  kind: BrandKitMediaKind | string,
-  options?: { sourceUrl?: string; versionId?: string },
-): BrandKitCollection | null;
-
-export function brandKitMapStyle(brandKit: BrandKitJson | null | undefined, mode: "micro" | "macro"): BrandKitMapStyle | null;
-
+/** Brand Kit for code outside a `BrandKitProvider`; inside one, `useBrandKit()` has the kit's own helpers. */
+export const BrandKit: {
+  /**
+   * Scopes a kit's CSS variables around the pages and their overlay chrome, on a `display: contents`
+   * element (`data-uhuu-brand-kit-status` tells a print step when a fetched kit has arrived), and
+   * loads the fonts the kit declares. Colours are hex, `rgb()`/`rgba()`, `oklch()`/`oklab()` or
+   * keywords: HSL is converted, anything else is skipped as if absent.
+   *
+   * On a development host, and never when `$uhuu_renderer` is set, `?brand=` on the page URL (`v9`, a
+   * `…/versions/vN/brandkit.json` link, or a same-origin path) renders that candidate instead, under a
+   * bar with what changed and Stop. It is written nowhere and never printed.
+   */
+  Provider: ComponentType<BrandKitProviderProps>;
+  /** The nearest `BrandKitProvider`'s runtime, or `null` outside one. */
+  useBrandKit(): BrandKitRuntime | null;
+  /** Brand Kit's production location for published kits. */
+  publicBaseUrl: string;
+  /**
+   * Which brand a document renders: a pinned `payload.brand` (unpinned warns), then none: the
+   * template's own current `brandkit.json` (`brandKit` prop) renders.
+   * `pinned` is true when `src` is an immutable `…/versions/vN/brandkit.json` (and for a preset, which
+   * fetches nothing). A `version: "vN"` beside a kit's root `…/kits/<kit>/brandkit.json` selects that
+   * version's URL; a version alone pins nothing.
+   */
+  selection(
+    payload: Record<string, unknown> | null | undefined,
+  ): { source: "payload" | "none"; src: string | null; pinned: boolean; presetId?: string };
+  /** Fetches a brandkit.json; rejects on network errors, non-2xx and non-object bodies. */
+  load(url: string, options?: { fetch?: typeof fetch; signal?: AbortSignal }): Promise<BrandKitJson>;
+  /**
+   * The chart dialog's `config.brand` (`ChartDialogBrand`): the brand's series palette (as
+   * `useBrandKit().chartPalette`) and ink, line, muted and surface, all `#rrggbb`. Missing roles are
+   * left for the dialog's defaults.
+   */
+  chartDialogBrand(
+    brandKit: BrandKitJson | null | undefined,
+    options?: { fallback?: string[]; count?: number },
+  ): { palette?: string[]; ink?: string; line?: string; muted?: string; surface?: string };
+};
 
 export interface InteractiveModeContextValue {
   interactive: boolean;
@@ -1365,7 +1123,7 @@ export interface PageEditorProps {
   /**
    * What the pages are drawn for: `print` (default), the document as it prints, or `screen`, the
    * document read on screen (a host's "Print" switch). Pages read it with `Static.useView()` and
-   * decide what changes (a table kept whole); a `Static.Flow` item with meta `growSheet` is drawn
+   * decide what changes (a table kept whole); a `Flow.Items` item with meta `growSheet` is drawn
    * whole on a taller sheet instead of scaled to fit a page. The renderer always draws `print`;
    * any other value draws `print` and warns.
    */
@@ -1592,34 +1350,6 @@ export interface PageEditorSpineConfig {
   component?: ComponentType<SpineComponentProps>;
 }
 
-export interface StaticCoverSpreadOverlayArgs {
-  pageNo: number;
-  side: CoverPanelSide;
-  sheet: CoverSheetKind;
-}
-
-/** One physical cover sheet of a perfect-bound product. See docs/printer-cover-spine-support.md. */
-export interface StaticCoverSpreadProps {
-  /** `outer` = back cover · spine · front cover. `inner` = inside front · blank spine + glue · inside back. */
-  sheet: CoverSheetKind;
-  left: ReactNode;
-  right: ReactNode;
-  /** Spine artwork, outer sheet only. */
-  spine?: ReactNode;
-  /** Original document page numbers `[left, right]`. */
-  pageNo?: [number, number];
-  overlay?: (args: StaticCoverSpreadOverlayArgs) => ReactNode;
-  /** Overrides `binding` from the Pagination setup. */
-  binding?: BindingConfig | null;
-  showBleed?: boolean;
-  className?: string;
-  style?: CSSProperties;
-  leftClassName?: string;
-  rightClassName?: string;
-  leftPageKey?: string;
-  rightPageKey?: string;
-}
-
 export interface StaticPaginationProps {
   children: ReactNode;
   className?: string;
@@ -1665,7 +1395,7 @@ export interface StaticFlowAreaProps {
    * Room kept free at the bottom of every sheet the flow continues from, so a break never sits on
    * the sheet's edge; the sheet the flow ends on keeps its full area, and a flow that fits one
    * sheet lays out as without it. A CSS length with an absolute unit (`"20mm"`, `"12px"`) or a
-   * number of px (not mm: write `"20mm"`); any other value keeps no room and warns. `Static.FlowColumns`
+   * number of px (not mm: write `"20mm"`); any other value keeps no room and warns. `Flow.Columns`
    * does not keep it.
    */
   breakReserve?: number | string;
@@ -1694,7 +1424,7 @@ export interface StaticFlowPageProps {
 
 /**
  * `TType`: the item types `metaDefaults` keys and `getItemType` returns, so a misspelled type key is
- * a type error (`Static.Flow<Row, "heading" | "row">`). Default: any string.
+ * a type error (`Flow.Items<Row, "heading" | "row">`). Default: any string.
  */
 export interface StaticFlowProps<TItem = unknown, TType extends string = string> {
   /** Stable and unique within the page. */
@@ -1797,7 +1527,7 @@ export type HtmlFlowItem = {
   breakBefore: boolean;
 };
 
-/** A block from `Static.markdownToFlowItems`: the block's own markdown, rendered by the template. */
+/** A block from `Flow.fromMarkdown`: the block's own markdown, rendered by the template. */
 export type MarkdownFlowItem = {
   id: string;
   type: 'heading' | 'paragraph' | 'list' | 'table' | 'code' | 'quote' | 'rule' | 'image';
@@ -1856,92 +1586,17 @@ export interface BindingConfig {
   glue?: number;
 }
 
-export interface ResolvedBinding {
-  type: "perfect";
-  spine: number;
-  glue: number;
-}
-
-export interface SpreadBox {
-  x: number;
-  y: number;
-  width: number;
-  height: number;
-}
-
 export type CoverSheetKind = "outer" | "inner";
 export type CoverPanelSide = "left" | "right";
 
-export interface CoverSpreadPageInput {
-  width?: number;
-  height?: number;
-  bleed?: number;
-  binding?: BindingConfig | null;
-}
-
-export interface CoverSheetSize {
-  width: number;
-  height: number;
-  trimWidth: number;
-  trimHeight: number;
-  spread: boolean;
-}
-
-export interface CoverSpreadPanel<TPage = unknown> {
-  side: CoverPanelSide;
-  page: TPage;
-  trim: SpreadBox;
-  bleedBox: SpreadBox;
-}
-
-export interface CoverSpreadSheet<TPage = unknown> {
-  sheet: CoverSheetKind;
-  index: number;
-  panels: CoverSpreadPanel<TPage>[];
-  spine: SpreadBox & { blank: boolean };
-  glueZones: Array<SpreadBox & { side: CoverPanelSide }>;
-}
-
-export interface CoverSpreadPlan<TPage = unknown> {
-  binding: ResolvedBinding;
-  page: { width: number; height: number; bleed: number };
-  sheet: { width: number; height: number; trimWidth: number; trimHeight: number };
-  sheets: CoverSpreadSheet<TPage>[];
-}
-
+/**
+ * Fixed printed pages and the pagination contract: the sheets `PageEditor` renders, used directly
+ * by templates without PageEditor; the hold that keeps `data-uhuu-pagination` at `measuring`;
+ * the view the pages are drawn for.
+ */
 export const Static: {
   Pagination: ComponentType<StaticPaginationProps>;
   Sheet: ComponentType<StaticSheetProps>;
-  FlowArea: ComponentType<StaticFlowAreaProps>;
-  FlowPage: ComponentType<StaticFlowPageProps>;
-  Flow: <TItem = unknown, TType extends string = string>(props: StaticFlowProps<TItem, TType>) => ReactElement | null;
-  FlowColumns: <TItem = unknown, TType extends string = string>(props: StaticFlowColumnsProps<TItem, TType>) => ReactElement | null;
-  /**
-   * Text a `Static.Flow` item may split between lines when it does not fit the room left on its
-   * sheet (one per item; `orphans`/`widows` in the item's meta). Renders `<as data-uhuu-flow-text>`.
-   */
-  FlowText: ComponentType<StaticFlowTextProps>;
-  planFlowChunks: (input?: StaticFlowPlanInput) => StaticFlowChunk[];
-  planFlowColumnChunks: (input?: StaticFlowColumnPlanInput) => StaticFlowChunk[];
-  /** @internal Instrumentation for library tests; does not affect pagination plans. */
-  createFlowPlanMetrics: () => StaticFlowPlanMetrics;
-  flowMeasure: StaticFlowMeasureApi;
-  FlowDocument: ComponentType<StaticFlowDocumentProps>;
-  markdownToFlowItems: (
-    markdown?: string,
-    options?: Record<string, unknown>
-  ) => MarkdownFlowItem[];
-  htmlToFlowItems: (
-    html?: string,
-    options?: Record<string, unknown>
-  ) => HtmlFlowItem[];
-  /** Plan perfect-binding cover sheets (outer/inner) for the filtered cover pages. */
-  planCoverSpread: <TPage = unknown>(
-    input?: CoverSpreadPageInput & { coverPages?: TPage[] }
-  ) => CoverSpreadPlan<TPage> | null;
-  /** Physical sheet size incl. bleed; the wide cover sheet when `binding.spine > 0`. */
-  resolveSheetSize: (input?: CoverSpreadPageInput) => CoverSheetSize | null;
-  CoverSpread: ComponentType<StaticCoverSpreadProps>;
   /**
    * Keeps `data-uhuu-pagination` at `measuring` while `pending` is true (the default), for
    * template work the package cannot see: a map, a chart, data a page fetches. Every flow is
@@ -1956,3 +1611,37 @@ export const Static: {
    */
   useView: () => StaticView;
 };
+
+/**
+ * Content whose length is not known up front, continuing onto generated pages. Mark the page
+ * `hasFlow: true` in the PageEditor config. See docs/static-flow-pagination.md.
+ */
+export const Flow: {
+  /** An authored page with one variable-height region (header, footer, the region). */
+  Page: ComponentType<StaticFlowPageProps>;
+  /** The variable-height region alone, inside a template's own page. */
+  Area: ComponentType<StaticFlowAreaProps>;
+  /** The items that flow across pages, one `renderItem` each. */
+  Items: <TItem = unknown, TType extends string = string>(props: StaticFlowProps<TItem, TType>) => ReactElement | null;
+  /** Items laid out in columns, independent or flowing. */
+  Columns: <TItem = unknown, TType extends string = string>(props: StaticFlowColumnsProps<TItem, TType>) => ReactElement | null;
+  /**
+   * Text a `Flow.Items` item may split between lines when it does not fit the room left on its
+   * sheet (one per item; `orphans`/`widows` in the item's meta). Renders `<as data-uhuu-flow-text>`.
+   */
+  Text: ComponentType<StaticFlowTextProps>;
+  /** A whole HTML body as a flow: block items, paragraphs and headings split between lines. */
+  Document: ComponentType<StaticFlowDocumentProps>;
+  /** Markdown source as flow items for `Flow.Items`. */
+  fromMarkdown: (markdown?: string, options?: Record<string, unknown>) => MarkdownFlowItem[];
+  /** HTML source as flow items for `Flow.Items`. */
+  fromHtml: (html?: string, options?: Record<string, unknown>) => HtmlFlowItem[];
+  /**
+   * For a host that measures its own canvas (Template Studio): the planners FlowArea uses, with
+   * the consumer's measured heights, and the DOM readers it measures with.
+   */
+  planChunks: (input?: StaticFlowPlanInput) => StaticFlowChunk[];
+  planColumnChunks: (input?: StaticFlowColumnPlanInput) => StaticFlowChunk[];
+  measure: StaticFlowMeasureApi;
+};
+

@@ -1,5 +1,5 @@
 {
-  "version": "0.4.8",
+  "version": "0.5.0",
   "name": "uhuu-components",
   "main": "uhuu-components.umd.cjs",
   "module": "uhuu-components.es.js",
