@@ -3682,6 +3682,18 @@ var DEFAULT_LIGHT_MODE = {
 };
 
 // node_modules/.pnpm/@uhuu+brandkit@file+vendor+brandkit_lucide-react@0.555.0_react@19.3.0__radix-ui@1.8.1_@_c6df9065a592f88a42662264ecdcc3f7/node_modules/@uhuu/brandkit/dist/core/logos.js
+function logoFiles(format, src) {
+  return format === "svg" ? { svg: src } : format === "png" ? { png: src } : { jpg: src };
+}
+var LOGO_FORMATS = ["svg", "png", "jpg"];
+function logoVariantFile(variant) {
+  for (const format of LOGO_FORMATS) {
+    const src = variant?.files?.[format]?.trim();
+    if (src)
+      return { src, format };
+  }
+  return void 0;
+}
 function pickLogoVariant(system, kind, background, select = {}) {
   const all = (system?.variants ?? []).filter((variant) => variant.kind === kind && (variant.background === background || variant.background === "any"));
   const ordered = [...all.filter((variant) => variant.background === background), ...all.filter((variant) => variant.background === "any")];
@@ -3741,7 +3753,7 @@ function resolveBrandKitUrl(value, base) {
   }
 }
 var LOGO_KIND = { primary: "primary", logo: "primary", lockup: "primary", mark: "mark", icon: "mark", symbol: "mark", wordmark: "wordmark" };
-var fileOf = (files) => isPlainObject(files) ? textOf(files.svg) : void 0;
+var fileOf = (files) => isPlainObject(files) ? logoVariantFile({ files: { svg: textOf(files.svg), png: textOf(files.png), jpg: textOf(files.jpg) } }) : void 0;
 function brandKitLogo(brandKit, options = {}) {
   if (!isPlainObject(brandKit)) return null;
   const kind = LOGO_KIND[String(options.kind ?? "primary").toLowerCase()] ?? "primary";
@@ -3763,7 +3775,7 @@ function logoVariants(brandKit) {
       background,
       ...textOf(variant.name) ? { name: textOf(variant.name) } : { name: void 0 },
       ...textOf(variant.locale) ? { locale: textOf(variant.locale) } : { locale: void 0 },
-      files: { svg: fileOf(variant.files) }
+      files: logoFiles(fileOf(variant.files).format, fileOf(variant.files).src)
     }];
   });
 }
@@ -3772,10 +3784,12 @@ function logoFromSystem(brandKit, kind, background, base, alt, options = {}) {
   const select = { name: textOf(options.name), locale: textOf(options.locale) };
   const variant = pickLogoVariant(system, kind, background, select) ?? pickLogoVariant(system, kind, background === "dark" ? "light" : "dark", select);
   if (!variant) return null;
-  const src = resolveBrandKitUrl(variant.files.svg, base);
+  const file = logoVariantFile(variant);
+  const src = file ? resolveBrandKitUrl(file.src, base) : void 0;
   if (!src) return null;
   return {
     src,
+    format: file.format,
     alt: variant.name ?? alt,
     kind,
     background: variant.background,
@@ -3956,7 +3970,7 @@ function fontFamilies(brandKit) {
   }
   return families;
 }
-function logoFiles(brandKit) {
+function logoFiles2(brandKit) {
   const files = {};
   for (const kind of ["primary", "mark"]) {
     const light = brandKitLogo(brandKit, { kind, background: "light" })?.src;
@@ -3976,7 +3990,7 @@ function brandKitChanges(before, after) {
   const changes = [];
   compare("variable", runtimeVariables(before), runtimeVariables(after), changes);
   compare("font", fontFamilies(before), fontFamilies(after), changes);
-  compare("logo", logoFiles(before), logoFiles(after), changes);
+  compare("logo", logoFiles2(before), logoFiles2(after), changes);
   return changes;
 }
 function describeBrandKitChange(change) {

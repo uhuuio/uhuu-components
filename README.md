@@ -7,7 +7,7 @@ React components for printable documents with fixed pages, static flow paginatio
 ## Install
 
 ```sh
-npm install uhuu-components@0.4.8 react react-dom
+npm install uhuu-components@0.5.3 react react-dom
 ```
 
 The delivery package declares React and React DOM `^18.0.0 || ^19.0.0` peers. Both must use the same React installation. The owning browser gate exercises the built package with React 18.3.1 and React 19. UI dependencies are bundled; React and React DOM remain external. No Next dependency is required by the delivery package.
