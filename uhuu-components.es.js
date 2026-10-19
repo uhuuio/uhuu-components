@@ -360,7 +360,7 @@ var L = 96 / 25.4, R = class {
 }, z = r(null), ee = ({ config: e, children: t }) => /* @__PURE__ */ v(z.Provider, {
 	value: e,
 	children: t
-}), B = "0.5.1", V = "data-uhuu-components", te = "templateRuntime", ne = "__uhuuComponentsAnnounced", H = (e) => {
+}), B = "0.5.2", V = "data-uhuu-components", te = "templateRuntime", ne = "__uhuuComponentsAnnounced", H = (e) => {
 	let t = e.$uhuu?.editor;
 	return typeof t?.post == "function" && (t.post({
 		action: te,
@@ -20872,14 +20872,18 @@ function aN({ modes: e, selectedMode: t, onModeChange: n, interactive: r, onInte
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/page-editor.tsx
-var oN = {
+function oN(e) {
+	let t = e?.uhuu_print_product?.component?.code ?? e?.component;
+	return typeof t == "string" && t ? t : void 0;
+}
+var sN = {
 	width: 210,
 	height: 297
 };
-function sN(e, t) {
+function cN(e, t) {
 	return t ? `${t.id}/${e.id}` : e.id;
 }
-function cN({ label: e, onDone: t, onAddAnother: n }) {
+function lN({ label: e, onDone: t, onAddAnother: n }) {
 	let { t: r } = Mo();
 	return e ? /* @__PURE__ */ v("div", {
 		className: "uhuu:fixed uhuu:inset-0 uhuu:z-50 uhuu:flex uhuu:items-center uhuu:justify-center uhuu:bg-black/30",
@@ -20918,48 +20922,57 @@ function cN({ label: e, onDone: t, onAddAnother: n }) {
 		})
 	}) : null;
 }
-function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = {}, spineComponent: i, payload: a, pageFormat: o, pageOptions: l = [], notifyError: u, referenceRenderer: d, renderOverlay: p, renderPage: g, menuItems: b, gridColsClass: S, reorderTitle: C, reorderDescription: w, stateKey: T = dw, onItemsChange: E, onStateChange: D, resolveNewItem: O, pageFilter: k, printConfigs: A, defaultZoomMode: j = "fit-page", toolbarPosition: M, brandKits: N, activeBrandKitId: P, onSelectBrandKit: F, onAddBrandKit: I, pageManagement: L = dN }) {
-	let [R] = h(() => oe.createScope()), z = L, ee = o ?? oN, { interactive: B, setInteractive: V, enableDevTools: te } = as(), ne = _e(), H = os(), { portalContainer: re } = La(), ie = Mo(), { t: U, localize: ae } = ie, [ce, le] = h(null), [ue, de] = h(null), [fe, me] = h(void 0), [he, ge] = h(0), [ve, ye] = h(0), be = ce ?? k, xe = () => {
+function uN({ initialItems: t = [], availableItems: n = [], pageComponents: r = {}, spineComponent: i, payload: a, pageFormat: o, pageOptions: l = [], notifyError: u, referenceRenderer: d, renderOverlay: p, renderPage: g, menuItems: b, gridColsClass: S, reorderTitle: C, reorderDescription: w, stateKey: T = dw, onItemsChange: E, onStateChange: D, resolveNewItem: O, pageFilter: k, printConfigs: A, defaultZoomMode: j = "fit-page", toolbarPosition: M, brandKits: N, activeBrandKitId: P, onSelectBrandKit: F, onAddBrandKit: I, pageManagement: L = fN }) {
+	let [R] = h(() => oe.createScope()), z = L, ee = o ?? sN, { interactive: B, setInteractive: V, enableDevTools: te } = as(), ne = _e(), H = os(), { portalContainer: re } = La(), ie = Mo(), { t: U, localize: ae } = ie, [ce, le] = h(null), [ue, de] = h(null), [fe, me] = h(void 0), [he, ge] = h(0), [ve, ye] = h(0), be = c(Xw), xe = be?.payload ?? a, Se = oN(xe), Ce = k === void 0 && A && Se ? A[Se] : void 0;
+	k === void 0 && A && Se && !Ce && pe(`print-product:${Se}`, `[uhuu-components] PageEditor: the payload names print product "${Se}", which printConfigs has no entry for (${Object.keys(A).join(", ") || "none"}), so it prints every page with the template pageFormat. Add a printConfigs entry under that code, or pass pageFilter.`);
+	let we = ce ?? k ?? Ce?.filter, Te = () => {
 		V(!0), me(void 0), le(null), de(null);
-	}, Se = f(() => ue ? {
+	}, Ee = Ce?.pageFormat, Oe = f(() => ue ? {
 		...ee,
 		...ue
-	} : ee, [ee, ue]), Ce = c(Xw), we = Ce?.payload ?? a, [Te, Ee] = h(!1), Oe = !B && gM(Se, be), ke = Se?.preview ?? "single_page", Ae = Oe ? "single_page" : ke, je = f(() => {
-		let e = hM(Se);
-		return ke === "two_pages" || Oe ? {
+	} : Ee ? {
+		...ee,
+		...Ee
+	} : ee, [
+		ee,
+		ue,
+		Ee
+	]), [ke, Ae] = h(!1), je = !B && gM(Oe, we), Me = Oe?.preview ?? "single_page", Ne = je ? "single_page" : Me, Pe = f(() => {
+		let e = hM(Oe);
+		return Me === "two_pages" || je ? {
 			...e,
 			preview: "single_page"
 		} : e;
 	}, [
-		ke,
-		Oe,
-		Se
-	]), Me = f(() => hM(ee), [ee]), Ne = f(() => vw(t), [t]), Pe = f(() => l?.length ? l.map((e) => "getValue" in e ? e : Ce?.setPageOptionValue ? Qw(e, Ce.payload, Ce.setPageOptionValue) : (ne && pe(`pageOptions:payload:${e.id}`, `[uhuu-components] PageEditor pageOptions "${e.id}" is payload-backed, which needs a TemplateDataProvider or the payload / onPayloadChange props; the option is left out.`), null)).filter(Boolean) : [], [
+		Me,
+		je,
+		Oe
+	]), Fe = f(() => hM(ee), [ee]), Ie = f(() => vw(t), [t]), Le = f(() => l?.length ? l.map((e) => "getValue" in e ? e : be?.setPageOptionValue ? Qw(e, be.payload, be.setPageOptionValue) : (ne && pe(`pageOptions:payload:${e.id}`, `[uhuu-components] PageEditor pageOptions "${e.id}" is payload-backed, which needs a TemplateDataProvider or the payload / onPayloadChange props; the option is left out.`), null)).filter(Boolean) : [], [
 		l,
-		Ce,
+		be,
 		ne
-	]), [Fe, Ie] = h(null), [Le, Re] = h({ mode: "end" }), [ze, Be] = h(null), Ve = m(null), { items: He, itemsWithPageNum: Ue, availableItemsToAdd: We, addItem: Ge, removeItem: Ke, reorderItems: qe, updateItemFields: Je, addDialogOpen: Ye, setAddDialogOpen: Xe, openAddDialog: Ze, itemsForReorder: Qe, handleReorder: $e } = vM({
-		initialItems: Ne,
+	]), [Re, ze] = h(null), [Be, Ve] = h({ mode: "end" }), [He, Ue] = h(null), We = m(null), { items: Ge, itemsWithPageNum: Ke, availableItemsToAdd: qe, addItem: Je, removeItem: Ye, reorderItems: Xe, updateItemFields: Ze, addDialogOpen: Qe, setAddDialogOpen: $e, openAddDialog: et, itemsForReorder: tt, handleReorder: nt } = vM({
+		initialItems: Ie,
 		availableItems: n,
-		payload: we,
+		payload: xe,
 		stateKey: T,
 		onItemsChange: E,
 		onStateChange: D,
 		resolveNewItem: O,
 		notifyError: u
-	}), et = f(() => yT({
+	}), rt = f(() => yT({
 		pageComponents: r,
-		payload: we,
-		setup: je,
+		payload: xe,
+		setup: Pe,
 		i18n: ie
 	}), [
 		r,
-		we,
-		je,
+		xe,
+		Pe,
 		ie
-	]), tt = f(() => {
+	]), it = f(() => {
 		let e = [];
-		for (let t of Ue) {
+		for (let t of Ke) {
 			let n = fw(t) ? t.pages ?? [] : [t];
 			for (let r of n) {
 				if (!r?.id) continue;
@@ -20971,82 +20984,82 @@ function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 					pageNum: r.pageNum ?? e.length + 1,
 					basePageNum: r.pageNum ?? e.length + 1,
 					parentGroup: n,
-					flowKey: sN(r, n)
+					flowKey: cN(r, n)
 				});
 			}
 		}
 		return e.sort((e, t) => (e.basePageNum ?? 0) - (t.basePageNum ?? 0));
-	}, [Ue]), nt = f(() => JSON.stringify({
-		format: je?.format,
-		orientation: je?.orientation,
-		width: je?.width,
-		height: je?.height,
-		bleed: je?.bleed,
-		showBleed: je?.showBleed,
-		preview: je?.preview,
-		flowPages: tt.filter((e) => e.hasFlow).map((e) => e.flowKey).join("|")
-	}), [je, tt]), rt = f(() => hw(He), [He]), { committedFlowLayouts: it, allVirtualPages: at, renderedVirtualPages: ot, virtualTotalPageCount: st, registerMeasurement: ct, pruneMeasurements: lt } = wM({
-		logicalPages: tt,
-		pageFilter: be,
-		layoutKey: nt
+	}, [Ke]), at = f(() => JSON.stringify({
+		format: Pe?.format,
+		orientation: Pe?.orientation,
+		width: Pe?.width,
+		height: Pe?.height,
+		bleed: Pe?.bleed,
+		showBleed: Pe?.showBleed,
+		preview: Pe?.preview,
+		flowPages: it.filter((e) => e.hasFlow).map((e) => e.flowKey).join("|")
+	}), [Pe, it]), ot = f(() => hw(Ge), [Ge]), { committedFlowLayouts: st, allVirtualPages: ct, renderedVirtualPages: lt, virtualTotalPageCount: ut, registerMeasurement: dt, pruneMeasurements: ft } = wM({
+		logicalPages: it,
+		pageFilter: we,
+		layoutKey: at
 	});
 	se(() => {
-		R.commit(tt.filter((e) => e.hasFlow).map((e) => e.flowKey), it);
+		R.commit(it.filter((e) => e.hasFlow).map((e) => e.flowKey), st);
 	}), se(() => () => R.suspend(), [R]), e.useEffect(() => () => R.unmount(), [R]);
-	let ut = f(() => new Set(ot.map((e) => e.virtualPageId)), [ot]), dt = f(() => _M({
-		pageFormat: Oe ? Se : hM(Se),
-		pageFilter: be,
-		pages: ot
+	let pt = f(() => new Set(lt.map((e) => e.virtualPageId)), [lt]), mt = f(() => _M({
+		pageFormat: je ? Oe : hM(Oe),
+		pageFilter: we,
+		pages: lt
 	}), [
-		Oe,
-		Se,
-		be,
-		ot
-	]), ft = dt.active ? dt.plan : null, pt = f(() => ft ? {
-		...je,
-		binding: dt.setup.binding
-	} : je, [
-		ft,
 		je,
-		dt.setup
+		Oe,
+		we,
+		lt
+	]), ht = mt.active ? mt.plan : null, gt = f(() => ht ? {
+		...Pe,
+		binding: mt.setup.binding
+	} : Pe, [
+		ht,
+		Pe,
+		mt.setup
 	]);
 	e.useEffect(() => {
-		if (dt.warnings.length) for (let e of dt.warnings) pe(`cover-spread:${e}`, `[uhuu-components] PageEditor cover spread: ${e}`);
-	}, [dt.warnings]);
-	let mt = f(() => at.filter((e) => e.hasFlow && e.virtualPageIndex === 0 && (g || !!ft || !ut.has(e.virtualPageId))), [
-		at,
-		ut,
+		if (mt.warnings.length) for (let e of mt.warnings) pe(`cover-spread:${e}`, `[uhuu-components] PageEditor cover spread: ${e}`);
+	}, [mt.warnings]);
+	let _t = f(() => ct.filter((e) => e.hasFlow && e.virtualPageIndex === 0 && (g || !!ht || !pt.has(e.virtualPageId))), [
+		ct,
+		pt,
 		g,
-		ft
+		ht
 	]);
 	e.useEffect(() => {
-		if (!ze) return;
+		if (!He) return;
 		let e = setTimeout(() => {
-			document.querySelector(`[data-page-item-id="${ze}"]`)?.scrollIntoView({
+			document.querySelector(`[data-page-item-id="${He}"]`)?.scrollIntoView({
 				behavior: "smooth",
 				block: "start"
 			});
 		}, 300);
 		return () => clearTimeout(e);
-	}, [ze]);
-	let ht = SM({
-		items: He,
-		reorderItems: qe,
-		availableItemsToAdd: We,
-		setPendingInsertPosition: Re,
-		openAddDialog: Ze
-	}), gt = (e, t) => {
-		let n = ht(e, t);
+	}, [He]);
+	let vt = SM({
+		items: Ge,
+		reorderItems: Xe,
+		availableItemsToAdd: qe,
+		setPendingInsertPosition: Ve,
+		openAddDialog: et
+	}), yt = (e, t) => {
+		let n = vt(e, t);
 		return {
 			onAddPage: z.add ? n.onAddPage : void 0,
 			onMoveUp: z.reorder ? n.onMoveUp : void 0,
 			onMoveDown: z.reorder ? n.onMoveDown : void 0,
 			onDuplicate: z.duplicate ? n.onDuplicate : void 0
 		};
-	}, _t = s(async (e) => {
-		let t = await Ge(e, Le);
-		t.success && (Be(t.insertedId), Ve.current && clearTimeout(Ve.current), Ve.current = setTimeout(() => Be(null), 1200), Re({ mode: "end" }), e.repeatable && e.integration && Ie(e));
-	}, [Ge, Le]), vt = s(() => {
+	}, bt = s(async (e) => {
+		let t = await Je(e, Be);
+		t.success && (Ue(t.insertedId), We.current && clearTimeout(We.current), We.current = setTimeout(() => Ue(null), 1200), Ve({ mode: "end" }), e.repeatable && e.integration && ze(e));
+	}, [Je, Be]), xt = s(() => {
 		let e = Array.from(document.querySelectorAll("[data-page-item-id]"));
 		if (!e.length) return { mode: "end" };
 		let t = window.innerHeight / 2, n = null, r = Infinity;
@@ -21059,44 +21072,45 @@ function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 			mode: "after",
 			anchorId: i
 		} : { mode: "end" };
-	}, []), yt = s(() => {
-		Re(vt()), Ze();
-	}, [vt, Ze]), bt = e.useCallback((e, t, n) => {
+	}, []), St = s(() => {
+		Ve(xt()), et();
+	}, [xt, et]), Ct = e.useCallback((e, t, n) => {
 		if (!t) return;
 		let r = e.applyPatch?.(n, t);
-		r && Je(t.id, r), e.onChange?.(t.id, n, {
+		r && Ze(t.id, r), e.onChange?.(t.id, n, {
 			item: t,
-			updateItem: (e) => Je(t.id, e)
+			updateItem: (e) => Ze(t.id, e)
 		});
-	}, [Je]), xt = (e) => /* @__PURE__ */ y("div", {
+	}, [Ze]), wt = (e) => /* @__PURE__ */ y("div", {
 		className: "uhuu-page-overlay",
 		children: [/* @__PURE__ */ v("span", { children: "Page" }), /* @__PURE__ */ y("span", { children: [
 			e.pageNo,
 			" / ",
 			e.total
 		] })]
-	}), St = (e, t, n) => p === !1 || p === null ? null : p ? p({
+	}), Tt = (e, t, n) => p === !1 || p === null ? null : p ? p({
 		pageNum: e,
-		totalPages: st,
+		totalPages: ut,
 		pageNo: e,
-		total: st,
-		pageId: t,
+		total: ut,
+		pageId: t.id,
+		componentKey: t.componentKey ?? t.id,
 		parent: n
-	}) : xt({
+	}) : wt({
 		pageNo: e,
-		total: st
-	}), Ct = (t, n = {}) => {
+		total: ut
+	}), Et = (t, n = {}) => {
 		let i = t.parentGroup;
 		if (g && n.renderVisible !== !1 && n.renderMode !== "content") return g({
 			page: t,
 			parent: i
 		});
-		let a = t.componentKey ?? t.id, o = te && d ? d(t) : null, s = te && d ? e.isValidElement(o) ? e.cloneElement(o, { opacity: ve }) : o : null, c = t.templateId ?? a, l = r[a], u = Ce?.getPagePayload ? Ce.getPagePayload(t) : Yw(we, {
+		let a = t.componentKey ?? t.id, o = te && d ? d(t) : null, s = te && d ? e.isValidElement(o) ? e.cloneElement(o, { opacity: ve }) : o : null, c = t.templateId ?? a, l = r[a], u = be?.getPagePayload ? be.getPagePayload(t) : Yw(xe, {
 			id: t.id,
 			templateId: c,
 			componentKey: a
-		}), f = Nw(we, t, i), p = fT({
-			payload: we,
+		}), f = Nw(xe, t, i), p = fT({
+			payload: xe,
 			page: t,
 			parentGroup: i,
 			pagePayload: u
@@ -21107,37 +21121,37 @@ function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 			pageNo: t.pageNum,
 			measurementPageNo: t.basePageNum,
 			component: l,
-			payload: we,
+			payload: xe,
 			pagePayload: u,
 			integration: f,
 			page: t,
 			parentGroup: i,
 			componentKey: a,
-			setup: pt,
+			setup: gt,
 			reference: s,
-			overlay: ({ pageNo: e }) => St(e, t.id, i),
+			overlay: ({ pageNo: e }) => Tt(e, t, i),
 			className: t.className,
 			dataBinding: p,
-			totalPages: st,
-			measurementTotalPages: rt,
+			totalPages: ut,
+			measurementTotalPages: ot,
 			flowPageIndex: t.virtualPageIndex,
 			flowChunksByFlowId: t.flowChunksByFlowId,
 			measureFlow: n.measureFlow ?? (!!t.hasFlow && t.virtualPageIndex === 0),
 			flowMeasurementKey: t.flowKey,
-			flowMeasurementVersion: nt,
+			flowMeasurementVersion: at,
 			flowReadiness: R,
-			onFlowMeasurement: t.hasFlow ? ct : void 0,
-			onFlowPrune: lt,
+			onFlowMeasurement: t.hasFlow ? dt : void 0,
+			onFlowPrune: ft,
 			renderVisible: n.renderVisible ?? !0,
 			renderMode: n.renderMode,
 			spread: n.spread
 		}, `${n.renderVisible === !1 ? "measure-only" : "page"}-${t.virtualPageId}`);
-	}, wt = (e) => {
+	}, Dt = (e) => {
 		let t = e.componentKey ?? e.templateId ?? e.id;
 		return [t ? `uhuu-page--${t}` : "", e.className].filter(Boolean).join(" ");
-	}, Tt = (e) => {
-		if (!ft) return null;
-		let { binding: t, page: n } = ft, [r, a] = e.panels, o = r.page, s = a.page, c = (r) => ({
+	}, Ot = (e) => {
+		if (!ht) return null;
+		let { binding: t, page: n } = ht, [r, a] = e.panels, o = r.page, s = a.page, c = (r) => ({
 			sheet: e.sheet,
 			side: r,
 			spine: t.spine,
@@ -21164,26 +21178,26 @@ function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 					})]
 				}),
 				children: /* @__PURE__ */ v(De, {
-					setup: pt,
+					setup: gt,
 					children: /* @__PURE__ */ v(mM, {
 						sheet: e.sheet,
 						pageNo: [o.pageNum, s.pageNum],
-						left: Ct(o, {
+						left: Et(o, {
 							renderMode: "content",
 							spread: c("left")
 						}),
-						right: Ct(s, {
+						right: Et(s, {
 							renderMode: "content",
 							spread: c("right")
 						}),
 						spine: i && e.sheet === "outer" ? /* @__PURE__ */ v(i, {
-							payload: we,
+							payload: xe,
 							sheet: "outer",
 							spine: t.spine,
 							glue: t.glue,
 							bleed: n.bleed,
 							height: n.height,
-							totalPages: st,
+							totalPages: ut,
 							pages: {
 								left: o,
 								right: s
@@ -21191,17 +21205,17 @@ function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 						}) : void 0,
 						overlay: ({ pageNo: e, side: t }) => {
 							let n = t === "left" ? o : s;
-							return St(e, n.id, n.parentGroup);
+							return Tt(e, n, n.parentGroup);
 						},
-						leftClassName: wt(o),
-						rightClassName: wt(s),
+						leftClassName: Dt(o),
+						rightClassName: Dt(s),
 						leftPageKey: o.componentKey ?? o.templateId ?? o.id,
 						rightPageKey: s.componentKey ?? s.templateId ?? s.id
 					})
 				})
 			})
 		}, `cover-sheet-${e.sheet}`);
-	}, Et = (e, t, n) => {
+	}, kt = (e, t, n) => {
 		let r = !!t && fw(t), i = r && t.pages[0]?.id === e.id;
 		if (e.virtualPageIndex > 0) return /* @__PURE__ */ y("div", {
 			"data-uhuu-editor": !0,
@@ -21251,28 +21265,28 @@ function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 					canMoveDown: !!n?.onMoveDown,
 					canAddPage: !!n?.onAddPage,
 					canDuplicate: !!n?.onDuplicate,
-					canDelete: z.remove && rt > 1,
-					onRename: (e) => Je(a.id, { label: e || void 0 }),
+					canDelete: z.remove && ot > 1,
+					onRename: (e) => Ze(a.id, { label: e || void 0 }),
 					onMoveUp: n?.onMoveUp,
 					onMoveDown: n?.onMoveDown,
 					onAddPage: n?.onAddPage,
 					onDuplicate: n?.onDuplicate,
-					onDelete: () => Ke(a.id)
+					onDelete: () => Ye(a.id)
 				}),
 				/* @__PURE__ */ v("span", {
 					className: "uhuu:pl-1",
-					children: Pe.length > 0 && /* @__PURE__ */ v(uM, {
-						pageOptions: Pe,
+					children: Le.length > 0 && /* @__PURE__ */ v(uM, {
+						pageOptions: Le,
 						targetItem: a,
-						onChange: bt,
+						onChange: Ct,
 						title: U(r ? "page.groupOptions" : "page.options")
 					})
 				})
 			]
 		});
-	}, Dt = f(() => {
-		if (Ae !== "two_pages") return [];
-		let e = ot;
+	}, At = f(() => {
+		if (Ne !== "two_pages") return [];
+		let e = lt;
 		if (!e.length) return [];
 		let t = [{
 			left: void 0,
@@ -21296,13 +21310,13 @@ function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 			}
 		}
 		return t;
-	}, [Ae, ot]), Ot = /* @__PURE__ */ y("div", {
+	}, [Ne, lt]), jt = /* @__PURE__ */ y("div", {
 		className: "uhuu:flex uhuu:items-center uhuu:gap-1",
 		children: [
 			/* @__PURE__ */ v(DA, {
 				variant: "secondary",
 				className: "uhuu:font-normal uhuu:text-xs uhuu:bg-gray-100/80 uhuu:text-gray-700 uhuu:border-0",
-				children: U("toolbar.pages", { count: st })
+				children: U("toolbar.pages", { count: ut })
 			}),
 			te && /* @__PURE__ */ v(aN, {
 				modes: A,
@@ -21312,7 +21326,7 @@ function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 				},
 				interactive: B,
 				onInteractiveChange: (e) => {
-					e ? xe() : V(!1);
+					e ? Te() : V(!1);
 				},
 				hasReferenceRenderer: !!d,
 				referenceOpacity: ve,
@@ -21322,17 +21336,17 @@ function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 				onSelectBrandKit: F,
 				onAddBrandKit: I
 			}),
-			B && /* @__PURE__ */ y(_, { children: [z.add && We.length > 0 && /* @__PURE__ */ y(fs, {
+			B && /* @__PURE__ */ y(_, { children: [z.add && qe.length > 0 && /* @__PURE__ */ y(fs, {
 				variant: "ghost",
 				size: "sm",
-				onClick: yt,
+				onClick: St,
 				title: U("toolbar.addHint"),
 				className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-700 uhuu:hover:bg-gray-100/80 uhuu:h-7 uhuu:px-2.5",
 				children: [/* @__PURE__ */ v(Da, { className: "uhuu:w-3.5 uhuu:h-3.5" }), U("toolbar.add")]
 			}), z.reorder && /* @__PURE__ */ y(fs, {
 				variant: "ghost",
 				size: "sm",
-				onClick: () => Ee(!0),
+				onClick: () => Ae(!0),
 				title: U("toolbar.reorderHint"),
 				className: "uhuu:text-xs uhuu:font-medium uhuu:text-gray-700 uhuu:hover:bg-gray-100/80 uhuu:h-7 uhuu:px-2.5",
 				children: [/* @__PURE__ */ v(va, { className: "uhuu:w-3.5 uhuu:h-3.5" }), U("toolbar.reorder")]
@@ -21340,12 +21354,12 @@ function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 		]
 	});
 	return /* @__PURE__ */ y(_, { children: [
-		mt.map((e) => Ct(e, {
+		_t.map((e) => Et(e, {
 			renderVisible: !1,
 			measureFlow: !0
 		})),
 		te && !B && re && x(/* @__PURE__ */ y(fs, {
-			onClick: xe,
+			onClick: Te,
 			"data-uhuu-editor": !0,
 			size: "sm",
 			className: "uhuu-screen-only uhuu:fixed uhuu:top-4 uhuu:right-4 uhuu:z-50 uhuu:flex uhuu:items-center uhuu:gap-1.5 uhuu:text-xs! uhuu:rounded-full",
@@ -21358,11 +21372,11 @@ function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 			toolbarPosition: M,
 			minZoom: 25,
 			maxZoom: 200,
-			menuItems: b ?? Ot,
-			onAddPage: z.add ? yt : void 0,
-			preview: Ae,
-			children: ft ? ft.sheets.map(Tt) : Ae === "two_pages" ? Dt.map((e, t) => {
-				let n = e.left ?? e.right, r = e.right ?? e.left, i = n?.parentGroup?.id ?? n?.id ?? null, a = r?.parentGroup?.id ?? r?.id ?? null, o = e.left?.parentGroup?.id ?? e.left?.id, s = e.right?.parentGroup?.id ?? e.right?.id, c = o === ze, l = s === ze, u = (e, t) => gt(e ? e.parentGroup ?? e : void 0, t);
+			menuItems: b ?? jt,
+			onAddPage: z.add ? St : void 0,
+			preview: Ne,
+			children: ht ? ht.sheets.map(Ot) : Ne === "two_pages" ? At.map((e, t) => {
+				let n = e.left ?? e.right, r = e.right ?? e.left, i = n?.parentGroup?.id ?? n?.id ?? null, a = r?.parentGroup?.id ?? r?.id ?? null, o = e.left?.parentGroup?.id ?? e.left?.id, s = e.right?.parentGroup?.id ?? e.right?.id, c = o === He, l = s === He, u = (e, t) => yt(e ? e.parentGroup ?? e : void 0, t);
 				return /* @__PURE__ */ y(rE, {
 					layout: e.layout,
 					pageItemId: a ?? void 0,
@@ -21371,82 +21385,82 @@ function lN({ initialItems: t = [], availableItems: n = [], pageComponents: r = 
 						className: c ? "uhuu:outline uhuu:outline-2 uhuu:outline-offset-2 uhuu:outline-blue-100 uhuu:bg-blue-50" : void 0,
 						children: /* @__PURE__ */ v(oE, {
 							title: `Sheet ${e.left.pageNum}`,
-							controls: Et(e.left, e.left.parentGroup, u(e.left, i)),
+							controls: kt(e.left, e.left.parentGroup, u(e.left, i)),
 							origin: e.left.pageNum % 2 == 0 ? "right" : "left",
-							children: Ct(e.left)
+							children: Et(e.left)
 						}, e.left.virtualPageId)
 					}), e.right && /* @__PURE__ */ v("div", {
 						"data-page-item-id": e.right.virtualPageIndex === 0 ? s : void 0,
 						className: l ? "uhuu:outline uhuu:outline-2 uhuu:outline-offset-2 uhuu:outline-blue-100 uhuu:bg-blue-50" : void 0,
 						children: /* @__PURE__ */ v(oE, {
 							title: `Sheet ${e.right.pageNum}`,
-							controls: Et(e.right, e.right.parentGroup, u(e.right, a)),
+							controls: kt(e.right, e.right.parentGroup, u(e.right, a)),
 							origin: e.right.pageNum % 2 == 0 ? "right" : "left",
-							children: Ct(e.right)
+							children: Et(e.right)
 						}, e.right.virtualPageId)
 					})]
 				}, `pair-${t}`);
-			}) : ot.map((e) => {
-				let t = e.parentGroup ?? e, n = e.parentGroup?.id ?? e.id, r = gt(t, n), i = e.parentGroup?.id ?? e.id, a = ze === i;
+			}) : lt.map((e) => {
+				let t = e.parentGroup ?? e, n = e.parentGroup?.id ?? e.id, r = yt(t, n), i = e.parentGroup?.id ?? e.id, a = He === i;
 				return /* @__PURE__ */ v("div", {
 					"data-page-item-id": e.virtualPageIndex === 0 ? i : void 0,
 					className: a ? "uhuu:outline uhuu:outline-2 uhuu:outline-offset-2 uhuu:outline-blue-100 uhuu:bg-blue-50" : void 0,
 					children: /* @__PURE__ */ v(oE, {
 						title: `Sheet ${e.pageNum}`,
-						controls: Et(e, e.parentGroup, r),
-						children: Ct(e)
+						controls: kt(e, e.parentGroup, r),
+						children: Et(e)
 					})
 				}, e.virtualPageId);
 			})
 		}, `dev-mode-${he}-${fe ?? "default"}`),
 		B && !H && /* @__PURE__ */ y(_, { children: [z.add && /* @__PURE__ */ v(GE, {
-			open: Ye,
-			onOpenChange: Xe,
-			availableItems: We,
-			renderThumbnail: et,
-			onSelectItem: _t,
-			payload: we,
-			setup: Me,
+			open: Qe,
+			onOpenChange: $e,
+			availableItems: qe,
+			renderThumbnail: rt,
+			onSelectItem: bt,
+			payload: xe,
+			setup: Fe,
 			gridColsClass: S,
 			"data-uhuu-editor": !0
 		}), z.reorder && /* @__PURE__ */ v(kA, {
-			open: Te,
-			onOpenChange: Ee,
-			pages: Qe,
+			open: ke,
+			onOpenChange: Ae,
+			pages: tt,
 			onReorder: (e) => {
-				$e(e), Ee(!1);
+				nt(e), Ae(!1);
 			},
-			onRemove: z.remove ? (e) => Ke(e.id) : void 0,
+			onRemove: z.remove ? (e) => Ye(e.id) : void 0,
 			pageComponents: r,
-			payload: we,
-			setup: Me,
-			renderThumbnail: et,
+			payload: xe,
+			setup: Fe,
+			renderThumbnail: rt,
 			title: ae(C) ?? U("reorderDialog.title"),
 			description: ae(w) ?? U("reorderDialog.description"),
 			gridColsClass: S,
 			"data-uhuu-editor": !0
 		})] }),
-		/* @__PURE__ */ v(cN, {
-			label: Fe ? ae(Fe.label) ?? Fe.id : null,
-			onDone: () => Ie(null),
+		/* @__PURE__ */ v(lN, {
+			label: Re ? ae(Re.label) ?? Re.id : null,
+			onDone: () => ze(null),
 			onAddAnother: () => {
-				let e = Fe;
-				Ie(null), e && _t(e);
+				let e = Re;
+				ze(null), e && bt(e);
 			}
 		})
 	] });
 }
-function uN(e) {
+function dN(e) {
 	let { templateConfig: t, ...n } = e;
-	return c(Xw) || !e.payload && !e.onPayloadChange ? /* @__PURE__ */ v(lN, { ...n }) : /* @__PURE__ */ v(Zw, {
+	return c(Xw) || !e.payload && !e.onPayloadChange ? /* @__PURE__ */ v(uN, { ...n }) : /* @__PURE__ */ v(Zw, {
 		payload: e.payload,
 		onPayloadChange: e.onPayloadChange,
 		stateKey: e.stateKey,
-		children: /* @__PURE__ */ v(lN, { ...n })
+		children: /* @__PURE__ */ v(uN, { ...n })
 	});
 }
-var dN = eT();
-function fN(t) {
+var fN = eT();
+function pN(t) {
 	let n = c(Xw), { t: r } = Mo(), i = n?.payload ?? t.payload, a = e.useMemo(() => OM({
 		...t.templateConfig,
 		payload: i
@@ -21478,7 +21492,7 @@ function fN(t) {
 		value: !0,
 		children: [/* @__PURE__ */ v(be.Provider, {
 			value: h,
-			children: /* @__PURE__ */ v(uN, {
+			children: /* @__PURE__ */ v(dN, {
 				...t,
 				payload: i,
 				initialItems: m,
@@ -21508,18 +21522,18 @@ function fN(t) {
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/integration-adapter.ts
-function pN(e, t) {
+function mN(e, t) {
 	if (e && t) {
 		if (e.includes("??")) {
 			let n = e.split("??").map((e) => e.trim());
 			for (let e of n) {
-				let n = mN(t, e);
+				let n = hN(t, e);
 				if (n != null) return n;
 			}
-		} else return mN(t, e);
+		} else return hN(t, e);
 	}
 }
-function mN(e, t) {
+function hN(e, t) {
 	if (!t) return e;
 	let n = t.split("."), r = e;
 	for (let e of n) {
@@ -21528,20 +21542,20 @@ function mN(e, t) {
 	}
 	return r;
 }
-function hN(e, t, n) {
+function gN(e, t, n) {
 	let r = {};
-	for (let [n, i] of Object.entries(e)) typeof i == "function" ? r[n] = i(t) : typeof i == "string" && (r[n] = pN(i.startsWith("integration.") ? i.slice(12) : i, t));
+	for (let [n, i] of Object.entries(e)) typeof i == "function" ? r[n] = i(t) : typeof i == "string" && (r[n] = mN(i.startsWith("integration.") ? i.slice(12) : i, t));
 	return r;
 }
-function gN(e, t, n) {
+function _N(e, t, n) {
 	return e(t, n);
 }
-function _N(e, t, n) {
-	if (typeof e == "function") return gN(e, t, n);
-	if (!e || typeof e != "object") throw TypeError("[uhuu-components] useIntegrationAdapter needs a `resolver`: a map of keys to paths or functions, or one function (integration, payload) => data.");
-	return hN(e, t, n);
-}
 function vN(e, t, n) {
+	if (typeof e == "function") return _N(e, t, n);
+	if (!e || typeof e != "object") throw TypeError("[uhuu-components] useIntegrationAdapter needs a `resolver`: a map of keys to paths or functions, or one function (integration, payload) => data.");
+	return gN(e, t, n);
+}
+function yN(e, t, n) {
 	if (e?.defaults?.imageGalleryPath) return e.defaults.imageGalleryPath;
 	if (n) {
 		if (typeof n == "function") {
@@ -21551,7 +21565,7 @@ function vN(e, t, n) {
 	}
 	return t?.media?.images ? "media.images" : t?.listing?.media?.images ? "listing.media.images" : t?.pba_listing?.media?.images ? "pba_listing.media.images" : t?.property?.media?.images ? "property.media.images" : null;
 }
-function yN(e, t, n = {}, r, i = null) {
+function bN(e, t, n = {}, r, i = null) {
 	let a = e?.integration?.path?.();
 	if (!a) return null;
 	let o = n.type === "assistant", s = n.type === "image" || n.imagePath, c = o ? e.integration.path(t) ?? [a, t].filter(Boolean).join(".") : [a, t].filter(Boolean).join(".");
@@ -21585,16 +21599,16 @@ function yN(e, t, n = {}, r, i = null) {
 		...n
 	};
 }
-function bN(t) {
-	let { dataBinding: n, integration: r, resolver: i, galleryPath: a } = t, o = e.useMemo(() => _N(i, r, n?.payload), [
+function xN(t) {
+	let { dataBinding: n, integration: r, resolver: i, galleryPath: a } = t, o = e.useMemo(() => vN(i, r, n?.payload), [
 		i,
 		r,
 		n?.payload
-	]), s = e.useMemo(() => vN(n, r, a), [
+	]), s = e.useMemo(() => yN(n, r, a), [
 		n,
 		r,
 		a
-	]), c = e.useCallback((e, t = {}, r) => yN(n, e, t, r, s), [n, s]), l = e.useCallback((e, t = {}, n) => {
+	]), c = e.useCallback((e, t = {}, r) => bN(n, e, t, r, s), [n, s]), l = e.useCallback((e, t = {}, n) => {
 		let r = c(e, t, n);
 		return r ? bn({ dialog: r }) : {};
 	}, [c]);
@@ -21616,22 +21630,22 @@ function bN(t) {
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/document-options-core.js
-var xN = Bw, SN = Jw;
-function CN(e, t) {
+var SN = Bw, CN = Jw;
+function wN(e, t) {
 	return Uw(e, t);
 }
-function wN(e) {
+function TN(e) {
 	return typeof e?.editor?.post == "function" ? "patch" : typeof e?.editDialog == "function" ? "dialog" : "none";
 }
-var TN = 1500;
-function EN(e, t) {
+var EN = 1500;
+function DN(e, t) {
 	return {
 		action: "patchPayload",
-		patch: { [xN(e)]: Jw(e, t) }
+		patch: { [SN(e)]: Jw(e, t) }
 	};
 }
-function DN(e, t, n = (e) => typeof e == "string" ? e : void 0) {
-	let r = xN(e), i = n(e.label) ?? r, a = zw(e);
+function ON(e, t, n = (e) => typeof e == "string" ? e : void 0) {
+	let r = SN(e), i = n(e.label) ?? r, a = zw(e);
 	if (a === "toggle") return {
 		path: r,
 		type: "switch",
@@ -21658,11 +21672,11 @@ function DN(e, t, n = (e) => typeof e == "string" ? e : void 0) {
 }
 //#endregion
 //#region src/uhuu/editor-shell/document/document-options.tsx
-var ON = "unknown", kN = !1, AN = !1, jN = "uhuu:text-xs uhuu:font-medium uhuu:text-gray-500";
-function MN() {
+var kN = "unknown", AN = !1, jN = !1, MN = "uhuu:text-xs uhuu:font-medium uhuu:text-gray-500";
+function NN() {
 	return typeof window > "u" ? void 0 : window.$uhuu;
 }
-function NN(e) {
+function PN(e) {
 	let [t, n] = h(null);
 	return l(() => {
 		if (!e || typeof document > "u" || Ga()) return;
@@ -21672,14 +21686,14 @@ function NN(e) {
 		};
 	}, [e]), e ? t : null;
 }
-function PN({ payload: e, options: t, title: n, onChange: r, toolbarPosition: i, className: a, style: o }) {
+function FN({ payload: e, options: t, title: n, onChange: r, toolbarPosition: i, className: a, style: o }) {
 	let { interactive: d } = as(), { t: p, localize: g } = Mo(), _ = c(Xw), b = e ?? _?.payload ?? null, S = f(() => {
 		let e = Array.isArray(t) ? t : [], n = e.filter((e) => typeof Bw(e) == "string");
-		return n.length !== e.length && !AN && (AN = !0, console.warn("[uhuu-components] DocumentOptions: an option without `id` (or `field`) is left out.")), n;
-	}, [t]), C = f(() => new Map(S.map((e) => [xN(e), e])), [S]), w = d && !ce() && S.length > 0, T = Ka(), E = La(), D = NN(w && !T && !E.inProvider), O = T ?? E.portalContainer ?? D, k = u(), A = `${k}-panel`, j = `${k}-heading`, M = m(null), N = m(null), P = m(null), [F, I] = h(!1), [L, R] = h({
+		return n.length !== e.length && !jN && (jN = !0, console.warn("[uhuu-components] DocumentOptions: an option without `id` (or `field`) is left out.")), n;
+	}, [t]), C = f(() => new Map(S.map((e) => [SN(e), e])), [S]), w = d && !ce() && S.length > 0, T = Ka(), E = La(), D = PN(w && !T && !E.inProvider), O = T ?? E.portalContainer ?? D, k = u(), A = `${k}-panel`, j = `${k}-heading`, M = m(null), N = m(null), P = m(null), [F, I] = h(!1), [L, R] = h({
 		side: "top",
 		align: "end"
-	}), [, z] = h(ON), [ee, B] = h({}), V = m(ee), te = s((e) => {
+	}), [, z] = h(kN), [ee, B] = h({}), V = m(ee), te = s((e) => {
 		V.current = e, B(e);
 	}, []), ne = m(0), H = m(/* @__PURE__ */ new Map()), re = s((e) => {
 		let t = H.current.get(e);
@@ -21693,8 +21707,8 @@ function PN({ payload: e, options: t, title: n, onChange: r, toolbarPosition: i,
 	}, []), l(() => {
 		let e = V.current, t = {}, n = !1;
 		for (let [r, i] of Object.entries(e)) {
-			let e = C.get(r), a = e ? CN(b, e) : void 0;
-			e && Object.is(a, i.previousValue) ? t[r] = i : (n = !0, re(r), e && ON === "unknown" && Ww(a, i.value) && (ON = "supported", z(ON)));
+			let e = C.get(r), a = e ? wN(b, e) : void 0;
+			e && Object.is(a, i.previousValue) ? t[r] = i : (n = !0, re(r), e && kN === "unknown" && Ww(a, i.value) && (kN = "supported", z(kN)));
 		}
 		n && te(t);
 	}, [
@@ -21704,7 +21718,7 @@ function PN({ payload: e, options: t, title: n, onChange: r, toolbarPosition: i,
 		re
 	]);
 	let ie = (e) => {
-		let t = CN(b, e), n = ee[xN(e)];
+		let t = wN(b, e), n = ee[SN(e)];
 		return n && Object.is(t, n.previousValue) ? n.value : t;
 	}, U = s((e) => {
 		I(!1), e && N.current?.focus();
@@ -21731,49 +21745,49 @@ function PN({ payload: e, options: t, title: n, onChange: r, toolbarPosition: i,
 		return document.addEventListener("pointerdown", e, !0), () => document.removeEventListener("pointerdown", e, !0);
 	}, [F]);
 	let oe = (e) => {
-		let t = MN();
-		typeof t?.editDialog == "function" && (t.editDialog(DN(e, CN(b, e), g)), I(!1));
+		let t = NN();
+		typeof t?.editDialog == "function" && (t.editDialog(ON(e, wN(b, e), g)), I(!1));
 	}, se = (e, t) => {
-		let n = xN(e);
-		kN || (kN = !0, console.warn("[uhuu-components] DocumentOptions: no uhuu document editor on this page; a change only calls onChange.")), te({
+		let n = SN(e);
+		AN || (AN = !0, console.warn("[uhuu-components] DocumentOptions: no uhuu document editor on this page; a change only calls onChange.")), te({
 			...V.current,
 			[n]: {
 				value: t,
-				previousValue: CN(b, e),
+				previousValue: wN(b, e),
 				token: ++ne.current
 			}
 		}), r?.(n, t);
 	}, le = (e, t) => {
-		let n = MN(), r = wN(n), i = xN(e), a = SN(e, t);
-		if (r === "patch" && ON !== "unsupported") {
+		let n = NN(), r = TN(n), i = SN(e), a = CN(e, t);
+		if (r === "patch" && kN !== "unsupported") {
 			let t = ++ne.current;
 			if (te({
 				...V.current,
 				[i]: {
 					value: a,
-					previousValue: CN(b, e),
+					previousValue: wN(b, e),
 					token: t
 				}
-			}), n.editor.post(EN(e, a)), ON === "supported") return;
+			}), n.editor.post(DN(e, a)), kN === "supported") return;
 			re(i), H.current.set(i, setTimeout(() => {
 				H.current.delete(i);
 				let n = V.current[i];
-				if (!n || n.token !== t || ON !== "unknown") return;
-				ON = "unsupported", z(ON);
+				if (!n || n.token !== t || kN !== "unknown") return;
+				kN = "unsupported", z(kN);
 				let { [i]: r, ...o } = V.current;
-				typeof MN()?.editDialog == "function" ? (te(o), oe(e)) : se(e, a);
-			}, TN));
+				typeof NN()?.editDialog == "function" ? (te(o), oe(e)) : se(e, a);
+			}, EN));
 		} else typeof n?.editDialog == "function" ? oe(e) : se(e, a);
 	};
 	if (!w || !O || typeof document > "u") return null;
-	let ue = g(n) ?? p("documentOptions.title"), de = MN(), fe = wN(de), pe = typeof de?.editDialog == "function" && (fe === "dialog" || fe === "patch" && ON === "unsupported"), me = (e) => {
-		let t = xN(e), n = g(e.label) ?? t, r = ie(e), i = zw(e), a = i === "toggle" ? void 0 : Gw(e, r), o = i === "toggle" ? p(Kw(r) ? "documentOptions.on" : "documentOptions.off") : a ? g(a.label) ?? String(a.value) : r == null || r === "" ? p("options.notSet") : String(r), s = g(e.description), c = `${k}-${t}-label`, l = `${k}-${t}-description`;
+	let ue = g(n) ?? p("documentOptions.title"), de = NN(), fe = TN(de), pe = typeof de?.editDialog == "function" && (fe === "dialog" || fe === "patch" && kN === "unsupported"), me = (e) => {
+		let t = SN(e), n = g(e.label) ?? t, r = ie(e), i = zw(e), a = i === "toggle" ? void 0 : Gw(e, r), o = i === "toggle" ? p(Kw(r) ? "documentOptions.on" : "documentOptions.off") : a ? g(a.label) ?? String(a.value) : r == null || r === "" ? p("options.notSet") : String(r), s = g(e.description), c = `${k}-${t}-label`, l = `${k}-${t}-description`;
 		return /* @__PURE__ */ y("div", {
 			className: "uhuu:flex uhuu:flex-col uhuu:gap-1.5",
 			children: [
 				/* @__PURE__ */ v("span", {
 					id: c,
-					className: q(jN, "uhuu:block"),
+					className: q(MN, "uhuu:block"),
 					children: n
 				}),
 				/* @__PURE__ */ y("button", {
@@ -21840,7 +21854,7 @@ function PN({ payload: e, options: t, title: n, onChange: r, toolbarPosition: i,
 				definition: e,
 				value: ie(e),
 				onChange: (t) => le(e, t)
-			}, xN(e))) })]
+			}, SN(e))) })]
 		})]
 	});
 	if (T) return x(he, T);
@@ -21855,14 +21869,14 @@ function PN({ payload: e, options: t, title: n, onChange: r, toolbarPosition: i,
 }
 //#endregion
 //#region src/uhuu/image/image-block.tsx
-var FN = [
+var IN = [
 	"className",
 	"style",
 	"imageStyle",
 	"imageProps",
 	"renderImage",
 	"placeholder"
-], IN = (e) => {
+], LN = (e) => {
 	let { t } = Mo(), { computedOverlaySvg: n, computedOptions: r, computedDirectDialog: i } = f(() => {
 		let { annotation: n, dialog: r, overlaySvg: i, options: a, src: o } = e;
 		if (!n && !r) return {
@@ -21933,7 +21947,7 @@ var FN = [
 		e.right,
 		e.top,
 		e.bottom
-	]), o = _e(), s = a === "auto" ? "" : FN.filter((t) => e[t] !== void 0).join(", ");
+	]), o = _e(), s = a === "auto" ? "" : IN.filter((t) => e[t] !== void 0).join(", ");
 	o && s && pe(`image-block:${a}:${s}`, `[uhuu-components] ImageBlock in "${a}" mode does not apply ${s}: the image is positioned on the page by its geometry. Style the image with imageClassName, or wrap the ImageBlock.`);
 	let c = a === "auto" || r && r.length > 0 || n || i || e.renderImage !== void 0 || e.placeholder !== void 0 || e.children !== void 0, { mode: l, side: u, src: d, alt: p, className: m, imageClassName: h, style: g, imageStyle: _, backgroundColor: y, width: b, height: x, left: S, right: C, top: w, bottom: T, pageWidth: E, pageHeight: D, bleed: O, overlayClassName: k, dialogProps: A, placeholder: j, children: M, imageProps: N, renderImage: P, onError: F } = e, I = u === "left" ? "start" : u === "right" ? "end" : u, L = {
 		src: d,
@@ -21998,12 +22012,12 @@ var FN = [
 		bleedProps: L,
 		children: M
 	}) : /* @__PURE__ */ v(na, { ...L });
-}, LN = {
+}, RN = {
 	Pagination: De,
 	Sheet: Oe,
 	usePaginationHold: je,
 	useView: we
-}, RN = {
+}, zN = {
 	Page: Ut,
 	Area: Ht,
 	Items: vn,
@@ -22015,28 +22029,28 @@ var FN = [
 	planChunks: ht,
 	planColumnChunks: Et,
 	measure: Ie
-}, zN = {
+}, BN = {
 	Block: r_,
 	open: e_,
 	editDialog: $g
-}, BN = {
+}, VN = {
 	Editable: Tn,
 	getDialogProps: bn
-}, VN = {
+}, HN = {
 	Provider: tw,
 	useBrandKit: nw,
 	publicBaseUrl: XS,
 	selection: iC,
 	load: aC
-}, HN = {
+}, UN = {
 	TemplateDataProvider: Zw,
-	PageEditor: fN,
+	PageEditor: pN,
 	InteractiveModeProvider: ss,
 	useInteractive: as,
-	useIntegrationAdapter: bN,
-	DocumentOptions: PN
+	useIntegrationAdapter: xN,
+	DocumentOptions: FN
 };
 //#endregion
-export { VN as BrandKit, BN as Editing, HN as EditorShell, RN as Flow, zN as Frame, IN as ImageBlock, LN as Static, _g as imageUrl };
+export { HN as BrandKit, VN as Editing, UN as EditorShell, zN as Flow, BN as Frame, LN as ImageBlock, RN as Static, _g as imageUrl };
 
 //# sourceMappingURL=uhuu-components.es.js.map

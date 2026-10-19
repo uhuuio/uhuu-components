@@ -1118,7 +1118,16 @@ export interface PageEditorProps {
     [key: string]: unknown;
   };
   pageOptions?: Array<PageOption | PayloadOptionDefinition>;
+  /**
+   * Which pages print. Without it, the print product the platform renders
+   * (`payload.uhuu_print_product.component.code`, else `payload.component`) selects its
+   * `printConfigs` entry: that entry's `filter`, and its `pageFormat` over this one.
+   */
   pageFilter?: PageFilterConfig;
+  /**
+   * The template's print configs, keyed by print product code. They drive the print product's
+   * pages and format when `pageFilter` is not passed, and the Dev menu's Print Preview.
+   */
   printConfigs?: PrintConfigMap;
   defaultZoomMode?: PageEditorDefaultZoomMode;
   /**
@@ -1173,7 +1182,10 @@ export interface PageEditorProps {
     pageNo: number;
     /** @deprecated Use `totalPages`. */
     total: number;
+    /** The page instance id (unique per added copy of a page). */
     pageId: string;
+    /** The template key the page renders with (`templateConfig.pages` key). */
+    componentKey: string;
     parent?: PageItem;
   }) => ReactNode);
   reorderTitle?: LocalizedText;
