@@ -1108,9 +1108,15 @@ export interface PageEditorProps {
   templateConfig: PageEditorTemplateConfig;
   payload?: Record<string, unknown>;
   onPayloadChange?: (nextPayload: Record<string, unknown>) => void;
+  /**
+   * The page in mm: `width` and `height`, or `format` (`"A4"`, `"LETTER"`, …) with `orientation`.
+   * A valid `width` and `height` win over `format`; without either, A4.
+   */
   pageFormat?: {
-    width: number;
-    height: number;
+    width?: number;
+    height?: number;
+    format?: string;
+    orientation?: "portrait" | "landscape" | (string & {});
     preview?: "single_page" | "two_pages";
     bleed?: number;
     /** Perfect-binding spine/glue; only applied while `pageFilter.mode === 'cover'`. */
@@ -1203,8 +1209,8 @@ export interface PageEditorProps {
   activeBrandKitId?: string;
   /** Development only: a kit chosen in the dev switcher. */
   onSelectBrandKit?: (id: string) => void;
-  /** Development only: a kit URL or id typed into the dev switcher. */
-  onAddBrandKit?: (input: string) => void;
+  /** Development only: a source typed into the dev form. Return a promise to show loading/errors inline. */
+  onAddBrandKit?: (input: string) => void | Promise<void>;
 }
 
 /** Template-owned JSON data and the maps the editor shell updates. */
@@ -1376,9 +1382,9 @@ export interface StaticPaginationProps {
 }
 
 /**
- * A page setup (`Static.Pagination` `setup`, `PageEditor` `pageFormat`), in mm. `format`
- * (`"A4"`, `"LETTER"`, …) with `orientation`, or `width` and `height`; a custom size outside
- * 10–4000 mm falls back to A4.
+ * A page setup (`Static.Pagination` `setup`, `PageEditor` `pageFormat`), in mm: `width` and
+ * `height`, or `format` (`"A4"`, `"LETTER"`, …) with `orientation`. A valid `width` and `height`
+ * (10–4000 mm) win over `format`; without either, A4.
  */
 export interface StaticPageSetup {
   format?: string;
