@@ -1,9 +1,9 @@
 {
-  "version": "0.5.5",
-  "descriptorSha256": "a072e062ed0a0cfc2f4761b7d833229f4140474d4bc05628f8ebc06e72268bb0",
+  "version": "0.5.6",
+  "descriptorSha256": "11483477c47854d2ba33e4b9deb9b012b50265a3b4c750762b691e529dea2e53",
   "files": {
-    "uhuu-components.es.js": "9cda890c8b64114a755fd84fd168864fad65f692d37afcb096bbf865e9947f66",
-    "uhuu-components.umd.cjs": "46ae519f2a1bbca948226b7b5488953396e70f55a32b62a510dbd83435fc3bbc",
+    "uhuu-components.es.js": "69f17e417a9bf501a3bba56ce98a3304c9dce26af98ae9027d0000432293c371",
+    "uhuu-components.umd.cjs": "762155eed1ca45a752fd211f5064a96e2185be465a18e9efc8ccf396df4cdb7e",
     "index.d.ts": "42003c5401f1c6be63bc2a1eb8ce5429676ebff69f9cdf7a53b3f1caa3f4f138",
     "cli.js": "f2d50b3979a545414e2b0f52db472bc42229afb9e84b6343f9aea53798931c68"
   }
