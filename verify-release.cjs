@@ -42,7 +42,7 @@ if (!release || typeof release !== 'object' || Array.isArray(release)) {
 
 if (problems.length) {
   console.error(`uhuu-components ${pkg.version}: release check failed\n- ${problems.join('\n- ')}`);
-  console.error('Rebuild and hand off from the tagged source: pnpm release:handoff in uhuu-storybook.');
+  console.error('Rebuild from the tagged source and prepare the intended private or explicitly reviewed public artifact.');
   process.exit(1);
 }
 console.log(`uhuu-components ${pkg.version}: release check passed`);

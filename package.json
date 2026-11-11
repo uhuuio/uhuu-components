@@ -1,5 +1,5 @@
 {
-  "version": "0.5.4",
+  "version": "0.5.5",
   "name": "uhuu-components",
   "main": "uhuu-components.umd.cjs",
   "module": "uhuu-components.es.js",
@@ -23,9 +23,7 @@
   },
   "files": [
     "uhuu-components.es.js",
-    "uhuu-components.es.js.map",
     "uhuu-components.umd.cjs",
-    "uhuu-components.umd.cjs.map",
     "index.d.ts",
     "cli.js"
   ],

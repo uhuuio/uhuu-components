@@ -417,7 +417,16 @@ export const ImageBlock: ComponentType<ImageBlockProps>;
 
 export interface EditableProps {
   className?: string;
+  /**
+   * What the editor receives: `{ path, type, … }`. `ratio: 'auto'` in it is the bound element's
+   * own width / height, measured when the dialog opens (a box whose size is not a constant).
+   */
   dialog?: object;
+  /**
+   * Inline editing (InteractiveModeProvider `inlineEditing`): `false` keeps a text or markdown
+   * field on its dialog. It never reaches the editor.
+   */
+  inline?: boolean;
   children?: ReactNode;
 }
 
@@ -433,9 +442,9 @@ export const Editing: {
   Editable: ComponentType<EditableProps>;
   /**
    * The props Editable and ImageBlock attach, for a template's own element: renderer guard and
-   * `data-uhuu-type` included. `{}` without a dialog.
+   * `data-uhuu-type` included. `{}` without a dialog. `dialog` and `inline` as on Editable.
    */
-  getDialogProps(props: { dialog?: object | null } | null | undefined): DialogBindingProps;
+  getDialogProps(props: { dialog?: object | null; inline?: boolean } | null | undefined): DialogBindingProps;
 };
 
 /** What `getDialogProps` returns. Spread it onto the element that renders the field. */
@@ -444,7 +453,11 @@ export interface DialogBindingProps {
   "data-uhuu"?: string;
   /** `dialog.type`, so CSS can tell an empty text binding from an empty image. */
   "data-uhuu-type"?: string;
-  /** Opens the dialog in the interactive editor. Never set in renderer mode (`window.$uhuu_renderer`). */
+  /**
+   * Opens the dialog in the interactive editor; under InteractiveModeProvider `inlineEditing`, the
+   * first click selects and the second acts (a `<button>` opens its dialog on one click either
+   * way). Never set in renderer mode (`window.$uhuu_renderer`).
+   */
   onClick?: MouseEventHandler<HTMLElement>;
 }
 
@@ -840,6 +853,16 @@ export interface InteractiveModeProviderProps {
    * Pages never follow it.
    */
   appearance?: EditorShellAppearance;
+  /**
+   * Inline editing: a field's first click selects it (`data-uhuu-selected`), the second click or a
+   * double-click edits it in place, or opens its dialog. In place only in an uhuu editor that
+   * announces it: `text`/`textarea` dialogs whose element shows the field's value as one plain
+   * text, and `markdown` dialogs whose element renders it (edited as rich text, saved as
+   * markdown); `inline: false` beside a dialog keeps that field on its dialog. The edit is saved
+   * as the person's edit, like a dialog save. The selection's toolbar names the dialog for what it
+   * edits and carries an image's options. Default `false`. See docs/inline-text-editing.md.
+   */
+  inlineEditing?: boolean;
 }
 
 export interface BrandKitOption {
