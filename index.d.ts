@@ -455,8 +455,8 @@ export interface DialogBindingProps {
   "data-uhuu-type"?: string;
   /**
    * Opens the dialog in the interactive editor; under InteractiveModeProvider `inlineEditing`, the
-   * first click selects and the second acts (a `<button>` opens its dialog on one click either
-   * way). Never set in renderer mode (`window.$uhuu_renderer`).
+   * first click selects a field that offers a choice (typing in place, an image's options) and the
+   * second acts; a field with only its dialog, and a `<button>`, open on one click. Never set in renderer mode (`window.$uhuu_renderer`).
    */
   onClick?: MouseEventHandler<HTMLElement>;
 }
@@ -854,8 +854,9 @@ export interface InteractiveModeProviderProps {
    */
   appearance?: EditorShellAppearance;
   /**
-   * Inline editing: a field's first click selects it (`data-uhuu-selected`), the second click or a
-   * double-click edits it in place, or opens its dialog. In place only in an uhuu editor that
+   * Inline editing: the first click selects a field that offers a choice (`data-uhuu-selected`),
+   * the second click or a double-click edits it in place, or opens its dialog; a field whose
+   * dialog is all it offers opens it on the first click. In place only in an uhuu editor that
    * announces it: `text`/`textarea` dialogs whose element shows the field's value as one plain
    * text, and `markdown` dialogs whose element renders it (edited as rich text, saved as
    * markdown); `inline: false` beside a dialog keeps that field on its dialog. The edit is saved
