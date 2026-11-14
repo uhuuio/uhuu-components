@@ -866,11 +866,6 @@ export interface InteractiveModeProviderProps {
   inlineEditing?: boolean;
 }
 
-export interface BrandKitOption {
-  id: string;
-  name: string;
-}
-
 /** @deprecated Nothing takes or returns it; use `PageItem`. Removed in 0.5.0. */
 export interface PageEditorItem {
   id?: string;
@@ -1222,19 +1217,6 @@ export interface PageEditorProps {
   reorderDescription?: LocalizedText;
   /** The payload key the page list and its state are saved under. Default `uhuu_page_editor`. */
   stateKey?: string;
-  /**
-   * Development only: the brand-kit switcher in the dev tools menu (dev tools on). It lists
-   * `brandKits` and calls back; it does not load a kit: wire the choice to `BrandKitProvider`.
-   * Inside a `BrandKitProvider` on a development host the Brand Kit submenu also offers
-   * *Preview a version…* (`?brand=`), with or without `brandKits`.
-   */
-  brandKits?: BrandKitOption[];
-  /** Development only: the kit the dev switcher marks as active. */
-  activeBrandKitId?: string;
-  /** Development only: a kit chosen in the dev switcher. */
-  onSelectBrandKit?: (id: string) => void;
-  /** Development only: a source typed into the dev form. Return a promise to show loading/errors inline. */
-  onAddBrandKit?: (input: string) => void | Promise<void>;
 }
 
 /** Template-owned JSON data and the maps the editor shell updates. */
