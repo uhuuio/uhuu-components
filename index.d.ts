@@ -1155,6 +1155,8 @@ export interface PageEditorProps {
    */
   printConfigs?: PrintConfigMap;
   defaultZoomMode?: PageEditorDefaultZoomMode;
+  /** The zoom in percent a preview opens at when `defaultZoomMode` is `manual`. Default `80`. */
+  defaultZoom?: number;
   /**
    * The corner the floating toolbar (page count, Add, Reorder, document options, zoom) starts in.
    * Default `bottom-right`. A user moves it from the zoom menu; their corner is remembered in the
